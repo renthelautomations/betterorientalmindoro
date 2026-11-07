@@ -31,7 +31,7 @@ export default async function TownDynasties({ params }: PageProps<"/dynasties/[t
   const years = p.elections.map((e) => e.year);
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Datos", href: "/datos" }, { label: "Dinastiya", href: "/dynasties" }, { label: m.name }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Dinastiya", href: "/dynasties" }, { label: m.name }]} />
       <div className="mt-4"><PageTitle eyebrow="DINASTIYA" title={m.name} /></div>
       <p className="mt-4 max-w-2xl text-black/75">Mga nahalal na opisyal at paulit-ulit na apelyido, {years[0]}–{years.at(-1)}.</p>
       <div className="mt-5"><DynSwitch current={town} towns={names} /></div>

@@ -21,7 +21,7 @@ function Groups({ rows, id }: { rows: Hotline[]; id: string }) {
         <div key={c}>
           <h3 className="mb-3 text-sm font-semibold tracking-widest text-black/65">{LABEL[c].toUpperCase()}</h3>
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {g[c]!.map((h) => <li key={h.id} className="flex flex-col [&>div]:flex-1"><HotlineCard h={h} tone={c} /></li>)}
+            {g[c]!.map((h) => <li key={h.id} className="flex flex-col [&>div]:flex-1 [&_.text-fiesta-red]:text-[#a8281b]"><HotlineCard h={h} tone={c} /></li>)}
           </ul>
         </div>
       ))}

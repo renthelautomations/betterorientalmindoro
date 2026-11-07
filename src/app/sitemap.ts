@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/site-url";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getProvince } from "@/lib/dynasties";
-import { getCategories, getServices } from "@/lib/services";
+import { getServices } from "@/lib/services";
 import { ICON_KEYS } from "@/lib/brand";
 import { getProjects } from "@/lib/projects";
 
@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getMunicipalities().map((m) => `/bayan/${m.slug}`),
     ...getMunicipalities().flatMap((m) => ["tulong", "proyekto", "halalan", "datos"].map((t) => `/bayan/${m.slug}/${t}`)),
     "/dynasties", ...getProvince().towns.map((t) => `/dynasties/${t}`),
-    "/serbisyo", ...getCategories().map((c) => `/serbisyo/${c.slug}`), ...getServices().map((s) => `/serbisyo/${s.category}/${s.id}`),
+    "/serbisyo", ...getServices().map((s) => `/serbisyo/${s.category}/${s.id}`),
     ...getProjects().map((p) => `/proyekto/${p.id}`),
   ];
   return paths.map((p) => ({ url: BASE + p }));

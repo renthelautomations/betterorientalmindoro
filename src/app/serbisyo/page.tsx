@@ -1,26 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteSearch from "@/components/kit/SiteSearch";
-import { ServiceRow } from "@/components/kit/Parts";
+import { EmptyState } from "@/components/kit/Ui";
 import PageHead from "@/components/site/PageHead";
-import { CATEGORY_ICON } from "@/components/site/ServiceLink";
+import { ServiceLink } from "@/components/site/ServiceLink";
 import { getSearchItems } from "@/lib/search-index";
 import { getCategories, getLifeEvents, getServices, servicesForEvent } from "@/lib/services";
 
 export const metadata: Metadata = { title: "Serbisyo", description: "Mga serbisyo ng gobyerno sa Oriental Mindoro: kailangan, bayad, hakbang at opisina, may source bawat isa." };
 
-const SHOWN = 5;
 const H2 = "mb-4 font-serif text-2xl font-bold";
 
 export default function Serbisyo() {
   const cats = getCategories();
-  const row = (c: (typeof cats)[number]) => (
-    <li key={c.slug}>
-      <Link href={`/serbisyo/${c.slug}`} className="block rounded-xl">
-        <ServiceRow icon={CATEGORY_ICON[c.slug] ?? "doc"} title={c.name} sub={`${getServices(c.slug).length} serbisyo · ${c.blurb}`} />
-      </Link>
-    </li>
-  );
   return (
     <main className="mx-auto max-w-4xl px-4 pb-20 pt-8">
       <PageHead crumbs={[{ label: "Home", href: "/" }, { label: "Serbisyo" }]} eyebrow="PARA SA BAYAN" title="Mga serbisyo">
@@ -46,18 +38,28 @@ export default function Serbisyo() {
         </ul>
       </section>
 
-      <section aria-labelledby="cats" className="mt-12">
-        <h2 id="cats" className={H2}>Pumili ng kategorya</h2>
-        <ul className="space-y-3">{cats.slice(0, SHOWN).map(row)}</ul>
-        {cats.length > SHOWN && (
-          <details className="group mt-3">
-            <summary className="inline-flex min-h-11 cursor-pointer items-center rounded-lg border-2 border-fiesta-navy/20 px-4 text-sm font-semibold hover:border-fiesta-navy">
-              <span className="group-open:hidden">Tingnan lahat ({cats.length})</span><span className="hidden group-open:inline">Itago</span>
-            </summary>
-            <ul className="mt-3 space-y-3">{cats.slice(SHOWN).map(row)}</ul>
-          </details>
-        )}
-      </section>
+      <nav aria-label="Mga kategorya" className="mt-12">
+        <ul className="flex flex-wrap gap-2">
+          {cats.map((c) => <li key={c.slug}><a href={`#${c.slug}`} className="inline-flex min-h-11 items-center rounded-full border-2 border-fiesta-navy/20 px-4 text-sm font-semibold hover:border-fiesta-navy">{c.name}</a></li>)}
+        </ul>
+      </nav>
+
+      {cats.map((c) => {
+        const rows = getServices(c.slug);
+        return (
+          <section key={c.slug} id={c.slug} aria-labelledby={`h-${c.slug}`} className="mt-12 scroll-mt-28">
+            <h2 id={`h-${c.slug}`} className={H2}>{c.name}</h2>
+            <p className="-mt-2 mb-4 text-sm text-black/70">{c.blurb}</p>
+            {rows.length ? (
+              <ul className="space-y-3">{rows.map((s) => <li key={s.id}><ServiceLink s={s} /></li>)}</ul>
+            ) : (
+              <EmptyState title="Wala pang naka-lista">
+                Wala pa kaming nakukumpirmang opisyal na source para dito. May alam ka bang source? Ipaalam sa aming volunteers. Para sa emergency, tingnan ang <Link href="/hotlines" className="underline">mga hotline</Link>.
+              </EmptyState>
+            )}
+          </section>
+        );
+      })}
     </main>
   );
 }
