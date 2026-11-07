@@ -7,7 +7,7 @@ import { WinnersGrid } from "@/components/site/DynGrid";
 import { Breadcrumbs } from "@/components/kit/Ui";
 import PageTitle from "@/components/site/PageTitle";
 import Link from "next/link";
-import { Network } from "@/components/kit/Network";
+import { LinkNetwork } from "@/components/site/LinkNetwork";
 import { getProvince, getTown, provinceSurnames, surnameNetwork, titleCase, type Town } from "@/lib/dynasties";
 import { getMunicipalities } from "@/lib/municipalities";
 
@@ -39,7 +39,7 @@ export default function Dynasties() {
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70">MGA BAYANG MAY PAREHONG APELYIDO</h2>
       <p className="mb-3 mt-2 text-sm text-black/75">Magkaugnay ang dalawang bayan sa guhit kapag pareho silang may apelyidong hawak ng dalawa o higit pang magkaibang tao. Mas makapal ang guhit kung mas maraming parehong apelyido. Apelyido lang ang batayan; hindi ito ranggo at hindi patunay ng anuman.</p>
-      <Network nodes={towns.map((t) => ({ id: t.slug, label: nameOf[t.slug] }))} edges={edges} />
+      <LinkNetwork nodes={towns.map((t) => ({ id: t.slug, label: nameOf[t.slug] }))} edges={edges} />
       <h3 className="mt-4 text-sm font-semibold text-black/70">Parehong apelyido, ayon sa pares ng bayan</h3>
       {links.length ? (
         <ul className="mt-2 divide-y divide-black/10 rounded-2xl border border-black/10 bg-white text-sm">

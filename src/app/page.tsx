@@ -3,7 +3,8 @@ import MapLoader from "@/components/MapLoader";
 import { Divider } from "@/components/kit/Motifs";
 import PennantHero from "@/components/site/PennantHero";
 import { PillarCard, StatCard, Callout, SectionHeader, ServiceRow } from "@/components/kit/Parts";
-import { BarChart, Choropleth } from "@/components/kit/Charts";
+import { BarChart } from "@/components/kit/Charts";
+import LinkChoropleth from "@/components/site/LinkChoropleth";
 import type { KitIconName } from "@/components/kit/KitIcon";
 import SiteSearch from "@/components/kit/SiteSearch";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
@@ -88,7 +89,7 @@ export default function Home() {
           <SectionHeader eyebrow="POPULASYON" title="Populasyon ng bawat bayan" color={FIESTA.blue} />
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <BarChart rows={towns.filter((t) => t.pop != null).map((t) => ({ label: t.name, value: t.pop as number, href: `/bayan/${t.slug}` }))} format={fmtInt} />
-            <Choropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} unit="population" />
+            <LinkChoropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} unit="population" />
           </div>
         </section>
       </div>
