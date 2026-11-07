@@ -1,4 +1,4 @@
-import ServiceTile, { CATEGORY_ICON, CategoryHeader, PatternStrip, lookOf } from "@/components/site/ServiceTile";
+import { CATEGORY_ICON, CategoryHeader, PatternStrip, lookOf } from "@/components/site/ServiceTile";
 import type { Metadata } from "next";
 import Link from "next/link";
 import SmartSearch from "@/components/site/SmartSearch";
@@ -49,13 +49,6 @@ export default function Serbisyo() {
             );
           })}
         </ul>
-      </section>
-
-      <section aria-labelledby="cats" className="mt-12">
-        <h2 id="cats" className={H2}><T k="dyn.serbisyo.cats" /></h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {cats.map((c) => <ServiceTile key={c.slug} slug={c.slug} count={getServices(c.slug).length} />)}
-        </div>
       </section>
 
       <div>
