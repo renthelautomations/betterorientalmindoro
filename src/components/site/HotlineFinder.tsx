@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { HotlineCard } from "@/components/kit/Ui";
+import HotlineTile from "./HotlineTile";
 import { useT } from "@/lib/i18n/i18n";
 import Dropdown from "./Dropdown";
 import { OFFICES, QUICK, officeOf, searchHotlines, type Category, type Hotline, type Office } from "@/lib/hotlines";
@@ -94,10 +94,7 @@ export default function HotlineFinder({ rows, towns, initialTown }: { rows: Hotl
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-widest text-black/65">{t(`cat.${c}`)}</h3>
               <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {list.map((h) => (
-                  <li key={h.id} className="flex flex-col [&>div]:flex-1 [&_.text-fiesta-red]:text-[#a8281b]">
-                    <p className="mb-1.5 px-1 text-xs font-semibold text-black/60">{where(h.scope)}</p>
-                    <HotlineCard h={h} tone={c} />
-                  </li>
+                  <li key={h.id} className="h-full"><HotlineTile h={h} tone={c} where={where(h.scope)} /></li>
                 ))}
               </ul>
             </section>

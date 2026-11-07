@@ -11,7 +11,7 @@ import { BayanCrumbs, BayanEmpty, BayanTitle } from "@/components/site/BayanBits
 import { T } from "@/lib/i18n/i18n";
 import TownEmblem from "@/components/kit/TownEmblem";
 import TownStat from "@/components/stats/TownStat";
-import { HotlineCard } from "@/components/kit/Ui";
+import HotlineTile from "@/components/site/HotlineTile";
 import { Tabs } from "@/components/kit/Interactive";
 import LineChart from "@/components/kit/LineChart";
 import { Divider } from "@/components/kit/Motifs";
@@ -91,10 +91,10 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
     { id: "hotlines", label: "town.hotlines", badge: String(local.length + province.length), panel: (
       <div className="space-y-6">
         {local.length ? (
-          <div><p className={h3}><T k="town.in" /> {m.name}</p><div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{local.map((h) => <HotlineCard key={h.id} h={h} tone={h.category} />)}</div></div>
+          <div><p className={h3}><T k="town.in" /> {m.name}</p><div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{local.map((h) => <HotlineTile key={h.id} h={h} tone={h.category} />)}</div></div>
         ) : <BayanEmpty title="bayan.nohot" body="bayan.nohot.p" name={m.name} />}
         <div><p className={h3}><T k="town.province" />{local.length ? null : <> <T k="bayan.forthis" /></>}</p>
-          {province.length ? <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{province.slice(0, 6).map((h) => <HotlineCard key={h.id} h={h} tone={h.category} />)}</div> : <p className="text-sm text-black/70"><T k="bayan.noprov" /></p>}
+          {province.length ? <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{province.slice(0, 6).map((h) => <HotlineTile key={h.id} h={h} tone={h.category} />)}</div> : <p className="text-sm text-black/70"><T k="bayan.noprov" /></p>}
         </div>
         <Link href="/hotlines" className={link}><T k="bayan.allhot" /></Link>
       </div>
