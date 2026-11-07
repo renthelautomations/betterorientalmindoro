@@ -2,12 +2,15 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Accordion, EmptyState } from "@/components/kit/Ui";
-import { StatCard } from "@/components/kit/Parts";
+import { SectionHeader, StatCard } from "@/components/kit/Parts";
+import { Donut } from "@/components/kit/Charts2";
+import DataTable from "@/components/kit/DataTable";
+import PageHead from "@/components/site/PageHead";
 import ProjectCard from "@/components/site/ProjectCard";
 import ProjectMap from "@/components/site/ProjectMapLoader";
 import { YearBars, pesoShort } from "@/components/site/ProjectBits";
 import { getMunicipalities } from "@/lib/municipalities";
-import { cleanTitle, countsByStatus, countsByYear, filterProjects, getProjects, hubHref, topCategories } from "@/lib/projects";
+import { cleanTitle, costBy, countsByStatus, countsByYear, filterProjects, getProjects, hubHref, topByCost, topCategories } from "@/lib/projects";
 
 export const metadata: Metadata = { title: "Proyekto", description: "Mga proyekto ng DPWH sa Oriental Mindoro: halaga ayon sa dokumento, katayuan, at lokasyon." };
 
@@ -18,7 +21,7 @@ const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) 
 
 export default function Proyekto({ searchParams }: { searchParams: Promise<SP> }) {
   return (
-    <Suspense fallback={<main className="mx-auto max-w-6xl px-4 py-10"><h1 className="font-serif text-3xl font-bold">Mga proyekto ng DPWH</h1></main>}>
+    <Suspense fallback={<main className="mx-auto max-w-6xl px-4 py-10"><PageHead crumbs={[{ label: "Home", href: "/" }, { label: "Proyekto" }]} eyebrow="PROYEKTO" title="Mga proyekto ng DPWH" /></main>}>
       <Hub searchParams={searchParams} />
     </Suspense>
   );
@@ -50,6 +53,8 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
   const done = rows.filter((p) => p.status === "Completed").length;
   const points = rows.filter((p) => p.lat != null && p.lon != null).map((p) => ({ id: p.id, lat: p.lat!, lon: p.lon! }));
   const listOnly = rows.length - points.length;
+  const slices = costBy(rows, "status", "Walang katayuan");
+  const top = topByCost(rows, 10).map((p) => ({ title: cleanTitle(p.title), year: p.year ?? null, cost: p.cost ?? null }));
   const years = countsByYear(all).map(([y]) => y);
   const statuses = countsByStatus(all).map(([s]) => s);
   const cats = topCategories(all, 5);
@@ -68,8 +73,9 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
-      <h1 className="font-serif text-3xl font-bold md:text-4xl">Mga proyekto ng DPWH</h1>
-      <p className="mt-2 max-w-2xl text-black/75">Ano ang itinayo at magkano ang nakasulat na budget, bayan por bayan, mula sa pampublikong datos.</p>
+      <PageHead crumbs={[{ label: "Home", href: "/" }, { label: "Proyekto" }]} eyebrow="PROYEKTO" title="Mga proyekto ng DPWH">
+        <p>Ano ang itinayo at magkano ang nakasulat na budget, bayan por bayan, mula sa pampublikong datos.</p>
+      </PageHead>
 
       <div className="mt-6 grid gap-4 sm:grid-cols-3">
         <StatCard label="BILANG NG PROYEKTO" value={rows.length.toLocaleString("en-PH")} hint={filtered ? "ayon sa napiling filter" : "sa buong lalawigan"} icon="doc" color="#2b4fa3" />
@@ -78,19 +84,31 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
       </div>
 
       <div className="mt-8 grid gap-6 lg:grid-cols-[3fr_2fr]">
-        <section aria-labelledby="mapa" className="min-w-0">
-          <h2 id="mapa" className="mb-2 text-sm font-semibold tracking-widest text-black/60">MAPA NG MGA PROYEKTO</h2>
+        <section className="min-w-0">
+          <div className="mb-3"><SectionHeader eyebrow="LOKASYON" title="Mapa ng mga proyekto" /></div>
           {points.length ? <ProjectMap points={points} label={`Mapa ng ${points.length} proyekto ayon sa coordinates`} /> : <p className="rounded-2xl bg-black/5 p-6 text-sm text-black/70">Walang coordinates ang mga napiling proyekto.</p>}
           <p className="mt-2 text-sm text-black/70">{points.length.toLocaleString("en-PH")} proyekto ang nasa mapa. {listOnly.toLocaleString("en-PH")} projects are list-only (no coordinates). Ang mga punto ay nasa totoong coordinates, kahit hindi tiyak ang bayan.</p>
         </section>
-        <section aria-labelledby="taon" className="min-w-0">
-          <h2 id="taon" className="mb-3 text-sm font-semibold tracking-widest text-black/60">PROYEKTO KADA TAON</h2>
+        <section className="min-w-0">
+          <div className="mb-3"><SectionHeader eyebrow="KADA TAON" title="Proyekto kada taon" /></div>
           <YearBars rows={countsByYear(filterProjects(all, flt))} current={year} href={(y) => link({ taon: y ? String(y) : undefined })} />
         </section>
       </div>
 
-      <section aria-labelledby="salain" className="mt-10 space-y-5">
-        <h2 id="salain" className="text-sm font-semibold tracking-widest text-black/60">SALAIN</h2>
+      <section className="mt-12 grid gap-8 md:grid-cols-2">
+        <div>
+          <SectionHeader eyebrow="BUDGET AYON SA KATAYUAN" title="Saan napupunta ang budget" />
+          <div className="mt-4">{slices.length ? <Donut slices={slices} format={pesoShort} centerLabel="published na budget" /> : <EmptyState title="Walang budget na nakasulat">Walang halaga sa mga napiling proyekto.</EmptyState>}</div>
+          <p className="mt-3 text-xs text-black/65">Kabuuan ng nakasulat na budget kada katayuan. Hindi ito ang nagastos.</p>
+        </div>
+        <div className="min-w-0">
+          <SectionHeader eyebrow="PINAKAMALAKI" title="Top 10 ayon sa budget" />
+          <div className="mt-4">{top.length ? <DataTable caption="Sampung proyektong may pinakamalaking published na budget" filterKey="title" rows={top} cols={[{ key: "title", label: "table.project" }, { key: "year", label: "table.year" }, { key: "cost", label: "Budget", align: "right", format: "peso" }]} /> : <EmptyState title="Walang halaga">Walang nakasulat na budget sa mga napiling proyekto.</EmptyState>}</div>
+        </div>
+      </section>
+
+      <section aria-labelledby="salain" className="mt-12 space-y-5">
+        <h2 id="salain" className="font-serif text-3xl font-bold">Salain</h2>
         <form action="/proyekto" method="get" role="search" className="flex flex-wrap gap-2">
           {(["bayan", "taon", "katayuan", "kategorya"] as const).map((k) => f[k] && <input key={k} type="hidden" name={k} value={f[k]} />)}
           <label className="min-w-0 flex-1 basis-60"><span className="sr-only">Hanapin sa pamagat</span>
@@ -104,8 +122,8 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
         {group("Kategorya", "kategorya", cats.map((c) => ({ v: c, t: c })))}
       </section>
 
-      <section aria-labelledby="lista" className="mt-10">
-        <h2 id="lista" className="text-sm font-semibold tracking-widest text-black/60">MGA PROYEKTO, PINAKAMALAKI MUNA</h2>
+      <section aria-labelledby="lista" className="mt-12">
+        <h2 id="lista" className="font-serif text-3xl font-bold">Mga proyekto, pinakamalaki muna</h2>
         <p className="mt-1 text-sm text-black/70">Ipinapakita ang {shown.length.toLocaleString("en-PH")} sa {rows.length.toLocaleString("en-PH")}, ayon sa published na budget.</p>
         {shown.length ? (
           <ul className="mt-4 grid gap-3 md:grid-cols-2">
@@ -121,7 +139,7 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
         )}
       </section>
 
-      <section className="mt-10" aria-label="Paano basahin at source">
+      <section className="mt-12" aria-label="Paano basahin at source">
         <Accordion items={[{
           q: "Budget ito, hindi aktwal na gastos. Paano basahin & source",
           a: (

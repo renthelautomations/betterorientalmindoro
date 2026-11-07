@@ -61,3 +61,13 @@ export function hubHref(f: { bayan?: string; taon?: string; katayuan?: string; k
 
 /** Whole days between two YYYY-MM-DD dates. */
 export const durationDays = (start: string, end: string): number => Math.round((Date.parse(end) - Date.parse(start)) / 86_400_000);
+
+/** Published cost summed per status or category, largest first. Rows without that field go under `none`; zero sums are dropped. */
+export function costBy(rows: Project[], key: "status" | "category", none: string): { label: string; value: number }[] {
+  const m = new Map<string, number>();
+  for (const p of rows) m.set(p[key] ?? none, (m.get(p[key] ?? none) ?? 0) + (p.cost ?? 0));
+  return [...m].map(([label, value]) => ({ label, value })).filter((s) => s.value > 0).sort((a, b) => b.value - a.value);
+}
+
+/** The n rows with the highest published cost (rows without a cost are left out). */
+export const topByCost = (rows: Project[], n: number): Project[] => rows.filter((p) => p.cost != null).sort((a, b) => b.cost! - a.cost!).slice(0, n);

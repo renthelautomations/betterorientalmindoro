@@ -124,3 +124,20 @@ describe("durationDays", () => {
     expect(durationDays("2023-01-01", "2023-01-01")).toBe(0);
   });
 });
+
+import { costBy, topByCost, type Project } from "./projects";
+
+describe("cost helpers", () => {
+  const r: Project[] = [
+    { id: "a", title: "A", cost: 300, status: "Completed" },
+    { id: "b", title: "B", cost: 100, status: "Completed" },
+    { id: "c", title: "C", cost: 200 },
+    { id: "d", title: "D", status: "On-Going" },
+  ];
+  it("costBy sums published cost per key, biggest first, unlabeled rows named, zero sums dropped", () => {
+    expect(costBy(r, "status", "Walang katayuan")).toEqual([{ label: "Completed", value: 400 }, { label: "Walang katayuan", value: 200 }]);
+  });
+  it("topByCost keeps only rows with a cost, largest first", () => {
+    expect(topByCost(r, 2).map((p) => p.id)).toEqual(["a", "c"]);
+  });
+});

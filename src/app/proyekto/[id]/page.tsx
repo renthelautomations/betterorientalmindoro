@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/kit/Ui";
-import { StatCard } from "@/components/kit/Parts";
+import { SectionHeader, StatCard } from "@/components/kit/Parts";
+import { Timeline } from "@/components/kit/Charts2";
 import KitIcon from "@/components/kit/KitIcon";
 import ProjectMap from "@/components/site/ProjectMapLoader";
 import { StatusBadge, iconFor, peso } from "@/components/site/ProjectBits";
@@ -53,33 +54,23 @@ export default async function ProjectRecord({ params }: PageProps<"/proyekto/[id
       </div>
 
       {p.start && p.end && (
-        <section aria-labelledby="oras" className="mt-8">
-          <h2 id="oras" className="text-sm font-semibold tracking-widest text-black/60">TIMELINE</h2>
-          <div className="mt-3 rounded-2xl border border-black/10 bg-white p-5">
-            <div className="relative h-3 rounded-full bg-fiesta-blue/15" aria-hidden>
-              <span className="absolute left-0 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-fiesta-navy" />
-              <span className="absolute inset-y-0 left-0 right-0 m-auto h-1.5 rounded-full bg-fiesta-blue" />
-              <span className="absolute right-0 top-1/2 h-4 w-4 -translate-y-1/2 rounded-full bg-fiesta-green" />
-            </div>
-            <dl className="mt-3 flex justify-between gap-4 text-sm">
-              <div><dt className="text-black/70">Simula</dt><dd className="font-semibold">{fmt(p.start)}</dd></div>
-              <div className="text-right"><dt className="text-black/70">Katapusan</dt><dd className="font-semibold">{fmt(p.end)}</dd></div>
-            </dl>
-          </div>
+        <section className="mt-10">
+          <SectionHeader eyebrow="ORAS" title="Timeline" />
+          <div className="mt-5"><Timeline items={[{ year: fmt(p.start), title: "Simula", sub: "ayon sa dokumento" }, { year: fmt(p.end), title: "Katapusan", sub: days != null ? `${days.toLocaleString("en-PH")} araw mula simula` : undefined }]} /></div>
         </section>
       )}
 
       {hasPin && (
-        <section aria-labelledby="lokasyon" className="mt-8">
-          <h2 id="lokasyon" className="mb-3 text-sm font-semibold tracking-widest text-black/60">LOKASYON</h2>
+        <section className="mt-10">
+          <div className="mb-4"><SectionHeader eyebrow="LOKASYON" title="Nasaan ito" /></div>
           <ProjectMap points={[{ id: p.id, lat: p.lat!, lon: p.lon! }]} label={`Mapa na nagpapakita ng lokasyon ng proyekto sa ${p.lat!.toFixed(4)}, ${p.lon!.toFixed(4)}`} />
           <p className="mt-2 text-sm text-black/70">Coordinates: {p.lat!.toFixed(5)}, {p.lon!.toFixed(5)}</p>
         </section>
       )}
 
-      <section aria-labelledby="detalye" className="mt-8">
-        <h2 id="detalye" className="text-sm font-semibold tracking-widest text-black/60">DETALYE</h2>
-        <dl className="mt-3 divide-y divide-black/10 rounded-2xl border border-black/10 bg-white">
+      <section className="mt-10">
+        <SectionHeader eyebrow="DETALYE" title="Detalye ng proyekto" />
+        <dl className="mt-5 divide-y divide-black/10 rounded-2xl bg-white shadow-sm">
           {facts.map(([k, v]) => (
             <div key={k} className="grid gap-1 px-5 py-3 sm:grid-cols-[10rem_1fr]"><dt className="text-sm text-black/70">{k}</dt><dd className="min-w-0 break-words font-medium">{v}</dd></div>
           ))}
