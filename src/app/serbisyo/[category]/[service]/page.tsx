@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { TBreadcrumbs } from "@/components/site/DynBits";
-import ServiceDetail from "@/components/services/ServiceDetail";
+import SvcDetail from "@/components/site/SvcDetail";
 import { getCategory, getService, getServices } from "@/lib/services";
 
 export function generateStaticParams() {
@@ -22,7 +22,7 @@ export default async function ServicePage({ params }: PageProps<"/serbisyo/[cate
   return (
     <main className="mx-auto max-w-4xl px-4 pb-20 pt-8">
       <TBreadcrumbs items={[{ label: "dyn.home", href: "/" }, { label: "nav.services", href: "/serbisyo" }, { label: s.title }]} />
-      <div className="mt-6"><ServiceDetail s={s} /></div>
+      <div className="mt-6"><SvcDetail s={s} /></div>
     </main>
   );
 }
