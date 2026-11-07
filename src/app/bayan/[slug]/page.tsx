@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import MunicipalityStats from "@/components/stats/MunicipalityStats";
 import HotlineList from "@/components/HotlineList";
 import { getHotlines } from "@/lib/hotlines";
 import { getProjects } from "@/lib/projects";
@@ -29,6 +30,7 @@ export default async function MunicipalityPage({ params }: PageProps<"/bayan/[sl
       <p className="mt-2 text-black/70">
         {m.isCity ? "Lungsod" : "Bayan"} ng Oriental Mindoro · {m.areaKm2.toLocaleString()} km² · {barangays.length} barangay
       </p>
+      <MunicipalityStats slug={m.slug} areaKm2={m.areaKm2} barangays={barangays.length} />
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">MGA HOTLINE</h2>
       <div className="mt-3"><HotlineList rows={getHotlines(m.slug)} /></div>
       <p className="mt-3 text-sm">Hotlines ng buong lalawigan: <Link href="/hotlines" className="underline">tingnan dito</Link>.</p>
