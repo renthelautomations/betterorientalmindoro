@@ -33,7 +33,7 @@ export default function DataTable<T extends Record<string, string | number | num
     <div>
       <label className="block">
         <span className="sr-only">{t("table.search")}</span>
-        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t("table.search")} className="mb-3 min-h-11 w-full max-w-xs rounded-lg border border-black/20 bg-white px-3 text-sm outline-none focus:border-[#1b2a4a]" />
+        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t("table.search")} className="mb-3 min-h-12 w-full max-w-sm rounded-full border-2 border-fiesta-navy/20 bg-white px-5 text-base outline-none focus:border-fiesta-blue focus:ring-4 focus:ring-fiesta-blue/20" />
       </label>
       <div className="overflow-x-auto rounded-xl border border-black/10 bg-white">
         <table className="w-full text-sm">

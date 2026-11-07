@@ -112,7 +112,6 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
           <Pick name="katayuan" label="proyekto.g.status" value={f.katayuan} items={statuses.map((s) => ({ v: s, t: s }))} />
           <Pick name="kategorya" label="proyekto.g.cat" value={f.kategorya} items={cats.map((c) => ({ v: c, t: c }))} />
           <div className="flex items-center gap-3 sm:col-span-2 lg:col-span-4">
-            <button className="min-h-11 rounded-lg bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue"><T k="proyekto.search" /></button>
             {filtered && <Link href="/proyekto" className="inline-flex min-h-11 items-center px-3 text-sm underline"><T k="proyekto.clear" /></Link>}
           </div>
         </AutoForm>

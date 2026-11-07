@@ -58,5 +58,9 @@ p="src/components/kit/LineChart.tsx"; s=open(p).read()
 s=re.sub(r'<select value=\{s\.name\}.*?</select>','<Dropdown value={s.name} onChange={setName} options={series.map((x) => ({ v: x.name, t: t(x.name) }))} className="min-w-44" />',s,flags=re.S)
 if "site/Dropdown" not in s: s=s.replace('import ','import Dropdown from "@/\u0063omponents/site/Dropdown";\nimport ',1)
 open(p,"w").write(s)
+# 9. DataTable filter box is a pill like every other search.
+p="src/components/kit/DataTable.tsx"; s=open(p).read()
+s=s.replace('className="mb-3 min-h-11 w-full max-w-xs rounded-lg border border-black/20 bg-white px-3 text-sm outline-none focus:border-[#1b2a4a]"','className="mb-3 min-h-12 w-full max-w-sm rounded-full border-2 border-fiesta-navy/20 bg-white px-5 text-base outline-none focus:border-fiesta-blue focus:ring-4 focus:ring-fiesta-blue/20"')
+open(p,"w").write(s)
 PY
 echo "kit patches applied"
