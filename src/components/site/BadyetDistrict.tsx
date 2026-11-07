@@ -1,4 +1,5 @@
-import { DASH, fmtPeso, gaaYears, netChange, proportionSegments, versions, type District, type Office } from "@/lib/badyet";
+import Link from "next/link";
+import { DASH, fmtPeso, gaaYears, getBadyet, netChange, proportionSegments, versions, type District, type Office } from "@/lib/badyet";
 
 const SEG: Record<string, { name: string; color: string; sign: string }> = {
   unchanged: { name: "Pareho", color: "#1b2a4a", sign: "" },
@@ -10,22 +11,7 @@ const SEG: Record<string, { name: string; color: string; sign: string }> = {
 };
 const STRIPES = "repeating-linear-gradient(45deg, rgba(255,255,255,.85) 0 3px, transparent 3px 6px)";
 
-/** District switch as plain anchors: works without JS, the panel shows via :target (see page.tsx). */
-export function DistrictSwitch({ current }: { current: "d1" | "d2" }) {
-  const items = [["d1", "Unang distrito"], ["d2", "Ikalawang distrito"]] as const;
-  return (
-    <nav aria-label="Pumili ng distrito" className="flex gap-2">
-      {items.map(([id, label]) => (
-        <a key={id} href={`#${id}`} aria-current={current === id ? "page" : undefined}
-          className={`inline-flex min-h-11 items-center rounded-full border-2 px-5 text-sm font-semibold ${current === id ? "border-fiesta-navy bg-fiesta-navy text-white" : "border-black/20 bg-white text-fiesta-navy hover:border-fiesta-navy"}`}>
-          {label}
-        </a>
-      ))}
-    </nav>
-  );
-}
-
-function Side({ label, value, note }: { label: string; value: number | null; note: string }) {
+export function Side({ label, value, note }: { label: string; value: number | null; note: string }) {
   return (
     <div className="min-w-0 rounded-2xl border border-black/10 bg-white p-4">
       <p className="text-xs font-semibold tracking-widest text-black/65">{label}</p>
@@ -35,7 +21,7 @@ function Side({ label, value, note }: { label: string; value: number | null; not
   );
 }
 
-function ProportionBar({ o }: { o: Office }) {
+export function ProportionBar({ o }: { o: Office }) {
   const seg = proportionSegments(o);
   const total = seg.reduce((a, s) => a + s.rows, 0);
   return (
@@ -64,7 +50,7 @@ function ProportionBar({ o }: { o: Office }) {
   );
 }
 
-function GaaBars({ o }: { o: Office }) {
+export function GaaBars({ o }: { o: Office }) {
   const ys = gaaYears(o);
   const max = Math.max(...ys.map((y) => y.php ?? 0), 1);
   const row = (y: (typeof ys)[number]) => (
@@ -92,32 +78,6 @@ function GaaBars({ o }: { o: Office }) {
   );
 }
 
-function OfficeBlock({ o }: { o: Office }) {
-  const v = versions(o);
-  const f = o.fy2027;
-  const net = netChange(v.nep, v.house);
-  return (
-    <section className="mt-8 border-t border-black/10 pt-6">
-      <h3 className="font-serif text-xl font-bold">{o.name}</h3>
-      <p className="text-sm text-black/70">{o.kind_label} · {o.tier_text}</p>
-
-      <h4 className="mt-6 text-xs font-semibold tracking-widest text-black/65">FY2027: DALAWANG BERSYON NG IISANG BUDGET</h4>
-      <div className="mt-2 grid grid-cols-2 gap-3">
-        <Side label="NEP (PANUKALA NG PANGULO)" value={v.nep} note={`${f.nep_records} proyekto`} />
-        <Side label="HOUSE BILL (3RD READING)" value={v.house} note={`${f.hgab3_records} proyekto, pinangalanan lang`} />
-      </div>
-      <p className="mt-2 text-sm">Pagkakaiba (House bill minus NEP): <b className="tabular-nums">{net == null ? DASH : `${net > 0 ? "+" : ""}${fmtPeso(net)}`}</b>. <span className="text-black/70">Pinaghahambing lang, hindi dinadagdag.</span></p>
-
-      <h4 className="mt-6 text-xs font-semibold tracking-widest text-black/65">ANO ANG NAGBAGO: BILANG NG LINYA NG BUDGET</h4>
-      <div className="mt-2"><ProportionBar o={o} /></div>
-
-      <h4 className="mt-6 text-xs font-semibold tracking-widest text-black/65">ENACTED NA BUDGET (GAA) BAWAT TAON</h4>
-      <div className="mt-2"><GaaBars o={o} /></div>
-      <p className="mt-2 text-xs text-black/65">Buong opisina, ayon sa nakalathala. Hindi ito ang aktwal na nagastos. Ang &quot;-&quot; ay walang datos, hindi zero.</p>
-    </section>
-  );
-}
-
 /** Per-office source notes, rendered inside the collapsed notes bar. */
 export function OfficeNotes({ d }: { d: District }) {
   return (
@@ -139,18 +99,85 @@ export function OfficeNotes({ d }: { d: District }) {
   );
 }
 
-export default function BadyetDistrict({ d, id }: { d: District; id: "d1" | "d2" }) {
+export const NO_SPEND = "Hindi ito ang nagastos. Hindi ito paratang.";
+
+export function repLink(d: District) {
   const r = d.representative;
   return (
-    <section id={id} aria-labelledby={`h-${id}`} className="scroll-mt-28">
-      <DistrictSwitch current={id} />
-      <h2 id={`h-${id}`} className="mt-5 font-serif text-2xl font-bold">{d.label}</h2>
-      <p className="mt-1 text-sm text-black/75">
-        Kinatawan ng distrito: {r.name} ({r.bill_count} panukalang batas).{" "}
-        <a className="font-medium text-fiesta-blue underline" href={r.profile_url} rel="noopener noreferrer" target="_blank">Opisyal na profile sa House</a>
-      </p>
-      {d.offices.map((o) => <OfficeBlock key={o.id} o={o} />)}
-      <p className="mt-6 text-sm"><a className="font-medium text-fiesta-blue underline" href={d.url} rel="noopener noreferrer" target="_blank">Tingnan ang buong detalye sa BetterGov Budget</a></p>
-    </section>
+    <>
+      {r.name} ({r.bill_count} panukalang batas).{" "}
+      <a className="font-medium text-fiesta-blue underline" href={r.profile_url} rel="noopener noreferrer" target="_blank">Opisyal na profile sa House</a>
+    </>
+  );
+}
+
+/** NEP and House bill totals of an office, side by side. Deliberately never summed. */
+export function VersionsPair({ o }: { o: Office }) {
+  const v = versions(o);
+  const f = o.fy2027;
+  const net = netChange(v.nep, v.house);
+  return (
+    <div>
+      <div className="grid grid-cols-2 gap-3">
+        <Side label="NEP (PANUKALA NG PANGULO)" value={v.nep} note={`${f.nep_records} proyekto`} />
+        <Side label="HOUSE BILL (3RD READING)" value={v.house} note={`${f.hgab3_records} proyekto, pinangalanan lang`} />
+      </div>
+      <p className="mt-2 text-sm">Pagkakaiba (House bill minus NEP): <b className="tabular-nums">{net == null ? DASH : `${net > 0 ? "+" : ""}${fmtPeso(net)}`}</b>. <span className="text-black/70">Pinaghahambing lang, hindi dinadagdag.</span></p>
+    </div>
+  );
+}
+
+/** Record card on the main page: one district, links to its detail page. */
+export function DistrictCard({ d, slug, h }: { d: District; slug: string; h: string }) {
+  return (
+    <article aria-labelledby={`h-${slug}`} className="flex flex-col rounded-2xl border border-black/10 bg-white p-5">
+      <h2 id={`h-${slug}`} className="font-serif text-xl font-bold">{d.label}</h2>
+      <p className="mt-1 text-sm text-black/75">Kinatawan: {repLink(d)}</p>
+      {d.offices.map((o) => (
+        <div key={o.id} className="mt-4">
+          <p className="mb-2 text-sm font-semibold">{o.name} <span className="font-normal text-black/70">· FY2027, dalawang bersyon ng iisang budget</span></p>
+          <VersionsPair o={o} />
+        </div>
+      ))}
+      <Link href={`/badyet/${slug}`} className="mt-5 inline-flex min-h-11 items-center self-start rounded-full bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue">Buksan ang {h}</Link>
+    </article>
+  );
+}
+
+const GROUPS: [string, string][] = [
+  ["Nasa House bill lang", "Proyektong lumabas sa House bill na hindi nahanap sa NEP (\"insertion candidate\"): posibleng bago, o posibleng hindi lang natugma sa pangalan. Kandidato lang para sa paghahambing, hindi paratang."],
+  ["Nasa NEP lang", "Proyektong nasa NEP na hindi nahanap sa House bill (\"deletion candidate\"). Kandidato lang para sa paghahambing, hindi paratang."],
+  ["Pareho", "Magkatugmang proyekto na walang pagbabago sa halaga."],
+  ["Tumaas / bumaba sa House bill", "Magkatugmang proyekto na iba ang halaga. Ang ipinapakita ay ang dagdag o bawas."],
+  ["Ibang bahagi ng parehong kalsada", "Hindi binibilang na pagbabago."],
+  ["Unconfirmed", "Hindi tiyak ang pagtutugma ng proyekto (malabo o dalawa ang posibleng tugma). Kasama ito sa \"nasa House bill lang\" at laging ipinapakita nang hiwalay."],
+];
+
+/** Full notes and disclaimers; shown inside an Accordion, the one-line version stays visible above it. */
+export function BadyetNotes({ districts }: { districts: District[] }) {
+  const { meta, disclaimers } = getBadyet();
+  return (
+    <div className="space-y-5">
+      <ul className="list-disc space-y-1 pl-5">
+        <li>Ang mga halaga ay ayon sa nakalathala sa mga dokumento. <b>Hindi ito ang nagastos.</b></li>
+        <li>Ang <b>NEP</b> (panukala ng Pangulo) at ang <b>House bill</b> ay dalawang bersyon ng <b>iisang</b> budget. Pinaghahambing ang mga ito, <b>hindi pinagsasama</b>.</li>
+        <li>Ang &quot;-&quot; ay walang datos, hindi zero.</li>
+        <li>Ang &quot;nasa House bill lang&quot; at &quot;nasa NEP lang&quot; ay kandidato para sa paghahambing, hindi natuklasang paglabag, at <b>hindi paratang</b> laban sa sinumang opisina o opisyal.</li>
+        <li>Ang House bill ay mga pinangalanang proyekto lang, kaya ang paghahambing ay sa parehong hanay ng proyekto.</li>
+        <li>Ang pagbanggit sa kinatawan ay para mahanap ang distrito. Hindi nito sinasabing humiling o nagkontrol siya ng anumang proyekto o halaga.</li>
+      </ul>
+      <div>
+        <p className="font-semibold">Ano ang ibig sabihin ng mga grupo</p>
+        <dl className="mt-2 space-y-2">{GROUPS.map(([t, b]) => <div key={t}><dt className="font-medium">{t}</dt><dd className="text-black/70">{b}</dd></div>)}</dl>
+      </div>
+      <div className="space-y-3">{districts.map((d) => <OfficeNotes key={d.id} d={d} />)}</div>
+      <div className="space-y-2 text-xs text-black/70">
+        <p className="font-semibold text-black/85">Paalala mula sa pinagmulan (orihinal, sa English)</p>
+        <p>{meta.notice}</p>
+        {disclaimers.map((x) => <p key={x.title}><b>{x.title}</b> {x.body} <a className="underline" href={x.url} rel="noopener">Basahin</a></p>)}
+        <p>{meta.representatives_note}</p>
+        <p>Tala sa mga opisina: iniuugnay lang ng mapa ng DEO ang opisina sa distrito. Para sa dalawang distritong ito, bawat opisina ay naglilingkod sa isang distrito lang (&quot;lone&quot;). Ang bahagi ng budget ng DPWH na nasa Central Office, regional office, o walang tugmang opisina ay wala sa alinmang distrito sa ibaba, kaya hindi sinasaklaw ng pahinang ito ang buong DPWH budget.</p>
+      </div>
+    </div>
   );
 }

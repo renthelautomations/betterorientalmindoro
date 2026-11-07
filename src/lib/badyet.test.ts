@@ -73,3 +73,14 @@ describe("proportionSegments", () => {
     expect(proportionSegments(empty).every((x) => x.pct === 0)).toBe(true);
   });
 });
+
+describe("districtBySlug", () => {
+  it("maps 1st/2nd to the district ids and rejects the rest", async () => {
+    const { districtBySlug, DISTRICT_SLUGS } = await import("./badyet");
+    expect(DISTRICT_SLUGS).toEqual(["1st", "2nd"]);
+    expect(districtBySlug("1st")?.id).toBe("leg:oriental-mindoro:1st");
+    expect(districtBySlug("2nd")?.id).toBe("leg:oriental-mindoro:2nd");
+    expect(districtBySlug("3rd")).toBeUndefined();
+    expect(districtBySlug("constructor")).toBeUndefined();
+  });
+});
