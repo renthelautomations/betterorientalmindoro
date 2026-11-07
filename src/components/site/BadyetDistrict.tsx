@@ -59,16 +59,18 @@ export function ProportionBar({ o }: { o: Office }) {
 export function GaaBars({ o }: { o: Office }) {
   const ys = gaaYears(o);
   const max = Math.max(...ys.map((y) => y.php ?? 0), 1);
-  const row = (y: (typeof ys)[number]) => (
-    <li key={y.fy} className="flex items-center gap-2 text-sm">
-      <span className="w-10 shrink-0 tabular-nums text-black/70">{y.fy}</span>
-      <span className="h-3 min-w-0 flex-1 rounded-sm bg-black/5" aria-hidden><span className="block h-3 rounded-sm bg-fiesta-navy" style={{ width: `${((y.php ?? 0) / max) * 100}%` }} /></span>
-      <span className="w-20 shrink-0 text-right tabular-nums">{fmtPeso(y.php)}</span>
-    </li>
-  );
   return (
     <>
-      <ul className="space-y-1.5">{[...ys].reverse().map(row)}</ul>
+      {/* One shared scale for every year. A year with no data shows a dash and no bar, never a zero-height bar. */}
+      <ul className="flex h-52 items-stretch gap-1.5 rounded-2xl bg-[#f3f5f9] p-3 sm:gap-3 sm:p-4">
+        {ys.map((y) => (
+          <li key={y.fy} className="flex min-w-0 flex-1 flex-col items-center justify-end gap-1 text-center">
+            <span className={`text-[11px] font-semibold tabular-nums sm:text-xs ${y.php == null ? "text-black/65" : "text-fiesta-navy"}`}>{fmtPeso(y.php)}</span>
+            {y.php != null && <span aria-hidden className="w-full max-w-12 rounded-t-md bg-fiesta-navy" style={{ height: `${Math.max((y.php / max) * 100, 2) * 0.62}%` }} />}
+            <span className="border-t border-black/15 pt-1 text-xs tabular-nums text-black/75">{y.fy}</span>
+          </li>
+        ))}
+      </ul>
       {o.by_congress.length > 0 && (
         <ul className="mt-4 space-y-0.5 text-xs text-black/70">
           {o.by_congress.map((c) => <li key={c.congress}><R k="finance.cong" v={[c.congress, c.years_counted.join(", "), fmtPeso(c.gaa_php)]} /></li>)}
