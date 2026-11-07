@@ -19,7 +19,7 @@ export default function ProjectRow({ id, title, bayan, year, status, cost, categ
           {year && <span className="tabular-nums">{year}</span>}
           {d.segments > 1 && <span>{d.segments} <T k="proyekto.segments" /></span>}
         </p>
-        {d.headline && <p className="mt-1.5 line-clamp-1 text-xs text-black/55">{full}</p>}
+        {d.headline && <p className="mt-1.5 text-xs text-black/55">{full}</p>}
       </div>
       <div className="w-24 shrink-0 text-right sm:w-32">
         <p className="font-serif text-lg font-bold tabular-nums text-fiesta-navy sm:text-xl">{cost != null ? pesoShort(cost) : "–"}</p>

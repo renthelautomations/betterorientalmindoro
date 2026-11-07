@@ -141,4 +141,5 @@ export const DYN = {
   "dyn.viz.cand": ["How many ran for mayor", "Ilan ang tumakbo sa pagka-mayor"],
   "dyn.viz.contested": ["contested", "may kalaban"],
   "dyn.viz.uncontested": ["uncontested", "walang kalaban"],
+  "dyn.hotline.go": ["Go", "Hanapin"],
 } as const satisfies Record<string, readonly [string, string]>;
