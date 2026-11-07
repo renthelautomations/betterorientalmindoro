@@ -9,7 +9,7 @@ const CIVIC: { label: string; href?: string }[] = [
   { label: "Proyekto", href: "/proyekto" },
   { label: "Estatistika", href: "/estatistika" },
   { label: "Dinastiya", href: "/dynasties" },
-  { label: "Badyet" },
+  { label: "Badyet", href: "/badyet" },
 ];
 
 export default function Home() {
