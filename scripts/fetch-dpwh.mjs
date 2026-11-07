@@ -23,7 +23,8 @@ const inRing = (x, y, r) => { let c = false; for (let i = 0, j = r.length - 1; i
 const inPoly = (x, y, p) => inRing(x, y, p[0]) && !p.slice(1).some((h) => inRing(x, y, h));
 const find = (x, y) => areas.find((a) => a.polys.some((p) => inPoly(x, y, p)))?.slug;
 
-const rows = await parquetReadObjects({ file: await asyncBufferFromFile(TMP), columns: ["contractId", "description", "category", "status", "budget", "location", "latitude", "longitude", "infraYear"] });
+const rows = await parquetReadObjects({ file: await asyncBufferFromFile(TMP), columns: ["contractId", "description", "category", "status", "budget", "location", "latitude", "longitude", "infraYear", "startDate", "completionDate", "contractor"] });
+const day = (d) => (d instanceof Date && !isNaN(d) ? d.toISOString().slice(0, 10) : undefined);
 const out = [];
 for (const r of rows) {
   const hasXY = r.latitude != null && r.longitude != null;
@@ -31,7 +32,7 @@ for (const r of rows) {
   const deo = r.location?.province === "Mindoro Oriental DEO";
   if (!xy && !deo) continue; // not ours
   const { municipality, uncertain } = assignTown({ xy, title: titleTown(r.description), deo });
-  out.push({ id: String(r.contractId), title: String(r.description).trim(), municipality, uncertain: uncertain || undefined, cost: r.budget ?? undefined, status: r.status ?? undefined, year: r.infraYear ? Number(r.infraYear) : undefined, category: r.category ?? undefined });
+  out.push({ id: String(r.contractId), title: String(r.description).trim(), municipality, uncertain: uncertain || undefined, cost: r.budget ?? undefined, status: r.status ?? undefined, year: r.infraYear ? Number(r.infraYear) : undefined, category: r.category ?? undefined, lat: hasXY ? r.latitude : undefined, lon: hasXY ? r.longitude : undefined, start: day(r.startDate), end: day(r.completionDate), contractor: r.contractor ? String(r.contractor).replace(/\s*\(\d+\)\s*$/, "").trim() : undefined });
 }
 // ids are not guaranteed unique in the source; keep the first of each
 const seen = new Set();

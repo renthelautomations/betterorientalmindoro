@@ -15,6 +15,18 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-serif: var(--font-fraunces);
+
+  /* Fiesta palette: use as bg-fiesta-blue, text-fiesta-navy, ring-fiesta-orange ... */
+  --color-fiesta-orange: #e8552d;
+  --color-fiesta-blue: #2b4fa3;
+  --color-fiesta-green: #3aa65b;
+  --color-fiesta-yellow: #f4b92e;
+  --color-fiesta-pink: #f4a3c0;
+  --color-fiesta-navy: #1b2a4a;
+  --color-fiesta-sky: #4aa3d8;
+  --color-fiesta-red: #d2402f;
+  --color-fiesta-mint: #dcefe8;
+  --color-fiesta-cream: #fbf7f0;
 }
 
 body {
@@ -24,3 +36,27 @@ body {
 }
 
 a:focus-visible, button:focus-visible { outline: 3px solid var(--na); outline-offset: 2px; }
+
+/* Chart entrance animations: driven by scroll position, no JS. Browsers without
+   animation-timeline simply show the finished chart. */
+@keyframes kit-grow { from { transform: scaleX(0); } }
+@keyframes kit-dash { from { stroke-dasharray: 0 400; } }
+@keyframes kit-draw { from { stroke-dashoffset: 1; } }
+@keyframes kit-fade { from { opacity: 0; } }
+.anim-draw { stroke-dasharray: 1; }
+@supports (animation-timeline: view()) {
+  .anim-grow, .anim-dash, .anim-draw, .anim-fade { animation-timing-function: ease-out; animation-fill-mode: both; animation-timeline: view(); animation-range: entry 5% cover 30%; }
+  .anim-grow { animation-name: kit-grow; transform-origin: left; }
+  .anim-dash { animation-name: kit-dash; }
+  .anim-draw { animation-name: kit-draw; }
+  .anim-fade { animation-name: kit-fade; }
+}
+@media (prefers-reduced-motion: reduce) { .anim-grow, .anim-dash, .anim-draw, .anim-fade { animation: none !important; } }
+
+/* Bird wings: each wing swings around the body. --flap and --delay vary per bird so a flock never beats in unison. */
+@keyframes bird-wing-r { from { transform: rotate(-30deg); } to { transform: rotate(26deg); } }
+@keyframes bird-wing-l { from { transform: rotate(30deg); } to { transform: rotate(-26deg); } }
+.bird-wing-r, .bird-wing-l { transform-box: view-box; transform-origin: 15px 8px; animation-duration: var(--flap, .7s); animation-delay: var(--delay, 0s); animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-direction: alternate; }
+.bird-wing-r { animation-name: bird-wing-r; }
+.bird-wing-l { animation-name: bird-wing-l; }
+@media (prefers-reduced-motion: reduce) { .bird-wing-r, .bird-wing-l { animation: none; } }
