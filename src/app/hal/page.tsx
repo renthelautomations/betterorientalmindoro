@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: ICONS.hal.name };
 
 export default function Page() {
   return (
-    <StoryPage icon="hal" pattern="peaks" scene={<HalconScroll />}>
+    <StoryPage icon="hal" scene={<HalconScroll />}>
       <WeatherNow />
     </StoryPage>
   );
