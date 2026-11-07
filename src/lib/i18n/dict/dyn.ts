@@ -140,6 +140,8 @@ export const DYN = {
   "dyn.grid.legend": ["Same surname as the previous election. Tap a name for the full record.", "Parehong apelyido sa nakaraang halalan. Pindutin ang pangalan para sa buong tala."],
   "dyn.sur.wins": ["{0} wins", "{0} panalo"],
   "dyn.sur.people": ["{0} people", "{0} tao"],
+  // surname card detail (Filipino drafts await native-speaker review)
+  "dyn.sur.byyear": ["Wins in each election", "Mga panalo sa bawat halalan"], "dyn.sur.bytown": ["Wins by town", "Mga panalo kada bayan"], "dyn.sur.bypeople": ["Who held the seats", "Sino ang humawak ng mga puwesto"],
   "dyn.sur.hide": ["Hide", "Itago"],
   "dyn.glance.h": ["AT A GLANCE", "SA ISANG TINGIN"],
   "dyn.town.reps": ["{0} repeated surnames", "{0} apelyidong paulit-ulit"],
