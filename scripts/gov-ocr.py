@@ -16,7 +16,7 @@ for kind in ["eo", "reports", "procurement"]:  # small sets first so their summa
     for it in json.load(open(os.path.join(os.path.dirname(__file__), "..", "src", "data", "gov", f"{kind}.json")))["items"]:
         items.append((kind, it))
 mine = [x for i, x in enumerate(items) if i % shards == shard]
-ocr = RapidOCR()
+ocr = RapidOCR(intra_op_num_threads=1, inter_op_num_threads=1)
 UA = "BetterOrientalMindoro-data-fetch (volunteer civic project)"
 done = 0
 for kind, it in mine:
