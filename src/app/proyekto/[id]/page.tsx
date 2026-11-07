@@ -53,7 +53,7 @@ export default async function ProjectRecord({ params }: PageProps<"/proyekto/[id
       <header className="relative isolate mt-5 overflow-hidden rounded-2xl text-white shadow-sm" style={{ background: look.color }}>
         <div className="relative h-16" aria-hidden><PatternFill variant={look.pattern} colors={["#fff"]} opacity={0.16} /></div>
         <div className="flex items-start gap-4 px-5 pb-6 pt-2 md:px-7">
-          <KitIcon name={iconFor(p.category)} variant="badge" color="#1b2a4a" className="-mt-10 h-14 w-14 shrink-0" />
+          <KitIcon name={iconFor(p.category)} variant="badge" color="#1b2a4a" className="relative z-10 -mt-10 h-14 w-14 shrink-0" />
           <div className="min-w-0">
             <h1 className="font-serif text-2xl font-bold leading-snug md:text-3xl">{head ?? title}</h1>
             {head && <p className="mt-2 text-sm text-white">{title}</p>}

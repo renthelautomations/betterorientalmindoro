@@ -31,7 +31,7 @@ export default function SvcDetail({ s }: { s: Service }) {
       <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
         <PatternStrip slug={s.category} />
         <div className="p-6 pt-0">
-          <span className="-mt-8 flex h-16 w-16 items-center justify-center rounded-full ring-4 ring-white" style={{ background: look.color }}><KitIcon name={CATEGORY_ICON[s.category] ?? "doc"} color="#fff" className="h-8 w-8" /></span>
+          <span className="relative z-10 -mt-8 flex h-16 w-16 items-center justify-center rounded-full ring-4 ring-white" style={{ background: look.color }}><KitIcon name={CATEGORY_ICON[s.category] ?? "doc"} color="#fff" className="h-8 w-8" /></span>
           <div className="mt-3 flex flex-wrap items-center gap-2">
             {cat && <span className="text-xs font-semibold tracking-widest text-black/65"><T k={`svc.cat.${s.category}`} /></span>}
             <Badge kind="wip"><T k="dyn.serbisyo.draft" /></Badge>
