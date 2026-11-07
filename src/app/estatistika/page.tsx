@@ -57,13 +57,7 @@ export default function Estatistika() {
                 <SplitSticky side={<Choropleth rows={data.map(({ r, v }) => ({ pcode: r.m.pcode, name: r.m.name, value: v, href: `/bayan/${r.m.slug}` }))} format={k.fmt} unit={k.label} />}>
                   <div>
                     <h3 className="mb-3 font-serif text-lg font-bold"><T k="finance.top" /> <span className="lowercase"><T k={k.label} /></span></h3>
-                    {ranked.length ? <BarChart rows={ranked.slice(0, 5)} format={k.fmt} /> : <p className="text-sm text-black/60"><T k="finance.nodata.p" /></p>}
-                    {ranked.length > 5 && (
-                      <details className="mt-4">
-                        <summary className="inline-flex min-h-11 cursor-pointer items-center text-sm font-semibold text-fiesta-blue underline underline-offset-2"><T k="finance.showall" /> ({ranked.length})</summary>
-                        <div className="mt-2"><BarChart rows={ranked} format={k.fmt} /></div>
-                      </details>
-                    )}
+                    {ranked.length ? <BarChart rows={ranked} format={k.fmt} /> : <p className="text-sm text-black/60"><T k="finance.nodata.p" /></p>}
                     {ranked.length < rows.length && <p className="mt-3 text-xs text-black/65"><R k={`finance.map.${rows.length - ranked.length === 1 ? "nd1" : "ndN"}`} v={[rows.length - ranked.length]} /></p>}
                   </div>
                 </SplitSticky>
@@ -74,16 +68,17 @@ export default function Estatistika() {
         <SourceNote><T k="finance.map.src" /></SourceNote>
       </section>
 
-      <section aria-labelledby="lago-h" className="mt-12">
+      <div className="mt-12 grid items-start gap-x-8 gap-y-12 lg:grid-cols-2">
+      <section aria-labelledby="lago-h" className="min-w-0">
         <h2 id="lago-h" className="text-sm font-semibold tracking-widest text-black/60"><R k="finance.growth.h" v={[prov.population[0]?.year, latest?.year]} /></h2>
-        <div className="mt-3 max-w-2xl"><LineChart series={[{ name: "town.province", points: prov.population.map((p) => ({ year: p.year, value: p.value })) }, ...rows.filter((r) => r.s).map((r) => ({ name: r.m.name, points: r.s!.population.map((p) => ({ year: p.year, value: p.value })) }))]} label="finance.show" /></div>
+        <div className="mt-3"><LineChart series={[{ name: "town.province", points: prov.population.map((p) => ({ year: p.year, value: p.value })) }, ...rows.filter((r) => r.s).map((r) => ({ name: r.m.name, points: r.s!.population.map((p) => ({ year: p.year, value: p.value })) }))]} label="finance.show" /></div>
         {g !== null && <p className="mt-2 text-sm text-black/70"><R k="finance.prov.growth" v={[prov.population[0].year, latest!.year]} /> <b>{g >= 0 ? "+" : ""}{fmtPct(g)}</b></p>}
         <SourceNote><R k="finance.growth.src" v={[<a key="w" className="underline" href={prov.wikidata}>Wikidata</a>, latest?.retrievedAt]} /></SourceNote>
       </section>
 
-      <section aria-labelledby="cmp-h" className="mt-12">
+      <section aria-labelledby="cmp-h" className="min-w-0">
         <h2 id="cmp-h" className="text-sm font-semibold tracking-widest text-black/60"><T k="finance.cmp.h" /></h2>
-        <div className="mt-3 max-w-3xl">
+        <div className="mt-3">
           <CompareTowns initial={["calapan-city", "baco"]} towns={rows.map((r) => ({ slug: r.m.slug, name: r.m.name }))} metrics={[
             { label: "metric.pop", values: Object.fromEntries(rows.map((r) => [r.m.slug, r.pop])) },
             { label: "metric.area", values: Object.fromEntries(rows.map((r) => [r.m.slug, r.m.areaKm2])) },
@@ -92,6 +87,7 @@ export default function Estatistika() {
         </div>
         <SourceNote><T k="finance.cmp.note" /></SourceNote>
       </section>
+      </div>
 
       <section aria-labelledby="rank-h" className="mt-12">
         <h2 id="rank-h" className="text-sm font-semibold tracking-widest text-black/60"><T k="finance.rank.h" /></h2>
