@@ -1,0 +1,59 @@
+import { describe, expect, it } from "vitest";
+import { fmtPeso, gaaYears, getDistrict, getDistricts, groupList, netChange, versions, type Office } from "./badyet";
+
+const g = (rows: number, php: number, unconfirmed_rows = 0, unconfirmed_php = 0) => ({ label: "x", sub: "y", rows, php, unconfirmed_rows, unconfirmed_php });
+const office = {
+  years: [
+    { fy: 2026, stage: "gaa", stage_label: "Enacted (GAA)", scope: "", php: 794496000 },
+    { fy: 2027, stage: "nep", stage_label: "NEP", scope: "", php: 887874000 },
+  ],
+  fy2027: {
+    nep_php: 852997000, hgab3_php: 1002997000, nep_records: 93, hgab3_records: 112, net_php: 150000000, unconfirmed_rows: 10, unconfirmed_php: 50000000, office_change: null,
+    groups: { house_only: g(40, 240000000, 10, 50000000), nep_only: g(21, 105000000), unchanged: g(70, 737997000), increased: g(2, 15000000), decreased: g(0, 0), scope_review: g(0, 0) },
+  },
+} as unknown as Office;
+
+describe("fmtPeso", () => {
+  it("formats M/B and dashes null", () => {
+    expect(fmtPeso(852997000)).toBe("₱853.00M");
+    expect(fmtPeso(2796380000)).toBe("₱2.80B");
+    expect(fmtPeso(null)).toBe("-");
+  });
+});
+
+describe("groups", () => {
+  it("reads rows, php and unconfirmed in a fixed order", () => {
+    const l = groupList(office);
+    expect(l.map((x) => x.key)).toEqual(["house_only", "nep_only", "unchanged", "increased", "decreased", "scope_review"]);
+    expect(l[0]).toMatchObject({ rows: 40, php: 240000000, unconfirmed_rows: 10, unconfirmed_php: 50000000 });
+  });
+});
+
+describe("versions", () => {
+  it("returns NEP and House separately, never a sum", () => {
+    const v = versions(office);
+    expect(v).toEqual({ nep: 852997000, house: 1002997000 });
+    expect(Object.keys(v)).not.toContain("total");
+  });
+});
+
+describe("netChange", () => {
+  it("is house minus nep only when both present", () => {
+    expect(netChange(10, 25)).toBe(15);
+    expect(netChange(null, 25)).toBeNull();
+    expect(netChange(10, null)).toBeNull();
+    expect(netChange(0, 0)).toBe(0);
+  });
+});
+
+describe("gaaYears", () => {
+  it("keeps only enacted years", () => expect(gaaYears(office).map((y) => y.fy)).toEqual([2026]));
+});
+
+describe("lookup", () => {
+  it("finds known and not unknown ids", () => {
+    expect(getDistricts()).toHaveLength(2);
+    expect(getDistrict("leg:oriental-mindoro:1st")?.offices[0].name).toBe("Mindoro Oriental DEO");
+    expect(getDistrict("leg:nope")).toBeUndefined();
+  });
+});
