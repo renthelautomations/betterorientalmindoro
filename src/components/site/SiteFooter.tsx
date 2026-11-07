@@ -43,7 +43,7 @@ export default function SiteFooter() {
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3"><FooterSocial /></div>
           <div className="mt-6 min-h-[4.5rem]"><VisitCounter /></div>
         </div>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:flex sm:justify-between sm:gap-x-8">
           <Col title="foot.explore" links={NAV} />
           <Col title="foot.help" links={HELP} />
           <Col title="foot.data" links={FOOTER_SOURCES} external />
