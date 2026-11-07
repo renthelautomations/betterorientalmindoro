@@ -4,6 +4,7 @@ import Logo from "./Logo";
 // Add a route here and it appears in the header; the nav wraps on narrow screens.
 export const NAV = [
   { href: "/bayan", label: "Bayan" },
+  { href: "/serbisyo", label: "Serbisyo" },
   { href: "/hotlines", label: "Hotlines" },
   { href: "/proyekto", label: "Proyekto" },
   { href: "/dynasties", label: "Dinastiya" },

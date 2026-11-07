@@ -4,6 +4,7 @@ import { ICON_KEYS, SITE } from "@/lib/brand";
 
 // Add { label, href } here to add a pill; omit href for a "coming soon" pill. Pills wrap.
 const CIVIC: { label: string; href?: string }[] = [
+  { label: "Serbisyo", href: "/serbisyo" },
   { label: "Hotlines", href: "/hotlines" },
   { label: "Proyekto", href: "/proyekto" },
   { label: "Dinastiya", href: "/dynasties" },
