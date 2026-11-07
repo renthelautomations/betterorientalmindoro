@@ -1,6 +1,11 @@
 // dyn interface strings: "area.thing": ["English", "Filipino"]. Data from sources stays as published.
 // {0}, {1} are filled by <TF> (counts, names, years stay outside the dictionary).
 export const DYN = {
+  "hot.search": ["Search hotlines", "Maghanap ng hotline"], "hot.search.ph": ["What do you need? Try fire, police, flood, or a town", "Ano ang kailangan mo? Subukan ang sunog, pulis, baha, o bayan"],
+  "hot.try": ["Quick picks:", "Mabilis na pili:"], "hot.q.fire": ["Fire", "Sunog"], "hot.q.police": ["Police", "Pulis"], "hot.q.flood": ["Flood or disaster", "Baha o sakuna"], "hot.q.sea": ["Sea or coast guard", "Dagat o coast guard"], "hot.q.gov": ["Governor's office", "Opisina ng gobernador"],
+  "hot.f.place": ["Place", "Lugar"], "hot.f.type": ["Type", "Uri"], "hot.f.office": ["Office", "Opisina"], "hot.f.any": ["All", "Lahat"],
+  "hot.off.drrm": ["Disaster response (DRRM)", "Disaster response (DRRM)"], "hot.off.police": ["Police", "Pulis"], "hot.off.fire": ["Fire (BFP)", "Bumbero (BFP)"], "hot.off.coastguard": ["Coast Guard", "Coast Guard"], "hot.off.governor": ["Governor's office", "Opisina ng Gobernador"], "hot.off.safety": ["Public safety", "Kaligtasan ng publiko"], "hot.off.other": ["Other", "Iba pa"],
+  "hot.found": ["numbers found", "numero ang nahanap"], "hot.reset": ["Clear all", "I-clear lahat"], "hot.none": ["No hotline matches. Try another word, or clear the filters.", "Walang tugmang hotline. Subukan ang ibang salita, o i-clear ang mga filter."],
   // shared
   "dyn.home": ["Home", "Home"],
   "dyn.and": ["and", "at"],
