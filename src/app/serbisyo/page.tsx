@@ -1,40 +1,63 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ServiceList from "@/components/services/ServiceList";
+import SiteSearch from "@/components/kit/SiteSearch";
+import { ServiceRow } from "@/components/kit/Parts";
+import PageHead from "@/components/site/PageHead";
+import { CATEGORY_ICON } from "@/components/site/ServiceLink";
+import { getSearchItems } from "@/lib/search-index";
 import { getCategories, getLifeEvents, getServices, servicesForEvent } from "@/lib/services";
 
 export const metadata: Metadata = { title: "Serbisyo", description: "Mga serbisyo ng gobyerno sa Oriental Mindoro: kailangan, bayad, hakbang at opisina, may source bawat isa." };
 
+const SHOWN = 5;
+const H2 = "mb-4 font-serif text-2xl font-bold";
+
 export default function Serbisyo() {
+  const cats = getCategories();
+  const row = (c: (typeof cats)[number]) => (
+    <li key={c.slug}>
+      <Link href={`/serbisyo/${c.slug}`} className="block rounded-xl">
+        <ServiceRow icon={CATEGORY_ICON[c.slug] ?? "doc"} title={c.name} sub={`${getServices(c.slug).length} serbisyo · ${c.blurb}`} />
+      </Link>
+    </li>
+  );
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="font-serif text-3xl font-bold md:text-4xl">Mga serbisyo</h1>
-      <p className="mt-2 text-black/70">Alamin kung ano ang kailangan, magkano, at saan pupunta. Bawat entry ay may link sa opisyal na source at petsa ng huling tingin.</p>
-      <p className="mt-2 text-sm text-black/60">Lahat ay <b>draft para sa review ng volunteers</b>. Kapag walang nakumpirmang detalye, nakasulat na &quot;Alamin sa opisina&quot;. Hindi ito opisyal na website ng gobyerno.</p>
+    <main className="mx-auto max-w-4xl px-4 pb-20 pt-8">
+      <PageHead crumbs={[{ label: "Home", href: "/" }, { label: "Serbisyo" }]} eyebrow="PARA SA BAYAN" title="Mga serbisyo">
+        <p>Alamin kung ano ang kailangan, magkano, at saan pupunta. Bawat entry ay may link sa opisyal na source at petsa ng huling tingin.</p>
+        <p className="text-sm text-black/70">Lahat ay <b>draft para sa review ng volunteers</b>. Kapag walang nakumpirmang detalye, nakasulat na &quot;Alamin sa opisina&quot;. Hindi ito opisyal na website ng gobyerno.</p>
+      </PageHead>
+      <div className="mt-8"><SiteSearch items={getSearchItems()} /></div>
 
-      <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">PUMILI NG KATEGORYA</h2>
-      <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {getCategories().map((c) => (
-          <li key={c.slug}>
-            <Link href={`/serbisyo/${c.slug}`} className="block h-full rounded-xl border border-black/10 bg-white p-4 hover:border-[var(--navy)]">
-              <span className="font-serif text-lg font-bold">{c.name}</span>
-              <span className="mt-1 block text-sm text-black/60">{c.blurb}</span>
-              <span className="mt-2 block text-xs text-black/65">{getServices(c.slug).length} serbisyo</span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <section aria-labelledby="events" className="mt-12">
+        <h2 id="events" className={H2}>Ano ang nangyayari sa buhay mo?</h2>
+        <ul className="grid gap-4 sm:grid-cols-2">
+          {getLifeEvents().map((e) => (
+            <li key={e.slug} className="rounded-2xl border border-black/10 bg-white p-5">
+              <h3 className="font-serif text-lg font-bold">{e.name}</h3>
+              <p className="text-sm text-black/65">{e.blurb}</p>
+              <ul className="mt-3 space-y-1">
+                {servicesForEvent(e.slug).map((s) => (
+                  <li key={s.id}><Link href={`/serbisyo/${s.category}/${s.id}`} className="inline-flex min-h-11 items-center text-sm font-medium text-fiesta-blue underline">{s.title}</Link></li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-      <h2 className="mt-12 text-sm font-semibold tracking-widest text-black/60">O PUMILI AYON SA PANGYAYARI SA BUHAY</h2>
-      <div className="mt-3 grid gap-6 md:grid-cols-2">
-        {getLifeEvents().map((e) => (
-          <section key={e.slug} aria-label={e.name}>
-            <h3 className="font-serif text-xl font-bold">{e.name}</h3>
-            <p className="mb-2 text-sm text-black/60">{e.blurb}</p>
-            <ServiceList rows={servicesForEvent(e.slug)} />
-          </section>
-        ))}
-      </div>
+      <section aria-labelledby="cats" className="mt-12">
+        <h2 id="cats" className={H2}>Pumili ng kategorya</h2>
+        <ul className="space-y-3">{cats.slice(0, SHOWN).map(row)}</ul>
+        {cats.length > SHOWN && (
+          <details className="group mt-3">
+            <summary className="inline-flex min-h-11 cursor-pointer items-center rounded-lg border-2 border-fiesta-navy/20 px-4 text-sm font-semibold hover:border-fiesta-navy">
+              <span className="group-open:hidden">Tingnan lahat ({cats.length})</span><span className="hidden group-open:inline">Itago</span>
+            </summary>
+            <ul className="mt-3 space-y-3">{cats.slice(SHOWN).map(row)}</ul>
+          </details>
+        )}
+      </section>
     </main>
   );
 }
