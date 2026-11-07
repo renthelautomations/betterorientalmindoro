@@ -41,7 +41,7 @@ The story and tagline of the site is **MaHalTaNa**, the four icons of the provin
 Requires Node.js 22 or newer.
 
 ```bash
-npm install --legacy-peer-deps   # vitest's peer range conflicts with @types/node 20
+npm install
 cp .env.example .env.local        # fill in only what you need (see below)
 npm run dev                       # http://localhost:3000
 ```
