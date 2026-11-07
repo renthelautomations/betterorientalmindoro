@@ -1,3 +1,4 @@
+import TownEmblem from "@/components/kit/TownEmblem";
 import SplitSticky from "@/components/site/SplitSticky";
 import { Suspense } from "react";
 import type { Metadata } from "next";
@@ -36,13 +37,13 @@ async function Body({ searchParams }: { searchParams: Promise<{ bayan?: string |
   const towns = getMunicipalities();
   const town = towns.find((m) => m.slug === bayan);
   const { local, province } = hotlinesForBayan(town?.slug);
-  const pill = (active: boolean) => `inline-flex min-h-11 items-center rounded-full px-4 text-sm font-semibold lg:w-full lg:rounded-xl ${active ? "bg-fiesta-navy text-white" : "border-2 border-fiesta-navy/20 hover:border-fiesta-navy"}`;
+  const pill = (active: boolean) => `inline-flex min-h-11 items-center rounded-full pl-2.5 pr-4 text-sm font-semibold lg:w-full lg:rounded-xl ${active ? "bg-fiesta-navy text-white" : "border-2 border-fiesta-navy/20 hover:border-fiesta-navy"}`;
   return (
     <SplitSticky className="mt-8" side={<TNav label="dyn.hotline.pick">
         <p className="mb-3 text-sm font-semibold"><T k="dyn.hotline.pick" /></p>
         <ul className="flex flex-wrap gap-2 lg:max-h-[calc(100vh-14rem)] lg:flex-col lg:flex-nowrap lg:gap-1 lg:overflow-y-auto">
           <li><Link href="/hotlines" aria-current={!town ? "page" : undefined} className={pill(!town)}><T k="dyn.province" /></Link></li>
-          {towns.map((m) => <li key={m.slug}><Link href={`/hotlines?bayan=${m.slug}`} aria-current={town?.slug === m.slug ? "page" : undefined} className={pill(town?.slug === m.slug)}>{m.name}</Link></li>)}
+          {towns.map((m) => <li key={m.slug}><Link href={`/hotlines?bayan=${m.slug}`} aria-current={town?.slug === m.slug ? "page" : undefined} className={pill(town?.slug === m.slug)}><TownEmblem slug={m.slug} name="" className="mr-2 h-6 w-6 rounded-md" capital={m.slug === "calapan-city"} />{m.name}</Link></li>)}
         </ul>
       </TNav>}>
       <div className="space-y-10">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import TownGrid from "@/components/kit/TownGrid";
 import BayanHub from "@/components/site/BayanHub";
 import LinkChoropleth from "@/components/site/LinkChoropleth";
 import { BayanCrumbs, BayanTitle, BayanTable } from "@/components/site/BayanBits";
@@ -47,11 +48,7 @@ export default function Bayan() {
       </section>
 
       <h2 className="mt-14 text-sm font-semibold tracking-widest text-black/60"><T k="bayan.all" /></h2>
-      <ul className="mt-3 grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-5">
-        {list.map((m) => (
-          <li key={m.slug}><Link href={`/bayan/${m.slug}`} className="flex min-h-11 items-center rounded-lg border border-black/10 bg-white px-4 text-sm font-medium hover:border-black/30">{m.name}</Link></li>
-        ))}
-      </ul>
+      <div className="mt-4"><TownGrid towns={list.map((m) => ({ slug: m.slug, name: m.name, isCity: m.isCity, population: pop(m.slug) ?? null }))} /></div>
       <p className="mt-6 text-xs text-black/65"><T k="bayan.source" /></p>
     </main>
   );

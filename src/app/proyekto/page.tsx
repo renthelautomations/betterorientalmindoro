@@ -1,3 +1,4 @@
+import TownEmblem from "@/components/kit/TownEmblem";
 import SplitSticky from "@/components/site/SplitSticky";
 import BigDonut from "@/components/site/BigDonut";
 import { Suspense } from "react";
@@ -66,7 +67,7 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
       <p id={`g-${key}`} className="mb-2 text-xs font-semibold uppercase tracking-widest text-black/60"><T k={label} /></p>
       <div className="flex flex-wrap gap-2">
         <Chip href={link({ [key]: undefined })} on={!f[key]}><T k="proyekto.all" /></Chip>
-        {items.map((i) => <Chip key={i.v} href={link({ [key]: f[key] === i.v ? undefined : i.v })} on={f[key] === i.v}>{i.t}</Chip>)}
+        {items.map((i) => <Chip key={i.v} href={link({ [key]: f[key] === i.v ? undefined : i.v })} on={f[key] === i.v}>{key === "bayan" && <TownEmblem slug={i.v} name="" className="mr-2 -ml-1.5 h-6 w-6 rounded-md" capital={i.v === "calapan-city"} />}{i.t}</Chip>)}
       </div>
     </div>
   );

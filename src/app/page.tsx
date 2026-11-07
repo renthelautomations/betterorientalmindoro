@@ -1,4 +1,3 @@
-import CatRow from "@/components/site/CatRow";
 import Link from "next/link";
 import MapLoader from "@/components/MapLoader";
 import { Divider } from "@/components/kit/Motifs";
@@ -15,14 +14,15 @@ import { getMunicipalities } from "@/lib/municipalities";
 import { getHotlines } from "@/lib/hotlines";
 import { getProvinceStats, getStats, fmtInt } from "@/lib/stats";
 import { getProjectStats } from "@/lib/projects";
-import { getCategories } from "@/lib/services";
+import { getCategories, getServices } from "@/lib/services";
+import ServiceTile from "@/components/site/ServiceTile";
 
-const CAT_ICON: Record<string, KitIconName> = { certificates: "doc", business: "budget", social: "people", health: "health", taxation: "budget", agriculture: "farm" };
 const tel = (n: string) => "tel:" + n.replace(/[^\d+]/g, "");
 
 export default function Home() {
   const towns = getMunicipalities().map((m) => ({ ...m, pop: getStats(m.slug)?.population.at(-1)?.value ?? null }));
   const slugs = Object.fromEntries(towns.map((m) => [m.pcode, m.slug]));
+  const values = Object.fromEntries(towns.map((m) => [m.pcode, m.pop ?? 0]));
   const pop = getProvinceStats().population.at(-1);
   // Only numbers confirmed against the province's published list.
   const hotlineCount = getHotlines().length;
@@ -59,7 +59,7 @@ export default function Home() {
 
         <Landmark as="section" label="home.map.aria2" className="py-12">
           <SectionHeader eyebrow="home.map.eyebrow" title="home.map.h" color={FIESTA.blue} />
-          <div className="mt-6"><MapLoader slugs={slugs} /></div>
+          <div className="mt-6"><MapLoader slugs={slugs} values={values} /></div>
           <p className="mt-4 text-sm text-black/70">
             <T k="home.map.tap" /> <Link href="/bayan" className="inline-block py-2 font-semibold underline"><T k="home.map.list" /></Link>.
           </p>
@@ -81,8 +81,8 @@ export default function Home() {
 
         <Landmark as="section" label="home.services" className="pb-14">
           <SectionHeader eyebrow="home.svc.eyebrow" title="home.svc.h" color={FIESTA_DEEP.orange} />
-          <div className="mt-6 grid gap-3 md:grid-cols-2">
-            {getCategories().map((c, i) => <Link key={c.slug} href={`/serbisyo#${c.slug}`} className="block min-w-0"><CatRow slug={c.slug} icon={CAT_ICON[c.slug] ?? "doc"} color={[FIESTA.blue, FIESTA_DEEP.orange, FIESTA_DEEP.green, FIESTA.red][i % 4]} /></Link>)}
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {getCategories().map((c) => <ServiceTile key={c.slug} slug={c.slug} count={getServices(c.slug).length} href={`/serbisyo#${c.slug}`} />)}
           </div>
         </Landmark>
 

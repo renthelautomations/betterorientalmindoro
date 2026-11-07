@@ -10,10 +10,11 @@ import type { BayanSummary } from "@/lib/bayan";
 export default function BayanHub({ slugs, summaries }: { slugs: Record<string, string>; summaries: Record<string, BayanSummary> }) {
   const [sel, setSel] = useState<string | null>(null);
   const s = sel ? summaries[sel] : undefined;
+  const values = Object.fromEntries(Object.entries(slugs).map(([pc, slug]) => [pc, summaries[slug]?.population ?? 0]));
   const row = (k: string, v: string) => <div className="flex items-baseline justify-between gap-4 border-b border-black/10 py-2"><dt className="text-sm text-black/65"><T k={k} /></dt><dd className="font-serif text-xl font-bold tabular-nums text-fiesta-navy">{v}</dd></div>;
   return (
     <div className="grid gap-6 lg:grid-cols-[1.6fr_1fr]">
-      <div className="min-w-0"><MapLoader slugs={slugs} onSelect={setSel} selected={sel} /></div>
+      <div className="min-w-0"><MapLoader slugs={slugs} values={values} onSelect={setSel} selected={sel} /></div>
       <aside aria-live="polite" className="self-start rounded-2xl border border-black/10 bg-white p-5">
         {s ? (
           <>
