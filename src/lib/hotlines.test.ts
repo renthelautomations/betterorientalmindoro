@@ -33,3 +33,29 @@ describe("hotlines", () => {
     expect(hotlinesForBayan("not-a-town").local).toEqual([]);
   });
 });
+
+import { officeOf, searchHotlines } from "./hotlines";
+describe("smart search", () => {
+  const all = getHotlines();
+  const town = (s: string) => (s === "calapan-city" ? "Calapan City" : s);
+  it("office from name", () => {
+    expect(officeOf("Calapan City Police Station")).toBe("police");
+    expect(officeOf("BFP Calapan City")).toBe("fire");
+    expect(officeOf("Philippine Coast Guard - Calapan Station")).toBe("coastguard");
+    expect(officeOf("Calapan City DRRM Office")).toBe("drrm");
+  });
+  it("Filipino word finds the right office", () => {
+    expect(searchHotlines(all, "sunog", town).every((h) => officeOf(h.name) === "fire")).toBe(true);
+    expect(searchHotlines(all, "baha", town).length).toBeGreaterThan(0);
+  });
+  it("tolerates one typo and combines town + office", () => {
+    expect(searchHotlines(all, "polise", town).length).toBeGreaterThan(0);
+    const r = searchHotlines(all, "pulis calapan", town);
+    expect(r.length).toBeGreaterThan(0);
+    expect(r.every((h) => h.scope === "calapan-city")).toBe(true);
+  });
+  it("nonsense and empty give nothing", () => {
+    expect(searchHotlines(all, "zzzzqq", town)).toEqual([]);
+    expect(searchHotlines(all, "  ", town)).toEqual([]);
+  });
+});
