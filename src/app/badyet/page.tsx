@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DistrictCard, BadyetNotes } from "@/components/site/BadyetDistrict";
+import { DistrictCard, BadyetNotes, NoSpendBanner } from "@/components/site/BadyetDistrict";
 import SourceLink from "@/components/ui/SourceLink";
 import { SourceNote } from "@/components/stats/StatCard";
 import { Acc, Crumbs, R, Title } from "@/components/site/FinanceBits";
@@ -16,16 +16,14 @@ export default function Badyet() {
   const { meta } = getBadyet();
   const districts = getDistricts();
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <Crumbs items={[{ label: "finance.home", href: "/" }, { label: "nav.budget" }]} />
       <div className="mt-4"><Title eyebrow="finance.b.eyebrow" title="finance.b.title" /></div>
-      <p className="mt-4 max-w-2xl text-black/75">
-        <T k="finance.b.lead" />
-      </p>
-      <p className="mt-3 font-semibold"><T k="finance.nospend" /></p>
+      <p className="mt-4 max-w-3xl text-black/75"><T k="finance.b.lead" /></p>
+      <NoSpendBanner />
 
-      <div id="d1" className="mt-8 grid gap-5 md:grid-cols-2">
-        {districts.map((d, i) => <div key={d.id} id={i === 1 ? "d2" : undefined} className="scroll-mt-28"><DistrictCard d={d} slug={DISTRICT_SLUGS[i]} h={HEADS[i]} /></div>)}
+      <div id="d1" className="mt-6 grid gap-5 md:grid-cols-2 md:gap-6">
+        {districts.map((d, i) => <div key={d.id} id={i === 1 ? "d2" : undefined} className="scroll-mt-28 h-full"><DistrictCard d={d} slug={DISTRICT_SLUGS[i]} h={HEADS[i]} /></div>)}
       </div>
 
       <div className="mt-8"><Acc q="finance.notes.q"><BadyetNotes districts={districts} /></Acc></div>

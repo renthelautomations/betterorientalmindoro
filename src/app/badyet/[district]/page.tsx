@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BadyetNotes, GaaBars, NO_SPEND, ProportionBar, VersionsPair, repLink } from "@/components/site/BadyetDistrict";
+import { BadyetNotes, GaaBars, NO_SPEND, NoSpendBanner, ProportionBar, RepRow, VersionsPair } from "@/components/site/BadyetDistrict";
 import SourceLink from "@/components/ui/SourceLink";
 import { SourceNote } from "@/components/stats/StatCard";
 import { Acc, Crumbs, R, Title } from "@/components/site/FinanceBits";
@@ -26,8 +26,8 @@ export default async function BadyetDistrictPage({ params }: { params: Promise<{
     <main className="mx-auto max-w-4xl px-4 py-10">
       <Crumbs items={[{ label: "finance.home", href: "/" }, { label: "nav.budget", href: "/badyet" }, { label: d.label }]} />
       <div className="mt-4"><Title eyebrow="finance.b.eyebrow" title={d.label} /></div>
-      <p className="mt-3 text-sm text-black/75"><T k="finance.rep.d" /> {repLink(d)}</p>
-      <p className="mt-3 font-semibold"><T k="finance.nospend" /></p>
+      <div className="mt-4 max-w-xl"><RepRow d={d} /></div>
+      <NoSpendBanner />
 
       {d.offices.map((o) => (
         <section key={o.id} aria-label={o.name} className="mt-6 rounded-2xl border border-black/10 bg-white p-5">

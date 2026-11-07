@@ -37,6 +37,14 @@ export const versions = (o: Office) => ({ nep: o.fy2027.nep_php, house: o.fy2027
 export const netChange = (nep: number | null | undefined, house: number | null | undefined) =>
   typeof nep === "number" && typeof house === "number" ? house - nep : null;
 
+/** Bar widths (0-100) for two amounts on ONE shared scale: each is its share of the larger, so the bars compare and are never added. */
+export const shareScale = (nep: number | null | undefined, house: number | null | undefined) => {
+  const a = typeof nep === "number" && nep > 0 ? nep : 0;
+  const b = typeof house === "number" && house > 0 ? house : 0;
+  const max = Math.max(a, b);
+  return { nep: max ? (a / max) * 100 : 0, house: max ? (b / max) * 100 : 0 };
+};
+
 /** Display order of the proportion bar. Width = share of budget LINES (rows); pesos are shown as text only and never drive width. */
 export const BAR_ORDER = ["unchanged", "increased", "house_only", "nep_only", "decreased", "scope_review"] as const;
 export const proportionSegments = (o: Office) => {
