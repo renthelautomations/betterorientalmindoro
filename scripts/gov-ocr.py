@@ -12,7 +12,7 @@ root = os.environ.get("GOV_CACHE", os.path.join(os.path.dirname(__file__), "..",
 os.makedirs(f"{root}/pdfs", exist_ok=True); os.makedirs(f"{root}/ocr", exist_ok=True)
 MAXP = 120
 items = []
-for kind in ["procurement", "eo", "reports"]:
+for kind in ["eo", "reports", "procurement"]:  # small sets first so their summaries can start early
     for it in json.load(open(os.path.join(os.path.dirname(__file__), "..", "src", "data", "gov", f"{kind}.json")))["items"]:
         items.append((kind, it))
 mine = [x for i, x in enumerate(items) if i % shards == shard]
