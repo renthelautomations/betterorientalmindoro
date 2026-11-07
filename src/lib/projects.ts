@@ -34,3 +34,26 @@ const tally = (vals: (string | number | undefined)[]) => {
 export const countsByYear = (rows: Project[]): [number, number][] => (tally(rows.map((p) => p.year)) as [number, number][]).sort((a, b) => a[0] - b[0]);
 /** [status, count] most common first; rows without a status are left out. */
 export const countsByStatus = (rows: Project[]): [string, number][] => (tally(rows.map((p) => p.status)) as [string, number][]).sort((a, b) => b[1] - a[1]);
+
+const KEEP = new Set(["RC", "DPWH", "GAA", "PCCP", "MPB", "RWCS", "CSR", "NHS", "BIP", "ICT", "DEO", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII"]);
+/** ALL-CAPS engineering title to sentence case. Tokens with digits (K0103+000, B00048MR), known abbreviations and dotted initials stay as they are. */
+export function cleanTitle(title: string): string {
+  const out = title.replace(/[A-Za-z0-9+.]+/g, (t) => (/\d/.test(t) || KEEP.has(t) || /^([A-Z]\.){2,}$/.test(t) ? t : t.toLowerCase()));
+  return out.charAt(0).toUpperCase() + out.slice(1);
+}
+
+/** The n most common categories, most common first. */
+export const topCategories = (rows: Project[], n: number): string[] =>
+  tally(rows.map((p) => p.category)).sort((a, b) => b[1] - a[1]).slice(0, n).map(([c]) => String(c));
+
+/** Hub URL for a filter state; empty values and page 1 are left out. Key order is fixed. */
+export function hubHref(f: { bayan?: string; taon?: string; katayuan?: string; kategorya?: string; q?: string; page?: number }): string {
+  const sp = new URLSearchParams();
+  for (const k of ["bayan", "taon", "katayuan", "kategorya", "q"] as const) if (f[k]) sp.set(k, f[k]);
+  if (f.page && f.page > 1) sp.set("page", String(f.page));
+  const s = sp.toString();
+  return s ? `/proyekto?${s}` : "/proyekto";
+}
+
+/** Whole days between two YYYY-MM-DD dates. */
+export const durationDays = (start: string, end: string): number => Math.round((Date.parse(end) - Date.parse(start)) / 86_400_000);
