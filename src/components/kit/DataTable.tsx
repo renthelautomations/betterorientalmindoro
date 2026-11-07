@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import { useT } from "./i18n";
+import { useT } from "@/lib/i18n/i18n";
 
 export type Col<T> = { key: keyof T & string; label: string; align?: "left" | "right"; format?: "int" | "peso" | "spark" }; // a name, not a function: server pages cannot pass functions to client components
 

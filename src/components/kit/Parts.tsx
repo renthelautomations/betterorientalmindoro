@@ -1,5 +1,5 @@
 import KitIcon, { type KitIconName } from "./KitIcon";
-import { T } from "./i18n";
+import { T } from "@/lib/i18n/i18n";
 import { PatternFill, type PatternKey } from "./Patterns";
 
 // ---- Buttons ----

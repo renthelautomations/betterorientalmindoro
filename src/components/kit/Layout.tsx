@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import KitIcon from "./KitIcon";
-import { T, LangToggle } from "./i18n";
+import { T, LangToggle } from "@/lib/i18n/i18n";
 import { Divider } from "./Motifs";
 
 /** Stand-in for the toggle while the real site header is still the old one: templates show it above the page. */

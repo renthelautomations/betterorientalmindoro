@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useT } from "./i18n";
+import { useT } from "@/lib/i18n/i18n";
 
 export type Metric = { label: string; unit?: "peso" | "pct"; values: Record<string, number | null> };
 const fmt = (n: number | null, unit?: string) => (n == null ? "-" : unit === "peso" ? `₱${n >= 1e9 ? (n / 1e9).toFixed(2) + "B" : n >= 1e6 ? (n / 1e6).toFixed(1) + "M" : Math.round(n).toLocaleString("en-PH")}` : unit === "pct" ? `${(n * 100).toFixed(1)}%` : Math.round(n).toLocaleString("en-PH"));

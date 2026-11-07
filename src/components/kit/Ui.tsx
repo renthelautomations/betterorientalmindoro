@@ -2,7 +2,7 @@ import Link from "next/link";
 import KitIcon from "./KitIcon";
 import { Halcon, Tamaraw } from "./Motifs";
 import { CopyButton } from "./Interactive";
-import { T } from "./i18n";
+import { T } from "@/lib/i18n/i18n";
 import { Badge } from "./Parts";
 
 const CYCLE = ["bg-fiesta-blue", "bg-fiesta-orange", "bg-fiesta-green", "bg-fiesta-red"];

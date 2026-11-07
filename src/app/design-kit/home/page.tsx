@@ -12,7 +12,7 @@ import { getHotlines } from "@/lib/hotlines";
 import { getProjectStats } from "@/lib/projects";
 import { getCategories, getServices } from "@/lib/services";
 import { SITE } from "@/lib/brand";
-import { T } from "@/components/kit/i18n";
+import { T } from "@/lib/i18n/i18n";
 import { DemoLangBar } from "@/components/kit/Layout";
 
 export const metadata: Metadata = { title: "Home template (draft)", robots: { index: false } };

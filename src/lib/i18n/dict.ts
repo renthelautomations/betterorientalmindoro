@@ -1,0 +1,11 @@
+// EN / FIL strings: the design kit's base dictionary plus one file per site area.
+// [English, Filipino]. Data content (service names, hotline names, officeholders, project titles) stays in its source language.
+import { BASE } from "./dict/base";
+import { HOME } from "./dict/home";
+import { BAYAN } from "./dict/bayan";
+import { PROYEKTO } from "./dict/proyekto";
+import { FINANCE } from "./dict/finance";
+import { DYN } from "./dict/dyn";
+
+export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN } as const satisfies Record<string, readonly [string, string]>;
+export type DictKey = keyof typeof DICT;

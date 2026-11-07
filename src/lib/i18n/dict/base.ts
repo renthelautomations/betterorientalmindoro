@@ -1,6 +1,6 @@
 // EN / FIL strings. Plain module (no "use client") so server components can read it too.
 // [English, Filipino]. Data content (service names, hotline names, officeholders) stays in its source language.
-export const DICT = {
+export const BASE = {
   "nav.towns": ["Towns", "Bayan"], "nav.services": ["Services", "Serbisyo"], "nav.hotlines": ["Hotlines", "Hotlines"], "nav.projects": ["Projects", "Proyekto"],
   "nav.stats": ["Statistics", "Estatistika"], "nav.budget": ["Budget", "Badyet"], "nav.dynasties": ["Dynasties", "Dinastiya"],
   "nav.sitemap": ["Sitemap", "Sitemap"], "nav.privacy": ["Privacy Policy", "Patakaran sa Privacy"], "nav.terms": ["Terms of Use", "Mga Tuntunin"], "nav.access": ["Accessibility", "Accessibility"], "nav.faq": ["FAQ", "FAQ"],
@@ -44,4 +44,3 @@ export const DICT = {
   "scene.na.2.h": ["Rich in birds and aquatic life", "Mayaman sa ibon at buhay-tubig"], "scene.na.2.p": ["Part of Naujan Lake National Park, a protected wetland.", "Bahagi ito ng Naujan Lake National Park, isang protektadong wetland."],
   "scene.na.3.h": ["Flood-prone", "Madaling bahain"], "scene.na.3.p": ["Check Project NOAH hazard maps before you travel or build.", "Tingnan ang hazard maps ng Project NOAH bago maglakbay o magtayo."],
 } as const satisfies Record<string, readonly [string, string]>;
-export type DictKey = keyof typeof DICT;

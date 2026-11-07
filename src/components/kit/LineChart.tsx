@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useT } from "./i18n";
+import { useT } from "@/lib/i18n/i18n";
 
 export type Series = { name: string; points: { year: number; value: number }[] };
 

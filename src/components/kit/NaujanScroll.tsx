@@ -4,7 +4,7 @@ import { Cloud, drift } from "./clouds";
 import { FIESTA as F, PatternFill } from "./Patterns";
 import { HalconShape } from "./shapes";
 import { useScrollProgress } from "./useScrollProgress";
-import { T } from "./i18n";
+import { T } from "@/lib/i18n/i18n";
 import Bird from "./Bird";
 
 const STEPS = [1, 2, 3].map((n) => ({ h: `scene.na.${n}.h`, p: `scene.na.${n}.p` }));

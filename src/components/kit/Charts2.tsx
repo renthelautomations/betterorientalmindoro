@@ -1,6 +1,6 @@
 import { FIESTA as F } from "./Patterns";
-import { T } from "./i18n";
-import { DICT } from "./dict";
+import { T } from "@/lib/i18n/i18n";
+import { DICT } from "@/lib/i18n/dict";
 
 const CYCLE = [F.blue, F.orange, F.green, F.yellow, F.sky, F.red, F.pink, F.navy];
 

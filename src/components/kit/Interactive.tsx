@@ -1,6 +1,6 @@
 "use client";
 import { useId, useRef, useState } from "react";
-import { T, useT } from "./i18n";
+import { T, useT } from "@/lib/i18n/i18n";
 
 /** ARIA tabs with arrow-key navigation. Panels come in as server-rendered nodes. */
 export function Tabs({ tabs }: { tabs: { id: string; label: string; badge?: string; panel: React.ReactNode }[] }) {

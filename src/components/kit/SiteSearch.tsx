@@ -1,7 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { useT } from "./i18n";
+import { useT } from "@/lib/i18n/i18n";
 
 export type SearchItem = { type: "bayan" | "serbisyo" | "hotline"; title: string; sub?: string; href: string };
 const BADGE = { bayan: "bg-fiesta-blue text-white", serbisyo: "bg-fiesta-green text-white", hotline: "bg-fiesta-red text-white" } as const;
