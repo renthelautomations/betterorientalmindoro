@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import DynNote from "@/components/site/DynNote";
 import DynSurnames from "@/components/site/DynSurnames";
 import { WinnersGrid } from "@/components/site/DynGrid";
+import WinnersViews from "@/components/site/WinnersViews";
 import { BayanCrumbs, BayanEmpty, BayanTitle } from "@/components/site/BayanBits";
 import { T } from "@/lib/i18n/i18n";
 import TownEmblem from "@/components/kit/TownEmblem";
@@ -20,7 +21,7 @@ import { fmtInt, fmtPct, fmtPeso, getProvinceStats, getStats, popGrowth } from "
 import { hotlinesForBayan } from "@/lib/hotlines";
 import ProjectRow from "@/components/site/ProjectRow";
 import { getProjects } from "@/lib/projects";
-import { getProvince, getTown, sharedSurnames } from "@/lib/dynasties";
+import { getProvince, getTown, sharedSurnames, surnameOf, titleCase, winnersGrid } from "@/lib/dynasties";
 
 export const generateStaticParams = () => getMunicipalities().map((m) => ({ slug: m.slug }));
 
@@ -97,7 +98,9 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
     { id: "halalan", label: "town.elections", panel: dyn ? (
       <div className="space-y-6">
         <DynNote />
-        <div><p className={h3}><T k="bayan.winners.h" /></p><WinnersGrid towns={[{ slug, name: m.name, contests: dyn.contests }]} years={years} caption={`Mga nanalong mayor at vice mayor ng ${m.name} ayon sa taon ng halalan`} /></div>
+        <div><p className={h3}><T k="bayan.winners.h" /></p>
+          <WinnersViews single years={years} table={<WinnersGrid towns={[{ slug, name: m.name, contests: dyn.contests }]} years={years} caption={`Mga nanalong mayor at vice mayor ng ${m.name} ayon sa taon ng halalan`} />}
+            towns={[{ slug, name: m.name, seats: winnersGrid(dyn.contests, years).rows.map((r) => ({ position: r.position, cells: r.cells.map((c) => ({ year: c.year, surname: c.winners[0] ? titleCase(surnameOf(c.winners[0].ballot) || c.winners[0].name) : null, full: c.winners.map((w) => titleCase(w.name)).join(", ") })) })) }]} /></div>
         <div><p className={h3}><T k="bayan.surnames.h" /></p><DynSurnames rows={surnames} towns={[dyn]} names={{ [slug]: m.name }} /></div>
         <Link href={`/dynasties/${slug}`} className={link}><T k="bayan.fullelect" /> {m.name} →</Link>
       </div>

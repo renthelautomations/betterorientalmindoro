@@ -15,7 +15,7 @@ const TINT = ["bg-fiesta-blue/15", "bg-fiesta-orange/20", "bg-fiesta-green/20", 
 const VIEWS = [["towns", "dyn.view.towns"], ["year", "dyn.view.year"], ["table", "dyn.view.table"]] as const;
 
 /** Three ways to read the same winners: a card per town (runs of the same surname), one election at a time for every town, and the full table. All panels are in the page; the pills only choose which one is visible. */
-export default function WinnersViews({ towns, years, table }: { towns: TownSeats[]; years: number[]; table: ReactNode }) {
+export default function WinnersViews({ towns, years, table, single = false }: { towns: TownSeats[]; years: number[]; table: ReactNode; single?: boolean }) {
   const t = useT();
   const [view, setView] = useState<(typeof VIEWS)[number][0]>("towns");
   const [year, setYear] = useState(years.at(-1) ?? years[0]);
@@ -23,11 +23,11 @@ export default function WinnersViews({ towns, years, table }: { towns: TownSeats
   return (
     <div>
       <div role="group" aria-label={t("dyn.view.label")} className="inline-flex flex-wrap rounded-full bg-fiesta-navy/5 p-0.5">
-        {VIEWS.map(([v, k]) => <button key={v} type="button" aria-pressed={view === v} onClick={() => setView(v)} className={pill(view === v)}>{t(k)}</button>)}
+        {VIEWS.filter(([v]) => !(single && v === "year")).map(([v, k]) => <button key={v} type="button" aria-pressed={view === v} onClick={() => setView(v)} className={pill(view === v)}>{t(k)}</button>)}
       </div>
 
       <div hidden={view !== "towns"} className="mt-4">
-        <ul className="grid gap-4 sm:grid-cols-2">
+        <ul className={`grid gap-4 ${single ? "" : "sm:grid-cols-2"}`}>
           {towns.map((tw) => (
             <li key={tw.slug} className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5">
               <Link href={`/dynasties/${tw.slug}`} className="flex items-center gap-3 rounded-lg hover:text-fiesta-blue">
