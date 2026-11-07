@@ -65,17 +65,17 @@ export default function Home() {
         </section>
 
         <section aria-label="MaHalTaNa" className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          <Link href="/ma"><PillarCard short="Ma" name="Mangyan" blurb="Kultura at tradisyon." color={FIESTA.blue} pattern="dotblocks" /></Link>
-          <Link href="/hal"><PillarCard short="Hal" name="Mount Halcon" blurb="Ang bundok ng lalawigan." color={FIESTA_DEEP.green} pattern="peaks" /></Link>
-          <Link href="/ta"><PillarCard short="Ta" name="Tamaraw" blurb="Tanging sa Mindoro." color={FIESTA.red} pattern="horns" /></Link>
-          <Link href="/na"><PillarCard short="Na" name="Naujan Lake" blurb="Ang pinakamalaking lawa." color={FIESTA_DEEP.sky} pattern="wave" /></Link>
+          <Link href="/ma" className="block h-full"><PillarCard short="Ma" name="Mangyan" blurb="Kultura at tradisyon." color={FIESTA.blue} pattern="dotblocks" /></Link>
+          <Link href="/hal" className="block h-full"><PillarCard short="Hal" name="Mount Halcon" blurb="Ang bundok ng lalawigan." color={FIESTA_DEEP.green} pattern="peaks" /></Link>
+          <Link href="/ta" className="block h-full"><PillarCard short="Ta" name="Tamaraw" blurb="Tanging sa Mindoro." color={FIESTA.red} pattern="horns" /></Link>
+          <Link href="/na" className="block h-full"><PillarCard short="Na" name="Naujan Lake" blurb="Ang pinakamalaking lawa." color={FIESTA_DEEP.sky} pattern="wave" /></Link>
         </section>
 
         <section aria-label="Sa numero" className="grid gap-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
-          <Link href="/bayan"><StatCard label="BAYAN AT LUNGSOD" value={String(towns.length)} hint="Sa buong lalawigan. Tingnan ang Bayan" icon="pin" color={FIESTA.blue} /></Link>
-          <Link href="/estatistika"><StatCard label="POPULASYON" value={fmtInt(pop?.value)} hint={pop ? `Census ${pop.year}. Tingnan ang Estatistika` : "Tingnan ang Estatistika"} icon="people" color={FIESTA_DEEP.orange} /></Link>
-          <Link href="/hotlines"><StatCard label="HOTLINE" value={String(hotlineCount)} hint="Nakalista. Tingnan ang Hotlines" icon="phone" color={FIESTA.red} /></Link>
-          <Link href="/proyekto"><StatCard label="PROYEKTO NG DPWH" value={fmtInt(getProjectStats().total)} hint="Nakalista. Tingnan ang Proyekto" icon="road" color={FIESTA_DEEP.green} /></Link>
+          <Link href="/bayan" className="block h-full"><StatCard label="BAYAN AT LUNGSOD" value={String(towns.length)} hint="Sa buong lalawigan. Tingnan ang Bayan" icon="pin" color={FIESTA.blue} /></Link>
+          <Link href="/estatistika" className="block h-full"><StatCard label="POPULASYON" value={fmtInt(pop?.value)} hint={pop ? `Census ${pop.year}. Tingnan ang Estatistika` : "Tingnan ang Estatistika"} icon="people" color={FIESTA_DEEP.orange} /></Link>
+          <Link href="/hotlines" className="block h-full"><StatCard label="HOTLINE" value={String(hotlineCount)} hint="Nakalista. Tingnan ang Hotlines" icon="phone" color={FIESTA.red} /></Link>
+          <Link href="/proyekto" className="block h-full"><StatCard label="PROYEKTO NG DPWH" value={fmtInt(getProjectStats().total)} hint="Nakalista. Tingnan ang Proyekto" icon="road" color={FIESTA_DEEP.green} /></Link>
         </section>
 
         <section aria-label="Para sa bayan" className="pb-14">

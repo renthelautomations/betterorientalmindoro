@@ -38,7 +38,7 @@ export function SectionHeader({ eyebrow, title, color = "#b5532f", align = "left
 // ---- Cards ----
 export function PillarCard({ short, name, blurb, color, pattern }: { short: string; name: string; blurb: string; color: string; pattern: PatternKey }) {
   return (
-    <div className="relative isolate flex min-h-44 flex-col justify-between overflow-hidden rounded-2xl p-5 text-white" style={{ background: color }}>
+    <div className="relative isolate flex h-full min-h-44 flex-col justify-between overflow-hidden rounded-2xl p-5 text-white" style={{ background: color }}>
       <PatternFill variant={pattern} colors={["#fff"]} opacity={0.2} />
       <span className="font-serif text-4xl font-bold">{short}</span>
       <span><span className="block text-lg font-semibold">{name}</span><span className="mt-1 block text-sm leading-snug">{blurb}</span></span>
@@ -48,7 +48,7 @@ export function PillarCard({ short, name, blurb, color, pattern }: { short: stri
 
 export function StatCard({ label, value, hint, icon, color = "#1f7a8c" }: { label: string; value: string; hint: string; icon: KitIconName; color?: string }) {
   return (
-    <div className="rounded-2xl border border-black/10 bg-white p-5">
+    <div className="h-full rounded-2xl border border-black/10 bg-white p-5">
       <div className="flex items-center justify-between"><p className="text-xs font-semibold tracking-widest text-black/60"><T k={label} /></p><KitIcon name={icon} variant="duo" color={color} /></div>
       <p className="mt-3 font-serif text-4xl font-bold" style={{ color }}>{value}</p>
       <p className="mt-1 text-sm text-black/60"><T k={hint} /></p>
