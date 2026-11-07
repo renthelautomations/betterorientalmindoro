@@ -1,9 +1,10 @@
 "use client";
+import { Divider } from "@/components/kit/Motifs";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import MapLoader from "@/components/MapLoader";
 import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
-import { FIESTA, PatternFill } from "@/components/kit/Patterns";
+import { FIESTA } from "@/components/kit/Patterns";
 import Dropdown from "@/components/site/Dropdown";
 import { T, useT } from "@/lib/i18n/i18n";
 import { fmtInt } from "@/lib/stats";
@@ -30,7 +31,7 @@ export default function BayanHub({ slugs, summaries }: { slugs: Record<string, s
     <div className="grid gap-6 lg:grid-cols-[2fr_1fr]">
       <div className="min-w-0"><MapLoader slugs={slugs} values={values} onSelect={setSel} selected={sel} /></div>
       <aside aria-live="polite" className="flex flex-col self-stretch overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
-        <div className="relative h-4 shrink-0 bg-fiesta-mint"><PatternFill variant="mahaltana" colors={[FIESTA.orange, FIESTA.blue, FIESTA.green, FIESTA.pink]} /></div>
+        <Divider variant="mahaltana" />
         <div className="flex flex-1 flex-col p-5">
           <label htmlFor="bayan-jump" className="text-xs font-semibold tracking-widest text-black/65 uppercase"><T k="uxc.hub.jump" /></label>
           <Dropdown id="bayan-jump" className="mt-2" value={sel ?? ""} options={options} onChange={(v) => setSel(v || null)} />
