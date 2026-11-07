@@ -2,6 +2,7 @@ import Link from "next/link";
 import IconTile from "@/components/IconTile";
 import { ICON_KEYS, SITE } from "@/lib/brand";
 
+// Add { label, href } here to add a pill; omit href for a "coming soon" pill. Pills wrap.
 const CIVIC: { label: string; href?: string }[] = [
   { label: "Hotlines", href: "/hotlines" },
   { label: "Proyekto", href: "/proyekto" },
@@ -31,15 +32,15 @@ export default function Home() {
           {CIVIC.map((c) => (
             <li key={c.label}>
               {c.href ? (
-                <Link href={c.href} className="inline-block rounded-full border border-black/20 px-5 py-2 text-sm font-medium hover:bg-black/5">{c.label}</Link>
+                <Link href={c.href} className="inline-flex min-h-11 items-center rounded-full border border-black/20 px-5 text-sm font-medium hover:bg-black/5">{c.label}</Link>
               ) : (
-                <span className="inline-block rounded-full border border-dashed border-black/20 px-5 py-2 text-sm text-black/50">{c.label} · coming soon</span>
+                <span className="inline-flex min-h-11 items-center rounded-full border border-dashed border-black/20 px-5 text-sm text-black/65">{c.label} · coming soon</span>
               )}
             </li>
           ))}
         </ul>
         <p className="mt-6 text-sm text-black/60">
-          O tingnan ang <Link href="/bayan" className="underline">mapa ng 15 bayan at lungsod</Link>.
+          O tingnan ang <Link href="/bayan" className="inline-block py-2 underline">mapa ng 15 bayan at lungsod</Link>.
         </p>
       </section>
     </main>

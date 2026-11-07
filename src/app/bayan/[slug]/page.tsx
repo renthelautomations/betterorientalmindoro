@@ -37,7 +37,7 @@ export default async function MunicipalityPage({ params }: PageProps<"/bayan/[sl
       {projects.length ? (
         <>
           <p className="mt-2 text-sm text-black/70">{projects.length.toLocaleString()} proyekto ayon sa coordinates. Ipinapakita ang 10 pinakamalaki.</p>
-          <ul className="mt-3 space-y-2 text-sm">
+          <ul className="mt-3 space-y-2 break-words text-sm">
             {projects.slice(0, 10).map((p) => <li key={p.id}>{p.title}{p.cost ? ` (₱${Math.round(p.cost).toLocaleString("en-PH")})` : ""}</li>)}
           </ul>
         </>
@@ -47,7 +47,7 @@ export default async function MunicipalityPage({ params }: PageProps<"/bayan/[sl
       <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1 text-sm md:grid-cols-3">
         {barangays.map((b) => <li key={b}>{b}</li>)}
       </ul>
-      <p className="mt-6 text-xs text-black/50">Source: NAMRIA/PSA boundaries via BetterGov Open Data (MIT).</p>
+      <p className="mt-6 text-xs text-black/65">Source: NAMRIA/PSA boundaries via BetterGov Open Data (MIT).</p>
     </main>
   );
 }

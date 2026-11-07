@@ -13,7 +13,7 @@ const LINKS = [
 export default function Footer() {
   return (
     <footer className="mt-auto bg-[#1b2a4a] text-white/80">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-[2fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-[2fr_1fr] md:gap-16">
         <div>
           <Logo tone="light" />
           <p className="mt-6 font-semibold text-white">{SITE.tagline}</p>
@@ -22,13 +22,13 @@ export default function Footer() {
             representing the Oriental Mindoro provincial government or any LGU. 100% free, volunteer-run and community-based.
           </p>
           <p className="mt-4 text-sm font-semibold text-white">Cost to the People of Oriental Mindoro: ₱0</p>
-          <a href={SITE.github} className="mt-5 inline-block text-sm underline" rel="noopener">GitHub</a>
+          <a href={SITE.github} className="mt-4 inline-block py-2 text-sm underline" rel="noopener">GitHub</a>
         </div>
         <nav aria-label="Quick links">
           <h2 className="font-semibold text-white">Quick Links</h2>
-          <ul className="mt-3 space-y-2 text-sm">
+          <ul className="mt-3 text-sm">
             {LINKS.map((l) => (
-              <li key={l.href}><Link href={l.href} className="hover:underline">{l.label}</Link></li>
+              <li key={l.href}><Link href={l.href} className="inline-block py-1 hover:underline">{l.label}</Link></li>
             ))}
           </ul>
         </nav>

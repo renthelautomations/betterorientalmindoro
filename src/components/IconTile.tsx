@@ -12,7 +12,7 @@ export default function IconTile({ icon }: { icon: IconKey }) {
       <span className="font-serif text-4xl font-bold">{i.short}</span>
       <span>
         <span className="block text-lg font-semibold">{i.name}</span>
-        <span className="mt-1 block text-sm leading-snug text-white/90">{i.blurb}</span>
+        <span className="mt-1 block text-sm leading-snug text-white">{i.blurb}</span>
       </span>
     </Link>
   );
