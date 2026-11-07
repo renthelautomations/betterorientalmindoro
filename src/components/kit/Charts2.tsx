@@ -24,7 +24,7 @@ export function Donut({ slices, format, centerLabel }: { slices: Slice[]; format
       </svg>
       <ul className="space-y-1.5 text-sm">
         {slices.map((s, i) => (
-          <li key={s.label} className="flex items-center gap-2"><span className="h-3 w-3 rounded-sm" style={{ background: CYCLE[i % CYCLE.length] }} /><span>{s.label}</span><span className="ml-auto pl-4 tabular-nums text-black/70">{Math.round((s.value / total) * 100)}%</span></li>
+          <li key={s.label} className="flex items-center gap-2"><span className="h-3 w-3 rounded-sm" style={{ background: CYCLE[i % CYCLE.length] }} /><span><T k={s.label} /></span><span className="ml-auto pl-4 tabular-nums text-black/70">{Math.round((s.value / total) * 100)}%</span></li>
         ))}
       </ul>
     </div>

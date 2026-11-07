@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useT } from "@/lib/i18n/i18n";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -9,7 +10,8 @@ maplibregl.setWorkerUrl("/maplibre-gl-worker.mjs");
 export type Pt = { id: string; lat: number; lon: number };
 
 /** Project points as a circle layer over the municipality outlines. One point = a record pin (no click, zoomed in). */
-export default function ProjectMap({ points, label }: { points: Pt[]; label: string }) {
+export default function ProjectMap({ points, label, vars = {} }: { points: Pt[]; label: string; vars?: Record<string, string | number> }) {
+  const t = useT();
   const el = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const [failed, setFailed] = useState(false);
@@ -48,6 +50,6 @@ export default function ProjectMap({ points, label }: { points: Pt[]; label: str
     return () => map.remove();
   }, [points, single, router]);
 
-  if (failed) return <p className="rounded-2xl bg-black/5 p-6 text-sm text-black/70">Hindi ma-load ang mapa sa device na ito. Gamitin ang listahan sa ibaba.</p>;
-  return <div ref={el} role="img" aria-label={label} className={`w-full rounded-2xl ${single ? "h-64" : "h-80 lg:h-96"}`} />;
+  if (failed) return <p className="rounded-2xl bg-black/5 p-6 text-sm text-black/70">{t("proyekto.mapfail")}</p>;
+  return <div ref={el} role="img" aria-label={Object.entries(vars).reduce((a, [k, v]) => a.replace(`{${k}}`, String(v)), t(label))} className={`w-full rounded-2xl ${single ? "h-64" : "h-80 lg:h-96"}`} />;
 }
