@@ -1,24 +1,43 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PillarCard } from "@/components/kit/Parts";
-import PageTitle from "@/components/site/PageTitle";
+import { PillarCard, Badge } from "@/components/kit/Parts";
+import { Divider } from "@/components/kit/Motifs";
 import { Breadcrumbs } from "@/components/kit/Ui";
-import { ICONS, ICON_KEYS } from "@/lib/brand";
-import type { PatternKey } from "@/components/kit/Patterns";
+import PageTitle from "@/components/site/PageTitle";
+import { ICONS, ICON_KEYS, type IconKey } from "@/lib/brand";
+import { STORIES } from "@/lib/stories";
+import { FIESTA, FIESTA_DEEP, type PatternKey } from "@/components/kit/Patterns";
 
 export const metadata: Metadata = { title: "MaHalTaNa" };
-const PATTERN: Record<(typeof ICON_KEYS)[number], PatternKey> = { ma: "dotblocks", hal: "peaks", ta: "horns", na: "wave" };
+const COLOR: Record<IconKey, string> = { ma: FIESTA.blue, hal: FIESTA_DEEP.green, ta: FIESTA.red, na: FIESTA_DEEP.sky };
+const PATTERN: Record<IconKey, PatternKey> = { ma: "dotblocks", hal: "peaks", ta: "horns", na: "wave" };
 
 export default function MaHalTaNa() {
   return (
-    <main className="mx-auto max-w-6xl px-4 py-10">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "MaHalTaNa" }]} />
-      <div className="mt-4"><PageTitle eyebrow="MAHALTANA" title="Apat na haligi ng Oriental Mindoro" /></div>
-      <p className="mt-4 max-w-2xl text-black/70">Mangyan, Mount Halcon, Tamaraw at Naujan Lake: ang apat na simbolo ng ating lalawigan.</p>
-      <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <main>
+      <div className="mx-auto max-w-6xl px-4 pt-10">
+        <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "MaHalTaNa" }]} />
+        <div className="mt-4"><PageTitle eyebrow="MAHALTANA" title="Apat na haligi ng Oriental Mindoro" /></div>
+        <p className="mt-4 max-w-2xl text-black/70">Mangyan, Mount Halcon, Tamaraw at Naujan Lake: ang apat na simbolo ng ating lalawigan.</p>
+      </div>
+      <Divider variant="mahaltana" className="mt-8" />
+      <ul className="mx-auto grid max-w-6xl gap-6 px-4 py-12 md:grid-cols-2">
         {ICON_KEYS.map((k) => {
-          const i = ICONS[k];
-          return <li key={k}><Link href={`/${k}`} className="block rounded-2xl hover:shadow-md"><PillarCard short={i.short} name={i.name} blurb={i.blurb} color={i.color} pattern={PATTERN[k]} /></Link></li>;
+          const i = ICONS[k], s = STORIES[k];
+          return (
+            <li key={k} className="grid min-w-0 gap-4 rounded-2xl bg-white p-4 sm:grid-cols-[11rem_1fr]">
+              <Link href={`/${k}`} aria-hidden tabIndex={-1}><PillarCard short={i.short} name={i.name} blurb="" color={COLOR[k]} pattern={PATTERN[k]} /></Link>
+              <div className="min-w-0">
+                <h2 className="font-serif text-2xl font-bold">{i.name}</h2>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {k === "ma" && <Badge kind="soon">In preparation</Badge>}
+                  {s.draft && <Badge kind="wip">Draft: for volunteer review</Badge>}
+                </div>
+                <p className="mt-3 text-black/70">{i.blurb}</p>
+                <Link href={`/${k}`} className="mt-2 inline-block py-2 font-semibold underline">Basahin ang kuwento ng {i.name}</Link>
+              </div>
+            </li>
+          );
         })}
       </ul>
     </main>

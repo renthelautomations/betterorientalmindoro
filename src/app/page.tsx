@@ -2,23 +2,28 @@ import Link from "next/link";
 import MapLoader from "@/components/MapLoader";
 import { Divider } from "@/components/kit/Motifs";
 import PennantHero from "@/components/site/PennantHero";
-import { PillarCard, StatCard, Callout, SectionHeader } from "@/components/kit/Parts";
+import { PillarCard, StatCard, Callout, SectionHeader, ServiceRow } from "@/components/kit/Parts";
+import { BarChart, Choropleth } from "@/components/kit/Charts";
+import type { KitIconName } from "@/components/kit/KitIcon";
 import SiteSearch from "@/components/kit/SiteSearch";
-import { FIESTA } from "@/components/kit/Patterns";
+import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import { getSearchItems } from "@/lib/search-index";
 import { getMunicipalities } from "@/lib/municipalities";
 import { getHotlines } from "@/lib/hotlines";
-import { getProvinceStats, fmtInt } from "@/lib/stats";
+import { getProvinceStats, getStats, fmtInt } from "@/lib/stats";
 import { getProjectStats } from "@/lib/projects";
+import { getCategories } from "@/lib/services";
 import { SITE } from "@/lib/brand";
 
+const CAT_ICON: Record<string, KitIconName> = { certificates: "doc", business: "budget", social: "people", health: "health", taxation: "budget", agriculture: "farm" };
 const tel = (n: string) => "tel:" + n.replace(/[^\d+]/g, "");
 
 export default function Home() {
-  const towns = getMunicipalities();
+  const towns = getMunicipalities().map((m) => ({ ...m, pop: getStats(m.slug)?.population.at(-1)?.value ?? null }));
   const slugs = Object.fromEntries(towns.map((m) => [m.pcode, m.slug]));
   const pop = getProvinceStats().population.at(-1);
   // Only numbers confirmed against the province's published list.
+  const hotlineCount = getHotlines().length;
   const hotlines = getHotlines("province").filter((h) => h.confirmed && /^(Police|Fire|Public Safety)$|Operations and Warning/.test(h.name)).slice(0, 4);
   return (
     <main>
@@ -60,17 +65,30 @@ export default function Home() {
 
         <section aria-label="MaHalTaNa" className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <Link href="/ma"><PillarCard short="Ma" name="Mangyan" blurb="Kultura at tradisyon." color={FIESTA.blue} pattern="dotblocks" /></Link>
-          <Link href="/hal"><PillarCard short="Hal" name="Mount Halcon" blurb="Ang bundok ng lalawigan." color="#2d7d46" pattern="peaks" /></Link>
+          <Link href="/hal"><PillarCard short="Hal" name="Mount Halcon" blurb="Ang bundok ng lalawigan." color={FIESTA_DEEP.green} pattern="peaks" /></Link>
           <Link href="/ta"><PillarCard short="Ta" name="Tamaraw" blurb="Tanging sa Mindoro." color={FIESTA.red} pattern="horns" /></Link>
-          <Link href="/na"><PillarCard short="Na" name="Naujan Lake" blurb="Ang pinakamalaking lawa." color="#1f6f9c" pattern="wave" /></Link>
+          <Link href="/na"><PillarCard short="Na" name="Naujan Lake" blurb="Ang pinakamalaking lawa." color={FIESTA_DEEP.sky} pattern="wave" /></Link>
         </section>
 
-        <section aria-label="Sa numero" className="py-14">
-          <SectionHeader eyebrow="SA NUMERO" title="Ang lalawigan sa numero" color="#c2410c" />
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            <Link href="/estatistika"><StatCard label="POPULASYON" value={fmtInt(pop?.value)} hint={pop ? `Census ${pop.year}. Tingnan ang Estatistika` : "Tingnan ang Estatistika"} icon="people" color={FIESTA.blue} /></Link>
-            <Link href="/proyekto"><StatCard label="PROYEKTO NG DPWH" value={fmtInt(getProjectStats().total)} hint="Nakalista. Tingnan ang Proyekto" icon="road" color="#2d7d46" /></Link>
-            <Link href="/bayan"><StatCard label="BAYAN AT LUNGSOD" value={String(towns.length)} hint="Sa buong lalawigan. Tingnan ang Bayan" icon="pin" color="#c2410c" /></Link>
+        <section aria-label="Sa numero" className="grid gap-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
+          <Link href="/bayan"><StatCard label="BAYAN AT LUNGSOD" value={String(towns.length)} hint="Sa buong lalawigan. Tingnan ang Bayan" icon="pin" color={FIESTA.blue} /></Link>
+          <Link href="/estatistika"><StatCard label="POPULASYON" value={fmtInt(pop?.value)} hint={pop ? `Census ${pop.year}. Tingnan ang Estatistika` : "Tingnan ang Estatistika"} icon="people" color={FIESTA_DEEP.orange} /></Link>
+          <Link href="/hotlines"><StatCard label="HOTLINE" value={String(hotlineCount)} hint="Nakalista. Tingnan ang Hotlines" icon="phone" color={FIESTA.red} /></Link>
+          <Link href="/proyekto"><StatCard label="PROYEKTO NG DPWH" value={fmtInt(getProjectStats().total)} hint="Nakalista. Tingnan ang Proyekto" icon="road" color={FIESTA_DEEP.green} /></Link>
+        </section>
+
+        <section aria-label="Para sa bayan" className="pb-14">
+          <SectionHeader eyebrow="SERBISYO" title="Mga serbisyo para sa bayan" color={FIESTA_DEEP.orange} />
+          <div className="mt-6 grid gap-3 md:grid-cols-2">
+            {getCategories().map((c, i) => <Link key={c.slug} href="/serbisyo" className="block min-w-0"><ServiceRow icon={CAT_ICON[c.slug] ?? "doc"} title={c.name} sub={c.blurb} color={[FIESTA.blue, FIESTA_DEEP.orange, FIESTA_DEEP.green, FIESTA.red][i % 4]} /></Link>)}
+          </div>
+        </section>
+
+        <section aria-label="Populasyon" className="border-t border-black/10 py-14">
+          <SectionHeader eyebrow="POPULASYON" title="Populasyon ng bawat bayan" color={FIESTA.blue} />
+          <div className="mt-8 grid gap-10 md:grid-cols-2">
+            <BarChart rows={towns.filter((t) => t.pop != null).map((t) => ({ label: t.name, value: t.pop as number, href: `/bayan/${t.slug}` }))} format={fmtInt} />
+            <Choropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} unit="population" />
           </div>
         </section>
       </div>
