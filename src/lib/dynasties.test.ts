@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { getProvince, getTown, surnameOf, titleCase, sharedSurnames, provinceSurnames, winnersGrid, surnameHolders, type Contest } from "./dynasties";
+import { getProvince, getTown, surnameOf, titleCase, sharedSurnames, provinceSurnames, winnersGrid, surnameHolders, surnameNetwork, type Contest } from "./dynasties";
 import { getMunicipalities } from "./municipalities";
 
 const w = (id: string, ballot: string) => ({ id, name: ballot, ballot, party: "IND", votes: 1 });
@@ -81,4 +81,18 @@ describe("surnameHolders", () => {
     const rows = surnameHolders([t("x", c(2019, "MAYOR", w("a", "REYES, ANA"))), t("y", c(2022, "COUNCILOR", w("b", "REYES, BEN"), w("c", "CRUZ, CY")))], "REYES");
     expect(rows.map((r) => [r.town, r.year, r.position, r.id])).toEqual([["y", 2022, "COUNCILOR", "b"], ["x", 2019, "MAYOR", "a"]]);
   });
+});
+
+describe("surnameNetwork", () => {
+  const t = (slug: string, ...cs: Contest[]) => ({ slug, upstream: [], contests: cs });
+  const A = t("a", c(2022, "COUNCILOR", w("1", "REYES, A"), w("2", "REYES, B"), w("3", "SANTOS, C"), w("4", "SANTOS, D")));
+  const B = t("b", c(2022, "COUNCILOR", w("5", "REYES, E"), w("6", "REYES, F"), w("7", "SANTOS, G"), w("8", "SANTOS, H")));
+  const C = t("c", c(2022, "COUNCILOR", w("9", "REYES, I"), w("10", "REYES, J")));
+  const D = t("d", c(2022, "COUNCILOR", w("11", "REYES, K"), w("12", "LIM, L")));
+  it("links towns that each have a surname held by 2+ people; weight = shared surnames", () => {
+    const e = surnameNetwork([A, B, C, D]);
+    expect(e.find((x) => x.a === "a" && x.b === "b")).toMatchObject({ weight: 2, surnames: ["REYES", "SANTOS"] });
+    expect(e.find((x) => x.a === "a" && x.b === "c")).toMatchObject({ weight: 1, surnames: ["REYES"] });
+  });
+  it("one holder in a town does not link it", () => expect(surnameNetwork([A, D]).length).toBe(0));
 });

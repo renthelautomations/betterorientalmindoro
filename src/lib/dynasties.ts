@@ -91,3 +91,17 @@ export function surnameHolders(towns: Town[], surname: string): Holder[] {
       for (const win of c.winners) if (surnameOf(win.ballot) === surname) out.push({ town: t.slug, year: c.year, position: c.position, id: win.id, name: win.name });
   return out.sort((a, b) => b.year - a.year || a.town.localeCompare(b.town));
 }
+
+export type SurnameLink = { a: string; b: string; weight: number; surnames: string[] };
+
+/** Towns linked when both have a surname held by 2+ different people (per town). weight = number of shared surnames. Surname match only, never proof. */
+export function surnameNetwork(towns: Town[]): SurnameLink[] {
+  const per = towns.map((t) => ({ slug: t.slug, set: new Set(sharedSurnames(t.contests).map((r) => r.surname)) }));
+  const out: SurnameLink[] = [];
+  for (let i = 0; i < per.length; i++)
+    for (let j = i + 1; j < per.length; j++) {
+      const surnames = [...per[i].set].filter((s) => per[j].set.has(s)).sort();
+      if (surnames.length) out.push({ a: per[i].slug, b: per[j].slug, weight: surnames.length, surnames });
+    }
+  return out.sort((x, y) => y.weight - x.weight || x.a.localeCompare(y.a) || x.b.localeCompare(y.b));
+}

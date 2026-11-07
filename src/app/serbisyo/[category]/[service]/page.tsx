@@ -21,7 +21,7 @@ export default async function ServicePage({ params }: PageProps<"/serbisyo/[cate
   if (!s || !c) notFound();
   return (
     <main className="mx-auto max-w-4xl px-4 pb-20 pt-8">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Serbisyo", href: "/serbisyo" }, { label: c.name, href: `/serbisyo/${c.slug}` }, { label: s.title }]} />
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Serbisyo", href: "/serbisyo" }, { label: s.title }]} />
       <div className="mt-6"><ServiceDetail s={s} /></div>
     </main>
   );
