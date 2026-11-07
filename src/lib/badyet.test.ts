@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fmtPeso, gaaYears, getDistrict, getDistricts, groupList, netChange, proportionSegments, versions, type Office } from "./badyet";
+import { fmtPeso, gaaYears, getDistrict, getDistricts, groupList, netChange, proportionSegments, shareScale, versions, type Office } from "./badyet";
 
 const g = (rows: number, php: number, unconfirmed_rows = 0, unconfirmed_php = 0) => ({ label: "x", sub: "y", rows, php, unconfirmed_rows, unconfirmed_php });
 const office = {
@@ -82,5 +82,20 @@ describe("districtBySlug", () => {
     expect(districtBySlug("2nd")?.id).toBe("leg:oriental-mindoro:2nd");
     expect(districtBySlug("3rd")).toBeUndefined();
     expect(districtBySlug("constructor")).toBeUndefined();
+  });
+});
+
+describe("shareScale", () => {
+  it("scales both bars against the larger of the two, never a sum", () => {
+    expect(shareScale(500, 1000)).toEqual({ nep: 50, house: 100 });
+    expect(shareScale(1000, 500)).toEqual({ nep: 100, house: 50 });
+    expect(shareScale(300, 300)).toEqual({ nep: 100, house: 100 });
+    const s = shareScale(853, 1003);
+    expect(s.nep + s.house).toBeGreaterThan(100); // each bar is its own share of the max, not a split of a total
+  });
+  it("gives a missing or zero amount an empty bar", () => {
+    expect(shareScale(null, 800)).toEqual({ nep: 0, house: 100 });
+    expect(shareScale(null, null)).toEqual({ nep: 0, house: 0 });
+    expect(shareScale(0, 0)).toEqual({ nep: 0, house: 0 });
   });
 });

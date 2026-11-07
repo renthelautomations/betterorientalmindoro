@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { T } from "@/lib/i18n/i18n";
+import KitIcon from "@/components/kit/KitIcon";
+import SourceLink from "@/components/ui/SourceLink";
 import { R, SegBar } from "@/components/site/FinanceBits";
 import { plural } from "@/lib/i18n/plural";
-import { DASH, fmtPeso, gaaYears, getBadyet, netChange, proportionSegments, versions, type District, type Office } from "@/lib/badyet";
+import { DASH, fmtPeso, gaaYears, getBadyet, netChange, proportionSegments, shareScale, versions, type District, type Office } from "@/lib/badyet";
 
 const SEG: Record<string, { name: string; color: string; sign: string }> = {
   unchanged: { name: "finance.seg.unchanged", color: "#1b2a4a", sign: "" },
@@ -14,11 +16,12 @@ const SEG: Record<string, { name: string; color: string; sign: string }> = {
 };
 const STRIPES = "repeating-linear-gradient(45deg, rgba(255,255,255,.85) 0 3px, transparent 3px 6px)";
 
-export function Side({ label, value, note }: { label: string; value: number | null; note: React.ReactNode }) {
+export function Side({ label, sub, value, note }: { label: string; sub: string; value: number | null; note: React.ReactNode }) {
   return (
-    <div className="min-w-0 rounded-2xl border border-black/10 bg-white p-4">
-      <p className="text-xs font-semibold tracking-widest text-black/65"><T k={label} /></p>
-      <p className={`mt-2 font-serif text-2xl font-bold sm:text-3xl ${value == null ? "text-black/65" : "text-fiesta-navy"}`}>{fmtPeso(value)}</p>
+    <div className="min-w-0 rounded-2xl bg-[#f3f5f9] p-4">
+      <p className="text-sm font-bold text-fiesta-navy"><T k={label} /></p>
+      <p className="text-xs text-black/65"><T k={sub} /></p>
+      <p className={`mt-3 font-serif text-2xl font-bold tabular-nums sm:text-3xl ${value == null ? "text-black/65" : "text-fiesta-navy"}`}>{fmtPeso(value)}</p>
       <p className="mt-1 text-xs text-black/65">{note}</p>
     </div>
   );
@@ -104,12 +107,39 @@ export function OfficeNotes({ d }: { d: District }) {
 
 export const NO_SPEND = "Hindi ito ang nagastos. Hindi ito paratang.";
 
-export function repLink(d: District) {
+/** The visible honesty line, as a flat calm strip (no accent bar). */
+export function NoSpendBanner() {
+  return (
+    <div role="note" className="mt-5 flex items-center gap-3 rounded-2xl bg-[#e8f3f5] p-4">
+      <KitIcon name="shield" variant="badge" color="#1f7a8c" className="h-9 w-9 shrink-0" />
+      <p className="font-semibold"><T k="finance.nospend" /></p>
+    </div>
+  );
+}
+
+/** Representative shown neutrally: name, bills filed, and the official House profile. */
+export function RepRow({ d }: { d: District }) {
   const r = d.representative;
   return (
-    <>
-      <R k="finance.rep.line" v={[r.name, r.bill_count, <a key="p" className="font-medium text-fiesta-blue underline" href={r.profile_url} rel="noopener noreferrer" target="_blank"><T k="finance.rep.profile" /></a>]} />
-    </>
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-2xl border border-black/10 p-3">
+      <KitIcon name="people" variant="badge" color="#1b2a4a" className="h-9 w-9 shrink-0" />
+      <div className="min-w-0 flex-1 basis-40">
+        <p className="text-xs text-black/65"><T k="finance.rep" /></p>
+        <p className="font-semibold leading-tight">{r.name}</p>
+        <p className="text-xs text-black/65"><R k={plural(r.bill_count, "finance.rep.bills")} v={[r.bill_count]} /></p>
+      </div>
+      <SourceLink href={r.profile_url} icon="book"><T k="finance.rep.profile" /></SourceLink>
+    </div>
+  );
+}
+
+function Bar({ label, pct, value, color }: { label: string; pct: number; value: number | null; color: string }) {
+  return (
+    <li className="grid grid-cols-[4.5rem_1fr_auto] items-center gap-2 text-sm">
+      <span className="font-medium"><T k={label} /></span>
+      <span aria-hidden className="h-3 rounded-full bg-black/[0.07]"><span className="block h-3 rounded-full" style={{ width: `${pct}%`, background: color }} /></span>
+      <span className="min-w-[4.5rem] text-right font-semibold tabular-nums">{fmtPeso(value)}</span>
+    </li>
   );
 }
 
@@ -118,13 +148,26 @@ export function VersionsPair({ o }: { o: Office }) {
   const v = versions(o);
   const f = o.fy2027;
   const net = netChange(v.nep, v.house);
+  const w = shareScale(v.nep, v.house);
   return (
     <div>
       <div className="grid grid-cols-2 gap-3">
-        <Side label="finance.side.nep" value={v.nep} note={<R k={plural(f.nep_records, "finance.proj")} v={[f.nep_records]} />} />
-        <Side label="finance.side.house" value={v.house} note={<R k={plural(f.hgab3_records, "finance.proj.named")} v={[f.hgab3_records]} />} />
+        <Side label="finance.side.nep" sub="finance.side.nep.s" value={v.nep} note={<R k={plural(f.nep_records, "finance.proj")} v={[f.nep_records]} />} />
+        <Side label="finance.side.house" sub="finance.side.house.s" value={v.house} note={<R k={plural(f.hgab3_records, "finance.proj.named")} v={[f.hgab3_records]} />} />
       </div>
-      <p className="mt-2 text-sm"><T k="finance.diff" /> <b className="tabular-nums">{net == null ? DASH : `${net > 0 ? "+" : ""}${fmtPeso(net)}`}</b>. <span className="text-black/70"><T k="finance.diff.n" /></span></p>
+      <ul className="mt-4 space-y-2">
+        <Bar label="finance.side.nep" pct={w.nep} value={v.nep} color="#7f93bd" />
+        <Bar label="finance.side.house" pct={w.house} value={v.house} color="#1b2a4a" />
+      </ul>
+      <p className="mt-1 text-xs text-black/65"><T k="finance.bars.note" /></p>
+      <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-[#eef0f4] px-3 py-1 font-semibold tabular-nums text-fiesta-navy">
+          <span aria-hidden>{net == null ? "" : net > 0 ? "\u25B2" : net < 0 ? "\u25BC" : "="}</span>
+          {net == null ? DASH : `${net > 0 ? "+" : ""}${fmtPeso(net)}`}
+        </span>
+        <span className="text-black/75"><T k="finance.diff.l" /></span>
+      </p>
+      <p className="mt-1 text-xs text-black/65"><T k="finance.diff.n" /></p>
     </div>
   );
 }
@@ -132,16 +175,20 @@ export function VersionsPair({ o }: { o: Office }) {
 /** Record card on the main page: one district, links to its detail page. */
 export function DistrictCard({ d, slug, h }: { d: District; slug: string; h: string /* dictionary key */ }) {
   return (
-    <article aria-labelledby={`h-${slug}`} className="flex flex-col rounded-2xl border border-black/10 bg-white p-5">
-      <h2 id={`h-${slug}`} className="font-serif text-xl font-bold">{d.label}</h2>
-      <p className="mt-1 text-sm text-black/75"><T k="finance.rep" /> {repLink(d)}</p>
+    <article aria-labelledby={`h-${slug}`} className="flex h-full flex-col gap-5 rounded-2xl border border-black/10 bg-white p-5 sm:p-6">
+      <h2 id={`h-${slug}`} className="font-serif text-xl font-bold sm:text-2xl">{d.label}</h2>
+      <RepRow d={d} />
       {d.offices.map((o) => (
-        <div key={o.id} className="mt-4">
-          <p className="mb-2 text-sm font-semibold">{o.name} <span className="font-normal text-black/70">· <T k="finance.fy.two" /></span></p>
+        <div key={o.id}>
+          <p className="mb-3 flex flex-wrap items-center gap-2 text-sm">
+            <span className="rounded-full bg-fiesta-navy px-3 py-1 text-xs font-bold text-white">{o.name}</span>
+            <span className="text-black/70"><T k="finance.fy.two" /></span>
+          </p>
           <VersionsPair o={o} />
+          {o.fy2027.unconfirmed_rows > 0 && <p className="mt-3 text-xs font-semibold text-[#9a3f1e]"><R k={plural(o.fy2027.unconfirmed_rows, "finance.unconf")} v={[o.fy2027.unconfirmed_rows, fmtPeso(o.fy2027.unconfirmed_php)]} /></p>}
         </div>
       ))}
-      <Link href={`/badyet/${slug}`} className="mt-5 inline-flex min-h-11 items-center self-start rounded-full bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue"><R k="finance.open" v={[<T key="h" k={h} />]} /></Link>
+      <Link href={`/badyet/${slug}`} className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue"><R k="finance.open" v={[<T key="h" k={h} />]} /><KitIcon name="arrow" className="h-4 w-4" /></Link>
     </article>
   );
 }
