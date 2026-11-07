@@ -8,7 +8,7 @@ import KitIcon from "@/components/kit/KitIcon";
 import ProjectMap from "@/components/site/ProjectMapLoader";
 import { StatusBadge, iconFor, peso } from "@/components/site/ProjectBits";
 import { getMunicipality } from "@/lib/municipalities";
-import { cleanTitle, durationDays, getProject, getProjects } from "@/lib/projects";
+import { cleanTitle, durationDays, projectDigest, getProject, getProjects } from "@/lib/projects";
 
 export function generateStaticParams() {
   return getProjects().map((p) => ({ id: p.id }));
@@ -27,6 +27,7 @@ export default async function ProjectRecord({ params }: PageProps<"/proyekto/[id
   const p = getProject(id);
   if (!p) notFound();
   const title = cleanTitle(p.title);
+  const head = projectDigest(p.title).headline;
   const m = p.municipality ? getMunicipality(p.municipality) : undefined;
   const hasPin = p.lat != null && p.lon != null;
   const days = p.start && p.end ? durationDays(p.start, p.end) : undefined;
@@ -43,7 +44,8 @@ export default async function ProjectRecord({ params }: PageProps<"/proyekto/[id
       <header className="mt-5 flex items-start gap-4">
         <KitIcon name={iconFor(p.category)} variant="badge" color="#1b2a4a" className="h-12 w-12 shrink-0" />
         <div className="min-w-0">
-          <h1 className="font-serif text-2xl font-bold leading-snug md:text-3xl">{title}</h1>
+          <h1 className="font-serif text-2xl font-bold leading-snug md:text-3xl">{head ?? title}</h1>
+          {head && <p className="mt-2 text-sm text-black/65">{title}</p>}
           <p className="mt-2 flex flex-wrap items-center gap-2"><StatusBadge status={p.status} />{!m && <span className="text-sm text-black/70">Hindi tiyak ang bayan</span>}</p>
         </div>
       </header>

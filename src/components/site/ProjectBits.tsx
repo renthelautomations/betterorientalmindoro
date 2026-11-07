@@ -9,7 +9,8 @@ export const iconFor = (c?: string): KitIconName => (/Flood/.test(c ?? "") ? "fl
 
 export function StatusBadge({ status }: { status?: string }) {
   if (!status) return <Badge kind="soon">Walang katayuan</Badge>;
-  return <Badge kind={status === "Completed" ? "verified" : status === "On-Going" ? "new" : "wip"}>{status}</Badge>;
+  const label: Record<string, string> = { Completed: "Tapos na", "On-Going": "Isinasagawa", "For Procurement": "Para sa procurement", Terminated: "Itinigil" };
+  return <Badge kind={status === "Completed" ? "verified" : status === "On-Going" ? "new" : "wip"}>{label[status] ?? status}</Badge>;
 }
 
 /** By-year bars, oldest first. Counts are printed under each bar; each column links to that year's filter. */

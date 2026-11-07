@@ -128,7 +128,7 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
         {shown.length ? (
           <ul className="mt-4 grid gap-3 md:grid-cols-2">
             {shown.map((p) => (
-              <li key={p.id} className="min-w-0"><ProjectCard id={p.id} title={cleanTitle(p.title)} bayan={p.municipality ? names[p.municipality] : undefined} year={p.year} status={p.status} cost={p.cost} category={p.category} /></li>
+              <li key={p.id} className="min-w-0"><ProjectCard id={p.id} title={p.title} bayan={p.municipality ? names[p.municipality] : undefined} year={p.year} status={p.status} cost={p.cost} category={p.category} /></li>
             ))}
           </ul>
         ) : (
