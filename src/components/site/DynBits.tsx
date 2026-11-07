@@ -55,13 +55,13 @@ export function TPageTitle({ eyebrow, title, color = "#b5532f" }: { eyebrow: str
 }
 
 /** Scrollable table region whose aria-label is a translated caption. */
-export function DynRegion({ k, v, children }: { k: string; v?: string[]; children: ReactNode }) {
+export function DynRegion({ k, v, className = "overflow-x-auto rounded-2xl border border-black/10 bg-white", children }: { k: string; v?: string[]; className?: string; children: ReactNode }) {
   const t = useT();
   const label = t(k).replace(/\{(\d)\}/g, (_, i) => v?.[+i] ?? "");
-  return <div role="region" aria-label={label} tabIndex={0} className="overflow-x-auto rounded-2xl border border-black/10 bg-white">{children}</div>;
+  return <div role="region" aria-label={label} tabIndex={0} className={className}>{children}</div>;
 }
 /** Winner link in the grid; the aria-label is "Seat year, town: names". */
-export function DynCellLink({ href, seat, year, town, names, children }: { href: string; seat: string; year: number; town: string; names: string; children: ReactNode }) {
+export function DynCellLink({ href, seat, year, town, names, className = "font-medium text-fiesta-blue underline decoration-black/20 underline-offset-2", title, children }: { href: string; seat: string; year: number; town: string; names: string; className?: string; title?: string; children: ReactNode }) {
   const t = useT();
-  return <Link href={href} aria-label={`${t(seat)} ${year}, ${town}: ${names}`} className="font-medium text-fiesta-blue underline decoration-black/20 underline-offset-2">{children}</Link>;
+  return <Link href={href} aria-label={`${t(seat)} ${year}, ${town}: ${names}`} title={title} className={className}>{children}</Link>;
 }

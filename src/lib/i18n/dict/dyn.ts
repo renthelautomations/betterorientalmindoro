@@ -123,4 +123,8 @@ export const DYN = {
   "svc.ev.pagtanda.b": ["Senior citizen incentives.", "Insentibo para sa senior citizen."],
   "svc.ev.pagsasaka": ["Farming and livestock", "Pagsasaka at pag-aalaga ng hayop"],
   "svc.ev.pagsasaka.b": ["Veterinary services and equipment.", "Beterinaryo at kagamitan."],
+  "dyn.grid.legend": ["Same surname as the previous election. Tap a name for the full record.", "Parehong apelyido sa nakaraang halalan. Pindutin ang pangalan para sa buong tala."],
+  "dyn.sur.wins": ["{0} wins", "{0} panalo"],
+  "dyn.sur.people": ["{0} people", "{0} tao"],
+  "dyn.sur.hide": ["Hide", "Itago"],
 } as const satisfies Record<string, readonly [string, string]>;

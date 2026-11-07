@@ -11,7 +11,7 @@ export const iconFor = (c?: string): KitIconName => (/Flood/.test(c ?? "") ? "fl
 /** Status is published data and stays as is; only the missing-status placeholder is interface text. */
 export function StatusBadge({ status }: { status?: string }) {
   if (!status) return <Badge kind="soon"><T k="proyekto.nostatus" /></Badge>;
-  return <Badge kind={status === "Completed" ? "verified" : status === "On-Going" ? "new" : "wip"}>{status}</Badge>;
+  return <Badge kind={status === "Completed" ? "verified" : status === "On-Going" ? "new" : "wip"}><T k={`proyekto.st.${status}`} /></Badge>;
 }
 
 // Translatable twins of kit parts whose props are plain strings (kit SectionHeader, Breadcrumbs, EmptyState, Accordion, StatCard, Timeline).

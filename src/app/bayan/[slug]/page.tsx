@@ -18,7 +18,8 @@ import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import { getBarangays, getMunicipalities, getMunicipality } from "@/lib/municipalities";
 import { fmtInt, fmtPct, fmtPeso, getProvinceStats, getStats, popGrowth } from "@/lib/stats";
 import { hotlinesForBayan } from "@/lib/hotlines";
-import { cleanTitle, getProjects } from "@/lib/projects";
+import ProjectRow from "@/components/site/ProjectRow";
+import { getProjects } from "@/lib/projects";
 import { getProvince, getTown, sharedSurnames } from "@/lib/dynasties";
 
 export const generateStaticParams = () => getMunicipalities().map((m) => ({ slug: m.slug }));
@@ -85,10 +86,8 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
         <div className="space-y-6">
         <div>
           <p className={h3}><T k="bayan.top.h" /></p>
-          <ul className="divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
-            {top.map((p) => (
-              <li key={p.id}><Link href={`/proyekto/${p.id}`} className="flex min-h-11 flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-4 py-3 hover:bg-black/5"><span className="min-w-0 break-words text-sm font-medium">{cleanTitle(p.title)}</span><span className="text-sm tabular-nums text-black/70">{fmtPeso(p.cost)}{p.year ? ` · ${p.year}` : ""}</span></Link></li>
-            ))}
+          <ul className="space-y-3">
+            {top.map((p) => <li key={p.id}><ProjectRow id={p.id} title={p.title} year={p.year} status={p.status} cost={p.cost} category={p.category} max={top[0].cost} /></li>)}
           </ul>
         </div>
         <Link href={`/proyekto?bayan=${slug}`} className={link}><T k="bayan.allproj.pre" /> {fmtInt(projects.length)} <T k="bayan.allproj.post" /></Link>

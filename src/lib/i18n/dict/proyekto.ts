@@ -97,4 +97,9 @@ export const PROYEKTO = {
   "proyekto.r.orig": ["Original title", "Orihinal na pamagat"],
   "proyekto.r.source": ["Source: DPWH Infrastructure Transparency Dataset via BetterGov Open Data (CC0). The town is inferred from the coordinates and the title.", "Source: DPWH Infrastructure Transparency Dataset via BetterGov Open Data (CC0). Ang bayan ay hinuhulaan mula sa coordinates at pamagat."],
   "proyekto.r.back": ["Back to all projects", "Balik sa lahat ng proyekto"],
+  "proyekto.st.Completed": ["Completed", "Tapos na"],
+  "proyekto.st.On-Going": ["On-going", "Isinasagawa"],
+  "proyekto.st.For Procurement": ["For procurement", "Para sa procurement"],
+  "proyekto.st.Terminated": ["Terminated", "Itinigil"],
+  "proyekto.segments": ["road stretches", "bahagi ng daan"],
 } as const satisfies Record<string, readonly [string, string]>;

@@ -141,3 +141,18 @@ describe("cost helpers", () => {
     expect(topByCost(r, 2).map((p) => p.id)).toEqual(["a", "c"]);
   });
 });
+
+import { projectDigest } from "./projects";
+describe("projectDigest", () => {
+  it("road work with stationing", () => {
+    const d = projectDigest("Preventive maintenance along Calapan north road K0034+1169 - K0035+705, K0042+000 - K0043+000, San Teodoro - Puerto Galera,Oriental Mindoro");
+    expect(d.headline).toBe("Preventive maintenance · Calapan North Road");
+    expect(d.segments).toBe(2);
+  });
+  it("barangay work", () => {
+    expect(projectDigest("Basic infrastructure program- flood mitigation structures- const. of road dike, bry. dulangan, pto. galera, Oriental Mindoro").headline).toBe("Flood control · Brgy. Dulangan");
+  });
+  it("no subject falls back", () => {
+    expect(projectDigest("Puerto Galera biodiversity and environmental research and outreach center").headline).toBeUndefined();
+  });
+});

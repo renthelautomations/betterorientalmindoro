@@ -71,3 +71,26 @@ export function costBy(rows: Project[], key: "status" | "category", none: string
 
 /** The n rows with the highest published cost (rows without a cost are left out). */
 export const topByCost = (rows: Project[], n: number): Project[] => rows.filter((p) => p.cost != null).sort((a, b) => b.cost! - a.cost!).slice(0, n);
+
+export type Digest = { headline?: string; segments: number };
+const STATION = /\b[Kk]?\d{1,4}\+\d{3}(?:\.\d+)?/g;
+const WORK: [RegExp, string][] = [
+  [/preventive maintenance/i, "Preventive maintenance"],
+  [/overlay/i, "Asphalt overlay"],
+  [/flood|dike|drainage/i, "Flood control"],
+  [/slope|landslide|slip/i, "Slope protection"],
+  [/bridge/i, "Bridge"],
+  [/sewerage|water supply|water system|reservoir/i, "Water and sewerage"],
+  [/rehab|reconst|upgrad|improvement/i, "Rehabilitation"],
+  [/construction|const\./i, "Construction"],
+];
+/** Quick-read summary of a raw DPWH title: "Work type · road or barangay", plus how many road stretches it covers. headline is undefined when no clear subject is found (show the cleaned title instead). */
+export function projectDigest(title: string): Digest {
+  const segments = Math.ceil((title.match(STATION)?.length ?? 0) / 2);
+  const work = WORK.find(([re]) => re.test(title))?.[1];
+  const road = title.match(/\balong\s+([a-z .]+?\b(?:road|highway|rd\.?))(?=[\s,]|$)/i)?.[1];
+  const brgy = title.match(/\b(?:brgy|bry|barangay)\.?\s+([a-zñ ]+?)(?=[,.]|\s+(?:sta|in|pto|puerto)\b|$)/i)?.[1];
+  const cap = (s: string) => s.toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase());
+  const subject = road ? cap(road).replace(/\bRd\.?$/, "Road") : brgy ? `Brgy. ${cleanTitle(brgy.trim())}` : undefined;
+  return { headline: work && subject ? `${work} · ${subject}` : undefined, segments };
+}
