@@ -1,4 +1,3 @@
-import SplitSticky from "@/components/site/SplitSticky";
 import BigDonut from "@/components/site/BigDonut";
 import { Suspense } from "react";
 import KitIcon from "@/components/kit/KitIcon";
@@ -88,18 +87,17 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
       </div>
 
       <section className="mt-12">
-        <SplitSticky
-          side={
-            <div>
-              <Sec eyebrow="proyekto.bystatus" title="proyekto.bystatus.h" />
-              <div className="mt-4">{slices.length ? <BigDonut slices={slices} format={pesoShort} centerLabel="proyekto.center" /> : <Empty title="proyekto.nobudget"><T k="proyekto.nobudget.d" /></Empty>}</div>
-              <p className="mt-3 text-xs text-black/65"><T k="proyekto.bystatus.note" /></p>
-            </div>
-          }
-        >
-          <Sec eyebrow="proyekto.biggest" title="proyekto.top.h" />
-          <div className="mt-4">{top.length ? <TopTable rows={top} /> : <Empty title="proyekto.noval"><T k="proyekto.noval.d" /></Empty>}</div>
-        </SplitSticky>
+        <div className="grid items-start gap-8 lg:grid-cols-2">
+          <div className="min-w-0">
+            <Sec eyebrow="proyekto.bystatus" title="proyekto.bystatus.h" />
+            <div className="mt-4">{slices.length ? <BigDonut slices={slices} format={pesoShort} centerLabel="proyekto.center" /> : <Empty title="proyekto.nobudget"><T k="proyekto.nobudget.d" /></Empty>}</div>
+            <p className="mt-3 text-xs text-black/65"><T k="proyekto.bystatus.note" /></p>
+          </div>
+          <div className="min-w-0">
+            <Sec eyebrow="proyekto.biggest" title="proyekto.top.h" />
+            <div className="mt-4">{top.length ? <TopTable rows={top} /> : <Empty title="proyekto.noval"><T k="proyekto.noval.d" /></Empty>}</div>
+          </div>
+        </div>
       </section>
 
       <section aria-labelledby="salain" className="mt-12 space-y-5">
