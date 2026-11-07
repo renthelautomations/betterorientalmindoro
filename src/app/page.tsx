@@ -80,7 +80,7 @@ export default function Home() {
         <section aria-label="Para sa bayan" className="pb-14">
           <SectionHeader eyebrow="SERBISYO" title="Mga serbisyo para sa bayan" color={FIESTA_DEEP.orange} />
           <div className="mt-6 grid gap-3 md:grid-cols-2">
-            {getCategories().map((c, i) => <Link key={c.slug} href="/serbisyo" className="block min-w-0"><ServiceRow icon={CAT_ICON[c.slug] ?? "doc"} title={c.name} sub={c.blurb} color={[FIESTA.blue, FIESTA_DEEP.orange, FIESTA_DEEP.green, FIESTA.red][i % 4]} /></Link>)}
+            {getCategories().map((c, i) => <Link key={c.slug} href={`/serbisyo#${c.slug}`} className="block min-w-0"><ServiceRow icon={CAT_ICON[c.slug] ?? "doc"} title={c.name} sub={c.blurb} color={[FIESTA.blue, FIESTA_DEEP.orange, FIESTA_DEEP.green, FIESTA.red][i % 4]} /></Link>)}
           </div>
         </section>
 
