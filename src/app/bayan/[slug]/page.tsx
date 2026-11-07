@@ -10,7 +10,7 @@ import WinnersViews from "@/components/site/WinnersViews";
 import { BayanCrumbs, BayanEmpty, BayanTitle } from "@/components/site/BayanBits";
 import { T } from "@/lib/i18n/i18n";
 import TownEmblem from "@/components/kit/TownEmblem";
-import { StatCard } from "@/components/kit/Parts";
+import TownStat from "@/components/stats/TownStat";
 import { HotlineCard } from "@/components/kit/Ui";
 import { Tabs } from "@/components/kit/Interactive";
 import LineChart from "@/components/kit/LineChart";
@@ -53,31 +53,48 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
   const years = getProvince().elections.map((e) => e.year);
   const surnames = dyn ? sharedSurnames(dyn.contests) : [];
   const cls = stats?.incomeClass?.value;
+  const all = getMunicipalities();
+  const maxOf = (f: (m: (typeof all)[number]) => number | null | undefined) => Math.max(...all.map((x) => f(x) ?? 0), 1);
+  const rel = (v: number | null | undefined, max: number) => (v == null ? null : v / max);
+  const maxPop = maxOf((x) => getStats(x.slug)?.population.at(-1)?.value);
+  const maxRev = maxOf((x) => getStats(x.slug)?.revenue?.value);
+  const maxSpend = maxOf((x) => getStats(x.slug)?.expenditure?.value);
+  const maxArea = maxOf((x) => x.areaKm2);
+  const nBrgy = getBarangays(m.pcode).length;
+  const maxBrgy = maxOf((x) => getBarangays(x.pcode).length);
 
   const panels = [
     { id: "pangkalahatan", label: "town.overview", panel: (
-      <div className="grid gap-8 md:grid-cols-[1.4fr_1fr]">
-        <div>
+      <div className="space-y-8">
+        <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
           <p className={h3}><T k="town.pop.over" /></p>
           {pop.length ? <LineChart series={[{ name: m.name, points: pop.map((p) => ({ year: p.year, value: p.value })) }]} label="common.town" /> : <BayanEmpty title="bayan.nopop" body="bayan.nopop.p" />}
         </div>
         <div>
-        <dl className="space-y-3 text-sm">
-          <div><dt className="text-black/70"><T k="town.type" /></dt><dd className="font-semibold"><T k={m.isCity ? "town.city" : "town.town"} />{cls ? ` · ${cls}` : ""}</dd></div>
-          <div><dt className="text-black/70"><T k="town.revenue" /> ({stats?.revenue?.year ?? "-"})</dt><dd className="font-semibold">{fmtPeso(stats?.revenue?.value)}</dd></div>
-          <div><dt className="text-black/70"><T k="town.spend" /> ({stats?.expenditure?.year ?? "-"})</dt><dd className="font-semibold">{fmtPeso(stats?.expenditure?.value)}</dd></div>
-        </dl>
-        <p className="mt-3 text-xs text-black/70"><T k="bayan.source.note" /></p>
+          <h3 className="mb-3 text-sm font-semibold tracking-widest text-black/65"><T k="uxc.fin.h" /></h3>
+          <div className="grid gap-4 sm:grid-cols-3">
+            <TownStat label="town.type" value={<><T k={m.isCity ? "town.city" : "town.town"} />{cls ? ` · ${cls}` : ""}</>} hint={stats?.incomeClass ? <>{stats.incomeClass.year}</> : <T k="town.nodata" />} icon="shield" color={FIESTA.blue} />
+            <TownStat label="town.revenue" value={fmtPeso(stats?.revenue?.value)} hint={stats?.revenue?.year ? String(stats.revenue.year) : <T k="town.nodata" />} icon="budget" color={FIESTA_DEEP.green} share={rel(stats?.revenue?.value, maxRev)} barLabel="uxc.vsbig" />
+            <TownStat label="town.spend" value={fmtPeso(stats?.expenditure?.value)} hint={stats?.expenditure?.year ? String(stats.expenditure.year) : <T k="town.nodata" />} icon="doc" color={FIESTA_DEEP.orange} share={rel(stats?.expenditure?.value, maxSpend)} barLabel="uxc.vsbig" />
+          </div>
+          <p className="mt-3 text-xs text-black/70"><T k="bayan.source.note" /></p>
+        </div>
+        <div>
+          <h3 className="mb-3 text-sm font-semibold tracking-widest text-black/65"><T k="uxc.land.h" /></h3>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <TownStat label="finance.area" value={fmtInt(m.areaKm2)} hint="km²" icon="mountain" color={FIESTA_DEEP.sky} share={rel(m.areaKm2, maxArea)} barLabel="uxc.vsbig" />
+            <TownStat label="finance.brgy" value={fmtInt(nBrgy)} hint={<T k="bayan.brgy.lc" />} icon="pin" color={FIESTA.navy} share={rel(nBrgy, maxBrgy)} barLabel="uxc.vsbig" />
+          </div>
         </div>
       </div>
     ) },
     { id: "hotlines", label: "town.hotlines", badge: String(local.length + province.length), panel: (
       <div className="space-y-6">
         {local.length ? (
-          <div><p className={h3}><T k="town.in" /> {m.name}</p><div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{local.map((h) => <HotlineCard key={h.id} h={h} tone={h.category} />)}</div></div>
+          <div><p className={h3}><T k="town.in" /> {m.name}</p><div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{local.map((h) => <HotlineCard key={h.id} h={h} tone={h.category} />)}</div></div>
         ) : <BayanEmpty title="bayan.nohot" body="bayan.nohot.p" name={m.name} />}
         <div><p className={h3}><T k="town.province" />{local.length ? null : <> <T k="bayan.forthis" /></>}</p>
-          {province.length ? <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{province.slice(0, 6).map((h) => <HotlineCard key={h.id} h={h} tone={h.category} />)}</div> : <p className="text-sm text-black/70"><T k="bayan.noprov" /></p>}
+          {province.length ? <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{province.slice(0, 6).map((h) => <HotlineCard key={h.id} h={h} tone={h.category} />)}</div> : <p className="text-sm text-black/70"><T k="bayan.noprov" /></p>}
         </div>
         <Link href="/hotlines" className={link}><T k="bayan.allhot" /></Link>
       </div>
@@ -87,8 +104,8 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
         <div className="space-y-6">
         <div>
           <p className={h3}><T k="bayan.top.h" /></p>
-          <ul className="space-y-3">
-            {top.map((p) => <li key={p.id}><ProjectRow id={p.id} title={p.title} year={p.year} status={p.status} cost={p.cost} category={p.category} max={top[0].cost} /></li>)}
+          <ul className="grid auto-rows-fr gap-3">
+            {top.map((p) => <li key={p.id} className="h-full"><ProjectRow id={p.id} title={p.title} year={p.year} status={p.status} cost={p.cost} category={p.category} max={top[0].cost} /></li>)}
           </ul>
         </div>
         <Link href={`/proyekto?bayan=${slug}`} className={link}><T k="bayan.allproj.pre" /> {fmtInt(projects.length)} <T k="bayan.allproj.post" /></Link>
@@ -125,10 +142,10 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
       <div className="mx-auto max-w-6xl px-4 py-10">
         <section aria-labelledby="nums" className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <h2 id="nums" className="sr-only"><T k="bayan.numbers" /></h2>
-          <StatCard label="town.pop" value={fmtInt(last?.value)} hint={last ? `Census ${last.year}` : "town.nodata"} icon="people" />
-          <StatCard label="town.growth" value={growth == null ? "-" : `${growth >= 0 ? "+" : ""}${fmtPct(growth)}`} hint={pop.length > 1 ? `${pop[0].year}-${pop.at(-1)!.year}` : "town.nodata"} icon="mountain" color={FIESTA_DEEP.green} />
-          <StatCard label="town.share" value={last && provPop ? fmtPct(last.value / provPop.value) : "-"} hint="town.share.h" icon="pin" color={FIESTA_DEEP.orange} />
-          <StatCard label="town.proj" value={projects.length ? fmtInt(projects.length) : "-"} hint={projects.length ? "town.proj.h" : "bayan.noproj.hint"} icon="road" color={FIESTA.red} />
+          <TownStat label="town.pop" value={fmtInt(last?.value)} hint={last ? <>Census {last.year}</> : <T k="town.nodata" />} icon="people" color={FIESTA.blue} share={rel(last?.value, maxPop)} barLabel="uxc.vsbig" />
+          <TownStat label="town.growth" value={growth == null ? "-" : `${growth >= 0 ? "+" : ""}${fmtPct(growth)}`} hint={pop.length > 1 ? `${pop[0].year}-${pop.at(-1)!.year}` : <T k="town.nodata" />} icon="mountain" color={FIESTA_DEEP.green} />
+          <TownStat label="town.share" value={last && provPop ? fmtPct(last.value / provPop.value) : "-"} hint={<T k="town.share.h" />} icon="pin" color={FIESTA_DEEP.orange} share={last && provPop ? last.value / provPop.value : null} barLabel="uxc.vsprov" />
+          <TownStat label="town.proj" value={projects.length ? fmtInt(projects.length) : "-"} hint={<T k={projects.length ? "town.proj.h" : "bayan.noproj.hint"} />} icon="road" color={FIESTA.red} />
         </section>
         <div className="mt-12"><Tabs tabs={panels} /></div>
       </div>
