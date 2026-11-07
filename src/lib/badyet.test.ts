@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { fmtPeso, gaaYears, getDistrict, getDistricts, groupList, netChange, versions, type Office } from "./badyet";
+import { fmtPeso, gaaYears, getDistrict, getDistricts, groupList, netChange, proportionSegments, versions, type Office } from "./badyet";
 
 const g = (rows: number, php: number, unconfirmed_rows = 0, unconfirmed_php = 0) => ({ label: "x", sub: "y", rows, php, unconfirmed_rows, unconfirmed_php });
 const office = {
@@ -55,5 +55,21 @@ describe("lookup", () => {
     expect(getDistricts()).toHaveLength(2);
     expect(getDistrict("leg:oriental-mindoro:1st")?.offices[0].name).toBe("Mindoro Oriental DEO");
     expect(getDistrict("leg:nope")).toBeUndefined();
+  });
+});
+
+describe("proportionSegments", () => {
+  it("sizes segments by number of lines, never by peso", () => {
+    const seg = proportionSegments(office);
+    expect(seg.map((x) => x.key)).toEqual(["unchanged", "increased", "house_only", "nep_only", "decreased", "scope_review"]);
+    const total = 40 + 21 + 70 + 2;
+    expect(seg.find((x) => x.key === "unchanged")!.pct).toBeCloseTo((70 / total) * 100);
+    expect(seg.find((x) => x.key === "house_only")!.pct).toBeCloseTo((40 / total) * 100);
+    expect(seg.reduce((a, x) => a + x.pct, 0)).toBeCloseTo(100);
+    expect(seg.find((x) => x.key === "house_only")).toMatchObject({ rows: 40, php: 240000000, unconfirmed_rows: 10 });
+  });
+  it("gives 0 widths when there are no lines", () => {
+    const empty = { fy2027: { groups: Object.fromEntries(["house_only", "nep_only", "unchanged", "increased", "decreased", "scope_review"].map((k) => [k, g(0, 5)])) } } as unknown as Office;
+    expect(proportionSegments(empty).every((x) => x.pct === 0)).toBe(true);
   });
 });
