@@ -21,6 +21,7 @@ export default function Footer() {
             This website is a volunteer-led civic website under BetterGov.PH initiative. Not affiliated with or
             representing the Oriental Mindoro provincial government or any LGU. 100% free, volunteer-run and community-based.
           </p>
+          <p className="mt-4 text-sm font-semibold text-white">Cost to the People of Oriental Mindoro: ₱0</p>
           <a href={SITE.github} className="mt-5 inline-block text-sm underline" rel="noopener">GitHub</a>
         </div>
         <nav aria-label="Quick links">
