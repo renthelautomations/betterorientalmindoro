@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
@@ -10,15 +10,22 @@ maplibregl.setWorkerUrl("/maplibre-gl-worker.mjs");
 export default function Map({ slugs }: { slugs: Record<string, string> }) {
   const el = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
-    const map = new maplibregl.Map({
-      container: el.current!,
-      style: { version: 8, sources: {}, layers: [{ id: "bg", type: "background", paint: { "background-color": "#e3eef2" } }] },
-      bounds: [120.85, 12.2, 121.55, 13.55],
-      fitBoundsOptions: { padding: 16 },
-      attributionControl: false,
-    });
+    let map: maplibregl.Map;
+    try {
+      map = new maplibregl.Map({
+        container: el.current!,
+        style: { version: 8, sources: {}, layers: [{ id: "bg", type: "background", paint: { "background-color": "#e3eef2" } }] },
+        bounds: [120.85, 12.2, 121.55, 13.55],
+        fitBoundsOptions: { padding: 16 },
+        attributionControl: false,
+      });
+    } catch {
+      setFailed(true); // no WebGL: the page's plain municipality list still works
+      return;
+    }
     const popup = new maplibregl.Popup({ closeButton: false, closeOnClick: false });
     map.on("load", () => {
       for (const f of ["municipalities", "component_cities"]) {
@@ -42,5 +49,6 @@ export default function Map({ slugs }: { slugs: Record<string, string> }) {
     return () => map.remove();
   }, [slugs, router]);
 
+  if (failed) return <p className="rounded-2xl bg-black/5 p-6 text-sm text-black/65">Hindi ma-load ang mapa sa device na ito. Gamitin ang listahan sa ibaba.</p>;
   return <div ref={el} role="img" aria-label="Map of Oriental Mindoro municipalities" className="h-[60vh] min-h-96 w-full rounded-2xl" />;
 }

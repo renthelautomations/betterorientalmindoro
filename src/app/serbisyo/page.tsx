@@ -19,7 +19,7 @@ export default function Serbisyo() {
             <Link href={`/serbisyo/${c.slug}`} className="block h-full rounded-xl border border-black/10 bg-white p-4 hover:border-[var(--navy)]">
               <span className="font-serif text-lg font-bold">{c.name}</span>
               <span className="mt-1 block text-sm text-black/60">{c.blurb}</span>
-              <span className="mt-2 block text-xs text-black/50">{getServices(c.slug).length} serbisyo</span>
+              <span className="mt-2 block text-xs text-black/65">{getServices(c.slug).length} serbisyo</span>
             </Link>
           </li>
         ))}

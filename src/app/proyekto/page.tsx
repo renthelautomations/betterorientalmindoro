@@ -15,11 +15,11 @@ export default function Proyekto() {
     <main className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="font-serif text-3xl font-bold md:text-4xl">Mga proyekto ng DPWH</h1>
       <p className="mt-2 max-w-3xl text-black/70">
-        {s.total.toLocaleString()} proyekto sa Oriental Mindoro, {s.assigned.toLocaleString()} dito ay naka-assign sa bayan ayon sa coordinates.
+        {s.total.toLocaleString()} proyekto sa Oriental Mindoro, {s.assigned.toLocaleString()} dito ay naka-assign sa bayan ayon sa coordinates at pamagat. Ang iba ay hindi tiyak ang bayan.
         Ang ipinapakita ay ang 100 pinakamalaki ayon sa budget.
       </p>
       <p className="mt-2 text-sm text-black/60">
-        Budget ang halaga, hindi ang aktwal na gastos. Ang bayan ay hinuhulaan mula sa coordinates; maaaring may mali.
+        Budget ang halaga, hindi ang aktwal na gastos. Ang bayan ay hinuhulaan mula sa coordinates at pamagat; kapag hindi magkatugma, hindi ito inaassign.
         Source: DPWH Infrastructure Transparency Dataset via BetterGov Open Data (CC0).
       </p>
       <div className="mt-6 overflow-x-auto rounded-xl border border-black/10 bg-white">
@@ -31,7 +31,7 @@ export default function Proyekto() {
             {rows.map((p) => (
               <tr key={p.id}>
                 <td className="p-3">{p.title}</td>
-                <td className="p-3">{p.municipality ? <Link href={`/bayan/${p.municipality}`} className="underline">{names[p.municipality]}</Link> : "Buong lalawigan"}</td>
+                <td className="p-3">{p.municipality ? <Link href={`/bayan/${p.municipality}`} className="underline">{names[p.municipality]}</Link> : "Hindi tiyak ang bayan"}</td>
                 <td className="p-3">{p.status ?? "-"}</td>
                 <td className="p-3">{p.year ?? "-"}</td>
                 <td className="p-3 text-right tabular-nums">{peso(p.cost)}</td>

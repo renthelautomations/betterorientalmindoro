@@ -6,7 +6,7 @@ const ASK = "Alamin sa opisina";
 const Fact = ({ label, children }: { label: string; children?: ReactNode }) => (
   <div>
     <dt className="text-xs font-semibold tracking-widest text-black/60">{label}</dt>
-    <dd className="mt-1">{children ?? <span className="text-black/50">{ASK}</span>}</dd>
+    <dd className="mt-1">{children ?? <span className="text-black/65">{ASK}</span>}</dd>
   </div>
 );
 const H = ({ children }: { children: ReactNode }) => <h2 className="mt-8 text-sm font-semibold tracking-widest text-black/60">{children}</h2>;

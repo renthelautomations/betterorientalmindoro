@@ -14,12 +14,12 @@ export default function OfficeholderTable({ contests, position }: { contests: Co
                 <span key={w.id + i}>
                   {i > 0 && ", "}
                   {titleCase(w.name)}
-                  {w.party && w.party !== "IND" ? <span className="text-black/50"> ({w.party})</span> : null}
+                  {w.party && w.party !== "IND" ? <span className="text-black/65"> ({w.party})</span> : null}
                 </span>
               ))}
             </p>
             {position !== "COUNCILOR" && (
-              <p className="mt-0.5 text-xs text-black/50">{c.uncontested ? "Walang kalaban" : `${c.candidates} ang kandidato`}</p>
+              <p className="mt-0.5 text-xs text-black/65">{c.uncontested ? "Walang kalaban" : `${c.candidates} ang kandidato`}</p>
             )}
           </div>
         </li>

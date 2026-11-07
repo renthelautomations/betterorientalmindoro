@@ -39,7 +39,7 @@ export default async function MunicipalityPage({ params }: PageProps<"/bayan/[sl
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">MGA PROYEKTO NG DPWH</h2>
       {projects.length ? (
         <>
-          <p className="mt-2 text-sm text-black/70">{projects.length.toLocaleString()} proyekto ayon sa coordinates. Ipinapakita ang 10 pinakamalaki.</p>
+          <p className="mt-2 text-sm text-black/70">{projects.length.toLocaleString()} proyekto ayon sa coordinates at pamagat. Ipinapakita ang 10 pinakamalaki. May iba pang proyekto ng lalawigan na hindi tiyak ang bayan; tingnan ang <Link href="/proyekto" className="underline">lahat ng proyekto</Link>.</p>
           <ul className="mt-3 space-y-2 break-words text-sm">
             {projects.slice(0, 10).map((p) => <li key={p.id}>{p.title}{p.cost ? ` (₱${Math.round(p.cost).toLocaleString("en-PH")})` : ""}</li>)}
           </ul>

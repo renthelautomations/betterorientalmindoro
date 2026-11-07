@@ -1,6 +1,6 @@
 import data from "@/data/dpwh.json";
 
-export type Project = { id: string; title: string; municipality?: string; cost?: number; status?: string; year?: number; category?: string };
+export type Project = { id: string; title: string; municipality?: string; uncertain?: boolean; cost?: number; status?: string; year?: number; category?: string };
 
 const all = data as Project[];
 

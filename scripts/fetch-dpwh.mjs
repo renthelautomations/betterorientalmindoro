@@ -1,10 +1,11 @@
 // DPWH Infrastructure Transparency data (BetterGov dataset 19, CC0) -> src/data/dpwh.json
 // Rows are assigned to a municipality by point-in-polygon on latitude/longitude.
-// Rows with no coordinates from the "Mindoro Oriental DEO" stay province-level (no municipality).
+// Rows from the "Mindoro Oriental DEO" without a usable point take the town named in their title; if point and title disagree the row is marked uncertain and left unassigned.
 import { readFileSync, writeFileSync, createWriteStream, existsSync } from "node:fs";
 import { Readable } from "node:stream";
 import { pipeline } from "node:stream/promises";
 import { asyncBufferFromFile, parquetReadObjects } from "hyparquet";
+import { titleTown, assignTown } from "../src/lib/dpwh-assign.mjs";
 
 const URL = "https://huggingface.co/datasets/bettergovph/dpwh-transparency-data/resolve/main/dpwh_transparency_data.parquet?download=true";
 const TMP = process.env.DPWH_PARQUET ?? "/tmp/dpwh.parquet";
@@ -26,10 +27,11 @@ const rows = await parquetReadObjects({ file: await asyncBufferFromFile(TMP), co
 const out = [];
 for (const r of rows) {
   const hasXY = r.latitude != null && r.longitude != null;
-  const m = hasXY ? find(r.longitude, r.latitude) : undefined;
-  const provLevel = !hasXY && r.location?.province === "Mindoro Oriental DEO";
-  if (!m && !provLevel) continue;
-  out.push({ id: String(r.contractId), title: String(r.description).trim(), municipality: m, cost: r.budget ?? undefined, status: r.status ?? undefined, year: r.infraYear ? Number(r.infraYear) : undefined, category: r.category ?? undefined });
+  const xy = hasXY ? find(r.longitude, r.latitude) : undefined;
+  const deo = r.location?.province === "Mindoro Oriental DEO";
+  if (!xy && !deo) continue; // not ours
+  const { municipality, uncertain } = assignTown({ xy, title: titleTown(r.description), deo });
+  out.push({ id: String(r.contractId), title: String(r.description).trim(), municipality, uncertain: uncertain || undefined, cost: r.budget ?? undefined, status: r.status ?? undefined, year: r.infraYear ? Number(r.infraYear) : undefined, category: r.category ?? undefined });
 }
 // ids are not guaranteed unique in the source; keep the first of each
 const seen = new Set();

@@ -29,3 +29,28 @@ describe("projects", () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 });
+
+import { titleTown, assignTown } from "./dpwh-assign.mjs";
+
+describe("dpwh assignment", () => {
+  it("finds the town named in a title", () => {
+    expect(titleTown("TAGUMPAY RIVER CONTROL, NAUJAN, ORIENTAL MINDORO")).toBe("naujan");
+    expect(titleTown("ROAD, PUERTO GALERA")).toBe("puerto-galera");
+    expect(titleTown("BRIDGE, SAN TEODORO")).toBe("san-teodoro");
+    expect(titleTown("CITY ROAD, CALAPAN CITY")).toBe("calapan-city");
+    expect(titleTown("PLAIN ROAD")).toBeUndefined();
+  });
+  it("coordinates and title agreeing assigns; disagreeing marks uncertain", () => {
+    expect(assignTown({ xy: "naujan", title: "naujan", deo: true })).toEqual({ municipality: "naujan" });
+    expect(assignTown({ xy: "calapan-city", title: "naujan", deo: true })).toEqual({ municipality: undefined, uncertain: true });
+  });
+  it("xy only, or title only from the Mindoro Oriental DEO", () => {
+    expect(assignTown({ xy: "roxas", title: undefined, deo: false })).toEqual({ municipality: "roxas" });
+    expect(assignTown({ xy: undefined, title: "gloria", deo: true })).toEqual({ municipality: "gloria" });
+    expect(assignTown({ xy: undefined, title: "gloria", deo: false })).toEqual({ municipality: undefined });
+  });
+  it("no assigned row names a different town in its title (real data)", () => {
+    const bad = getProjects().filter((p) => p.municipality && titleTown(p.title) && titleTown(p.title) !== p.municipality);
+    expect(bad.map((p) => p.id)).toEqual([]);
+  });
+});

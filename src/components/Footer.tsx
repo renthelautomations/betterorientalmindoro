@@ -34,7 +34,7 @@ export default function Footer() {
         </nav>
       </div>
       <p className="border-t border-white/10 px-4 py-6 text-center text-xs">
-        2026 Better Oriental Mindoro. MIT License. All public data sourced from official government portals.
+        2026 Better Oriental Mindoro. MIT License. Public data is cited to its source on each page.
       </p>
     </footer>
   );
