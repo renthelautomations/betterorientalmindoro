@@ -1,6 +1,6 @@
 "use client";
 import { Breadcrumbs, EmptyState } from "@/components/kit/Ui";
-import DataTable from "@/components/kit/DataTable";
+import TownDataTable from "@/components/site/TownDataTable";
 import { Donut, type Slice } from "@/components/kit/Charts2";
 import PageTitle from "@/components/site/PageTitle";
 import { T, useT } from "@/lib/i18n/i18n";
@@ -27,9 +27,8 @@ export function BayanDonut({ slices, centerLabel }: { slices: Slice[]; centerLab
   return <Donut slices={slices.map((s) => ({ ...s, label: t(s.label) }))} format={(n) => n.toLocaleString("en-PH")} centerLabel={centerLabel} />;
 }
 
-type Row = { name: string; kind: string; pop: number | null; trend: number[] | null; area: number };
+type Row = { slug: string; name: string; kind: string; pop: number | null; trend: number[] | null; area: number };
 export function BayanTable({ rows }: { rows: Row[] }) {
   const t = useT();
-  return <DataTable caption={t("bayan.table.caption")} filterKey="name" rows={rows.map((r) => ({ ...r, kind: t(r.kind) }))}
-    cols={[{ key: "name", label: "table.name" }, { key: "kind", label: "table.kind" }, { key: "pop", label: "table.pop", align: "right", format: "int" }, { key: "trend", label: "table.trend", format: "spark" }, { key: "area", label: "table.area", align: "right", format: "int" }]} />;
+  return <TownDataTable caption={t("bayan.table.caption")} rows={rows.map((r) => ({ slug: r.slug, name: r.name, isCity: r.kind === "town.city", pop: r.pop, trend: r.trend, area: r.area }))} />;
 }

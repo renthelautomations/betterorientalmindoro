@@ -1,7 +1,6 @@
 import SmartSearch from "@/components/site/SmartSearch";
 import { getSearchItems } from "@/lib/search-index";
 import type { Metadata } from "next";
-import Link from "next/link";
 import TownGrid from "@/components/kit/TownGrid";
 import SplitSticky from "@/components/site/SplitSticky";
 import BayanHub from "@/components/site/BayanHub";
@@ -12,7 +11,7 @@ import { BarChart } from "@/components/kit/Charts";
 import CompareTowns from "@/components/kit/CompareTowns";
 import { getBayanSummary, bayanMetrics, bayanRows, type BayanSummary } from "@/lib/bayan";
 import { getMunicipalities } from "@/lib/municipalities";
-import { fmtInt } from "@/lib/stats";
+import { fmtInt, fmtPct } from "@/lib/stats";
 
 export const metadata: Metadata = { title: "Bayan", description: "Ang 14 na bayan at 1 lungsod ng Oriental Mindoro: populasyon, barangay, tulong, proyekto at halalan." };
 
@@ -23,6 +22,7 @@ export default function Bayan() {
   const slugs = Object.fromEntries(list.map((m) => [m.pcode, m.slug]));
   const summaries = Object.fromEntries(list.map((m) => [m.slug, getBayanSummary(m.slug)!])) as Record<string, BayanSummary>;
   const pop = (slug: string) => summaries[slug].population;
+  const growth = bayanRows().flatMap((r) => (r.trend && r.trend.length > 1 && r.trend[0] > 0 ? [{ label: r.name, value: r.trend[r.trend.length - 1] / r.trend[0] - 1, href: `/bayan/${r.slug}` }] : []));
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <BayanCrumbs items={[{ label: "bayan.home", href: "/" }, { label: "nav.towns" }]} />
@@ -42,6 +42,12 @@ export default function Bayan() {
         <h2 id="table" className={h2}><T k="bayan.table.h" /></h2>
         <BayanTable rows={bayanRows()} />
         <p className="mt-2 text-xs text-black/65"><T k="bayan.dash" /></p>
+      </section>
+
+      <section aria-labelledby="growth" className="mt-14">
+        <h2 id="growth" className={h2}><T k="bayan.growth.h" /></h2>
+        <p className="-mt-2 mb-4 max-w-2xl text-sm text-black/70"><T k="bayan.growth.p" /></p>
+        <BarChart rows={growth} format={(n) => `${n >= 0 ? "+" : ""}${fmtPct(n, 0)}`} color="#2a7f44" />
       </section>
 
       <section aria-labelledby="compare" className="mt-14">
