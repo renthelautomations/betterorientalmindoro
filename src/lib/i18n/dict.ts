@@ -12,7 +12,10 @@ import { UXA } from "./dict/uxa";
 import { UXB } from "./dict/uxb";
 import { UXC } from "./dict/uxc";
 import { UXD } from "./dict/uxd";
+import { GOVA } from "./dict/gova";
+import { GOVB } from "./dict/govb";
+import { GOVC } from "./dict/govc";
 import { LGU } from "./dict/lgu";
 
-export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD, ...LGU } as const satisfies Record<string, readonly [string, string]>;
+export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD, ...GOVA, ...GOVB, ...GOVC, ...LGU } as const satisfies Record<string, readonly [string, string]>;
 export type DictKey = keyof typeof DICT;

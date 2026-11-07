@@ -1,0 +1,54 @@
+{
+ "source": "https://ormindoro.gov.ph/investment/",
+ "fetchedAt": "2026-11-08",
+ "items": [
+  {
+   "id": "sector-1",
+   "n": 1,
+   "sector": "Tourism Development",
+   "note": "Eco & Marine Tourism, Resorts",
+   "opportunities": "Resorts, boutique hotels, ecolodges, dive tourism services.",
+   "why": "Increasing demand for sustainable and luxury tourism, fueled by Oriental Mindoro’s rich marine biodiversity and pristine island destinations."
+  },
+  {
+   "id": "sector-2",
+   "n": 2,
+   "sector": "Information Technology & Digital Services",
+   "note": null,
+   "opportunities": "Establishment of Oriental Mindoro IT Park for BPOs, shared service centers, data centers, and startups.",
+   "why": "Rising demand for ICT-enabled services outside Metro Manila; offers a skilled young workforce, lower overhead costs, and government support for ICT infrastructure."
+  },
+  {
+   "id": "sector-3",
+   "n": 3,
+   "sector": "Transport & Mobility Infrastructure",
+   "note": null,
+   "opportunities": "Development of Oriental Mindoro Transport Stop — a provincial transport terminal and logistics hub integrating bus, van, and cargo operations.",
+   "why": "Enhances connectivity within the province and to Metro Manila; supports trade, tourism mobility, and efficient goods distribution."
+  },
+  {
+   "id": "sector-4",
+   "n": 4,
+   "sector": "Agribusiness & Food Processing",
+   "note": null,
+   "opportunities": "Value-added processing of rice, coconuts (copra, virgin coconut oil), bananas, fish/seafood, cold chain logistics, and agri-supply chains.",
+   "why": "Strong raw-material base and potential to increase farmer incomes through processing, packaging, and exports."
+  },
+  {
+   "id": "sector-5",
+   "n": 5,
+   "sector": "Aquaculture & Fisheries",
+   "note": null,
+   "opportunities": "Seaweed farming, shrimp/prawn culture, marine hatcheries, feed production, and integrated fish farming.",
+   "why": "High demand for sustainable seafood both domestically and internationally, leveraging the Verde Island Passage brand for premium markets."
+  },
+  {
+   "id": "sector-6",
+   "n": 6,
+   "sector": "Renewable Energy & Mini-Grids",
+   "note": null,
+   "opportunities": "Solar farms, wind projects, biomass from agri-waste, and hybrid mini-grids for off-grid barangays.",
+   "why": "Growing local energy needs and national incentives for clean, renewable energy investments."
+  }
+ ]
+}
