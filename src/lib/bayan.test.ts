@@ -23,3 +23,20 @@ describe("getBayanSummary", () => {
     }
   });
 });
+
+import { bayanMetrics, bayanRows } from "./bayan";
+describe("bayanMetrics / bayanRows", () => {
+  it("has the four metrics keyed by all 15 slugs, null (not 0) for missing data", () => {
+    const ms = bayanMetrics();
+    expect(ms.map((m) => m.label)).toEqual(["metric.pop", "metric.area", "metric.projects", "metric.revenue"]);
+    for (const m of ms) expect(Object.keys(m.values)).toHaveLength(15);
+    expect(ms[2].values["calapan-city"]).toBe(getProjects("calapan-city").length);
+    for (const v of Object.values(ms[0].values)) expect(v === null || v > 0).toBe(true);
+  });
+  it("rows: one per town, kind matches isCity", () => {
+    const rows = bayanRows();
+    expect(rows).toHaveLength(15);
+    expect(rows.find((r) => r.name === "Calapan City")?.kind).toBe("Lungsod");
+    expect(rows.filter((r) => r.kind === "Bayan")).toHaveLength(14);
+  });
+});
