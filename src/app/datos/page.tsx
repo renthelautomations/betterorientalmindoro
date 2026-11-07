@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { StatCard, SectionHeader } from "@/components/kit/Parts";
+import { StatCard } from "@/components/kit/Parts";
+import PageTitle from "@/components/site/PageTitle";
 import { Breadcrumbs } from "@/components/kit/Ui";
 import { getProvinceStats, fmtInt } from "@/lib/stats";
 import { getProjectStats } from "@/lib/projects";
@@ -19,7 +20,7 @@ export default function Datos() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Datos" }]} />
-      <div className="mt-4"><SectionHeader eyebrow="TRANSPARENCY" title="Datos ng lalawigan" /></div>
+      <div className="mt-4"><PageTitle eyebrow="TRANSPARENCY" title="Datos ng lalawigan" /></div>
       <p className="mt-4 max-w-2xl text-black/70">Apat na paraan para tingnan ang Oriental Mindoro sa numero. Bawat isa ay may source, petsa at paliwanag kung paano basahin.</p>
       <ul className="mt-8 grid gap-4 sm:grid-cols-2">
         {cards.map((c) => (

@@ -14,7 +14,7 @@ const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
 /** Sits under the kit footer: community links, BetterGov mark, licence, credit and version. */
 export default function SiteFooterBar() {
   return (
-    <div className="bg-fiesta-navy text-white/80">
+    <section aria-label="Komunidad at credits" className="bg-fiesta-navy text-white/80">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-4 pb-6">
           <div className="flex items-center gap-5">
             {SOCIAL.map((s) => (
@@ -48,6 +48,6 @@ export default function SiteFooterBar() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
