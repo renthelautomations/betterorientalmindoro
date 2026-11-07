@@ -32,9 +32,9 @@ open(p,"w").write(s)
 # 6. Header: eight section links plus the language toggle need more than the md (768px) width, which made every page
 # scroll sideways on tablets. Keep the mobile menu until lg (1024px).
 p="src/components/kit/Layout.tsx"; s=open(p).read()
-s=s.replace('className="hidden gap-1 md:flex"','className="hidden gap-1 lg:flex"')
-s=s.replace('className="ml-auto mr-2 md:ml-4 md:mr-0"','className="ml-auto mr-2 lg:ml-4 lg:mr-0"')
-s=s.replace('className="group relative md:hidden"','className="group relative lg:hidden"')
+s=s.replace('className="hidden gap-1 md:flex"','className="hidden gap-1 xl:flex"')
+s=s.replace('className="ml-auto mr-2 md:ml-4 md:mr-0"','className="ml-auto mr-2 xl:ml-4 xl:mr-0"')
+s=s.replace('className="group relative md:hidden"','className="group relative xl:hidden"')
 open(p,"w").write(s)
 # 7. Show full text instead of clipping: ServiceRow sub line, bar-list labels, search results; HotlineCard number on one line.
 p="src/components/kit/Parts.tsx"; s=open(p).read()

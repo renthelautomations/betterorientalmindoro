@@ -19,11 +19,11 @@ export function KitHeader({ links }: { links: NavLink[] }) {
       <div className="h-1.5" style={{ background: STRIPE }} aria-hidden />
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <Link href="/" aria-label="better Oriental Mindoro home"><Logo /></Link>
-        <nav aria-label="Main" className="hidden gap-1 lg:flex">
+        <nav aria-label="Main" className="hidden gap-1 xl:flex">
           {links.map((l) => <Link key={l.label} href={l.href} className="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium hover:bg-fiesta-navy/5"><T k={l.label} /></Link>)}
         </nav>
-        <LangToggle className="ml-auto mr-2 lg:ml-4 lg:mr-0" />
-        <details className="group relative lg:hidden">
+        <LangToggle className="ml-auto mr-2 xl:ml-4 xl:mr-0" />
+        <details className="group relative xl:hidden">
           <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-lg hover:bg-fiesta-navy/5 [&::-webkit-details-marker]:hidden" aria-label="Menu"><KitIcon name="menu" /></summary>
           <ul className="absolute right-0 z-10 mt-2 w-56 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/10">
             {links.map((l) => <li key={l.label}><Link href={l.href} className="flex min-h-11 items-center rounded-lg px-3 text-sm font-medium hover:bg-fiesta-mint"><T k={l.label} /></Link></li>)}

@@ -41,6 +41,11 @@ export const HOME = {
   "home.foot.aria": ["Community and credits", "Komunidad at credits"], "home.foot.github": ["Better Oriental Mindoro on GitHub", "Better Oriental Mindoro sa GitHub"],
   "home.foot.discord": ["BetterGov.PH community on Discord", "Komunidad ng BetterGov.PH sa Discord"],
   "home.foot.cited": ["Public data is cited to its source on each page.", "Binabanggit sa bawat pahina ang pinagmulan ng pampublikong datos."],
+  "nav.gov": ["Government", "Pamahalaan"],
+  "gov.eyebrow": ["PROVINCIAL GOVERNMENT", "PAMAHALAANG PANLALAWIGAN"], "gov.title": ["Government", "Pamahalaan"],
+  "gov.lead": ["The province's public records in one place: officials and offices, executive orders, bids, reports, jobs and investment. Everything links to the official source.", "Ang mga pampublikong talaan ng lalawigan sa iisang lugar: mga opisyal at opisina, executive order, bidding, ulat, trabaho at pamumuhunan. Lahat ay may link sa opisyal na pinagmulan."],
+  "gov.note": ["Source: the Provincial Government's official website, ormindoro.gov.ph. This is a volunteer site, not the government's. Documents stay on the official site; we link to them.", "Pinagmulan: ang opisyal na website ng Pamahalaang Panlalawigan, ormindoro.gov.ph. Boluntaryong site ito, hindi ng pamahalaan. Nasa opisyal na site ang mga dokumento; nilalagyan lang namin ng link."],
+  "gov.tab.officials": ["Officials and offices", "Mga opisyal at opisina"], "gov.tab.eo": ["Executive orders", "Mga executive order"], "gov.tab.bids": ["Procurement", "Pagbili at bidding"], "gov.tab.reports": ["Financial reports", "Mga ulat pinansyal"], "gov.tab.jobs": ["Jobs", "Mga trabaho"], "gov.tab.invest": ["Invest", "Mamuhunan"],
   // footer (Filipino drafts await native-speaker review)
   "foot.visits": ["visits", "bisita"], "foot.explore": ["Explore", "Tuklasin"], "foot.help": ["Get help", "Humingi ng tulong"], "foot.data": ["Data and sources", "Datos at pinagmulan"], "foot.about": ["About", "Tungkol dito"],
   "foot.call": ["In an emergency, call", "Sa emergency, tumawag sa"],

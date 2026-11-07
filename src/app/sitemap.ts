@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "", "/bayan", "/hotlines", "/proyekto", "/estatistika", "/badyet", "/badyet/1st", "/badyet/2nd", "/terms", "/privacy", "/accessibility", "/faq",
     ...ICON_KEYS.map((k) => `/${k}`),
     ...getMunicipalities().map((m) => `/bayan/${m.slug}`),
-    "/dynasties", ...getProvince().towns.map((t) => `/dynasties/${t}`),
+    "/pamahalaan", "/dynasties", ...getProvince().towns.map((t) => `/dynasties/${t}`),
     "/serbisyo", ...getServices().map((s) => `/serbisyo/${s.category}/${s.id}`),
     ...getProjects().map((p) => `/proyekto/${p.id}`),
   ];

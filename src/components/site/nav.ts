@@ -10,6 +10,7 @@ export const NAV: NavLink[] = [
   { label: "nav.stats", href: "/estatistika" },
   { label: "nav.budget", href: "/badyet" },
   { label: "nav.dynasties", href: "/dynasties" },
+  { label: "nav.gov", href: "/pamahalaan" },
 ];
 
 export const FOOTER_LINKS: NavLink[] = [
