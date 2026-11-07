@@ -156,3 +156,17 @@ describe("projectDigest", () => {
     expect(projectDigest("Puerto Galera biodiversity and environmental research and outreach center").headline).toBeUndefined();
   });
 });
+
+import { pageWindow } from "./projects";
+describe("pageWindow", () => {
+  it("small list shows all", () => expect(pageWindow(1, 3)).toEqual([1, 2, 3]));
+  it("middle page gaps both sides", () => expect(pageWindow(50, 100)).toEqual([1, "gap", 48, 49, 50, 51, 52, "gap", 100]));
+  it("start", () => expect(pageWindow(1, 100)).toEqual([1, 2, 3, "gap", 100]));
+  it("end", () => expect(pageWindow(100, 100)).toEqual([1, "gap", 98, 99, 100]));
+});
+describe("hubHref view", () => {
+  it("table view kept, cards left out", () => {
+    expect(hubHref({ view: "table", page: 3 })).toBe("/proyekto?view=table&page=3");
+    expect(hubHref({ view: "cards" })).toBe("/proyekto");
+  });
+});

@@ -1,6 +1,11 @@
 // proyekto interface strings: "area.thing": ["English", "Filipino"]. Data from sources stays as published.
 // Data left as published: project titles (cleaned and original), status values, categories, contractors, bayan names, peso amounts.
 export const PROYEKTO = {
+  "proyekto.view": ["View", "Tingnan bilang"], "proyekto.view.cards": ["Cards", "Mga card"], "proyekto.view.table": ["Table", "Talahanayan"],
+  "proyekto.col.project": ["Project", "Proyekto"], "proyekto.col.bayan": ["Town", "Bayan"], "proyekto.col.year": ["Year", "Taon"], "proyekto.col.status": ["Status", "Katayuan"], "proyekto.col.budget": ["Published budget", "Published na budget"],
+  "proyekto.table.caption": ["DPWH projects, largest published budget first", "Mga proyekto ng DPWH, pinakamalaking published na budget muna"],
+  "proyekto.page.aria": ["Pages", "Mga pahina"], "proyekto.page.first": ["First", "Una"], "proyekto.page.prev": ["Previous", "Nakaraan"], "proyekto.page.next": ["Next", "Susunod"], "proyekto.page.last": ["Last", "Huli"],
+  "proyekto.page.of": ["Page", "Pahina"], "proyekto.page.go": ["Go to page", "Pumunta sa pahina"], "proyekto.page.gobtn": ["Go", "Punta"],
   "proyekto.home": ["Home", "Home"],
   "proyekto.eyebrow": ["PROJECTS", "PROYEKTO"],
   "proyekto.title": ["DPWH projects", "Mga proyekto ng DPWH"],

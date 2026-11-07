@@ -51,9 +51,10 @@ export const topCategories = (rows: Project[], n: number): string[] =>
   tally(rows.map((p) => p.category)).sort((a, b) => b[1] - a[1]).slice(0, n).map(([c]) => String(c));
 
 /** Hub URL for a filter state; empty values and page 1 are left out. Key order is fixed. */
-export function hubHref(f: { bayan?: string; taon?: string; katayuan?: string; kategorya?: string; q?: string; page?: number }): string {
+export function hubHref(f: { bayan?: string; taon?: string; katayuan?: string; kategorya?: string; q?: string; view?: string; page?: number }): string {
   const sp = new URLSearchParams();
   for (const k of ["bayan", "taon", "katayuan", "kategorya", "q"] as const) if (f[k]) sp.set(k, f[k]);
+  if (f.view === "table") sp.set("view", "table");
   if (f.page && f.page > 1) sp.set("page", String(f.page));
   const s = sp.toString();
   return s ? `/proyekto?${s}` : "/proyekto";
@@ -93,4 +94,10 @@ export function projectDigest(title: string): Digest {
   const cap = (s: string) => s.toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase());
   const subject = road ? cap(road).replace(/\bRd\.?$/, "Road") : brgy ? `Brgy. ${cleanTitle(brgy.trim())}` : undefined;
   return { headline: work && subject ? `${work} · ${subject}` : undefined, segments };
+}
+
+/** Page numbers to show in a pager: first, last, and two either side of the current page; "gap" marks skipped runs. */
+export function pageWindow(cur: number, last: number): (number | "gap")[] {
+  const keep = [...new Set([1, last, ...[-2, -1, 0, 1, 2].map((d) => cur + d)])].filter((n) => n >= 1 && n <= last).sort((a, b) => a - b);
+  return keep.flatMap((n, i) => (i > 0 && n - keep[i - 1] > 1 ? ["gap" as const, n] : [n]));
 }

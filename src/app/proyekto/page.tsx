@@ -5,6 +5,8 @@ import { Suspense } from "react";
 import KitIcon from "@/components/kit/KitIcon";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Pager from "@/components/site/Pager";
+import ProjectsTable from "@/components/site/ProjectsTable";
 import ProjectCard from "@/components/site/ProjectCard";
 import ProjectMap from "@/components/site/ProjectMapLoader";
 import { Empty, PHead, Sec, Stat, YearBars, pesoShort } from "@/components/site/ProjectBits";
@@ -17,7 +19,8 @@ export const metadata: Metadata = { title: "Proyekto", description: "Mga proyekt
 
 const PAGE = 20;
 type SP = { [k: string]: string | string[] | undefined };
-type F = { bayan?: string; taon?: string; katayuan?: string; kategorya?: string; q?: string; page?: number };
+type F = { bayan?: string; taon?: string; katayuan?: string; kategorya?: string; q?: string; view?: string; page?: number };
+const PAGE_T = 10;
 const one = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v) || undefined;
 
 export default function Proyekto({ searchParams }: { searchParams: Promise<SP> }) {
@@ -41,13 +44,16 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
   const all = getProjects();
   const munis = getMunicipalities();
   const names = Object.fromEntries(munis.map((m) => [m.slug, m.name]));
-  const f: F = { bayan: one(sp.bayan), taon: one(sp.taon), katayuan: one(sp.katayuan), kategorya: one(sp.kategorya), q: one(sp.q)?.slice(0, 80) };
+  const f: F = { bayan: one(sp.bayan), taon: one(sp.taon), katayuan: one(sp.katayuan), kategorya: one(sp.kategorya), q: one(sp.q)?.slice(0, 80), view: one(sp.view) === "table" ? "table" : undefined };
+  const table = f.view === "table";
   const page = Math.max(1, Math.min(Number(one(sp.page)) || 1, 200));
   const year = f.taon && /^\d{4}$/.test(f.taon) ? Number(f.taon) : undefined;
   const flt = { bayan: f.bayan, status: f.katayuan, category: f.kategorya, q: f.q };
   const rows = filterProjects(all, { ...flt, year });
   const sorted = [...rows].sort((a, b) => (b.cost ?? 0) - (a.cost ?? 0));
-  const shown = sorted.slice(0, page * PAGE);
+  const lastPage = Math.max(1, Math.ceil(rows.length / PAGE_T));
+  const tp = Math.min(page, lastPage);
+  const shown = table ? sorted.slice((tp - 1) * PAGE_T, tp * PAGE_T) : sorted.slice(0, page * PAGE);
 
   const total = rows.reduce((s, p) => s + (p.cost ?? 0), 0);
   const withStatus = rows.filter((p) => p.status).length;
@@ -114,7 +120,7 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
       <section aria-labelledby="salain" className="mt-12 space-y-5">
         <h2 id="salain" className="font-serif text-3xl font-bold"><T k="proyekto.filter" /></h2>
         <form action="/proyekto" method="get" role="search" className="flex flex-wrap gap-2">
-          {(["bayan", "taon", "katayuan", "kategorya"] as const).map((k) => f[k] && <input key={k} type="hidden" name={k} value={f[k]} />)}
+          {(["bayan", "taon", "katayuan", "kategorya", "view"] as const).map((k) => f[k] && <input key={k} type="hidden" name={k} value={f[k]} />)}
           <SearchInput defaultValue={f.q} />
           <button className="min-h-11 rounded-lg bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue"><T k="proyekto.search" /></button>
           {filtered && <Link href="/proyekto" className="inline-flex min-h-11 items-center px-3 text-sm underline"><T k="proyekto.clear" /></Link>}
@@ -126,9 +132,18 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
       </section>
 
       <section aria-labelledby="lista" className="mt-12">
-        <h2 id="lista" className="font-serif text-3xl font-bold"><T k="proyekto.list.h" /></h2>
-        <p className="mt-1 text-sm text-black/70"><T k="proyekto.showing" /> {shown.length.toLocaleString("en-PH")} <T k="proyekto.of" /> {rows.length.toLocaleString("en-PH")}<T k="proyekto.showing.tail" /></p>
-        {shown.length ? (
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <h2 id="lista" className="font-serif text-3xl font-bold"><T k="proyekto.list.h" /></h2>
+          <div role="group" aria-label="View" className="inline-flex rounded-full bg-fiesta-navy/5 p-0.5 text-sm font-semibold">
+            {([["cards", "proyekto.view.cards"], ["table", "proyekto.view.table"]] as const).map(([v, k]) => (
+              <Link key={v} href={link({ view: v, page: undefined })} aria-current={(v === "table") === table ? "true" : undefined} className={`inline-flex min-h-10 items-center rounded-full px-4 ${(v === "table") === table ? "bg-fiesta-navy text-white" : "text-fiesta-navy hover:bg-fiesta-navy/10"}`}><T k={k} /></Link>
+            ))}
+          </div>
+        </div>
+        <p className="mt-1 text-sm text-black/70"><T k="proyekto.showing" /> {table && shown.length ? `${((tp - 1) * PAGE_T + 1).toLocaleString("en-PH")}–${((tp - 1) * PAGE_T + shown.length).toLocaleString("en-PH")}` : shown.length.toLocaleString("en-PH")} <T k="proyekto.of" /> {rows.length.toLocaleString("en-PH")}<T k="proyekto.showing.tail" /></p>
+        {shown.length && table ? (
+          <ProjectsTable rows={shown} names={names} />
+        ) : shown.length ? (
           <ul className="mt-4 grid gap-3 md:grid-cols-2">
             {shown.map((p) => (
               <li key={p.id} className="min-w-0"><ProjectCard id={p.id} title={p.title} bayan={p.municipality ? names[p.municipality] : undefined} year={p.year} status={p.status} cost={p.cost} category={p.category} /></li>
@@ -137,7 +152,8 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
         ) : (
           <div className="mt-4"><Empty title="proyekto.nomatch"><T k="proyekto.nomatch.d1" /> <Link href="/proyekto" className="underline"><T k="proyekto.nomatch.d2" /></Link>.</Empty></div>
         )}
-        {shown.length < rows.length && (
+        {table && <Pager page={tp} last={lastPage} href={(p) => link({ page: p })} action="/proyekto" hidden={Object.fromEntries((["bayan", "taon", "katayuan", "kategorya", "q", "view"] as const).flatMap((k) => (f[k] ? [[k, f[k]!]] : [])))} />}
+        {!table && shown.length < rows.length && (
           <p className="mt-5"><Link href={link({ page: page + 1 })} scroll={false} className="inline-flex min-h-11 items-center rounded-lg border-2 border-fiesta-navy px-5 text-sm font-semibold text-fiesta-navy hover:bg-fiesta-navy hover:text-white"><T k="proyekto.more" /> ({Math.min(PAGE, rows.length - shown.length)} <T k="proyekto.more.n" />)</Link></p>
         )}
       </section>
