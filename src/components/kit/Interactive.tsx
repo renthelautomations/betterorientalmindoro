@@ -50,7 +50,7 @@ export function CopyButton({ text, label = "common.copy", className = "" }: { te
   const svg = "absolute inset-0 m-auto h-5 w-5 transition duration-200";
   return (
     <button type="button" onClick={copy} title={t(done ? "common.copied" : label)} aria-label={t(label)}
-      className={`relative inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-fiesta-navy transition-colors duration-200 ${done ? "bg-fiesta-green/20 text-[#1f6b37]" : "bg-fiesta-navy/5 hover:bg-fiesta-navy/10"} ${className}`}>
+      className={`relative inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl transition-colors duration-200 ${done ? "bg-fiesta-green/20 text-[#1f6b37]" : "bg-fiesta-navy/5 text-fiesta-navy hover:bg-fiesta-navy/10"} ${className}`}>
       {done && <span aria-hidden className="copy-ring pointer-events-none absolute inset-0 rounded-xl ring-2 ring-fiesta-green" />}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden className={`${svg} ${done ? "scale-50 opacity-0" : "scale-100 opacity-100"}`}><rect x="9" y="9" width="11" height="11" rx="2.5" /><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15" /></svg>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden className={`${svg} ${done ? "copy-pop opacity-100" : "scale-50 opacity-0"}`}><path d="M5 12.5l4.5 4.5L19 7" /></svg>
