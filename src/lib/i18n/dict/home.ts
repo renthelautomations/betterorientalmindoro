@@ -1,6 +1,14 @@
 // home interface strings: "area.thing": ["English", "Filipino"]. Data from sources stays as published.
 // Filipino drafts for strings that were English-only (footer, 404/error English lines, weather, map aria, badges) await native-speaker review.
 export const HOME = {
+  "search.ph.serbisyo": ["Search services, e.g. birth certificate, scholarship", "Maghanap ng serbisyo, hal. birth certificate, scholarship"],
+  "search.ph.bayan": ["Search a town", "Maghanap ng bayan"],
+  "search.ph.badyet": ["Search a district or office", "Maghanap ng distrito o opisina"],
+  "search.ph.estat": ["Search a town's statistics", "Maghanap ng estatistika ng bayan"],
+  "search.hint.page": ["Press / to search this page", "Pindutin ang / para maghanap sa pahinang ito"],
+  "search.q.business": ["business", "negosyo"], "search.q.ambulance": ["ambulance", "ambulansya"],
+  "search.q.calapan": ["Calapan", "Calapan"], "search.q.pgalera": ["Puerto Galera", "Puerto Galera"], "search.q.naujan": ["Naujan", "Naujan"], "search.q.pinamalayan": ["Pinamalayan", "Pinamalayan"], "search.q.roxas": ["Roxas", "Roxas"], "search.q.bongabong": ["Bongabong", "Bongabong"], "search.q.victoria": ["Victoria", "Victoria"],
+  "search.q.first": ["1st district", "1st district"], "search.q.second": ["2nd district", "2nd district"], "search.q.dpwh": ["DPWH", "DPWH"], "search.q.school": ["school", "paaralan"],
   "svc.count": ["services", "serbisyo"], "svc.count1": ["service", "serbisyo"], "svc.soon": ["Coming soon", "Paparating"], "town.people": ["people", "katao"],
   // smart search (Filipino drafts await native-speaker review)
   "search.t.pahina": ["Page", "Pahina"], "search.t.kwento": ["Story", "Kwento"], "search.t.faq": ["Question", "Tanong"],

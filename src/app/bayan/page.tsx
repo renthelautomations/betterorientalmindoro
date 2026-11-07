@@ -28,7 +28,7 @@ export default function Bayan() {
       <BayanCrumbs items={[{ label: "bayan.home", href: "/" }, { label: "nav.towns" }]} />
       <div className="mt-4"><BayanTitle eyebrow="bayan.eyebrow" title="bayan.title" /></div>
       <p className="mt-4 text-black/70"><T k="bayan.lead" /></p>
-      <div className="mt-6"><SmartSearch items={getSearchItems()} /></div>
+      <div className="mt-6"><SmartSearch scope="bayan" items={getSearchItems("bayan")} /></div>
       <div className="mt-6"><BayanHub slugs={slugs} summaries={summaries} /></div>
 
       <section aria-labelledby="pop" className="mt-14">

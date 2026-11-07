@@ -35,7 +35,7 @@ export default function Estatistika() {
       <Crumbs items={[{ label: "finance.home", href: "/" }, { label: "nav.stats" }]} />
       <div className="mt-4"><Title eyebrow="finance.est.eyebrow" title="finance.est.title" /></div>
       <p className="mt-3 text-black/70"><T k="finance.est.lead" /></p>
-      <div className="mt-6"><SmartSearch items={getSearchItems()} /></div>
+      <div className="mt-6"><SmartSearch scope="estatistika" items={getSearchItems("estatistika")} /></div>
 
       <Sec k="finance.est.numbers" className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <FinStat label="town.pop" value={fmtInt(latest?.value)} hint={latest ? `Census ${latest.year}` : <T k="town.nodata" />} icon="people" color={FIESTA.blue} />
