@@ -29,9 +29,9 @@ export default function VisitCounter() {
   }, []);
   if (n == null) return null;
   return (
-    <p className="inline-flex items-center gap-3 rounded-2xl bg-white/10 px-4 py-3" aria-live="polite">
-      <svg viewBox="0 0 24 24" className="h-6 w-6 shrink-0 text-fiesta-yellow" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" /><circle cx="12" cy="12" r="3" /></svg>
-      <span><b className="block font-serif text-2xl leading-none tabular-nums text-white">{n.toLocaleString("en-PH")}</b><span className="text-xs text-white/80">{t("foot.visits")}</span></span>
+    <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-xs" aria-live="polite">
+      <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-fiesta-yellow" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" /><circle cx="12" cy="12" r="3" /></svg>
+      <span><b className="font-semibold tabular-nums text-white">{n.toLocaleString("en-PH")}</b> <span className="text-white/80">{t("foot.visits")}</span></span>
     </p>
   );
 }
