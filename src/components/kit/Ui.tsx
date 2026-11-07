@@ -124,7 +124,7 @@ export function HotlineCard({ h, tone = "emergency" }: { h: HotlineCardData; ton
     <div className="flex flex-col gap-3 rounded-2xl bg-white p-5 shadow-sm">
       <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${chip}`}><T k={`cat.${tone}`} /></span>
       <p className="font-semibold leading-snug">{h.name}</p>
-      <a href={tel(h.number)} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-4 font-serif text-xl font-bold text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-5 w-5" />{h.number}</a>
+      <a href={tel(h.number)} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-3 font-serif text-lg font-bold whitespace-nowrap text-white hover:bg-fiesta-blue sm:text-xl"><KitIcon name="phone" className="h-5 w-5 shrink-0" />{h.number}</a>
       <div className="flex flex-wrap items-center gap-2"><CopyButton text={h.number} /><a href={h.source} rel="noopener" className="inline-flex min-h-11 items-center px-2 text-sm underline"><T k="common.source" /></a></div>
       <p className="mt-auto flex flex-wrap items-center gap-2 text-xs text-black/60"><Badge kind={h.confirmed ? "verified" : "wip"}><T k={h.confirmed ? "common.verified" : "common.unconfirmed"} /></Badge><span><T k="common.checked" /> {h.verifiedAt}</span></p>
     </div>

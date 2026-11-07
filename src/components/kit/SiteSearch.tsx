@@ -28,7 +28,7 @@ export default function SiteSearch({ items }: { items: SearchItem[] }) {
               <li key={h.href + h.title}>
                 <a href={h.href} className="flex min-h-12 items-center gap-3 px-4 py-2 hover:bg-fiesta-mint">
                   <span className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-semibold ${BADGE[h.type]}`}>{t("search.t." + h.type)}</span>
-                  <span className="min-w-0"><span className="block truncate font-medium">{h.title}</span>{h.sub && <span className="block truncate text-xs text-black/60">{h.sub}</span>}</span>
+                  <span className="min-w-0"><span className="block font-medium">{h.title}</span>{h.sub && <span className="block text-xs text-black/60">{h.sub}</span>}</span>
                 </a>
               </li>
             )) : <li className="px-4 py-4 text-sm text-black/60">{t("search.none")} “{q}”.</li>}

@@ -60,7 +60,7 @@ export function ServiceRow({ icon, title, sub, color = "#2f6b4f" }: { icon: KitI
   return (
     <div className="flex items-center gap-4 rounded-xl border border-black/10 bg-white p-4 hover:border-black/30">
       <KitIcon name={icon} variant="badge" color={color} className="h-11 w-11 shrink-0" />
-      <div className="min-w-0 flex-1"><p className="font-semibold">{title}</p><p className="truncate text-sm text-black/60">{sub}</p></div>
+      <div className="min-w-0 flex-1"><p className="font-semibold">{title}</p><p className="text-sm text-black/60">{sub}</p></div>
       <KitIcon name="arrow" className="h-5 w-5 text-black/40" />
     </div>
   );

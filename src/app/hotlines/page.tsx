@@ -1,7 +1,6 @@
-import SplitSticky from "@/components/site/SplitSticky";
+import TownSelect from "@/components/site/TownSelect";
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { HotlineCard } from "@/components/kit/Ui";
 import { Skeleton } from "@/components/kit/Ui";
 import Bilingual from "@/lib/i18n/Bilingual";
@@ -22,7 +21,7 @@ function Groups({ rows, id }: { rows: Hotline[]; id: string }) {
         <div key={c}>
           <h3 className="mb-3 text-sm font-semibold tracking-widest text-black/65 uppercase"><T k={`cat.${c}`} /></h3>
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {g[c]!.map((h) => <li key={h.id} className="flex flex-col [&>div]:flex-1 [&_.text-fiesta-red]:text-[#a8281b]"><HotlineCard h={h} tone={c} /></li>)}
+            {g[c]!.map((h) => <li key={h.id} className="flex min-w-0 flex-col [&>div]:flex-1 [&_.text-fiesta-red]:text-[#a8281b]"><HotlineCard h={h} tone={c} /></li>)}
           </ul>
         </div>
       ))}
@@ -36,16 +35,10 @@ async function Body({ searchParams }: { searchParams: Promise<{ bayan?: string |
   const towns = getMunicipalities();
   const town = towns.find((m) => m.slug === bayan);
   const { local, province } = hotlinesForBayan(town?.slug);
-  const pill = (active: boolean) => `inline-flex min-h-11 items-center rounded-full px-4 text-sm font-semibold lg:w-full lg:rounded-xl ${active ? "bg-fiesta-navy text-white" : "border-2 border-fiesta-navy/20 hover:border-fiesta-navy"}`;
   return (
-    <SplitSticky className="mt-8" side={<TNav label="dyn.hotline.pick">
-        <p className="mb-3 text-sm font-semibold"><T k="dyn.hotline.pick" /></p>
-        <ul className="flex flex-wrap gap-2 lg:max-h-[calc(100vh-14rem)] lg:flex-col lg:flex-nowrap lg:gap-1 lg:overflow-y-auto">
-          <li><Link href="/hotlines" aria-current={!town ? "page" : undefined} className={pill(!town)}><T k="dyn.province" /></Link></li>
-          {towns.map((m) => <li key={m.slug}><Link href={`/hotlines?bayan=${m.slug}`} aria-current={town?.slug === m.slug ? "page" : undefined} className={pill(town?.slug === m.slug)}>{m.name}</Link></li>)}
-        </ul>
-      </TNav>}>
-      <div className="space-y-10">
+    <div className="mt-8">
+      <TNav label="dyn.hotline.pick"><TownSelect towns={towns.map((m) => ({ slug: m.slug, name: m.name }))} current={town?.slug} /></TNav>
+      <div className="mt-8 space-y-10">
       {town && (
         <section aria-labelledby="local" className="">
           <h2 id="local" className="mb-4 font-serif text-2xl font-bold">{town.name}</h2>
@@ -59,13 +52,13 @@ async function Body({ searchParams }: { searchParams: Promise<{ bayan?: string |
         <Groups rows={province} id="prov" />
       </section>
       </div>
-    </SplitSticky>
+    </div>
   );
 }
 
 export default function Hotlines({ searchParams }: { searchParams: Promise<{ bayan?: string | string[] }> }) {
   return (
-    <main className="mx-auto max-w-5xl px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-6xl px-4 pb-20 pt-8">
       <TPageHead crumbs={[{ label: "dyn.home", href: "/" }, { label: "nav.hotlines" }]} eyebrow="dyn.hotline.eyebrow" title="dyn.hotline.title">
         <p><Bilingual en={<>For an emergency, call <b>911</b>, the national emergency hotline.</>} fil={<>Para sa emergency, tumawag sa <b>911</b>, ang pambansang emergency hotline.</>} /></p>
         <p className="text-sm text-black/70"><T k="dyn.hotline.note" /></p>

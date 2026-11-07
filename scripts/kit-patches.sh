@@ -36,5 +36,18 @@ s=s.replace('className="hidden gap-1 md:flex"','className="hidden gap-1 lg:flex"
 s=s.replace('className="ml-auto mr-2 md:ml-4 md:mr-0"','className="ml-auto mr-2 lg:ml-4 lg:mr-0"')
 s=s.replace('className="group relative md:hidden"','className="group relative lg:hidden"')
 open(p,"w").write(s)
+# 7. Show full text instead of clipping: ServiceRow sub line, bar-list labels, search results; HotlineCard number on one line.
+p="src/components/kit/Parts.tsx"; s=open(p).read()
+s=s.replace('<p className="truncate text-sm text-black/60">{sub}</p>','<p className="text-sm text-black/60">{sub}</p>')
+open(p,"w").write(s)
+p="src/components/kit/Charts.tsx"; s=open(p).read()
+s=s.replace('<span className="truncate">{label}</span>','<span className="leading-tight [overflow-wrap:anywhere]">{label}</span>')
+open(p,"w").write(s)
+p="src/components/kit/SiteSearch.tsx"; s=open(p).read()
+s=s.replace('<span className="block truncate font-medium">','<span className="block font-medium">').replace('<span className="block truncate text-xs text-black/60">','<span className="block text-xs text-black/60">')
+open(p,"w").write(s)
+p="src/components/kit/Ui.tsx"; s=open(p).read()
+s=s.replace('rounded-xl bg-fiesta-navy px-4 font-serif text-xl font-bold text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-5 w-5" />{h.number}</a>','rounded-xl bg-fiesta-navy px-3 font-serif text-lg font-bold whitespace-nowrap text-white hover:bg-fiesta-blue sm:text-xl"><KitIcon name="phone" className="h-5 w-5 shrink-0" />{h.number}</a>')
+open(p,"w").write(s)
 PY
 echo "kit patches applied"
