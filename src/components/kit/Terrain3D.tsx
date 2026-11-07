@@ -28,7 +28,7 @@ export default function Terrain3D() {
         center: [121.25, 13.05], zoom: 8.4, pitch: 62, bearing: -18, maxPitch: 75,
         attributionControl: { compact: true },
       });
-    } catch { setFailed(true); return; }
+    } catch { queueMicrotask(() => setFailed(true)); return; }
     map.on("load", () => {
       map.setTerrain({ source: "dem", exaggeration: 1.8 });
       map.addSource("towns", { type: "geojson", data: "/data/municipalities.geojson" });

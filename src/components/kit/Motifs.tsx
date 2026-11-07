@@ -1,5 +1,5 @@
 // Flat vector motifs, dividers and hero backgrounds. Colors via props.
-import { FIESTA as F, PatternFill, PATTERNS, type PatternKey } from "./Patterns";
+import { FIESTA as F, FIESTA_DEEP as D, PatternFill, PATTERNS, type PatternKey } from "./Patterns";
 import { HALCON, TAM_HALF, HalconShape, TamarawShape, MangyanLines, LakeLines } from "./shapes";
 
 // ---- Motifs (flat, modeled on the four pennant emblems) ----
@@ -63,7 +63,7 @@ export function Sun({ className = "h-16 w-16", color = "currentColor" }: { class
 // ---- Dividers: flat strips, full width ----
 export const DIVIDERS = {
   tiles: { label: "Tile strip", pattern: "mosaic" as PatternKey, h: 40, colors: [F.orange, F.blue, F.green, F.yellow] },
-  mahaltana: { label: "Ma Hal Ta Na (the four pillars)", pattern: "mahaltana" as PatternKey, h: 48, colors: [F.blue, F.green, F.red, F.sky] },
+  mahaltana: { label: "Ma Hal Ta Na (the four pillars)", pattern: "mahaltana" as PatternKey, h: 48, colors: [F.blue, F.green, F.red, D.sky] },
   emblems: { label: "Halcon + tamaraw tiles", pattern: "emblems" as PatternKey, h: 48, colors: [F.red, F.blue, F.green, F.pink] },
   peaks: { label: "Halcon massifs", pattern: "peaks" as PatternKey, h: 32, colors: [F.green] },
   horns: { label: "Tamaraw heads", pattern: "horns" as PatternKey, h: 52, colors: [F.red] },
@@ -93,7 +93,7 @@ const PENNANTS = [
   { c: F.blue, el: (c: string) => <Mangyan className="h-10 w-10" color={c} /> },
   { c: F.green, el: (c: string) => <Halcon className="h-8 w-11" color={c} outline /> },
   { c: F.red, el: (c: string) => <Tamaraw className="h-12 w-11" color={c} outline /> },
-  { c: F.sky, el: (c: string) => <Lake className="h-10 w-12" color={c} /> },
+  { c: D.sky, el: (c: string) => <Lake className="h-10 w-12" color={c} /> },
 ];
 
 export function HeroBg({ variant, children, className = "" }: { variant: BgKey; children?: React.ReactNode; className?: string }) {

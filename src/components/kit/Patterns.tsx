@@ -3,6 +3,8 @@ import { HalconShape, TamarawShape, HALCON, TAM_HALF, MangyanLines, LakeLines } 
 
 // Fiesta palette: flat, bold, from the 74th-anniversary references.
 export const FIESTA = { orange: "#e8552d", blue: "#2b4fa3", green: "#3aa65b", yellow: "#f4b92e", pink: "#f4a3c0", navy: "#1b2a4a", sky: "#4aa3d8", red: "#d2402f", mint: "#dcefe8", cream: "#fbf7f0" } as const;
+/** Darker twins of the light brand colors. Use these under white text: plain green, sky and orange fail WCAG AA for it (3.1, 2.8, 3.6 vs 4.5). */
+export const FIESTA_DEEP = { green: "#2a7f44", sky: "#1f7aaa", orange: "#c4431a" } as const;
 const F = FIESTA;
 const DEFAULT = [F.orange, F.blue, F.green, F.pink];
 

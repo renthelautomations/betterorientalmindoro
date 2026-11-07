@@ -1,4 +1,5 @@
 import KitIcon, { type KitIconName } from "./KitIcon";
+import { T } from "./i18n";
 import { PatternFill, type PatternKey } from "./Patterns";
 
 // ---- Buttons ----
@@ -48,9 +49,9 @@ export function PillarCard({ short, name, blurb, color, pattern }: { short: stri
 export function StatCard({ label, value, hint, icon, color = "#1f7a8c" }: { label: string; value: string; hint: string; icon: KitIconName; color?: string }) {
   return (
     <div className="rounded-2xl border border-black/10 bg-white p-5">
-      <div className="flex items-center justify-between"><p className="text-xs font-semibold tracking-widest text-black/60">{label}</p><KitIcon name={icon} variant="duo" color={color} /></div>
+      <div className="flex items-center justify-between"><p className="text-xs font-semibold tracking-widest text-black/60"><T k={label} /></p><KitIcon name={icon} variant="duo" color={color} /></div>
       <p className="mt-3 font-serif text-4xl font-bold" style={{ color }}>{value}</p>
-      <p className="mt-1 text-sm text-black/60">{hint}</p>
+      <p className="mt-1 text-sm text-black/60"><T k={hint} /></p>
     </div>
   );
 }

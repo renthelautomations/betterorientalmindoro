@@ -15,7 +15,7 @@ export function BarChart({ rows, format, color = "#2b4fa3", highlight }: { rows:
         const label = r.href ? <Link href={r.href} className="underline-offset-2 hover:underline">{r.label}</Link> : r.label;
         return (
           <li key={r.label} className="grid grid-cols-[1.5rem_8rem_1fr_5.5rem] items-center gap-2 text-sm">
-            <span className="text-right text-black/50 tabular-nums">{i + 1}</span>
+            <span className="text-right text-black/65 tabular-nums">{i + 1}</span>
             <span className="truncate">{label}</span>
             <span className="h-4 rounded-sm bg-black/5" aria-hidden>
               <span className="anim-grow block h-4 rounded-sm" style={{ width: `${(r.value / max) * 100}%`, background: r.label === highlight ? "#d2402f" : color }} />

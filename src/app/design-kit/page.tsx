@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PatternFill, PATTERNS, FIESTA, type PatternKey } from "@/components/kit/Patterns";
+import { PatternFill, PATTERNS, FIESTA, FIESTA_DEEP, type PatternKey } from "@/components/kit/Patterns";
 import { Halcon, Tamaraw, Lake, Mangyan, Sun, Divider, DIVIDERS, HeroBg, BG_LABELS, type BgKey, type DividerKey } from "@/components/kit/Motifs";
 import KitIcon, { KIT_ICONS, type KitIconName } from "@/components/kit/KitIcon";
 import { Button, Badge, SectionHeader, PillarCard, StatCard, ServiceRow, Callout, type BtnVariant } from "@/components/kit/Parts";
@@ -10,7 +10,9 @@ import { getStats, fmtInt } from "@/lib/stats";
 import { BarChart, Choropleth } from "@/components/kit/Charts";
 import DataTable from "@/components/kit/DataTable";
 import HalconScroll from "@/components/kit/HalconScroll";
-import { Donut, Treemap, Timeline, Network, type TimelineItem, type NetEdge } from "@/components/kit/Charts2";
+import { Donut, Treemap, Timeline, type TimelineItem } from "@/components/kit/Charts2";
+import { Network, type NetEdge } from "@/components/kit/Network";
+import CompareTowns from "@/components/kit/CompareTowns";
 import LineChart from "@/components/kit/LineChart";
 import Terrain3D from "@/components/kit/Terrain3D";
 import { KitHeader, KitFooter } from "@/components/kit/Layout";
@@ -146,20 +148,30 @@ export default function DesignKit() {
         <DataTable
           caption="Mga bayan at lungsod ng Oriental Mindoro"
           filterKey="name"
-          rows={towns.map((t) => ({ name: t.name, kind: t.isCity ? "Lungsod" : "Bayan", pop: t.pop, area: t.areaKm2 }))}
-          cols={[{ key: "name", label: "Pangalan" }, { key: "kind", label: "Uri" }, { key: "pop", label: "Populasyon", align: "right", format: "int" }, { key: "area", label: "Lawak (km²)", align: "right", format: "int" }]}
+          rows={towns.map((t) => ({ name: t.name, kind: t.isCity ? "Lungsod" : "Bayan", pop: t.pop, trend: getStats(t.slug)?.population.map((p) => p.value) ?? null, area: t.areaKm2 }))}
+          cols={[{ key: "name", label: "table.name" }, { key: "kind", label: "table.kind" }, { key: "pop", label: "table.pop", align: "right", format: "int" }, { key: "trend", label: "table.trend", format: "spark" }, { key: "area", label: "table.area", align: "right", format: "int" }]}
         />
       </Sec>
 
 
       <Sec id="more-charts" title="More charts" note="Line chart (pick a town), donut and treemap of DPWH project cost, a dynasty-style network and an election timeline. All use real data in this repo.">
         <div className="grid gap-10 md:grid-cols-2">
-          <div><p className="mb-3 text-sm font-semibold">Line with town picker <Tag>CHART-line</Tag></p><LineChart series={series} label="Bayan:" /></div>
+          <div><p className="mb-3 text-sm font-semibold">Line with town picker <Tag>CHART-line</Tag></p><LineChart series={series} label="common.town" /></div>
           <div><p className="mb-3 text-sm font-semibold">Donut: project cost by status <Tag>CHART-donut</Tag></p><Donut slices={byStatus} format={fmtPeso} centerLabel="kabuuang gastos" /></div>
           <div className="md:col-span-2"><p className="mb-3 text-sm font-semibold">Treemap: project cost by category <Tag>CHART-treemap</Tag></p><Treemap items={byCategory} format={fmtPeso} /></div>
-          <div><p className="mb-3 text-sm font-semibold">Network: towns sharing winning surnames <Tag>CHART-network</Tag></p><Network nodes={dyn.map((t) => ({ id: t.slug, label: label(t.slug) }))} edges={edges} /><p className="mt-2 text-xs text-black/60">Same surname only. This is a hint, never proof of relation.</p></div>
+          <div><p className="mb-3 text-sm font-semibold">Network: towns sharing winning surnames (hover a town) <Tag>CHART-network</Tag></p><Network nodes={dyn.map((t) => ({ id: t.slug, label: label(t.slug) }))} edges={edges} /><p className="mt-2 text-xs text-black/60">Same surname only. This is a hint, never proof of relation.</p></div>
           <div><p className="mb-3 text-sm font-semibold">Timeline: Calapan City mayors <Tag>TIMELINE</Tag></p><Timeline items={mayors} /></div>
         </div>
+      </Sec>
+
+
+      <Sec id="compare" title="Compare two towns" note="Pick any two. Each row is scaled to the larger of the pair. CHART-compare.">
+        <CompareTowns initial={["naujan", "pinamalayan"]} towns={getMunicipalities().map((t) => ({ slug: t.slug, name: t.name }))} metrics={[
+          { label: "metric.pop", values: Object.fromEntries(getMunicipalities().map((t) => [t.slug, getStats(t.slug)?.population.at(-1)?.value ?? null])) },
+          { label: "metric.area", values: Object.fromEntries(getMunicipalities().map((t) => [t.slug, t.areaKm2])) },
+          { label: "metric.projects", values: Object.fromEntries(getMunicipalities().map((t) => [t.slug, getProjects(t.slug).length])) },
+          { label: "metric.revenue", unit: "peso", values: Object.fromEntries(getMunicipalities().map((t) => [t.slug, getStats(t.slug)?.revenue?.value ?? null])) },
+        ]} />
       </Sec>
 
       <Sec id="terrain" title="3D terrain" note="Drag to rotate, right-drag or ctrl-drag to tilt. Needs WebGL and loads public elevation tiles. TERRAIN-3d.">
@@ -185,8 +197,10 @@ export default function DesignKit() {
       <Sec id="templates" title="Page templates" note="Full pages built only from kit pieces and real data. TEMPLATE-home, TEMPLATE-town.">
         <ul className="grid gap-3 sm:grid-cols-3">
           <li><a href="/design-kit/home" className="block rounded-2xl bg-fiesta-navy p-5 font-semibold text-white hover:bg-fiesta-blue">Home template →</a></li>
-          <li><Link href="/design-kit/town/naujan" className="block rounded-2xl bg-fiesta-green p-5 font-semibold text-white hover:opacity-90">Town profile: Naujan →</Link></li>
-          <li><Link href="/design-kit/town/calapan-city" className="block rounded-2xl bg-fiesta-orange p-5 font-semibold text-white hover:opacity-90">Town profile: Calapan City →</Link></li>
+          <li><Link href="/design-kit/town/naujan" className="block rounded-2xl bg-fiesta-green-deep p-5 font-semibold text-white hover:opacity-90">Town profile: Naujan →</Link></li>
+          <li><Link href="/design-kit/town/calapan-city" className="block rounded-2xl bg-fiesta-orange-deep p-5 font-semibold text-white hover:opacity-90">Town profile: Calapan City →</Link></li>
+          <li><Link href="/design-kit/not-found-demo" className="block rounded-2xl bg-fiesta-red p-5 font-semibold text-white hover:opacity-90">404 page →</Link></li>
+          <li><Link href="/design-kit/story/hal" className="block rounded-2xl bg-fiesta-sky-deep p-5 font-semibold text-white hover:opacity-90">Pillar story: Halcon →</Link></li>
         </ul>
       </Sec>
 
@@ -207,11 +221,11 @@ export default function DesignKit() {
         </ul>
       </Sec>
 
-      <Sec id="layout" title="Header and footer" note="Header: stripe, logo, inline links on desktop, native menu on phones (shrink the window to see it). Footer: emblem strip, links, disclaimer. LAYOUT-header, LAYOUT-footer.">
+      <Sec id="layout" title="Header and footer" note="Header: stripe, logo, EN/FIL toggle, inline links on desktop, native menu on phones. Footer: Ma Hal Ta Na strip, links, disclaimer. Try the EN | FIL switch: header, footer, search, tables, cards, scenes and templates all follow it. LAYOUT-header, LAYOUT-footer, LANG-toggle.">
         <div className="overflow-hidden rounded-2xl ring-1 ring-black/10">
-          <KitHeader links={[{ label: "Bayan", href: "#" }, { label: "Serbisyo", href: "#" }, { label: "Hotlines", href: "#" }, { label: "Proyekto", href: "#" }, { label: "Estatistika", href: "#" }]} />
+          <KitHeader links={[{ label: "nav.towns", href: "#a" }, { label: "nav.services", href: "#b" }, { label: "nav.hotlines", href: "#c" }, { label: "nav.projects", href: "#d" }, { label: "nav.stats", href: "#e" }]} />
           <div className="h-16 bg-white" />
-          <KitFooter links={[{ label: "Sitemap", href: "#" }, { label: "Privacy", href: "#" }, { label: "FAQ", href: "#" }]} sources={[{ label: "GitHub", href: "#" }, { label: "BetterGov.PH", href: "#" }]} />
+          <KitFooter links={[{ label: "nav.sitemap", href: "#a" }, { label: "nav.privacy", href: "#b" }, { label: "nav.faq", href: "#c" }]} sources={[{ label: "GitHub", href: "#d" }, { label: "BetterGov.PH", href: "#e" }]} />
         </div>
       </Sec>
 
@@ -249,9 +263,9 @@ export default function DesignKit() {
         <p className="mb-3 mt-8 text-sm font-semibold">Pillar cards <Tag>CARD-pillar</Tag> (pattern per pillar)</p>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <PillarCard short="Ma" name="Mangyan" blurb="Kultura at tradisyon." color={C.ma} pattern="ikat" />
-          <PillarCard short="Hal" name="Mount Halcon" blurb="Ang bundok ng lalawigan." color={C.hal} pattern="peaks" />
+          <PillarCard short="Hal" name="Mount Halcon" blurb="Ang bundok ng lalawigan." color={FIESTA_DEEP.green} pattern="peaks" />
           <PillarCard short="Ta" name="Tamaraw" blurb="Tanging sa Mindoro." color={C.ta} pattern="horns" />
-          <PillarCard short="Na" name="Naujan Lake" blurb="Ang pinakamalaking lawa." color={C.na} pattern="wave" />
+          <PillarCard short="Na" name="Naujan Lake" blurb="Ang pinakamalaking lawa." color={FIESTA_DEEP.sky} pattern="wave" />
         </div>
         <p className="mb-3 mt-8 text-sm font-semibold">Stat cards <Tag>CARD-stat</Tag></p>
         <div className="grid gap-4 md:grid-cols-3">

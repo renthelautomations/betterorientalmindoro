@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MapLoader from "@/components/MapLoader";
-import { HeroBg, Divider } from "@/components/kit/Motifs";
+import { Divider } from "@/components/kit/Motifs";
+import PennantHero from "@/components/site/PennantHero";
 import { PillarCard, StatCard, Callout, SectionHeader } from "@/components/kit/Parts";
 import SiteSearch from "@/components/kit/SiteSearch";
 import { FIESTA } from "@/components/kit/Patterns";
@@ -21,14 +22,14 @@ export default function Home() {
   const hotlines = getHotlines("province").filter((h) => h.confirmed && /^(Police|Fire|Public Safety)$|Operations and Warning/.test(h.name)).slice(0, 4);
   return (
     <main>
-      <HeroBg variant="banners">
+      <PennantHero>
         <div className="mx-auto max-w-6xl px-4 pb-14 pt-12 md:pb-20 md:pt-16">
-          <p className="text-sm font-semibold tracking-[0.2em] text-fiesta-blue">MAHALTANA</p>
-          <h1 className="mt-3 max-w-xl font-serif text-4xl font-bold leading-tight md:text-6xl">{SITE.tagline}</h1>
+          <p className="text-sm font-semibold tracking-[0.2em] text-fiesta-blue">{SITE.tagline.toUpperCase()}</p>
+          <h1 className="mt-3 max-w-xl font-serif text-5xl font-bold leading-[1.05] md:text-7xl">Better<br />Oriental Mindoro<span className="text-fiesta-orange">.org</span></h1>
           <p className="mt-5 max-w-lg text-lg text-black/70">Mga serbisyo, hotline, proyekto at kuwento ng lalawigan, sa iisang lugar.</p>
           <div className="mt-8"><SiteSearch items={getSearchItems()} /></div>
         </div>
-      </HeroBg>
+      </PennantHero>
       <Divider variant="mahaltana" />
 
       <div className="mx-auto max-w-6xl px-4">

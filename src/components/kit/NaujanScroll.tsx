@@ -4,13 +4,11 @@ import { Cloud, drift } from "./clouds";
 import { FIESTA as F, PatternFill } from "./Patterns";
 import { HalconShape } from "./shapes";
 import { useScrollProgress } from "./useScrollProgress";
+import { T } from "./i18n";
+import Bird from "./Bird";
 
-const STEPS = [
-  { h: "Ang Lawa ng Naujan", p: "Ang pinakamalaking lawa ng lalawigan, nakapalibot sa mga palayan at bayan." },
-  { h: "Tahanan ng mga ibon", p: "Dinarayo ng mga ibong migratoryo at ng mga hayop na matatagpuan lamang sa Mindoro." },
-  { h: "Paglubog ng araw", p: "Ang tubig ay umaagos mula sa mga bundok patungo sa dagat." },
-];
-// ponytail: step copy is placeholder text. Verify the facts (size ranking, protected status) before using on the site.
+const STEPS = [1, 2, 3].map((n) => ({ h: `scene.na.${n}.h`, p: `scene.na.${n}.p` }));
+// Captions mirror src/lib/stories.ts (which is itself marked draft: volunteers verify before launch).
 
 // Seeded RNG so server and client draw the same scene.
 const rng = (seed: number) => { let a = seed; return () => { a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; };
@@ -30,17 +28,6 @@ const PINE_HILL = (() => {
   }
   return d + "L1210 200Z";
 })();
-
-/** A bird whose wings flap by CSS (see globals.css). `x` is its scroll travel in % of its own width. */
-function Bird({ className, travel, flap, delay }: { className: string; travel: number; flap: number; delay: number }) {
-  const vars = { "--flap": `${flap}s`, "--delay": `${delay}s` } as React.CSSProperties;
-  return (
-    <svg viewBox="0 0 30 14" className={`absolute ${className}`} style={{ transform: `translateX(calc(var(--p) * ${travel}%))`, ...vars }} aria-hidden="true" fill="none" stroke={F.navy} strokeWidth="1.800" strokeLinecap="round" strokeLinejoin="round">
-      <path className="bird-wing-l" d="M15 8Q9 2 1 6" /><path className="bird-wing-r" d="M15 8Q21 2 29 6" />
-      <circle cx="15" cy="8" r="1.400" fill={F.navy} stroke="none" />
-    </svg>
-  );
-}
 
 /** Naujan Lake at dusk. Sun sinks, birds flap across, water ripples, all from the --p scroll variable. */
 export default function NaujanScroll() {
@@ -90,8 +77,8 @@ export default function NaujanScroll() {
         <div className="absolute inset-x-0 top-[9%] mx-auto max-w-xl px-6">
           {STEPS.map((s, i) => (
             <div key={s.h} className="absolute inset-x-6 text-center" style={{ opacity: `calc(${op(i)})` }}>
-              <h3 className="font-serif text-3xl font-bold text-white md:text-5xl" style={{ textShadow: "0 2px 12px rgb(27 42 74 / .45)" }}>{s.h}</h3>
-              <p className="mt-3 text-base font-medium text-white/90 md:text-lg" style={{ textShadow: "0 1px 8px rgb(27 42 74 / .5)" }}>{s.p}</p>
+              <h3 className="font-serif text-3xl font-bold text-white md:text-5xl" style={{ textShadow: "0 2px 12px rgb(27 42 74 / .45)" }}><T k={s.h} /></h3>
+              <p className="mt-3 text-base font-medium text-white/90 md:text-lg" style={{ textShadow: "0 1px 8px rgb(27 42 74 / .5)" }}><T k={s.p} /></p>
             </div>
           ))}
         </div>

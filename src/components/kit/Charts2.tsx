@@ -1,4 +1,6 @@
 import { FIESTA as F } from "./Patterns";
+import { T } from "./i18n";
+import { DICT } from "./dict";
 
 const CYCLE = [F.blue, F.orange, F.green, F.yellow, F.sky, F.red, F.pink, F.navy];
 
@@ -10,14 +12,14 @@ export function Donut({ slices, format, centerLabel }: { slices: Slice[]; format
   const starts = slices.map((_, i) => slices.slice(0, i).reduce((a, x) => a + (x.value / total) * C, 0));
   return (
     <div className="flex flex-wrap items-center gap-6">
-      <svg viewBox="0 0 120 120" className="h-44 w-44 shrink-0 -rotate-90" role="img" aria-label={`${centerLabel}: ${slices.map((s) => `${s.label} ${format(s.value)}`).join(", ")}`}>
+      <svg viewBox="0 0 120 120" className="h-44 w-44 shrink-0 -rotate-90" role="img" aria-label={`${(DICT as Record<string, readonly string[]>)[centerLabel]?.[0] ?? centerLabel}: ${slices.map((s) => `${s.label} ${format(s.value)}`).join(", ")}`}>
         {slices.map((s, i) => {
           const len = (s.value / total) * C, off = starts[i];
           return <circle key={s.label} className="anim-dash" cx="60" cy="60" r={R} fill="none" stroke={CYCLE[i % CYCLE.length]} strokeWidth="22" strokeDasharray={`${Math.max(len - 1.5, 0)} ${C}`} strokeDashoffset={-off}><title>{`${s.label}: ${format(s.value)}`}</title></circle>;
         })}
         <g className="rotate-90 origin-center" style={{ transformOrigin: "60px 60px" }}>
           <text x="60" y="58" textAnchor="middle" className="fill-[#1b2a4a] text-[11px] font-bold">{format(total)}</text>
-          <text x="60" y="72" textAnchor="middle" className="fill-black/60 text-[7px]">{centerLabel}</text>
+          <text x="60" y="72" textAnchor="middle" className="fill-black/60 text-[7px]"><T k={centerLabel} /></text>
         </g>
       </svg>
       <ul className="space-y-1.5 text-sm">
@@ -59,7 +61,7 @@ export function squarify(items: Slice[], w: number, h: number): Rect[] {
 export function Treemap({ items, format }: { items: Slice[]; format: (n: number) => string }) {
   const W = 900, H = 320;
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full max-w-4xl" role="img" aria-label={items.map((s) => `${s.label} ${format(s.value)}`).join(", ")}>
+    <div className="overflow-x-auto"><svg viewBox={`0 0 ${W} ${H}`} className="mx-auto h-auto w-full min-w-[620px] max-w-4xl" role="img" aria-label={items.map((s) => `${s.label} ${format(s.value)}`).join(", ")}>
       {squarify(items, W, H).map((r, i) => {
         const dark = [F.yellow, F.pink, F.sky].includes(CYCLE[i % CYCLE.length] as never);
         const big = r.w > 90 && r.h > 42;
@@ -74,7 +76,7 @@ export function Treemap({ items, format }: { items: Slice[]; format: (n: number)
           </g>
         );
       })}
-    </svg>
+    </svg></div>
   );
 }
 
@@ -92,34 +94,5 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
         </li>
       ))}
     </ol>
-  );
-}
-
-// ---------- Network (towns linked by shared surnames; circular layout, no physics) ----------
-export type NetNode = { id: string; label: string };
-export type NetEdge = { a: string; b: string; weight: number; note: string };
-export function Network({ nodes, edges }: { nodes: NetNode[]; edges: NetEdge[] }) {
-  const S = 560, c = S / 2, R = 180;
-  const pos = new Map(nodes.map((n, i) => { const t = (i / nodes.length) * Math.PI * 2 - Math.PI / 2; return [n.id, { x: c + R * Math.cos(t), y: c + R * Math.sin(t), t }]; }));
-  const deg = new Map<string, number>();
-  for (const e of edges) for (const id of [e.a, e.b]) deg.set(id, (deg.get(id) ?? 0) + e.weight);
-  const maxW = Math.max(...edges.map((e) => e.weight), 1);
-  return (
-    <svg viewBox={`0 0 ${S} ${S}`} className="mx-auto h-auto w-full max-w-lg" role="img" aria-label="Towns linked when they share winning-candidate surnames">
-      {edges.map((e) => {
-        const p = pos.get(e.a)!, q = pos.get(e.b)!;
-        return <path key={e.a + e.b} d={`M${p.x} ${p.y}Q${c} ${c} ${q.x} ${q.y}`} fill="none" stroke={F.blue} strokeWidth={1 + (e.weight / maxW) * 5} strokeLinecap="round" className="opacity-25 transition-opacity hover:opacity-90"><title>{e.note}</title></path>;
-      })}
-      {nodes.map((n) => {
-        const p = pos.get(n.id)!;
-        const right = Math.cos(p.t) >= 0;
-        return (
-          <g key={n.id}>
-            <circle cx={p.x} cy={p.y} r={5 + Math.min((deg.get(n.id) ?? 0) / 2, 9)} fill={F.orange} stroke="#fff" strokeWidth="2" />
-            <text x={p.x + (right ? 1 : -1) * 16} y={p.y + 4} textAnchor={right ? "start" : "end"} className="fill-[#1b2a4a] text-[11px] font-semibold">{n.label}</text>
-          </g>
-        );
-      })}
-    </svg>
   );
 }

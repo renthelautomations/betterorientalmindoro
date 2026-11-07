@@ -27,6 +27,10 @@
   --color-fiesta-red: #d2402f;
   --color-fiesta-mint: #dcefe8;
   --color-fiesta-cream: #fbf7f0;
+  /* darker twins, for use under white text (AA contrast) */
+  --color-fiesta-green-deep: #2a7f44;
+  --color-fiesta-sky-deep: #1f7aaa;
+  --color-fiesta-orange-deep: #c4431a;
 }
 
 body {
@@ -60,3 +64,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--na); outline-of
 .bird-wing-r { animation-name: bird-wing-r; }
 .bird-wing-l { animation-name: bird-wing-l; }
 @media (prefers-reduced-motion: reduce) { .bird-wing-r, .bird-wing-l { animation: none; } }
+
+/* Print: service checklists and town pages should come out clean on paper. */
+@media print {
+  header, footer, nav, details > summary svg, .no-print { display: none !important; }
+  body { background: #fff !important; color: #000 !important; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; word-break: break-all; }
+  .sticky { position: static !important; }
+  * { box-shadow: none !important; }
+}

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import KitIcon from "./KitIcon";
-import { Halcon } from "./Motifs";
+import { Halcon, Tamaraw } from "./Motifs";
 import { CopyButton } from "./Interactive";
+import { T } from "./i18n";
 import { Badge } from "./Parts";
 
 const CYCLE = ["bg-fiesta-blue", "bg-fiesta-orange", "bg-fiesta-green", "bg-fiesta-red"];
@@ -44,7 +45,7 @@ export function Checklist({ title, items }: { title: string; items: string[] }) 
       <legend className="px-2 text-sm font-semibold tracking-widest text-fiesta-blue">{title}</legend>
       <ul className="space-y-1">
         {items.map((t) => (
-          <li key={t}><label className="flex min-h-11 cursor-pointer items-center gap-3"><input type="checkbox" className="peer h-5 w-5 shrink-0 accent-fiesta-blue" /><span className="text-sm peer-checked:text-black/50 peer-checked:line-through">{t}</span></label></li>
+          <li key={t}><label className="flex min-h-11 cursor-pointer items-center gap-3"><input type="checkbox" className="peer h-5 w-5 shrink-0 accent-fiesta-blue" /><span className="text-sm peer-checked:text-black/60 peer-checked:line-through">{t}</span></label></li>
         ))}
       </ul>
     </fieldset>
@@ -117,16 +118,33 @@ export type HotlineCardData = { name: string; number: string; source: string; ve
 const tel = (n: string) => "tel:" + n.replace(/[^\d+]/g, "");
 /** Tap to call, copy, and a clear "when was this checked" stamp. */
 export function HotlineCard({ h, tone = "emergency" }: { h: HotlineCardData; tone?: "emergency" | "medical" | "government" | "utility" }) {
-  const bar = { emergency: "bg-fiesta-red", medical: "bg-fiesta-green", government: "bg-fiesta-blue", utility: "bg-fiesta-yellow" }[tone];
+  // Category shows as a small colored badge, not an edge stripe or outline.
+  const chip = { emergency: "bg-fiesta-red/10 text-fiesta-red", medical: "bg-fiesta-green/15 text-[#1f6b37]", government: "bg-fiesta-blue/10 text-fiesta-blue", utility: "bg-fiesta-yellow/30 text-[#7a5600]" }[tone];
   return (
-    <div className="flex flex-col overflow-hidden rounded-2xl border border-black/10 bg-white">
-      <div className={`h-1.5 ${bar}`} aria-hidden />
-      <div className="flex flex-1 flex-col gap-3 p-5">
-        <p className="font-semibold leading-snug">{h.name}</p>
-        <a href={tel(h.number)} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-4 font-serif text-xl font-bold text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-5 w-5" />{h.number}</a>
-        <div className="flex flex-wrap items-center gap-2"><CopyButton text={h.number} /><a href={h.source} rel="noopener" className="inline-flex min-h-11 items-center px-2 text-sm underline">Source</a></div>
-        <p className="mt-auto flex flex-wrap items-center gap-2 text-xs text-black/60"><Badge kind={h.confirmed ? "verified" : "wip"}>{h.confirmed ? "Na-verify" : "Hindi pa kumpirmado"}</Badge>checked {h.verifiedAt}</p>
+    <div className="flex flex-col gap-3 rounded-2xl bg-white p-5 shadow-sm">
+      <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${chip}`}><T k={`cat.${tone}`} /></span>
+      <p className="font-semibold leading-snug">{h.name}</p>
+      <a href={tel(h.number)} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-4 font-serif text-xl font-bold text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-5 w-5" />{h.number}</a>
+      <div className="flex flex-wrap items-center gap-2"><CopyButton text={h.number} /><a href={h.source} rel="noopener" className="inline-flex min-h-11 items-center px-2 text-sm underline"><T k="common.source" /></a></div>
+      <p className="mt-auto flex flex-wrap items-center gap-2 text-xs text-black/60"><Badge kind={h.confirmed ? "verified" : "wip"}><T k={h.confirmed ? "common.verified" : "common.unconfirmed"} /></Badge><span><T k="common.checked" /> {h.verifiedAt}</span></p>
+    </div>
+  );
+}
+
+/** 404 / 500 page body. Pass the real links; this only styles. */
+export function ErrorState({ code, title, children, links }: { code: string; title: string; children?: React.ReactNode; links: { label: string; href: string }[] }) {
+  return (
+    <div className="mx-auto max-w-xl px-4 py-16 text-center">
+      <div className="flex items-end justify-center gap-4 text-fiesta-navy" aria-hidden>
+        <Halcon outline className="h-14 w-auto" color="currentColor" />
+        <span className="font-serif text-7xl font-bold leading-none text-fiesta-blue">{code}</span>
+        <Tamaraw outline className="h-16 w-auto" color="currentColor" />
       </div>
+      <h1 className="mt-6 font-serif text-3xl font-bold">{title}</h1>
+      <div className="mt-2 text-black/70">{children}</div>
+      <ul className="mt-8 flex flex-wrap justify-center gap-3">
+        {links.map((l) => <li key={l.href}><Link href={l.href} className="inline-flex min-h-11 items-center rounded-full bg-fiesta-navy px-6 text-sm font-semibold text-white hover:bg-fiesta-blue">{l.label}</Link></li>)}
+      </ul>
     </div>
   );
 }
