@@ -1,5 +1,6 @@
 import SmartSearch from "@/components/site/SmartSearch";
 import { getSearchItems } from "@/lib/search-index";
+import TownCards from "@/components/site/TownCards";
 import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -95,7 +96,8 @@ export default function Estatistika() {
       <section aria-labelledby="rank-h" className="mt-12">
         <h2 id="rank-h" className="text-sm font-semibold tracking-widest text-black/60"><T k="finance.rank.h" /></h2>
         <p className="mt-1 text-sm text-black/70"><T k="finance.rank.p" /></p>
-        <div className="mt-3 overflow-x-auto rounded-2xl border border-black/10 bg-white">
+        <div className="mt-3"><TownCards rows={rows.map((r) => ({ slug: r.m.slug, name: r.m.name, pop: r.pop, area: r.m.areaKm2, brgy: r.brgy, rev: r.rev, cls: r.s?.incomeClass?.value, clsYear: r.s?.incomeClass?.year }))} table={
+        <div className="overflow-x-auto rounded-2xl border border-black/10 bg-white">
           <table className="w-full min-w-[34rem] text-left text-sm">
             <caption className="sr-only"><T k="finance.rank.cap" /></caption>
             <thead className="text-xs uppercase tracking-widest text-black/65">
@@ -115,6 +117,7 @@ export default function Estatistika() {
             </tbody>
           </table>
         </div>
+        } /></div>
         <SourceNote><R k="finance.rank.src" v={[<Link key="b" href="/bayan" className="underline"><T k="nav.towns" /></Link>]} /></SourceNote>
       </section>
     </main>
