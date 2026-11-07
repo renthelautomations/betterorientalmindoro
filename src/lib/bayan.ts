@@ -1,4 +1,5 @@
-import { getBarangays, getMunicipality } from "./municipalities";
+import type { Metric } from "@/components/kit/CompareTowns";
+import { getBarangays, getMunicipalities, getMunicipality } from "./municipalities";
 import { getStats } from "./stats";
 import { getProjects } from "./projects";
 import { getHotlines } from "./hotlines";
@@ -25,3 +26,21 @@ export function getBayanSummary(slug: string): BayanSummary | undefined {
     topSurnames: sharedSurnames(getTown(slug)?.contests ?? []).slice(0, 3).map((r) => ({ surname: titleCase(r.surname), seats: r.seats })),
   };
 }
+
+/** CompareTowns metrics for all towns. null = no data (never 0). Project counts only rows assigned to the slug. */
+export function bayanMetrics(): Metric[] {
+  const ms = getMunicipalities();
+  const by = (f: (slug: string, areaKm2: number) => number | null) => Object.fromEntries(ms.map((m) => [m.slug, f(m.slug, m.areaKm2)]));
+  return [
+    { label: "metric.pop", values: by((s) => getStats(s)?.population.at(-1)?.value ?? null) },
+    { label: "metric.area", values: by((_, a) => a) },
+    { label: "metric.projects", values: by((s) => getProjects(s).length) },
+    { label: "metric.revenue", unit: "peso", values: by((s) => getStats(s)?.revenue?.value ?? null) },
+  ];
+}
+
+/** Rows for the sortable DataTable (class fields are plain values so a server page can pass them). */
+export const bayanRows = () => getMunicipalities().map((m) => {
+  const s = getStats(m.slug);
+  return { name: m.name, kind: m.isCity ? "Lungsod" : "Bayan", pop: s?.population.at(-1)?.value ?? null, trend: s?.population.map((p) => p.value) ?? null, area: m.areaKm2 };
+});
