@@ -11,16 +11,17 @@ const FLAGS = [
 ];
 
 export default function PennantHero({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  // z-10: the search list opens past the bottom edge, so this block must paint above the band that follows. Only the decoration is clipped.
   return (
-    <div className={`relative isolate overflow-hidden ${className}`} style={{ background: F.cream }}>
-      <div className="absolute right-6 top-4 -z-10 hidden w-[46%] sm:block" aria-hidden="true">
+    <div className={`relative isolate z-10 ${className}`} style={{ background: F.cream }}>
+      <div className="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true"><div className="absolute right-6 top-4 hidden w-[46%] sm:block">
         <div className="h-1 rounded bg-[#8b8f99]" />
         <div className="flex justify-between gap-2 px-2">
           {FLAGS.map((f, i) => (
             <div key={i} className="flex aspect-[1/1.9] min-w-0 flex-1 items-start justify-center pt-[14%]" style={{ background: f.c, clipPath: "polygon(0 0,100% 0,100% 82%,50% 100%,0 82%)" }}>{f.el}</div>
           ))}
         </div>
-      </div>
+      </div></div>
       <div className="relative">{children}</div>
     </div>
   );
