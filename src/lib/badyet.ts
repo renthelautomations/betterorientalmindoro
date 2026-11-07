@@ -56,3 +56,19 @@ export const proportionSegments = (o: Office) => {
 /** URL segment for a district page: `1st` or `2nd`. */
 export const DISTRICT_SLUGS = ["1st", "2nd"] as const;
 export const districtBySlug = (s: string) => (DISTRICT_SLUGS.includes(s as "1st") ? getDistrict(`leg:oriental-mindoro:${s}`) : undefined);
+
+export type Check =
+  | { id: "totals"; level: "ok" | "flag" | "unknown"; diff: number | null }
+  | { id: "projects"; level: "ok" | "flag"; nep: number; house: number }
+  | { id: "unconfirmed"; level: "ok" | "flag"; rows: number; php: number };
+
+/** Three plain checks on one office's FY2027 figures. A flag means the two versions differ or a match is uncertain: it is a pointer to look closer, never a finding about anyone. Unknown totals are "unknown", not a match. */
+export function budgetChecks(o: Office): Check[] {
+  const f = o.fy2027;
+  const diff = netChange(f.nep_php, f.hgab3_php);
+  return [
+    { id: "totals", level: diff == null ? "unknown" : diff === 0 ? "ok" : "flag", diff },
+    { id: "projects", level: f.nep_records === f.hgab3_records ? "ok" : "flag", nep: f.nep_records, house: f.hgab3_records },
+    { id: "unconfirmed", level: f.unconfirmed_rows > 0 ? "flag" : "ok", rows: f.unconfirmed_rows, php: f.unconfirmed_php },
+  ];
+}

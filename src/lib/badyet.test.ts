@@ -99,3 +99,22 @@ describe("shareScale", () => {
     expect(shareScale(0, 0)).toEqual({ nep: 0, house: 0 });
   });
 });
+
+import { budgetChecks } from "./badyet";
+const mk = (nep: number | null, house: number | null, nr: number, hr: number, ur = 0, up = 0) => ({ fy2027: { nep_php: nep, hgab3_php: house, nep_records: nr, hgab3_records: hr, unconfirmed_rows: ur, unconfirmed_php: up } }) as unknown as Office;
+describe("budgetChecks", () => {
+  it("all clear when totals, counts and matches agree", () => {
+    expect(budgetChecks(mk(100, 100, 5, 5)).map((c) => c.level)).toEqual(["ok", "ok", "ok"]);
+  });
+  it("flags a total difference with the signed amount (House minus NEP)", () => {
+    expect(budgetChecks(mk(853, 1000, 93, 112))[0]).toEqual({ id: "totals", level: "flag", diff: 147 });
+  });
+  it("flags differing project counts and unconfirmed lines", () => {
+    const c = budgetChecks(mk(1, 1, 93, 112, 10, 50));
+    expect(c[1]).toMatchObject({ level: "flag", nep: 93, house: 112 });
+    expect(c[2]).toMatchObject({ level: "flag", rows: 10, php: 50 });
+  });
+  it("an unknown total is unknown, never a match", () => {
+    expect(budgetChecks(mk(null, 100, 1, 1))[0]).toMatchObject({ level: "unknown", diff: null });
+  });
+});
