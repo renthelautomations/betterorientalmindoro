@@ -1,4 +1,4 @@
--- Not applied yet. Mirrors src/lib/hotlines.ts and src/lib/projects.ts.
+-- Mirrors src/lib/hotlines.ts and src/lib/projects.ts.
 create table public.hotlines (
   id text primary key,
   scope text not null,              -- 'province' or municipality slug
@@ -13,7 +13,8 @@ create table public.hotlines (
 create table public.projects (
   id text primary key,              -- DPWH contract id
   title text not null,
-  municipality text,                -- municipality slug; null = province-level
+  municipality text,                -- municipality slug; null = town not certain
+  uncertain boolean not null default false, -- coordinates and title named different towns
   cost numeric,
   status text,
   year int,
