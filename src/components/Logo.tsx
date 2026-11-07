@@ -8,7 +8,7 @@ export default function Logo({ className = "", tone = "dark" }: { className?: st
         <path d={LOGO_PATH} fill={fg} />
       </svg>
       <span className="leading-none" style={{ color: fg }}>
-        <span className="block font-serif text-xl font-bold">better</span>
+        <span className="block font-serif text-xl font-bold">better</span>{" "}
         <span className="block text-sm font-semibold tracking-wide">Oriental Mindoro</span>
       </span>
     </span>

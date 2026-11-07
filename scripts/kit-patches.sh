@@ -62,5 +62,9 @@ open(p,"w").write(s)
 p="src/components/kit/DataTable.tsx"; s=open(p).read()
 s=s.replace('className="mb-3 min-h-11 w-full max-w-xs rounded-lg border border-black/20 bg-white px-3 text-sm outline-none focus:border-[#1b2a4a]"','className="mb-3 min-h-12 w-full max-w-sm rounded-full border-2 border-fiesta-navy/20 bg-white px-5 text-base outline-none focus:border-fiesta-blue focus:ring-4 focus:ring-fiesta-blue/20"')
 open(p,"w").write(s)
+# 10. Header logo link: the accessible name starts with the visible words (axe label-content-name-mismatch).
+p="src/components/kit/Layout.tsx"; s=open(p).read()
+s=s.replace('aria-label="Better Oriental Mindoro, home"','aria-label="better Oriental Mindoro home"')
+open(p,"w").write(s)
 PY
 echo "kit patches applied"

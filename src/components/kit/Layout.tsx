@@ -18,7 +18,7 @@ export function KitHeader({ links }: { links: NavLink[] }) {
     <header className="bg-fiesta-cream">
       <div className="h-1.5" style={{ background: STRIPE }} aria-hidden />
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" aria-label="Better Oriental Mindoro, home"><Logo /></Link>
+        <Link href="/" aria-label="better Oriental Mindoro home"><Logo /></Link>
         <nav aria-label="Main" className="hidden gap-1 lg:flex">
           {links.map((l) => <Link key={l.label} href={l.href} className="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium hover:bg-fiesta-navy/5"><T k={l.label} /></Link>)}
         </nav>
