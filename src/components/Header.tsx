@@ -6,6 +6,7 @@ export const NAV = [
   { href: "/bayan", label: "Bayan" },
   { href: "/hotlines", label: "Hotlines" },
   { href: "/proyekto", label: "Proyekto" },
+  { href: "/dynasties", label: "Dinastiya" },
 ];
 
 export default function Header() {

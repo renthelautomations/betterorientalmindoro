@@ -6,8 +6,8 @@ import { ICON_KEYS, SITE } from "@/lib/brand";
 const CIVIC: { label: string; href?: string }[] = [
   { label: "Hotlines", href: "/hotlines" },
   { label: "Proyekto", href: "/proyekto" },
+  { label: "Dinastiya", href: "/dynasties" },
   { label: "Badyet" },
-  { label: "Halalan" },
 ];
 
 export default function Home() {
