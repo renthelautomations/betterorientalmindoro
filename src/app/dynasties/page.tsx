@@ -5,13 +5,14 @@ import DynNote from "@/components/site/DynNote";
 import DynFinder from "@/components/site/DynFinder";
 import DynSurnames from "@/components/site/DynSurnames";
 import { WinnersGrid } from "@/components/site/DynGrid";
+import WinnersViews from "@/components/site/WinnersViews";
 import { TBreadcrumbs, TF, TPageTitle } from "@/components/site/DynBits";
 import { T } from "@/lib/i18n/i18n";
 import Link from "next/link";
 import { LinkNetwork } from "@/components/site/LinkNetwork";
 import TownEmblem from "@/components/kit/TownEmblem";
 import KitIcon from "@/components/kit/KitIcon";
-import { allWinners, getProvince, getTown, provinceSurnames, sharedSurnames, surnameNetwork, titleCase, type Town } from "@/lib/dynasties";
+import { allWinners, getProvince, getTown, provinceSurnames, sharedSurnames, surnameNetwork, surnameOf, titleCase, winnersGrid, type Town } from "@/lib/dynasties";
 import { getMunicipalities } from "@/lib/municipalities";
 
 export const metadata: Metadata = { title: "Dynasties", description: "Mga apelyidong paulit-ulit sa halalan ng Oriental Mindoro, 2001–2025." };
@@ -57,7 +58,10 @@ export default function Dynasties() {
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.win.h" /></h2>
       <p className="mb-3 mt-2 text-sm text-black/75"><T k="dyn.win.p" /></p>
-      <WinnersGrid towns={gridTowns} years={years} caption="dyn.cap.all" />
+      <WinnersViews years={years} table={<WinnersGrid towns={gridTowns} years={years} caption="dyn.cap.all" />} towns={gridTowns.map((g) => ({
+        slug: g.slug, name: g.name,
+        seats: winnersGrid(g.contests, years).rows.map((r) => ({ position: r.position, cells: r.cells.map((c) => ({ year: c.year, surname: c.winners[0] ? titleCase(surnameOf(c.winners[0].ballot) || c.winners[0].name) : null, full: c.winners.map((w) => titleCase(w.name)).join(", ") })) })),
+      }))} />
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.all.h" /></h2>
       <ul className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {names.map((m) => {

@@ -39,6 +39,11 @@ export const DYN = {
   "dyn.rep.p": ["Surnames held by two or more different people, all years and local positions. Only the surname is used. Select one to see the wins.", "Apelyidong hawak ng dalawa o higit pang magkaibang tao, lahat ng taon at lokal na posisyon. Apelyido lang ang batayan. Pindutin ang isa para makita ang mga panalo."],
   "dyn.rep.town.h": ["REPEATED SURNAMES", "PAULIT-ULIT NA APELYIDO"],
   "dyn.rep.town.p": ["Surnames held by two or more different people among the winners (all years). Select one to see the wins.", "Apelyidong hawak ng dalawa o higit pang magkaibang tao sa mga nanalo (lahat ng taon). Pindutin ang isa para makita ang mga panalo."],
+  // winners views (Filipino drafts await native-speaker review)
+  "dyn.view.label": ["View", "Tanaw"], "dyn.view.towns": ["Towns", "Mga bayan"], "dyn.view.year": ["By election", "Ayon sa halalan"], "dyn.view.table": ["Table", "Talahanayan"],
+  "dyn.view.pick": ["Election year", "Taon ng halalan"], "dyn.view.norec": ["No record", "Walang tala"],
+  "dyn.view.repeat": ["Same surname as the previous election.", "Parehong apelyido sa nakaraang halalan."],
+  "dyn.view.towns.note": ["Same colour means the same surname held the seat in consecutive elections. A grey block means no record. This is a pattern, not proof.", "Parehong kulay: iisang apelyido ang humawak ng puwesto sa magkakasunod na halalan. Kulay abo: walang tala. Pattern lang ito, hindi patunay."],
   "dyn.win.h": ["MAYOR AND VICE MAYOR BY ELECTION", "MAYOR AT VICE MAYOR BAWAT HALALAN"],
   "dyn.win.p": ["Surname of the winner; select it for the full name on the town page.", "Apelyido ng nanalo; pindutin para sa buong pangalan sa pahina ng bayan."],
   "dyn.win.more": ["Show more towns ({0})", "Ipakita pa ang {0} bayan"],
