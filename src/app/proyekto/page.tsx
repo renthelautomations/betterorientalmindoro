@@ -1,4 +1,3 @@
-import TownEmblem from "@/components/kit/TownEmblem";
 import SplitSticky from "@/components/site/SplitSticky";
 import BigDonut from "@/components/site/BigDonut";
 import { Suspense } from "react";
@@ -11,9 +10,10 @@ import ProjectCard from "@/components/site/ProjectCard";
 import ProjectMap from "@/components/site/ProjectMapLoader";
 import { Empty, PHead, Sec, Stat, YearBars, pesoShort } from "@/components/site/ProjectBits";
 import { SearchInput, TopTable } from "@/components/site/ProjectClient";
+import { AutoForm, Pick } from "@/components/site/FilterSelect";
 import { T } from "@/lib/i18n/i18n";
 import { getMunicipalities } from "@/lib/municipalities";
-import { cleanTitle, costBy, countsByStatus, countsByYear, filterProjects, getProjects, hubHref, topByCost, topCategories } from "@/lib/projects";
+import { activeFilters, cleanTitle, costBy, countsByStatus, countsByYear, filterProjects, getProjects, hubHref, topByCost, topCategories } from "@/lib/projects";
 
 export const metadata: Metadata = { title: "Proyekto", description: "Mga proyekto ng DPWH sa Oriental Mindoro: halaga ayon sa dokumento, katayuan, at lokasyon." };
 
@@ -28,14 +28,6 @@ export default function Proyekto({ searchParams }: { searchParams: Promise<SP> }
     <Suspense fallback={<main className="mx-auto max-w-6xl px-4 py-10"><PHead crumbs={[{ label: "proyekto.home", href: "/" }, { label: "nav.projects" }]} eyebrow="proyekto.eyebrow" title="proyekto.title" /></main>}>
       <Hub searchParams={searchParams} />
     </Suspense>
-  );
-}
-
-function Chip({ href, on, children }: { href: string; on: boolean; children: React.ReactNode }) {
-  return (
-    <Link href={href} aria-current={on ? "true" : undefined} className={`inline-flex min-h-11 items-center rounded-full border px-4 text-sm font-medium ${on ? "border-fiesta-navy bg-fiesta-navy text-white" : "border-black/25 bg-white hover:bg-fiesta-mint"}`}>
-      {children}
-    </Link>
   );
 }
 
@@ -68,15 +60,8 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
   const filtered = Boolean(f.bayan || f.taon || f.katayuan || f.kategorya || f.q);
   const link = (patch: F) => hubHref({ ...f, ...patch });
 
-  const group = (label: string, key: "bayan" | "taon" | "katayuan" | "kategorya", items: { v: string; t: string }[]) => (
-    <div role="group" aria-labelledby={`g-${key}`}>
-      <p id={`g-${key}`} className="mb-2 text-xs font-semibold uppercase tracking-widest text-black/60"><T k={label} /></p>
-      <div className="flex flex-wrap gap-2">
-        <Chip href={link({ [key]: undefined })} on={!f[key]}><T k="proyekto.all" /></Chip>
-        {items.map((i) => <Chip key={i.v} href={link({ [key]: f[key] === i.v ? undefined : i.v })} on={f[key] === i.v}>{key === "bayan" && <TownEmblem slug={i.v} name="" className="mr-2 -ml-1.5 h-6 w-6 rounded-md" capital={i.v === "calapan-city"} />}{i.t}</Chip>)}
-      </div>
-    </div>
-  );
+  const chips = activeFilters(f, names);
+  const chipLabel: Record<string, string> = { bayan: "proyekto.g.bayan", taon: "proyekto.g.taon", katayuan: "proyekto.g.status", kategorya: "proyekto.g.cat", q: "proyekto.g.q" };
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
@@ -119,16 +104,29 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
 
       <section aria-labelledby="salain" className="mt-12 space-y-5">
         <h2 id="salain" className="font-serif text-3xl font-bold"><T k="proyekto.filter" /></h2>
-        <form action="/proyekto" method="get" role="search" className="flex flex-wrap gap-2">
-          {(["bayan", "taon", "katayuan", "kategorya", "view"] as const).map((k) => f[k] && <input key={k} type="hidden" name={k} value={f[k]} />)}
-          <SearchInput defaultValue={f.q} />
-          <button className="min-h-11 rounded-lg bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue"><T k="proyekto.search" /></button>
-          {filtered && <Link href="/proyekto" className="inline-flex min-h-11 items-center px-3 text-sm underline"><T k="proyekto.clear" /></Link>}
-        </form>
-        {group("proyekto.g.bayan", "bayan", munis.map((m) => ({ v: m.slug, t: m.name })))}
-        {group("proyekto.g.taon", "taon", years.map((y) => ({ v: String(y), t: String(y) })))}
-        {group("proyekto.g.status", "katayuan", statuses.map((s) => ({ v: s, t: s })))}
-        {group("proyekto.g.cat", "kategorya", cats.map((c) => ({ v: c, t: c })))}
+        <AutoForm className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {f.view && <input type="hidden" name="view" value={f.view} />}
+          <div className="sm:col-span-2 lg:col-span-4"><SearchInput defaultValue={f.q} /></div>
+          <Pick name="bayan" label="proyekto.g.bayan" value={f.bayan} items={munis.map((m) => ({ v: m.slug, t: m.name }))} />
+          <Pick name="taon" label="proyekto.g.taon" value={f.taon} items={years.map((y) => ({ v: String(y), t: String(y) }))} />
+          <Pick name="katayuan" label="proyekto.g.status" value={f.katayuan} items={statuses.map((s) => ({ v: s, t: s }))} />
+          <Pick name="kategorya" label="proyekto.g.cat" value={f.kategorya} items={cats.map((c) => ({ v: c, t: c }))} />
+          <div className="flex items-center gap-3 sm:col-span-2 lg:col-span-4">
+            <button className="min-h-11 rounded-lg bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue"><T k="proyekto.search" /></button>
+            {filtered && <Link href="/proyekto" className="inline-flex min-h-11 items-center px-3 text-sm underline"><T k="proyekto.clear" /></Link>}
+          </div>
+        </AutoForm>
+        {chips.length > 0 && (
+          <ul className="flex flex-wrap gap-2">
+            {chips.map((c) => (
+              <li key={c.key}>
+                <Link href={c.href} className="inline-flex min-h-8 items-center gap-1.5 rounded-full bg-fiesta-mint px-3 text-xs font-medium text-fiesta-navy hover:bg-fiesta-navy hover:text-white">
+                  <span className="text-black/60"><T k={chipLabel[c.key]} />:</span> {c.value} <span aria-hidden>×</span><span className="sr-only"><T k="proyekto.remove" /></span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
 
       <section aria-labelledby="lista" className="mt-12">
