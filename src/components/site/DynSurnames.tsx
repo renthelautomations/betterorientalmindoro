@@ -34,16 +34,7 @@ export default function DynSurnames({ rows, towns, names }: { rows: Row[]; towns
   const max = Math.max(...rows.map((r) => r.seats));
   return (
     <div className="divide-y divide-black/10 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm">
-      {rows.slice(0, 5).map((r) => <Item key={r.surname} r={r} max={max} towns={towns} names={names} />)}
-      {rows.length > 5 && (
-        <details className="group/more">
-          <summary className="flex min-h-12 cursor-pointer list-none items-center justify-center px-4 text-sm font-semibold text-fiesta-blue hover:bg-fiesta-cream [&::-webkit-details-marker]:hidden">
-            <span className="group-open/more:hidden">Ipakita pa ang {rows.length - 5} apelyido</span>
-            <span className="hidden group-open/more:inline">Itago</span>
-          </summary>
-          <div className="divide-y divide-black/10 border-t border-black/10">{rows.slice(5).map((r) => <Item key={r.surname} r={r} max={max} towns={towns} names={names} />)}</div>
-        </details>
-      )}
+      {rows.map((r) => <Item key={r.surname} r={r} max={max} towns={towns} names={names} />)}
     </div>
   );
 }
