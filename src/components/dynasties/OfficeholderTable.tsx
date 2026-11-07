@@ -1,8 +1,11 @@
-import { POSITION_LABEL, titleCase, type Contest } from "@/lib/dynasties";
+import { titleCase, type Contest } from "@/lib/dynasties";
+import { T } from "@/lib/i18n/i18n";
+import { TF,  } from "@/components/site/DynBits";
+import { posKey } from "@/components/site/dynKeys";
 
 export default function OfficeholderTable({ contests, position }: { contests: Contest[]; position: string }) {
   const rows = contests.filter((c) => c.position === position).sort((a, b) => b.year - a.year);
-  if (!rows.length) return <p className="mt-3 text-sm text-black/60">Walang naitalang resulta para sa {POSITION_LABEL[position].toLowerCase()} sa source data.</p>;
+  if (!rows.length) return <p className="mt-3 text-sm text-black/60"><TF k="dyn.off.none" v={[posKey(position, "dyn.posl.")]} /></p>;
   return (
     <ul className="mt-3 divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
       {rows.map((c) => (
@@ -19,7 +22,7 @@ export default function OfficeholderTable({ contests, position }: { contests: Co
               ))}
             </p>
             {position !== "COUNCILOR" && (
-              <p className="mt-0.5 text-xs text-black/65">{c.uncontested ? "Walang kalaban" : `${c.candidates} ang kandidato`}</p>
+              <p className="mt-0.5 text-xs text-black/65">{c.uncontested ? <T k="dyn.off.unopposed" /> : <TF k="dyn.off.cands" v={[c.candidates]} />}</p>
             )}
           </div>
         </li>

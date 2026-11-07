@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteSearch from "@/components/kit/SiteSearch";
-import { EmptyState } from "@/components/kit/Ui";
-import PageHead from "@/components/site/PageHead";
+import Bilingual from "@/lib/i18n/Bilingual";
+import { T } from "@/lib/i18n/i18n";
+import { TEmptyState, TNav, TPageHead } from "@/components/site/DynBits";
 import { ServiceLink } from "@/components/site/ServiceLink";
 import { getSearchItems } from "@/lib/search-index";
 import { getCategories, getLifeEvents, getServices, servicesForEvent } from "@/lib/services";
@@ -15,14 +16,16 @@ export default function Serbisyo() {
   const cats = getCategories();
   return (
     <main className="mx-auto max-w-4xl px-4 pb-20 pt-8">
-      <PageHead crumbs={[{ label: "Home", href: "/" }, { label: "Serbisyo" }]} eyebrow="PARA SA BAYAN" title="Mga serbisyo">
-        <p>Alamin kung ano ang kailangan, magkano, at saan pupunta. Bawat entry ay may link sa opisyal na source at petsa ng huling tingin.</p>
-        <p className="text-sm text-black/70">Lahat ay <b>draft para sa review ng volunteers</b>. Kapag walang nakumpirmang detalye, nakasulat na &quot;Alamin sa opisina&quot;. Hindi ito opisyal na website ng gobyerno.</p>
-      </PageHead>
+      <TPageHead crumbs={[{ label: "dyn.home", href: "/" }, { label: "nav.services" }]} eyebrow="dyn.serbisyo.eyebrow" title="dyn.serbisyo.title">
+        <p><T k="dyn.serbisyo.lead" /></p>
+        <p className="text-sm text-black/70"><Bilingual
+          en={<>Everything here is a <b>draft for volunteer review</b>. Where no detail is confirmed, it says &quot;Check with the office&quot;. This is not an official government website.</>}
+          fil={<>Lahat ay <b>draft para sa review ng volunteers</b>. Kapag walang nakumpirmang detalye, nakasulat na &quot;Alamin sa opisina&quot;. Hindi ito opisyal na website ng gobyerno.</>} /></p>
+      </TPageHead>
       <div className="mt-8"><SiteSearch items={getSearchItems()} /></div>
 
       <section aria-labelledby="events" className="mt-12">
-        <h2 id="events" className={H2}>Ano ang nangyayari sa buhay mo?</h2>
+        <h2 id="events" className={H2}><T k="dyn.serbisyo.events" /></h2>
         <ul className="grid gap-4 sm:grid-cols-2">
           {getLifeEvents().map((e) => (
             <li key={e.slug} className="rounded-2xl border border-black/10 bg-white p-5">
@@ -38,11 +41,11 @@ export default function Serbisyo() {
         </ul>
       </section>
 
-      <nav aria-label="Mga kategorya" className="mt-12">
+      <TNav label="dyn.serbisyo.cats" className="mt-12">
         <ul className="flex flex-wrap gap-2">
           {cats.map((c) => <li key={c.slug}><a href={`#${c.slug}`} className="inline-flex min-h-11 items-center rounded-full border-2 border-fiesta-navy/20 px-4 text-sm font-semibold hover:border-fiesta-navy">{c.name}</a></li>)}
         </ul>
-      </nav>
+      </TNav>
 
       {cats.map((c) => {
         const rows = getServices(c.slug);
@@ -53,9 +56,9 @@ export default function Serbisyo() {
             {rows.length ? (
               <ul className="space-y-3">{rows.map((s) => <li key={s.id}><ServiceLink s={s} /></li>)}</ul>
             ) : (
-              <EmptyState title="Wala pang naka-lista">
-                Wala pa kaming nakukumpirmang opisyal na source para dito. May alam ka bang source? Ipaalam sa aming volunteers. Para sa emergency, tingnan ang <Link href="/hotlines" className="underline">mga hotline</Link>.
-              </EmptyState>
+              <TEmptyState title="dyn.serbisyo.empty">
+                <T k="dyn.serbisyo.empty.p" /> <Link href="/hotlines" className="underline"><T k="dyn.serbisyo.empty.link" /></Link>.
+              </TEmptyState>
             )}
           </section>
         );

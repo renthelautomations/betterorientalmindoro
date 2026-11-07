@@ -1,4 +1,5 @@
 import { getProvince } from "@/lib/dynasties";
+import { T } from "@/lib/i18n/i18n";
 
 export default function Attribution() {
   const p = getProvince();
@@ -10,7 +11,7 @@ export default function Attribution() {
         <a className="underline" href="https://dynasties.bettergov.ph/" rel="noopener">BetterGov Dynasties</a>. Data as of {p.vintage}.
       </p>
       <p className="mt-1">{p.license}</p>
-      <p className="mt-1">Hindi ito opisyal na website ng gobyerno. Para sa opisyal na resulta, tingnan ang COMELEC.</p>
+      <p className="mt-1"><T k="dyn.attr.notgov" /></p>
     </footer>
   );
 }
