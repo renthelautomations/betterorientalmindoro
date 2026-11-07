@@ -1,0 +1,23 @@
+// Chrome for the long-form documents and pillar stories. The documents themselves are whole EN/FIL versions (Bilingual), not keys.
+export const DOCS = {
+  "docs.home": ["Home", "Tahanan"],
+  "docs.eyebrow.info": ["INFORMATION", "IMPORMASYON"],
+  "docs.eyebrow.faq": ["QUESTIONS", "MGA TANONG"],
+  "docs.title.terms": ["Terms of Use", "Mga Tuntunin ng Paggamit"],
+  "docs.title.privacy": ["Privacy Policy", "Patakaran sa Privacy"],
+  "docs.title.accessibility": ["Accessibility", "Pagiging Naa-access"],
+  "docs.title.faq": ["FAQ", "Mga Madalas Itanong"],
+  "docs.pillars": ["The four pillars", "Ang apat na haligi"],
+  "docs.badge.draft": ["Draft: for volunteer review", "Draft: para sa pagsusuri ng mga boluntaryo"],
+  "docs.badge.soon": ["In preparation", "Inihahanda pa"],
+  "docs.ma.callout.title": ["Only in partnership", "Sa pakikipagtulungan lamang"],
+  "docs.ma.callout.body": ["Content about the Mangyan will be published only together with Mangyan communities, with their approval and credit.", "Ilalathala lamang ang nilalaman tungkol sa mga Mangyan kasama ng mga komunidad ng Mangyan, at may kanilang pahintulot at pagkilala."],
+  "docs.name.ma": ["Mangyan", "Mangyan"],
+  "docs.name.hal": ["Mount Halcon", "Bundok Halcon"],
+  "docs.name.ta": ["Tamaraw", "Tamaraw"],
+  "docs.name.na": ["Naujan Lake", "Lawa ng Naujan"],
+  "docs.blurb.ma": ["The indigenous peoples of Mindoro: culture, language and traditions.", "Ang mga katutubo ng Mindoro: kultura, wika, at tradisyon."],
+  "docs.blurb.hal": ["The province's mountain and most popular climb.", "Ang bundok at pinakasikat na akyatan ng lalawigan."],
+  "docs.blurb.ta": ["The rare dwarf buffalo found only on Mindoro.", "Ang bihirang dwarf buffalo na tanging sa Mindoro matatagpuan."],
+  "docs.blurb.na": ["The province's largest lake, rich in wildlife.", "Ang pinakamalaking lawa ng lalawigan, mayaman sa buhay-ilang."],
+} as const satisfies Record<string, readonly [string, string]>;

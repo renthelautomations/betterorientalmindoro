@@ -6,6 +6,7 @@ import { BAYAN } from "./dict/bayan";
 import { PROYEKTO } from "./dict/proyekto";
 import { FINANCE } from "./dict/finance";
 import { DYN } from "./dict/dyn";
+import { DOCS } from "./dict/docs";
 
-export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN } as const satisfies Record<string, readonly [string, string]>;
+export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...DOCS } as const satisfies Record<string, readonly [string, string]>;
 export type DictKey = keyof typeof DICT;
