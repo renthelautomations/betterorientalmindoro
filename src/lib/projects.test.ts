@@ -84,11 +84,16 @@ import { cleanTitle, topCategories } from "./projects";
 describe("cleanTitle", () => {
   it("sentence-cases but keeps codes and abbreviations", () => {
     expect(cleanTitle("CONSTRUCTION OF RC BRIDGE ALONG CALAPAN SOUTH ROAD K0103+000 - K0104+500, GAA 2025")).toBe(
-      "Construction of rc bridge along calapan south road K0103+000 - K0104+500, GAA 2025".replace("rc", "RC"),
+      "Construction of RC bridge along Calapan south road K0103+000 - K0104+500, GAA 2025",
     );
   });
   it("keeps DPWH, roman numerals, bridge codes and dotted initials", () => {
     expect(cleanTitle("DPWH PHASE II CONCEPCION BR. (B00048MR) E.S.L.")).toBe("DPWH phase II concepcion br. (B00048MR) E.S.L.");
+  });
+  it("capitalises our place names", () => {
+    expect(cleanTitle("ROAD, BRGY. METOLZA, NAUJAN, ORIENTAL MINDORO")).toBe("Road, brgy. metolza, Naujan, Oriental Mindoro");
+    expect(cleanTitle("BRIDGE, PUERTO GALERA AND SAN TEODORO")).toBe("Bridge, Puerto Galera and San Teodoro");
+    expect(cleanTitle("POLAR ROAD")).toBe("Polar road");
   });
   it("is stable on empty and already-clean input", () => {
     expect(cleanTitle("")).toBe("");

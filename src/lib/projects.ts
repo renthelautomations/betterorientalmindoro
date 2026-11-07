@@ -36,9 +36,13 @@ export const countsByYear = (rows: Project[]): [number, number][] => (tally(rows
 export const countsByStatus = (rows: Project[]): [string, number][] => (tally(rows.map((p) => p.status)) as [string, number][]).sort((a, b) => b[1] - a[1]);
 
 const KEEP = new Set(["RC", "DPWH", "GAA", "PCCP", "MPB", "RWCS", "CSR", "NHS", "BIP", "ICT", "DEO", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII"]);
+// Our place names stay capitalised after the sentence-case pass.
+const PLACES = /\b(oriental mindoro|puerto galera|san teodoro|baco|bansud|bongabong|bulalacao|calapan|gloria|mansalay|naujan|pinamalayan|pola|roxas|socorro|victoria|mindoro)\b/gi;
 /** ALL-CAPS engineering title to sentence case. Tokens with digits (K0103+000, B00048MR), known abbreviations and dotted initials stay as they are. */
 export function cleanTitle(title: string): string {
-  const out = title.replace(/[A-Za-z0-9+.]+/g, (t) => (/\d/.test(t) || KEEP.has(t) || /^([A-Z]\.){2,}$/.test(t) ? t : t.toLowerCase()));
+  const out = title
+    .replace(/[A-Za-z0-9+.]+/g, (t) => (/\d/.test(t) || KEEP.has(t) || /^([A-Z]\.){2,}$/.test(t) ? t : t.toLowerCase()))
+    .replace(PLACES, (m) => m.replace(/\b[a-z]/g, (c) => c.toUpperCase()));
   return out.charAt(0).toUpperCase() + out.slice(1);
 }
 
