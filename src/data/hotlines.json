@@ -1,0 +1,232 @@
+[
+ {
+  "id": "h01",
+  "scope": "province",
+  "category": "emergency",
+  "name": "PDRRMO Operations and Warning Division",
+  "number": "+(63) 948 146 0382",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h02",
+  "scope": "province",
+  "category": "emergency",
+  "name": "PDRRMO Operations and Warning Division",
+  "number": "+(63) 920 951 3690",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h03",
+  "scope": "province",
+  "category": "emergency",
+  "name": "PDRRMO Administration and Training Division",
+  "number": "+(63) 916 220 1847",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h04",
+  "scope": "province",
+  "category": "emergency",
+  "name": "PDRRMO Research and Planning Division",
+  "number": "+(63) 948 154 1775",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h05",
+  "scope": "province",
+  "category": "emergency",
+  "name": "PDRRMO (landlines)",
+  "number": "043-288-4911",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h06",
+  "scope": "province",
+  "category": "emergency",
+  "name": "PDRRMO (landlines)",
+  "number": "043-288-4912",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h07",
+  "scope": "province",
+  "category": "emergency",
+  "name": "Police",
+  "number": "(043) 288 1616",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h08",
+  "scope": "province",
+  "category": "emergency",
+  "name": "Fire",
+  "number": "(043) 288 5617",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h09",
+  "scope": "province",
+  "category": "emergency",
+  "name": "Public Safety",
+  "number": "(043) 288 1111",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h10",
+  "scope": "province",
+  "category": "government",
+  "name": "Office of the Governor hotline",
+  "number": "+63 917 808 0698",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h11",
+  "scope": "province",
+  "category": "government",
+  "name": "Office of the Governor",
+  "number": "(043) 288 7935",
+  "source": "https://ormindoro.gov.ph/2026/07/01/mga-numerong-maaaring-tawagan-sa-panahon-ng-emergency-alamin/",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h12",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "Philippine Coast Guard - Calapan Station",
+  "number": "0917-724-3682",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h13",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "Philippine Coast Guard - Calapan Station",
+  "number": "043-288-2891",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h14",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "Calapan City DRRM Office",
+  "number": "043-288-2190",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h15",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "Calapan City DRRM Office",
+  "number": "043-288-2191",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h16",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "Calapan City Police Station",
+  "number": "043-288-2353",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h17",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "BFP Calapan City",
+  "number": "043-288-2555",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h18",
+  "scope": "naujan",
+  "category": "emergency",
+  "name": "Naujan Police Station",
+  "number": "043-289-2088",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h19",
+  "scope": "puerto-galera",
+  "category": "emergency",
+  "name": "Puerto Galera Police Station",
+  "number": "043-287-3075",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h20",
+  "scope": "puerto-galera",
+  "category": "emergency",
+  "name": "BFP Puerto Galera",
+  "number": "043-287-3211",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h21",
+  "scope": "puerto-galera",
+  "category": "emergency",
+  "name": "Philippine Coast Guard - Puerto Galera Station",
+  "number": "043-287-3092",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h22",
+  "scope": "puerto-galera",
+  "category": "emergency",
+  "name": "Puerto Galera MDRRM Office",
+  "number": "0917-555-3911",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ },
+ {
+  "id": "h23",
+  "scope": "puerto-galera",
+  "category": "emergency",
+  "name": "Puerto Galera MDRRM Office",
+  "number": "043-287-3100",
+  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
+  "verifiedAt": "2026-11-08",
+  "confirmed": false
+ }
+]
