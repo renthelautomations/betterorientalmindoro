@@ -19,17 +19,26 @@ export default function LiveWeather() {
     return () => c.abort();
   }, []);
   const key = w && w !== "err" ? weatherKey(w.code) : undefined;
+  const chip = (icon: "drop" | "weather", value: string, label: string) => (
+    <div className="flex items-center gap-3 rounded-2xl bg-white/15 px-4 py-3">
+      <KitIcon name={icon} color="#fff" className="h-6 w-6 shrink-0" />
+      <span><dd className="text-xl font-bold tabular-nums">{value}</dd><dt className="text-xs tracking-wide text-white uppercase">{label}</dt></span>
+    </div>
+  );
   return (
-    <div className="min-h-44">
-      {w === "err" ? <p className="text-sm text-white/80">{t("home.wx.err")}</p> : !w ? <p className="text-sm text-white/80">{t("home.wx.load")}</p> : (
-        <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
-          <div>
-            <p className="flex items-start font-serif text-7xl font-bold leading-none tabular-nums">{Math.round(w.temp)}<span className="mt-1 text-3xl">°C</span></p>
-            {key && <p className="mt-2 text-lg font-semibold"><T k={key} /></p>}
+    <div className="flex-1">
+      {w === "err" ? <p className="text-sm text-white">{t("home.wx.err")}</p> : !w ? <p className="text-sm text-white">{t("home.wx.load")}</p> : (
+        <div className="flex h-full flex-col justify-between gap-6">
+          <div className="flex items-start justify-between gap-4">
+            <div>
+              <p className="flex items-start font-serif text-8xl font-bold leading-none tabular-nums">{Math.round(w.temp)}<span className="mt-2 text-4xl">°C</span></p>
+              {key && <p className="mt-3 font-serif text-2xl font-bold"><T k={key} /></p>}
+            </div>
+            <KitIcon name="weather" color="#fff" className="h-16 w-16 shrink-0 opacity-90" />
           </div>
-          <dl className="grid grid-cols-2 gap-4 text-sm">
-            <div className="flex items-center gap-2.5"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15"><KitIcon name="drop" color="#fff" className="h-5 w-5" /></span><span><dd className="text-lg font-bold tabular-nums">{w.hum}%</dd><dt className="text-xs tracking-wide text-white/80 uppercase">{t("home.wx.hum")}</dt></span></div>
-            <div className="flex items-center gap-2.5"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/15"><KitIcon name="weather" color="#fff" className="h-5 w-5" /></span><span><dd className="text-lg font-bold tabular-nums">{w.wind}</dd><dt className="text-xs tracking-wide text-white/80 uppercase">{t("home.wx.kmh")}</dt></span></div>
+          <dl className="grid grid-cols-2 gap-3">
+            {chip("drop", `${w.hum}%`, t("home.wx.hum"))}
+            {chip("weather", String(w.wind), t("home.wx.kmh"))}
           </dl>
         </div>
       )}

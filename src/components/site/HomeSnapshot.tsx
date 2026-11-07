@@ -1,31 +1,36 @@
 import Link from "next/link";
 import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
+import { PatternFill, FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import LiveWeather from "./LiveWeather";
 import { T } from "@/lib/i18n/i18n";
 
 export type SnapshotFact = { icon: KitIconName; value: string; label: string; hint?: React.ReactNode };
+const TONE = [FIESTA.blue, FIESTA_DEEP.green, FIESTA_DEEP.orange, FIESTA.navy];
 
-/** Province at a glance: live weather for the capital, then four plain facts. Dark card with the weather as the headline, as on a town portal. */
+/** Province at a glance: a patterned sky card with live weather for the capital, beside four coloured fact tiles. Same family as the service and pillar cards. */
 export default function HomeSnapshot({ facts }: { facts: SnapshotFact[] }) {
   return (
-    <section aria-labelledby="snap-h" className="overflow-hidden rounded-3xl bg-fiesta-navy text-white">
-      <div className="p-6 sm:p-8">
-        <p id="snap-h" className="flex items-center gap-2 text-sm font-semibold tracking-widest text-fiesta-yellow uppercase"><KitIcon name="weather" color="#f4b92e" className="h-5 w-5" /><T k="home.snap.h" /></p>
-        <div className="mt-5"><LiveWeather /></div>
-        <p className="mt-3 text-xs text-white/70"><T k="common.source" />: Open-Meteo</p>
+    <section aria-labelledby="snap-h" className="grid gap-4 lg:grid-cols-[1fr_1.35fr]">
+      <div className="relative isolate flex flex-col overflow-hidden rounded-3xl p-6 text-white shadow-sm sm:p-8" style={{ background: FIESTA_DEEP.sky }}>
+        <PatternFill variant="wave" colors={["#fff"]} opacity={0.16} />
+        <p id="snap-h" className="relative flex items-center gap-2 text-sm font-semibold tracking-widest uppercase"><T k="home.snap.h" /></p>
+        <div className="relative mt-5 flex flex-1 flex-col"><LiveWeather /></div>
+        <p className="relative mt-5 text-xs text-white"><T k="common.source" />: Open-Meteo</p>
       </div>
-      <dl className="grid grid-cols-2 border-t border-white/10 lg:grid-cols-4">
-        {facts.map((f, i) => (
-          <div key={f.label} className={`flex flex-col items-center gap-1 px-4 py-7 text-center ${i % 2 ? "border-l border-white/10" : ""} ${i > 0 ? "lg:border-l lg:border-white/10" : ""} ${i > 1 ? "border-t border-white/10 lg:border-t-0" : ""}`}>
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15"><KitIcon name={f.icon} color="#fff" className="h-6 w-6" /></span>
-            <dd className="mt-2 font-serif text-4xl font-bold tabular-nums">{f.value}</dd>
-            <dt className="text-sm font-semibold"><T k={f.label} /></dt>
-            {f.hint && <p className="text-xs text-white/75">{f.hint}</p>}
-          </div>
-        ))}
-      </dl>
-      <div className="border-t border-white/10 px-6 py-4 text-center">
-        <Link href="/estatistika" className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold tracking-widest text-fiesta-yellow uppercase hover:underline"><T k="home.snap.more" /><KitIcon name="arrow" color="#f4b92e" className="h-4 w-4" /></Link>
+      <div className="flex flex-col gap-4">
+        <dl className="grid flex-1 grid-cols-2 gap-4">
+          {facts.map((f, i) => (
+            <div key={f.label} className="flex flex-col rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
+              <div className="flex items-center justify-between gap-2">
+                <dt className="text-xs font-semibold tracking-widest text-black/60 uppercase"><T k={f.label} /></dt>
+                <KitIcon name={f.icon} variant="duo" color={TONE[i % TONE.length]} className="h-7 w-7 shrink-0" />
+              </div>
+              <dd className="mt-3 font-serif text-4xl font-bold tabular-nums sm:text-5xl" style={{ color: TONE[i % TONE.length] }}>{f.value}</dd>
+              <p className="mt-1 text-sm text-black/65">{f.hint ?? "\u00a0"}</p>
+            </div>
+          ))}
+        </dl>
+        <Link href="/estatistika" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-fiesta-navy px-6 text-sm font-semibold text-white hover:bg-fiesta-blue"><T k="home.snap.more" /><KitIcon name="arrow" color="#fff" className="h-4 w-4" /></Link>
       </div>
     </section>
   );
