@@ -2,7 +2,9 @@ import Link from "next/link";
 import MapLoader from "@/components/MapLoader";
 import { Divider } from "@/components/kit/Motifs";
 import PennantHero from "@/components/site/PennantHero";
-import { PillarCard, StatCard, Callout, SectionHeader, ServiceRow } from "@/components/kit/Parts";
+import { ServiceRow } from "@/components/kit/Parts";
+import { SectionHeaderT as SectionHeader, CalloutT as Callout, PillarCardT as PillarCard, StatCardT as StatCard, Landmark } from "@/components/site/KitT";
+import { T } from "@/lib/i18n/i18n";
 import { BarChart } from "@/components/kit/Charts";
 import LinkChoropleth from "@/components/site/LinkChoropleth";
 import type { KitIconName } from "@/components/kit/KitIcon";
@@ -14,7 +16,6 @@ import { getHotlines } from "@/lib/hotlines";
 import { getProvinceStats, getStats, fmtInt } from "@/lib/stats";
 import { getProjectStats } from "@/lib/projects";
 import { getCategories } from "@/lib/services";
-import { SITE } from "@/lib/brand";
 
 const CAT_ICON: Record<string, KitIconName> = { certificates: "doc", business: "budget", social: "people", health: "health", taxation: "budget", agriculture: "farm" };
 const tel = (n: string) => "tel:" + n.replace(/[^\d+]/g, "");
@@ -30,19 +31,19 @@ export default function Home() {
     <main>
       <PennantHero>
         <div className="mx-auto max-w-6xl px-4 pb-14 pt-12 md:pb-20 md:pt-16">
-          <p className="text-sm font-semibold tracking-[0.2em] text-fiesta-blue">{SITE.tagline.toUpperCase()}</p>
+          <p className="text-sm font-semibold tracking-[0.2em] text-fiesta-blue uppercase"><T k="footer.tagline" /></p>
           <h1 className="mt-3 max-w-xl font-serif text-5xl font-bold leading-[1.05] md:text-7xl">Better<br />Oriental Mindoro<span className="text-fiesta-orange">.org</span></h1>
-          <p className="mt-5 max-w-lg text-lg text-black/70">Mga serbisyo, hotline, proyekto at kuwento ng lalawigan, sa iisang lugar.</p>
+          <p className="mt-5 max-w-lg text-lg text-black/70"><T k="home.p" /></p>
           <div className="mt-8"><SiteSearch items={getSearchItems()} /></div>
         </div>
       </PennantHero>
       <Divider variant="mahaltana" />
 
       <div className="mx-auto max-w-6xl px-4">
-        <section aria-label="Tulong ngayon" className="pt-10">
-          <Callout kind="emergency" title="Kailangan ng tulong ngayon?">
+        <Landmark as="section" label="home.help.aria" className="pt-10">
+          <Callout kind="emergency" title="home.help.h">
             {hotlines.length === 0 ? (
-              <Link href="/hotlines" className="underline">Tingnan ang mga hotline</Link>
+              <Link href="/hotlines" className="underline"><T k="home.help.see" /></Link>
             ) : (
               <>
                 {hotlines.map((h) => (
@@ -50,48 +51,48 @@ export default function Home() {
                     {h.name}: <a href={tel(h.number)} className="font-semibold underline">{h.number}</a>
                   </span>
                 ))}
-                <Link href="/hotlines" className="mt-1 inline-block py-1 font-semibold underline">Lahat ng hotline</Link>
+                <Link href="/hotlines" className="mt-1 inline-block py-1 font-semibold underline"><T k="home.help.all" /></Link>
               </>
             )}
           </Callout>
-        </section>
+        </Landmark>
 
-        <section aria-label="Mapa ng lalawigan" className="py-12">
-          <SectionHeader eyebrow="MAPA" title="Ang 15 bayan at lungsod" color={FIESTA.blue} />
+        <Landmark as="section" label="home.map.aria2" className="py-12">
+          <SectionHeader eyebrow="home.map.eyebrow" title="home.map.h" color={FIESTA.blue} />
           <div className="mt-6"><MapLoader slugs={slugs} /></div>
           <p className="mt-4 text-sm text-black/70">
-            Pindutin ang isang bayan sa mapa, o <Link href="/bayan" className="inline-block py-2 font-semibold underline">buksan ang listahan ng mga bayan</Link>.
+            <T k="home.map.tap" /> <Link href="/bayan" className="inline-block py-2 font-semibold underline"><T k="home.map.list" /></Link>.
           </p>
-        </section>
+        </Landmark>
 
         <section aria-label="MaHalTaNa" className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          <Link href="/ma"><PillarCard short="Ma" name="Mangyan" blurb="Kultura at tradisyon." color={FIESTA.blue} pattern="dotblocks" /></Link>
-          <Link href="/hal"><PillarCard short="Hal" name="Mount Halcon" blurb="Ang bundok ng lalawigan." color={FIESTA_DEEP.green} pattern="peaks" /></Link>
-          <Link href="/ta"><PillarCard short="Ta" name="Tamaraw" blurb="Tanging sa Mindoro." color={FIESTA.red} pattern="horns" /></Link>
-          <Link href="/na"><PillarCard short="Na" name="Naujan Lake" blurb="Ang pinakamalaking lawa." color={FIESTA_DEEP.sky} pattern="wave" /></Link>
+          <Link href="/ma"><PillarCard short="Ma" name="Mangyan" blurb="home.pillar.ma" color={FIESTA.blue} pattern="dotblocks" /></Link>
+          <Link href="/hal"><PillarCard short="Hal" name="Mount Halcon" blurb="home.pillar.hal" color={FIESTA_DEEP.green} pattern="peaks" /></Link>
+          <Link href="/ta"><PillarCard short="Ta" name="Tamaraw" blurb="home.pillar.ta" color={FIESTA.red} pattern="horns" /></Link>
+          <Link href="/na"><PillarCard short="Na" name="Naujan Lake" blurb="home.pillar.na" color={FIESTA_DEEP.sky} pattern="wave" /></Link>
         </section>
 
-        <section aria-label="Sa numero" className="grid gap-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
-          <Link href="/bayan"><StatCard label="BAYAN AT LUNGSOD" value={String(towns.length)} hint="Sa buong lalawigan. Tingnan ang Bayan" icon="pin" color={FIESTA.blue} /></Link>
-          <Link href="/estatistika"><StatCard label="POPULASYON" value={fmtInt(pop?.value)} hint={pop ? `Census ${pop.year}. Tingnan ang Estatistika` : "Tingnan ang Estatistika"} icon="people" color={FIESTA_DEEP.orange} /></Link>
-          <Link href="/hotlines"><StatCard label="HOTLINE" value={String(hotlineCount)} hint="Nakalista. Tingnan ang Hotlines" icon="phone" color={FIESTA.red} /></Link>
-          <Link href="/proyekto"><StatCard label="PROYEKTO NG DPWH" value={fmtInt(getProjectStats().total)} hint="Nakalista. Tingnan ang Proyekto" icon="road" color={FIESTA_DEEP.green} /></Link>
-        </section>
+        <Landmark as="section" label="home.num.aria" className="grid gap-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
+          <Link href="/bayan"><StatCard label="home.towns" value={String(towns.length)} hint="home.hint.towns" icon="pin" color={FIESTA.blue} /></Link>
+          <Link href="/estatistika"><StatCard label="home.pop" value={fmtInt(pop?.value)} lead={pop ? `Census ${pop.year}.` : undefined} hint="home.hint.stats" icon="people" color={FIESTA_DEEP.orange} /></Link>
+          <Link href="/hotlines"><StatCard label="home.stat.hotline" value={String(hotlineCount)} hint="home.hint.hotlines" icon="phone" color={FIESTA.red} /></Link>
+          <Link href="/proyekto"><StatCard label="home.projects" value={fmtInt(getProjectStats().total)} hint="home.hint.projects" icon="road" color={FIESTA_DEEP.green} /></Link>
+        </Landmark>
 
-        <section aria-label="Para sa bayan" className="pb-14">
-          <SectionHeader eyebrow="SERBISYO" title="Mga serbisyo para sa bayan" color={FIESTA_DEEP.orange} />
+        <Landmark as="section" label="home.services" className="pb-14">
+          <SectionHeader eyebrow="home.svc.eyebrow" title="home.svc.h" color={FIESTA_DEEP.orange} />
           <div className="mt-6 grid gap-3 md:grid-cols-2">
             {getCategories().map((c, i) => <Link key={c.slug} href={`/serbisyo#${c.slug}`} className="block min-w-0"><ServiceRow icon={CAT_ICON[c.slug] ?? "doc"} title={c.name} sub={c.blurb} color={[FIESTA.blue, FIESTA_DEEP.orange, FIESTA_DEEP.green, FIESTA.red][i % 4]} /></Link>)}
           </div>
-        </section>
+        </Landmark>
 
-        <section aria-label="Populasyon" className="border-t border-black/10 py-14">
-          <SectionHeader eyebrow="POPULASYON" title="Populasyon ng bawat bayan" color={FIESTA.blue} />
+        <Landmark as="section" label="home.pop.aria" className="border-t border-black/10 py-14">
+          <SectionHeader eyebrow="home.pop" title="home.pop.h" color={FIESTA.blue} />
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <BarChart rows={towns.filter((t) => t.pop != null).map((t) => ({ label: t.name, value: t.pop as number, href: `/bayan/${t.slug}` }))} format={fmtInt} />
             <LinkChoropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} unit="population" />
           </div>
-        </section>
+        </Landmark>
       </div>
     </main>
   );

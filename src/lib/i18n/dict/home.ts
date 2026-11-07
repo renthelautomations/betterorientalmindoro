@@ -1,2 +1,42 @@
 // home interface strings: "area.thing": ["English", "Filipino"]. Data from sources stays as published.
-export const HOME = {} as const satisfies Record<string, readonly [string, string]>;
+// Filipino drafts for strings that were English-only (footer, 404/error English lines, weather, map aria, badges) await native-speaker review.
+export const HOME = {
+  // home page
+  "home.help.aria": ["Help now", "Tulong ngayon"], "home.help.h": ["Need help right now?", "Kailangan ng tulong ngayon?"],
+  "home.help.see": ["See the hotlines", "Tingnan ang mga hotline"], "home.help.all": ["All hotlines", "Lahat ng hotline"],
+  "home.map.aria2": ["Map of the province", "Mapa ng lalawigan"], "home.map.eyebrow": ["MAP", "MAPA"], "home.map.h": ["The 15 towns and cities", "Ang 15 bayan at lungsod"],
+  "home.map.tap": ["Tap a town on the map, or", "Pindutin ang isang bayan sa mapa, o"], "home.map.list": ["open the list of towns", "buksan ang listahan ng mga bayan"],
+  "home.pillar.ma": ["Culture and tradition.", "Kultura at tradisyon."], "home.pillar.hal": ["The province's mountain.", "Ang bundok ng lalawigan."],
+  "home.pillar.ta": ["Found only in Mindoro.", "Tanging sa Mindoro."], "home.pillar.na": ["The largest lake.", "Ang pinakamalaking lawa."],
+  "home.num.aria": ["In numbers", "Sa numero"], "home.stat.hotline": ["HOTLINES", "HOTLINE"],
+  "home.hint.towns": ["Across the province. See Towns", "Sa buong lalawigan. Tingnan ang Bayan"], "home.hint.stats": ["See Statistics", "Tingnan ang Estatistika"],
+  "home.hint.hotlines": ["Listed. See Hotlines", "Nakalista. Tingnan ang Hotlines"], "home.hint.projects": ["Listed. See Projects", "Nakalista. Tingnan ang Proyekto"],
+  "home.svc.eyebrow": ["SERVICES", "SERBISYO"], "home.svc.h": ["Services for the people", "Mga serbisyo para sa bayan"],
+  "home.pop.aria": ["Population", "Populasyon"], "home.pop.h": ["Population of each town", "Populasyon ng bawat bayan"],
+  // MaHalTaNa page
+  "home.crumb": ["Home", "Home"], "home.mht.title": ["Four pillars of Oriental Mindoro", "Apat na haligi ng Oriental Mindoro"],
+  "home.mht.p": ["Mangyan, Mount Halcon, Tamaraw and Naujan Lake: the four symbols of our province.", "Mangyan, Mount Halcon, Tamaraw at Naujan Lake: ang apat na simbolo ng ating lalawigan."],
+  "home.mht.ma": ["The indigenous people of Mindoro: culture, language and tradition.", "Ang mga katutubo ng Mindoro: kultura, wika, at tradisyon."],
+  "home.mht.hal": ["The province's mountain and best-known climb.", "Ang bundok at pinakasikat na akyatan ng lalawigan."],
+  "home.mht.ta": ["The rare dwarf buffalo found only in Mindoro.", "Ang bihirang dwarf buffalo na tanging sa Mindoro matatagpuan."],
+  "home.mht.na": ["The province's largest lake, rich in wildlife.", "Ang pinakamalaking lawa ng lalawigan, mayaman sa buhay-ilang."],
+  "home.mht.prep": ["In preparation", "Inihahanda pa"], "home.mht.draft": ["Draft: for volunteer review", "Draft: para sa pagsusuri ng mga volunteer"],
+  "home.mht.read": ["Read the story of", "Basahin ang kuwento ng"],
+  // footer bar, emergency bar
+  "home.foot.aria": ["Community and credits", "Komunidad at credits"], "home.foot.github": ["Better Oriental Mindoro on GitHub", "Better Oriental Mindoro sa GitHub"],
+  "home.foot.discord": ["BetterGov.PH community on Discord", "Komunidad ng BetterGov.PH sa Discord"],
+  "home.foot.cited": ["Public data is cited to its source on each page.", "Binabanggit sa bawat pahina ang pinagmulan ng pampublikong datos."],
+  "home.foot.built": ["Built by", "Gawa ni"], "home.foot.ver": ["Ver.", "Bers."],
+  "home.emerg.aria": ["Emergency numbers", "Mga numero para sa emergency"], "home.emerg": ["Emergency", "Emergency"],
+  // 404, error
+  "home.nf.h": ["We could not find this page.", "Hindi namin mahanap ang pahinang ito."],
+  "home.nf.p": ["Page not found. It may have moved, or the link may be mistyped.", "Hindi nahanap ang pahina. Maaaring inilipat ito, o mali ang pagkakatype ng link."],
+  "home.nf.home": ["Back to home", "Bumalik sa home"], "home.nf.towns": ["Map of the towns", "Mapa ng mga bayan"],
+  "home.err.h": ["Something went wrong.", "May nangyaring mali."],
+  "home.err.p": ["Something went wrong on our side. Please try again.", "May nangyaring mali sa aming panig. Pakisubukan muli."], "home.err.retry": ["Try again", "Subukan muli"],
+  // weather, map
+  "home.wx.err": ["Weather unavailable right now. See PAGASA for forecasts.", "Hindi available ang panahon ngayon. Tingnan ang PAGASA para sa forecast."],
+  "home.wx.load": ["Loading weather…", "Kinukuha ang lagay ng panahon…"], "home.wx.now": ["Calapan now:", "Calapan ngayon:"], "home.wx.wind": ["wind", "hangin"],
+  "home.map.aria": ["Map of Oriental Mindoro municipalities", "Mapa ng mga bayan ng Oriental Mindoro"],
+  "home.map.fail": ["The map could not load on this device. Use the list below.", "Hindi ma-load ang mapa sa device na ito. Gamitin ang listahan sa ibaba."],
+} as const satisfies Record<string, readonly [string, string]>;

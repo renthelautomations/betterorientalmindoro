@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useT } from "@/lib/i18n/i18n";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
@@ -11,6 +12,7 @@ maplibregl.setWorkerUrl("/maplibre-gl-worker.mjs");
 export default function Map({ slugs, onSelect, selected }: { slugs: Record<string, string>; onSelect?: (slug: string | null) => void; selected?: string | null }) {
   const el = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const t = useT();
   const [failed, setFailed] = useState(false);
   const cb = useRef(onSelect);
   cb.current = onSelect;
@@ -67,6 +69,6 @@ export default function Map({ slugs, onSelect, selected }: { slugs: Record<strin
     for (const f of ["municipalities", "component_cities"]) if (map.getLayer(`${f}-sel`)) map.setFilter(`${f}-sel`, ["==", ["get", "ADM3_PCODE"], pc]);
   }, [selected, slugs]);
 
-  if (failed) return <p className="rounded-2xl bg-black/5 p-6 text-sm text-black/65">Hindi ma-load ang mapa sa device na ito. Gamitin ang listahan sa ibaba.</p>;
-  return <div ref={el} role="img" aria-label="Map of Oriental Mindoro municipalities" className="h-[60vh] min-h-96 w-full rounded-2xl" />;
+  if (failed) return <p className="rounded-2xl bg-black/5 p-6 text-sm text-black/65">{t("home.map.fail")}</p>;
+  return <div ref={el} role="img" aria-label={t("home.map.aria")} className="h-[60vh] min-h-96 w-full rounded-2xl" />;
 }
