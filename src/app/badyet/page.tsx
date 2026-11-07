@@ -1,3 +1,4 @@
+import SourceLink from "@/components/ui/SourceLink";
 import type { Metadata } from "next";
 import DistrictCard from "@/components/badyet/DistrictCard";
 import { SourceNote } from "@/components/stats/StatCard";
@@ -53,8 +54,14 @@ export default function Badyet() {
       </section>
 
       <SourceNote>
-        Source: <a className="underline" href="https://budget.bettergov.ph/docs" rel="noopener">BetterGov Budget API</a>, kinuha mula sa data na binuo noong {date(meta.built_at)} (<a className="underline" href={meta.source_repo} rel="noopener">source repo</a>, commit {meta.source_commit.slice(0, 7)}). Hindi nakasaad ang lisensya sa API response; tingnan ang <a className="underline" href="https://budget.bettergov.ph/docs" rel="noopener">dokumentasyon</a> at <a className="underline" href="https://lgu.bettergov.ph/BUDGET_GUIDE.html" rel="noopener">gabay</a>. Portrait at pangalan ng kinatawan: House of Representatives of the Philippines. Malaya at hindi opisyal ang pahinang ito; hindi ito ang talaan ng budget department.
+        Data mula sa BetterGov Budget API, kinuha noong {date(meta.built_at)}. Hindi nakasaad ang lisensya sa API response. Portrait at pangalan ng kinatawan: House of Representatives of the Philippines. Malaya at hindi opisyal ang pahinang ito; hindi ito ang talaan ng budget department.
       </SourceNote>
+      <div className="mt-3 flex flex-wrap gap-2">
+        <SourceLink href="https://budget.bettergov.ph/docs" icon="database">BetterGov Budget API</SourceLink>
+        <SourceLink href={meta.source_repo} icon="github">Source repo</SourceLink>
+        <SourceLink href="https://budget.bettergov.ph/docs" icon="book">Dokumentasyon</SourceLink>
+        <SourceLink href="https://lgu.bettergov.ph/BUDGET_GUIDE.html" icon="compass">Gabay</SourceLink>
+      </div>
     </main>
   );
 }

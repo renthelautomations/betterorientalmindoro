@@ -14,7 +14,7 @@ export const NAV = [
 
 export default function Header() {
   return (
-    <header className="border-b border-black/10 bg-background">
+    <header className="sticky top-0 z-40 border-b border-black/10 bg-background/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 px-4 py-2">
         <Link href="/" aria-label="Better Oriental Mindoro, home" className="py-2"><Logo /></Link>
         <nav aria-label="Main">
