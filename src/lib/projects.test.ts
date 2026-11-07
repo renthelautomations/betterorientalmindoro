@@ -78,3 +78,44 @@ describe("project helpers", () => {
     expect(rows.some((p) => p.start && p.end)).toBe(true);
   });
 });
+
+import { cleanTitle, topCategories } from "./projects";
+
+describe("cleanTitle", () => {
+  it("sentence-cases but keeps codes and abbreviations", () => {
+    expect(cleanTitle("CONSTRUCTION OF RC BRIDGE ALONG CALAPAN SOUTH ROAD K0103+000 - K0104+500, GAA 2025")).toBe(
+      "Construction of rc bridge along calapan south road K0103+000 - K0104+500, GAA 2025".replace("rc", "RC"),
+    );
+  });
+  it("keeps DPWH, roman numerals, bridge codes and dotted initials", () => {
+    expect(cleanTitle("DPWH PHASE II CONCEPCION BR. (B00048MR) E.S.L.")).toBe("DPWH phase II concepcion br. (B00048MR) E.S.L.");
+  });
+  it("is stable on empty and already-clean input", () => {
+    expect(cleanTitle("")).toBe("");
+    expect(cleanTitle("Road")).toBe("Road");
+  });
+});
+
+describe("topCategories", () => {
+  it("returns the n most common categories", () => {
+    const rows = [{ category: "A" }, { category: "B" }, { category: "B" }, {}] as never[];
+    expect(topCategories(rows, 1)).toEqual(["B"]);
+  });
+});
+
+import { hubHref, durationDays } from "./projects";
+
+describe("hubHref", () => {
+  it("keeps only set params and drops page 1", () => {
+    expect(hubHref({})).toBe("/proyekto");
+    expect(hubHref({ bayan: "baco", taon: "2024", q: "", page: 1 })).toBe("/proyekto?bayan=baco&taon=2024");
+    expect(hubHref({ q: "road a", page: 3 })).toBe("/proyekto?q=road+a&page=3");
+  });
+});
+
+describe("durationDays", () => {
+  it("counts days between two ISO dates", () => {
+    expect(durationDays("2023-03-24", "2023-06-01")).toBe(69);
+    expect(durationDays("2023-01-01", "2023-01-01")).toBe(0);
+  });
+});
