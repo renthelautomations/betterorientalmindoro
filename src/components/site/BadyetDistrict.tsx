@@ -66,19 +66,13 @@ export function GaaBars({ o }: { o: Office }) {
       <span className="w-20 shrink-0 text-right tabular-nums">{fmtPeso(y.php)}</span>
     </li>
   );
-  const recent = ys.slice(-5).reverse();
-  const older = ys.slice(0, -5).reverse();
   return (
     <>
-      <ul className="space-y-1.5">{recent.map(row)}</ul>
-      {(older.length > 0 || o.by_congress.length > 0) && (
-        <details className="mt-3 text-sm">
-          <summary className="min-h-11 cursor-pointer py-2 font-semibold text-fiesta-blue underline"><T k="finance.gaa.more" /></summary>
-          <ul className="mt-2 space-y-1.5">{older.map(row)}</ul>
-          <ul className="mt-3 text-xs text-black/70">
-            {o.by_congress.map((c) => <li key={c.congress}><R k="finance.cong" v={[c.congress, c.years_counted.join(", "), fmtPeso(c.gaa_php)]} /></li>)}
-          </ul>
-        </details>
+      <ul className="space-y-1.5">{[...ys].reverse().map(row)}</ul>
+      {o.by_congress.length > 0 && (
+        <ul className="mt-4 space-y-0.5 text-xs text-black/70">
+          {o.by_congress.map((c) => <li key={c.congress}><R k="finance.cong" v={[c.congress, c.years_counted.join(", "), fmtPeso(c.gaa_php)]} /></li>)}
+        </ul>
       )}
     </>
   );

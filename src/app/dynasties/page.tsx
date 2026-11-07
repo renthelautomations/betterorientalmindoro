@@ -1,10 +1,8 @@
-import SmartSearch from "@/components/site/SmartSearch";
-import { getSearchItems } from "@/lib/search-index";
 import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Attribution from "@/components/dynasties/Attribution";
 import DynNote from "@/components/site/DynNote";
-import DynSwitch from "@/components/site/DynSwitch";
+import DynFinder from "@/components/site/DynFinder";
 import DynSurnames from "@/components/site/DynSurnames";
 import { WinnersGrid } from "@/components/site/DynGrid";
 import { TBreadcrumbs, TF, TPageTitle } from "@/components/site/DynBits";
@@ -13,7 +11,7 @@ import Link from "next/link";
 import { LinkNetwork } from "@/components/site/LinkNetwork";
 import TownEmblem from "@/components/kit/TownEmblem";
 import KitIcon from "@/components/kit/KitIcon";
-import { getProvince, getTown, provinceSurnames, sharedSurnames, surnameNetwork, titleCase, type Town } from "@/lib/dynasties";
+import { allWinners, getProvince, getTown, provinceSurnames, sharedSurnames, surnameNetwork, titleCase, type Town } from "@/lib/dynasties";
 import { getMunicipalities } from "@/lib/municipalities";
 
 export const metadata: Metadata = { title: "Dynasties", description: "Mga apelyidong paulit-ulit sa halalan ng Oriental Mindoro, 2001–2025." };
@@ -33,8 +31,7 @@ export default function Dynasties() {
       <TBreadcrumbs items={[{ label: "dyn.home", href: "/" }, { label: "dyn.crumb" }]} />
       <div className="mt-4"><TPageTitle eyebrow="dyn.eyebrow.dyn" title="dyn.title" /></div>
       <p className="mt-4 max-w-2xl text-black/75"><TF k="dyn.intro" v={[years[0], years.at(-1) ?? ""]} /></p>
-      <div className="mt-6"><SmartSearch items={getSearchItems()} /></div>
-      <div className="mt-5"><DynSwitch current={null} towns={names} /></div>
+      <div className="mt-5"><DynFinder current={null} towns={names} years={years} rows={allWinners(towns)} /></div>
       <div className="mt-5"><DynNote /></div>
 
       <dl className="mt-8 grid grid-cols-3 gap-3 text-center">
@@ -60,11 +57,7 @@ export default function Dynasties() {
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.win.h" /></h2>
       <p className="mb-3 mt-2 text-sm text-black/75"><T k="dyn.win.p" /></p>
-      <WinnersGrid towns={gridTowns.slice(0, 5)} years={years} caption="dyn.cap.first" />
-      <details className="mt-3">
-        <summary className="min-h-11 cursor-pointer py-2 text-sm font-semibold text-fiesta-blue underline"><TF k="dyn.win.more" v={[gridTowns.length - 5]} /></summary>
-        <div className="mt-2"><WinnersGrid towns={gridTowns.slice(5)} years={years} caption="dyn.cap.rest" /></div>
-      </details>
+      <WinnersGrid towns={gridTowns} years={years} caption="dyn.cap.all" />
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.all.h" /></h2>
       <ul className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {names.map((m) => {

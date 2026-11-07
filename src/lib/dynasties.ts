@@ -1,5 +1,8 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { surnameOf } from "./dyn-pure";
+export { surnameOf, titleCase, findWinners, type WinnerRow } from "./dyn-pure";
+import type { WinnerRow } from "./dyn-pure";
 
 export type Winner = { id: string; name: string; ballot: string; party: string; votes: number | null };
 export type Contest = { year: number; position: string; seats: number; candidates: number; uncontested: boolean; margin: number | null; winners: Winner[] };
@@ -20,9 +23,7 @@ export function getTown(slug: string): Town | undefined {
 export const POSITIONS = ["MAYOR", "VICE MAYOR", "COUNCILOR"] as const;
 export const POSITION_LABEL: Record<string, string> = { MAYOR: "Mayor", "VICE MAYOR": "Vice Mayor", COUNCILOR: "Councilors" };
 
-export const surnameOf = (ballot: string) => ballot.split(",")[0].trim();
 
-export const titleCase = (s: string) => s.toLowerCase().replace(/(^|[\s,.-])(\p{L})/gu, (_, a, b) => a + b.toUpperCase());
 
 // Surnames held by 2+ different people, ranked by seats won. One person re-elected is NOT counted.
 // ponytail: surname match only (no family verification); the pattern is a hint, never proof.
@@ -104,4 +105,8 @@ export function surnameNetwork(towns: Town[]): SurnameLink[] {
       if (surnames.length) out.push({ a: per[i].slug, b: per[j].slug, weight: surnames.length, surnames });
     }
   return out.sort((x, y) => y.weight - x.weight || x.a.localeCompare(y.a) || x.b.localeCompare(y.b));
+}
+
+export function allWinners(towns: Town[]): WinnerRow[] {
+  return towns.flatMap((t) => t.contests.flatMap((c) => c.winners.map((w): WinnerRow => [t.slug, c.year, c.position, w.name, surnameOf(w.ballot), w.party])));
 }

@@ -4,13 +4,13 @@ import Attribution from "@/components/dynasties/Attribution";
 import OfficeholderTable from "@/components/dynasties/OfficeholderTable";
 import DynNote from "@/components/site/DynNote";
 import DynTownViz from "@/components/site/DynTownViz";
-import DynSwitch from "@/components/site/DynSwitch";
+import DynFinder from "@/components/site/DynFinder";
 import DynSurnames from "@/components/site/DynSurnames";
 import { WinnersGrid } from "@/components/site/DynGrid";
 import { TAccordion, TBreadcrumbs, TF, TPageTitle,  } from "@/components/site/DynBits";
 import { posKey } from "@/components/site/dynKeys";
 import { T } from "@/lib/i18n/i18n";
-import { getProvince, getTown, GRID_SEATS, sharedSurnames } from "@/lib/dynasties";
+import { allWinners, getProvince, getTown, GRID_SEATS, sharedSurnames } from "@/lib/dynasties";
 import { getMunicipalities, getMunicipality } from "@/lib/municipalities";
 
 export function generateStaticParams() {
@@ -36,7 +36,7 @@ export default async function TownDynasties({ params }: PageProps<"/dynasties/[t
       <TBreadcrumbs items={[{ label: "dyn.home", href: "/" }, { label: "dyn.crumb", href: "/dynasties" }, { label: m.name }]} />
       <div className="mt-4"><TPageTitle eyebrow="dyn.eyebrow.dyn" title={m.name} /></div>
       <p className="mt-4 max-w-2xl text-black/75"><TF k="dyn.town.intro" v={[years[0], years.at(-1) ?? ""]} /></p>
-      <div className="mt-5"><DynSwitch current={town} towns={names} /></div>
+      <div className="mt-5"><DynFinder current={town} towns={names} years={years} rows={allWinners([t])} /></div>
       <div className="mt-5"><DynNote /></div>
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.glance.h" /></h2>

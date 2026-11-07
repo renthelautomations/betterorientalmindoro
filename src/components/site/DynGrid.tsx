@@ -2,9 +2,10 @@ import { DynCellLink, DynRegion, TF } from "@/components/site/DynBits";
 import { posKey } from "@/components/site/dynKeys";
 import { T } from "@/lib/i18n/i18n";
 import { surnameOf, titleCase, winnersGrid, type Contest } from "@/lib/dynasties";
+import { seatId } from "@/lib/dyn-pure";
 
 export type GridTown = { slug: string; name: string; contests: Contest[] };
-export const seatId = (position: string, year: number) => `${position.toLowerCase().replace(" ", "-")}-${year}`;
+export { seatId } from "@/lib/dyn-pure";
 
 const sn = (w: { ballot: string; name: string }) => titleCase(surnameOf(w.ballot) || w.name);
 

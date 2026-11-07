@@ -1,11 +1,14 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import ReliefSvg from "@/components/ReliefSvg";
 import { useT } from "@/lib/i18n/i18n";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 maplibregl.setWorkerUrl("/maplibre-gl-worker.mjs");
+
+const DEM: maplibregl.RasterDEMSourceSpecification = { type: "raster-dem", tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"], encoding: "terrarium", tileSize: 256, maxzoom: 12, attribution: "Terrain: Mapzen / AWS Open Data" };
 
 export type Pt = { id: string; lat: number; lon: number };
 
@@ -22,19 +25,21 @@ export default function ProjectMap({ points, label, vars = {} }: { points: Pt[];
     try {
       map = new maplibregl.Map({
         container: el.current!,
-        style: { version: 8, sources: {}, layers: [{ id: "bg", type: "background", paint: { "background-color": "#e3eef2" } }] },
+        style: { version: 8, sources: { dem: DEM, shade: DEM }, layers: [{ id: "bg", type: "background", paint: { "background-color": "#cfe6ef" } }, { id: "relief", type: "hillshade", source: "shade", paint: { "hillshade-exaggeration": 0.55, "hillshade-shadow-color": "#2d5a4a", "hillshade-highlight-color": "#fff8e6", "hillshade-accent-color": "#4a7a68" } }] },
+        pitch: single ? 45 : 38,
         ...(single ? { center: [points[0].lon, points[0].lat] as [number, number], zoom: 11 } : { bounds: [120.85, 12.2, 121.55, 13.55] as [number, number, number, number], fitBoundsOptions: { padding: 16 } }),
-        attributionControl: false,
+        attributionControl: { compact: true },
       });
     } catch {
-      setFailed(true); // no WebGL: the list next to the map still works
+      queueMicrotask(() => setFailed(true)); // no WebGL: relief drawing and the list next to the map take over
       return;
     }
     map.on("load", () => {
+      map.setTerrain({ source: "dem", exaggeration: 1.4 });
       for (const f of ["municipalities", "component_cities"]) {
         map.addSource(f, { type: "geojson", data: `/data/${f}.geojson` });
-        map.addLayer({ id: `${f}-fill`, type: "fill", source: f, paint: { "fill-color": "#dcefe8", "fill-opacity": 0.9 } });
-        map.addLayer({ id: `${f}-line`, type: "line", source: f, paint: { "line-color": "#1b2a4a", "line-width": 1 } });
+        map.addLayer({ id: `${f}-fill`, type: "fill", source: f, paint: { "fill-color": "#ffffff", "fill-opacity": 0.14 } });
+        map.addLayer({ id: `${f}-line`, type: "line", source: f, paint: { "line-color": "#ffffff", "line-width": 1.3, "line-opacity": 0.9 } });
       }
       map.addSource("pts", {
         type: "geojson",
@@ -50,6 +55,6 @@ export default function ProjectMap({ points, label, vars = {} }: { points: Pt[];
     return () => map.remove();
   }, [points, single, router]);
 
-  if (failed) return <p className="rounded-2xl bg-black/5 p-6 text-sm text-black/70">{t("proyekto.mapfail")}</p>;
+  if (failed) return <ReliefSvg slugs={{}} />;
   return <div ref={el} role="img" aria-label={Object.entries(vars).reduce((a, [k, v]) => a.replace(`{${k}}`, String(v)), t(label))} className={`w-full rounded-2xl ${single ? "h-64" : "h-80 lg:h-96"}`} />;
 }
