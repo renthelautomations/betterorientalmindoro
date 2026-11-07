@@ -9,7 +9,7 @@ export default function ProjectRow({ id, title, bayan, year, status, cost, categ
   const d = projectDigest(title);
   const full = cleanTitle(title);
   return (
-    <Link href={`/proyekto/${id}`} className="group flex h-full items-start gap-4 rounded-2xl border border-black/10 bg-white p-4 shadow-sm transition hover:border-fiesta-navy/40 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
+    <Link href={`/proyekto/${id}`} className="group flex h-full items-start gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:shadow-md hover:ring-fiesta-navy/30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
       <KitIcon name={iconFor(category)} variant="badge" color="#1b2a4a" className="h-11 w-11 shrink-0" />
       <div className="min-w-0 flex-1">
         <p className="line-clamp-3 font-semibold leading-snug text-fiesta-navy" title={full}>{d.headline ?? full}</p>
@@ -23,7 +23,7 @@ export default function ProjectRow({ id, title, bayan, year, status, cost, categ
       </div>
       <div className="w-24 shrink-0 text-right sm:w-32">
         <p className="font-serif text-lg font-bold tabular-nums text-fiesta-navy sm:text-xl">{cost != null ? pesoShort(cost) : "–"}</p>
-        {max && cost != null ? <span className="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-black/5" aria-hidden><span className="block h-full rounded-full bg-fiesta-orange" style={{ width: `${Math.max((cost / max) * 100, 3)}%` }} /></span> : <span className="text-[11px] text-black/55">published na budget</span>}
+        {max && cost != null ? <span className="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-black/5" aria-hidden><span className="block h-full rounded-full bg-fiesta-orange" style={{ width: `${Math.max((cost / max) * 100, 3)}%` }} /></span> : <span className="text-[11px] text-black/60"><T k="uxb.row.pub" /></span>}
       </div>
       <KitIcon name="arrow" className="mt-3 hidden h-5 w-5 shrink-0 text-black/30 transition group-hover:translate-x-0.5 group-hover:text-fiesta-navy sm:block" />
     </Link>

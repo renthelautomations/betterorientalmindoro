@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Badge } from "@/components/kit/Parts";
+import { FIESTA, FIESTA_DEEP, type PatternKey } from "@/components/kit/Patterns";
 import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
 import { T } from "@/lib/i18n/i18n";
 
@@ -7,6 +8,17 @@ export const peso = (n?: number) => (n == null ? "-" : "₱" + Math.round(n).toL
 export const pesoShort = (n: number) => (n >= 1e9 ? `₱${(n / 1e9).toFixed(2)} B` : n >= 1e6 ? `₱${(n / 1e6).toFixed(1)} M` : peso(n));
 
 export const iconFor = (c?: string): KitIconName => (/Flood/.test(c ?? "") ? "flood" : /Water/.test(c ?? "") ? "drop" : /Road|Bridge/.test(c ?? "") ? "road" : "doc");
+
+/** One colour + pattern per project status (same language as service categories). Text on it is white, so only AA-safe colours here. */
+export function statusLook(status?: string): { color: string; pattern: PatternKey } {
+  switch (status) {
+    case "Completed": return { color: FIESTA_DEEP.green, pattern: "dotblocks" };
+    case "On-Going": return { color: FIESTA.blue, pattern: "wave" };
+    case "For Procurement": return { color: FIESTA_DEEP.orange, pattern: "burst" };
+    case "Terminated": return { color: FIESTA.red, pattern: "horns" };
+    default: return { color: FIESTA.navy, pattern: "mosaic" };
+  }
+}
 
 /** Status is published data and stays as is; only the missing-status placeholder is interface text. */
 export function StatusBadge({ status }: { status?: string }) {
@@ -64,7 +76,7 @@ export function Empty({ title, children }: { title: string; children: React.Reac
 
 export function Stat({ label, value, hint, icon, color }: { label: string; value: React.ReactNode; hint: React.ReactNode; icon: KitIconName; color: string }) {
   return (
-    <div className="rounded-2xl border border-black/10 bg-white p-5">
+    <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
       <div className="flex items-center justify-between"><p className="text-xs font-semibold tracking-widest text-black/60"><T k={label} /></p><KitIcon name={icon} variant="duo" color={color} /></div>
       <p className="mt-3 font-serif text-4xl font-bold" style={{ color }}>{value}</p>
       <p className="mt-1 text-sm text-black/60">{hint}</p>
@@ -91,14 +103,14 @@ export function Steps({ items }: { items: { when: React.ReactNode; title: string
 export function YearBars({ rows }: { rows: { y: number; n: number; on: boolean; href: string }[] }) {
   const max = Math.max(...rows.map((r) => r.n), 1);
   return (
-    <figure>
+    <figure className="flex h-80 flex-col rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5 lg:h-96">
       <span id="yb-label" className="sr-only"><T k="proyekto.yearbars" /></span>
-      <ul className="flex h-44 items-end gap-1.5" aria-labelledby="yb-label">
+      <ul className="flex min-h-0 flex-1 items-end gap-1.5" aria-labelledby="yb-label">
         {rows.map(({ y, n, on, href }) => (
           <li key={y} className="flex h-full min-w-0 flex-1">
             <Link href={href} aria-current={on ? "true" : undefined} className="group flex h-full w-full flex-col justify-end text-center">
               <span className="text-xs font-semibold tabular-nums">{n}<span className="sr-only"> <T k="proyekto.yearsr" /></span></span>
-              <span className={`mt-1 block rounded-t-sm ${on ? "bg-fiesta-orange" : "bg-fiesta-blue group-hover:bg-fiesta-navy"}`} style={{ height: `${Math.max((n / max) * 100, 2) * 0.8}%` }} />
+              <span className={`mt-1 block rounded-t-sm ${on ? "bg-fiesta-orange" : "bg-fiesta-blue group-hover:bg-fiesta-navy"}`} style={{ height: `${Math.max((n / max) * 100, 2) * 0.85}%` }} />
               <span className="mt-1 text-[10px] tabular-nums text-black/70">{y}</span>
             </Link>
           </li>

@@ -7,7 +7,7 @@ import { StatusBadge, peso } from "./ProjectBits";
 export default function ProjectsTable({ rows, names }: { rows: Project[]; names: Record<string, string> }) {
   const th = "px-4 py-3 font-semibold";
   return (
-    <div role="region" tabIndex={0} aria-labelledby="lista" className="mt-4 overflow-x-auto rounded-2xl border border-black/10 bg-white shadow-sm">
+    <div role="region" tabIndex={0} aria-labelledby="lista" className="mt-4 overflow-x-auto rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
       <table className="w-full min-w-[46rem] border-collapse text-left text-sm">
         <caption className="sr-only"><T k="proyekto.table.caption" /></caption>
         <thead>
