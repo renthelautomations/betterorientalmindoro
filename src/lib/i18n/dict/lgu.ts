@@ -12,5 +12,6 @@ export const LGU = {
   "lgu.dir.safety": ["Safety and emergency", "Kaligtasan at emergency"],
   "lgu.dir.health": ["Health", "Kalusugan"],
   "lgu.dir.office": ["Government offices", "Mga opisina ng pamahalaan"],
+  "lgu.dir.search": ["Search offices, heads or places", "Maghanap ng opisina, pinuno o lugar"], "lgu.dir.all": ["All", "Lahat"], "lgu.dir.none": ["No office matches your search.", "Walang opisinang tumutugma sa hinahanap mo."],
   "lgu.dir.note": ["From the LGU's official website. Offices with no listed number or email are left out.", "Ayon sa opisyal na website ng LGU. Hindi kasama ang opisinang walang nakalistang numero o email."],
 } as const satisfies Record<string, readonly [string, string]>;
