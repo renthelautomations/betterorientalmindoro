@@ -5,7 +5,7 @@ import { getProjects } from "./projects";
 
 describe("getBayanSummary", () => {
   it("calapan-city has municipal hotlines", () => expect(getBayanSummary("calapan-city")?.hotlineCount).toBeGreaterThan(0));
-  it("baco has unknown hotline count (null, never 0)", () => expect(getBayanSummary("baco")?.hotlineCount).toBeNull());
+  it("baco has its official MDRRMO hotline counted", () => expect(getBayanSummary("baco")?.hotlineCount).toBeGreaterThan(0));
   it("unknown slug is undefined", () => expect(getBayanSummary("atlantis")).toBeUndefined());
   it("projectCount only counts rows assigned to the slug", () => {
     for (const m of getMunicipalities()) {

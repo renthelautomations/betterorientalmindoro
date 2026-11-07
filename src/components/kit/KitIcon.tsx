@@ -24,6 +24,8 @@ export const KIT_ICONS = {
   menu: "M4 7h16M4 12h16M4 17h16",
   arrow: "M5 12h14M13 6l6 6-6 6",
   check: "M5 12.500l4.500 4.500L19 7",
+  mail: "M3 6h18v12H3V6ZM3 7l9 7 9-7",
+  globe: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM3 12h18M12 3c3 3.500 3 14.500 0 18M12 3c-3 3.500-3 14.500 0 18",
 } as const;
 export type KitIconName = keyof typeof KIT_ICONS;
 

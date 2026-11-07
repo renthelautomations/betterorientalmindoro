@@ -1,0 +1,369 @@
+{
+ "province": {
+  "name": "Lalawigan ng Oriental Mindoro",
+  "email": [
+   "go@ormindoro.gov.ph",
+   "info@ormindoro.gov.ph"
+  ],
+  "landline": [
+   "(043) 288 7935"
+  ],
+  "mobile": [
+   "+63 917 808 0698"
+  ],
+  "website": "https://ormindoro.gov.ph/",
+  "facebook": [
+   {
+    "label": "Provincial Information Office",
+    "url": "https://www.facebook.com/orminpio"
+   },
+   {
+    "label": "PDRRMO OrMin",
+    "url": "https://www.facebook.com/pdrrmo.ormin"
+   }
+  ],
+  "source": "https://ormindoro.gov.ph/contact-us/",
+  "verifiedAt": "2026-11-08"
+ },
+ "baco": {
+  "email": [
+   "mayorsoffice.baco@gmail.com",
+   "gdejocos@gmail.com"
+  ],
+  "facebook": [
+   {
+    "label": "Baco Public Information Office",
+    "url": "https://www.facebook.com/BacoPIO"
+   }
+  ],
+  "landline": [],
+  "mobile": [
+   "0921 788 0871"
+  ],
+  "website": null,
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08",
+  "extraSources": [
+   {
+    "label": "Facebook About (Baco PIO)",
+    "url": "https://www.facebook.com/BacoPIO"
+   }
+  ]
+ },
+ "bansud": {
+  "email": [
+   "mayorsofficebansud@gmail.com"
+  ],
+  "facebook": [
+   {
+    "label": "Municipal Government of Bansud",
+    "url": "https://www.facebook.com/profile.php?id=100064749783960"
+   }
+  ],
+  "landline": [],
+  "mobile": [],
+  "website": null,
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "bongabong": {
+  "email": [
+   "municipalityofbongabong@gmail.com"
+  ],
+  "website": "https://bongabong.gov.ph/",
+  "facebook": [
+   {
+    "label": "Bongabong Public Information Office",
+    "url": "https://www.facebook.com/BongabongInfo"
+   }
+  ],
+  "landline": [],
+  "mobile": [],
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "bulalacao": {
+  "email": [
+   "ma.bulalacao2020@gmail.com"
+  ],
+  "mobile": [
+   "0920 982 8205"
+  ],
+  "facebook": [
+   {
+    "label": "Municipality of Bulalacao",
+    "url": "https://www.facebook.com/bulalacaoormin"
+   }
+  ],
+  "landline": [],
+  "website": null,
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "calapan-city": {
+  "email": [
+   "lgu.calapancity@gmail.com"
+  ],
+  "landline": [
+   "(043) 288 7508",
+   "(043) 288 7509"
+  ],
+  "website": "https://cityofcalapan.gov.ph/",
+  "facebook": [
+   {
+    "label": "City Government of Calapan",
+    "url": "https://www.facebook.com/City.Government.of.Calapan"
+   }
+  ],
+  "mobile": [],
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "gloria": {
+  "email": [
+   "lgugloriaorientalmindoro@gmail.com"
+  ],
+  "mobile": [
+   "0917 109 2183",
+   "0917 158 0998"
+  ],
+  "website": "http://gloria.gov.ph/",
+  "facebook": [
+   {
+    "label": "Gloria Municipal Gazette",
+    "url": "https://www.facebook.com/gloriaorientalmindoro"
+   }
+  ],
+  "landline": [],
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08",
+  "extraSources": [
+   {
+    "label": "Contact Us ng Gloria",
+    "url": "http://gloria.gov.ph/contact-us/"
+   }
+  ]
+ },
+ "mansalay": {
+  "email": [
+   "lgumansalay@yahoo.com",
+   "tanglawngmansalay@gmail.com"
+  ],
+  "facebook": [
+   {
+    "label": "Tanglaw ng Mansalay (PIO)",
+    "url": "https://www.facebook.com/pio.mansalay"
+   }
+  ],
+  "landline": [],
+  "mobile": [],
+  "website": null,
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08",
+  "extraSources": [
+   {
+    "label": "Facebook About",
+    "url": "https://www.facebook.com/pio.mansalay"
+   }
+  ]
+ },
+ "naujan": {
+  "email": [
+   "municipalityofnaujan2018@gmail.com",
+   "naujanpio@gmail.com"
+  ],
+  "facebook": [
+   {
+    "label": "Naujan Public Information Office",
+    "url": "https://www.facebook.com/NaujanPIO"
+   }
+  ],
+  "landline": [],
+  "mobile": [],
+  "website": null,
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08",
+  "extraSources": [
+   {
+    "label": "Facebook About",
+    "url": "https://www.facebook.com/NaujanPIO"
+   }
+  ]
+ },
+ "pinamalayan": {
+  "email": [
+   "mayorsoffice@pinamalayan.gov.ph"
+  ],
+  "landline": [
+   "(043) 284 3146"
+  ],
+  "mobile": [
+   "0917 888 9777"
+  ],
+  "website": "https://pinamalayan.gov.ph/",
+  "facebook": [
+   {
+    "label": "Municipal Government of Pinamalayan",
+    "url": "https://www.facebook.com/profile.php?id=61586086642638"
+   }
+  ],
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "pola": {
+  "email": [
+   "polamunicipality@gmail.com"
+  ],
+  "mobile": [
+   "0998 999 1276"
+  ],
+  "facebook": [
+   {
+    "label": "Pola Oriental Mindoro",
+    "url": "https://www.facebook.com/polaorientalmindoroofficialpage"
+   }
+  ],
+  "landline": [],
+  "website": null,
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "puerto-galera": {
+  "email": [
+   "mayorpuertogalera@gmail.com"
+  ],
+  "landline": [
+   "043 287 3045"
+  ],
+  "mobile": [
+   "0928 928 7984",
+   "0956 183 9099",
+   "0917 871 0480",
+   "0917 187 1734"
+  ],
+  "website": "https://elgu-puerto-galera-oriental-mindoro.e.gov.ph/",
+  "facebook": [
+   {
+    "label": "Municipality of Puerto Galera",
+    "url": "https://www.facebook.com/puertogaleragov"
+   },
+   {
+    "label": "PIO Puerto Galera",
+    "url": "https://www.facebook.com/piopuertogalera"
+   }
+  ],
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08",
+  "extraSources": [
+   {
+    "label": "Website ng munisipyo",
+    "url": "https://elgu-puerto-galera-oriental-mindoro-news.e.gov.ph/contact-us"
+   }
+  ]
+ },
+ "roxas": {
+  "email": [
+   "municipalityofroxas@yahoo.com.ph"
+  ],
+  "mobile": [
+   "0977 856 3523"
+  ],
+  "website": "https://www.roxasormin.com/",
+  "facebook": [
+   {
+    "label": "Municipality of Roxas",
+    "url": "https://www.facebook.com/roxasormin"
+   },
+   {
+    "label": "Roxas PIO",
+    "url": "https://www.facebook.com/municipalityofroxaspio"
+   }
+  ],
+  "landline": [],
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "san-teodoro": {
+  "email": [
+   "municipalityofsanteodoro@yahoo.com"
+  ],
+  "mobile": [
+   "0919 995 1168"
+  ],
+  "website": "https://santeodoro.gov.ph/",
+  "facebook": [
+   {
+    "label": "San Teodoro Public Information Office",
+    "url": "https://www.facebook.com/SanTeodoroPIO"
+   }
+  ],
+  "landline": [],
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08"
+ },
+ "socorro": {
+  "email": [
+   "officeofthemayor_socorro2016@yahoo.com"
+  ],
+  "website": "http://www.socorromindoro.gov.ph/",
+  "facebook": [
+   {
+    "label": "The Mayor's Office - Socorro",
+    "url": "https://www.facebook.com/profile.php?id=100083335960999"
+   }
+  ],
+  "landline": [
+   "(043) 351 2132"
+  ],
+  "mobile": [
+   "0966 345 4818",
+   "0960 257 8805"
+  ],
+  "name": null,
+  "source": "http://socorromindoro.gov.ph/v/department",
+  "verifiedAt": "2026-11-08"
+ },
+ "victoria": {
+  "email": [
+   "victoriaormdo@gmail.com",
+   "municipalmayorsoffice2025@gmail.com"
+  ],
+  "landline": [
+   "(043) 285 5446"
+  ],
+  "mobile": [
+   "0919 819 3219",
+   "0916 256 1506",
+   "0927 953 7268"
+  ],
+  "facebook": [
+   {
+    "label": "LGU Victoria, Oriental Mindoro",
+    "url": "https://www.facebook.com/LGUVictoriaOrMin"
+   }
+  ],
+  "website": null,
+  "name": null,
+  "source": "https://mimaropa.dilg.gov.ph/contact-us/field-office/oriental-mindoro/",
+  "verifiedAt": "2026-11-08",
+  "extraSources": [
+   {
+    "label": "Facebook About",
+    "url": "https://www.facebook.com/LGUVictoriaOrMin"
+   }
+  ]
+ }
+}

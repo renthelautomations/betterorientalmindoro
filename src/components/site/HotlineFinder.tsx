@@ -8,7 +8,7 @@ import { OFFICES, QUICK, officeOf, searchHotlines, type Category, type Hotline, 
 const CATS: Category[] = ["emergency", "medical", "government", "utility"];
 
 /** Smart search, suggestions and three dropdown filters (place, type, office). Results group by type. The place defaults to the whole province, as before. */
-export default function HotlineFinder({ rows, towns, initialTown }: { rows: Hotline[]; towns: { slug: string; name: string }[]; initialTown?: string }) {
+export default function HotlineFinder({ rows, towns, initialTown, extras }: { rows: Hotline[]; towns: { slug: string; name: string }[]; initialTown?: string; extras?: Record<string, React.ReactNode> }) {
   const t = useT();
   const [q, setQ] = useState("");
   const [place, setPlace] = useState(initialTown ?? "province");
@@ -83,6 +83,8 @@ export default function HotlineFinder({ rows, towns, initialTown }: { rows: Hotl
         <span className="text-black/70">{shown.length} {t("hot.found")}</span>
         {active && <button type="button" onClick={reset} className="min-h-9 font-semibold text-fiesta-blue underline">{t("hot.reset")}</button>}
       </div>
+
+      {!searching && !cat && !office && extras?.[place] && <div className="mt-6">{extras[place]}</div>}
 
       {place !== "province" && !searching && localCount === 0 && (
         <p className="mt-4 rounded-2xl bg-fiesta-mint p-4 text-sm">{t("dyn.hotline.none")} <b>{nameOf[place]}</b>. {t("dyn.hotline.none.p")}</p>
