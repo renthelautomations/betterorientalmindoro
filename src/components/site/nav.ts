@@ -1,15 +1,18 @@
 import type { NavLink } from "@/components/kit/Layout";
 
-// Four top-level doors. Add a hub here, not a seventh link.
+// One main page per section. Each record opens its own detail page.
 export const NAV: NavLink[] = [
   { label: "MaHalTaNa", href: "/mahaltana" },
-  { label: "Bayan", href: "/bayan" },
-  { label: "Serbisyo", href: "/serbisyo" },
-  { label: "Datos", href: "/datos" },
+  { label: "nav.towns", href: "/bayan" },
+  { label: "nav.services", href: "/serbisyo" },
+  { label: "nav.hotlines", href: "/hotlines" },
+  { label: "nav.projects", href: "/proyekto" },
+  { label: "nav.stats", href: "/estatistika" },
+  { label: "nav.budget", href: "/badyet" },
+  { label: "nav.dynasties", href: "/dynasties" },
 ];
 
 export const FOOTER_LINKS: NavLink[] = [
-  { label: "Hotlines", href: "/hotlines" },
   { label: "Terms of Use", href: "/terms" },
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Accessibility", href: "/accessibility" },

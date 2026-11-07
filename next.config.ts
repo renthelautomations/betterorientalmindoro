@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {
@@ -11,6 +10,14 @@ const nextConfig: NextConfig = {
         as: "*.css",
       },
     },
+  },
+  // Old routes keep working: the Datos hub is gone, town tabs live inside the town page, categories live on /serbisyo.
+  async redirects() {
+    return [
+      { source: "/datos", destination: "/estatistika", permanent: true },
+      { source: "/bayan/:slug/:tab(tulong|proyekto|halalan|datos)", destination: "/bayan/:slug", permanent: true },
+      { source: "/serbisyo/:category", destination: "/serbisyo", permanent: true },
+    ];
   },
 };
 
