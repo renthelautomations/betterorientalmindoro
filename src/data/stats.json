@@ -1,0 +1,1614 @@
+{
+ "generatedAt": "2026-11-07",
+ "province": {
+  "wikidata": "https://www.wikidata.org/wiki/Q13868",
+  "population": [
+   {
+    "year": 1990,
+    "value": 550049,
+    "asOf": "1990-05-01",
+    "source": "https://www.wikidata.org/wiki/Q13868",
+    "retrievedAt": "2026-11-07"
+   },
+   {
+    "year": 1995,
+    "value": 608616,
+    "asOf": "1995-09-01",
+    "source": "https://www.wikidata.org/wiki/Q13868",
+    "retrievedAt": "2026-11-07"
+   },
+   {
+    "year": 2000,
+    "value": 681818,
+    "asOf": "2000-05-01",
+    "source": "https://www.wikidata.org/wiki/Q13868",
+    "retrievedAt": "2026-11-07"
+   },
+   {
+    "year": 2007,
+    "value": 735769,
+    "asOf": "2007-08-01",
+    "source": "https://www.wikidata.org/wiki/Q13868",
+    "retrievedAt": "2026-11-07"
+   },
+   {
+    "year": 2010,
+    "value": 785602,
+    "asOf": "2010-05-01",
+    "source": "https://psa.gov.ph/content/2010-census-population-and-housing-reveals-philippine-population-9234-million",
+    "retrievedAt": "2026-11-07"
+   },
+   {
+    "year": 2015,
+    "value": 844059,
+    "asOf": "2015-08-01",
+    "source": "https://www.wikidata.org/wiki/Q13868",
+    "retrievedAt": "2026-11-07"
+   },
+   {
+    "year": 2020,
+    "value": 908339,
+    "asOf": "2020-05-01",
+    "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+    "retrievedAt": "2026-11-07"
+   },
+   {
+    "year": 2024,
+    "value": 919504,
+    "asOf": "2024-07-01",
+    "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+    "retrievedAt": "2026-11-07"
+   }
+  ],
+  "revenue": {
+   "value": 3177524476.25,
+   "year": 2024,
+   "source": "https://www.wikidata.org/wiki/Q13868",
+   "citedAs": "Financial Statement of Oriental Mindoro",
+   "retrievedAt": "2026-11-07",
+   "license": "CC0 (Wikidata)"
+  },
+  "expenditure": {
+   "value": 2308585813.85,
+   "year": 2024,
+   "source": "https://www.wikidata.org/wiki/Q13868",
+   "citedAs": "Financial Statement of Oriental Mindoro",
+   "retrievedAt": "2026-11-07",
+   "license": "CC0 (Wikidata)"
+  },
+  "assets": {
+   "value": 11135912401.56,
+   "year": 2024,
+   "source": "https://www.wikidata.org/wiki/Q13868",
+   "citedAs": "Financial Statement of Oriental Mindoro",
+   "retrievedAt": "2026-11-07",
+   "license": "CC0 (Wikidata)"
+  },
+  "liabilities": {
+   "value": 2462267404.7,
+   "year": 2024,
+   "source": "https://www.wikidata.org/wiki/Q13868",
+   "citedAs": "Financial Statement of Oriental Mindoro",
+   "retrievedAt": "2026-11-07",
+   "license": "CC0 (Wikidata)"
+  },
+  "ira": null,
+  "incomeClass": {
+   "value": "1st provincial income class",
+   "year": 2008,
+   "source": "https://www.wikidata.org/wiki/Q13868",
+   "retrievedAt": "2026-11-07",
+   "license": "CC0 (Wikidata); cites BLGF/PSA"
+  }
+ },
+ "municipalities": {
+  "baco": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107538",
+   "population": [
+    {
+     "year": 1990,
+     "value": 23800,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107538",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 25915,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107538",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 30167,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107538",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 34127,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107538",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 35060,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 37215,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 39817,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 40159,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 207910614.22,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107538",
+    "citedAs": "Financial Statement of Baco",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 196251437.63,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107538",
+    "citedAs": "Financial Statement of Baco",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 440838061,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107538",
+    "citedAs": "Financial Statement of Baco",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 37920791.18,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107538",
+    "citedAs": "Financial Statement of Baco",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107538",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "bansud": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107543",
+   "population": [
+    {
+     "year": 1990,
+     "value": 26225,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107543",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 31901,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107543",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 35032,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107543",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 35664,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107543",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 38341,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 40992,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 42671,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 44396,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 253946066,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107543",
+    "citedAs": "Financial Statement of Bansud",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 21574272,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107543",
+    "citedAs": "Financial Statement of Bansud",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 654257378,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107543",
+    "citedAs": "Financial Statement of Bansud",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 116523143,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107543",
+    "citedAs": "Financial Statement of Bansud",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107543",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "bongabong": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107550",
+   "population": [
+    {
+     "year": 1990,
+     "value": 50213,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107550",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 57403,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107550",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 59477,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107550",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 61127,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107550",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 66569,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 72073,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 76973,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 77540,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 435292939.08,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107550",
+    "citedAs": "Financial Statement of Bongabong",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 376050151.59,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107550",
+    "citedAs": "Financial Statement of Bongabong",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 1447276150.54,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107550",
+    "citedAs": "Financial Statement of Bongabong",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 345540371.51,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107550",
+    "citedAs": "Financial Statement of Bongabong",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2008,
+    "source": "https://www.wikidata.org/wiki/Q107550",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "bulalacao": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107554",
+   "population": [
+    {
+     "year": 1990,
+     "value": 21316,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107554",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 24047,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107554",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 27698,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107554",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 30188,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107554",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 33754,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 39107,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 44366,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 46439,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 294038392,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107554",
+    "citedAs": "Financial Statement of Bulalacao",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 277071468,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107554",
+    "citedAs": "Financial Statement of Bulalacao",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 906380021,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107554",
+    "citedAs": "Financial Statement of Bulalacao",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 196277047,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107554",
+    "citedAs": "Financial Statement of Bulalacao",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107554",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "gloria": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107559",
+   "population": [
+    {
+     "year": 1990,
+     "value": 30102,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107559",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 35771,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107559",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 38667,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107559",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 40561,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107559",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 42012,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 45073,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 50496,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 52296,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 258805272,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107559",
+    "citedAs": "Financial Statement of Gloria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 251400634,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107559",
+    "citedAs": "Financial Statement of Gloria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 681869495,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107559",
+    "citedAs": "Financial Statement of Gloria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 120159615,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107559",
+    "citedAs": "Financial Statement of Gloria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107559",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "mansalay": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107567",
+   "population": [
+    {
+     "year": 1990,
+     "value": 27515,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107567",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 29765,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107567",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 39041,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107567",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 43974,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107567",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 51705,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 54533,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 59114,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 60597,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 317437385.12,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107567",
+    "citedAs": "Financial Statement of Mansalay",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 307904659.2,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107567",
+    "citedAs": "Financial Statement of Mansalay",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 1405387057.31,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107567",
+    "citedAs": "Financial Statement of Mansalay",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 688098009.97,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107567",
+    "citedAs": "Financial Statement of Mansalay",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107567",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "naujan": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107573",
+   "population": [
+    {
+     "year": 1990,
+     "value": 72203,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107573",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 75726,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107573",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 83892,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107573",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 90629,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107573",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 94497,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 102998,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 109587,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 109122,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 587026483.68,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107573",
+    "citedAs": "Financial Statement of Naujan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 59834428.18,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107573",
+    "citedAs": "Financial Statement of Naujan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 1432800929,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107573",
+    "citedAs": "Financial Statement of Naujan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 312960738,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107573",
+    "citedAs": "Financial Statement of Naujan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2008,
+    "source": "https://www.wikidata.org/wiki/Q107573",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "pinamalayan": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107578",
+   "population": [
+    {
+     "year": 1990,
+     "value": 58777,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107578",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 65903,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107578",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 72951,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107578",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 77119,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107578",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 81666,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 86172,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 90383,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 90420,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 396005983,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107578",
+    "citedAs": "Financial Statement of Pinamalayan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 459199227,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107578",
+    "citedAs": "Financial Statement of Pinamalayan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 1088143792,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107578",
+    "citedAs": "Financial Statement of Pinamalayan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 367839351,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107578",
+    "citedAs": "Financial Statement of Pinamalayan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2008,
+    "source": "https://www.wikidata.org/wiki/Q107578",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "pola": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107585",
+   "population": [
+    {
+     "year": 1990,
+     "value": 26833,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107585",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 29156,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107585",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 31938,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107585",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 32635,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107585",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 32984,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 34701,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 35455,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 35771,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 169016730,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107585",
+    "citedAs": "Financial Statement of Pola",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 177416492,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107585",
+    "citedAs": "Financial Statement of Pola",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 899780952,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107585",
+    "citedAs": "Financial Statement of Pola",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 1520291551,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107585",
+    "citedAs": "Financial Statement of Pola",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "2nd municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107585",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "puerto-galera": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107593",
+   "population": [
+    {
+     "year": 1990,
+     "value": 17200,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107593",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 19485,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107593",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 21925,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107593",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 28035,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107593",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 32521,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 36606,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 41961,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 42301,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 450514390,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107593",
+    "citedAs": "Financial Statement of Puerto Galera",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 42388125,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107593",
+    "citedAs": "Financial Statement of Puerto Galera",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 1031826441,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107593",
+    "citedAs": "Financial Statement of Puerto Galera",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 356806611,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107593",
+    "citedAs": "Financial Statement of Puerto Galera",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2008,
+    "source": "https://www.wikidata.org/wiki/Q107593",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "roxas": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107598",
+   "population": [
+    {
+     "year": 1990,
+     "value": 33178,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107598",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 34045,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107598",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 41265,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107598",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 46711,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107598",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 49854,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 53201,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 58849,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 58428,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 300849185.18,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107598",
+    "citedAs": "Financial Statement of Roxas",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 260500143.75,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107598",
+    "citedAs": "Financial Statement of Roxas",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 558664041.46,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107598",
+    "citedAs": "Financial Statement of Roxas",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 79259276.43,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107598",
+    "citedAs": "Financial Statement of Roxas",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107598",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "san-teodoro": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107606",
+   "population": [
+    {
+     "year": 1990,
+     "value": 12223,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107606",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 12983,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107606",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 13806,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107606",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 15039,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107606",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 15810,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 17904,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 19121,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 19650,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 195264722.31,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107606",
+    "citedAs": "Financial Statement of San Teodoro",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 180676406.65,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107606",
+    "citedAs": "Financial Statement of San Teodoro",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 568058204.08,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107606",
+    "citedAs": "Financial Statement of San Teodoro",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 83692701.42,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107606",
+    "citedAs": "Financial Statement of San Teodoro",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "2nd municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107606",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "socorro": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107612",
+   "population": [
+    {
+     "year": 1990,
+     "value": 29806,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107612",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 34182,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107612",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 37176,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107612",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 38052,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107612",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 38348,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 39099,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 41585,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 41612,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": null,
+   "expenditure": {
+    "value": 259110229,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107612",
+    "citedAs": "Financial Statement of Socorro",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 1052837575,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107612",
+    "citedAs": "Financial Statement of Socorro",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 126735368,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107612",
+    "citedAs": "Financial Statement of Socorro",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "2nd municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107612",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "victoria": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107618",
+   "population": [
+    {
+     "year": 1990,
+     "value": 34760,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107618",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 35828,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107618",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 42873,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107618",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 44932,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107618",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 48308,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 50492,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 52175,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 52215,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 302732203,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107618",
+    "citedAs": "Financial Statement of Victoria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 307367004,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107618",
+    "citedAs": "Financial Statement of Victoria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 824575736,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107618",
+    "citedAs": "Financial Statement of Victoria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 296897262,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107618",
+    "citedAs": "Financial Statement of Victoria",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "1st municipal income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107618",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  },
+  "calapan-city": {
+   "wikidata": "https://www.wikidata.org/wiki/Q107624",
+   "population": [
+    {
+     "year": 1990,
+     "value": 85898,
+     "asOf": "1990-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107624",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 1995,
+     "value": 96506,
+     "asOf": "1995-09-01",
+     "source": "https://www.wikidata.org/wiki/Q107624",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2000,
+     "value": 105910,
+     "asOf": "2000-05-01",
+     "source": "https://www.wikidata.org/wiki/Q107624",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2007,
+     "value": 116976,
+     "asOf": "2007-08-01",
+     "source": "https://www.wikidata.org/wiki/Q107624",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2010,
+     "value": 124173,
+     "asOf": "2010-05-01",
+     "source": "https://psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/MIMAROPA.pd%66",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2015,
+     "value": 133893,
+     "asOf": "2015-08-01",
+     "source": "https://www.psa.gov.ph/sites/default/files/attachments/hsd/pressrelease/R04B.xlsx",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2020,
+     "value": 145786,
+     "asOf": "2020-05-01",
+     "source": "https://psa.gov.ph/content/2020-census-population-and-housing-2020-cph-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    },
+    {
+     "year": 2024,
+     "value": 148558,
+     "asOf": "2024-07-01",
+     "source": "https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president",
+     "retrievedAt": "2026-11-07"
+    }
+   ],
+   "revenue": {
+    "value": 1447994148,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107624",
+    "citedAs": "Financial Statement of Calapan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "expenditure": {
+    "value": 1453892663,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107624",
+    "citedAs": "Financial Statement of Calapan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "assets": {
+    "value": 2483751156,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107624",
+    "citedAs": "Financial Statement of Calapan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "liabilities": {
+    "value": 817079114,
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107624",
+    "citedAs": "Financial Statement of Calapan",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata)"
+   },
+   "ira": null,
+   "incomeClass": {
+    "value": "2nd city income class",
+    "year": 2024,
+    "source": "https://www.wikidata.org/wiki/Q107624",
+    "retrievedAt": "2026-11-07",
+    "license": "CC0 (Wikidata); cites BLGF/PSA"
+   }
+  }
+ }
+}

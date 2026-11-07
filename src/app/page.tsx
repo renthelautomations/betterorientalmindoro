@@ -7,6 +7,7 @@ const CIVIC: { label: string; href?: string }[] = [
   { label: "Serbisyo", href: "/serbisyo" },
   { label: "Hotlines", href: "/hotlines" },
   { label: "Proyekto", href: "/proyekto" },
+  { label: "Estatistika", href: "/estatistika" },
   { label: "Dinastiya", href: "/dynasties" },
   { label: "Badyet" },
 ];

@@ -7,6 +7,7 @@ export const NAV = [
   { href: "/serbisyo", label: "Serbisyo" },
   { href: "/hotlines", label: "Hotlines" },
   { href: "/proyekto", label: "Proyekto" },
+  { href: "/estatistika", label: "Estatistika" },
   { href: "/dynasties", label: "Dinastiya" },
 ];
 
