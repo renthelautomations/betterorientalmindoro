@@ -5,7 +5,7 @@ import TownTable from "@/components/site/TownTable";
 import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SourceNote, IncomeClass } from "@/components/stats/StatCard";
+import { SourceNote } from "@/components/stats/StatCard";
 import { Crumbs, FinStat, MetricRadio, R, Sec, Title } from "@/components/site/FinanceBits";
 import { T } from "@/lib/i18n/i18n";
 import CompareTowns from "@/components/kit/CompareTowns";
