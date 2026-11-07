@@ -20,15 +20,15 @@ export function YearBars({ rows, current, href }: { rows: [number, number][]; cu
       <ul className="flex h-44 items-end gap-1.5" aria-label="Bilang ng proyekto kada taon">
         {rows.map(([y, n]) => (
           <li key={y} className="flex h-full min-w-0 flex-1">
-            <Link href={href(current === y ? undefined : y)} aria-current={current === y ? "true" : undefined} aria-label={`${y}: ${n} proyekto`} className="group flex h-full w-full flex-col justify-end text-center">
-              <span className="text-xs font-semibold tabular-nums">{n}</span>
+            <Link href={href(current === y ? undefined : y)} aria-current={current === y ? "true" : undefined} className="group flex h-full w-full flex-col justify-end text-center">
+              <span className="text-xs font-semibold tabular-nums">{n}<span className="sr-only"> proyekto noong</span></span>
               <span className={`mt-1 block rounded-t-sm ${current === y ? "bg-fiesta-orange" : "bg-fiesta-blue group-hover:bg-fiesta-navy"}`} style={{ height: `${Math.max((n / max) * 100, 2) * 0.8}%` }} />
-              <span className="mt-1 text-[11px] tabular-nums text-black/70">{String(y).slice(2)}</span>
+              <span className="mt-1 text-[10px] tabular-nums text-black/70">{y}</span>
             </Link>
           </li>
         ))}
       </ul>
-      <figcaption className="mt-2 text-xs text-black/60">Taon ng proyekto ('16 = 2016). Pindutin ang isang taon para i-filter.</figcaption>
+      <figcaption className="mt-2 text-xs text-black/60">Pindutin ang isang taon para i-filter.</figcaption>
     </figure>
   );
 }
