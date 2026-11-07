@@ -43,8 +43,8 @@ export default function DynTownViz({ contests, years }: { contests: Contest[]; y
       </div>
 
       <figure className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm">
-        <figcaption className="mb-3 text-sm font-semibold text-fiesta-navy"><T k="dyn.viz.who" /></figcaption>
-        <div className="overflow-x-auto"><div className="min-w-[36rem] space-y-3">
+        <figcaption id="viz-who-cap" className="mb-3 text-sm font-semibold text-fiesta-navy"><T k="dyn.viz.who" /></figcaption>
+        <div className="overflow-x-auto" tabIndex={0} role="region" aria-labelledby="viz-who-cap"><div className="min-w-[36rem] space-y-3">
           <div className="grid gap-1 pl-24 text-[11px] tabular-nums text-black/60" style={{ gridTemplateColumns: `repeat(${years.length}, 1fr)` }}>{years.map((y) => <span key={y} className="text-center">{y}</span>)}</div>
           {grid.rows.map((r) => (
             <div key={r.position} className="flex items-center gap-2">
