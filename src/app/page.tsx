@@ -90,7 +90,7 @@ export default function Home() {
           <SectionHeader eyebrow="home.pop" title="home.pop.h" color={FIESTA.blue} />
           <div className="mt-8 grid gap-10 md:grid-cols-2">
             <BarChart rows={towns.filter((t) => t.pop != null).map((t) => ({ label: t.name, value: t.pop as number, href: `/bayan/${t.slug}` }))} format={fmtInt} />
-            <LinkChoropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} unit="population" />
+            <LinkChoropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} ariaKey="bayan.map.aria" />
           </div>
         </Landmark>
       </div>
