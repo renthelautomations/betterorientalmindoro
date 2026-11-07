@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import ServiceList from "@/components/services/ServiceList";
+import { EmptyState } from "@/components/kit/Ui";
+import PageHead from "@/components/site/PageHead";
+import { ServiceLink } from "@/components/site/ServiceLink";
 import { getCategories, getCategory, getServices } from "@/lib/services";
 
 export function generateStaticParams() {
@@ -20,15 +22,15 @@ export default async function CategoryPage({ params }: PageProps<"/serbisyo/[cat
   if (!c) notFound();
   const rows = getServices(c.slug);
   return (
-    <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href="/serbisyo" className="text-sm underline">← Lahat ng serbisyo</Link>
-      <h1 className="mt-3 font-serif text-3xl font-bold md:text-4xl">{c.name}</h1>
-      <p className="mt-2 text-black/70">{c.blurb}</p>
+    <main className="mx-auto max-w-3xl px-4 pb-20 pt-8">
+      <PageHead crumbs={[{ label: "Home", href: "/" }, { label: "Serbisyo", href: "/serbisyo" }, { label: c.name }]} eyebrow="KATEGORYA" title={c.name}><p>{c.blurb}</p></PageHead>
       <div className="mt-8">
         {rows.length ? (
-          <ServiceList rows={rows} />
+          <ul className="space-y-3">{rows.map((s) => <li key={s.id}><ServiceLink s={s} /></li>)}</ul>
         ) : (
-          <p className="text-sm text-black/60">Wala pang naka-lista na serbisyo dito dahil wala pa kaming nakukumpirmang opisyal na source. May alam ka bang source? Ipaalam sa aming volunteers. Para sa emergency, tingnan ang <Link href="/hotlines" className="underline">mga hotline</Link>.</p>
+          <EmptyState title="Wala pang naka-lista">
+            Wala pa kaming nakukumpirmang opisyal na source para dito. May alam ka bang source? Ipaalam sa aming volunteers. Para sa emergency, tingnan ang <Link href="/hotlines" className="underline">mga hotline</Link>.
+          </EmptyState>
         )}
       </div>
     </main>

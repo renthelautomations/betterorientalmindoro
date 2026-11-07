@@ -13,3 +13,9 @@ export const groupByCategory = (rows: Hotline[]): Partial<Record<Category, Hotli
   for (const h of rows) (g[h.category] ??= []).push(h);
   return g;
 };
+
+/** Numbers for one bayan (may be none) plus the province-wide fallback. Never invents: unknown or empty bayan gives local = []. */
+export const hotlinesForBayan = (slug?: string) => ({
+  local: slug && slug !== "province" ? getHotlines(slug) : [],
+  province: getHotlines("province"),
+});

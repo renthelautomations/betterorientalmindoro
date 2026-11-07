@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Breadcrumbs } from "@/components/kit/Ui";
 import ServiceDetail from "@/components/services/ServiceDetail";
 import { getCategory, getService, getServices } from "@/lib/services";
 
@@ -20,9 +20,9 @@ export default async function ServicePage({ params }: PageProps<"/serbisyo/[cate
   const c = getCategory(category);
   if (!s || !c) notFound();
   return (
-    <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href={`/serbisyo/${c.slug}`} className="text-sm underline">← {c.name}</Link>
-      <div className="mt-3"><ServiceDetail s={s} /></div>
+    <main className="mx-auto max-w-4xl px-4 pb-20 pt-8">
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Serbisyo", href: "/serbisyo" }, { label: c.name, href: `/serbisyo/${c.slug}` }, { label: s.title }]} />
+      <div className="mt-6"><ServiceDetail s={s} /></div>
     </main>
   );
 }

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { getHotlines, groupByCategory } from "./hotlines";
+import { getHotlines, groupByCategory, hotlinesForBayan } from "./hotlines";
 import { getMunicipalities } from "./municipalities";
 
 describe("hotlines", () => {
@@ -22,5 +22,14 @@ describe("hotlines", () => {
     const g = groupByCategory(getHotlines("province"));
     expect(Object.keys(g).length).toBeGreaterThan(0);
     for (const rows of Object.values(g)) expect(rows.length).toBeGreaterThan(0);
+  });
+  it("hotlinesForBayan: local rows plus province fallback, empty local for a bayan with none", () => {
+    const r = hotlinesForBayan("calapan-city");
+    expect(r.local.length).toBeGreaterThan(0);
+    expect(r.local.every((h) => h.scope === "calapan-city")).toBe(true);
+    expect(r.province).toEqual(getHotlines("province"));
+    expect(hotlinesForBayan("baco").local).toEqual([]);
+    expect(hotlinesForBayan(undefined).local).toEqual([]);
+    expect(hotlinesForBayan("not-a-town").local).toEqual([]);
   });
 });
