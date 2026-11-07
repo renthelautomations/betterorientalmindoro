@@ -1,7 +1,7 @@
 // home interface strings: "area.thing": ["English", "Filipino"]. Data from sources stays as published.
 // Filipino drafts for strings that were English-only (footer, 404/error English lines, weather, map aria, badges) await native-speaker review.
 export const HOME = {
-  "svc.count": ["services", "serbisyo"], "svc.soon": ["Coming soon", "Paparating"], "town.people": ["people", "katao"],
+  "svc.count": ["services", "serbisyo"], "svc.count1": ["service", "serbisyo"], "svc.soon": ["Coming soon", "Paparating"], "town.people": ["people", "katao"],
   // home page
   "home.help.aria": ["Help now", "Tulong ngayon"], "home.help.h": ["Need help right now?", "Kailangan ng tulong ngayon?"],
   "home.help.see": ["See the hotlines", "Tingnan ang mga hotline"], "home.help.all": ["All hotlines", "Lahat ng hotline"],

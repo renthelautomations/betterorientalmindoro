@@ -49,5 +49,14 @@ open(p,"w").write(s)
 p="src/components/kit/Ui.tsx"; s=open(p).read()
 s=s.replace('rounded-xl bg-fiesta-navy px-4 font-serif text-xl font-bold text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-5 w-5" />{h.number}</a>','rounded-xl bg-fiesta-navy px-3 font-serif text-lg font-bold whitespace-nowrap text-white hover:bg-fiesta-blue sm:text-xl"><KitIcon name="phone" className="h-5 w-5 shrink-0" />{h.number}</a>')
 open(p,"w").write(s)
+# 8. Native <select> replaced by the branded site Dropdown (CompareTowns, LineChart).
+p="src/components/kit/CompareTowns.tsx"; s=open(p).read()
+s=s.replace('<select id={id} value={v} onChange={(e) => set(e.target.value)} className="min-h-11 rounded-lg border border-black/20 bg-white px-3 font-semibold">{towns.map((t) => <option key={t.slug} value={t.slug}>{t.name}</option>)}</select>','<Dropdown id={id} value={v} onChange={set} options={towns.map((t) => ({ v: t.slug, t: t.name }))} className="min-w-40" />')
+if "site/Dropdown" not in s: s=s.replace('import ','import Dropdown from "@/\u0063omponents/site/Dropdown";\nimport ',1)
+open(p,"w").write(s)
+p="src/components/kit/LineChart.tsx"; s=open(p).read()
+s=re.sub(r'<select value=\{s\.name\}.*?</select>','<Dropdown value={s.name} onChange={setName} options={series.map((x) => ({ v: x.name, t: t(x.name) }))} className="min-w-44" />',s,flags=re.S)
+if "site/Dropdown" not in s: s=s.replace('import ','import Dropdown from "@/\u0063omponents/site/Dropdown";\nimport ',1)
+open(p,"w").write(s)
 PY
 echo "kit patches applied"

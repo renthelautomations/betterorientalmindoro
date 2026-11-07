@@ -1,10 +1,10 @@
-import SplitSticky from "@/components/site/SplitSticky";
+import ServiceTile from "@/components/site/ServiceTile";
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteSearch from "@/components/kit/SiteSearch";
 import Bilingual from "@/lib/i18n/Bilingual";
 import { T } from "@/lib/i18n/i18n";
-import { TEmptyState, TNav, TPageHead } from "@/components/site/DynBits";
+import { TEmptyState, TPageHead } from "@/components/site/DynBits";
 import KitIcon from "@/components/kit/KitIcon";
 import { CATEGORY_ICON, ServiceLink } from "@/components/site/ServiceLink";
 import { getSearchItems } from "@/lib/search-index";
@@ -47,16 +47,18 @@ export default function Serbisyo() {
         </ul>
       </section>
 
-      <SplitSticky className="mt-12" side={<TNav label="dyn.serbisyo.cats">
-        <ul className="flex flex-wrap gap-2 lg:flex-col lg:flex-nowrap lg:gap-1">
-          {cats.map((c) => <li key={c.slug}><a href={`#${c.slug}`} className="inline-flex min-h-11 items-center rounded-full border-2 border-fiesta-navy/20 px-4 text-sm font-semibold hover:border-fiesta-navy lg:w-full lg:rounded-xl lg:border-0 lg:hover:bg-fiesta-mint"><T k={`svc.cat.${c.slug}`} /></a></li>)}
-        </ul>
-      </TNav>}>
-        <div>
+      <section aria-labelledby="cats" className="mt-12">
+        <h2 id="cats" className={H2}><T k="dyn.serbisyo.cats" /></h2>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {cats.map((c) => <ServiceTile key={c.slug} slug={c.slug} count={getServices(c.slug).length} />)}
+        </div>
+      </section>
+
+      <div>
       {cats.map((c) => {
         const rows = getServices(c.slug);
         return (
-          <section key={c.slug} id={c.slug} aria-labelledby={`h-${c.slug}`} className="mt-12 scroll-mt-28 first:mt-0 lg:mt-14 lg:first:mt-0">
+          <section key={c.slug} id={c.slug} aria-labelledby={`h-${c.slug}`} className="mt-12 scroll-mt-28 lg:mt-14">
             <h2 id={`h-${c.slug}`} className={H2}><T k={`svc.cat.${c.slug}`} /></h2>
             <p className="-mt-2 mb-4 text-sm text-black/70"><T k={`svc.cat.${c.slug}.b`} /></p>
             {rows.length ? (
@@ -69,8 +71,7 @@ export default function Serbisyo() {
           </section>
         );
       })}
-        </div>
-      </SplitSticky>
+      </div>
     </main>
   );
 }

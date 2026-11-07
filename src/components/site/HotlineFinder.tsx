@@ -2,10 +2,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { HotlineCard } from "@/components/kit/Ui";
 import { useT } from "@/lib/i18n/i18n";
+import Dropdown from "./Dropdown";
 import { OFFICES, QUICK, officeOf, searchHotlines, type Category, type Hotline, type Office } from "@/lib/hotlines";
 
 const CATS: Category[] = ["emergency", "medical", "government", "utility"];
-const sel = "min-h-11 w-full rounded-xl border-2 border-fiesta-navy/20 bg-white px-3 text-sm font-medium outline-none focus:border-fiesta-blue focus:ring-4 focus:ring-fiesta-blue/20";
 
 /** Smart search, suggestions and three dropdown filters (place, type, office). Results group by type. The place defaults to the whole province, as before. */
 export default function HotlineFinder({ rows, towns, initialTown }: { rows: Hotline[]; towns: { slug: string; name: string }[]; initialTown?: string }) {
@@ -72,20 +72,11 @@ export default function HotlineFinder({ rows, towns, initialTown }: { rows: Hotl
 
       <div className="mt-5 grid gap-3 sm:grid-cols-3">
         <div>{label(t("hot.f.place"), "hot-place")}
-          <select id="hot-place" value={place} onChange={(e) => setPlace(e.target.value)} className={sel}>
-            <option value="province">{t("dyn.province")}</option>
-            {towns.map((x) => <option key={x.slug} value={x.slug}>{x.name}</option>)}
-          </select></div>
+          <Dropdown id="hot-place" value={place} onChange={setPlace} options={[{ v: "province", t: t("dyn.province") }, ...towns.map((x) => ({ v: x.slug, t: x.name }))]} /></div>
         <div>{label(t("hot.f.type"), "hot-cat")}
-          <select id="hot-cat" value={cat} onChange={(e) => setCat(e.target.value)} className={sel}>
-            <option value="">{t("hot.f.any")}</option>
-            {CATS.map((c) => <option key={c} value={c}>{t(`cat.${c}`)}</option>)}
-          </select></div>
+          <Dropdown id="hot-cat" value={cat} onChange={setCat} options={[{ v: "", t: t("hot.f.any") }, ...CATS.map((c) => ({ v: c, t: t(`cat.${c}`) }))]} /></div>
         <div>{label(t("hot.f.office"), "hot-office")}
-          <select id="hot-office" value={office} onChange={(e) => setOffice(e.target.value)} className={sel}>
-            <option value="">{t("hot.f.any")}</option>
-            {offices.map((o: Office) => <option key={o} value={o}>{t(`hot.off.${o}`)}</option>)}
-          </select></div>
+          <Dropdown id="hot-office" value={office} onChange={setOffice} options={[{ v: "", t: t("hot.f.any") }, ...offices.map((o: Office) => ({ v: o, t: t(`hot.off.${o}`) }))]} /></div>
       </div>
 
       <div className="mt-4 flex flex-wrap items-center gap-3 text-sm" aria-live="polite">

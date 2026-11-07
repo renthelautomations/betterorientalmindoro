@@ -1,4 +1,5 @@
 "use client";
+import Dropdown from "@/components/site/Dropdown";
 import { useState } from "react";
 import { useT } from "@/lib/i18n/i18n";
 
@@ -25,9 +26,7 @@ export default function LineChart({ series, label }: { series: Series[]; label: 
     <div>
       <label className={`mb-3 items-center gap-2 text-sm ${series.length > 1 ? "flex" : "hidden"}`}>
         <span className="font-medium">{t(label)}</span>
-        <select value={s.name} onChange={(e) => setName(e.target.value)} className="min-h-11 rounded-lg border border-black/20 bg-white px-3">
-          {series.map((x) => <option key={x.name} value={x.name}>{t(x.name)}</option>)}
-        </select>
+        <Dropdown value={s.name} onChange={setName} options={series.map((x) => ({ v: x.name, t: t(x.name) }))} className="min-w-44" />
       </label>
       <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full" role="img" aria-label={`${t(s.name)}: ${s.points.map((p) => `${p.year} ${p.value.toLocaleString("en-PH")}`).join(", ")}`}>
         {ticks.map((t) => (

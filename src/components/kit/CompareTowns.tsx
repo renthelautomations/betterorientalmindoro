@@ -1,4 +1,5 @@
 "use client";
+import Dropdown from "@/components/site/Dropdown";
 import { useState } from "react";
 import { useT } from "@/lib/i18n/i18n";
 
@@ -13,7 +14,7 @@ export default function CompareTowns({ towns, metrics, initial }: { towns: { slu
   const name = (s: string) => towns.find((t) => t.slug === s)?.name ?? s;
   const sel = (id: string, v: string, set: (s: string) => void, color: string) => (
     <label className="flex items-center gap-2 text-sm"><span className="h-3 w-3 rounded-sm" style={{ background: color }} /><span className="sr-only">{t("common.town")}</span>
-      <select id={id} value={v} onChange={(e) => set(e.target.value)} className="min-h-11 rounded-lg border border-black/20 bg-white px-3 font-semibold">{towns.map((t) => <option key={t.slug} value={t.slug}>{t.name}</option>)}</select></label>
+      <Dropdown id={id} value={v} onChange={set} options={towns.map((t) => ({ v: t.slug, t: t.name }))} className="min-w-40" /></label>
   );
   return (
     <div>
