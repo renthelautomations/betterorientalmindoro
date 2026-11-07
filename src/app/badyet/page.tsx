@@ -26,7 +26,7 @@ export default function Badyet() {
       <NoSpendBanner />
 
       <div id="d1" className="mt-6 grid gap-5 md:grid-cols-2 md:gap-6">
-        {districts.map((d, i) => <div key={d.id} id={i === 1 ? "d2" : undefined} className="scroll-mt-28 h-full"><DistrictCard d={d} slug={DISTRICT_SLUGS[i]} h={HEADS[i]} /></div>)}
+        {districts.map((d, i) => <div key={d.id} id={i === 1 ? "d2" : undefined} className="scroll-mt-28 h-full"><DistrictCard d={d} slug={DISTRICT_SLUGS[i]} h={HEADS[i]} i={i} /></div>)}
       </div>
 
       <div className="mt-8"><Acc q="finance.notes.q"><BadyetNotes districts={districts} /></Acc></div>

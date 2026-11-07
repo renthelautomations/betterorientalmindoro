@@ -1,27 +1,48 @@
 import Link from "next/link";
 import { T } from "@/lib/i18n/i18n";
 import KitIcon from "@/components/kit/KitIcon";
+import { PatternFill, FIESTA, FIESTA_DEEP, type PatternKey } from "@/components/kit/Patterns";
 import SourceLink from "@/components/ui/SourceLink";
 import { R, SegBar } from "@/components/site/FinanceBits";
 import { plural } from "@/lib/i18n/plural";
 import { DASH, fmtPeso, gaaYears, getBadyet, netChange, proportionSegments, shareScale, versions, type District, type Office } from "@/lib/badyet";
 
 const SEG: Record<string, { name: string; color: string; sign: string }> = {
-  unchanged: { name: "finance.seg.unchanged", color: "#1b2a4a", sign: "" },
-  increased: { name: "finance.seg.increased", color: "#c2410c", sign: "+" },
-  house_only: { name: "finance.seg.house_only", color: "#2b4fa3", sign: "" },
-  nep_only: { name: "finance.seg.nep_only", color: "#0f766e", sign: "" },
-  decreased: { name: "finance.seg.decreased", color: "#2f6b4f", sign: "-" },
+  unchanged: { name: "finance.seg.unchanged", color: FIESTA.navy, sign: "" },
+  increased: { name: "finance.seg.increased", color: FIESTA_DEEP.orange, sign: "+" },
+  house_only: { name: "finance.seg.house_only", color: FIESTA.blue, sign: "" },
+  nep_only: { name: "finance.seg.nep_only", color: FIESTA_DEEP.sky, sign: "" },
+  decreased: { name: "finance.seg.decreased", color: FIESTA_DEEP.green, sign: "-" },
   scope_review: { name: "finance.seg.scope_review", color: "#6b6b6b", sign: "" },
 };
 const STRIPES = "repeating-linear-gradient(45deg, rgba(255,255,255,.85) 0 3px, transparent 3px 6px)";
 
-export function Side({ label, sub, value, note }: { label: string; sub: string; value: number | null; note: React.ReactNode }) {
+// The two versions keep one colour each everywhere: tile, bar and legend. NEP is sky blue, the House bill is orange.
+export const TONE = {
+  nep: { fg: FIESTA_DEEP.sky, bg: "#e7f1f8" },
+  house: { fg: FIESTA_DEEP.orange, bg: "#fbece5" },
+} as const;
+
+/** Patterned colour band, the same device as the service cards: a slim block with the district or office name in white. */
+export function PatternBand({ color, pattern, children }: { color: string; pattern: PatternKey; children: React.ReactNode }) {
   return (
-    <div className="min-w-0 rounded-2xl bg-[#f3f5f9] p-4">
-      <p className="text-sm font-bold text-fiesta-navy"><T k={label} /></p>
-      <p className="text-xs text-black/65"><T k={sub} /></p>
-      <p className={`mt-3 font-serif text-2xl font-bold tabular-nums sm:text-3xl ${value == null ? "text-black/65" : "text-fiesta-navy"}`}>{fmtPeso(value)}</p>
+    <div className="relative isolate overflow-hidden text-white" style={{ background: color }}>
+      <PatternFill variant={pattern} colors={["#fff"]} opacity={0.16} />
+      <div className="relative p-5 sm:px-6">{children}</div>
+    </div>
+  );
+}
+export const DISTRICT_LOOK: { color: string; pattern: PatternKey }[] = [{ color: FIESTA.blue, pattern: "mosaic" }, { color: FIESTA_DEEP.orange, pattern: "burst" }];
+
+export function Side({ label, sub, value, note, tone }: { label: string; sub: string; value: number | null; note: React.ReactNode; tone: keyof typeof TONE }) {
+  const c = TONE[tone];
+  return (
+    <div className="min-w-0 rounded-2xl p-4" style={{ background: c.bg }}>
+      <div className="flex items-start justify-between gap-2">
+        <div><p className="text-sm font-bold text-fiesta-navy"><T k={label} /></p><p className="text-xs text-black/65"><T k={sub} /></p></div>
+        <KitIcon name="budget" variant="duo" color={c.fg} className="h-6 w-6 shrink-0" />
+      </div>
+      <p className={`mt-3 font-serif text-2xl font-bold tabular-nums sm:text-3xl ${value == null ? "text-black/65" : ""}`} style={value == null ? undefined : { color: c.fg }}>{fmtPeso(value)}</p>
       <p className="mt-1 text-xs text-black/65">{note}</p>
     </div>
   );
@@ -62,11 +83,11 @@ export function GaaBars({ o }: { o: Office }) {
   return (
     <>
       {/* One shared scale for every year. A year with no data shows a dash and no bar, never a zero-height bar. */}
-      <ul className="flex h-52 items-stretch gap-1.5 rounded-2xl bg-[#f3f5f9] p-3 sm:gap-3 sm:p-4">
-        {ys.map((y) => (
+      <ul className="flex h-52 items-stretch gap-1.5 rounded-2xl bg-fiesta-cream p-3 sm:gap-3 sm:p-4">
+        {ys.map((y, i) => (
           <li key={y.fy} className="flex min-w-0 flex-1 flex-col items-center justify-end gap-1 text-center">
             <span className={`text-[11px] font-semibold tabular-nums sm:text-xs ${y.php == null ? "text-black/65" : "text-fiesta-navy"}`}>{fmtPeso(y.php)}</span>
-            {y.php != null && <span aria-hidden className="w-full max-w-12 rounded-t-md bg-fiesta-navy" style={{ height: `${Math.max((y.php / max) * 100, 2) * 0.62}%` }} />}
+            {y.php != null && <span aria-hidden className={`w-full max-w-12 rounded-t-md ${i === ys.length - 1 ? "bg-fiesta-orange" : "bg-fiesta-blue"}`} style={{ height: `${Math.max((y.php / max) * 100, 2) * 0.62}%` }} />}
             <span className="border-t border-black/15 pt-1 text-xs tabular-nums text-black/75">{y.fy}</span>
           </li>
         ))}
@@ -117,8 +138,8 @@ export function NoSpendBanner() {
 export function RepRow({ d }: { d: District }) {
   const r = d.representative;
   return (
-    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-2xl border border-black/10 p-3">
-      <KitIcon name="people" variant="badge" color="#1b2a4a" className="h-9 w-9 shrink-0" />
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-2xl bg-fiesta-cream p-3">
+      <KitIcon name="people" variant="badge" color={FIESTA.blue} className="h-9 w-9 shrink-0" />
       <div className="min-w-0 flex-1 basis-40">
         <p className="text-xs text-black/65"><T k="finance.rep" /></p>
         <p className="font-semibold leading-tight">{r.name}</p>
@@ -148,16 +169,16 @@ export function VersionsPair({ o }: { o: Office }) {
   return (
     <div>
       <div className="grid grid-cols-2 gap-3">
-        <Side label="finance.side.nep" sub="finance.side.nep.s" value={v.nep} note={<R k={plural(f.nep_records, "finance.proj")} v={[f.nep_records]} />} />
-        <Side label="finance.side.house" sub="finance.side.house.s" value={v.house} note={<R k={plural(f.hgab3_records, "finance.proj.named")} v={[f.hgab3_records]} />} />
+        <Side tone="nep" label="finance.side.nep" sub="finance.side.nep.s" value={v.nep} note={<R k={plural(f.nep_records, "finance.proj")} v={[f.nep_records]} />} />
+        <Side tone="house" label="finance.side.house" sub="finance.side.house.s" value={v.house} note={<R k={plural(f.hgab3_records, "finance.proj.named")} v={[f.hgab3_records]} />} />
       </div>
       <ul className="mt-4 space-y-2">
-        <Bar label="finance.side.nep" pct={w.nep} value={v.nep} color="#7f93bd" />
-        <Bar label="finance.side.house" pct={w.house} value={v.house} color="#1b2a4a" />
+        <Bar label="finance.side.nep" pct={w.nep} value={v.nep} color={TONE.nep.fg} />
+        <Bar label="finance.side.house" pct={w.house} value={v.house} color={TONE.house.fg} />
       </ul>
       <p className="mt-1 text-xs text-black/65"><T k="finance.bars.note" /></p>
       <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-[#eef0f4] px-3 py-1 font-semibold tabular-nums text-fiesta-navy">
+        <span className="inline-flex items-center gap-1.5 rounded-full bg-fiesta-mint px-3 py-1 font-semibold tabular-nums text-fiesta-navy">
           <span aria-hidden>{net == null ? "" : net > 0 ? "\u25B2" : net < 0 ? "\u25BC" : "="}</span>
           {net == null ? DASH : `${net > 0 ? "+" : ""}${fmtPeso(net)}`}
         </span>
@@ -169,10 +190,14 @@ export function VersionsPair({ o }: { o: Office }) {
 }
 
 /** Record card on the main page: one district, links to its detail page. */
-export function DistrictCard({ d, slug, h }: { d: District; slug: string; h: string /* dictionary key */ }) {
+export function DistrictCard({ d, slug, h, i = 0 }: { d: District; slug: string; h: string /* dictionary key */; i?: number }) {
+  const look = DISTRICT_LOOK[i % 2];
   return (
-    <article aria-labelledby={`h-${slug}`} className="flex h-full flex-col gap-5 rounded-2xl border border-black/10 bg-white p-5 sm:p-6">
-      <h2 id={`h-${slug}`} className="font-serif text-xl font-bold sm:text-2xl">{d.label}</h2>
+    <article aria-labelledby={`h-${slug}`} className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+      <PatternBand color={look.color} pattern={look.pattern}>
+        <h2 id={`h-${slug}`} className="font-serif text-xl font-bold sm:text-2xl">{d.label}</h2>
+      </PatternBand>
+      <div className="flex flex-1 flex-col gap-5 p-5 sm:p-6">
       <RepRow d={d} />
       {d.offices.map((o) => (
         <div key={o.id}>
@@ -185,6 +210,7 @@ export function DistrictCard({ d, slug, h }: { d: District; slug: string; h: str
         </div>
       ))}
       <Link href={`/badyet/${slug}`} className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-fiesta-navy px-5 text-sm font-semibold text-white hover:bg-fiesta-blue"><R k="finance.open" v={[<T key="h" k={h} />]} /><KitIcon name="arrow" className="h-4 w-4" /></Link>
+      </div>
     </article>
   );
 }

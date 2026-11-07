@@ -53,7 +53,7 @@ export default function SiteFooter() {
 
       <Landmark as="section" label="home.foot.aria" className="mx-auto max-w-6xl px-4 pb-8">
         <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-[#a8281b] px-5 py-4">
-          <p className="flex items-center gap-3 text-sm font-semibold"><KitIcon name="alert" color="#fff" className="h-6 w-6 shrink-0" /><T k="foot.call" /></p>
+          <p className="flex items-center gap-3 text-sm font-semibold"><KitIcon name="alert" color="#fff" className="h-7 w-7 shrink-0" /><span className="sr-only"><T k="foot.call" /></span></p>
           <div className="flex flex-wrap items-center gap-3">
             <a href="tel:911" className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-white px-5 font-serif text-xl font-bold text-[#a8281b]"><KitIcon name="phone" className="h-5 w-5" />911</a>
             <Link href="/hotlines" className="inline-flex min-h-11 items-center rounded-xl border-2 border-white/70 px-4 text-sm font-semibold hover:bg-white hover:text-[#a8281b]"><T k="home.help.all" /></Link>
