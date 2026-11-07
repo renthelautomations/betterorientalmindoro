@@ -1,8 +1,9 @@
+import SplitSticky from "@/components/site/SplitSticky";
+import BigDonut from "@/components/site/BigDonut";
 import { Suspense } from "react";
 import KitIcon from "@/components/kit/KitIcon";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Donut } from "@/components/kit/Charts2";
 import ProjectCard from "@/components/site/ProjectCard";
 import ProjectMap from "@/components/site/ProjectMapLoader";
 import { Empty, PHead, Sec, Stat, YearBars, pesoShort } from "@/components/site/ProjectBits";
@@ -94,16 +95,19 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
         </section>
       </div>
 
-      <section className="mt-12 grid gap-8 md:grid-cols-2">
-        <div>
-          <Sec eyebrow="proyekto.bystatus" title="proyekto.bystatus.h" />
-          <div className="mt-4">{slices.length ? <Donut slices={slices} format={pesoShort} centerLabel="proyekto.center" /> : <Empty title="proyekto.nobudget"><T k="proyekto.nobudget.d" /></Empty>}</div>
-          <p className="mt-3 text-xs text-black/65"><T k="proyekto.bystatus.note" /></p>
-        </div>
-        <div className="min-w-0">
+      <section className="mt-12">
+        <SplitSticky
+          side={
+            <div>
+              <Sec eyebrow="proyekto.bystatus" title="proyekto.bystatus.h" />
+              <div className="mt-4">{slices.length ? <BigDonut slices={slices} format={pesoShort} centerLabel="proyekto.center" /> : <Empty title="proyekto.nobudget"><T k="proyekto.nobudget.d" /></Empty>}</div>
+              <p className="mt-3 text-xs text-black/65"><T k="proyekto.bystatus.note" /></p>
+            </div>
+          }
+        >
           <Sec eyebrow="proyekto.biggest" title="proyekto.top.h" />
           <div className="mt-4">{top.length ? <TopTable rows={top} /> : <Empty title="proyekto.noval"><T k="proyekto.noval.d" /></Empty>}</div>
-        </div>
+        </SplitSticky>
       </section>
 
       <section aria-labelledby="salain" className="mt-12 space-y-5">

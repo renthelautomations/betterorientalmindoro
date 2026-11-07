@@ -1,3 +1,4 @@
+import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SourceNote, IncomeClass } from "@/components/stats/StatCard";
@@ -53,8 +54,7 @@ export default function Estatistika() {
             const ranked = data.filter((d): d is { r: (typeof rows)[number]; v: number } => d.v != null).map((d) => ({ label: d.r.m.name, value: d.v, href: `/bayan/${d.r.m.slug}` })).sort((a, b) => b.value - a.value);
             return (
               <div key={k.id} className={`hidden basis-full pt-4 ${PEER_PANEL[k.id]}`}>
-                <div className="grid gap-8 md:grid-cols-2">
-                  <Choropleth rows={data.map(({ r, v }) => ({ pcode: r.m.pcode, name: r.m.name, value: v, href: `/bayan/${r.m.slug}` }))} format={k.fmt} unit={k.label} />
+                <SplitSticky side={<Choropleth rows={data.map(({ r, v }) => ({ pcode: r.m.pcode, name: r.m.name, value: v, href: `/bayan/${r.m.slug}` }))} format={k.fmt} unit={k.label} />}>
                   <div>
                     <h3 className="mb-3 font-serif text-lg font-bold"><T k="finance.top" /> <span className="lowercase"><T k={k.label} /></span></h3>
                     {ranked.length ? <BarChart rows={ranked.slice(0, 5)} format={k.fmt} /> : <p className="text-sm text-black/60"><T k="finance.nodata.p" /></p>}
@@ -66,7 +66,7 @@ export default function Estatistika() {
                     )}
                     {ranked.length < rows.length && <p className="mt-3 text-xs text-black/65"><R k={`finance.map.${rows.length - ranked.length === 1 ? "nd1" : "ndN"}`} v={[rows.length - ranked.length]} /></p>}
                   </div>
-                </div>
+                </SplitSticky>
               </div>
             );
           })}

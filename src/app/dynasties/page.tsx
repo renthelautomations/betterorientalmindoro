@@ -1,3 +1,4 @@
+import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Attribution from "@/components/dynasties/Attribution";
 import DynNote from "@/components/site/DynNote";
@@ -39,13 +40,14 @@ export default function Dynasties() {
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.net.h" /></h2>
       <p className="mb-3 mt-2 text-sm text-black/75"><T k="dyn.net.p" /></p>
-      <LinkNetwork nodes={towns.map((t) => ({ id: t.slug, label: nameOf[t.slug] }))} edges={edges} />
-      <h3 className="mt-4 text-sm font-semibold text-black/70"><T k="dyn.net.pairs" /></h3>
-      {links.length ? (
-        <ul className="mt-2 divide-y divide-black/10 rounded-2xl border border-black/10 bg-white text-sm">
-          {links.map((l) => <li key={l.a + l.b} className="px-4 py-2"><b>{nameOf[l.a]}</b> <T k="dyn.and" /> <b>{nameOf[l.b]}</b>: {l.surnames.map(titleCase).join(", ")} ({l.weight})</li>)}
-        </ul>
-      ) : <p className="mt-2 text-sm text-black/70"><T k="dyn.net.none" /></p>}
+      <SplitSticky side={<LinkNetwork nodes={towns.map((t) => ({ id: t.slug, label: nameOf[t.slug] }))} edges={edges} />}>
+        <h3 className="mt-4 text-sm font-semibold text-black/70"><T k="dyn.net.pairs" /></h3>
+        {links.length ? (
+          <ul className="mt-2 divide-y divide-black/10 rounded-2xl border border-black/10 bg-white text-sm">
+            {links.map((l) => <li key={l.a + l.b} className="px-4 py-2"><b>{nameOf[l.a]}</b> <T k="dyn.and" /> <b>{nameOf[l.b]}</b>: {l.surnames.map(titleCase).join(", ")} ({l.weight})</li>)}
+          </ul>
+        ) : <p className="mt-2 text-sm text-black/70"><T k="dyn.net.none" /></p>}
+      </SplitSticky>
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.rep.h" /></h2>
       <p className="mb-3 mt-2 text-sm text-black/75"><T k="dyn.rep.p" /></p>

@@ -18,7 +18,7 @@ export default function SiteSearch({ items }: { items: SearchItem[] }) {
   const open = (h?: SearchItem) => { if (!h) return; if (h.href.startsWith("tel:")) location.href = h.href; else router.push(h.href); };
   return (
     <div className="relative max-w-xl">
-      <label htmlFor="site-search" className="sr-only">Maghanap ng bayan, serbisyo o hotline</label>
+      <label htmlFor="site-search" className="sr-only">{t("search.placeholder")}</label>
       <input id="site-search" type="search" value={q} onChange={(e) => setQ(e.target.value)} onKeyDown={(e) => { if (e.key === "Enter") open(hits[0]); }} placeholder={t("search.placeholder")} autoComplete="off" aria-controls="site-search-results"
         className="min-h-12 w-full rounded-full border-2 border-fiesta-navy/20 bg-white px-5 text-base outline-none focus:border-fiesta-blue focus:ring-4 focus:ring-fiesta-blue/20" />
       <div id="site-search-results" aria-live="polite">

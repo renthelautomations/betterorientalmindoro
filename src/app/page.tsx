@@ -1,8 +1,8 @@
+import CatRow from "@/components/site/CatRow";
 import Link from "next/link";
 import MapLoader from "@/components/MapLoader";
 import { Divider } from "@/components/kit/Motifs";
 import PennantHero from "@/components/site/PennantHero";
-import { ServiceRow } from "@/components/kit/Parts";
 import { SectionHeaderT as SectionHeader, CalloutT as Callout, PillarCardT as PillarCard, StatCardT as StatCard, Landmark } from "@/components/site/KitT";
 import { T } from "@/lib/i18n/i18n";
 import { BarChart } from "@/components/kit/Charts";
@@ -82,7 +82,7 @@ export default function Home() {
         <Landmark as="section" label="home.services" className="pb-14">
           <SectionHeader eyebrow="home.svc.eyebrow" title="home.svc.h" color={FIESTA_DEEP.orange} />
           <div className="mt-6 grid gap-3 md:grid-cols-2">
-            {getCategories().map((c, i) => <Link key={c.slug} href={`/serbisyo#${c.slug}`} className="block min-w-0"><ServiceRow icon={CAT_ICON[c.slug] ?? "doc"} title={c.name} sub={c.blurb} color={[FIESTA.blue, FIESTA_DEEP.orange, FIESTA_DEEP.green, FIESTA.red][i % 4]} /></Link>)}
+            {getCategories().map((c, i) => <Link key={c.slug} href={`/serbisyo#${c.slug}`} className="block min-w-0"><CatRow slug={c.slug} icon={CAT_ICON[c.slug] ?? "doc"} color={[FIESTA.blue, FIESTA_DEEP.orange, FIESTA_DEEP.green, FIESTA.red][i % 4]} /></Link>)}
           </div>
         </Landmark>
 

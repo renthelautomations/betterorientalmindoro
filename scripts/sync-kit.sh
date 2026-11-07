@@ -16,4 +16,5 @@ grep -rl --include=*.ts --include=*.tsx -E 'from "(\./|@/components/kit/)(i18n|d
   sed -i '' -E 's#from "\./i18n"#from "@/lib/i18n/i18n"#; s#from "@/components/kit/i18n"#from "@/lib/i18n/i18n"#; s#from "\./dict"#from "@/lib/i18n/dict"#; s#from "@/components/kit/dict"#from "@/lib/i18n/dict"#' "$f"
 done
 cp "$K/src/app/globals.css" src/app/globals.css
+./scripts/kit-patches.sh
 echo "kit synced from $K"

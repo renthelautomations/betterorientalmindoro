@@ -1,3 +1,4 @@
+import SplitSticky from "@/components/site/SplitSticky";
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -35,29 +36,30 @@ async function Body({ searchParams }: { searchParams: Promise<{ bayan?: string |
   const towns = getMunicipalities();
   const town = towns.find((m) => m.slug === bayan);
   const { local, province } = hotlinesForBayan(town?.slug);
-  const pill = (active: boolean) => `inline-flex min-h-11 items-center rounded-full px-4 text-sm font-semibold ${active ? "bg-fiesta-navy text-white" : "border-2 border-fiesta-navy/20 hover:border-fiesta-navy"}`;
+  const pill = (active: boolean) => `inline-flex min-h-11 items-center rounded-full px-4 text-sm font-semibold lg:w-full lg:rounded-xl ${active ? "bg-fiesta-navy text-white" : "border-2 border-fiesta-navy/20 hover:border-fiesta-navy"}`;
   return (
-    <>
-      <TNav label="dyn.hotline.pick" className="mt-8">
+    <SplitSticky className="mt-8" side={<TNav label="dyn.hotline.pick">
         <p className="mb-3 text-sm font-semibold"><T k="dyn.hotline.pick" /></p>
-        <ul className="flex flex-wrap gap-2">
+        <ul className="flex flex-wrap gap-2 lg:max-h-[calc(100vh-14rem)] lg:flex-col lg:flex-nowrap lg:gap-1 lg:overflow-y-auto">
           <li><Link href="/hotlines" aria-current={!town ? "page" : undefined} className={pill(!town)}><T k="dyn.province" /></Link></li>
           {towns.map((m) => <li key={m.slug}><Link href={`/hotlines?bayan=${m.slug}`} aria-current={town?.slug === m.slug ? "page" : undefined} className={pill(town?.slug === m.slug)}>{m.name}</Link></li>)}
         </ul>
-      </TNav>
+      </TNav>}>
+      <div className="space-y-10">
       {town && (
-        <section aria-labelledby="local" className="mt-10">
+        <section aria-labelledby="local" className="">
           <h2 id="local" className="mb-4 font-serif text-2xl font-bold">{town.name}</h2>
           {local.length ? <Groups rows={local} id="local" /> : (
             <TCallout titleKey="dyn.hotline.none" name={town.name}><T k="dyn.hotline.none.p" /></TCallout>
           )}
         </section>
       )}
-      <section aria-labelledby="prov" className="mt-10">
+      <section aria-labelledby="prov" className="">
         <h2 id="prov" className="mb-4 font-serif text-2xl font-bold"><T k="dyn.province" /></h2>
         <Groups rows={province} id="prov" />
       </section>
-    </>
+      </div>
+    </SplitSticky>
   );
 }
 

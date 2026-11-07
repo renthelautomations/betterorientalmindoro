@@ -13,10 +13,10 @@ export const NAV: NavLink[] = [
 ];
 
 export const FOOTER_LINKS: NavLink[] = [
-  { label: "Terms of Use", href: "/terms" },
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Accessibility", href: "/accessibility" },
-  { label: "FAQ", href: "/faq" },
+  { label: "nav.terms", href: "/terms" },
+  { label: "nav.privacy", href: "/privacy" },
+  { label: "nav.access", href: "/accessibility" },
+  { label: "nav.faq", href: "/faq" },
 ];
 
 export const FOOTER_SOURCES: NavLink[] = [

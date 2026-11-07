@@ -1,10 +1,12 @@
+import SplitSticky from "@/components/site/SplitSticky";
+import BigDonut from "@/components/site/BigDonut";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import DynNote from "@/components/site/DynNote";
 import DynSurnames from "@/components/site/DynSurnames";
 import { WinnersGrid } from "@/components/site/DynGrid";
-import { BayanCrumbs, BayanDonut, BayanEmpty, BayanTitle } from "@/components/site/BayanBits";
+import { BayanCrumbs, BayanEmpty, BayanTitle } from "@/components/site/BayanBits";
 import { T } from "@/lib/i18n/i18n";
 import TownEmblem from "@/components/kit/TownEmblem";
 import { StatCard } from "@/components/kit/Parts";
@@ -79,8 +81,8 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
       </div>
     ) },
     { id: "proyekto", label: "town.projects", badge: String(projects.length), panel: projects.length ? (
-      <div className="space-y-6">
-        <div className="max-w-md"><p className={h3}><T k="bayan.status.h" /></p><BayanDonut slices={slices} centerLabel="bayan.projects.lc" /></div>
+      <SplitSticky side={<div><p className={h3}><T k="bayan.status.h" /></p><BigDonut slices={slices} format={(n) => n.toLocaleString("en-PH")} centerLabel="bayan.projects.lc" /></div>}>
+        <div className="space-y-6">
         <div>
           <p className={h3}><T k="bayan.top.h" /></p>
           <ul className="divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
@@ -90,7 +92,8 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
           </ul>
         </div>
         <Link href={`/proyekto?bayan=${slug}`} className={link}><T k="bayan.allproj.pre" /> {fmtInt(projects.length)} <T k="bayan.allproj.post" /></Link>
-      </div>
+        </div>
+      </SplitSticky>
     ) : <BayanEmpty title="bayan.noproj" body="bayan.noproj.p" /> },
     { id: "halalan", label: "town.elections", panel: dyn ? (
       <div className="space-y-6">

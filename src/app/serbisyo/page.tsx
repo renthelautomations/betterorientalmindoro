@@ -1,3 +1,4 @@
+import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteSearch from "@/components/kit/SiteSearch";
@@ -29,8 +30,8 @@ export default function Serbisyo() {
         <ul className="grid gap-4 sm:grid-cols-2">
           {getLifeEvents().map((e) => (
             <li key={e.slug} className="rounded-2xl border border-black/10 bg-white p-5">
-              <h3 className="font-serif text-lg font-bold">{e.name}</h3>
-              <p className="text-sm text-black/65">{e.blurb}</p>
+              <h3 className="font-serif text-lg font-bold"><T k={`svc.ev.${e.slug}`} /></h3>
+              <p className="text-sm text-black/65"><T k={`svc.ev.${e.slug}.b`} /></p>
               <ul className="mt-3 space-y-1">
                 {servicesForEvent(e.slug).map((s) => (
                   <li key={s.id}><Link href={`/serbisyo/${s.category}/${s.id}`} className="inline-flex min-h-11 items-center text-sm font-medium text-fiesta-blue underline">{s.title}</Link></li>
@@ -41,18 +42,18 @@ export default function Serbisyo() {
         </ul>
       </section>
 
-      <TNav label="dyn.serbisyo.cats" className="mt-12">
-        <ul className="flex flex-wrap gap-2">
-          {cats.map((c) => <li key={c.slug}><a href={`#${c.slug}`} className="inline-flex min-h-11 items-center rounded-full border-2 border-fiesta-navy/20 px-4 text-sm font-semibold hover:border-fiesta-navy">{c.name}</a></li>)}
+      <SplitSticky className="mt-12" side={<TNav label="dyn.serbisyo.cats">
+        <ul className="flex flex-wrap gap-2 lg:flex-col lg:flex-nowrap lg:gap-1">
+          {cats.map((c) => <li key={c.slug}><a href={`#${c.slug}`} className="inline-flex min-h-11 items-center rounded-full border-2 border-fiesta-navy/20 px-4 text-sm font-semibold hover:border-fiesta-navy lg:w-full lg:rounded-xl lg:border-0 lg:hover:bg-fiesta-mint"><T k={`svc.cat.${c.slug}`} /></a></li>)}
         </ul>
-      </TNav>
-
+      </TNav>}>
+        <div>
       {cats.map((c) => {
         const rows = getServices(c.slug);
         return (
-          <section key={c.slug} id={c.slug} aria-labelledby={`h-${c.slug}`} className="mt-12 scroll-mt-28">
-            <h2 id={`h-${c.slug}`} className={H2}>{c.name}</h2>
-            <p className="-mt-2 mb-4 text-sm text-black/70">{c.blurb}</p>
+          <section key={c.slug} id={c.slug} aria-labelledby={`h-${c.slug}`} className="mt-12 scroll-mt-28 first:mt-0 lg:mt-14 lg:first:mt-0">
+            <h2 id={`h-${c.slug}`} className={H2}><T k={`svc.cat.${c.slug}`} /></h2>
+            <p className="-mt-2 mb-4 text-sm text-black/70"><T k={`svc.cat.${c.slug}.b`} /></p>
             {rows.length ? (
               <ul className="space-y-3">{rows.map((s) => <li key={s.id}><ServiceLink s={s} /></li>)}</ul>
             ) : (
@@ -63,6 +64,8 @@ export default function Serbisyo() {
           </section>
         );
       })}
+        </div>
+      </SplitSticky>
     </main>
   );
 }
