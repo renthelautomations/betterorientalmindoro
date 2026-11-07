@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BadyetNotes, GaaBars, NO_SPEND, NoSpendBanner, ProportionBar, RepRow, VersionsPair } from "@/components/site/BadyetDistrict";
+import { BadyetNotes, DISTRICT_LOOK, GaaBars, NO_SPEND, PatternBand, NoSpendBanner, ProportionBar, RepRow, VersionsPair } from "@/components/site/BadyetDistrict";
 import KitIcon from "@/components/kit/KitIcon";
 import SourceLink from "@/components/ui/SourceLink";
 import { SourceNote } from "@/components/stats/StatCard";
@@ -17,13 +17,14 @@ export async function generateMetadata({ params }: { params: Promise<{ district:
 }
 
 const H = "mt-8 flex items-center gap-2 font-serif text-lg font-bold";
-const Ic = ({ n }: { n: "budget" | "doc" | "calendar" }) => <KitIcon name={n} variant="badge" color="#1b2a4a" className="h-8 w-8 shrink-0" />;
+const Ic = ({ n, c }: { n: "budget" | "doc" | "calendar"; c: string }) => <KitIcon name={n} variant="badge" color={c} className="h-8 w-8 shrink-0" />;
 
 export default async function BadyetDistrictPage({ params }: { params: Promise<{ district: string }> }) {
   const slug = (await params).district;
   const d = districtBySlug(slug);
   if (!d) notFound();
   const { meta } = getBadyet();
+  const look = DISTRICT_LOOK[(DISTRICT_SLUGS as readonly string[]).indexOf(slug) % 2];
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
       <Crumbs items={[{ label: "finance.home", href: "/" }, { label: "nav.budget", href: "/badyet" }, { label: d.label }]} />
@@ -32,16 +33,20 @@ export default async function BadyetDistrictPage({ params }: { params: Promise<{
       <NoSpendBanner />
 
       {d.offices.map((o) => (
-        <section key={o.id} aria-label={o.name} className="mt-6 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5 sm:p-6">
-          <h2 className="font-serif text-xl font-bold">{o.name}</h2>
-          <p className="text-sm text-black/70">{o.kind_label} · {o.tier_text}</p>
-          <h3 className={H}><Ic n="budget" /><T k="finance.h.versions" /></h3>
+        <section key={o.id} aria-label={o.name} className="mt-6 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+          <PatternBand color={look.color} pattern={look.pattern}>
+            <h2 className="font-serif text-xl font-bold sm:text-2xl">{o.name}</h2>
+            <p className="mt-0.5 text-sm text-white">{o.kind_label} · {o.tier_text}</p>
+          </PatternBand>
+          <div className="p-5 pt-1 sm:p-6 sm:pt-1">
+          <h3 className={H}><Ic n="budget" c="#c4431a" /><T k="finance.h.versions" /></h3>
           <div className="mt-2"><VersionsPair o={o} /></div>
-          <h3 className={H}><Ic n="doc" /><T k="finance.h.changed" /></h3>
+          <h3 className={H}><Ic n="doc" c="#2b4fa3" /><T k="finance.h.changed" /></h3>
           <div className="mt-2"><ProportionBar o={o} /></div>
-          <h3 className={H}><Ic n="calendar" /><T k="finance.h.gaa" /></h3>
+          <h3 className={H}><Ic n="calendar" c="#2a7f44" /><T k="finance.h.gaa" /></h3>
           <div className="mt-2"><GaaBars o={o} /></div>
           <p className="mt-2 text-xs text-black/65"><T k="finance.gaa.note" /></p>
+          </div>
         </section>
       ))}
 
