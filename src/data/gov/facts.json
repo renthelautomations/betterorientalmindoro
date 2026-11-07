@@ -1,0 +1,66 @@
+{
+ "source": "https://ormindoro.gov.ph/about/",
+ "fetchedAt": "2026-11-08",
+ "items": [
+  {
+   "key": "congressionalDistricts",
+   "label": "Congressional districts",
+   "value": 2,
+   "unit": "count"
+  },
+  {
+   "key": "componentCities",
+   "label": "Component cities",
+   "value": 1,
+   "unit": "count"
+  },
+  {
+   "key": "municipalities",
+   "label": "Municipalities",
+   "value": 14,
+   "unit": "count"
+  },
+  {
+   "key": "barangays",
+   "label": "Barangays",
+   "value": 426,
+   "unit": "count"
+  },
+  {
+   "key": "areaKm2",
+   "label": "Land area of Oriental Mindoro",
+   "value": 4364.72,
+   "unit": "sq km"
+  },
+  {
+   "key": "areaHectares",
+   "label": "Land area of Oriental Mindoro",
+   "value": 436472,
+   "unit": "ha"
+  },
+  {
+   "key": "pctOfPhilippines",
+   "label": "Share of the Philippines' land area",
+   "value": 1.45,
+   "unit": "percent"
+  },
+  {
+   "key": "pctOfMimaropa",
+   "label": "Share of the MIMAROPA land area",
+   "value": 15.9,
+   "unit": "percent"
+  },
+  {
+   "key": "mimaropaAreaKm2",
+   "label": "Land area of MIMAROPA",
+   "value": 27455.98,
+   "unit": "sq km"
+  },
+  {
+   "key": "philippinesAreaKm2",
+   "label": "Land area of the Philippines",
+   "value": 300000,
+   "unit": "sq km"
+  }
+ ]
+}
