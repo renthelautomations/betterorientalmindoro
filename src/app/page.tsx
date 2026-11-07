@@ -2,13 +2,13 @@ import Link from "next/link";
 import MapLoader from "@/components/MapLoader";
 import { Divider } from "@/components/kit/Motifs";
 import PennantHero from "@/components/site/PennantHero";
-import { SectionHeaderT as SectionHeader, CalloutT as Callout, PillarCardT as PillarCard, StatCardT as StatCard, Landmark } from "@/components/site/KitT";
+import { SectionHeaderT as SectionHeader, PillarCardT as PillarCard, StatCardT as StatCard, Landmark } from "@/components/site/KitT";
 import { T } from "@/lib/i18n/i18n";
 import SplitSticky from "@/components/site/SplitSticky";
 import { BarChart } from "@/components/kit/Charts";
 import LinkChoropleth from "@/components/site/LinkChoropleth";
-import type { KitIconName } from "@/components/kit/KitIcon";
-import SiteSearch from "@/components/kit/SiteSearch";
+import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
+import SmartSearch from "@/components/site/SmartSearch";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import { getSearchItems } from "@/lib/search-index";
 import { getMunicipalities } from "@/lib/municipalities";
@@ -35,27 +35,33 @@ export default function Home() {
           <p className="text-sm font-semibold tracking-[0.2em] text-fiesta-blue uppercase"><T k="footer.tagline" /></p>
           <h1 className="mt-3 max-w-xl font-serif text-5xl font-bold leading-[1.05] md:text-7xl">Better<br />Oriental Mindoro<span className="text-fiesta-orange">.org</span></h1>
           <p className="mt-5 max-w-lg text-lg text-black/70"><T k="home.p" /></p>
-          <div className="mt-8"><SiteSearch items={getSearchItems()} /></div>
+          <div className="mt-8"><SmartSearch items={getSearchItems()} /></div>
         </div>
       </PennantHero>
       <Divider variant="mahaltana" />
 
       <div className="mx-auto max-w-6xl px-4">
         <Landmark as="section" label="home.help.aria" className="pt-10">
-          <Callout kind="emergency" title="home.help.h">
-            {hotlines.length === 0 ? (
-              <Link href="/hotlines" className="underline"><T k="home.help.see" /></Link>
-            ) : (
-              <>
+          <section aria-labelledby="help-h" className="grid gap-6 rounded-3xl bg-fiesta-red/10 p-5 sm:p-7 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-center">
+            <div>
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#a8281b] text-white"><KitIcon name="alert" className="h-6 w-6" /></span>
+              <h2 id="help-h" className="mt-4 font-serif text-3xl font-bold leading-tight"><T k="home.help.h" /></h2>
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <a href="tel:911" className="inline-flex min-h-14 items-center gap-3 rounded-2xl bg-[#a8281b] px-6 font-serif text-3xl font-bold text-white hover:bg-[#8f2015]"><KitIcon name="phone" className="h-6 w-6" />911</a>
+                <Link href="/hotlines" className="inline-flex min-h-11 items-center rounded-xl border-2 border-fiesta-navy px-4 text-sm font-semibold text-fiesta-navy hover:bg-fiesta-navy hover:text-white"><T k="home.help.all" /></Link>
+              </div>
+            </div>
+            {hotlines.length > 0 && (
+              <ul className="grid gap-3 sm:grid-cols-2">
                 {hotlines.map((h) => (
-                  <span key={h.id} className="block py-1">
-                    {h.name}: <a href={tel(h.number)} className="font-semibold underline">{h.number}</a>
-                  </span>
+                  <li key={h.id} className="flex flex-col justify-between gap-3 rounded-2xl bg-white p-4 shadow-sm">
+                    <p className="text-sm font-semibold leading-snug">{h.name}</p>
+                    <a href={tel(h.number)} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-3 font-serif text-lg font-bold whitespace-nowrap text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-5 w-5 shrink-0" />{h.number}</a>
+                  </li>
                 ))}
-                <Link href="/hotlines" className="mt-1 inline-block py-1 font-semibold underline"><T k="home.help.all" /></Link>
-              </>
+              </ul>
             )}
-          </Callout>
+          </section>
         </Landmark>
 
         <Landmark as="section" label="home.map.aria2" className="py-12">

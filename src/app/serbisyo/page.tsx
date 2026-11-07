@@ -1,7 +1,7 @@
 import ServiceTile from "@/components/site/ServiceTile";
 import type { Metadata } from "next";
 import Link from "next/link";
-import SiteSearch from "@/components/kit/SiteSearch";
+import SmartSearch from "@/components/site/SmartSearch";
 import Bilingual from "@/lib/i18n/Bilingual";
 import { T } from "@/lib/i18n/i18n";
 import { TEmptyState, TPageHead } from "@/components/site/DynBits";
@@ -24,7 +24,7 @@ export default function Serbisyo() {
           en={<>Everything here is a <b>draft for volunteer review</b>. Where no detail is confirmed, it says &quot;Check with the office&quot;. This is not an official government website.</>}
           fil={<>Lahat ay <b>draft para sa review ng volunteers</b>. Kapag walang nakumpirmang detalye, nakasulat na &quot;Alamin sa opisina&quot;. Hindi ito opisyal na website ng gobyerno.</>} /></p>
       </TPageHead>
-      <div className="mt-8"><SiteSearch items={getSearchItems()} /></div>
+      <div className="mt-8"><SmartSearch items={getSearchItems()} /></div>
 
       <section aria-labelledby="events" className="mt-12">
         <h2 id="events" className={H2}><T k="dyn.serbisyo.events" /></h2>

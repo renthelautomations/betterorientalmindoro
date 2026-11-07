@@ -1,3 +1,5 @@
+import SmartSearch from "@/components/site/SmartSearch";
+import { getSearchItems } from "@/lib/search-index";
 import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Attribution from "@/components/dynasties/Attribution";
@@ -31,6 +33,7 @@ export default function Dynasties() {
       <TBreadcrumbs items={[{ label: "dyn.home", href: "/" }, { label: "dyn.crumb" }]} />
       <div className="mt-4"><TPageTitle eyebrow="dyn.eyebrow.dyn" title="dyn.title" /></div>
       <p className="mt-4 max-w-2xl text-black/75"><TF k="dyn.intro" v={[years[0], years.at(-1) ?? ""]} /></p>
+      <div className="mt-6"><SmartSearch items={getSearchItems()} /></div>
       <div className="mt-5"><DynSwitch current={null} towns={names} /></div>
       <div className="mt-5"><DynNote /></div>
 

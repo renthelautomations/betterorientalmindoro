@@ -2,6 +2,12 @@
 // Filipino drafts for strings that were English-only (footer, 404/error English lines, weather, map aria, badges) await native-speaker review.
 export const HOME = {
   "svc.count": ["services", "serbisyo"], "svc.count1": ["service", "serbisyo"], "svc.soon": ["Coming soon", "Paparating"], "town.people": ["people", "katao"],
+  // smart search (Filipino drafts await native-speaker review)
+  "search.t.pahina": ["Page", "Pahina"], "search.t.kwento": ["Story", "Kwento"], "search.t.faq": ["Question", "Tanong"],
+  "search.recent": ["Recently opened", "Kamakailang binuksan"], "search.popular": ["Popular", "Madalas hanapin"], "search.clear": ["Clear", "Burahin"],
+  "search.try": ["Try", "Subukan"], "search.dym": ["Did you mean", "Ang ibig mo bang sabihin ay"], "search.projects": ["Search all projects for", "Hanapin sa lahat ng proyekto ang"],
+  "search.hint": ["Press / to search from anywhere", "Pindutin ang / para maghanap kahit saan"], "search.results": ["results", "resulta"],
+  "search.q.fire": ["fire", "sunog"], "search.q.birth": ["birth certificate", "kapanganakan"], "search.q.scholar": ["scholarship", "iskolar"], "search.q.burial": ["burial", "libing"], "search.q.road": ["roads", "kalsada"],
   // home page
   "home.help.aria": ["Help now", "Tulong ngayon"], "home.help.h": ["Need help right now?", "Kailangan ng tulong ngayon?"],
   "home.help.see": ["See the hotlines", "Tingnan ang mga hotline"], "home.help.all": ["All hotlines", "Lahat ng hotline"],

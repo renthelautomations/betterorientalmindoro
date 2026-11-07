@@ -1,3 +1,5 @@
+import SmartSearch from "@/components/site/SmartSearch";
+import { getSearchItems } from "@/lib/search-index";
 import type { Metadata } from "next";
 import { DistrictCard, BadyetNotes, NoSpendBanner } from "@/components/site/BadyetDistrict";
 import SourceLink from "@/components/ui/SourceLink";
@@ -20,6 +22,7 @@ export default function Badyet() {
       <Crumbs items={[{ label: "finance.home", href: "/" }, { label: "nav.budget" }]} />
       <div className="mt-4"><Title eyebrow="finance.b.eyebrow" title="finance.b.title" /></div>
       <p className="mt-4 max-w-3xl text-black/75"><T k="finance.b.lead" /></p>
+      <div className="mt-6"><SmartSearch items={getSearchItems()} /></div>
       <NoSpendBanner />
 
       <div id="d1" className="mt-6 grid gap-5 md:grid-cols-2 md:gap-6">
