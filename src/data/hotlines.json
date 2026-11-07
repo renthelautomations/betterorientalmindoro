@@ -210,16 +210,6 @@
   "confirmed": false
  },
  {
-  "id": "h22",
-  "scope": "puerto-galera",
-  "category": "emergency",
-  "name": "Puerto Galera MDRRM Office",
-  "number": "0917-555-3911",
-  "source": "https://travelorientalmindoro.ph/directory/emergency-services",
-  "verifiedAt": "2026-11-08",
-  "confirmed": false
- },
- {
   "id": "h23",
   "scope": "puerto-galera",
   "category": "emergency",
@@ -228,5 +218,225 @@
   "source": "https://travelorientalmindoro.ph/directory/emergency-services",
   "verifiedAt": "2026-11-08",
   "confirmed": false
+ },
+ {
+  "id": "h24",
+  "scope": "puerto-galera",
+  "category": "emergency",
+  "name": "MDRRMO Puerto Galera",
+  "number": "0939 938 0157",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h25",
+  "scope": "puerto-galera",
+  "category": "emergency",
+  "name": "MDRRMO Puerto Galera",
+  "number": "0998 971 2637",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h26",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "CDRRMD Calapan City",
+  "number": "0915 744 9698",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h27",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "CDRRMD Calapan City",
+  "number": "0966 029 9777",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h28",
+  "scope": "calapan-city",
+  "category": "emergency",
+  "name": "CDRRMD Calapan City",
+  "number": "0999 735 6447",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h29",
+  "scope": "socorro",
+  "category": "emergency",
+  "name": "MDRRMO Socorro",
+  "number": "0962 737 4642",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h30",
+  "scope": "san-teodoro",
+  "category": "emergency",
+  "name": "MDRRMO San Teodoro",
+  "number": "0963 741 4109",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h31",
+  "scope": "san-teodoro",
+  "category": "emergency",
+  "name": "MDRRMO San Teodoro",
+  "number": "0998 852 5027",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h32",
+  "scope": "naujan",
+  "category": "emergency",
+  "name": "MDRRMO Naujan",
+  "number": "0975 229 0120",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h33",
+  "scope": "naujan",
+  "category": "emergency",
+  "name": "MDRRMO Naujan",
+  "number": "0960 542 2200",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h34",
+  "scope": "baco",
+  "category": "emergency",
+  "name": "MDRRMO Baco",
+  "number": "0928 477 3901",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h35",
+  "scope": "victoria",
+  "category": "emergency",
+  "name": "MDRRMO Victoria",
+  "number": "0977 012 7197",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h36",
+  "scope": "pola",
+  "category": "emergency",
+  "name": "MDRRMO Pola",
+  "number": "0927 834 9162",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h37",
+  "scope": "pola",
+  "category": "emergency",
+  "name": "MDRRMO Pola",
+  "number": "0962 972 5961",
+  "source": "https://www.facebook.com/photo/?fbid=3055505857952673",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h38",
+  "scope": "pinamalayan",
+  "category": "emergency",
+  "name": "MDRRMO Pinamalayan",
+  "number": "0977 805 6690",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h39",
+  "scope": "bongabong",
+  "category": "emergency",
+  "name": "MDRRMO Bongabong",
+  "number": "0956 764 6381",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h40",
+  "scope": "mansalay",
+  "category": "emergency",
+  "name": "MDRRMO Mansalay",
+  "number": "0907 861 7752",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h41",
+  "scope": "mansalay",
+  "category": "emergency",
+  "name": "MDRRMO Mansalay",
+  "number": "0935 483 6730",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h42",
+  "scope": "gloria",
+  "category": "emergency",
+  "name": "MDRRMO Gloria",
+  "number": "0908 816 5311",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h43",
+  "scope": "roxas",
+  "category": "emergency",
+  "name": "MDRRMO Roxas",
+  "number": "0970 752 5700",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h44",
+  "scope": "bansud",
+  "category": "emergency",
+  "name": "MDRRMO Bansud",
+  "number": "0950 637 7758",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
+ },
+ {
+  "id": "h45",
+  "scope": "bulalacao",
+  "category": "emergency",
+  "name": "MDRRMO Bulalacao",
+  "number": "0951 741 3504",
+  "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
+  "verifiedAt": "2026-11-08",
+  "confirmed": true
  }
 ]

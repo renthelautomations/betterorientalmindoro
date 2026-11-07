@@ -12,6 +12,7 @@ import { UXA } from "./dict/uxa";
 import { UXB } from "./dict/uxb";
 import { UXC } from "./dict/uxc";
 import { UXD } from "./dict/uxd";
+import { LGU } from "./dict/lgu";
 
-export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD } as const satisfies Record<string, readonly [string, string]>;
+export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD, ...LGU } as const satisfies Record<string, readonly [string, string]>;
 export type DictKey = keyof typeof DICT;

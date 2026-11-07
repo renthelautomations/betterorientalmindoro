@@ -6,6 +6,9 @@ import Bilingual from "@/lib/i18n/Bilingual";
 import HotlineFinder from "@/components/site/HotlineFinder";
 import { TPageHead } from "@/components/site/DynBits";
 import { getHotlines } from "@/lib/hotlines";
+import LguContactCard from "@/components/site/LguContactCard";
+import LguDirectory from "@/components/site/LguDirectory";
+import { getLguDirectory } from "@/lib/lgu-directory";
 import { getMunicipalities } from "@/lib/municipalities";
 
 export const metadata: Metadata = { title: "Hotlines" };
@@ -15,7 +18,10 @@ async function Body({ searchParams }: { searchParams: Promise<{ bayan?: string |
   const bayan = Array.isArray(raw) ? raw[0] : raw;
   const towns = getMunicipalities();
   const initial = towns.find((m) => m.slug === bayan)?.slug;
-  return <div className="mt-8"><HotlineFinder rows={getHotlines()} towns={towns.map((m) => ({ slug: m.slug, name: m.name }))} initialTown={initial} /></div>;
+  // One contact card (+ office directory when published) per place; the finder shows the one for the chosen place.
+  const extras = Object.fromEntries([...towns.map((m) => [m.slug, m.name] as const), ["province", "Oriental Mindoro"] as const].map(([slug, name]) => [slug,
+    <div key={slug} className="space-y-6"><LguContactCard slug={slug} name={name} />{getLguDirectory(slug) && <LguDirectory slug={slug} name={name} collapsible />}</div>]));
+  return <div className="mt-8"><HotlineFinder rows={getHotlines()} towns={towns.map((m) => ({ slug: m.slug, name: m.name }))} initialTown={initial} extras={extras} /></div>;
 }
 
 export default function Hotlines({ searchParams }: { searchParams: Promise<{ bayan?: string | string[] }> }) {

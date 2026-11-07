@@ -28,7 +28,7 @@ describe("hotlines", () => {
     expect(r.local.length).toBeGreaterThan(0);
     expect(r.local.every((h) => h.scope === "calapan-city")).toBe(true);
     expect(r.province).toEqual(getHotlines("province"));
-    expect(hotlinesForBayan("baco").local).toEqual([]);
+    expect(hotlinesForBayan("province").local).toEqual([]);
     expect(hotlinesForBayan(undefined).local).toEqual([]);
     expect(hotlinesForBayan("not-a-town").local).toEqual([]);
   });

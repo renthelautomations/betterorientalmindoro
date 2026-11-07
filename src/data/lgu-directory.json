@@ -1,0 +1,1469 @@
+{
+ "roxas": {
+  "source": "https://www.roxasormin.com/departments",
+  "offices": [
+   {
+    "name": "Accounting Office",
+    "category": "opisina",
+    "phone": [
+     "09933119901"
+    ],
+    "email": [
+     "accntingoffice.roxasmindoro@gmail.com"
+    ],
+    "head": "Atty. Suzainne S. Tesorero, CPA",
+    "address": "Ground Floor, Municipal Hall, Brgy. Bagumbayan, Roxas"
+   },
+   {
+    "name": "Municipal Agriculture Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 289-7656"
+    ],
+    "email": [
+     "agricultureroxas5@gmail.com"
+    ],
+    "head": "Nerissa C. Gutierrez",
+    "address": "Agriculture Building, Municipal Compound, Roxas"
+   },
+   {
+    "name": "Municipal Assessor's Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 289-7154"
+    ],
+    "email": [
+     "roxasmunicipalassessors@gmail.com"
+    ],
+    "head": "Roselyn F. Copada, REA",
+    "address": "Ground Floor, Municipal Hall, Brgy. Bagumbayan, Roxas"
+   },
+   {
+    "name": "Municipal Budget Office",
+    "category": "opisina",
+    "phone": [
+     "(043 289-2824"
+    ],
+    "email": [
+     "mboroxasormindoro@gmail.com"
+    ],
+    "head": "Aurora C. Siñel, MBA | Municipal Budget Officer",
+    "address": "2/F Municipal Building, Administration St., Bagumbayan, Roxas, Oriental Mindoro"
+   },
+   {
+    "name": "Municipal Civil Registrar's Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 289-7156"
+    ],
+    "email": [
+     "mcr_roxas@yahoo.com"
+    ],
+    "head": "Nerissa R. Quintinio",
+    "address": "Ground Floor, Municipal Hall, Brgy. Bagumbayan, Roxas"
+   },
+   {
+    "name": "Municipal Disaster Risk Reduction and Management Office",
+    "category": "kaligtasan",
+    "phone": [
+     "09707525700"
+    ],
+    "email": [
+     "mdrrmoroxas2024@gmail.com"
+    ],
+    "head": "HILARIO QUEJADA GABAYNO",
+    "address": "MDRRMO Operations Center, Camp Gozar,Bagumabayan, Roxas, Oriental Mindoro"
+   },
+   {
+    "name": "Municipal Engineering Office",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "roxasmeo@gmail.com"
+    ],
+    "head": "Engr. Froiland R. Arimado",
+    "address": "Administration St., 2nd Fl. of Roxas Municipal Building, Roxas, Oriental Mindoro"
+   },
+   {
+    "name": "Municipal Health Office",
+    "category": "kalusugan",
+    "phone": [
+     "09954347921"
+    ],
+    "email": [
+     "rhuroxasormin@gmail.com"
+    ],
+    "head": "Dr. Rainier John S. Buensalida",
+    "address": "Administration St., Bagumbayan, Roxas, Oriental Mindoro"
+   },
+   {
+    "name": "Municipal Planning and Development Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 289-7147"
+    ],
+    "email": [
+     "mpdoroxas2@gmail.com"
+    ],
+    "head": "EnP Benito Q. Ballesteros Jr.",
+    "address": "2nd Floor, Municipal Hall, Brgy. Bagumbayan, Roxas"
+   },
+   {
+    "name": "Municipal Social Welfare and Development Office",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "mswdo@roxas.orientalmindoro.gov.ph"
+    ],
+    "head": "Ms. Edna Castillo Buenviaje",
+    "address": "2nd Floor, Municipal Hall, Brgy. Bagumbayan, Roxas"
+   },
+   {
+    "name": "Municipal Treasurer's Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 289-7640"
+    ],
+    "email": [
+     "roxastreasuryormin@gmail.com"
+    ],
+    "head": "Mr. Remmar P. Bacay",
+    "address": "Ground Floor, Municipal Hall, Brgy. Bagumbayan, Roxas"
+   },
+   {
+    "name": "Office of the Municipal Mayor",
+    "category": "opisina",
+    "phone": [
+     "0912-588-0179"
+    ],
+    "email": [
+     "municipalityofroxasormin@gmail.com"
+    ],
+    "head": "Engr. Jerwin S. Dimapilis",
+    "address": "3nd Floor, Municipal Hall, Brgy. Bagumbayan, Roxas"
+   },
+   {
+    "name": "Office of The Sangguniang Bayan",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "sangguniangbayanofroxas@gmail.com"
+    ],
+    "head": "Hon. Robert Sagado Quiatchon",
+    "address": "3rd Floor, Municipal Hall, Legislative Building, Administration Street, Brgy. Bagumbayan, Roxas"
+   }
+  ],
+  "verifiedAt": "2026-11-08"
+ },
+ "bongabong": {
+  "source": "https://bongabong.gov.ph/departments",
+  "offices": [
+   {
+    "name": "Office of the Municipal Mayor (OMM)",
+    "category": "opisina",
+    "phone": [
+     "0920 969 6020",
+     "0952 453 0799"
+    ],
+    "email": [
+     "municipalityofbongabong@gmail.com"
+    ],
+    "head": "Christon Jervil M. Ligon",
+    "address": "Executive/Legislative Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Office of the Vice Mayor / Sangguniang Bayan",
+    "category": "opisina",
+    "phone": [
+     "0968 689 4708"
+    ],
+    "email": [
+     "sbofficebongabong@gmail.com"
+    ],
+    "head": "Atty. Eduardo Magsino",
+    "address": "Ground Floor, Executive/Legislative Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Business Permit and Licensing Office (BPLO)",
+    "category": "opisina",
+    "phone": [
+     "0917 772 5618"
+    ],
+    "email": [
+     "bplobongabong2025@gmail.com"
+    ],
+    "head": "Mr. Roger M. Mangua"
+   },
+   {
+    "name": "Municipal Civil Registry Office (MCRO)",
+    "category": "opisina",
+    "phone": [
+     "0917 850 3370"
+    ],
+    "email": [
+     "mcrbongabong@gmail.com"
+    ],
+    "head": "Mr. Renel Malacapo",
+    "address": "Ground Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Municipal Treasurer's Office (MTO)",
+    "category": "opisina",
+    "phone": [
+     "0977 817 6205"
+    ],
+    "email": [
+     "mto_bongabong@yahoo.com.ph"
+    ],
+    "head": "Ms. Sarah Anne Mae B. Comia"
+   },
+   {
+    "name": "Municipal Assessor's Office (MASSO)",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "municipalassessorbongabong@gmail.com"
+    ],
+    "head": "Engr. Romeo E. L. Meonada"
+   },
+   {
+    "name": "Municipal Engineering Office (MEO)",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "meo.lgu.bongabong@gmail.com"
+    ],
+    "head": "Engr. Olivia C. Coronel"
+   },
+   {
+    "name": "Office of the Municipal Planning and Development Coordinator (OMPDC)",
+    "category": "opisina",
+    "phone": [
+     "0920 948 9363",
+     "0917 652 3988"
+    ],
+    "email": [
+     "mpdobongabong20@gmail.com"
+    ],
+    "head": "EnP. Gregorio S. Reyes",
+    "address": "2nd Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Municipal Economic Enterprise and Cooperative Development Office (MEECDO)",
+    "category": "opisina",
+    "phone": [
+     "0921 334 8198"
+    ],
+    "email": [
+     "meecdobongabong@gmail.com"
+    ],
+    "head": "Mr. Erminaldo Dela Cruz",
+    "address": "2nd Floor, New Wet Public Market, Poblacion, Bongabong"
+   },
+   {
+    "name": "Local Economic Development and Investment Promotions Office (LEDIPO)",
+    "category": "opisina",
+    "phone": [
+     "0965 120 2490"
+    ],
+    "email": [
+     "ledipobongabong@gmail.com"
+    ],
+    "address": "2nd Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Municipal Social Welfare and Development Office (MSWDO)",
+    "category": "opisina",
+    "phone": [
+     "0951 573 9696"
+    ],
+    "email": [
+     "judymeonada180@gmail.com"
+    ],
+    "head": "Ms. Judy C. Meonada, RSW",
+    "address": "Ground Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Municipal Agriculture Office (MAO)",
+    "category": "opisina",
+    "phone": [
+     "(043) 738 3855",
+     "0939 931 8022"
+    ],
+    "email": [
+     "maobongabong@gmail.com"
+    ],
+    "head": "Mr. Gary Louie A. Sapinit",
+    "address": "2nd Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Public Employment Service Office (PESO)",
+    "category": "opisina",
+    "phone": [
+     "0917 155 0228"
+    ],
+    "email": [
+     "pesoofbongabong2019@gmail.com"
+    ],
+    "head": "Ms. Lolymar C. Rey"
+   },
+   {
+    "name": "Bongabong Manpower Development Center (BMDC)",
+    "category": "opisina",
+    "phone": [
+     "0916 556 9607"
+    ],
+    "email": [
+     "bmdc2023bongabong@gmail.com"
+    ],
+    "head": "Mr. Solon F. Morillo",
+    "address": "Sitio Panlanao, Brgy. Sagana, Bongabong, Oriental Mindoro"
+   },
+   {
+    "name": "Municipal Tourism Office",
+    "category": "opisina",
+    "phone": [
+     "0912 169 2428"
+    ],
+    "email": [
+     "bongabongtourismoffice2025@gmail.com"
+    ],
+    "head": "Ms. Sharon G. Angeles"
+   },
+   {
+    "name": "Municipal Environment and Natural Resources Office (MENRO)",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "menrobongabong2017@gmail.com"
+    ],
+    "head": "Engr. Olivia C. Coronel",
+    "address": "Sagana, Bongabong, Oriental Mindoro"
+   },
+   {
+    "name": "Municipal Health Office (MHO)",
+    "category": "kalusugan",
+    "phone": [
+     "0995 434 7929"
+    ],
+    "email": [
+     "mho.bongabong@gmail.com"
+    ],
+    "head": "Dr. Nikko Jay A. Marquez, MD, DFM",
+    "address": "Bagong Bayan II, Bongabong, Oriental Mindoro"
+   },
+   {
+    "name": "Renato U. Reyes Hospital of Bongabong (RUR)",
+    "category": "kalusugan",
+    "phone": [
+     "0975 214 9689"
+    ],
+    "email": [
+     "rur@yahoo.com"
+    ],
+    "head": "Dra. Joy Romero Salangubang"
+   },
+   {
+    "name": "Municipal Disaster Risk Reduction and Management Office (MDRRMO)",
+    "category": "kaligtasan",
+    "phone": [
+     "0956 764 6381",
+     "0966 359 6385"
+    ],
+    "email": [
+     "orminbongmdrrmo@yahoo.com"
+    ],
+    "head": "Mr. Michael L. Fanoga",
+    "address": "Sitio Panlanao, Brgy. Sagana, Bongabong, Oriental Mindoro"
+   },
+   {
+    "name": "Traffic Management Office (TMO)",
+    "category": "kaligtasan",
+    "phone": [
+     "0935 838 4269",
+     "0917 620 2961",
+     "0927 427 3506"
+    ],
+    "email": [
+     "tmo@bongabong.gov.ph"
+    ],
+    "head": "Mr. Rodel M. Castillo",
+    "address": "2nd Floor, Public Market, Poblacion, Bongabong"
+   },
+   {
+    "name": "Bongabong Police Station (BPS)",
+    "category": "kaligtasan",
+    "phone": [
+     "0963 900 2291",
+     "0998 598 5817"
+    ],
+    "email": []
+   },
+   {
+    "name": "Bongabong Fire Station (BFS)",
+    "category": "kaligtasan",
+    "phone": [
+     "0919 472 5015",
+     "0915 603 1504"
+    ],
+    "email": [],
+    "head": "SFO4 Roderick C. Zafra"
+   },
+   {
+    "name": "Municipal Budget Office (MBO)",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "mgob.budget@gmail.com"
+    ],
+    "head": "Ms. Sharon G. Angeles",
+    "address": "2nd Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Municipal Accounting Office (MACCO)",
+    "category": "opisina",
+    "phone": [
+     "0906 472 6685"
+    ],
+    "email": [
+     "acct.lgubongabong@gmail.com"
+    ],
+    "head": "Ms. Rachel S. Magsino",
+    "address": "Ground Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Human Resource Management Office (HRMO)",
+    "category": "opisina",
+    "phone": [
+     "0963 783 2640"
+    ],
+    "email": [
+     "hrmobongabong@gmail.com"
+    ],
+    "head": "Ms. Areane Jazzel G. Benjamin, CPA",
+    "address": "2nd Floor, Municipal Building, Bongabong, Oriental Mindoro"
+   },
+   {
+    "name": "General Services Office (GSO)",
+    "category": "opisina",
+    "phone": [
+     "0995 074 5762"
+    ],
+    "email": [
+     "lgubongabonggso@gmail.com"
+    ],
+    "head": "Ms. Roselle S. Mauricio",
+    "address": "1st Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Internal Audit Unit (IAU)",
+    "category": "opisina",
+    "phone": [
+     "0916 246 7093"
+    ],
+    "email": [
+     "iaubongabong@gmail.com"
+    ],
+    "head": "Ms. Jeanie M. Dino",
+    "address": "Ground Floor, Municipal Building, Poblacion, Bongabong"
+   },
+   {
+    "name": "Bids and Awards Committee (BAC)",
+    "category": "opisina",
+    "phone": [
+     "0927 879 0126"
+    ],
+    "email": [
+     "bacbongabong@gmail.com"
+    ],
+    "head": "Mr. Renel M. Malacapo",
+    "address": "Poblacion, Bongabong, Oriental Mindoro"
+   },
+   {
+    "name": "Bongabong Youth Development Office",
+    "category": "opisina",
+    "phone": [
+     "09566999779"
+    ],
+    "email": [
+     "lydobongabong@gmail.com"
+    ],
+    "head": "Mr. Marc Ceazar De Castro"
+   }
+  ],
+  "verifiedAt": "2026-11-08"
+ },
+ "pinamalayan": {
+  "source": "https://pinamalayan.gov.ph/pages/hotline.html",
+  "offices": [
+   {
+    "name": "Office of the Municipal Mayor",
+    "category": "opisina",
+    "phone": [
+     "(043) 284-7145",
+     "(043) 284-3146"
+    ],
+    "email": [
+     "mayorsoffice@pinamalayan.gov.ph"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/profile.php?id=61578204489230"
+   },
+   {
+    "name": "Office of the Municipal Administrator",
+    "category": "opisina",
+    "phone": [
+     "(043) 738-4633"
+    ],
+    "email": [
+     "adminoffice@pinamalayan.gov.ph"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/profile.php?id=61556332202676"
+   },
+   {
+    "name": "Municipal Disaster Risk Reduction & Management Office (MDRRMO)",
+    "category": "kaligtasan",
+    "phone": [
+     "(043) 748-6465",
+     "0977-805-6690"
+    ],
+    "email": [
+     "mdrrmo@pinamalayan.gov.ph",
+     "pinamalayan.mdrrmo@gmail.com"
+    ],
+    "address": "Compound E/DOC Building Madrid Avenue cor Jaena St., Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/mdrrmo.pinamalayan/"
+   },
+   {
+    "name": "Business Permits and Licenses Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 738-4479",
+     "(043) 284-4245"
+    ],
+    "email": [
+     "permitsandlicensing@pinamalayan.gov.ph"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/bploadmin"
+   },
+   {
+    "name": "Municipal Planning & Development Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 738-4632"
+    ],
+    "email": [
+     "mpdo@pinamalayan.gov.ph"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/mpdopinamalayan"
+   },
+   {
+    "name": "Municipal Social Welfare and Development Office (MSWDO)",
+    "category": "opisina",
+    "phone": [
+     "(043) 738-5473"
+    ],
+    "email": [
+     "mswdo@pinamalayan.gov.ph"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/mswdo.pinamalayan"
+   },
+   {
+    "name": "Municipal Civil Registrar Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 284-4340"
+    ],
+    "email": [
+     "civilregistrar@pinamalayan.gov.ph"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/mcrpinamalayan"
+   },
+   {
+    "name": "Market Operations Department (MOD)",
+    "category": "opisina",
+    "phone": [
+     "(043) 748-6426",
+     "0985-988-9636"
+    ],
+    "email": [
+     "marketoffice981@gmail.com"
+    ],
+    "address": "Zone II, Pinamalayan",
+    "facebook": "https://www.facebook.com/profile.php?id=61551192270468"
+   },
+   {
+    "name": "Human Resource Management Office (HRMO)",
+    "category": "opisina",
+    "phone": [
+     "(043) 738 9454"
+    ],
+    "email": [
+     "hrmo.mgop@gmail.com"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/HRMOPinamalayan"
+   },
+   {
+    "name": "General Services Office (GSO)",
+    "category": "opisina",
+    "phone": [
+     "0908 895 5639"
+    ],
+    "email": [
+     "gsopinamalayanmo@gmail.com"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/profile.php?id=61587248169157"
+   },
+   {
+    "name": "Zoning Division",
+    "category": "opisina",
+    "phone": [
+     "(043) 738-5809"
+    ],
+    "email": [],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "#"
+   },
+   {
+    "name": "Municipal Accounting Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 738-3526"
+    ],
+    "email": [],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "#"
+   },
+   {
+    "name": "Municipal Assessor's Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 748-6242"
+    ],
+    "email": [
+     "masso.lgupinamalayan@gmail.com"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/massopinamalayan"
+   },
+   {
+    "name": "Municipal Engineering Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 284-7163"
+    ],
+    "email": [
+     "meopina2023@gmail.com"
+    ],
+    "address": "ALS Building, Pilot School, Zone IV, Pinamalayan",
+    "facebook": "https://www.facebook.com/profile.php?id=61551770654969"
+   },
+   {
+    "name": "Pinamalayan Municipal Police Station",
+    "category": "kaligtasan",
+    "phone": [
+     "0915-591-5904",
+     "0998-598-5822"
+    ],
+    "email": [],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/pinamalayan.mps"
+   },
+   {
+    "name": "BFP Pinamalayan",
+    "category": "kaligtasan",
+    "phone": [
+     "0915-603-1440"
+    ],
+    "email": [],
+    "address": "Alvarez St, Cor. Del Pilar St, Zone IV, Pinamalayan",
+    "facebook": "https://www.facebook.com/pinafsbumbero"
+   },
+   {
+    "name": "Philippine Coast Guard Substation",
+    "category": "kaligtasan",
+    "phone": [
+     "0997-297-2550"
+    ],
+    "email": [],
+    "address": "Zone I, Pinamalayan",
+    "facebook": "#"
+   },
+   {
+    "name": "Tourism, History and Development Division (THDD)",
+    "category": "opisina",
+    "phone": [
+     "(043) 748 9082",
+     "0998-540-5836"
+    ],
+    "email": [
+     "pinamalayantourism@gmail.com"
+    ],
+    "address": "Tourist Information, Madrid Boulevard, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/PinamalayanTourism2023"
+   },
+   {
+    "name": "Oriental Mindoro Provincial Hospital (Main Line for Trauma Transf.)",
+    "category": "kalusugan",
+    "phone": [
+     "(043) 288-2104",
+     "(043) 288-2105",
+     "(043) 288-5130"
+    ],
+    "email": [],
+    "facebook": "https://www.facebook.com/profile.php?id=100057400753346"
+   },
+   {
+    "name": "Municipal Health Office (MHO)",
+    "category": "kalusugan",
+    "phone": [
+     "(043) 748-6426"
+    ],
+    "email": [
+     "healthoffice@pinamalayan.gov.ph"
+    ],
+    "facebook": "https://www.facebook.com/profile.php?id=100065548027863"
+   },
+   {
+    "name": "Municipal Budget Office (MBO)",
+    "category": "opisina",
+    "phone": [
+     "043 738 9145"
+    ],
+    "email": [
+     "pinamalayanbudgetoffice@gmail.com"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/MBOPinamalayan"
+   },
+   {
+    "name": "Municipal Agriculture Office (MAgO)",
+    "category": "opisina",
+    "phone": [
+     "043 284 3603"
+    ],
+    "email": [
+     "danny_villacrusis@yahoo.com"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/MAgOInnovation"
+   },
+   {
+    "name": "Public Employment Service Office (PESO/SCO)",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "pesopinamalayan@gmail.com"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/peso.pinamalayan"
+   },
+   {
+    "name": "Municipal Treasury Office (MTO)",
+    "category": "opisina",
+    "phone": [
+     "0916 257 8406"
+    ],
+    "email": [
+     "treasuryoffice.pinamalayan@gmail.com"
+    ],
+    "address": "Madrid Avenue, Zone III, Pinamalayan",
+    "facebook": "https://www.facebook.com/profile.php?id=100064173909259"
+   },
+   {
+    "name": "Pinamalayan Community Hospital / Oriental Mindoro Central District Hospital",
+    "category": "kalusugan",
+    "phone": [],
+    "email": [
+     "omcdh_hospital@yahoo.com.ph"
+    ],
+    "address": "Strong Republic Nautical Hwy, Sitio Mataas na Bayan, Bgry Papandayan, Pinamalayan",
+    "facebook": "https://www.facebook.com/omcdh"
+   }
+  ],
+  "verifiedAt": "2026-11-08"
+ },
+ "san-teodoro": {
+  "source": "https://santeodoro.gov.ph/contact/",
+  "offices": [
+   {
+    "name": "Human Resource Management Office",
+    "category": "opisina",
+    "phone": [
+     "0908 863 1400"
+    ],
+    "email": [],
+    "address": "Poblacion, San Teodoro"
+   },
+   {
+    "name": "Business Permit and Licensing Office",
+    "category": "opisina",
+    "phone": [
+     "0939 276 4233"
+    ],
+    "email": [],
+    "address": "Poblacion, San Teodoro"
+   },
+   {
+    "name": "Municipal Disaster Risk Reduction and Management Office",
+    "category": "kaligtasan",
+    "phone": [
+     "0998 852 5027"
+    ],
+    "email": [],
+    "address": "Poblacion, San Teodoro"
+   },
+   {
+    "name": "Public Employment Service Office",
+    "category": "opisina",
+    "phone": [
+     "0921 475 1140"
+    ],
+    "email": [],
+    "address": "Poblacion, San Teodoro"
+   },
+   {
+    "name": "Municipal Health Office (Rural Health Unit, Calsapa)",
+    "category": "kalusugan",
+    "phone": [
+     "0966 751 5691"
+    ],
+    "email": [],
+    "address": "Rural Health Unit, Calsapa, San Teodoro"
+   }
+  ],
+  "verifiedAt": "2026-11-08"
+ },
+ "province": {
+  "source": "https://ormindoro.gov.ph/contact-us/",
+  "offices": [
+   {
+    "name": "Provincial Administrator's Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7333"
+    ],
+    "email": [
+     "pa@ormindoro.gov.ph"
+    ],
+    "head": "Atty. Earl Ligorio R. Turano II",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Governor's Office",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "go@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Maria Nenita D. Dalupan",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Secretary to the Sangguniang Panlalawigan",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7250"
+    ],
+    "email": [
+     "sp@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Diwata H. Fetizanan",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Planning and Development Coordinator",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7138"
+    ],
+    "email": [
+     "ppdo.ormin@gmail.com"
+    ],
+    "head": "Ms. Lydia Muñeca S. Melgar EnP, MPA",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Human Resource Management Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7160"
+    ],
+    "email": [
+     "phrmo@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Anna Marie DC Reyes",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Treasurer's Office",
+    "category": "opisina",
+    "phone": [
+     "0977 805 0450"
+    ],
+    "email": [
+     "pto@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Christine Myra D. Leviste",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Accounting Office",
+    "category": "opisina",
+    "phone": [
+     "0917 653 3161"
+    ],
+    "email": [
+     "opa@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Althea F. Agutaya",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Budget Office",
+    "category": "opisina",
+    "phone": [
+     "0917 190 8101",
+     "(043) 288 7819"
+    ],
+    "email": [
+     "pbo@ormindoro.gov.ph"
+    ],
+    "head": "Ms. May Anne Joy M. Ylagan",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Legal Office",
+    "category": "opisina",
+    "phone": [
+     "0917 114 8017",
+     "(043) 288 7262"
+    ],
+    "email": [
+     "plo@ormindoro.gov.ph",
+     "plegaloffice2020@gmail.com"
+    ],
+    "head": "Atty. Francheska Laurent L. Feraren",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Assessor's Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7007",
+     "(043) 288 7861"
+    ],
+    "email": [
+     "paopgom@yahoo.com"
+    ],
+    "head": "Mr. Caesar A. Pangilinan, Jr., MPA, REA",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial General Services Office",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "pgso@ormindoro.gov.ph"
+    ],
+    "head": "Atty. Jean Phebie G. De Mesa",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Oriental Mindoro Provincial Hospital",
+    "category": "kalusugan",
+    "phone": [
+     "(043) 288 3077",
+     "(043) 288 7193"
+    ],
+    "email": [
+     "pho@ormindoro.gov.ph",
+     "aomph7193@gmail.com",
+     "omphpgom@gmail.com",
+     "cohdanomph@gmail.com"
+    ],
+    "head": "Dr. Cielo Angela A. Ante, DFM, MHA",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Social Welfare and Development Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7346",
+     "(043) 288 7396"
+    ],
+    "email": [
+     "pswdo@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Zarah C. Magboo",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Agriculture Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7282"
+    ],
+    "email": [
+     "pago@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Christine M. Pine",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Engineering Office",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "peo@ormindoro.gov.ph"
+    ],
+    "head": "Engr. Edylou B. Tejido",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Veterinary Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7743"
+    ],
+    "email": [
+     "provet_ormdo@yahoo.com"
+    ],
+    "head": "Dr. Alfredo Manglicmot",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Botika ng Lalawigan",
+    "category": "kalusugan",
+    "phone": [
+     "(043) 288 7380"
+    ],
+    "email": [
+     "blom@ormindoro.gov.ph"
+    ],
+    "head": "Ms. Eden S. Asilo",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Cooperative Dev't Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7046"
+    ],
+    "email": [
+     "pcdo@ormindoro.gov.ph"
+    ],
+    "head": "Mr. Orlando B. Tizon",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Environment and Natural Resources Office",
+    "category": "opisina",
+    "phone": [
+     "0917 548 5893"
+    ],
+    "email": [
+     "pgom.enro@yahoo.com"
+    ],
+    "head": "Ms. Lily May E. Lim",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Disaster Risk Reduction and Management Office",
+    "category": "kaligtasan",
+    "phone": [
+     "0948 146 0382",
+     "0920 951 3690"
+    ],
+    "email": [
+     "pddrmo@ormindoro.gov.ph"
+    ],
+    "head": "Mr. Vinscent B. Gahol",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Public Employment Services Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7253"
+    ],
+    "email": [
+     "ppeso@ormindoro.gov.ph"
+    ],
+    "head": "Mr. Antonio M. Magnaye, Jr.",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Tourism Office",
+    "category": "opisina",
+    "phone": [
+     "0917 110 8733"
+    ],
+    "email": [
+     "byahengormin@gmail.com"
+    ],
+    "head": "Dr. Don Stepherson V. Calda",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Oriental Mindoro Central District Hospital",
+    "category": "kalusugan",
+    "phone": [
+     "(043) 398-0350"
+    ],
+    "email": [
+     "omcdh@ormindoro.gov.ph"
+    ],
+    "head": "Dr. Dante A. Nuestro, MHA",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Naujan Community Hospital",
+    "category": "kalusugan",
+    "phone": [],
+    "email": [
+     "nch@ormindoro.gov.ph"
+    ],
+    "head": "Dr. Emmanuel M. Hernandez",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Provincial Health Office",
+    "category": "kalusugan",
+    "phone": [],
+    "email": [
+     "pho@ormindoro.gov.ph",
+     "phoormin@yahoo.com"
+    ],
+    "head": "Dr. Maria Consuelo B. Mariñas, MHA",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Oriental Mindoro Southern District Hospital",
+    "category": "kalusugan",
+    "phone": [
+     "(043) 289 7824"
+    ],
+    "email": [
+     "omsdhroxas@gmail.com",
+     "omsdh@ormindoro.gov.ph"
+    ],
+    "head": "Dr. Jocel C. Caranzo, MHA",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Bulalacao Community Hospital",
+    "category": "kalusugan",
+    "phone": [
+     "0917 577 6232"
+    ],
+    "email": [
+     "bch@ormindoro.gov.ph"
+    ],
+    "head": "Dr. Josie Ann L. Marca",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Governor's Social and Medical Assistance Center",
+    "category": "opisina",
+    "phone": [
+     "0998 990 4798"
+    ],
+    "email": [
+     "gsmac@ormindoro.gov.ph"
+    ],
+    "head": "Mr. Rafael C. Cataquis, RN",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Internal Audit Services Division",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7765"
+    ],
+    "email": [
+     "iasd@ormindoro.gov.ph"
+    ],
+    "head": "Mr. Marlon Kenneth A. Agena",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Special Concerns Division",
+    "category": "opisina",
+    "phone": [
+     "(043) 288 7501"
+    ],
+    "email": [
+     "scd@ormindoro.gov.ph"
+    ],
+    "head": "Mr. Junielo P. Alcuran",
+    "address": "Capitol Complex, Calapan City"
+   },
+   {
+    "name": "Chief Security Division",
+    "category": "kaligtasan",
+    "phone": [
+     "(043) 288 7017"
+    ],
+    "email": [
+     "csu@ormindoro.gov.ph"
+    ],
+    "head": "Mr. Asher A. Dalid",
+    "address": "Capitol Complex, Calapan City"
+   }
+  ],
+  "verifiedAt": "2026-11-08"
+ },
+ "gloria": {
+  "source": "http://gloria.gov.ph/contact-us/",
+  "verifiedAt": "2026-11-08",
+  "offices": [
+   {
+    "name": "Municipal Disaster Risk Reduction and Management Office",
+    "category": "opisina",
+    "phone": [
+     "0908 816 5311",
+     "0915 562 0617",
+     "(043) 738 6045"
+    ],
+    "email": [
+     "mdrrmogloria@yahoo.com.ph"
+    ]
+   },
+   {
+    "name": "Gloria Municipal Police Station",
+    "category": "kaligtasan",
+    "phone": [
+     "0998 598 5819",
+     "(043) 738 6571"
+    ],
+    "email": [
+     "gloriamps.r4b@gmail.com"
+    ]
+   },
+   {
+    "name": "Bureau of Fire Protection - Gloria",
+    "category": "kaligtasan",
+    "phone": [
+     "0915 603 1520"
+    ],
+    "email": [
+     "gloriafires@yahoo.com"
+    ]
+   },
+   {
+    "name": "Accounting Office",
+    "category": "opisina",
+    "phone": [
+     "0919 644 4026",
+     "(043) 738 6495"
+    ],
+    "email": [
+     "maco@gloria.gov.ph"
+    ]
+   },
+   {
+    "name": "Administrator's Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 738 2884"
+    ],
+    "email": []
+   },
+   {
+    "name": "Agriculture Office",
+    "category": "opisina",
+    "phone": [
+     "0997 670 2883"
+    ],
+    "email": []
+   },
+   {
+    "name": "Assessor's Office",
+    "category": "opisina",
+    "phone": [
+     "0968 856 8543"
+    ],
+    "email": [
+     "assesorgloria@gmail.com"
+    ]
+   },
+   {
+    "name": "Bamboo Plantation",
+    "category": "opisina",
+    "phone": [
+     "0917 770 5575"
+    ],
+    "email": []
+   },
+   {
+    "name": "Business Permits and Licensing Office",
+    "category": "opisina",
+    "phone": [
+     "0917 138 3411",
+     "(043) 738 5502"
+    ],
+    "email": [
+     "bpls.lgugloria@gmail.com"
+    ]
+   },
+   {
+    "name": "Budget Office",
+    "category": "opisina",
+    "phone": [
+     "0917 770 6359",
+     "(043) 738 6093"
+    ],
+    "email": [
+     "mbo@gloria.gov.ph"
+    ]
+   },
+   {
+    "name": "DILG Office",
+    "category": "opisina",
+    "phone": [
+     "0949 701 9869"
+    ],
+    "email": []
+   },
+   {
+    "name": "Engineering Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 738 6720"
+    ],
+    "email": [
+     "meogloria2017@gmail.com"
+    ]
+   },
+   {
+    "name": "General Services Office",
+    "category": "opisina",
+    "phone": [
+     "0917 165 6792"
+    ],
+    "email": [
+     "gso@gloria.gov.ph"
+    ]
+   },
+   {
+    "name": "Gloria Institute of Science and Technology (GIST)",
+    "category": "opisina",
+    "phone": [
+     "(043) 748 4475"
+    ],
+    "email": [
+     "gist.utpras@gmail.com"
+    ]
+   },
+   {
+    "name": "Human Resource Management Office",
+    "category": "opisina",
+    "phone": [
+     "(043) 734 6065"
+    ],
+    "email": [
+     "gloriahrmo@gmail.com"
+    ]
+   },
+   {
+    "name": "Environment and Natural Resources Office",
+    "category": "opisina",
+    "phone": [
+     "0917 703 2308"
+    ],
+    "email": [
+     "menrooffice5209@gmail.com"
+    ]
+   },
+   {
+    "name": "Social Welfare and Development Office",
+    "category": "opisina",
+    "phone": [
+     "0908 810 0136"
+    ],
+    "email": [
+     "mswdogloria@yahoo.com"
+    ]
+   },
+   {
+    "name": "Public Employment Services Office",
+    "category": "opisina",
+    "phone": [
+     "0915 562 0617",
+     "0998 580 4784"
+    ],
+    "email": [
+     "peso_gloria@yahoo.com.ph"
+    ]
+   },
+   {
+    "name": "Planning and Development Office",
+    "category": "opisina",
+    "phone": [
+     "0917 826 7882",
+     "(043) 738 5833"
+    ],
+    "email": [
+     "mpdo_gloria@yahoo.com"
+    ]
+   },
+   {
+    "name": "Civil Registrar's Office",
+    "category": "opisina",
+    "phone": [
+     "0917 770 8194",
+     "(043) 738 6711"
+    ],
+    "email": [
+     "municipalityregistar.gloria@yahoo.com"
+    ]
+   },
+   {
+    "name": "Sangguniang Bayan Office",
+    "category": "opisina",
+    "phone": [
+     "0917 139 6167",
+     "(043) 738 5833"
+    ],
+    "email": []
+   },
+   {
+    "name": "Slaughter House",
+    "category": "opisina",
+    "phone": [
+     "0917 770 5569"
+    ],
+    "email": []
+   },
+   {
+    "name": "Youth and Sports Development",
+    "category": "opisina",
+    "phone": [
+     "0915 562 0617",
+     "0908 816 5311"
+    ],
+    "email": []
+   },
+   {
+    "name": "Tourism Office",
+    "category": "opisina",
+    "phone": [
+     "0917 154 5385",
+     "(043) 748 9304"
+    ],
+    "email": [
+     "tourismgloria@gmail.com",
+     "tourism@gloria.gov.ph"
+    ]
+   }
+  ]
+ }
+}

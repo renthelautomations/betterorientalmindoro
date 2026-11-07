@@ -19,6 +19,9 @@ import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import { getBarangays, getMunicipalities, getMunicipality } from "@/lib/municipalities";
 import { fmtInt, fmtPct, fmtPeso, getProvinceStats, getStats, popGrowth } from "@/lib/stats";
 import { hotlinesForBayan } from "@/lib/hotlines";
+import LguDirectory from "@/components/site/LguDirectory";
+import { getLguDirectory } from "@/lib/lgu-directory";
+import LguContactCard from "@/components/site/LguContactCard";
 import ProjectRow from "@/components/site/ProjectRow";
 import { getProjects } from "@/lib/projects";
 import { getProvince, getTown, sharedSurnames, surnameOf, titleCase, winnersGrid } from "@/lib/dynasties";
@@ -90,6 +93,7 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
     ) },
     { id: "hotlines", label: "town.hotlines", badge: String(local.length + province.length), panel: (
       <div className="space-y-6">
+        <LguContactCard slug={m.slug} name={m.name} />
         {local.length ? (
           <div><p className={h3}><T k="town.in" /> {m.name}</p><div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{local.map((h) => <HotlineTile key={h.id} h={h} tone={h.category} />)}</div></div>
         ) : <BayanEmpty title="bayan.nohot" body="bayan.nohot.p" name={m.name} />}
@@ -99,6 +103,7 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
         <Link href="/hotlines" className={link}><T k="bayan.allhot" /></Link>
       </div>
     ) },
+    ...(getLguDirectory(m.slug) ? [{ id: "direktoryo", label: "lgu.dir.tab", badge: String(getLguDirectory(m.slug)!.offices.length), panel: <LguDirectory slug={m.slug} name={m.name} /> }] : []),
     { id: "proyekto", label: "town.projects", badge: String(projects.length), panel: projects.length ? (
       <SplitSticky side={<div><p className={h3}><T k="bayan.status.h" /></p><BigDonut slices={slices} format={(n) => n.toLocaleString("en-PH")} centerLabel="bayan.projects.lc" /></div>}>
         <div className="space-y-6">
