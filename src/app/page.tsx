@@ -18,7 +18,7 @@ export default function Home() {
   const slugs = Object.fromEntries(towns.map((m) => [m.pcode, m.slug]));
   const pop = getProvinceStats().population.at(-1);
   // Only numbers confirmed against the province's published list.
-  const hotlines = getHotlines("province").filter((h) => h.confirmed);
+  const hotlines = getHotlines("province").filter((h) => h.confirmed && /^(Police|Fire|Public Safety)$|Operations and Warning/.test(h.name)).slice(0, 4);
   return (
     <main>
       <HeroBg variant="banners">

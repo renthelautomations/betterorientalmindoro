@@ -1,3 +1,4 @@
+import { cleanTitle } from "@/lib/projects";
 import type { Metadata } from "next";
 import Link from "next/link";
 import BayanFrame, { SeeAll } from "@/components/site/BayanFrame";
@@ -31,7 +32,7 @@ export default async function Proyekto({ params }: PageProps<"/bayan/[slug]/proy
             <h2 id="top-h" className="text-sm font-semibold tracking-widest text-black/60">PINAKAMALALAKING PROYEKTO ({all.length.toLocaleString("en-PH")} KABUUAN)</h2>
             <ul className="mt-3 divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
               {top.map((p) => (
-                <li key={p.id}><Link href={`/proyekto/${p.id}`} className="flex min-h-11 flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-4 py-3 hover:bg-black/5"><span className="min-w-0 break-words text-sm font-medium">{p.title}</span><span className="text-sm tabular-nums text-black/70">{peso(p.cost)}{p.year ? ` · ${p.year}` : ""}{p.status ? ` · ${p.status}` : ""}</span></Link></li>
+                <li key={p.id}><Link href={`/proyekto/${p.id}`} className="flex min-h-11 flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-4 py-3 hover:bg-black/5"><span className="min-w-0 break-words text-sm font-medium">{cleanTitle(p.title)}</span><span className="text-sm tabular-nums text-black/70">{peso(p.cost)}{p.year ? ` · ${p.year}` : ""}{p.status ? ` · ${p.status}` : ""}</span></Link></li>
               ))}
             </ul>
             <SeeAll href={`/proyekto?bayan=${slug}`}>Lahat ng proyekto sa {m.name}</SeeAll>

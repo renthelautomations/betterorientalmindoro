@@ -15,17 +15,20 @@ The story and tagline of the site is **MaHalTaNa**, the four icons of the provin
 
 ## What is in it
 
+The site is organised as **hubs** (browse many things) and **records** (one thing in depth). The top menu has four doors: MaHalTaNa, Bayan, Serbisyo, Datos. Visual design comes from the design kit in `src/components/kit`.
+
 | Route | What it shows |
 |---|---|
-| `/` | Home: the four MaHalTaNa doors and quick links |
-| `/ma` `/hal` `/ta` `/na` | One story page per icon (the Mangyan page is a placeholder until communities approve content) |
-| `/bayan`, `/bayan/[slug]` | Province map and a page for each of the 14 municipalities and Calapan City: barangays, hotlines, DPWH projects, statistics |
-| `/hotlines` | Province hotlines, each with its source and the date checked |
-| `/serbisyo` | Services directory (sourced from the Provincial Citizen's Charter; every entry marked draft) |
-| `/estatistika` | Population, income class and finance by municipality |
-| `/proyekto` | DPWH infrastructure projects in the province |
-| `/badyet` | FY2027 national budget for the two congressional districts, NEP against the House bill |
-| `/dynasties`, `/dynasties/[town]` | Election results and repeated surnames, 2001-2025 |
+| `/` | Home: search, province map, call strip, the four pillars, the province in numbers |
+| `/mahaltana`, `/ma` `/hal` `/ta` `/na` | The four story pages (the Mangyan page is a placeholder until communities approve content) |
+| `/bayan`, `/bayan/[slug]` | Province map with a preview panel; a record per bayan with tabs `/tulong`, `/proyekto`, `/halalan`, `/datos` |
+| `/serbisyo`, `/serbisyo/[category]/[service]` | Services by life event and category, with steps and requirements (sourced from the Provincial Citizen's Charter; every entry marked draft) |
+| `/hotlines` | Province hotlines, selectable by bayan, each with its source and the date checked |
+| `/datos` | Hub for the four data pages below |
+| `/estatistika` | Population, income class and finance; shaded map, ranking and two-bayan compare |
+| `/proyekto`, `/proyekto/[id]` | DPWH projects: map, filters, and a record per project |
+| `/badyet` | FY2027 national budget for the two congressional districts, NEP beside the House bill |
+| `/dynasties`, `/dynasties/[town]` | Election winners by year and repeated surnames, 2001-2025 |
 | `/terms` `/privacy` `/accessibility` `/faq` | Legal and help pages |
 
 ## Tech stack
@@ -97,7 +100,7 @@ Data is snapshotted into the repository so the site never depends on an upstream
 
 ```
 src/app/          routes (App Router)
-src/components/   UI components, grouped by feature
+src/components/   UI components (kit/ is the design kit; site/ is glue built from it)
 src/lib/          data access and pure logic, each with a .test.ts
 src/data/         committed data snapshots
 public/data/      Oriental Mindoro boundaries (GeoJSON)
