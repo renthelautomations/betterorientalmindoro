@@ -36,7 +36,7 @@ export default function Serbisyo() {
               <li key={e.slug} className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
                 <PatternStrip slug={cat} />
                 <div className="flex flex-1 flex-col px-5 pb-4">
-                  <span className="-mt-7 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5"><KitIcon name={CATEGORY_ICON[cat] ?? "doc"} color={lookOf(cat).color} className="h-7 w-7" /></span>
+                  <span className="relative z-10 -mt-7 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow ring-1 ring-black/5"><KitIcon name={CATEGORY_ICON[cat] ?? "doc"} color={lookOf(cat).color} className="h-7 w-7" /></span>
                   <h3 className="mt-3 font-serif text-xl font-bold leading-snug"><T k={`svc.ev.${e.slug}`} /></h3>
                   <p className="mt-1 text-sm text-black/70"><T k={`svc.ev.${e.slug}.b`} /></p>
                   <ul className="mt-3 flex flex-col gap-1 border-t border-black/10 pt-2">
