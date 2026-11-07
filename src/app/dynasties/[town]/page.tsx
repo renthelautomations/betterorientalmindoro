@@ -7,6 +7,8 @@ import DynTownViz from "@/components/site/DynTownViz";
 import DynFinder from "@/components/site/DynFinder";
 import DynSurnames from "@/components/site/DynSurnames";
 import { WinnersGrid } from "@/components/site/DynGrid";
+import WinnersViews from "@/components/site/WinnersViews";
+import { townSeats } from "@/components/site/dynSeats";
 import { TAccordion, TBreadcrumbs, TF, TPageTitle,  } from "@/components/site/DynBits";
 import { posKey } from "@/components/site/dynKeys";
 import { T } from "@/lib/i18n/i18n";
@@ -32,7 +34,7 @@ export default async function TownDynasties({ params }: PageProps<"/dynasties/[t
   const names = getMunicipalities().filter((x) => p.towns.includes(x.slug));
   const years = p.elections.map((e) => e.year);
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <TBreadcrumbs items={[{ label: "dyn.home", href: "/" }, { label: "dyn.crumb", href: "/dynasties" }, { label: m.name }]} />
       <div className="mt-4"><TPageTitle eyebrow="dyn.eyebrow.dyn" title={m.name} /></div>
       <p className="mt-4 max-w-2xl text-black/75"><TF k="dyn.town.intro" v={[years[0], years.at(-1) ?? ""]} /></p>
@@ -43,8 +45,8 @@ export default async function TownDynasties({ params }: PageProps<"/dynasties/[t
       <div className="mt-3"><DynTownViz contests={t.contests} years={years} /></div>
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.win.h" /></h2>
-      <div className="mt-3"><WinnersGrid towns={[{ slug: town, name: m.name, contests: t.contests }]} years={years} caption="dyn.cap.town" town={m.name} /></div>
-      <ul className="mt-4 space-y-5">
+      <div className="mt-3"><WinnersViews single years={years} towns={[townSeats(town, m.name, t.contests, years)]} table={<WinnersGrid towns={[{ slug: town, name: m.name, contests: t.contests }]} years={years} caption="dyn.cap.town" town={m.name} />} /></div>
+      <ul className="mt-6 grid gap-6 lg:grid-cols-2">
         {GRID_SEATS.map((pos) => (
           <li key={pos}><h3 className="text-sm font-semibold text-black/70"><TF k="dyn.holders" v={[posKey(pos)]} /></h3><OfficeholderTable contests={t.contests} position={pos} /></li>
         ))}

@@ -1,3 +1,4 @@
+import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
 import { T } from "@/lib/i18n/i18n";
 import { TF } from "@/components/site/DynBits";
 import { posKey } from "@/components/site/dynKeys";
@@ -32,17 +33,17 @@ export default function DynTownViz({ contests, years }: { contests: Contest[]; y
   const mayors = contests.filter((c) => c.position === "MAYOR").sort((a, b) => a.year - b.year);
   const unc = mayors.filter((c) => c.uncontested).length;
   const maxC = Math.max(...mayors.map((c) => c.candidates), 1);
-  const fact = (big: React.ReactNode, label: React.ReactNode) => <div className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm"><p className="font-serif text-3xl font-bold text-fiesta-navy">{big}</p><p className="mt-1 text-sm text-black/70">{label}</p></div>;
+  const fact = (icon: KitIconName, color: string, big: React.ReactNode, label: React.ReactNode) => <div className="flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5"><KitIcon name={icon} variant="badge" color={color} className="h-12 w-12 shrink-0" /><div className="min-w-0"><p className="font-serif text-3xl font-bold text-fiesta-navy">{big}</p><p className="mt-1 text-sm text-black/70">{label}</p></div></div>;
 
   return (
     <div className="space-y-6">
       <div className="grid gap-3 sm:grid-cols-3">
-        {fact(String(people), <TF k="dyn.viz.people" v={[mayors.length]} />)}
-        {longest ? fact(<TF k="dyn.viz.n" v={[longest.n]} />, <TF k="dyn.viz.longest" v={[longest.surname ?? "", years[longest.from], years[longest.from + longest.n - 1]]} />) : fact("–", <T k="dyn.viz.nodata" />)}
-        {fact(<TF k="dyn.viz.unc.big" v={[unc, mayors.length]} />, <T k="dyn.viz.unc" />)}
+        {fact("people", "#2b4fa3", String(people), <TF k="dyn.viz.people" v={[mayors.length]} />)}
+        {longest ? fact("calendar", "#2a7f44", <TF k="dyn.viz.n" v={[longest.n]} />, <TF k="dyn.viz.longest" v={[longest.surname ?? "", years[longest.from], years[longest.from + longest.n - 1]]} />) : fact("calendar", "#2a7f44", "–", <T k="dyn.viz.nodata" />)}
+        {fact("check", "#c4431a", <TF k="dyn.viz.unc.big" v={[unc, mayors.length]} />, <T k="dyn.viz.unc" />)}
       </div>
 
-      <figure className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm">
+      <figure className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
         <figcaption id="viz-who-cap" className="mb-3 text-sm font-semibold text-fiesta-navy"><T k="dyn.viz.who" /></figcaption>
         <div className="relative overflow-x-auto" tabIndex={0} role="region" aria-labelledby="viz-who-cap"><div className="min-w-[36rem] space-y-3">
           <div className="grid gap-1 pl-24 text-[11px] tabular-nums text-black/60" style={{ gridTemplateColumns: `repeat(${years.length}, 1fr)` }}>{years.map((y) => <span key={y} className="text-center">{y}</span>)}</div>
@@ -61,7 +62,7 @@ export default function DynTownViz({ contests, years }: { contests: Contest[]; y
       </figure>
 
       {mayors.length > 0 && (
-        <figure className="rounded-2xl border border-black/10 bg-white p-4 shadow-sm">
+        <figure className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
           <figcaption id="viz-cand-cap" className="mb-3 text-sm font-semibold text-fiesta-navy"><T k="dyn.viz.cand" /></figcaption>
           <ul className="flex h-40 items-end gap-2" aria-labelledby="viz-cand-cap">
             {mayors.map((c) => (
