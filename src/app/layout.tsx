@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Fraunces } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import SiteShell from "@/components/site/SiteShell";
 import { SITE } from "@/lib/brand";
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${geist.variable} ${fraunces.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         <SiteShell>{children}</SiteShell>
+        <Analytics />
       </body>
     </html>
   );

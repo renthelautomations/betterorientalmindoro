@@ -13,7 +13,7 @@ export default function Page() {
     <Bilingual
       en={view("This website does not have user accounts and does not collect personal information through forms.", [
         { id: "what", h: "What we use", body: <ul>
-          <li>No analytics or advertising trackers are used.</li>
+          <li>No advertising trackers are used. Vercel Web Analytics counts page views in aggregate without cookies or personal profiles, and the footer visit count is one anonymous number stored in our own database.</li>
           <li>The Hal page loads current weather from Open-Meteo, which receives your IP address as part of the request.</li>
           <li>The hosting provider may keep standard server logs.</li>
         </ul> },
@@ -21,7 +21,7 @@ export default function Page() {
       ])}
       fil={view("Walang user account ang website na ito at hindi ito kumukuha ng personal na impormasyon sa pamamagitan ng mga form.", [
         { id: "what", h: "Ano ang ginagamit namin", body: <ul>
-          <li>Walang ginagamit na analytics o advertising tracker.</li>
+          <li>Walang ginagamit na advertising tracker. Binibilang ng Vercel Web Analytics ang mga pagtingin sa pahina nang pinagsama-sama, walang cookie at walang personal na profile, at ang bilang ng bisita sa footer ay isang anonymous na numero sa sarili naming database.</li>
           <li>Ang pahina ng Hal ay kumukuha ng kasalukuyang lagay ng panahon mula sa Open-Meteo, na tumatanggap ng iyong IP address bilang bahagi ng kahilingan.</li>
           <li>Maaaring magtago ang hosting provider ng karaniwang server logs.</li>
         </ul> },

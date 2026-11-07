@@ -41,6 +41,9 @@ export const HOME = {
   "home.foot.aria": ["Community and credits", "Komunidad at credits"], "home.foot.github": ["Better Oriental Mindoro on GitHub", "Better Oriental Mindoro sa GitHub"],
   "home.foot.discord": ["BetterGov.PH community on Discord", "Komunidad ng BetterGov.PH sa Discord"],
   "home.foot.cited": ["Public data is cited to its source on each page.", "Binabanggit sa bawat pahina ang pinagmulan ng pampublikong datos."],
+  // footer (Filipino drafts await native-speaker review)
+  "foot.visits": ["visits", "bisita"], "foot.explore": ["Explore", "Tuklasin"], "foot.help": ["Get help", "Humingi ng tulong"], "foot.data": ["Data and sources", "Datos at pinagmulan"], "foot.about": ["About", "Tungkol dito"],
+  "foot.call": ["In an emergency, call", "Sa emergency, tumawag sa"],
   "home.foot.built": ["Built by", "Gawa ni"], "home.foot.ver": ["Ver.", "Bers."],
   "home.emerg.aria": ["Emergency numbers", "Mga numero para sa emergency"], "home.emerg": ["Emergency", "Emergency"],
   // 404, error
