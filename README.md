@@ -15,21 +15,22 @@ The story and tagline of the site is **MaHalTaNa**, the four icons of the provin
 
 ## What is in it
 
-The site is organised as **hubs** (browse many things) and **records** (one thing in depth). The top menu has four doors: MaHalTaNa, Bayan, Serbisyo, Datos. Visual design comes from the design kit in `src/components/kit`.
+Every section is **one main page**, with its records laid out on it; each record opens its own detail page. Visual design comes from the design kit in `src/components/kit`.
 
-| Route | What it shows |
-|---|---|
-| `/` | Home: search, province map, call strip, the four pillars, the province in numbers |
-| `/mahaltana`, `/ma` `/hal` `/ta` `/na` | The four story pages (the Mangyan page is a placeholder until communities approve content) |
-| `/bayan`, `/bayan/[slug]` | Province map with a preview panel; a record per bayan with tabs `/tulong`, `/proyekto`, `/halalan`, `/datos` |
-| `/serbisyo`, `/serbisyo/[category]/[service]` | Services by life event and category, with steps and requirements (sourced from the Provincial Citizen's Charter; every entry marked draft) |
-| `/hotlines` | Province hotlines, selectable by bayan, each with its source and the date checked |
-| `/datos` | Hub for the four data pages below |
-| `/estatistika` | Population, income class and finance; shaded map, ranking and two-bayan compare |
-| `/proyekto`, `/proyekto/[id]` | DPWH projects: map, filters, and a record per project |
-| `/badyet` | FY2027 national budget for the two congressional districts, NEP beside the House bill |
-| `/dynasties`, `/dynasties/[town]` | Election winners by year and repeated surnames, 2001-2025 |
-| `/terms` `/privacy` `/accessibility` `/faq` | Legal and help pages |
+| Section | Main page | Detail pages |
+|---|---|---|
+| Home | `/` | |
+| MaHalTaNa | `/mahaltana` (the four pillars) | `/ma` `/hal` `/ta` `/na` (the Mangyan page is a placeholder until communities approve content) |
+| Bayan | `/bayan` (map, chart, sortable table, compare) | `/bayan/[slug]`: one page per bayan with tabs for overview, hotlines, projects and elections |
+| Serbisyo | `/serbisyo` (search, life events, every category) | `/serbisyo/[category]/[service]` (sourced from the Provincial Citizen's Charter; every entry marked draft) |
+| Hotlines | `/hotlines` (selectable by bayan; each number has its source and date checked) | |
+| Proyekto | `/proyekto` (map, filters, by-year chart) | `/proyekto/[id]` |
+| Estatistika | `/estatistika` (shaded map, ranking, compare) | rows open `/bayan/[slug]` |
+| Badyet | `/badyet` (the two districts) | `/badyet/1st`, `/badyet/2nd` |
+| Dinastiya | `/dynasties` (surname network, winners by year) | `/dynasties/[town]` |
+| Help | `/terms` `/privacy` `/accessibility` `/faq` | |
+
+Older URLs redirect (`/datos`, `/bayan/[slug]/tulong` and the other tab routes, `/serbisyo/[category]`); see `next.config.ts`.
 
 ## Tech stack
 
