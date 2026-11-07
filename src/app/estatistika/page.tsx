@@ -1,6 +1,7 @@
 import SmartSearch from "@/components/site/SmartSearch";
 import { getSearchItems } from "@/lib/search-index";
 import TownCards from "@/components/site/TownCards";
+import TownTable from "@/components/site/TownTable";
 import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -97,26 +98,7 @@ export default function Estatistika() {
         <h2 id="rank-h" className="text-sm font-semibold tracking-widest text-black/60"><T k="finance.rank.h" /></h2>
         <p className="mt-1 text-sm text-black/70"><T k="finance.rank.p" /></p>
         <div className="mt-3"><TownCards rows={rows.map((r) => ({ slug: r.m.slug, name: r.m.name, pop: r.pop, area: r.m.areaKm2, brgy: r.brgy, rev: r.rev, cls: r.s?.incomeClass?.value, clsYear: r.s?.incomeClass?.year }))} table={
-        <div className="overflow-x-auto rounded-2xl border border-black/10 bg-white">
-          <table className="w-full min-w-[34rem] text-left text-sm">
-            <caption className="sr-only"><T k="finance.rank.cap" /></caption>
-            <thead className="text-xs uppercase tracking-widest text-black/65">
-              <tr><th scope="col" className="p-3"><T k="town.town" /></th><th scope="col" className="p-3 text-right"><T k="metric.pop" /></th><th scope="col" className="p-3 text-right"><T k="finance.area" /></th><th scope="col" className="p-3 text-right"><T k="finance.brgy" /></th><th scope="col" className="p-3 text-right"><T k="metric.revenue" /></th><th scope="col" className="p-3"><T k="finance.th.class" /></th></tr>
-            </thead>
-            <tbody>
-              {[...rows].sort((a, b) => (b.pop ?? -1) - (a.pop ?? -1)).map((r) => (
-                <tr key={r.m.slug} className="border-t border-black/10">
-                  <th scope="row" className="p-3 font-semibold"><Link href={`/bayan/${r.m.slug}`} className="inline-flex min-h-11 items-center text-fiesta-blue underline">{r.m.name}</Link></th>
-                  <td className="p-3 text-right tabular-nums">{fmtInt(r.pop)}</td>
-                  <td className="p-3 text-right tabular-nums">{fmtInt(r.m.areaKm2)}</td>
-                  <td className="p-3 text-right tabular-nums">{fmtInt(r.brgy)}</td>
-                  <td className="p-3 text-right tabular-nums">{fmtPeso(r.rev)}</td>
-                  <td className="p-3"><IncomeClass value={r.s?.incomeClass?.value} />{r.s?.incomeClass ? ` (${r.s.incomeClass.year})` : ""}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <TownTable rows={rows.map((r) => ({ slug: r.m.slug, name: r.m.name, pop: r.pop, area: r.m.areaKm2, brgy: r.brgy, rev: r.rev, cls: r.s?.incomeClass?.value, clsYear: r.s?.incomeClass?.year }))} />
         } /></div>
         <SourceNote><R k="finance.rank.src" v={[<Link key="b" href="/bayan" className="underline"><T k="nav.towns" /></Link>]} /></SourceNote>
       </section>
