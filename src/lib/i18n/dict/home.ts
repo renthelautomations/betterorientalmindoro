@@ -53,6 +53,10 @@ export const HOME = {
   "home.err.h": ["Something went wrong.", "May nangyaring mali."],
   "home.err.p": ["Something went wrong on our side. Please try again.", "May nangyaring mali sa aming panig. Pakisubukan muli."], "home.err.retry": ["Try again", "Subukan muli"],
   // weather, map
+  // province snapshot (Filipino drafts await native-speaker review)
+  "home.snap.h": ["Current weather · Calapan City", "Kasalukuyang panahon · Lungsod ng Calapan"], "home.snap.more": ["View province statistics", "Tingnan ang estadistika ng lalawigan"], "home.snap.area": ["Land area", "Lawak ng lupa"],
+  "home.snap.cm": ["{0} city · {1} municipalities", "{0} lungsod · {1} bayan"], "home.wx.hum": ["Humidity", "Halumigmig"], "home.wx.kmh": ["km/h wind", "km/h hangin"],
+  "wx.clear": ["Clear sky", "Maaliwalas"], "wx.partly": ["Partly cloudy", "Bahagyang maulap"], "wx.cloudy": ["Cloudy", "Maulap"], "wx.fog": ["Foggy", "Maulap na hamog"], "wx.drizzle": ["Drizzle", "Ambon"], "wx.rain": ["Rain", "Ulan"], "wx.showers": ["Rain showers", "Pag-ulan"], "wx.storm": ["Thunderstorm", "Pagkulog at pagkidlat"],
   "home.wx.err": ["Weather unavailable right now. See PAGASA for forecasts.", "Hindi available ang panahon ngayon. Tingnan ang PAGASA para sa forecast."],
   "home.wx.load": ["Loading weather…", "Kinukuha ang lagay ng panahon…"], "home.wx.now": ["Calapan now:", "Calapan ngayon:"], "home.wx.wind": ["wind", "hangin"],
   "home.map.aria": ["Map of Oriental Mindoro municipalities", "Mapa ng mga bayan ng Oriental Mindoro"],

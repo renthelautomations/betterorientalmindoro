@@ -11,7 +11,9 @@ import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
 import SmartSearch from "@/components/site/SmartSearch";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import { getSearchItems } from "@/lib/search-index";
-import { getMunicipalities } from "@/lib/municipalities";
+import { getMunicipalities, getBarangays } from "@/lib/municipalities";
+import { TF } from "@/components/site/DynBits";
+import HomeSnapshot from "@/components/site/HomeSnapshot";
 import { getHotlines } from "@/lib/hotlines";
 import { getProvinceStats, getStats, fmtInt } from "@/lib/stats";
 import { getProjectStats } from "@/lib/projects";
@@ -27,7 +29,9 @@ export default function Home() {
   const pop = getProvinceStats().population.at(-1);
   // Only numbers confirmed against the province's published list.
   const hotlineCount = getHotlines().length;
-  const hotlines = getHotlines("province").filter((h) => h.confirmed && /^(Police|Fire|Public Safety)$|Operations and Warning/.test(h.name)).slice(0, 4);
+  const brgyTotal = towns.reduce((a, m) => a + getBarangays(m.pcode).length, 0);
+  const areaTotal = towns.reduce((a, m) => a + m.areaKm2, 0);
+  const cities = towns.filter((m) => m.isCity).length;
   return (
     <main>
       <PennantHero>
@@ -41,27 +45,13 @@ export default function Home() {
       <Divider variant="mahaltana" />
 
       <div className="mx-auto max-w-6xl px-4">
-        <Landmark as="section" label="home.help.aria" className="pt-10">
-          <section aria-labelledby="help-h" className="grid gap-6 rounded-3xl bg-fiesta-red/10 p-5 sm:p-7 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:items-center">
-            <div>
-              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#a8281b] text-white"><KitIcon name="alert" className="h-6 w-6" /></span>
-              <h2 id="help-h" className="mt-4 font-serif text-3xl font-bold leading-tight"><T k="home.help.h" /></h2>
-              <div className="mt-5 flex flex-wrap items-center gap-3">
-                <a href="tel:911" className="inline-flex min-h-14 items-center gap-3 rounded-2xl bg-[#a8281b] px-6 font-serif text-3xl font-bold text-white hover:bg-[#8f2015]"><KitIcon name="phone" className="h-6 w-6" />911</a>
-                <Link href="/hotlines" className="inline-flex min-h-11 items-center rounded-xl border-2 border-fiesta-navy px-4 text-sm font-semibold text-fiesta-navy hover:bg-fiesta-navy hover:text-white"><T k="home.help.all" /></Link>
-              </div>
-            </div>
-            {hotlines.length > 0 && (
-              <ul className="grid gap-3 sm:grid-cols-2">
-                {hotlines.map((h) => (
-                  <li key={h.id} className="flex flex-col justify-between gap-3 rounded-2xl bg-white p-4 shadow-sm">
-                    <p className="text-sm font-semibold leading-snug">{h.name}</p>
-                    <a href={tel(h.number)} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-3 font-serif text-lg font-bold whitespace-nowrap text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-5 w-5 shrink-0" />{h.number}</a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
+        <Landmark as="section" label="home.snap.h" className="pt-10">
+          <HomeSnapshot facts={[
+            { icon: "people", value: fmtInt(pop?.value), label: "home.pop", hint: pop ? `Census ${pop.year}` : undefined },
+            { icon: "pin", value: fmtInt(brgyTotal), label: "finance.brgy", hint: undefined },
+            { icon: "mountain", value: fmtInt(Math.round(areaTotal)), label: "home.snap.area", hint: "km²" },
+            { icon: "doc", value: String(towns.length), label: "home.towns", hint: <TF k="home.snap.cm" v={[cities, towns.length - cities]} /> },
+          ]} />
         </Landmark>
 
         <Landmark as="section" label="home.map.aria2" className="py-12">
