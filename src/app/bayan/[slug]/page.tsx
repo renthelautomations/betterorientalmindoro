@@ -1,56 +1,68 @@
-import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import MunicipalityStats from "@/components/stats/MunicipalityStats";
-import HotlineList from "@/components/HotlineList";
+import BayanFrame, { SeeAll } from "@/components/site/BayanFrame";
+import Sparkline from "@/components/site/Sparkline";
+import { bayanParams, peso, requireBayan, topProjects } from "@/components/site/bayanData";
+import { Callout } from "@/components/kit/Parts";
+import { EmptyState } from "@/components/kit/Ui";
+import { getBayanSummary } from "@/lib/bayan";
 import { getHotlines } from "@/lib/hotlines";
-import { getProjects } from "@/lib/projects";
-import { getBarangays, getMunicipalities, getMunicipality } from "@/lib/municipalities";
+import { getMunicipality } from "@/lib/municipalities";
+import { getStats } from "@/lib/stats";
 
-export function generateStaticParams() {
-  return getMunicipalities().map((m) => ({ slug: m.slug }));
-}
+export const generateStaticParams = bayanParams;
 
 export async function generateMetadata({ params }: PageProps<"/bayan/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const m = getMunicipality(slug);
-  return m ? { title: m.name } : {};
+  return m ? { title: m.name, description: `Buod ng ${m.name}: tulong, proyekto, halalan at estatistika.` } : { robots: { index: false } };
 }
 
-export default async function MunicipalityPage({ params }: PageProps<"/bayan/[slug]">) {
+export default async function BayanBuod({ params }: PageProps<"/bayan/[slug]">) {
   const { slug } = await params;
-  const m = getMunicipality(slug);
-  if (!m) notFound();
-  const barangays = getBarangays(m.pcode);
-  const projects = [...getProjects(m.slug)].sort((a, b) => (b.cost ?? 0) - (a.cost ?? 0));
+  const m = requireBayan(slug);
+  const s = getBayanSummary(slug)!;
+  const urgent = [...getHotlines(slug), ...getHotlines("province")].filter((h, i, a) => h.category === "emergency" && h.number !== "911" && a.findIndex((x) => x.number === h.number) === i).slice(0, 2);
+  const projects = topProjects(slug).slice(0, 3);
+  const pop = getStats(slug)?.population ?? [];
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
-      <Link href="/bayan" className="text-sm underline">← Lahat ng bayan</Link>
-      <h1 className="mt-3 font-serif text-3xl font-bold md:text-4xl">{m.name}</h1>
-      <p className="mt-2 text-black/70">
-        {m.isCity ? "Lungsod" : "Bayan"} ng Oriental Mindoro · {m.areaKm2.toLocaleString()} km² · {barangays.length} barangay
-      </p>
-      <MunicipalityStats slug={m.slug} areaKm2={m.areaKm2} barangays={barangays.length} />
-      <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">MGA HOTLINE</h2>
-      <div className="mt-3"><HotlineList rows={getHotlines(m.slug)} /></div>
-      <p className="mt-3 text-sm">Halalan at paulit-ulit na apelyido sa {m.name}: <Link href={`/dynasties/${m.slug}`} className="underline">tingnan dito</Link>.</p>
-      <p className="mt-3 text-sm">Hotlines ng buong lalawigan: <Link href="/hotlines" className="underline">tingnan dito</Link>.</p>
+    <BayanFrame slug={slug} active="buod">
+    <div className="space-y-12">
+      <Callout kind="emergency" title="Kailangan ng tulong ngayon?">
+        Tumawag sa <a className="font-semibold underline" href="tel:911">911</a>
+        {urgent.map((h) => <span key={h.id}>; {h.name}: <a className="font-semibold underline" href={`tel:${h.number.replace(/[^\d+]/g, "")}`}>{h.number}</a></span>)}. <Link className="underline" href={`/bayan/${slug}/tulong`}>Lahat ng numero para sa {m.name}</Link>.
+      </Callout>
 
-      <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">MGA PROYEKTO NG DPWH</h2>
-      {projects.length ? (
-        <>
-          <p className="mt-2 text-sm text-black/70">{projects.length.toLocaleString()} proyekto ayon sa coordinates at pamagat. Ipinapakita ang 10 pinakamalaki. May iba pang proyekto ng lalawigan na hindi tiyak ang bayan; tingnan ang <Link href="/proyekto" className="underline">lahat ng proyekto</Link>.</p>
-          <ul className="mt-3 space-y-2 break-words text-sm">
-            {projects.slice(0, 10).map((p) => <li key={p.id}>{p.title}{p.cost ? ` (₱${Math.round(p.cost).toLocaleString("en-PH")})` : ""}</li>)}
+      <section aria-labelledby="top-proyekto">
+        <h2 id="top-proyekto" className="text-sm font-semibold tracking-widest text-black/60">PINAKAMALALAKING PROYEKTO NG DPWH</h2>
+        {projects.length ? (
+          <ul className="mt-3 divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
+            {projects.map((p) => (
+              <li key={p.id}><Link href={`/proyekto/${p.id}`} className="flex min-h-11 flex-wrap items-baseline justify-between gap-x-4 gap-y-1 px-4 py-3 hover:bg-black/5"><span className="min-w-0 break-words text-sm font-medium">{p.title}</span><span className="text-sm tabular-nums text-black/70">{peso(p.cost)}{p.year ? ` · ${p.year}` : ""}</span></Link></li>
+            ))}
           </ul>
-        </>
-      ) : <p className="mt-2 text-sm text-black/60">Walang naitalang proyekto para sa bayang ito sa dataset.</p>}
+        ) : <EmptyState title="Walang natukoy na proyekto">Walang proyekto ng DPWH na natukoy ang bayan sa dataset. Hindi ito nangangahulugang walang proyekto.</EmptyState>}
+        {s.projectCount > 3 && <SeeAll href={`/bayan/${slug}/proyekto`}>Lahat ng {s.projectCount.toLocaleString("en-PH")} proyekto</SeeAll>}
+      </section>
 
-      <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">MGA BARANGAY</h2>
-      <ul className="mt-3 grid grid-cols-2 gap-x-6 gap-y-1 text-sm md:grid-cols-3">
-        {barangays.map((b) => <li key={b}>{b}</li>)}
-      </ul>
-      <p className="mt-6 text-xs text-black/65">Source: NAMRIA/PSA boundaries via BetterGov Open Data (MIT).</p>
-    </main>
+      <div className="grid gap-12 md:grid-cols-2">
+        <section aria-labelledby="top-apelyido">
+          <h2 id="top-apelyido" className="text-sm font-semibold tracking-widest text-black/60">PAULIT-ULIT NA APELYIDO SA HALALAN</h2>
+          {s.topSurnames.length ? (
+            <ul className="mt-3 divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
+              {s.topSurnames.map((r) => <li key={r.surname} className="flex items-baseline justify-between gap-4 px-4 py-3"><span className="font-serif text-lg font-bold">{r.surname}</span><span className="text-sm text-black/70">{r.seats} na panalo</span></li>)}
+            </ul>
+          ) : <p className="mt-3 text-sm text-black/60">Walang apelyidong hawak ng dalawa o higit pang magkaibang tao sa datos.</p>}
+          <p className="mt-2 text-xs text-black/65">Pattern lang ito sa talaan, hindi patunay ng anumang relasyon.</p>
+          <SeeAll href={`/bayan/${slug}/halalan`}>Halalan sa {m.name}</SeeAll>
+        </section>
+        <section aria-labelledby="pop-trend">
+          <h2 id="pop-trend" className="text-sm font-semibold tracking-widest text-black/60">POPULASYON SA PAGLIPAS NG PANAHON</h2>
+          <div className="mt-3"><Sparkline points={pop.map((p) => ({ year: p.year, value: p.value }))} label={`Populasyon ng ${m.name}`} /></div>
+          <SeeAll href={`/bayan/${slug}/datos`}>Lahat ng estatistika</SeeAll>
+        </section>
+      </div>
+    </div>
+    </BayanFrame>
   );
 }
