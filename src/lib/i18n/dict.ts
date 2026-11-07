@@ -8,6 +8,10 @@ import { FINANCE } from "./dict/finance";
 import { DYN } from "./dict/dyn";
 import { ESTAT } from "./dict/estat";
 import { DOCS } from "./dict/docs";
+import { UXA } from "./dict/uxa";
+import { UXB } from "./dict/uxb";
+import { UXC } from "./dict/uxc";
+import { UXD } from "./dict/uxd";
 
-export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS } as const satisfies Record<string, readonly [string, string]>;
+export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD } as const satisfies Record<string, readonly [string, string]>;
 export type DictKey = keyof typeof DICT;
