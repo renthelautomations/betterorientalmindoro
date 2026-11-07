@@ -141,9 +141,9 @@ async function Hub({ searchParams }: { searchParams: Promise<SP> }) {
         {shown.length && table ? (
           <ProjectsTable rows={shown} names={names} />
         ) : shown.length ? (
-          <ul className="mt-4 grid gap-3 md:grid-cols-2">
+          <ul className="mt-4 grid auto-rows-fr gap-3 md:grid-cols-2">
             {shown.map((p) => (
-              <li key={p.id} className="min-w-0"><ProjectCard id={p.id} title={p.title} bayan={p.municipality ? names[p.municipality] : undefined} year={p.year} status={p.status} cost={p.cost} category={p.category} /></li>
+              <li key={p.id} className="h-full min-w-0"><ProjectCard id={p.id} title={p.title} bayan={p.municipality ? names[p.municipality] : undefined} year={p.year} status={p.status} cost={p.cost} category={p.category} /></li>
             ))}
           </ul>
         ) : (
