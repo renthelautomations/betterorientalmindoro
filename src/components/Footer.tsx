@@ -7,7 +7,6 @@ import { SITE } from "@/lib/brand";
 import pkg from "../../package.json";
 
 const LINKS = [
-  { href: "/sitemap.xml", label: "Sitemap" },
   { href: "/terms", label: "Terms of Use" },
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/accessibility", label: "Accessibility" },
