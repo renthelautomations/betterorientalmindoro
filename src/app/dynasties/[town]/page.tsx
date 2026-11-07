@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Attribution from "@/components/dynasties/Attribution";
 import OfficeholderTable from "@/components/dynasties/OfficeholderTable";
 import DynNote from "@/components/site/DynNote";
+import DynTownViz from "@/components/site/DynTownViz";
 import DynSwitch from "@/components/site/DynSwitch";
 import DynSurnames from "@/components/site/DynSurnames";
 import { WinnersGrid } from "@/components/site/DynGrid";
@@ -37,6 +38,9 @@ export default async function TownDynasties({ params }: PageProps<"/dynasties/[t
       <p className="mt-4 max-w-2xl text-black/75"><TF k="dyn.town.intro" v={[years[0], years.at(-1) ?? ""]} /></p>
       <div className="mt-5"><DynSwitch current={town} towns={names} /></div>
       <div className="mt-5"><DynNote /></div>
+
+      <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.glance.h" /></h2>
+      <div className="mt-3"><DynTownViz contests={t.contests} years={years} /></div>
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.win.h" /></h2>
       <div className="mt-3"><WinnersGrid towns={[{ slug: town, name: m.name, contests: t.contests }]} years={years} caption="dyn.cap.town" town={m.name} /></div>

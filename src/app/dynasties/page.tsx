@@ -9,7 +9,9 @@ import { TBreadcrumbs, TF, TPageTitle } from "@/components/site/DynBits";
 import { T } from "@/lib/i18n/i18n";
 import Link from "next/link";
 import { LinkNetwork } from "@/components/site/LinkNetwork";
-import { getProvince, getTown, provinceSurnames, surnameNetwork, titleCase, type Town } from "@/lib/dynasties";
+import TownEmblem from "@/components/kit/TownEmblem";
+import KitIcon from "@/components/kit/KitIcon";
+import { getProvince, getTown, provinceSurnames, sharedSurnames, surnameNetwork, titleCase, type Town } from "@/lib/dynasties";
 import { getMunicipalities } from "@/lib/municipalities";
 
 export const metadata: Metadata = { title: "Dynasties", description: "Mga apelyidong paulit-ulit sa halalan ng Oriental Mindoro, 2001–2025." };
@@ -61,8 +63,19 @@ export default function Dynasties() {
         <div className="mt-2"><WinnersGrid towns={gridTowns.slice(5)} years={years} caption="dyn.cap.rest" /></div>
       </details>
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.all.h" /></h2>
-      <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
-        {names.map((m) => <li key={m.slug}><Link href={`/dynasties/${m.slug}`} className="flex min-h-11 items-center rounded-xl bg-white px-4 text-sm font-medium text-fiesta-blue underline shadow-sm">{m.name}</Link></li>)}
+      <ul className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {names.map((m) => {
+          const n = sharedSurnames(towns.find((t) => t.slug === m.slug)!.contests).length;
+          return (
+            <li key={m.slug}>
+              <Link href={`/dynasties/${m.slug}`} className="group flex items-center gap-4 rounded-2xl border border-black/10 bg-white p-3 shadow-sm transition hover:border-fiesta-navy/40 hover:shadow-md">
+                <TownEmblem slug={m.slug} name={m.name} className="h-14 w-14 shrink-0" capital={m.slug === "calapan-city"} />
+                <span className="min-w-0 flex-1"><span className="block font-serif text-lg font-bold text-fiesta-navy">{m.name}</span><span className="block text-xs text-black/65">{n ? <TF k="dyn.town.reps" v={[n]} /> : <T k="dyn.town.none" />}</span></span>
+                <KitIcon name="arrow" className="h-5 w-5 shrink-0 text-black/30 transition group-hover:translate-x-0.5 group-hover:text-fiesta-navy" />
+              </Link>
+            </li>
+          );
+        })}
       </ul>
       <Attribution />
     </main>
