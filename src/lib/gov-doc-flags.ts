@@ -4,9 +4,9 @@ import { getEo, getReports, parseEo, type Eo, type Report } from "./gov";
 export const DISCLAIMER = "This is an automatic check of the posted list and scanned documents, not a finding of wrongdoing or an allegation. OCR can misread text; open the PDF to confirm. There may be an ordinary explanation (for example a document not yet posted).";
 export const REPORT_MISTAKE_URL = "https://github.com/renthelautomations/betterorientalmindoro/issues/new";
 
-export type FlagEvidence = { docId: string; page: number | null; quote: string | null; value: string | null };
+export type FlagEvidence = { docId: string; page: number | null; quote: string | null; value: string | number | null };
 export type DocFlag = {
-  id: string; rule: "eo-number-gap" | "eo-duplicate" | "lgsf-quarter-not-listed"; severity: "info" | "review";
+  id: string; rule: string; severity: "info" | "review"; // any rule: this card also shows the procurement flags
   title: string; what: string; evidence: FlagEvidence[]; verify: string[];
   references: { label: string; url: string }[]; confidence: "high" | "medium" | "low"; disclaimer: string;
 };
@@ -128,7 +128,7 @@ export const flagsForDoc = (docId: string, flags: DocFlag[] = allDocFlags()) => 
 /** Values to fill the {0}, {1} slots of the Filipino title/what templates (gova.flag.<rule>.title / .what). */
 export function flagVars(f: DocFlag): string[] {
   const p = f.id.split(":")[1] ?? "";
-  if (f.rule === "eo-number-gap") return [p, f.evidence[0]?.value ?? "", String(f.evidence.length)];
+  if (f.rule === "eo-number-gap") return [p, String(f.evidence[0]?.value ?? ""), String(f.evidence.length)];
   if (f.rule === "eo-duplicate") { const [y, ...k] = p.split("-"); return [k.join("-"), y, String(f.evidence.length)]; }
   const [y, q] = p.split("-"); return [q, y, quarterEnd({ year: +y, q: +q.slice(1) })];
 }

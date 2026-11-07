@@ -1,1 +1,519 @@
-{"source":"https://ormindoro.gov.ph/financial-report/","fetchedAt":null,"items":[]}
+{
+"source": "https://ormindoro.gov.ph/financial-report/",
+"fetchedAt": "2026-11-08",
+"items": [
+{
+"id": "supplemental-budget-ao-937-2026-fy-2026-supplemental-budget-no-4",
+"kind": "supplemental-budget",
+"summary": "Appropriation Ordinance No. 937-2026 approves FY 2026 Supplemental Budget No. 04 of the Provincial Government of Oriental Mindoro, funded entirely from certified savings, with appropriations listed by office and by object of expenditure.",
+"summaryFil": "Inaprubahan ng Provincial Appropriation Ordinance No. 937-2026 ang FY 2026 Supplemental Budget No. 04 ng Provincial Government of Oriental Mindoro, na hinango sa certified savings, at nakalista ang pondo kada opisina at kada object of expenditure.",
+"totalAmount": 174232177.0,
+"amountLabel": "FY 2026 Supplemental Budget No. 04 (total amount)",
+"purposes": [
+"General supervision and control of provincial government programs (Governor's Office)",
+"Strengthening of partnerships/linkages with government councils, leagues and other local bodies",
+"Public Information Services Division",
+"Social Services Sector offices",
+"Economic Services Sector offices"
+],
+"fundSource": "Savings from Current Appropriations (General Fund, 20% Development Fund, 5% LDRRM Fund) and Savings from Continuing Appropriations (General Fund, 20% Development Fund)",
+"period": "FY 2026",
+"pageCount": 75,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "TOTAL  P174,232,177.00"
+},
+{
+"page": 4,
+"quote": "Thirty-Two Thousand One Hundred Seventy-Seven Pesos (P174,232,177.00) is hereby"
+},
+{
+"page": 4,
+"quote": "General Fund (Exhibit A)  111,389,502.00"
+}
+]
+},
+{
+"id": "supplemental-budget-ao-936-2026-fy-2026-supplemental-budget-no-3",
+"kind": "supplemental-budget",
+"summary": "Appropriation Ordinance No. 936-2026 approves FY 2026 Supplemental Budget No. 03 of the Provincial Government of Oriental Mindoro, funded from certified savings, with appropriations listed by office, programme and object of expenditure.",
+"summaryFil": "Inaprubahan ng Provincial Appropriation Ordinance No. 936-2026 ang FY 2026 Supplemental Budget No. 03 ng Provincial Government of Oriental Mindoro, na pinondohan mula sa certified savings, at nakalista ang pondo kada opisina, programa at object of expenditure.",
+"totalAmount": 192193057.55,
+"amountLabel": "FY 2026 Supplemental Budget No. 03 (total amount)",
+"purposes": [
+"General supervision and control of provincial government programs (Governor's Office)",
+"Strengthening of partnerships/linkages with government councils, leagues and other local bodies",
+"Salong Dagitab Festival",
+"Office of the Vice Governor/Sangguniang Panlalawigan",
+"Social Services Sector offices incl. Provincial Health Office"
+],
+"fundSource": "Savings from Current Appropriations and Savings from Continuing Appropriations (General Fund, 20% Development Fund, 5% LDRRM Fund)",
+"period": "FY 2026",
+"pageCount": 93,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "TOTAL  P192,193,057.55"
+},
+{
+"page": 4,
+"quote": "Section 2. Sources of Funds. The sources for the FY 2026 Supplemental Budget No. 03 in the total"
+},
+{
+"page": 4,
+"quote": "General Fund (ExhibitA)  70,368,984.50"
+}
+]
+},
+{
+"id": "supplemental-budget-ao-935-2026-fy-2026-supplemental-budget-no-2",
+"kind": "supplemental-budget",
+"summary": "Appropriation Ordinance No. 935-2026 approves FY 2026 Supplemental Budget No. 02 of the Provincial Government of Oriental Mindoro, funded from savings in the General Fund and the 20% Development Fund.",
+"summaryFil": "Inaprubahan ng Provincial Appropriation Ordinance No. 935-2026 ang FY 2026 Supplemental Budget No. 02 ng Provincial Government of Oriental Mindoro, na pinondohan mula sa savings ng General Fund at 20% Development Fund.",
+"totalAmount": 166279424.23,
+"amountLabel": "FY 2026 Supplemental Budget No. 02 (total amount)",
+"purposes": [
+"General supervision and control of provincial government programs (Governor's Office)",
+"Strengthening of partnerships/linkages with government councils and other local bodies",
+"Counterpart for PRDP, PRNDP, Power, CRGG and other programs",
+"Social Services Sector (Provincial Health Office, hospitals)",
+"Economic Services Sector offices"
+],
+"fundSource": "Savings from Current Appropriations (General Fund; 20% Development Fund) and Savings from Continuing Appropriations (20% Development Fund)",
+"period": "FY 2026",
+"pageCount": 56,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "TOTAL  P166.279,424.23"
+},
+{
+"page": 4,
+"quote": "Twenty-FourPesos&23/100(Pi66,279,424.23),shallbeasfollows:"
+},
+{
+"page": 5,
+"quote": "Counterpart for  %of required  100%of  2.000.000.00"
+}
+]
+},
+{
+"id": "supplemental-budget-ao-934-2026-fy-2026-supplemental-budget-no-1",
+"kind": "supplemental-budget",
+"summary": "Appropriation Ordinance No. 934-2026 approves FY 2026 Supplemental Budget No. 01 of the Provincial Government of Oriental Mindoro, funded from unappropriated surplus and savings, for Governor's Office, sports, IT Park and hospital land items.",
+"summaryFil": "Inaprubahan ng Appropriation Ordinance No. 934-2026 ang FY 2026 Supplemental Budget No. 01 ng Provincial Government of Oriental Mindoro, na pinondohan mula sa unappropriated surplus at savings, para sa Governor's Office, sports, IT Park at lote para sa ospital.",
+"totalAmount": 40108056.6,
+"amountLabel": "FY 2026 Supplemental Budget No. 01 (total amount)",
+"purposes": [
+"General supervision and control of provincial government programs",
+"Strengthening of partnerships/linkages with local bodies",
+"Sports development",
+"Electrification and construction of water system at IT Park, Sta. Isabel, Calapan City",
+"Purchase of lot for expansion of Oriental Mindoro Central District Hospital at Pinamalayan",
+"Emergency assistance and taxes for purchase of lot"
+],
+"fundSource": "Unappropriated Surplus as of Dec. 31, 2025 (General Fund) and Savings from Current Appropriations (General Fund)",
+"period": "FY 2026",
+"pageCount": 27,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "TOTAL  P40,108,056.60"
+},
+{
+"page": 6,
+"quote": "TOTALNEWAPPROPRIATIONS-GENERALFUND  27,108,056.60  13,000,000.00  40.108.056.60"
+},
+{
+"page": 4,
+"quote": "UnappropriatedSurplusasofDec.31,2025-(ExhibitA)"
+}
+]
+},
+{
+"id": "supplemental-budget-pgom-general-fund-supplemental-budget-no-5-2025",
+"kind": "supplemental-budget",
+"summary": "Appropriation Ordinance No. 910-2025 approves FY 2025 Supplemental Budget No. 05 (General Fund) of the Provincial Government of Oriental Mindoro, funded from certified savings and unutilized Revolving Fund balances.",
+"summaryFil": "Inaprubahan ng Appropriation Ordinance No. 910-2025 ang FY 2025 Supplemental Budget No. 05 (General Fund) ng Provincial Government of Oriental Mindoro, na pinondohan mula sa certified savings at hindi nagamit na balanse ng Revolving Fund.",
+"totalAmount": 231658989.2,
+"amountLabel": "FY 2025 Supplemental Budget No. 05 (total amount)",
+"purposes": [
+"Construction of morgue",
+"Construction of Multi-Purpose Building",
+"Construction of day care centers",
+"Potable water system construction/rehabilitation",
+"Provincial Personnel Assistance Program (hospital/health benefits)",
+"Galing at Serbisyo para sa Mindorenyo Action Center (GSMAC)"
+],
+"fundSource": "Unutilized Revolving Fund balances (Trust Fund) reverted to General Fund, and savings from current and continuing appropriations (General Fund, 20% Development Fund, 5% LDRRM Fund)",
+"period": "FY 2025",
+"pageCount": 43,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "(P231,658,989.20) is hereby approved."
+},
+{
+"page": 4,
+"quote": "Statement of Unutilized Balances of Drugs and"
+},
+{
+"page": 4,
+"quote": "203,565.468.94"
+}
+]
+},
+{
+"id": "supplemental-budget-ao-911-2025-fy-2025-supplemental-budget-no-6",
+"kind": "supplemental-budget",
+"summary": "Appropriation Ordinance No. 911-2025 approves FY 2025 Supplemental Budget No. 06: P54,651,729.00 for the General Fund and P34,722.00 for the Botika ng Lalawigan, funded from savings and personal services savings.",
+"summaryFil": "Inaprubahan ng Appropriation Ordinance No. 911-2025 ang FY 2025 Supplemental Budget No. 06: P54,651,729.00 para sa General Fund at P34,722.00 para sa Botika ng Lalawigan, mula sa savings at personal services savings.",
+"totalAmount": 54651729.0,
+"amountLabel": "FY 2025 Supplemental Budget No. 06, General Fund (plus P34,722.00 for Botika ng Lalawigan ng Oriental Mindoro)",
+"purposes": [
+"General supervision and control of provincial government programs",
+"Strengthening of partnerships/linkages with local bodies",
+"Salong Dagitab Festival",
+"Provincial Personnel Assistance Program (hospital/health benefits)",
+"Medicine and medical supplies",
+"Revenue generation and fund utilization"
+],
+"fundSource": "Savings from Current Appropriations (General Fund, 20% Development Fund) and Savings from Continuing Appropriations (General Fund)",
+"period": "FY 2025",
+"pageCount": 75,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "Total  P54,651,729.00"
+},
+{
+"page": 4,
+"quote": "Hundred Fifty-One Thousand Seven Hundred Twenty-Nine Pesos (P54,651,729.00) for the General"
+},
+{
+"page": 4,
+"quote": "Pesos (P34,722.00) for the Botika ng Lalawigan ng Oriental Mindoro"
+}
+]
+},
+{
+"id": "supplemental-budget-fy-2025-pgom-sb-no-7",
+"kind": "supplemental-budget",
+"summary": "Appropriation Ordinance No. 925-2025 approves FY 2025 Supplemental Budget No. 07 (General Fund) of the Provincial Government of Oriental Mindoro, funded from savings and a prior year's adjustment.",
+"summaryFil": "Inaprubahan ng Appropriation Ordinance No. 925-2025 ang FY 2025 Supplemental Budget No. 07 (General Fund) ng Provincial Government of Oriental Mindoro, na pinondohan mula sa savings at prior year's adjustment.",
+"totalAmount": 99194199.24,
+"amountLabel": "FY 2025 Supplemental Budget No. 07, General Fund (total amount)",
+"purposes": [
+"General supervision and control of provincial government programs (Governor's Office)",
+"Strengthening of partnerships/linkages with local bodies",
+"Public Information Services",
+"General Public Services Sector and other sector offices"
+],
+"fundSource": "Prior Year's Adjustment, Savings from Current Appropriations (General Fund) and Savings from Continuing Appropriations (General Fund)",
+"period": "FY 2025",
+"pageCount": 57,
+"confidence": "high",
+"evidence": [
+{
+"page": 5,
+"quote": "Total  P99,194,199.24"
+},
+{
+"page": 5,
+"quote": "Provincial Government of Oriental Mindoro (PGOM),in the total amount of Ninety-Nine Million One"
+},
+{
+"page": 5,
+"quote": "1.2.Statement of Supplemental Appropriations FY2025;"
+}
+]
+},
+{
+"id": "other-sb8-2025",
+"kind": "other",
+"summary": "Appropriation Ordinance No. 931-2025 approves FY 2025 Supplemental Budget No. 08: P100,230,000.00 for the General Fund and P79,000.00 for the Botika ng Lalawigan, funded from reverted payables and savings.",
+"summaryFil": "Inaprubahan ng Appropriation Ordinance No. 931-2025 ang FY 2025 Supplemental Budget No. 08: P100,230,000.00 para sa General Fund at P79,000.00 para sa Botika ng Lalawigan, mula sa reversion ng accounts payable at savings.",
+"totalAmount": 100230000.0,
+"amountLabel": "FY 2025 Supplemental Budget No. 08, General Fund (plus P79,000.00 for Botika ng Lalawigan ng Oriental Mindoro)",
+"purposes": [
+"General Public Services Sector",
+"Social Services Sector (Provincial Health Office and provincial hospitals)",
+"Economic Services Sector (incl. Tourism)",
+"Other Services Sector (incl. PDRRMO)"
+],
+"fundSource": "Reversion of Accounts Payable and savings from current and continuing appropriations (General Fund)",
+"period": "FY 2025",
+"pageCount": 14,
+"confidence": "high",
+"evidence": [
+{
+"page": 3,
+"quote": "Total  P100,230,000.00"
+},
+{
+"page": 3,
+"quote": "Reversion of Accounts Payable-Exhibit A  4,241,190.00"
+},
+{
+"page": 4,
+"quote": "Total  P79,000.00"
+}
+]
+},
+{
+"id": "other-gao-927-2026-fy-2026-annual-budget-reposted-compressed",
+"kind": "other",
+"summary": "General Appropriation Ordinance No. 927-2025 authorizes the FY 2026 Annual Budget of the Provincial Government of Oriental Mindoro. It certifies P3,422,474,295.00 in estimated funding sources for the General Fund. The appropriation total is not readable from the scan.",
+"summaryFil": "Pinahihintulutan ng General Appropriation Ordinance No. 927-2025 ang FY 2026 Annual Budget ng Provincial Government of Oriental Mindoro. Sertipikado ang P3,422,474,295.00 na tinatayang pondo para sa General Fund. Hindi mabasa sa scan ang kabuuang appropriation; tingnan ang PDF.",
+"totalAmount": 3422474295.0,
+"amountLabel": "Total estimated income or funding sources, General Fund (Section 2, Certified Actually Available Sources of Funds)",
+"purposes": [
+"Personal Services",
+"Maintenance and Other Operating Expenses",
+"Special Purpose Appropriations (GSMAC, cost sharing counterpart, Aid to Barangays)",
+"Botika ng Lalawigan ng Oriental Mindoro (BLOM) budget"
+],
+"fundSource": "National Tax Allotment (P3,153,362,139.00) and local sources (P269,112,156.00), as printed",
+"period": "FY 2026",
+"pageCount": 163,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "Section 2.Certified Actually Available Sources of Funds: As stipulated in Local Budget"
+},
+{
+"page": 5,
+"quote": "Total RegularIncome  3,422,474,295.00"
+},
+{
+"page": 5,
+"quote": "Total External Sources  3,153,362,139.00"
+}
+]
+},
+{
+"id": "other-ab-fy-2026",
+"kind": "other",
+"summary": "General Appropriation Ordinance No. 927-2025 authorizes the FY 2026 Annual Budget of the Provincial Government of Oriental Mindoro. It certifies P3,422,474,295.00 in estimated funding sources for the General Fund. The appropriation total is not readable from the scan.",
+"summaryFil": "Pinahihintulutan ng General Appropriation Ordinance No. 927-2025 ang FY 2026 Annual Budget ng Provincial Government of Oriental Mindoro. Sertipikado ang P3,422,474,295.00 na tinatayang pondo para sa General Fund. Hindi mabasa sa scan ang kabuuang appropriation; tingnan ang PDF.",
+"totalAmount": 3422474295.0,
+"amountLabel": "Total estimated income or funding sources, General Fund (Section 2, Certified Actually Available Sources of Funds)",
+"purposes": [
+"Personal Services",
+"Maintenance and Other Operating Expenses",
+"Special Purpose Appropriations (GSMAC, cost sharing counterpart, Aid to Barangays)",
+"Botika ng Lalawigan ng Oriental Mindoro (BLOM) budget"
+],
+"fundSource": "National Tax Allotment (P3,153,362,139.00) and local sources (P269,112,156.00), as printed",
+"period": "FY 2026",
+"pageCount": 162,
+"confidence": "high",
+"evidence": [
+{
+"page": 4,
+"quote": "Section 2.Certified Actually Available Sources of Funds: As stipulated in Local Budget"
+},
+{
+"page": 5,
+"quote": "TOTALAVAILABLERESOURCES  P3,422,474,295.00"
+},
+{
+"page": 5,
+"quote": "Total External Sources  3,153,362,139.00"
+}
+]
+},
+{
+"id": "lgsf-lgsf-report-on-fund-utilization-and-status-of-program-projec",
+"kind": "lgsf",
+"summary": "LGSF quarterly report as of September 30, 2026 listing four projects: food assistance (FY 2024), a Multi-Purpose Building at Barangay Ilaya (FY 2025), rice distribution (FY 2026) and a Multi-Purpose Building at Sta. Isabel (FY 2026). No overall total is printed.",
+"summaryFil": "Quarterly na ulat ng LGSF hanggang Setyembre 30, 2026 na naglilista ng apat na proyekto: food assistance (FY 2024), Multi-Purpose Building sa Barangay Ilaya (FY 2025), pamamahagi ng bigas (FY 2026) at Multi-Purpose Building sa Sta. Isabel (FY 2026). Walang kabuuang halagang nakalimbag.",
+"totalAmount": null,
+"amountLabel": null,
+"purposes": [
+"Assistance to indigent individuals or families - food assistance (1,666 beneficiaries)",
+"Multi-Purpose Building, Barangay Ilaya, Calapan City",
+"Rice distribution project, provincewide (55,000 beneficiaries)",
+"Multi-Purpose Building, Barangay Sta. Isabel, Calapan City"
+],
+"fundSource": "Local Government Support Fund (LGSF) - Financial Assistance to Local Government Units",
+"period": "For the Quarter Ended September 30, 2026",
+"pageCount": 1,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "FortheQuarterEndedSeptember30,2026"
+},
+{
+"page": 1,
+"quote": "Plan submitted to DOH on"
+},
+{
+"page": 1,
+"quote": "132,000,000.00"
+}
+]
+},
+{
+"id": "lgsf-lgsf-report-on-fund-utilization-and-status-of-program-projec-2",
+"kind": "lgsf",
+"summary": "LGSF quarterly report for the quarter ended June 30, 2026 on three projects: food assistance (FY 2024), a Multi-Purpose Building at Barangay Ilaya (FY 2025) and provincewide rice distribution (FY 2026). No overall total is printed.",
+"summaryFil": "Quarterly na ulat ng LGSF para sa quarter na nagtapos noong Hunyo 30, 2026 tungkol sa tatlong proyekto: food assistance (FY 2024), Multi-Purpose Building sa Barangay Ilaya (FY 2025) at provincewide na pamamahagi ng bigas (FY 2026). Walang kabuuang halagang nakalimbag.",
+"totalAmount": null,
+"amountLabel": null,
+"purposes": [
+"Assistance to indigent individuals or families - food assistance",
+"Multi-Purpose Building, Barangay Ilaya, Calapan City",
+"Rice distribution project, provincewide (55,000 beneficiaries)"
+],
+"fundSource": "Local Government Support Fund (LGSF) - Financial Assistance to Local Government Units",
+"period": "For the Quarter Ended June 30, 2026",
+"pageCount": 1,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "FortheQuarterEnded June30,2026"
+},
+{
+"page": 1,
+"quote": "132,000,000.00  132,000,000.00"
+},
+{
+"page": 1,
+"quote": "Plan and Site"
+}
+]
+},
+{
+"id": "lgsf-lgsf-report-on-fund-utilization-and-status-of-program-projec-3",
+"kind": "lgsf",
+"summary": "LGSF quarterly report for the quarter ended March 31, 2026 on two FY 2023 Multi-Purpose Buildings (General Esco, Naujan, and Sta. Isabel, Calapan City), both reported 100% completed. No overall total is printed.",
+"summaryFil": "Quarterly na ulat ng LGSF para sa quarter na nagtapos noong Marso 31, 2026 tungkol sa dalawang FY 2023 Multi-Purpose Building (General Esco, Naujan, at Sta. Isabel, Calapan City), kapwa naiulat na 100% completed. Walang kabuuang halagang nakalimbag.",
+"totalAmount": null,
+"amountLabel": null,
+"purposes": [
+"Multi-Purpose Building, General Esco, Naujan (received 20,000,000.00)",
+"Multi-Purpose Building, Sta. Isabel, Calapan City (received 15,000,000.00)"
+],
+"fundSource": "Local Government Support Fund (LGSF) - Financial Assistance to Local Government Units",
+"period": "For the Quarter Ended March 31, 2026",
+"pageCount": 1,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "ReportonFundUtilizationand Status of Program/Project Implementation"
+},
+{
+"page": 1,
+"quote": "20,000,000.00  19,986,872.98  15,994,225.13"
+},
+{
+"page": 1,
+"quote": "15,000,000.00  14,960,453.72  14,960,453.72"
+}
+]
+},
+{
+"id": "lgsf-lgsf-report-on-fund-utilization-and-status-of-programproject",
+"kind": "lgsf",
+"summary": "LGSF quarterly report for the quarter ended December 31, 2025 on two FY 2023 Multi-Purpose Buildings: Sta. Isabel, Calapan City (100% completed) and General Esco, Naujan (87.49% work accomplishment, suspended due to an electrical concern). No overall total is printed.",
+"summaryFil": "Quarterly na ulat ng LGSF para sa quarter na nagtapos noong Disyembre 31, 2025 tungkol sa dalawang FY 2023 Multi-Purpose Building: Sta. Isabel, Calapan City (100% completed) at General Esco, Naujan (87.49% na natapos, naantala dahil sa isyung elektrikal). Walang kabuuang halagang nakalimbag.",
+"totalAmount": null,
+"amountLabel": null,
+"purposes": [
+"Multi-Purpose Building, General Esco, Naujan (received 20,000,000.00)",
+"Multi-Purpose Building, Sta. Isabel, Calapan City (received 15,000,000.00)"
+],
+"fundSource": "Local Government Support Fund (LGSF) - Financial Assistance to Local Government Units",
+"period": "For the Quarter Ended December 31, 2025",
+"pageCount": 1,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Ended December31,2025"
+},
+{
+"page": 1,
+"quote": "100% completed"
+},
+{
+"page": 1,
+"quote": "15,000,000.00  20,000,000.00"
+}
+]
+},
+{
+"id": "lgsf-local-government-support-fund-financial-assistance-for-the-q",
+"kind": "lgsf",
+"summary": "LGSF quarterly report for the quarter ended September 30, 2025 on two FY 2023 Multi-Purpose Buildings: General Esco, Naujan (87.49% work accomplishment, suspended due to an electrical concern) and Sta. Isabel, Calapan City (100% completed). No overall total is printed.",
+"summaryFil": "Quarterly na ulat ng LGSF para sa quarter na nagtapos noong Setyembre 30, 2025 tungkol sa dalawang FY 2023 Multi-Purpose Building: General Esco, Naujan (87.49% na natapos, naantala dahil sa isyung elektrikal) at Sta. Isabel, Calapan City (100% completed). Walang kabuuang halagang nakalimbag.",
+"totalAmount": null,
+"amountLabel": null,
+"purposes": [
+"Multi-Purpose Building, General Esco, Naujan (received 20,000,000.00)",
+"Multi-Purpose Building, Sta. Isabel, Calapan City (received 15,000,000.00)"
+],
+"fundSource": "Local Government Support Fund (LGSF) - Financial Assistance to Local Government Units",
+"period": "For the Quarter Ended September 30, 2025",
+"pageCount": 1,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "For the Quarter Ended September30,2025"
+},
+{
+"page": 1,
+"quote": "20,000,000.00  19,986,872.98  15,994,225.13"
+},
+{
+"page": 1,
+"quote": "14,960,453.72  14,960,453.72"
+}
+]
+},
+{
+"id": "assistance-philippine-hybrid-energy-system-phesi-inc-annual-program-202",
+"kind": "assistance",
+"summary": "Annual Work Program for 2024 of the Provincial Government of Oriental Mindoro (PGOM-PCDO) for a Small Grant Project for Business Start-up and Expansion, naming Philippine Hybrid Energy Systems, Inc. (PHESI) as generation company. Project cost 70,703.06 from fund source ER-1-94.",
+"summaryFil": "Annual Work Program para sa taong 2024 ng Provincial Government of Oriental Mindoro (PGOM-PCDO) para sa Small Grant Project for Business Start-up and Expansion, na may Philippine Hybrid Energy Systems, Inc. (PHESI) bilang generation company. Project cost na 70,703.06 mula sa fund source na ER-1-94.",
+"totalAmount": 70703.06,
+"amountLabel": "Project Cost - Amount (Small Grant Project for Business Start-up and Expansion)",
+"purposes": [
+"Small Grant Project for Business Start-up and Expansion",
+"Financial grant to qualified cooperatives and associations for livelihood projects",
+"29 household beneficiaries"
+],
+"fundSource": "ER-1-94 (Fund Type DLF; Available ER No. 1-94 Fund)",
+"period": "Annual Work Program for the Year 2024",
+"pageCount": 1,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "ANNUALWORKPROGRAMFORTHEYEAR2024"
+},
+{
+"page": 1,
+"quote": "70,703.06  Amount"
+},
+{
+"page": 1,
+"quote": "ER-1-94"
+}
+]
+}
+]
+}

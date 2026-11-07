@@ -1,1 +1,4817 @@
-{"source":"https://ormindoro.gov.ph/eo/","fetchedAt":null,"items":[]}
+{
+"source": "https://ormindoro.gov.ph/eo/",
+"fetchedAt": "2026-11-08",
+"items": [
+{
+"id": "eo-2026-61",
+"number": 61,
+"year": 2026,
+"summary": "Amends Executive Order No. 59, Series of 2020 by updating the members of the Provincial Technical Working Group (PTWG) for the KOICA/GGGI agriculture value chain project and revising the functions of the Provincial Cooperative Development Office.",
+"summaryFil": "Ina-amyendahan ang Executive Order No. 59, Series of 2020 sa pamamagitan ng pag-update sa mga miyembro ng Provincial Technical Working Group (PTWG) para sa proyekto ng KOICA/GGGI sa agriculture value chain at pagbabago sa mga tungkulin ng Provincial Cooperative Development Office.",
+"topic": "organization",
+"signedDate": "2026-10-21",
+"amends": [
+"Executive Order No. 59, Series of 2020"
+],
+"repeals": [],
+"keyPoints": [
+"Section 1 of EO 59, s. 2020 is amended; the PTWG is reorganized as the focal unit for onsite technical and administrative operations of the Project",
+"Provincial Administrator is Chairperson; Provincial Planning and Development Coordinator is Co-Chairperson",
+"Section 2(e) on the Provincial Cooperative Development Office is restated",
+"All other provisions of EO 59, s. 2020 remain in effect; takes effect upon signing"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.AMENDMENTOFSECTION1.Section1ofExecutiveOrderNo.59,Seriesof2020"
+},
+{
+"page": 2,
+"quote": "SECTION 5.EFFECTIVITY.This ExecutiveOrder shall take effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2026-59",
+"number": 59,
+"year": 2026,
+"summary": "Reconstitutes the Provincial Government's Continuity Core Team, sets its composition, powers and functions, provides for its Public Service Continuity Plan (PSCP), and repeals Executive Order Nos. 18 and 25, Series of 2026.",
+"summaryFil": "Muling binubuo ang Continuity Core Team ng Provincial Government, itinatakda ang komposisyon, kapangyarihan at tungkulin nito, at ang Public Service Continuity Plan (PSCP), at pinawawalang-bisa ang Executive Order Nos. 18 at 25, Series of 2026.",
+"topic": "organization",
+"signedDate": "2026-09-29",
+"amends": [],
+"repeals": [
+"Executive Order No. 18, Series of 2026",
+"Executive Order No. 25, Series of 2026"
+],
+"keyPoints": [
+"Declares policy of continuous delivery of essential public services during emergencies and disasters",
+"Reconstitutes the Continuity Core Team (CCT) as the policy, oversight and coordination body for the PSCP",
+"Provincial Administrator's Office, Provincial HRMO and PDRRMO provide secretariat and administrative support",
+"Repeals EO Nos. 18 and 25, s. 2026"
+],
+"pageCount": 10,
+"confidence": "high",
+"evidence": [
+{
+"page": 10,
+"quote": "SECTION 12. ADMINISTRATIVE SUPPORT. The Provincial Administrator's Office, the"
+},
+{
+"page": 10,
+"quote": "repealed, amended, ormodified accordingly."
+}
+]
+},
+{
+"id": "eo-2026-58",
+"number": 58,
+"year": 2026,
+"summary": "Sets a recommended farmgate price of Php180.00-Php192.00 per kilo liveweight for hogs and a recommended retail pork price of Php300.00-Php360.00 per kilo in Oriental Mindoro, as a guide under Provincial Ordinance No. 208-2026.",
+"summaryFil": "Itinatakda ang iminumungkahing batayang presyo ng buhay na baboy na Php180.00-Php192.00 bawat kilo (liveweight) at iminumungkahing tingiang presyo ng karne ng baboy na Php300.00-Php360.00 bawat kilo sa Oriental Mindoro, bilang gabay alinsunod sa Provincial Ordinance No. 208-2026.",
+"topic": "agriculture",
+"signedDate": "2026-09-29",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Estimated production cost of Php14,027.93 per hog, based on about 90 kg liveweight",
+"Recommended farmgate price: Php180.00-Php192.00 per kilo liveweight",
+"Pork may be sold at about Php300.00-Php360.00 per kilo depending on cut and quality",
+"Section 7 states the recommended price is a guide and parties may agree on other prices"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 2,
+"quote": "Hundred Ninety-Two Pesos (Php180.00-Php192.00) bawat kilo ng liveweight, ang karne"
+},
+{
+"page": 4,
+"quote": "SECTION 7. KATANGIAN NG IMINUMUNGKAHING BATAYANG PRESYO. Ang"
+}
+]
+},
+{
+"id": "eo-2026-57",
+"number": 57,
+"year": 2026,
+"summary": "Repeals Executive Order No. 49, Series of 2021 and revitalizes the \"Bantay ASF sa Barangay\" program for African swine fever prevention, surveillance and response, with component cities and municipalities primarily responsible locally.",
+"summaryFil": "Pinawawalang-bisa ang Executive Order No. 49, Series of 2021 at pinalalakas ang programang \"Bantay ASF sa Barangay\" para sa pag-iwas, pagsubaybay at pagtugon sa African swine fever, kung saan ang mga lungsod at munisipalidad ang pangunahing responsable sa lokal na pagpapatupad.",
+"topic": "agriculture",
+"signedDate": "2026-09-21",
+"amends": [],
+"repeals": [
+"Executive Order No. 49, Series of 2021"
+],
+"keyPoints": [
+"Acts and designations under EO 49, s. 2021 stay valid insofar as consistent with this Order",
+"Component cities and municipalities conduct surveillance, ensure barangay participation and prompt reporting of suspected ASF cases",
+"Province, through ProVet, gives technical assistance, coordination and monitoring",
+"Takes effect immediately upon issuance"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "49, Series of 2021, entitled \"An Executive Order Institutionalizing the 'Bantay ASF sa Barangay"
+},
+{
+"page": 3,
+"quote": "SEcTION 15. EFFEcTIVITY. This Executive Order shall take effect immediately upon its"
+}
+]
+},
+{
+"id": "eo-2026-56",
+"number": 56,
+"year": 2026,
+"summary": "Reconstitutes the Provincial Community-Based Monitoring System (CBMS) Coordinating Board, names its members, and repeals Executive Order No. 14, Series of 2022 and Executive Order No. 23, Series of 2024.",
+"summaryFil": "Muling binubuo ang Provincial Community-Based Monitoring System (CBMS) Coordinating Board, pinangalanan ang mga miyembro nito, at pinawawalang-bisa ang Executive Order No. 14, Series of 2022 at Executive Order No. 23, Series of 2024.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [
+"Executive Order No. 14, Series of 2022",
+"Executive Order No. 23, Series of 2024"
+],
+"keyPoints": [
+"Governor Humerlito A. Dolor is Chairperson of the Board",
+"Co-chairperson is the Chief Statistical Specialist of the Oriental Mindoro Provincial Statistical Office",
+"Members include provincial department heads and a Sangguniang Panlalawigan representative",
+"Implements the composition under CBMS Council Resolution No. 01, Series of 2022"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "MINDORO,AND REPEALING EXECUTIVEORDERNO.14,SERIESOF 2022,AND"
+},
+{
+"page": 2,
+"quote": "Co-chairperson"
+}
+]
+},
+{
+"id": "eo-2026-55",
+"number": 55,
+"year": 2026,
+"summary": "Amends Executive Order No. 19, Series of 2024 by updating the Data Privacy and Protection Committee, designating the Provincial Administrator as Data Protection Officer and a named Division Head as Compliance Officer for Privacy.",
+"summaryFil": "Ina-amyendahan ang Executive Order No. 19, Series of 2024 sa pamamagitan ng pag-update sa Data Privacy and Protection Committee, at pagtalaga sa Provincial Administrator bilang Data Protection Officer at sa isang Division Head bilang Compliance Officer for Privacy.",
+"topic": "appointment",
+"signedDate": "2026-09-02",
+"amends": [
+"Executive Order No. 19, Series of 2024"
+],
+"repeals": [],
+"keyPoints": [
+"Sections 1, 3 and 5 of EO 19, s. 2024 are amended",
+"Provincial Administrator Atty. Earl Ligorio R. Turano II is designated DPO",
+"Mr. Reywel M. Dela Roca, Division Head of the MIS Division, is designated COP",
+"DPO to ensure registration with the National Privacy Commission"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 2,
+"quote": "SECTION 3.Designation of Data Protection Officer (\"DPO\").The Provincial"
+},
+{
+"page": 2,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 2nd day of September, in the"
+}
+]
+},
+{
+"id": "eo-2026-54",
+"number": 54,
+"year": 2026,
+"summary": "Creates a Construction Supervision Team for the DA-PRDP infrastructure subproject, a farm-to-market road with bridge in Victoria and Socorro, names its members from the Provincial Engineer's Office, and sets their duties.",
+"summaryFil": "Lumilikha ng Construction Supervision Team para sa DA-PRDP infrastructure subproject na farm-to-market road na may tulay sa Victoria at Socorro, pinangalanan ang mga miyembro mula sa Provincial Engineer's Office, at itinatakda ang kanilang mga tungkulin.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Team supervises and monitors the DA-PRDP Subproject; the Provincial Governor heads the PPMIU with overall authority",
+"Members include a Project Engineer, Resident Engineer, Site Engineer, Materials Engineer and Document Officer",
+"Costs are charged to Subproject funds and/or other available PGOM funds under applicable rules",
+"Signing date not legible in the OCR text"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1.CREATION AND COMPOSITION.The Construction Supervision Team(\"CST\") is"
+},
+{
+"page": 5,
+"quote": "SECTION 6.SEPARABILITYCLAUSE.If anyprovision of this Executive Order is declared"
+}
+]
+},
+{
+"id": "eo-2026-52",
+"number": 52,
+"year": 2026,
+"summary": "Amends Executive Order No. 09, Series of 2025 and sets guidelines for the Provincial Government's Sectoral Complex, which gives free temporary overnight accommodation to bona fide Oriental Mindoro residents who are in Calapan City for official, medical or essential purposes.",
+"summaryFil": "Ina-amyendahan ang Executive Order No. 09, Series of 2025 at nagtatakda ng mga alituntunin para sa Sectoral Complex ng Provincial Government, na nagbibigay ng libreng pansamantalang tuluyan sa magdamag sa mga totoong residente ng Oriental Mindoro na nasa Calapan City para sa opisyal, medikal o mahalagang layunin.",
+"topic": "organization",
+"signedDate": null,
+"amends": [
+"Executive Order No. 09, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"Accommodation is free and not for leisure, tourism, social visits or parties",
+"Applicants must be bona fide residents and present a government-issued ID",
+"Stays beyond one overnight need documents and PSWDO approval",
+"PSWDO administers the complex; other offices have assigned support roles"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "B. Accommodation under this Executive Order is not intended for leisure,tourism, social"
+},
+{
+"page": 5,
+"quote": "SECTION 10.EFFECTOFAMENDMENT.Except asexpressly amendedherein,EONo.O9"
+}
+]
+},
+{
+"id": "eo-2026-51",
+"number": 51,
+"year": 2026,
+"summary": "Enjoins city and municipal mayors to have their agriculturist's offices submit monthly consolidated swine inventory and supply monitoring reports to the Provincial Veterinarian's Office, not later than the fifth working day of the next month.",
+"summaryFil": "Inaatasan ang mga alkalde ng lungsod at munisipalidad na ipasumite sa kanilang agriculturist's office ang buwanang pinagsama-samang ulat ng swine inventory at supply monitoring sa Provincial Veterinarian's Office, hindi lalampas sa ikalimang araw ng trabaho ng susunod na buwan.",
+"topic": "agriculture",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Applies to city and municipal governments of Oriental Mindoro",
+"Reports cover live swine inventory, farms, production, slaughter, pork products and disease occurrence",
+"Each report is certified by the city or local agriculturist",
+"ProVet may verify reports and require additional information"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. COVERAGE. This Executive Order shall apply to the City and Municipal Governments"
+},
+{
+"page": 2,
+"quote": "SECTION 5.VERIFICATION AND RECONCILIATION OF REPORTS.ProVet mayverify the"
+}
+]
+},
+{
+"id": "eo-2026-53",
+"number": 53,
+"year": 2026,
+"summary": "Continues indefinitely the suspension of the general entry, sale and transportation of frozen pork into and within Oriental Mindoro, with a limited exception for qualified food processors with ProVet approval. Repeals Executive Order No. 48, Series of 2026.",
+"summaryFil": "Ipinagpapatuloy nang walang takdang panahon ang suspensyon ng pangkalahatang pagpasok, pagbebenta at pagdadala ng frozen pork sa Oriental Mindoro, na may limitadong eksepsiyon para sa kwalipikadong food processors na aprubado ng ProVet. Pinawawalang-bisa ang Executive Order No. 48, Series of 2026.",
+"topic": "agriculture",
+"signedDate": "2026-08-28",
+"amends": [],
+"repeals": [
+"Executive Order No. 48, Series of 2026"
+],
+"keyPoints": [
+"Suspends the general authority under Executive Order No. 4, Series of 2025 to bring in frozen pork",
+"Qualified food processors may bring in frozen pork solely as raw material, subject to prior ProVet approval",
+"Processed pork products and lawful transit shipments remain governed by other provisions",
+"Takes effect upon signing and remains in force unless modified, superseded or revoked"
+],
+"pageCount": 3,
+"confidence": "high",
+"evidence": [
+{
+"page": 3,
+"quote": "SECTION 1o.EFFECTIVITY.This Executive Order shall take effect immediately upon signing and"
+},
+{
+"page": 3,
+"quote": "DONEIN THECITYOF CALAPAN, PROVINCEOFORIENTAL MINDORO, this 28th day of August"
+}
+]
+},
+{
+"id": "eo-2026-47",
+"number": 47,
+"year": 2026,
+"summary": "Delegates the Governor's authority to sign and approve certain procurement transactions, documents and official acts to designated officials, lists the documents reserved to the Governor, and repeals Executive Order No. 14, Series of 2025.",
+"summaryFil": "Ipinagkakatiwala sa mga itinalagang opisyal ang awtoridad ng Gobernador na pumirma at mag-apruba ng ilang transaksyon sa procurement, dokumento at opisyal na gawain, inilalahad ang mga dokumentong nakalaan sa Gobernador, at pinawawalang-bisa ang Executive Order No. 14, Series of 2025.",
+"topic": "finance",
+"signedDate": null,
+"amends": [],
+"repeals": [
+"Executive Order No. 14, Series of 2025"
+],
+"keyPoints": [
+"Reserved to the Governor: vouchers over Php500,000.00 and infrastructure vouchers over Php250,000.00",
+"Also reserved: checks for financial assistance over Php100,000.00 and SEF and Trust Fund checks and vouchers",
+"Delegations go to the Provincial Administrator, Executive Assistant IV (GO-MSSD), PHRMO and other designated officials",
+"Delegation is an administrative measure under the New Government Procurement Act and related rules"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "a. All vouchers exceeding Five Hundred Thousand Pesos (Php500,000.00):"
+},
+{
+"page": 1,
+"quote": "SERIESOF2025,ANDFOROTHERPURPOSES"
+}
+]
+},
+{
+"id": "eo-2026-49",
+"number": 49,
+"year": 2026,
+"summary": "Establishes a Provincial Transit Monitoring System, run by the Provincial Veterinarian's Office, to monitor frozen pork and other pork products lawfully passing through Oriental Mindoro in transit.",
+"summaryFil": "Itinatatag ang Provincial Transit Monitoring System, na pinapatakbo ng Provincial Veterinarian's Office, upang subaybayan ang frozen pork at iba pang produktong baboy na legal na dumadaan lamang sa Oriental Mindoro.",
+"topic": "agriculture",
+"signedDate": "2026-08-06",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"ProVet monitors ports, RoRo terminals and other entry and exit points with PNP, Coast Guard, PPA and others",
+"Records arrival and departure, transporter, vehicle, consignor, consignee, route and cargo type and quantity",
+"Periodic reports go to the Governor's Office",
+"Takes effect immediately upon signing"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.ESTABLISHMENTOFTHEPROVINCIALTRANSITMONITORINGSYSTEM.A"
+},
+{
+"page": 2,
+"quote": "SECTION7.EFFECTIVITY.This Executive Ordershall takeeffect immediately upon signing."
+},
+{
+"page": 2,
+"quote": "DONE IN THECITYOF CALAPAN, PROVINCEOF ORIENTAL MINDORO, this 6thday of"
+}
+]
+},
+{
+"id": "eo-2026-25",
+"number": 25,
+"year": 2026,
+"summary": "Amends Executive Order No. 18, Series of 2026 by expanding the composition of the Provincial Public Service Continuity Planning Core Team (PSCP-CCT) and its Technical Working Group (PSCP-TWG) to include more offices and hospitals.",
+"summaryFil": "Ina-amyendahan ang Executive Order No. 18, Series of 2026 sa pamamagitan ng pagpapalawak ng komposisyon ng Provincial Public Service Continuity Planning Core Team (PSCP-CCT) at Technical Working Group (PSCP-TWG) upang isama ang mas maraming tanggapan at ospital.",
+"topic": "organization",
+"signedDate": "2026-06-10",
+"amends": [
+"Executive Order No. 18, Series of 2026"
+],
+"repeals": [],
+"keyPoints": [
+"Section 3 of EO 18 (composition of the PSCP-CCT) is amended",
+"Section 7 of EO 18 (composition of the PSCP-TWG) is amended",
+"Adds representation from provincial offices, departments and hospitals",
+"Takes effect immediately upon signing"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTiON1.AMENDMENTOFSECTiON3OFEO18.Section3ofEO18,entitled\"Composition"
+},
+{
+"page": 5,
+"quote": "SEcTION5.EFFEcTIVITY.This ExecutiveOrder shall takeeffect immediately upon signing"
+}
+]
+},
+{
+"id": "eo-2026-46",
+"number": 46,
+"year": 2026,
+"summary": "Repeals Executive Order No. 42, Series of 2022 and creates the Oriental Mindoro Fiber Industry Development Council as the Province's policy-making, coordinating and advisory body for the abaca and banana fiber industries.",
+"summaryFil": "Pinawawalang-bisa ang Executive Order No. 42, Series of 2022 at nililikha ang Oriental Mindoro Fiber Industry Development Council bilang pangunahing katawan sa paggawa ng patakaran, koordinasyon at pagpapayo para sa industriya ng hibla ng abaca at saging sa Lalawigan.",
+"topic": "agriculture",
+"signedDate": null,
+"amends": [],
+"repeals": [
+"Executive Order No. 42, Series of 2022"
+],
+"keyPoints": [
+"Abolishes the Provincial Abaca Industry Development Council and its Technical Working Group created under EO 42, s. 2022",
+"Council is composed of the Governor, the Provincial Administrator, Sangguniang Panlalawigan members and provincial offices",
+"Duties include policies and plans, approving a Provincial Fiber Industry Development Roadmap, and resource mobilization",
+"Signing day not legible in the OCR text; issued in August 2026"
+],
+"pageCount": 7,
+"confidence": "medium",
+"evidence": [
+{
+"page": 2,
+"quote": "couNcIL.The Provinclal Abaca Industry Development Council and its Technical Working Group"
+},
+{
+"page": 2,
+"quote": "is hereby created the Oriental MindoroFiber Industry Development Council (\"Council\"),which"
+}
+]
+},
+{
+"id": "eo-2026-45",
+"number": 45,
+"year": 2026,
+"summary": "Organizes the celebration of Fiesta MAHAL TANA: the 76th Araw ng Oriental Mindoro, from 14 to 30 November 2026, creates a Technical Working Group, designates focal offices, and repeals Executive Order No. 24, Series of 2025.",
+"summaryFil": "Inoorganisa ang pagdiriwang ng Fiesta MAHAL TANA: ang ika-76 Araw ng Oriental Mindoro, mula 14 hanggang 30 Nobyembre 2026, bumubuo ng Technical Working Group, nagtatalaga ng mga focal office, at pinawawalang-bisa ang Executive Order No. 24, Series of 2025.",
+"topic": "tourism",
+"signedDate": "2026-08-03",
+"amends": [],
+"repeals": [
+"Executive Order No. 24, Series of 2025"
+],
+"keyPoints": [
+"Official theme: \"HIGIT SA LAHAT, PARA SA LAHAT\"",
+"Celebration runs from 14 November 2026 to 30 November 2026",
+"Technical Working Group acts as principal coordinating and implementing body under the Provincial Governor",
+"Takes effect immediately upon signing"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. OFFICIAL THEME. The official theme of Fiesta MAHAL TANA: The 76 Araw ng"
+},
+{
+"page": 5,
+"quote": "SECTION 12. REPEALING CLAUSE. Executive Order No. 24, Series of 2025, is hereby"
+}
+]
+},
+{
+"id": "eo-2026-44",
+"number": 44,
+"year": 2026,
+"summary": "Adds the General Manager of the Mansalay Agriculture and Fisheries Development Cooperative as an additional civil society organization representative in the Provincial Development Council created under Executive Order No. 05, Series of 2026.",
+"summaryFil": "Idinadagdag ang General Manager ng Mansalay Agriculture and Fisheries Development Cooperative bilang karagdagang kinatawan ng civil society organization sa Provincial Development Council na nilikha sa ilalim ng Executive Order No. 05, Series of 2026.",
+"topic": "organization",
+"signedDate": "2026-08-03",
+"amends": [
+"Executive Order No. 05, Series of 2026"
+],
+"repeals": [],
+"keyPoints": [
+"Supplements Section 1(A)(a) of EO 05, s. 2026",
+"Mr. Jeremias Colangoy, Jr. is included as CSO representative",
+"EO 05, s. 2026 otherwise remains in full force and effect",
+"Takes effect immediately upon signing"
+],
+"pageCount": 1,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "enumerated under Section 1(A)a)of Executive Order No.05,Series of 2026, MR."
+},
+{
+"page": 1,
+"quote": "representativeintheProvincial DevelopmentCouncil."
+}
+]
+},
+{
+"id": "eo-2026-43",
+"number": 43,
+"year": 2026,
+"summary": "Creates a Technical Working Group to review Provincial Ordinance No. 45-2015 (the Provincial Investment Code), hold stakeholder consultations, and prepare a draft amendatory ordinance within 90 calendar days.",
+"summaryFil": "Bumubuo ng Technical Working Group upang suriin ang Provincial Ordinance No. 45-2015 (Provincial Investment Code), magsagawa ng konsultasyon sa mga stakeholder, at maghanda ng draft na ordinansang nag-aamyenda sa loob ng 90 araw.",
+"topic": "organization",
+"signedDate": "2026-07-15",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Chaired by the Provincial Administrator",
+"Acts in an advisory and recommendatory capacity only",
+"Provincial Cooperative Development Office serves as Secretariat",
+"Final Report and draft ordinance due within ninety (90) calendar days unless extended"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "(\"TWG)isherebycreatedto reviewProvincial OrdinanceNo.45-2015,otherwiseknownasthe"
+},
+{
+"page": 2,
+"quote": "SECTION 5.TIMELINE.TheTWG shall submit itsFinal Report and draft amendatory ordinance"
+}
+]
+},
+{
+"id": "eo-2026-42",
+"number": 42,
+"year": 2026,
+"summary": "Reconstitutes the Committee on Decorum and Investigation (CODI) that handles sexual harassment complaints in the Provincial Government, sets its members and functions, and repeals Executive Order No. 42, Series of 2009 and Executive Order No. 46, Series of 2020.",
+"summaryFil": "Muling binubuo ang Committee on Decorum and Investigation (CODI) na humahawak ng mga reklamo ng sexual harassment sa Provincial Government, itinatakda ang mga miyembro at tungkulin nito, at pinawawalang-bisa ang Executive Order No. 42, Series of 2009 at Executive Order No. 46, Series of 2020.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [
+"Executive Order No. 42, Series of 2009",
+"Executive Order No. 46, Series of 2020"
+],
+"keyPoints": [
+"CODI receives and investigates complaints of sexual harassment and gender-based sexual harassment in the workplace",
+"Only permanent officials and employees of PGOM are eligible as members",
+"Pending complaints continue to be heard by the reconstituted CODI",
+"Signing date not legible in the OCR text"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 2,
+"quote": "SECTION2.FUNCTIONS.TheCODI shall serveasPGOM'sindependentinternalmechanism"
+},
+{
+"page": 4,
+"quote": "SECTION 10.REPEALINGCLAUSE.ExecutiveOrderNo.42,Seriesof 2009and Executive"
+}
+]
+},
+{
+"id": "eo-2026-41",
+"number": 41,
+"year": 2026,
+"summary": "Amends Section 11 of Executive Order No. 42, Series of 2024 to update the composition of the Provincial Government's Grievance Committee. All other provisions on the Grievance Machinery stay in force.",
+"summaryFil": "Ina-amyendahan ang Section 11 ng Executive Order No. 42, Series of 2024 upang i-update ang komposisyon ng Grievance Committee ng Provincial Government. Nananatiling may bisa ang iba pang probisyon sa Grievance Machinery.",
+"topic": "organization",
+"signedDate": "2026-07-10",
+"amends": [
+"Executive Order No. 42, Series of 2024"
+],
+"repeals": [],
+"keyPoints": [
+"Chairperson is the Provincial Human Resource Management Officer",
+"Names supervisory-rank and rank-and-file employee representatives and alternates, plus a Governor's Representative",
+"Other provisions of EO 42, s. 2024 remain in full force and effect",
+"Takes effect immediately upon signing"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION1.AMENDMENT OF SEcTION 11.Section-11 (Composition of the Grievance"
+},
+{
+"page": 2,
+"quote": "SEcTION 6.EFFEcTIVITY.This Executive Order shall take effect immediately upon signing"
+}
+]
+},
+{
+"id": "eo-2026-40",
+"number": 40,
+"year": 2026,
+"summary": "Creates a Technical Working Group to review, reconcile and validate long-outstanding accounts of the Provincial Government and recommend their proper disposition, with a Final Report targeted within one year.",
+"summaryFil": "Bumubuo ng Technical Working Group upang suriin, i-reconcile at i-validate ang mga matagal nang nakabinbing account ng Provincial Government at magrekomenda ng nararapat na disposisyon, na may Final Report sa loob ng isang taon.",
+"topic": "finance",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Chaired by the Provincial Administrator; members include the Budget Officer, Acting Provincial Treasurer, Acting General Services Officer and Legal Officer",
+"Reviews dormant, unreconciled or unsupported account balances in the books of PGOM",
+"Final Report to the Office of the Governor within one (1) year unless extended",
+"Day of signing is unclear in the OCR text; issued in July 2026"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.CREATIONOFTHETECHNICALWORKINGGROUP.ATechnicalWorkingGroup"
+},
+{
+"page": 2,
+"quote": "The TWG shall endeavorto complete its review and submit its Final Report within one(1)year"
+}
+]
+},
+{
+"id": "eo-2026-48",
+"number": 48,
+"year": 2026,
+"summary": "Temporarily suspends, until 31 August 2026, the authority under Executive Order No. 4, Series of 2025 for the entry, sale and transportation of frozen pork into and within Oriental Mindoro, with a transitory period for existing inventory.",
+"summaryFil": "Pansamantalang sinususpinde, hanggang 31 Agosto 2026, ang awtoridad sa ilalim ng Executive Order No. 4, Series of 2025 para sa pagpasok, pagbebenta at pagdadala ng frozen pork sa Oriental Mindoro, na may transitory period para sa kasalukuyang imbentaryo.",
+"topic": "agriculture",
+"signedDate": "2026-08-03",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Suspension is effective immediately until 31 August 2026",
+"Related implementing provisions of EO 4, s. 2025 on frozen pork also remain suspended",
+"Frozen pork already lawfully in the Province may be sold until stock runs out, if inspected and traceable to the declared inventory",
+"No additional importation allowed unless later authorized"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "effective immediatelyuntil 31August2026."
+},
+{
+"page": 2,
+"quote": "DONE IN THE CITY OF CALAPAN, PROVINCE OF ORIENTAL MINDORO, this 3rd day"
+}
+]
+},
+{
+"id": "eo-2026-39",
+"number": 39,
+"year": 2026,
+"summary": "Authorizes and directs a one-time cleansing of the Provincial Government's property, plant and equipment (PPE) records under COA Circular No. 2020-006 and creates a PPE Cleansing Committee.",
+"summaryFil": "Pinahihintulutan at inuutusan ang isang beses na paglilinis ng mga talaan ng property, plant and equipment (PPE) ng Provincial Government alinsunod sa COA Circular No. 2020-006 at lumilikha ng PPE Cleansing Committee.",
+"topic": "finance",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cleansing covers physical inventory, reconciliation of accounting and property records and correction of discrepancies",
+"Committee is chaired by the Provincial Administrator and its authority is confined to this one-time cleansing",
+"Procedures are not a continuing mechanism for future PPE cleansing",
+"Expenses are charged against the Office of the Governor; signing day not legible in the OCR text"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION2.ONE-TIMEPPECLEANSING.Aone-timecomprehensivecleansing of all PPE"
+},
+{
+"page": 3,
+"quote": "SEcTION9.FUNDING.Expensesnecessaryforthe implementationofthisExecutiveOrdershall"
+}
+]
+},
+{
+"id": "eo-2026-38",
+"number": 38,
+"year": 2026,
+"summary": "Constitutes the Executive Committee for the Salong Dagitab Christmas Festival 2026, authorizes working committees, designates focal offices, and sets the festival theme.",
+"summaryFil": "Binubuo ang Executive Committee para sa Salong Dagitab Christmas Festival 2026, pinahihintulutan ang mga working committee, nagtatalaga ng mga focal office, at itinatakda ang tema ng pista.",
+"topic": "tourism",
+"signedDate": "2026-07-06",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Based on Provincial Ordinance No. 82-2018 institutionalizing Salong Dagitab",
+"Governor is chair of the Executive Committee, with the Vice Governor and department heads as members",
+"Executive Committee may constitute Working Committees",
+"Expenses charged against available appropriations of the Provincial Government"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "The Executive Committee is hereby authorized to constitute the necessary Working Committees"
+},
+{
+"page": 3,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTALMINDORO, this 6th day of July inthe Year of our"
+}
+]
+},
+{
+"id": "eo-2026-37",
+"number": 37,
+"year": 2026,
+"summary": "Adopts a policy encouraging Provincial Government offices to buy locally produced tokens, souvenirs and giveaways through the Oriental Mindoro Trading and Consolidation Facility, in compliance with procurement law.",
+"summaryFil": "Nagpapatibay ng patakarang humihikayat sa mga tanggapan ng Provincial Government na bumili ng mga lokal na produktong token, souvenir at giveaway sa pamamagitan ng Oriental Mindoro Trading and Consolidation Facility, alinsunod sa batas sa procurement.",
+"topic": "other",
+"signedDate": "2026-07-06",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Applies to all offices, departments and divisions of the Provincial Government",
+"Procurement through the facility is to be done whenever practicable and consistent with procurement laws",
+"Does not exempt any procurement from Republic Act No. 12009 and its rules",
+"Takes effect immediately upon signing"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. DECLARATION OF POLICY. It is hereby declared the policy of the Provincial"
+},
+{
+"page": 2,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 6h day of July in the Year of our"
+}
+]
+},
+{
+"id": "eo-2026-34",
+"number": 34,
+"year": 2026,
+"summary": "Declares a policy to preserve and promote the folk dances Mazurka Mindorena and Pandang Gitab Oriental Mindoro, requires their inclusion in provincial activities, and recognizes the Tribung Mai Cultural Group as the Provincial Government's official cultural dance troupe.",
+"summaryFil": "Nagpapahayag ng patakarang pangalagaan at itaguyod ang mga katutubong sayaw na Mazurka Mindorena at Pandang Gitab Oriental Mindoro, nag-uutos na isama ang mga ito sa mga aktibidad ng lalawigan, at kinikilala ang Tribung Mai Cultural Group bilang opisyal na cultural dance troupe ng Provincial Government.",
+"topic": "other",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Provincial offices shall include the two folk dances in cultural programs and official events unless impracticable",
+"Provincial HRMO, with the Provincial Tourism Office and Tribung Mai, issues implementing guidelines",
+"Supplements Executive Order No. 45, Series of 2023, which remains in force",
+"Takes effect immediately; signing date not legible in the OCR text"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1,DECLARATIONOFPOLICY.It isthepolicyoftheProvincialGovernmentofOriental"
+},
+{
+"page": 2,
+"quote": "SECTION9.EFFECTIVITY.This Executive Order shall take effect immediately."
+}
+]
+},
+{
+"id": "eo-2026-36",
+"number": 36,
+"year": 2026,
+"summary": "Lifts the temporary closure of certain provincial facilities and cultural sites imposed under Executive Order No. 23, Series of 2026, with regular operations resuming on 01 July 2026.",
+"summaryFil": "Inaalis ang pansamantalang pagsasara ng ilang pasilidad at cultural site ng probinsya na ipinataw sa ilalim ng Executive Order No. 23, Series of 2026, at magpapatuloy ang regular na operasyon sa 01 Hulyo 2026.",
+"topic": "other",
+"signedDate": "2026-06-29",
+"amends": [
+"Executive Order No. 23, Series of 2026"
+],
+"repeals": [],
+"keyPoints": [
+"Closure under EO 23, s. 2026 was ordered on 01 June 2026 in connection with load dropping and rotational brownouts",
+"Facilities resume regular operations effective 01 July 2026",
+"Offices and personnel continue reasonable energy conservation measures",
+"Other provisions of EO 23, s. 2026 remain in effect"
+],
+"pageCount": 1,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "These facilities and cultural sites shall resume their regular operations effective 01 July 2026, subject"
+},
+{
+"page": 1,
+"quote": "SECTION 3. EFFECTIVITY. This Executive Order shall take effect immediately upon issuance."
+}
+]
+},
+{
+"id": "eo-2026-30",
+"number": 30,
+"year": 2026,
+"summary": "Sets rules on the use of ambulances of the Provincial Government hospitals, prioritizing their own patients, allowing use for other patients only under conditions and with approval, and prohibiting non-medical use. Written in Filipino.",
+"summaryFil": "Nagtatakda ng mga alituntunin sa paggamit ng mga ambulansya ng mga ospital ng Pamahalaang Panlalawigan, na inuuna ang sarili nitong mga pasyente, pinapayagan ang paggamit para sa ibang pasyente sa ilalim ng mga kundisyon at may pag-apruba, at ipinagbabawal ang hindi medikal na gamit.",
+"topic": "health",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Hospital ambulances are primarily for patients of the Provincial Government hospitals",
+"Use for other patients needs an available ambulance, no effect on PGOM services, and prior approval of the Governor's Office through the GSMAC",
+"Ambulances may not be used as ordinary transport or for personal, political or ceremonial purposes",
+"Use must be logged in the official dispatch log; passengers limited to the patient and up to two companions"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEKSYON 2.PAGGAMIT NG AMBULANSYA PARA SA IBA PANG MGA PASYENTE."
+},
+{
+"page": 3,
+"quote": "D. Maliban kung may medikal na pangangailangang pinagtibay ng attending physician o ng"
+}
+]
+},
+{
+"id": "eo-2026-28",
+"number": 28,
+"year": 2026,
+"summary": "Constitutes a Fact-Finding Committee to inquire into the causes of the prevailing power supply situation in Oriental Mindoro and assess contractual, operational and regulatory factors, with a written report due to the Governor within 30 days.",
+"summaryFil": "Bumubuo ng Fact-Finding Committee upang imbestigahan ang mga sanhi ng kasalukuyang sitwasyon ng suplay ng kuryente sa Oriental Mindoro at suriin ang mga salik na kontraktwal, operasyonal at regulasyon, na may nakasulat na ulat sa Gobernador sa loob ng 30 araw.",
+"topic": "organization",
+"signedDate": "2026-06-11",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Committee conducts site inspections and technical assessments and may engage technical experts",
+"All provincial offices and instrumentalities are directed to cooperate",
+"Written report with findings and recommendations due within thirty (30) days from effectivity",
+"Funds charged against available provincial funds"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 3,
+"quote": "SECTION 6. REPORT. The Committee shall submit a comprehensive written report containing"
+},
+{
+"page": 3,
+"quote": "DONEINTHECITYOFCALAPAN,ORIENTALMINDORO,this11thdayofJuneintheYearof"
+}
+]
+},
+{
+"id": "eo-2026-35",
+"number": 35,
+"year": 2026,
+"summary": "Prescribes guidelines for releasing financial assistance under the \"Bawat Barangay Makikinabang\" Presidential Assistance to Barangays program: Php200,000.00 per beneficiary barangay, with documentation and liquidation requirements.",
+"summaryFil": "Nagtatakda ng mga alituntunin sa pagpapalabas ng tulong pinansyal sa ilalim ng programang \"Bawat Barangay Makikinabang\" Presidential Assistance to Barangays: Php200,000.00 bawat benepisyaryong barangay, na may mga kinakailangang dokumento at liquidation.",
+"topic": "finance",
+"signedDate": "2026-06-24",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Each beneficiary barangay receives Php200,000.00",
+"Php100,000.00 is for educational assistance under the Bagong Pilipinas Barangay Scholars Program",
+"Php100,000.00 is for barangay-identified development projects",
+"Barangays submit a liquidation report with supporting documents stamped received by the Commission on Audit"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "receive financial assistance in the amount of Two Hundred Thousand Pesos (Php200,000.00),"
+},
+{
+"page": 2,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 24th day of June, in the year of"
+}
+]
+},
+{
+"id": "eo-2026-33",
+"number": 33,
+"year": 2026,
+"summary": "Creates the Provincial Review Team to review and evaluate the Local Disaster Risk Reduction and Management Plans (LDRRMPs) of the component city and municipalities, and sets its functions.",
+"summaryFil": "Lumilikha ng Provincial Review Team upang suriin at i-evaluate ang mga Local Disaster Risk Reduction and Management Plan (LDRRMP) ng mga component city at munisipalidad, at itinatakda ang mga tungkulin nito.",
+"topic": "disaster",
+"signedDate": "2026-06-22",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Based on NDRRMC Memorandum Circular No. 147, s. 2017, as amended by No. 13, s. 2018",
+"Team operates under the supervision of the Provincial Disaster Risk Reduction and Management Council",
+"Members include the PDRRM Officer, Provincial Planning and Development Coordinator, PSWDO, DILG and DOST directors",
+"Recommendations for certification are transmitted to the Office of Civil Defense-MIMAROPA"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. CREATION. The Provincial Review Team for the review and evaluation of the"
+},
+{
+"page": 3,
+"quote": "documents,totheOfficeofCivilDefense-MIMAROPA."
+}
+]
+},
+{
+"id": "eo-2026-32",
+"number": 32,
+"year": 2026,
+"summary": "Reconstitutes the Program Management Committee and Finance Team of the Language Skills Institute of Oriental Mindoro by amending Executive Order No. 34, Series of 2022 (including quorum and representation rules).",
+"summaryFil": "Muling binubuo ang Program Management Committee at Finance Team ng Language Skills Institute ng Oriental Mindoro sa pamamagitan ng pag-amyenda sa Executive Order No. 34, Series of 2022 (kasama ang mga tuntunin sa quorum at kinatawan).",
+"topic": "organization",
+"signedDate": "2026-06-18",
+"amends": [
+"Executive Order No. 34, Series of 2022"
+],
+"repeals": [],
+"keyPoints": [
+"Amends Sections 1, 3(a), 4(a) and 6 of EO 34, s. 2022",
+"Governor chairs the Program Management Committee; the LSI Center Manager/Administrator is an ex-officio member",
+"A majority of regular PMC members is a quorum; members may designate an authorized representative",
+"EO 15, s. 2010, EO 05, s. 2020 and EO 34, s. 2022 otherwise remain in effect"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.AMENDMENTOFSECTION1.Section1of ExecutiveOrderNo.34,Series of 2022"
+},
+{
+"page": 3,
+"quote": "SECTION 9. EFFECTIVITY. This Executive Order shall take effect immediately upon issuance."
+}
+]
+},
+{
+"id": "eo-2026-31",
+"number": 31,
+"year": 2026,
+"summary": "Amends Section 8 of Executive Order No. 50, Series of 2025 by reconstituting and expanding the membership of the Technical Working Group for the Medical Allowance Program of provincial officials and employees.",
+"summaryFil": "Ina-amyendahan ang Section 8 ng Executive Order No. 50, Series of 2025 sa pamamagitan ng muling pagbuo at pagpapalawak ng miyembro ng Technical Working Group para sa Medical Allowance Program ng mga opisyal at empleyado ng probinsya.",
+"topic": "organization",
+"signedDate": "2026-06-17",
+"amends": [
+"Executive Order No. 50, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"TWG is chaired by the Provincial Administrator",
+"Members include the Provincial HRMO, Budget Officer, Legal Officer, Provincial Hospital head and others",
+"TWG may invite other provincial offices and stakeholders",
+"Inconsistent provisions of EO 50, s. 2025 are amended or modified"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.AMENDMENTOFSECTION8.Section8ofExecutiveOrderNo.50,Seriesof2025,"
+},
+{
+"page": 2,
+"quote": "DONE IN THE CITYOFCALAPAN, ORIENTALMINDORO,this 17thday of June in theYearof"
+}
+]
+},
+{
+"id": "eo-2026-27",
+"number": 27,
+"year": 2026,
+"summary": "Establishes the Academy for Civic Empowerment, a civil society organization (CSO)-led institution, creates its Technical Working Group, and designates the Provincial CSO Desk as lead implementing office.",
+"summaryFil": "Itinatatag ang Academy for Civic Empowerment, isang institusyong pinamumunuan ng civil society organization (CSO), bumubuo ng Technical Working Group nito, at itinatalaga ang Provincial CSO Desk bilang lead implementing office.",
+"topic": "education",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Provincial CSO Desk Office oversees day-to-day management",
+"SARILAYA - Provincial Level and KAFCODE are recognized as partner facilitators",
+"DILG-Oriental Mindoro and Mindoro State University may participate as institutional partners subject to a Memorandum of Agreement",
+"Funding is charged against the Office of the Governor, subject to availability of funds"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.ESTABLISHMENTOFTHEACADEMY.TheAcademyishereby establishedasa"
+},
+{
+"page": 3,
+"quote": "SECTION 7.FUNDING.Funding for the operationalization of the Academy shall be charged"
+}
+]
+},
+{
+"id": "eo-2026-26",
+"number": 26,
+"year": 2026,
+"summary": "Creates the Provincial Fuel Price Monitoring Group under the Provincial Price Coordinating Council to monitor and regularly report fuel prices and supply in Oriental Mindoro.",
+"summaryFil": "Lumilikha ng Provincial Fuel Price Monitoring Group sa ilalim ng Provincial Price Coordinating Council upang subaybayan at regular na iulat ang presyo at suplay ng gasolina sa Oriental Mindoro.",
+"topic": "organization",
+"signedDate": "2026-06-11",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Group is the technical monitoring arm of the Provincial Price Coordinating Council (PPCC)",
+"Provincial Cooperative Development Office is Secretariat and develops a standardized reporting template",
+"Consolidated fuel price report goes to the PPCC Chairperson weekly",
+"Provincial offices, national agencies and Municipal LPCCs are directed to cooperate"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "hereby created a Provincial Fuel Price Monitoring Group (PFPMG'), which shall serve as the"
+},
+{
+"page": 2,
+"quote": "price monitoring report to the Chairperson of the PPCC on a weekly basis and to the PPCC during"
+}
+]
+},
+{
+"id": "eo-2026-23",
+"number": 23,
+"year": 2026,
+"summary": "Temporarily closes certain Provincial Government facilities and cultural sites from 1 June 2026 until further notice as an additional energy conservation and fuel efficiency measure.",
+"summaryFil": "Pansamantalang isinasara ang ilang pasilidad at cultural site ng Pamahalaang Panlalawigan mula 1 Hunyo 2026 hanggang sa susunod na abiso bilang karagdagang hakbang sa pagtitipid ng enerhiya at gasolina.",
+"topic": "other",
+"signedDate": "2026-06-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Closed sites include Plaza del Gobernador-Ang Liwasan ng Mamamayan, Heritage Museum, Heritage and Cultural Center, Fontana del Gobernador and Sentrong Pangkabataan",
+"Reason given: risk of manual load dropping and rotational brownouts",
+"Access may be authorized by the Provincial Governor for maintenance, security or official purposes",
+"Remains in force until revoked or modified"
+],
+"pageCount": 1,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "hereby suspended, and the same are temporarily closed,from1June2026 untilfurthernotice:"
+},
+{
+"page": 1,
+"quote": "in force until revoked ormodified by a subsequent issuance."
+}
+]
+},
+{
+"id": "eo-2026-22",
+"number": 22,
+"year": 2026,
+"summary": "Creates a Technical Working Group to study how the Old Capitol Complex could be used in connection with the future transfer of the seat of government to Sta. Isabel, Calapan City. The group is advisory only, with a report due in 90 days.",
+"summaryFil": "Bumubuo ng Technical Working Group upang pag-aralan ang paggamit ng Old Capitol Complex kaugnay ng hinaharap na paglipat ng upuan ng pamahalaan sa Sta. Isabel, Calapan City. Tagapayo lamang ang grupo at may ulat sa loob ng 90 araw.",
+"topic": "organization",
+"signedDate": "2026-06-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"TWG acts in an advisory and recommendatory capacity only and cannot approve any final disposition or lease",
+"Study covers possible lease, adaptive reuse or other lawful uses, and heritage regulations",
+"Provincial Administrator's Office serves as Secretariat",
+"Final report due within ninety (90) days unless extended by the Governor"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "The TwG shall act in an advisory and recommendatory capacity only,and shall have no authority"
+},
+{
+"page": 3,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 1st day of June in the Year of"
+}
+]
+},
+{
+"id": "eo-2026-29",
+"number": 29,
+"year": 2026,
+"summary": "Adopts and localizes the policy framework of Executive Order No. 53, Series of 2024, creates the Provincial Task Force El Nino, and directs offices and LGUs to prepare and submit El Nino mitigation and contingency plans and compliance reports.",
+"summaryFil": "Pinagtitibay at nililokalisa ang balangkas ng patakaran ng Executive Order No. 53, Series of 2024, nililikha ang Provincial Task Force El Nino, at inuutusan ang mga tanggapan at LGU na maghanda at magsumite ng mga plano sa pagbawas ng epekto at contingency para sa El Nino at mga ulat ng pagsunod.",
+"topic": "disaster",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites DOST-PAGASA reports of increasing probability of El Nino in the latter half of 2026 into early 2027",
+"All PGOM offices, LGUs and agencies to formulate and implement El Nino mitigation, preparedness, response and contingency plans",
+"Creates the Provincial Task Force El Nino",
+"Compliance reports go to the PDRRMO within 15 days after the plan deadline and monthly until deactivation"
+],
+"pageCount": 8,
+"confidence": "medium",
+"evidence": [
+{
+"page": 2,
+"quote": "SECTION 3,CREATION OF THE PROVINCIAL TASK FORCE EL NINO.There is hereby"
+},
+{
+"page": 8,
+"quote": "SECTION 1o.SUBMISSIONOF COMPLIANCE REPORTS.All concernedoffices and LGUs"
+}
+]
+},
+{
+"id": "eo-2026-25-2",
+"number": 25,
+"year": 2026,
+"summary": "Amends Executive Order No. 18, Series of 2026 by expanding the composition of the Provincial Public Service Continuity Planning Core Team (PSCP-CCT) and its Technical Working Group (PSCP-TWG). This is a second scanned copy of EO No. 25.",
+"summaryFil": "Ina-amyendahan ang Executive Order No. 18, Series of 2026 sa pamamagitan ng pagpapalawak ng komposisyon ng Provincial Public Service Continuity Planning Core Team (PSCP-CCT) at Technical Working Group (PSCP-TWG). Ito ay pangalawang scanned na kopya ng EO No. 25.",
+"topic": "organization",
+"signedDate": "2026-06-10",
+"amends": [
+"Executive Order No. 18, Series of 2026"
+],
+"repeals": [],
+"keyPoints": [
+"Notes that EO 18, s. 2026 was issued on 14 May 2026",
+"Section 3 of EO 18 (composition of the PSCP-CCT) is amended",
+"Adds representation from provincial offices, departments and hospitals",
+"Same order number as the other EO No. 25 entry in this batch"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.AMENDMENTOFSECTION3OFEO18.Section3ofEO18,entitled\"Composition"
+},
+{
+"page": 5,
+"quote": "DONEINTHECITYOFCALAPAN,ORIENTALMINDORO,this1Othdayof June intheYearof"
+}
+]
+},
+{
+"id": "eo-2026-24",
+"number": 24,
+"year": 2026,
+"summary": "Terminates the temporary four-day compressed workweek under Executive Orders No. 04 and 04-A, Series of 2026, restores the regular five-day workweek (Monday to Friday, 8:00 A.M. to 5:00 P.M.) effective 1 July 2026, and implements the new official office uniform.",
+"summaryFil": "Winawakasan ang pansamantalang four-day compressed workweek sa ilalim ng Executive Order No. 04 at 04-A, Series of 2026, ibinabalik ang regular na five-day workweek (Lunes hanggang Biyernes, 8:00 N.U. hanggang 5:00 N.H.) simula 1 Hulyo 2026, at ipinatutupad ang bagong opisyal na uniporme ng opisina.",
+"topic": "organization",
+"signedDate": "2026-06-10",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Four-day compressed workweek arrangement is terminated",
+"All PGOM offices resume the regular five-day workweek effective 1 July 2026",
+"New official office uniform implemented in conjunction with the restoration",
+"Heads of offices direct the transition and continued energy-conservation measures"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "July 2026, all PGOM offices and departments shall resume the regular five-day workweek"
+},
+{
+"page": 2,
+"quote": "DONEINTHECITYOFCALAPAN,ORIENTALMINDORO,this1othdayof June intheyearof"
+}
+]
+},
+{
+"id": "eo-2026-21",
+"number": 21,
+"year": 2026,
+"summary": "Reorganizes the Provincial Committee on Titling of Real Properties, names its members, creates a Technical Working Group, and repeals Executive Order No. 36, Series of 2022.",
+"summaryFil": "Muling inaayos ang Provincial Committee on Titling of Real Properties, itinatalaga ang mga miyembro nito, lumilikha ng Technical Working Group, at pinawawalang-bisa ang Executive Order No. 36, Series of 2022.",
+"topic": "organization",
+"signedDate": "2026-05-19",
+"amends": [],
+"repeals": [
+"Executive Order No. 36, Series of 2022"
+],
+"keyPoints": [
+"Committee is chaired by the Provincial Administrator, with the Provincial Legal Officer as Vice Chairperson",
+"Covers all lands and immovable properties owned or administered by the PGOM",
+"A Technical Working Group assists the Committee; the PGSO is the Secretariat",
+"Costs are charged to available appropriations of the Office of the Governor"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION2.REORGANIZATIONOFTHECOMMITTEE.TheCommitteeisherebyreorganized"
+},
+{
+"page": 3,
+"quote": "SECTION8.REPEALINGCLAUSE.ExecutiveOrderNo.36,Seriesof2022 is herebyrepealed."
+}
+]
+},
+{
+"id": "eo-2026-20",
+"number": 20,
+"year": 2026,
+"summary": "Reconstitutes the Provincial Task Force on Anti-Charcoal Transportation, sets its composition, functions and guidelines for enforcing Provincial Ordinance No. 015-2011, and repeals Executive Order No. 40, Series of 2011.",
+"summaryFil": "Muling binubuo ang Provincial Task Force on Anti-Charcoal Transportation, itinatakda ang komposisyon, tungkulin at alituntunin nito para sa Provincial Ordinance No. 015-2011, at pinawawalang-bisa ang Executive Order No. 40, Series of 2011.",
+"topic": "environment",
+"signedDate": "2026-05-19",
+"amends": [],
+"repeals": [
+"Executive Order No. 40, Series of 2011"
+],
+"keyPoints": [
+"Governor is Chairperson; the Provincial Environment and Natural Resources Officer is Co-Chairperson",
+"Members include provincial, DENR and municipal/city environment officers",
+"Must submit monthly accomplishment and monitoring reports to the Governor's office",
+"Funded from available funds of the Provincial Government Environment and Natural Resources Office"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AN EXECUTIVEORDER RECONSTITUTING THE PROVINCIAL TASKFORCEON"
+},
+{
+"page": 5,
+"quote": "SECTION 6. REPORTORIAL REQUIREMENT.The PTFACT shall submit monthly"
+}
+]
+},
+{
+"id": "eo-2026-19",
+"number": 19,
+"year": 2026,
+"summary": "Amends Section 2 of Executive Order No. 42, Series of 2025, to update the composition of the Provincial Solid Waste Management Board, adding named non-government and civil society organizations.",
+"summaryFil": "Binabago ang Section 2 ng Executive Order No. 42, Series of 2025 upang i-update ang komposisyon ng Provincial Solid Waste Management Board, kasama ang mga tinukoy na NGO at civil society organization.",
+"topic": "environment",
+"signedDate": "2026-05-14",
+"amends": [
+"Executive Order No. 42, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"Section 2 of EO 42 (2025) is amended and restated",
+"Board is chaired by the Governor and includes district representatives, mayors, provincial and national agency heads",
+"Adds named NGO/CSO representatives, e.g. junkshop operators and a fisherman association",
+"Takes effect immediately upon signing"
+],
+"pageCount": 3,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1.AMENDMENT.Section 2 of Executive Order No.42, Series of 2025 is hereby"
+},
+{
+"page": 3,
+"quote": "SECTION4.EFFECTIVITY.This Executive Order shalltake effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2026-18",
+"number": 18,
+"year": 2026,
+"summary": "Creates the Public Service Continuity Planning Core Team and Technical Working Group of the Provincial Government and directs the formulation, testing and maintenance of a Provincial Public Service Continuity Plan.",
+"summaryFil": "Lumilikha ng Public Service Continuity Planning Core Team at Technical Working Group ng Pamahalaang Panlalawigan at nag-uutos na buuin, subukan at panatilihin ang Provincial Public Service Continuity Plan.",
+"topic": "organization",
+"signedDate": "2026-05-14",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Core Team (PSCP-CCT) and a separate Technical Working Group (PSCP-TWG) are created with defined functions",
+"All offices, departments and hospitals must designate a Continuity Focal Person and an alternate within 30 days",
+"Plan is to be tested, reviewed and updated",
+"Takes effect immediately upon signing"
+],
+"pageCount": 6,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.DECLARATIONOFPO.JCY.ItisherebydeclaredthepolicyofPGOMto ensure"
+},
+{
+"page": 6,
+"quote": "SECTION 17. EFFECTIVITY. This Executive Order shall take effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2026-10",
+"number": 10,
+"year": 2026,
+"summary": "Creates the Oriental Mindoro Integrated Indigenous Peoples Development Program Management Team and Implementing Unit and its Program Action Teams, and provides for their functions.",
+"summaryFil": "Lumilikha ng Oriental Mindoro Integrated Indigenous Peoples Development Program Management Team and Implementing Unit at ng mga Program Action Team nito, at itinatakda ang kanilang mga tungkulin.",
+"topic": "organization",
+"signedDate": "2026-04-20",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites the Indigenous Peoples' Rights Act and the Local Government Code, with Mangyan communities named in the preamble",
+"Management team and implementing unit (PIPDP-MTIU) has set powers and functions",
+"Program Action Teams are created, each with its own scope",
+"Valid until full operationalization of the program unless earlier amended or revoked"
+],
+"pageCount": 8,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "ANORDERCREATINGTHEORIENTALMINDOROINTEGRATEDINDIGENOUSPEOPLES"
+},
+{
+"page": 8,
+"quote": "shall remain validuntil thefulloperatioiialization ofthePiPDP,unlessearlieramendedorrevoked."
+}
+]
+},
+{
+"id": "eo-2026-17",
+"number": 17,
+"year": 2026,
+"summary": "Prescribes guidelines for using a Document Transparency Portal in the Provincial Government, covering document scanning, pre-screening, processing periods and public access.",
+"summaryFil": "Nagtatakda ng mga alituntunin sa paggamit ng Document Transparency Portal sa Pamahalaang Panlalawigan, kasama ang pag-scan ng dokumento, pre-screening, takdang panahon ng pagproseso at pampublikong access.",
+"topic": "organization",
+"signedDate": "2026-05-05",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Applies to documents such as disbursement vouchers, purchase requests, contracts and purchase orders",
+"Outgoing and incoming documents must be scanned and pre-screened",
+"Sets processing periods and rules on tolling of duration",
+"Citizen's Charter to be updated within thirty days of effectivity"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTioN1.ScOPE.TheDocumentTransparencyPortalshallapplytoalldocuments,including"
+},
+{
+"page": 5,
+"quote": "SECTION17.EFFECTIVITY.ThisExecutiveOrdershalltakeeffectimmediately."
+}
+]
+},
+{
+"id": "eo-2026-16",
+"number": 16,
+"year": 2026,
+"summary": "Prescribes efficient use of paper, a digital-first rule for document processing, and reuse and recycling measures across the Provincial Government.",
+"summaryFil": "Nagtatakda ng mahusay na paggamit ng papel, digital-first na pagproseso ng dokumento, at mga hakbang sa muling paggamit at pag-recycle sa buong Pamahalaang Panlalawigan.",
+"topic": "organization",
+"signedDate": "2026-04-23",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Only the minimum necessary hard copies are allowed; offices process documents electronically first",
+"Sets formatting and printing standards and minimum hard-copy requirements (Annex A)",
+"Requires reuse-first practice, paper recycling and secure disposal of confidential waste",
+"Each office designates someone accountable; the Provincial Administrator's Office issues implementing guidance"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. TITLE. This Executive Order shall be known as the"
+},
+{
+"page": 2,
+"quote": "SECTION 6.DIGITAL-FIRST RULE.All offices shall process documents electronically as the"
+}
+]
+},
+{
+"id": "eo-2026-15",
+"number": 15,
+"year": 2026,
+"summary": "Establishes the Provincial Peace Engagement Team and the Provincial Peace Panel of Oriental Mindoro, defines their roles and functions, and institutionalizes localized peace engagement mechanisms.",
+"summaryFil": "Itinatatag ang Provincial Peace Engagement Team at Provincial Peace Panel ng Oriental Mindoro, tinutukoy ang kanilang papel at tungkulin, at inilalagay sa institusyon ang mga lokal na mekanismo ng peace engagement.",
+"topic": "peace-order",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Creates the Provincial Peace Engagement Team (PPET) with listed functions",
+"Creates the Provincial Peace Panel and sets its composition",
+"Engagement processes must uphold human rights and the rule of law",
+"Valid unless earlier amended or revoked"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 2,
+"quote": "SECTION2.CREATIONOFTHEPROVINCIALPEACEENGAGEMENTTEAM.Thereishereby"
+},
+{
+"page": 4,
+"quote": "shall remainvalid unlessearlieramendedorrevoked."
+}
+]
+},
+{
+"id": "eo-2026-14",
+"number": 14,
+"year": 2026,
+"summary": "Amends Section 9 of Executive Order No. 22, Series of 2025, to add an exception for pass-through or transit shipment of frozen pork products through Oriental Mindoro.",
+"summaryFil": "Binabago ang Section 9 ng Executive Order No. 22, Series of 2025 upang magdagdag ng eksepsiyon para sa pagdaan o transit ng frozen pork products sa Oriental Mindoro.",
+"topic": "agriculture",
+"signedDate": "2026-04-23",
+"amends": [
+"Executive Order No. 22, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"EO 22 (2025) governs entry and transport of pork products as protection against African Swine Fever",
+"Section 9 did not address shipments that only pass through the province",
+"A limited exception for transit shipments is added",
+"Takes effect immediately upon signing"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.AMENDMENTTOSECTION9.Section9ofExecutiveOrderNo.22,Seriesof2025"
+},
+{
+"page": 2,
+"quote": "SECTION 3.EFFECTIVITY.This Executive Order shall take effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2026-13",
+"number": 13,
+"year": 2026,
+"summary": "Creates the Provincial Technical Working Group for the Workplace Cancer Control Program, designates its Secretariat, and defines their powers and functions.",
+"summaryFil": "Lumilikha ng Provincial Technical Working Group para sa Workplace Cancer Control Program, itinatalaga ang Secretariat nito, at tinutukoy ang kanilang kapangyarihan at tungkulin.",
+"topic": "health",
+"signedDate": "2026-04-23",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Implements workplace cancer control under Republic Act No. 11215 and the Civil Service Commission Workplace Cancer Policy",
+"TWG coordinates cancer prevention, early detection, treatment support and survivorship initiatives for PGOM employees",
+"A Secretariat is designated with administrative functions",
+"Takes effect immediately upon signing"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.CREATIONOFTHEPROVINCIALTECHNICALWORKINGGROUP.Thereis"
+},
+{
+"page": 2,
+"quote": "SECTION 6.EFFECTIVITY.This ExecutiveOrder shall take effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2026-12",
+"number": 12,
+"year": 2026,
+"summary": "Amends Executive Order No. 31, Series of 2024, by restating Section 1 to update the composition of the Provincial Committee on Quality Workplace.",
+"summaryFil": "Binabago ang Executive Order No. 31, Series of 2024 sa pamamagitan ng muling pagsasaad ng Section 1 upang i-update ang komposisyon ng Provincial Committee on Quality Workplace.",
+"topic": "organization",
+"signedDate": "2026-04-23",
+"amends": [
+"Executive Order No. 31, Series of 2024"
+],
+"repeals": [],
+"keyPoints": [
+"Section 1 of EO 31 (2024) is amended to a new composition of the PCQW",
+"PCQW implements workplace quality systems including the 5S Good Housekeeping approach",
+"Other provisions of EO 31 are retained; inconsistent provisions are modified"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.AMENDMENT.Section1of ExecutiveOrderNo.31,Seriesof2024ishereby"
+},
+{
+"page": 2,
+"quote": "SECTION 2. RETENTION AND REPEALING CLAUSE. All provisions of Executive Order No."
+}
+]
+},
+{
+"id": "eo-2026-11",
+"number": 11,
+"year": 2026,
+"summary": "Creates a Technical Working Group to study the possible repurposing of the Provincial Information Technology Park and to report findings and recommendations to the Governor.",
+"summaryFil": "Lumilikha ng Technical Working Group upang pag-aralan ang posibleng pagbabago ng gamit ng Provincial Information Technology Park at mag-ulat ng natuklasan at rekomendasyon sa Gobernador.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"TWG evaluates legal, financial, operational and administrative aspects of the IT Park",
+"Submits a consolidated report with findings and recommendations to the Office of the Governor",
+"Expenses are charged to available appropriated funds of the Province"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.CREATIONOFTHETECHNICALWORKINGGROUP.ATechnicalWorking"
+},
+{
+"page": 2,
+"quote": "g.Submit a consolidated report with findings and recommendations for appropriate action"
+}
+]
+},
+{
+"id": "eo-2026-9",
+"number": 9,
+"year": 2026,
+"summary": "Amends Section 1 of Executive Order No. 23-A, Series of 2022, and Section 11 of Resolution No. 001, Series of 2022, updating the Employee of the Month Citation Committee and the documentation of merit.",
+"summaryFil": "Binabago ang Section 1 ng Executive Order No. 23-A, Series of 2022 at Section 11 ng Resolution No. 001, Series of 2022, na nag-a-update sa Employee of the Month Citation Committee at sa dokumentasyon ng merito.",
+"topic": "organization",
+"signedDate": "2026-04-20",
+"amends": [
+"Executive Order No. 23-A, Series of 2022"
+],
+"repeals": [],
+"keyPoints": [
+"Section 1 of EO 23-A (2022) is restated with an amended committee composition",
+"Section 11 of Resolution No. 001, Series of 2022 is amended on submission requirements",
+"Nominations submitted before effectivity are covered by a transitory provision"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.AMENDEDCOMPOSITIONOFTHEEMCC.Section1of ExecutiveOrder No.23-"
+},
+{
+"page": 2,
+"quote": "SECTION2.AMENDEDSUBMISSIONREQUIREMENTS.Section11of theResolutionNo.001,"
+}
+]
+},
+{
+"id": "eo-2026-8",
+"number": 8,
+"year": 2026,
+"summary": "Creates a Technical Working Group to study possible utilization, shared management or other lawful arrangements involving the Provincial Jail to help decongest Bureau of Jail Management and Penology facilities.",
+"summaryFil": "Lumilikha ng Technical Working Group upang pag-aralan ang posibleng paggamit, shared management o iba pang legal na kaayusan sa Provincial Jail upang makatulong sa pagbabawas ng siksikan sa mga pasilidad ng Bureau of Jail Management and Penology.",
+"topic": "peace-order",
+"signedDate": "2026-04-06",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"TWG has a listed composition and functions",
+"Aims to help decongest BJMP detention facilities",
+"Expenses are charged to available funds",
+"Takes effect immediately upon signing"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION2.cOMPOSITION.TheTWGshall becomposedof thefollowing:"
+},
+{
+"page": 3,
+"quote": "SECTION6.EFFECTIVITY.This Order shalltake effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2026-7",
+"number": 7,
+"year": 2026,
+"summary": "Creates the Provincial Inter-Agency Task Force Iwas Baha for flood prevention, mitigation and management and defines its functions and responsibilities.",
+"summaryFil": "Lumilikha ng Provincial Inter-Agency Task Force Iwas Baha para sa pag-iwas, pagpapagaan at pamamahala ng baha, at tinutukoy ang tungkulin at responsibilidad nito.",
+"topic": "disaster",
+"signedDate": "2026-03-30",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor is Chairperson; members are listed in Section 1",
+"Task force meets quarterly",
+"Funded from available provincial funds",
+"Takes effect immediately upon signing"
+],
+"pageCount": 5,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.COMPOSITION.TheProvincialInter-AgencyTaskForce\"lwasBaha\"(\"PIATFIwas"
+},
+{
+"page": 4,
+"quote": "SECTION 4.MEETINGS.The PIATF Iwas Baha shallmeetquarterly."
+}
+]
+},
+{
+"id": "eo-2026-5",
+"number": 5,
+"year": 2026,
+"summary": "Reconstitutes the Provincial Development Council, its Executive Committee and Sectoral/Functional Committees, updating membership and civil society representation.",
+"summaryFil": "Muling binubuo ang Provincial Development Council, ang Executive Committee at mga Sectoral/Functional Committee nito, na nag-a-update ng miyembro at representasyon ng civil society.",
+"topic": "organization",
+"signedDate": "2026-03-11",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Council is chaired by the Governor; members include district representatives and mayors",
+"Cites the Local Government Code requirement that at least one-fourth of members be NGO representatives",
+"Council meets at least once every six months or as often as needed",
+"Preamble notes the Council was reconstituted on 1 December 2025 under Executive Order No. 51"
+],
+"pageCount": 8,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, Section 107 of the LGC specifies that at least one-fourth of the members of a fully"
+},
+{
+"page": 8,
+"quote": "SECTION 2. MEETINGS. The PDC shall meet at least once every six (6) months or as often"
+}
+]
+},
+{
+"id": "eo-2026-6",
+"number": 6,
+"year": 2026,
+"summary": "Reorganizes the Multi-Partite Monitoring Team for river restoration through large-scale dredging of the Alag River and Longos River in Baco, and sets its roles, secretariat, meetings and reporting.",
+"summaryFil": "Muling inaayos ang Multi-Partite Monitoring Team para sa river restoration sa pamamagitan ng malawakang dredging sa Alag River at Longos River sa Baco, at itinatakda ang tungkulin, secretariat, pulong at pag-uulat nito.",
+"topic": "environment",
+"signedDate": "2026-03-12",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Under DENR DAO No. 2022-02, the team oversees monitoring of the dredging",
+"DPWH-MIMAROPA granted a dredging clearance to the proponent on 5 June 2024",
+"A Secretariat gives technical and administrative assistance",
+"Funding follows DAO No. 2022-02"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. REORGANIZATION. The MMT for the river restoration, through large-scale"
+},
+{
+"page": 3,
+"quote": "SECTION 5. FUNDING. Pursuant to DAO No. 2022-02, the funding required for the monitoring"
+}
+]
+},
+{
+"id": "eo-2026-4",
+"number": 4,
+"year": 2026,
+"summary": "Adopts a temporary four-day compressed workweek in the Provincial Government starting 09 March 2026 and prescribes energy conservation and fuel-efficiency measures.",
+"summaryFil": "Nagpapatupad ng pansamantalang four-day compressed workweek sa Pamahalaang Panlalawigan simula 09 March 2026 at nagtatakda ng mga hakbang sa pagtitipid ng enerhiya at gasolina.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Four-day onsite schedule, Monday to Thursday, with a one-hour lunch break, starting 09 March 2026",
+"Hospitals, the Provincial Health Office and other listed offices are excluded",
+"Rules on air-conditioning use, government vehicle use, parking, fuel loading and out-of-province travel",
+"Seminar venues must be within premises owned by government"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "day compressed workweek is hereby adopted in the Provincial Government of Oriental Mindoro"
+},
+{
+"page": 2,
+"quote": "SECTION2.REGULATIONONTHEUSEOFAIR-CONDITIONINGUNITS.Topromote energy"
+}
+]
+},
+{
+"id": "eo-2026-3",
+"number": 3,
+"year": 2026,
+"summary": "Provides guidelines on granting wellness leave of up to five days per calendar year to officials and employees of the Provincial Government.",
+"summaryFil": "Nagbibigay ng mga alituntunin sa pagbibigay ng wellness leave na hanggang limang araw bawat taon sa mga opisyal at empleyado ng Pamahalaang Panlalawigan.",
+"topic": "other",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Maximum of five days wellness leave per calendar year, subject to the exigencies of service",
+"Applies to eligible PGOM officials and employees who follow the filing procedure",
+"Does not expand other benefits, compensation or leave credits",
+"Includes a leave application form"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1.WELLNESS LEAVE.A maximum of five (5) days wellness leave per calendar year"
+},
+{
+"page": 2,
+"quote": "SECTION 6.EFFECTIVITY CLAUSE.This Executive Order shall take effect immediately."
+}
+]
+},
+{
+"id": "eo-2025-64",
+"number": 64,
+"year": 2025,
+"summary": "Reconstitutes and designates the members of the Provincial Government Bids and Awards Committees for goods and services, infrastructure and health, and provides for their functions, term and honoraria.",
+"summaryFil": "Muling binubuo at itinatalaga ang mga miyembro ng Bids and Awards Committees ng Pamahalaang Panlalawigan para sa goods and services, imprastraktura at kalusugan, at itinatakda ang kanilang tungkulin, termino at honoraria.",
+"topic": "organization",
+"signedDate": "2025-12-26",
+"amends": [
+"Executive Order No. 19, Series of 2025",
+"Executive Order No. 62, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"Preamble: EO 19 (2025), as amended by EO 62 (2025), fixed BAC terms until 31 December 2025",
+"Section 1 lists BAC members, starting with the BAC for Infrastructure",
+"Governor's Office - Procurement Division serves as BAC Secretariat",
+"EO 19 as amended by EO 62 is superseded only insofar as the designation of members"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, Executive Order No. 19, Series of 2025, as amended by Executive Order No. 62,"
+},
+{
+"page": 5,
+"quote": "Executive Order No. 62, Series of 2025, is hereby superseded only insofar as the designation"
+}
+]
+},
+{
+"id": "eo-2026-2",
+"number": 2,
+"year": 2026,
+"summary": "Establishes the Provincial Infrastructure Monitoring Committee and a Provincial Monitoring Team with program component action teams, and defines their powers and functions.",
+"summaryFil": "Itinatatag ang Provincial Infrastructure Monitoring Committee at Provincial Monitoring Team kasama ang mga program component action team, at tinutukoy ang kanilang kapangyarihan at tungkulin.",
+"topic": "organization",
+"signedDate": "2026-01-14",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Committee (PIMC) monitors and coordinates infrastructure projects in the province",
+"A Provincial Monitoring Team (PMT) is created",
+"Provincial Administrator's Office serves as Secretariat",
+"PIMC and PMT meet as often as necessary"
+],
+"pageCount": 6,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.PIMCCOMPOSITIONANDFUNCTIONS"
+},
+{
+"page": 2,
+"quote": "SECTION 2.PROVINCIALMONITORINGTEAM.TheProvincial Monitoring Team(PMT\")shall"
+}
+]
+},
+{
+"id": "eo-2026-1",
+"number": 1,
+"year": 2026,
+"summary": "Amends Executive Order No. 41, Series of 2024, to update the composition of the Provincial Multipartite Environmental Impact Assessment Monitoring Team, and repeals its honorarium and funding provisions.",
+"summaryFil": "Binabago ang Executive Order No. 41, Series of 2024 upang i-update ang komposisyon ng Provincial Multipartite Environmental Impact Assessment Monitoring Team, at pinawawalang-bisa ang mga probisyon nito sa honorarium at pondo.",
+"topic": "environment",
+"signedDate": "2026-01-08",
+"amends": [
+"Executive Order No. 41, Series of 2024"
+],
+"repeals": [],
+"keyPoints": [
+"Section 1 (Composition) of EO 41 (2024) is amended",
+"Sections on Honorarium and Funding of EO 41 (2024) are repealed",
+"Takes effect immediately upon signing"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AN EXECUTIVE ORDER AMENDING EXECUTIVE ORDER NO.41,SERIES OF 2024,"
+},
+{
+"page": 2,
+"quote": "(Honorarium) and 6 (Funding)of Executive Order No.41,Series of 2024,are hereby REPEALED."
+}
+]
+},
+{
+"id": "eo-2025-63",
+"number": 63,
+"year": 2025,
+"summary": "Reorganizes the composition of the Provincial Gender and Development Focal Point System and defines its functions, Technical Working Group and Secretariat.",
+"summaryFil": "Muling inaayos ang komposisyon ng Provincial Gender and Development Focal Point System at tinutukoy ang tungkulin, Technical Working Group at Secretariat nito.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Preamble notes EO No. 8, Series of 2024 earlier reorganized the system; changes in designated GAD focal persons require a new reorganization",
+"Section 1 lists the new composition; Section 3 reorganizes the TWG",
+"Members undergo capacity building",
+"Takes effect immediately"
+],
+"pageCount": 7,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. COMPOSITION. The PGFPS is hereby reorganized to be composed of the following:"
+},
+{
+"page": 7,
+"quote": "SECTION 10.EFFECTIVITY.This ExecutiveOrder shall take effect immediately."
+}
+]
+},
+{
+"id": "eo-2025-57",
+"number": 57,
+"year": 2025,
+"summary": "Reorganizes the Provincial Price Coordinating Council, sets its composition and functions, and provides funds for it.",
+"summaryFil": "Muling inaayos ang Provincial Price Coordinating Council, itinatakda ang komposisyon at tungkulin nito, at nagbibigay ng pondo para dito.",
+"topic": "organization",
+"signedDate": "2025-12-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Council is chaired by the Governor, with the DTI Provincial Director as Co-Chairperson",
+"Responsible for stability of prices and supply of basic necessities in the province",
+"Members serve subject to reappointment for another term",
+"Note: the OCR header reads EXECUTIVE ORDER NO.67, but the catalogue lists this as No. 57"
+],
+"pageCount": 3,
+"confidence": "low",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 2. COMPOSITION. The PPCC shall be composed of the following:"
+},
+{
+"page": 1,
+"quote": "EXECUTIVEORDERNO.67"
+}
+]
+},
+{
+"id": "eo-2025-62",
+"number": 62,
+"year": 2025,
+"summary": "Amends Executive Order No. 19, Series of 2025, only as to the composition of the Bids and Awards Committee for Health.",
+"summaryFil": "Binabago ang Executive Order No. 19, Series of 2025, sa komposisyon lamang ng Bids and Awards Committee for Health.",
+"topic": "organization",
+"signedDate": "2025-12-15",
+"amends": [
+"Executive Order No. 19, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"Lists a new Chairperson, Vice Chairperson and members of the BAC for Health",
+"Inconsistent provisions of EO 19 are modified or repealed",
+"Takes effect immediately"
+],
+"pageCount": 1,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION2.REPEALOFINCONSISTENTPROVISIONS.AllprovisionsinExecutiveOrderNo."
+},
+{
+"page": 1,
+"quote": "D.BACFORHEALTH"
+}
+]
+},
+{
+"id": "eo-2025-52",
+"number": 52,
+"year": 2025,
+"summary": "Reorganizes the Provincial Peace and Order Council, creates its Technical Working Group, and sets up Special Action Committees on anti-insurgency, anti-criminality and public safety.",
+"summaryFil": "Muling inaayos ang Provincial Peace and Order Council, lumilikha ng Technical Working Group nito, at nagtatatag ng Special Action Committees sa anti-insurgency, anti-criminality at public safety.",
+"topic": "peace-order",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Section 1 reorganizes the PPOC under Section 116 of the Local Government Code",
+"Special Action Committees on Anti-Insurgency, Anti-Criminality and Public Safety are created",
+"Secretariat supports the PPOC and its committees",
+"Technical Working Group is created"
+],
+"pageCount": 9,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.REORGANIZATION.ThePPOC is herebyreorganized and shall be composedof"
+},
+{
+"page": 6,
+"quote": "SECTION4.SAC ONANTI-CRIMINALITY.There shall beaSAC onAnti-Criminalitywhich shall"
+}
+]
+},
+{
+"id": "eo-2025-55",
+"number": 55,
+"year": 2025,
+"summary": "Reorganizes the Provincial Committee on Anti-Trafficking in Persons and Anti-Violence Against Women and Their Children and its Provincial Inter-Agency Monitoring Task Force.",
+"summaryFil": "Muling inaayos ang Provincial Committee on Anti-Trafficking in Persons and Anti-Violence Against Women and Their Children at ang Provincial Inter-Agency Monitoring Task Force nito.",
+"topic": "organization",
+"signedDate": "2025-12-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Implements RA 9208 (anti-trafficking, as amended) and RA 9262 (anti-violence against women and children)",
+"Section 3 sets up a Provincial Inter-Agency Monitoring Task Force with defined functions",
+"Provincial Social Welfare and Development Office serves as Secretariat",
+"Takes effect immediately upon signing"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.REORGANIZATION OFTHEPROVINCIALCOMMITTEEON ANTI-"
+},
+{
+"page": 3,
+"quote": "SECTION3.THEPROVINCIALINTER-AGENCYMONITORINGTASKFORCEOFTHEPCAT-"
+}
+]
+},
+{
+"id": "eo-2025-60",
+"number": 60,
+"year": 2025,
+"summary": "Reorganizes the Provincial Disaster Risk Reduction and Management Council and its response clusters, and defines the participation of civil society and private sector representatives.",
+"summaryFil": "Muling inaayos ang Provincial Disaster Risk Reduction and Management Council at ang mga response cluster nito, at tinutukoy ang partisipasyon ng civil society at private sector.",
+"topic": "disaster",
+"signedDate": "2025-12-02",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Preamble notes the Council was last reorganized by Executive Order No. 39 on 24 September 2024",
+"Section 2 covers civil society organization and private sector representatives",
+"Covers powers and functions, emergencies, activation of the response cluster, and the Secretariat",
+"Includes provisions on declaring a state of calamity and on funding"
+],
+"pageCount": 12,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.REORGANIZATION.ThePDRRMCoftheProvinceofOrientalMindoro shallbe"
+},
+{
+"page": 5,
+"quote": "SECTION2.CIVILSOCIETYORGANIZATIONANDPRIVATESECTORREPRESENTATIVES."
+}
+]
+},
+{
+"id": "eo-2025-61",
+"number": 61,
+"year": 2025,
+"summary": "Creates the Statement of Assets, Liabilities, and Net Worth (SALN) Review and Compliance Committee, with its composition, functions and guidelines for SALN filing.",
+"summaryFil": "Lumilikha ng Statement of Assets, Liabilities, and Net Worth (SALN) Review and Compliance Committee, kasama ang komposisyon, tungkulin at alituntunin sa pag-file ng SALN.",
+"topic": "organization",
+"signedDate": "2025-12-02",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Committee is chaired by the Provincial Administrator, with the Provincial Human Resources Management Officer as a member",
+"Declarants use the 2025 SALN Form; filing may be physical or online/electronic subject to CSC rules",
+"Includes an accountability provision for failure to file",
+"Takes effect immediately upon signing"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.COMPOSITION.TheSALNReviewandComplianceCommittee(\"SALN-RCC\")is"
+},
+{
+"page": 2,
+"quote": "SECTION 4. FORM..All declarants shall use the appropriate 2025 SALN Form and the following"
+}
+]
+},
+{
+"id": "eo-2025-59",
+"number": 59,
+"year": 2025,
+"summary": "Amends the composition of the Provincial Youth Development Council to include newly elected officers; the title cites Executive Order No. 13, Series of 2025.",
+"summaryFil": "Binabago ang komposisyon ng Provincial Youth Development Council upang isama ang mga bagong halal na opisyal; binabanggit sa pamagat ang Executive Order No. 13, Series of 2025.",
+"topic": "organization",
+"signedDate": null,
+"amends": [
+"Executive Order No. 13, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"Section 1 is restated in full to set the new PYDC composition",
+"Except as expressly amended, all other provisions remain in force",
+"Note: Section 1 of the OCR text refers to Executive Order No. 34, Series of 2025, while the title cites No. 13",
+"Takes effect immediately upon signing"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AN EXECUTIVEORDERAMENDING EXECUTIVEORDER NO.13,SERIESOF2025"
+},
+{
+"page": 1,
+"quote": "SECTION1.AMENDMENTTOPYDCCOMPOSITION.Section1of ExecutiveOrderNo.34,"
+}
+]
+},
+{
+"id": "eo-2025-50",
+"number": 50,
+"year": 2025,
+"summary": "Provides guidelines on granting a medical allowance to qualified officials and employees of the Provincial Government, at Php7,000 per annum subject to funds and DBM rules, and creates a Technical Working Group.",
+"summaryFil": "Nagbibigay ng alituntunin sa pagbibigay ng medical allowance sa mga kwalipikadong opisyal at empleyado ng Pamahalaang Panlalawigan na Php7,000 bawat taon, depende sa pondo at patakaran ng DBM, at lumilikha ng Technical Working Group.",
+"topic": "finance",
+"signedDate": "2025-12-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Rate is Seven Thousand Pesos per annum, subject to DBM issuances and PGOM financial capability",
+"A lower uniform rate is granted if funding is insufficient",
+"Sets eligibility requirements and liquidation/reporting requirements",
+"A Technical Working Group is created"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 2,
+"quote": "Executive Order shall amount to Seven Thousand Pesos (Php7,ooo.o0) per annum. However,"
+},
+{
+"page": 4,
+"quote": "SECTION 8.TECHNICALWORKING GROUP.ATechnical Working Group(\"TWG\")is hereby"
+}
+]
+},
+{
+"id": "eo-2025-58",
+"number": 58,
+"year": 2025,
+"summary": "Adopts and implements the Paleng-QR Ph Plus Program in Oriental Mindoro to institutionalize digital payments in public markets, tricycle hubs and other business establishments.",
+"summaryFil": "Pinagtibay at ipinatutupad ang Paleng-QR Ph Plus Program sa Oriental Mindoro upang gawing institusyon ang digital payments sa mga pampublikong palengke, tricycle hub at iba pang negosyo.",
+"topic": "finance",
+"signedDate": "2025-12-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Program is a joint initiative of the BSP and DILG using the QR Ph standard",
+"Adopted in line with Joint Memorandum Circular No. 1, series of 2022",
+"Includes partnership with financial service providers and an information campaign",
+"Takes effect immediately upon signing"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1.ADOPTION OF PALENG-QR PH. The Provincial Governmentof Oriental"
+},
+{
+"page": 2,
+"quote": "SECTION 8.EFFECTIVITY.This order shall take effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2025-56",
+"number": 56,
+"year": 2025,
+"summary": "Implements intensified prevention, control and response measures against influenza-like illnesses in communities, workplaces, schools, health offices and government hospitals in Oriental Mindoro.",
+"summaryFil": "Ipinatutupad ang pinaigting na mga hakbang sa pag-iwas, pagkontrol at pagtugon sa influenza-like illnesses sa mga komunidad, pinagtatrabahuhan, paaralan, tanggapang pangkalusugan at ospital ng gobyerno sa Oriental Mindoro.",
+"topic": "health",
+"signedDate": "2025-12-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Sets prevention and control guidelines for health facilities, schools and childcare, households, barangays, LGUs and workplaces",
+"The Provincial Health Office, through PESU, handles monitoring and reporting",
+"Concerned offices allocate funds; remains in force until lifted or superseded",
+"Note: the OCR header reads EXECUTIVE ORDER NO.66, but the catalogue lists this as No. 56"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 2. COVERAGE. This Executive Order shall apply to all local government units"
+},
+{
+"page": 4,
+"quote": "SECTION 1O. MONITORING AND REPORTING. The PHO, through PESU, shall:"
+}
+]
+},
+{
+"id": "eo-2025-55-2",
+"number": 55,
+"year": 2025,
+"summary": "Reorganizes the Provincial Committee on Anti-Trafficking in Persons and Anti-Violence Against Women and Their Children (second scan of Executive Order No. 55, Series of 2025).",
+"summaryFil": "Muling inaayos ang Provincial Committee on Anti-Trafficking in Persons and Anti-Violence Against Women and Their Children (ikalawang scan ng Executive Order No. 55, Series of 2025).",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites RA 9208 (anti-trafficking) and RA 9262 (anti-violence against women and children)",
+"Appears to be a second scan of EO No. 55, Series of 2025",
+"Date of issuance is garbled in the OCR (December 2025)"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AN EXECUTIVE ORDER REORGANIZING THE PROVINCIAL COMMITTEE ON ANTI-"
+},
+{
+"page": 4,
+"quote": "ofourLordTwo ThousandTwenty-Five."
+}
+]
+},
+{
+"id": "eo-2025-54",
+"number": 54,
+"year": 2025,
+"summary": "Reorganizes the Provincial Council for the Protection of Children of Oriental Mindoro and sets its functions, secretariat and quarterly meetings.",
+"summaryFil": "Muling inaayos ang Provincial Council for the Protection of Children ng Oriental Mindoro at itinatakda ang tungkulin, secretariat at quarterly na pulong nito.",
+"topic": "organization",
+"signedDate": "2025-12-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Follows DILG Memorandum Circular No. 2021-039 on Local Councils for the Protection of Children",
+"Council assists and supports lower-level councils; a Provincial Inter-Agency Monitoring Task Force is created",
+"Provincial Social Welfare and Development Office serves as Secretariat",
+"Holds regular quarterly meetings"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AN EXECUTIVE ORDER REORGANIZING THE PROVINCIAL COUNCIL FOR THE"
+},
+{
+"page": 4,
+"quote": "SECTION6.SCHEDULEOFMEETINGS.ThePCPC shallhold regular quarterlymeetingsand"
+}
+]
+},
+{
+"id": "eo-2025-53",
+"number": 53,
+"year": 2025,
+"summary": "Reorganizes the Provincial Anti-Drug Abuse Council, sets its composition and responsibilities, and designates the Provincial Administrator's Office as secretariat.",
+"summaryFil": "Muling inaayos ang Provincial Anti-Drug Abuse Council, itinatakda ang komposisyon at responsibilidad nito, at itinatalaga ang Provincial Administrator's Office bilang secretariat.",
+"topic": "peace-order",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Council (PADAC) serves as a focal point for coordination on drug abuse prevention and rehabilitation",
+"Members include prosecutors, a court executive judge, parole and probation officers and civil society representatives",
+"Provincial Administrator's Office serves as secretariat"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.Reorganization.ThePADAC shall bereorganized tobe composed of thefollowing"
+},
+{
+"page": 3,
+"quote": "SECTiON3.Secretariat.ThePADACsecretariatshall betheProvincialAdministrator'sOffice"
+}
+]
+},
+{
+"id": "eo-2025-52-2",
+"number": 52,
+"year": 2025,
+"summary": "Reorganizes the Provincial Peace and Order Council and creates its Technical Working Group (second scan of Executive Order No. 52, Series of 2025).",
+"summaryFil": "Muling inaayos ang Provincial Peace and Order Council at lumilikha ng Technical Working Group nito (ikalawang scan ng Executive Order No. 52, Series of 2025).",
+"topic": "peace-order",
+"signedDate": "2025-12-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites Section 116 of the Local Government Code on Local Peace and Order Councils",
+"Appears to be a second scan of EO No. 52, Series of 2025",
+"Takes effect immediately upon signing"
+],
+"pageCount": 9,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, Section 116 of Republic Act No. 7160, otherwise known as the Local Government"
+},
+{
+"page": 9,
+"quote": "SEcTION 11.Effectivity.This Executive Order shall take effect immediately upon signing."
+}
+]
+},
+{
+"id": "eo-2025-51",
+"number": 51,
+"year": 2025,
+"summary": "Reorganizes the Provincial Development Council, its Executive and Sectoral/Functional Committees, noting the Local Government Code rule that at least one-fourth of members be NGO representatives.",
+"summaryFil": "Muling inaayos ang Provincial Development Council, ang Executive at Sectoral/Functional Committees nito, kasama ang patakaran ng Local Government Code na kahit isang-kapat ng miyembro ay kinatawan ng NGO.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites civil society organization participation under the Local Government Code",
+"Council meets at least once every six months or as often as needed",
+"Provincial Planning and Development Coordinator provides secretariat support",
+"Takes effect immediately upon signing"
+],
+"pageCount": 9,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, Section 107 of the LGC specifies that at least one-fourth of the members of a fully"
+},
+{
+"page": 9,
+"quote": "SECTION 2. MEETINGS, The PDC shall meet at least once every six (6) months or as often"
+}
+]
+},
+{
+"id": "eo-2025-46",
+"number": 46,
+"year": 2025,
+"summary": "Reorganizes the Provincial Project Monitoring Committee and the Provincial Project Monitoring Team, defining their duties, scope, quarterly meetings and coverage.",
+"summaryFil": "Muling inaayos ang Provincial Project Monitoring Committee at Provincial Project Monitoring Team, at tinutukoy ang kanilang tungkulin, saklaw at quarterly na pulong.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Preamble notes Executive Order No. 08, Series of 2023 earlier reconstituted both bodies",
+"Section 1 reorganizes the PPMC; Section 3 reorganizes the PPMT",
+"PPMC holds regular quarterly meetings or as often as needed",
+"Takes effect immediately upon signing"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.REORGANIZATIONOFTHEPPMC.ThePPMC is hereby reorganized and shall"
+},
+{
+"page": 3,
+"quote": "SECTION 6. MEETINGS. The PPMC shall hold regular quarterly meetings or as often as may"
+}
+]
+},
+{
+"id": "eo-2025-47",
+"number": 47,
+"year": 2025,
+"summary": "Reorganizes and expands the membership of the Provincial Health Board (PHB), sets its functions and meetings, and creates a Management Support Unit (MSU) to assist it.",
+"summaryFil": "Muling inoorganisa at pinalalawak ang kasapian ng Provincial Health Board (PHB), itinatakda ang mga tungkulin at pulong nito, at nililikha ang Management Support Unit (MSU) na tutulong dito.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs the PHB; the Provincial Health Officer is vice-chairperson",
+"PHB meets at least once a month",
+"General assembly of health stakeholders at least twice a year",
+"MSU serves as the PHB's administrative secretariat and helps manage the Special Health Fund"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.REORGANIZATIONOFTHEPHB."
+},
+{
+"page": 3,
+"quote": "SEcTiON3:MEETINGS.ThePHB shall conduct itsmeetingsatleastonceamonthorasoftenas"
+},
+{
+"page": 4,
+"quote": "SECTION 6: MSU. The MSU of the PHB is hereby created to assist in its operations"
+}
+]
+},
+{
+"id": "eo-2025-45",
+"number": 45,
+"year": 2025,
+"summary": "Creates a Core Group and a Technical Working Group to implement the TRANSCEND project (climate and ecological protection, partnered with UN-HABITAT) in Oriental Mindoro, and defines their functions and a secretariat.",
+"summaryFil": "Lumilikha ng Core Group at Technical Working Group para ipatupad ang proyektong TRANSCEND (proteksyon sa klima at ekolohiya, katuwang ang UN-HABITAT) sa Oriental Mindoro, at itinatakda ang kanilang tungkulin at sekretaryat.",
+"topic": "environment",
+"signedDate": "2025-11-03",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Core Group chaired by the Governor; Provincial Administrator is vice chairperson",
+"TWG implements and monitors plans, programs and activities for the project",
+"Secretariat drawn from PDRRMO and PG-ENRO staff",
+"PGOM to provide funds in the annual budget, subject to budgeting and audit rules"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "PGOM has signified its intention to actively partner"
+},
+{
+"page": 2,
+"quote": "COMPOSITIONOFTHETRANSCEND"
+},
+{
+"page": 5,
+"quote": "SECTION8.SECRETARIAT"
+}
+]
+},
+{
+"id": "eo-2025-44",
+"number": 44,
+"year": 2025,
+"summary": "Reorganizes the Philippine Rural Development Project (PRDP) Provincial Program Management and Implementing Unit, its Program Component Action Teams and support units, and defines their functions.",
+"summaryFil": "Muling inoorganisa ang Philippine Rural Development Project (PRDP) Provincial Program Management and Implementing Unit, ang mga Program Component Action Team at support unit nito, at itinatakda ang kanilang tungkulin.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs the PRDP-PPMIU; the Vice Governor is vice-chairperson",
+"Operating expenses are charged to PGOM's counterpart fund in the Program, subject to budgeting and audit rules",
+"Takes effect immediately upon approval"
+],
+"pageCount": 10,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.PRDP-PPMIUCOMPOSITION."
+},
+{
+"page": 10,
+"quote": "SECTION9.FUNDING."
+},
+{
+"page": 10,
+"quote": "This Executive Order shall take effect immediatelyupon approval hereof."
+}
+]
+},
+{
+"id": "eo-2025-43",
+"number": 43,
+"year": 2025,
+"summary": "Amends Executive Order No. 34, Series of 2025, to replace a member of the Annual Physical Inventory Committee (APIC) with Mr. Jay L. Papio and restates the committee's composition.",
+"summaryFil": "Binabago ang Executive Order No. 34, Series of 2025, upang palitan ang isang miyembro ng Annual Physical Inventory Committee (APIC) ni G. Jay L. Papio at inuulit ang kabuuang komposisyon ng komite.",
+"topic": "organization",
+"signedDate": null,
+"amends": [
+"Executive Order No. 34, Series of 2025"
+],
+"repeals": [],
+"keyPoints": [
+"Section 1 of EO 34 is amended to read in full with the new membership",
+"Mr. Jay L. Papio replaces Engr. Corazon M. Villas as APIC member",
+"All other provisions of EO 34 remain in full force and effect"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1. AMENDMENT TO APIC COMPOSITION."
+},
+{
+"page": 1,
+"quote": "Section2.EFFECTOFAMENDMENT."
+},
+{
+"page": 2,
+"quote": "Executive Order No.43, Series of 2025"
+}
+]
+},
+{
+"id": "eo-2025-42",
+"number": 42,
+"year": 2025,
+"summary": "Reorganizes the Provincial Solid Waste Management Board (PSWMB) under RA 9003, names its members, sets its functions and secretariat, and charges funding to the Office of the Governor.",
+"summaryFil": "Muling inoorganisa ang Provincial Solid Waste Management Board (PSWMB) alinsunod sa RA 9003, pinangalanan ang mga kasapi, itinatakda ang tungkulin at sekretaryat, at ang pondo ay sisingilin sa Office of the Governor.",
+"topic": "environment",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs the Board; members include Sangguniang Panlalawigan committee chair, district representatives and mayors",
+"Board was previously reconstituted by Executive Order No. 172-A, Series of 2019",
+"Funds are chargeable against the Office of the Governor",
+"Takes effect immediately upon approval"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. Reorganizing the PSWMB. Pursuant to RA No. 9003, the PSWMB for the Province"
+},
+{
+"page": 1,
+"quote": "WHEREAS, the PSWMB was previously reconstituted through Executive Order No. 172-A, Series"
+},
+{
+"page": 4,
+"quote": "SECTION 5.. Funding."
+}
+]
+},
+{
+"id": "eo-2025-41",
+"number": 41,
+"year": 2025,
+"summary": "Further reorganizes the Provincial School Board of Oriental Mindoro, lists its members, functions, meeting and budget rules, and designates the Provincial Public Employment Service Office as secretariat.",
+"summaryFil": "Muling inoorganisa ang Provincial School Board ng Oriental Mindoro, inilista ang mga kasapi, tungkulin, tuntunin sa pulong at badyet, at itinalaga ang Provincial Public Employment Service Office bilang sekretaryat.",
+"topic": "education",
+"signedDate": "2025-10-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor is chairperson; Schools Division Superintendent is co-chairperson",
+"Board meets at least once a month; a majority constitutes a quorum",
+"Annual school board budget gives priority to school operation and maintenance, health and sanitation, building repair and facilities",
+"Provincial Public Employment Service Office serves as secretariat"
+],
+"pageCount": 3,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS,on 13 May 2024, Executive Order No.17,Series of 2024, was issued to"
+},
+{
+"page": 3,
+"quote": "SEcTION 4. Secretariat. The Provincial Public Employment Service Office shall render"
+},
+{
+"page": 3,
+"quote": "this1stday"
+}
+]
+},
+{
+"id": "eo-2025-38",
+"number": 38,
+"year": 2025,
+"summary": "Reorganizes the Provincial Nutrition Committee (PNC) of Oriental Mindoro, redefines its functions and strengthens local nutrition governance.",
+"summaryFil": "Muling inoorganisa ang Provincial Nutrition Committee (PNC) ng Oriental Mindoro, muling binibigyang-kahulugan ang mga tungkulin nito at pinalalakas ang lokal na pamamahala sa nutrisyon.",
+"topic": "health",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"References the Philippine Plan of Action for Nutrition 2023-2028",
+"PNC was previously reorganized through issuances including Executive Order No. 10, Series of 2023",
+"Takes effect immediately upon signing and stays in force unless revoked or superseded"
+],
+"pageCount": 11,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AN EXECUTIVEORDER REORGANIZINGTHE PROVINCIAL NUTRITION"
+},
+{
+"page": 1,
+"quote": "subsequent issuances, including Executive Order No. 10, series of 2023, to adapt to"
+},
+{
+"page": 11,
+"quote": "This ExecutiveOrder shalltake effect immediatelyupon its signing and shall remainin"
+}
+]
+},
+{
+"id": "eo-2025-37",
+"number": 37,
+"year": 2025,
+"summary": "Organizes the Provincial Local AIDS Council of Oriental Mindoro as the central advisory, planning and policy-making body on HIV/AIDS prevention and control, and lists its members and duties.",
+"summaryFil": "Inoorganisa ang Provincial Local AIDS Council ng Oriental Mindoro bilang sentral na lupong tagapayo, tagaplano at gumagawa ng patakaran sa pagpigil at pagkontrol ng HIV/AIDS, at inilista ang mga kasapi at tungkulin nito.",
+"topic": "health",
+"signedDate": "2025-09-18",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs; the Provincial Health Officer II is vice-chairperson",
+"Formulates HIV/AIDS prevention and control policies and strategies",
+"Prepares the program and monitors its implementation",
+"Takes effect immediately upon approval"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "desiresto createand establishtheProvincial Local AiDS Council"
+},
+{
+"page": 3,
+"quote": "Section2.Functions and Duties of the Provincial Local AiDS Council."
+},
+{
+"page": 3,
+"quote": "this 18th"
+}
+]
+},
+{
+"id": "eo-2025-36",
+"number": 36,
+"year": 2025,
+"summary": "Mandates guidelines for pre-emptive and forced evacuation in Oriental Mindoro during impending or actual disasters or emergencies, including who declares and carries them out.",
+"summaryFil": "Nag-uutos ng mga alituntunin para sa pre-emptive at sapilitang paglikas sa Oriental Mindoro sa panahon ng nagbabadya o aktuwal na sakuna o emerhensiya, kasama kung sino ang magdedeklara at magpapatupad.",
+"topic": "disaster",
+"signedDate": "2025-09-11",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"PDRRMC Chairperson declares forced evacuation on recommendation from the EOC Manager",
+"Pre-emptive evacuation is triggered when the EOC Operations Coordinator determines it is necessary",
+"Evacuees stay in evacuation centers until a new issuance declares the danger has ended",
+"Provincial Veterinarian's Office personnel take custody of affected animals"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Declarationand Implementationof Evacuation Guidelines."
+},
+{
+"page": 2,
+"quote": "Procedureson the Declaration of Forced Evacuation."
+},
+{
+"page": 5,
+"quote": "this11th"
+}
+]
+},
+{
+"id": "eo-2025-35",
+"number": 35,
+"year": 2025,
+"summary": "Creates the Search and Selection Committee for the Pagkilala sa 75 Simbolo ng Natatanging Oriental Mindoreno, which will recommend 75 awardees for the 75th Araw ng Oriental Mindoro, and sets its duties.",
+"summaryFil": "Lumilikha ng Search and Selection Committee para sa Pagkilala sa 75 Simbolo ng Natatanging Oriental Mindoreno na magrerekomenda ng 75 gawad para sa ika-75 Araw ng Oriental Mindoro, at itinatakda ang tungkulin nito.",
+"topic": "organization",
+"signedDate": "2025-09-04",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Chaired by the Provincial Administrator; includes a Secretariat",
+"Committee issues the call for nominations and recommends a list of 75 awardees to the Governor",
+"Awards come in four categories: Mangyan, Halcon, Tamaraw and Naujan Lake",
+"Costs are charged to the PGOM budget"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.SEARCHANDSELECTIONCOMMITTEE."
+},
+{
+"page": 2,
+"quote": "Issue the call for nominations; receive, log,andverify completeness of submissions;"
+},
+{
+"page": 3,
+"quote": "this 4th day of September"
+}
+]
+},
+{
+"id": "eo-2025-34",
+"number": 34,
+"year": 2025,
+"summary": "Reorganizes the Annual Physical Inventory Committee (APIC) and its technical working group of the Provincial Government, following Commission on Audit Circular No. 2020-006, and names the members.",
+"summaryFil": "Muling inoorganisa ang Annual Physical Inventory Committee (APIC) at ang technical working group nito sa Pamahalaang Panlalawigan, alinsunod sa Commission on Audit Circular No. 2020-006, at pinangalanan ang mga kasapi.",
+"topic": "organization",
+"signedDate": "2025-09-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites COA Circular No. 2020-006 requiring an Inventory Committee able to finish the physical inventory in three months or less",
+"Follows Executive Order No. 60, Series of 2023, which previously reorganized the APIC",
+"Chaired by the Officer-in-Charge of the Provincial General Services Office",
+"Takes effect immediately upon approval"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1.Reorganization.The APiC is hereby reorganized to be composed of the"
+},
+{
+"page": 1,
+"quote": "CircularNo.2020-006mandatesthecreation"
+},
+{
+"page": 3,
+"quote": "this1stdayofSeptemberin"
+}
+]
+},
+{
+"id": "eo-2025-33",
+"number": 33,
+"year": 2025,
+"summary": "Reorganizes the Organizational Improvement Plan Committee (OIPC) of the Provincial Government, creates its Technical Working Group, and defines their functions in line with Provincial Ordinance No. 194-2025.",
+"summaryFil": "Muling inoorganisa ang Organizational Improvement Plan Committee (OIPC) ng Pamahalaang Panlalawigan, nililikha ang Technical Working Group nito, at itinatakda ang kanilang tungkulin alinsunod sa Provincial Ordinance No. 194-2025.",
+"topic": "organization",
+"signedDate": "2025-09-01",
+"amends": [],
+"repeals": [
+"Executive Order No. 10, Series of 2005",
+"Executive Order No. 14, Series of 2012",
+"Executive Order No. 97, Series of 2017"
+],
+"keyPoints": [
+"Governor chairs the OIPC",
+"Implements the 2025 Organizational Improvement Plan enacted by Provincial Ordinance No. 194-2025",
+"Repeals EO Nos. 10-2005, 14-2012 and 97-2017",
+"Takes effect immediately upon approval"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION1.Composition.TheOIPC of PGOM is herebyreorganizedas follows:"
+},
+{
+"page": 3,
+"quote": "SEcTiON7.RepealingClause.ExecutiveOrderNos.10-2005,14-2012,and97-2017,and"
+},
+{
+"page": 3,
+"quote": "this1stdayofSeptemberinthe"
+}
+]
+},
+{
+"id": "eo-2025-32",
+"number": 32,
+"year": 2025,
+"summary": "Creates the Executive Committee and working committees for the Salong Dagitab Christmas Festival 2025 in Oriental Mindoro.",
+"summaryFil": "Lumilikha ng Executive Committee at mga working committee para sa Salong Dagitab Christmas Festival 2025 sa Oriental Mindoro.",
+"topic": "tourism",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs the Executive Committee; the Vice Governor is vice-chairperson",
+"Builds on Provincial Ordinance No. 82-2018 institutionalizing Salong Dagitab",
+"Governor or committee chairpersons convene meetings as needed",
+"Takes effect immediately upon approval"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS,Provincial Ordinance No.82-2018,entitled“An Ordinance institutionalizing"
+},
+{
+"page": 1,
+"quote": "SECTiON 1.Executive Committee.The Salong Dagitab Christmas Festival 2025"
+},
+{
+"page": 4,
+"quote": "SEcTION 9. Effectivity.This Executive Order shall take effect immediately upon"
+}
+]
+},
+{
+"id": "eo-2025-31",
+"number": 31,
+"year": 2025,
+"summary": "Amends Executive Order No. 9, s. 2022 on the Health Promotion Committee (HPC): reaffirms its creation and mandate and updates its composition for a more inclusive membership.",
+"summaryFil": "Binabago ang Executive Order No. 9, s. 2022 tungkol sa Health Promotion Committee (HPC): muling pinagtitibay ang pagkakalikha at mandato nito at ina-update ang komposisyon para sa mas inklusibong kasapian.",
+"topic": "health",
+"signedDate": null,
+"amends": [
+"Executive Order No. 9, Series of 2022"
+],
+"repeals": [],
+"keyPoints": [
+"HPC continues to guide the Provincial Health Board on health promotion policies and programs",
+"Members must submit an annual declaration of conflict of interest",
+"Conflict rules refer to tobacco and milk products (Tobacco Regulation Act and the Milk Code)",
+"Effective immediately"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "there isa need toamend ExecutiveOrderNo.9,s.2022,to ensureamore"
+},
+{
+"page": 1,
+"quote": "SECTION1.REAFFIRMATIONOFCREATIONANDMANDATE."
+},
+{
+"page": 3,
+"quote": "SECTION7.CONFLICTOFINTEREST."
+}
+]
+},
+{
+"id": "eo-2025-30",
+"number": 30,
+"year": 2025,
+"summary": "Prescribes the guidelines, rules and rental charges for use of the Sentrong Pangkabataan and its facilities (gymnasium, ballroom hall, dormitory, IT library) in Oriental Mindoro.",
+"summaryFil": "Itinatakda ang mga alituntunin, patakaran at singil sa renta sa paggamit ng Sentrong Pangkabataan at mga pasilidad nito (gymnasium, ballroom hall, dormitory, IT library) sa Oriental Mindoro.",
+"topic": "other",
+"signedDate": "2025-08-04",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Facility is open to all regardless of race, sex, age, disability, religious or political beliefs",
+"Application form is submitted through the Office of the Governor-Special Concerns Division at least seven days before use",
+"Rental rates may be revised by an addendum or supplemental Executive Order",
+"Violators face appropriate legal proceedings"
+],
+"pageCount": 6,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "1. The Sentrong Pangkabataan and its facilities are open to all, regardless of race, sex,"
+},
+{
+"page": 6,
+"quote": "An addendum or supplemental Executive Order may be issued, as appropriate, to revise or"
+},
+{
+"page": 6,
+"quote": "August in the year of our Lord, Two Thousand and Twenty-Five."
+}
+]
+},
+{
+"id": "eo-2025-29",
+"number": 29,
+"year": 2025,
+"summary": "Reorganizes the Management Committee (MANCOM) of the Provincial Government, creates its sectoral committees, defines their functions, and repeals Executive Order No. 05, Series of 2023.",
+"summaryFil": "Muling inoorganisa ang Management Committee (MANCOM) ng Pamahalaang Panlalawigan, lumilikha ng mga sectoral committee nito, itinatakda ang kanilang tungkulin, at pinawawalang-bisa ang Executive Order No. 05, Series of 2023.",
+"topic": "organization",
+"signedDate": "2025-07-31",
+"amends": [],
+"repeals": [
+"Executive Order No. 5, Series of 2023"
+],
+"keyPoints": [
+"Governor chairs the Executive Committee of the MANCOM",
+"Sectoral committees include Human Resource Development, Finance, Health Services and General Public Services",
+"Reorganization follows the recent local elections",
+"A general secretariat gives administrative support to the MANCOM"
+],
+"pageCount": 8,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION1.Composition.TheMANCOM of PGOM is hereby reorganized with thefollowing"
+},
+{
+"page": 8,
+"quote": "Executive Order No.05,Series of 2023, and all other"
+},
+{
+"page": 8,
+"quote": "this31stdayof Julyintheyear"
+}
+]
+},
+{
+"id": "eo-2025-28",
+"number": 28,
+"year": 2025,
+"summary": "Reorganizes the Records Management Improvement Committee (RMIC) of Oriental Mindoro and its Technical Working Group, naming its members and chairperson.",
+"summaryFil": "Muling inoorganisa ang Records Management Improvement Committee (RMIC) ng Oriental Mindoro at ang Technical Working Group nito, at pinangalanan ang mga kasapi at tagapangulo.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Provincial Administrator chairs the RMIC",
+"Officer-in-Charge of the Provincial General Services Office is vice-chairperson",
+"Builds on the RMIC created on 03 March 2023",
+"Inconsistent orders are repealed or modified"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "The Records Management Improvement Committee is hereby reorganized and shall be"
+},
+{
+"page": 1,
+"quote": "on03March2023,theRecordsManagementImprovementCommittee"
+},
+{
+"page": 3,
+"quote": "Section 8.Repealing Clause."
+}
+]
+},
+{
+"id": "eo-2025-24",
+"number": 24,
+"year": 2025,
+"summary": "Creates the Executive Committee and Working Committees for the celebration of Fiesta MAHAL TANA: the 75th Araw ng Oriental Mindoro, the province's Diamond Jubilee on 15 November 2025.",
+"summaryFil": "Lumilikha ng Executive Committee at mga Working Committee para sa pagdiriwang ng Fiesta MAHAL TANA: ang ika-75 Araw ng Oriental Mindoro, ang Diamond Jubilee ng lalawigan sa 15 Nobyembre 2025.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Province's 75th Founding Anniversary falls on 15 November 2025",
+"Fiesta MAHAL TANA honors four icons: Mangyan, Halcon, Tamaraw and Naujan Lake",
+"Costs are charged to provincial government funds, subject to budgeting and audit rules",
+"Effective immediately upon approval"
+],
+"pageCount": 6,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "75thFoundingAnniversaryon15"
+},
+{
+"page": 1,
+"quote": "to honor the four major icons of the province, namely: Mangyan, Halcon,"
+},
+{
+"page": 6,
+"quote": "SECTION 13. Effectivity."
+}
+]
+},
+{
+"id": "eo-2025-23",
+"number": 23,
+"year": 2025,
+"summary": "Reorganizes the Provincial Epidemiology and Surveillance Unit (PESU) of Oriental Mindoro anew, naming its members to fill a vacancy, and sets its duties under RA 11332.",
+"summaryFil": "Muling inoorganisa ang Provincial Epidemiology and Surveillance Unit (PESU) ng Oriental Mindoro, pinangalanan ang mga kasapi upang punan ang bakante, at itinatakda ang tungkulin nito sa ilalim ng RA 11332.",
+"topic": "health",
+"signedDate": "2025-07-18",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Follows Executive Order No. 64 (03 October 2023) that earlier reorganized the PESU",
+"Members are Provincial Health Office personnel",
+"Records are treated with utmost confidentiality and used only for surveillance and investigation",
+"Effective immediately upon approval"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION 1.Reorganization.The PESU of Oriental Mindoro is herebyreorganized anew"
+},
+{
+"page": 1,
+"quote": "on03October 2023,Executive OrderNo.64was issued"
+},
+{
+"page": 2,
+"quote": "this18thdayofJulyintheYear"
+}
+]
+},
+{
+"id": "eo-2025-22",
+"number": 22,
+"year": 2025,
+"summary": "Temporarily allows breeder pigs and processed semen to enter Oriental Mindoro under African Swine Fever (ASF) safeguards, limiting eligible recipients and sources, and banning boar-for-hire operations.",
+"summaryFil": "Pansamantalang pinapayagan ang pagpasok ng breeder pigs at processed semen sa Oriental Mindoro sa ilalim ng mga pag-iingat laban sa African Swine Fever (ASF), nililimitahan ang mga maaaring tumanggap at pinagmulan, at ipinagbabawal ang boar-for-hire.",
+"topic": "agriculture",
+"signedDate": "2025-07-16",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Allowed from signing until revoked or amended",
+"Only commercial, semi-commercial farms or government-registered organizations may acquire breeder pigs",
+"Animals must come from Bureau of Animal Industry certified ASF-free facilities",
+"Boar-for-hire operations are strictly prohibited"
+],
+"pageCount": 3,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "The entry of breeder pigs and processed semen into Oriental Mindoro shall be"
+},
+{
+"page": 2,
+"quote": "Boar-for-hire operations shall be strictly prohibited due to the high transmissibility of the AsF"
+},
+{
+"page": 3,
+"quote": "this16thdayof"
+}
+]
+},
+{
+"id": "eo-2025-20",
+"number": 20,
+"year": 2025,
+"summary": "Reduces and condones real property taxes, interests and penalties on power generation facilities of Independent Power Producers under Build-Operate-Transfer contracts with government corporations, consistent with national EO No. 83-2025.",
+"summaryFil": "Binabawasan at pinatatawad ang real property tax, interes at multa sa mga pasilidad ng paglikha ng kuryente ng Independent Power Producers sa ilalim ng Build-Operate-Transfer na kontrata sa mga korporasyon ng gobyerno, alinsunod sa pambansang EO No. 83-2025.",
+"topic": "finance",
+"signedDate": "2025-06-30",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Covers real property taxes for calendar year 2024 on IPP facilities under BOT or similar contracts with GOCCs",
+"Interests and penalties on those taxes are condoned",
+"Payments above the reduced amount are applied to future real property tax liabilities",
+"Provincial Treasurer's Office monitors compliance"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION1.Reduction.ConsistentwithEONo.83-2025"
+},
+{
+"page": 1,
+"quote": "SEcTiON 2.Condonation of Interest and Penalties."
+},
+{
+"page": 2,
+"quote": "SECTION 5.Monitoring and Compliance."
+}
+]
+},
+{
+"id": "eo-2025-19",
+"number": 19,
+"year": 2025,
+"summary": "Reorganizes the Bids and Awards Committees (BACs) of the Provincial Government for Goods and Services, Infrastructure, and Health, sets their functions, and repeals Executive Order No. 04-A, Series of 2024.",
+"summaryFil": "Muling inoorganisa ang mga Bids and Awards Committee (BAC) ng Pamahalaang Panlalawigan para sa Goods and Services, Infrastructure, at Health, itinatakda ang kanilang tungkulin, at pinawawalang-bisa ang Executive Order No. 04-A, Series of 2024.",
+"topic": "organization",
+"signedDate": "2025-06-24",
+"amends": [],
+"repeals": [
+"Executive Order No. 04-A, Series of 2024"
+],
+"keyPoints": [
+"Three committees: BAC for Infrastructure, for Goods and Services, and for Health",
+"Provincial Administrator chairs the BAC for Infrastructure",
+"The outgoing BAC and Secretariat are ordered to expedite procurement",
+"Takes effect immediately"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "to reorganize the Bids and Awards Committees of the Provincial Government of"
+},
+{
+"page": 4,
+"quote": "Executive Order No. 04-A, Series of 2024 is hereby"
+},
+{
+"page": 4,
+"quote": "this24thdayofJuneintheYear"
+}
+]
+},
+{
+"id": "eo-2025-18",
+"number": 18,
+"year": 2025,
+"summary": "Establishes a separate Inventory Committee for Supplies and Materials of the Provincial Government, following a COA audit recommendation, and sets its functions.",
+"summaryFil": "Itinatatag ang hiwalay na Inventory Committee para sa Supplies and Materials ng Pamahalaang Panlalawigan, kasunod ng rekomendasyon ng COA audit, at itinatakda ang mga tungkulin nito.",
+"topic": "finance",
+"signedDate": "2025-06-13",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Created on the recommendation of the COA Audit Team in its Audit Observation Memorandum dated 13 May 2025",
+"Submits the Report on the Physical Count of Inventory to COA by July 31 and January 31 each year",
+"Prepares a Physical Inventory Plan and submits it to the COA Audit Team at least 10 calendar days before inventory",
+"Without prejudice to the continued operation of the APIC"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1.Composition.The Inventory Committee for Supplies and Materials shall be composed"
+},
+{
+"page": 1,
+"quote": "a) Submit the Report on the Physical Count of Inventory to the COA not later than July 31"
+},
+{
+"page": 2,
+"quote": "this 13th day of June"
+}
+]
+},
+{
+"id": "eo-2025-16",
+"number": 16,
+"year": 2025,
+"summary": "Suspends work and transactions of Provincial Government departments and offices from 1:00 PM on 13 June 2025 (Friday) for Father's Day, while basic health, security, social and emergency services continue.",
+"summaryFil": "Sinuspinde ang trabaho at transaksyon ng mga departamento at tanggapan ng Pamahalaang Panlalawigan mula 1:00 PM ng 13 Hunyo 2025 (Biyernes) para sa Father's Day, habang magpapatuloy ang mga batayang serbisyong pangkalusugan, seguridad, panlipunan at emerhensiya.",
+"topic": "other",
+"signedDate": "2025-06-12",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Suspension starts at 1:00 PM on 13 June 2025",
+"GSMAC, Botika ng Lalawigan, Civil Security Division and the provincial hospitals continue to operate",
+"PSWDO and PDRRMO keep a skeletal workforce",
+"Effective immediately"
+],
+"pageCount": 1,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "hereby suspends work and transactions"
+},
+{
+"page": 1,
+"quote": "However, the provision of basic health, security, social, and emergency services of the"
+},
+{
+"page": 1,
+"quote": "this 12th day of June"
+}
+]
+},
+{
+"id": "eo-2025-14",
+"number": 14,
+"year": 2025,
+"summary": "Streamlines the delegation of the Governor's authority to sign and approve documents and transactions, setting amount thresholds for what the Governor signs, and repeals the earlier delegation orders.",
+"summaryFil": "Pinapadali ang delegasyon ng awtoridad ng Gobernador na lumagda at mag-apruba ng mga dokumento at transaksyon, may itinakdang halagang hangganan sa lalagdaan ng Gobernador, at pinawawalang-bisa ang mga naunang kautusan sa delegasyon.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [
+"Executive Order No. 9, Series of 2023",
+"Executive Order No. 9-A, Series of 2023",
+"Executive Order No. 9-B, Series of 2023",
+"Executive Order No. 45, Series of 2024",
+"Executive Order No. 45-A, Series of 2024"
+],
+"keyPoints": [
+"Governor signs vouchers above PhP1,000,000 and all infrastructure vouchers",
+"Governor signs infrastructure checks above PhP500,000",
+"Governor approves purchase requests above PhP100,000",
+"Revises Executive Order No. 45-A, Series of 2024 and repeals EO Nos. 9, 9-A, 9-B (2023) and 45, 45-A (2024)"
+],
+"pageCount": 6,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "a. All Vouchers above One Million Pesos (PhP1,000,000.00):"
+},
+{
+"page": 1,
+"quote": "there is a need to revise Executive Order No. 45-A, Series of 2024 to further expedite the"
+},
+{
+"page": 6,
+"quote": "Executive Order Nos. 9, 9-A, and 9-B, Series of 2023, and"
+}
+]
+},
+{
+"id": "eo-2025-13",
+"number": 13,
+"year": 2025,
+"summary": "Reorganizes the Provincial Youth Development Council (PYDC) of Oriental Mindoro following the 5-6 April 2025 election, naming members for terms from 2025 to 2028.",
+"summaryFil": "Muling inoorganisa ang Provincial Youth Development Council (PYDC) ng Oriental Mindoro kasunod ng halalan noong 5-6 Abril 2025, at pinangalanan ang mga kasapi para sa termino mula 2025 hanggang 2028.",
+"topic": "organization",
+"signedDate": "2025-05-08",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Members chosen under the election held on 5 to 6 April 2025",
+"Terms run from 2025 to 2028",
+"Chaired by the Sangguniang Kabataan Provincial Federation President",
+"Costs charged to the Governor's Office general fund and other lawful sources"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "theelectionheldon5to6April2025,tobecomposedofthefollowingmemberswhosetermswill"
+},
+{
+"page": 1,
+"quote": "Section 1.Reorganization.The PYDC of Oriental Mindoro is hereby reorganized"
+},
+{
+"page": 4,
+"quote": "this O8thdayof"
+}
+]
+},
+{
+"id": "eo-2025-13-2",
+"number": 13,
+"year": 2025,
+"summary": "Reorganizes the Provincial Youth Development Council (PYDC) of Oriental Mindoro following the 5-6 April 2025 election, naming members for terms from 2025 to 2028 (second scanned copy of Executive Order No. 13).",
+"summaryFil": "Muling inoorganisa ang Provincial Youth Development Council (PYDC) ng Oriental Mindoro kasunod ng halalan noong 5-6 Abril 2025, at pinangalanan ang mga kasapi para sa termino mula 2025 hanggang 2028 (ikalawang kopya ng Executive Order No. 13).",
+"topic": "organization",
+"signedDate": "2025-05-08",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Members chosen under the election held on 5 to 6 April 2025",
+"Terms run from 2025 to 2028",
+"Chaired by the Sangguniang Kabataan Provincial Federation President",
+"Costs charged to the Governor's Office general fund and other lawful sources"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1.Reorganization.The PYDC of Oriental Mindoro is hereby reorganized,pursuantto"
+},
+{
+"page": 1,
+"quote": "WHEREAS,on5to 6April 2025,assemblyand election of new representatives were held;"
+},
+{
+"page": 4,
+"quote": "Section 9.Funding.The funding requirements for the activities of the PYDC shall be charged"
+}
+]
+},
+{
+"id": "eo-2025-12",
+"number": 12,
+"year": 2025,
+"summary": "Establishes the Multi-Partite Monitoring Team for the river restoration (dredging) of the Balete River in Gloria, Oriental Mindoro, and names its members.",
+"summaryFil": "Itinatatag ang Multi-Partite Monitoring Team para sa river restoration (dredging) ng Balete River sa Gloria, Oriental Mindoro, at pinangalanan ang mga kasapi nito.",
+"topic": "environment",
+"signedDate": "2025-04-28",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs the team as Chairperson of the Inter-Agency Committee on River Restoration",
+"Members include provincial offices and DPWH representatives",
+"Monitoring costs may be sourced from the project's monitoring fees",
+"Effective immediately unless amended or revoked"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTiON 1.Establishment andComposition.The Multi-PartiteMonitoring Teamfor the River"
+},
+{
+"page": 1,
+"quote": "WHEREAS,on 5June 2024,the DPWH-MIMAROPAREGION(IV-B)granted a dredging"
+},
+{
+"page": 3,
+"quote": "this28thdayofApril"
+}
+]
+},
+{
+"id": "eo-2025-11",
+"number": 11,
+"year": 2025,
+"summary": "Creates the 2025 Local Governance Transition Team in Oriental Mindoro to ensure continuity of public service and safeguard records and assets during the transition after the 2025 elections.",
+"summaryFil": "Lumilikha ng 2025 Local Governance Transition Team sa Oriental Mindoro upang matiyak ang tuloy-tuloy na serbisyo publiko at maprotektahan ang mga talaan at ari-arian sa panahon ng transisyon matapos ang halalan sa 2025.",
+"topic": "organization",
+"signedDate": "2025-04-10",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs; the Vice Chairperson is elected by simple majority from the members",
+"Based on DILG Memorandum Circular No. 2025-016",
+"Duties include training, pre-election orientation and post-election debriefings for incoming officials",
+"Effective immediately upon approval"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTiON 1.Composition.The Local Governance TransitionTeam shall be composed"
+},
+{
+"page": 1,
+"quote": "Memorandum CircularNo.2025-016of theDepartment of the Interiorand"
+},
+{
+"page": 4,
+"quote": "this 1oth day of April"
+}
+]
+},
+{
+"id": "eo-2025-10",
+"number": 10,
+"year": 2025,
+"summary": "Promulgates the Implementing Rules and Regulations of Provincial Ordinance No. 180-2024 granting benefits and cash incentives to accredited Bantay Dagat volunteers in Oriental Mindoro.",
+"summaryFil": "Inilalabas ang Implementing Rules and Regulations ng Provincial Ordinance No. 180-2024 na nagbibigay ng benepisyo at cash incentives sa mga accredited na Bantay Dagat volunteer sa Oriental Mindoro.",
+"topic": "other",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Bantay Dagat must be registered with the M/CFARMC and deputized in writing by the Local Chief Executive",
+"Benefits include priority in tertiary education, housing and livelihood assistance and free legal assistance",
+"Accredited Bantay Dagat enjoy security of tenure except for just and valid causes",
+"Takes effect immediately after approval; date of approval is blank"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Pursuant to Section 8 of Provincial Ordinance No. 180-2024, this Implementing Rules and"
+},
+{
+"page": 2,
+"quote": "SEcTiON 6.Benefits and other Assistance."
+},
+{
+"page": 3,
+"quote": "DateofApproval:"
+}
+]
+},
+{
+"id": "eo-2025-9",
+"number": 9,
+"year": 2025,
+"summary": "Provides guidelines on the management, operations and utilization of the Provincial Government's Sectoral Complex in Calapan City, a free stay facility for qualified Oriental Mindorenos.",
+"summaryFil": "Nagbibigay ng mga alituntunin sa pamamahala, operasyon at paggamit ng Sectoral Complex ng Pamahalaang Panlalawigan sa Calapan City, isang libreng tuluyan para sa mga kwalipikadong Oriental Mindorenos.",
+"topic": "other",
+"signedDate": "2025-03-07",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Qualified Oriental Mindorenos may stay overnight or up to twelve hours",
+"Longer stays need additional documentary requirements",
+"Overnight guests must be bonafide residents and submit a government-issued ID",
+"Takes effect immediately upon approval"
+],
+"pageCount": 5,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION 1. Purpose of the Sectoral Complex. The Sectoral Complex shall provide free"
+},
+{
+"page": 1,
+"quote": "Qualified Oriental Mindorenos may stay overnight/twelve (12) hours in the Sectoral Complex."
+},
+{
+"page": 5,
+"quote": "this7th dayof March"
+}
+]
+},
+{
+"id": "eo-2025-8",
+"number": 8,
+"year": 2025,
+"summary": "Organizes the Provincial Health Cluster for disaster risk reduction and management for health in Oriental Mindoro and sets its functions, including coordination and resource mapping.",
+"summaryFil": "Inoorganisa ang Provincial Health Cluster para sa disaster risk reduction and management for health sa Oriental Mindoro at itinatakda ang mga tungkulin nito, kabilang ang koordinasyon at resource mapping.",
+"topic": "disaster",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cluster coordinates health services before, during and after an emergency or disaster",
+"Facilitates vertical and horizontal coordination among members and stakeholders",
+"Conducts resource mapping and capacity development",
+"Takes effect immediately upon approval; signing day is not legible"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "it is necessarythat a provincial health cluster in"
+},
+{
+"page": 3,
+"quote": "Conductresourcemapping;"
+},
+{
+"page": 3,
+"quote": "Section6.Effectivity.ThisExecutiveOrdershalltakeeffect immediatelyupon its approval."
+}
+]
+},
+{
+"id": "eo-2025-7",
+"number": 7,
+"year": 2025,
+"summary": "Creates the Provincial Human Resource for Health Planning Team (PHRHPT) to develop a five-year human resource for health plan, names its members and sets its duties.",
+"summaryFil": "Lumilikha ng Provincial Human Resource for Health Planning Team (PHRHPT) upang bumuo ng limang-taong plano para sa human resource for health, pinangalanan ang mga kasapi at itinatakda ang mga tungkulin.",
+"topic": "health",
+"signedDate": "2025-02-10",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Team established under Resolution No. 9, Series of 2024 of the Provincial Local Health Board",
+"Chaired by the Provincial Health Officer II",
+"Consolidates plans of cities and municipalities and monitors the Human Resource for Health Plan",
+"Takes effect immediately upon approval"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1.Organization. The PHRHPT is hereby created to serve in the planning and"
+},
+{
+"page": 3,
+"quote": "d.MonitortheHumanResourceFor HealthPlan."
+},
+{
+"page": 3,
+"quote": "this1oth day of"
+}
+]
+},
+{
+"id": "eo-2025-6",
+"number": 6,
+"year": 2025,
+"summary": "Organizes the Technical Management Team and Technical Working Group for the full operation of the Oriental Mindoro Trading and Consolidation Facility (OMTCF).",
+"summaryFil": "Inoorganisa ang Technical Management Team at Technical Working Group para sa ganap na operasyon ng Oriental Mindoro Trading and Consolidation Facility (OMTCF).",
+"topic": "agriculture",
+"signedDate": "2025-01-31",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs the OMTCF Management Team",
+"Facility was funded by the DA-Philippine Rural Development Project to improve marketing for farmers",
+"Inconsistent issuances are revoked or modified"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1. Organization. The Oriental Mindoro Trading and Consolidation Facility"
+},
+{
+"page": 1,
+"quote": "WHEREAS,the Department of Agriculture-Philippine Rural Development Project funded the"
+},
+{
+"page": 4,
+"quote": "this31stdayof"
+}
+]
+},
+{
+"id": "eo-2025-5",
+"number": 5,
+"year": 2025,
+"summary": "Organizes the Provincial Local AIDS Council of Oriental Mindoro to bolster the national AIDS council's efforts in preventing and controlling the spread of HIV/AIDS.",
+"summaryFil": "Inoorganisa ang Provincial Local AIDS Council ng Oriental Mindoro upang palakasin ang pagsisikap ng PNAC sa pagpigil at pagkontrol sa pagkalat ng HIV/AIDS.",
+"topic": "health",
+"signedDate": "2025-01-31",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Council meets once every quarter or as often as necessary",
+"General Assembly takes part in formulating and implementing HIV/AIDS and STD/STI concerns",
+"Inconsistent orders are revoked or modified",
+"Takes effect immediately upon approval"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "createandestablishtheProvincial Local AIDSCouncil whichshall bolstertheeffortsofPNACin"
+},
+{
+"page": 3,
+"quote": "Section 5. Repealing Clause."
+},
+{
+"page": 3,
+"quote": "January,intheYearofourLordTwoThousandandTwenty-Five."
+}
+]
+},
+{
+"id": "eo-2025-4",
+"number": 4,
+"year": 2025,
+"summary": "Allows the selling, importing and transporting of frozen pork into and within Oriental Mindoro at a regulated price, until prices stabilize and the order is expressly repealed, with meat inspection and seller registration rules.",
+"summaryFil": "Pinapayagan ang pagbebenta, pag-angkat at pagdadala ng frozen pork papasok at sa loob ng Oriental Mindoro sa regulated na presyo, hanggang maging matatag ang presyo at tahasang mapawalang-bisa ang kautusan, na may mga patakaran sa inspeksyon ng karne at rehistrasyon ng nagbebenta.",
+"topic": "agriculture",
+"signedDate": "2025-01-31",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Price is set by the Provincial Price Coordinating Council",
+"Shipments need a Certificate of Meat Inspection or Meat Inspection Certificate and an accredited Meat Transport Vehicle",
+"Sellers must register with the Provincial Veterinarian's Office",
+"Valid until expressly repealed; follows EO No. 1, Series of 2025 which ran until 31 January 2025"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "is hereby allowed at a reasonable regulated price,determined by the Provincial Price"
+},
+{
+"page": 1,
+"quote": "Executive Order (EO) No. 1, series of 2025, was issued extending the period allowing"
+},
+{
+"page": 2,
+"quote": "untilexpresslyrepealed."
+}
+]
+},
+{
+"id": "eo-2025-3",
+"number": 3,
+"year": 2025,
+"summary": "Reorganizes the Employee of the Month Citation (EMC) Committee of the Provincial Government, names its members, and sets the functions of its secretariat.",
+"summaryFil": "Muling inoorganisa ang Employee of the Month Citation (EMC) Committee ng Pamahalaang Panlalawigan, pinangalanan ang mga kasapi, at itinatakda ang tungkulin ng sekretaryat nito.",
+"topic": "organization",
+"signedDate": "2025-01-14",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs; the Provincial Administrator is co-chairperson",
+"Follows Executive Order No. 23, Series of 2022 and Provincial Ordinance No. 156-2023",
+"Secretariat gives administrative support and records proceedings",
+"Takes effect immediately upon approval"
+],
+"pageCount": 2,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. Reorganization. The Employee of the Month Citation (EMC) Committee is"
+},
+{
+"page": 1,
+"quote": "Executive Order No. 23, Series of 2022 reorganized the PGOM Employee of"
+},
+{
+"page": 2,
+"quote": "this 14th day of January,in"
+}
+]
+},
+{
+"id": "eo-2025-2",
+"number": 2,
+"year": 2025,
+"summary": "Issues (in Filipino) the implementing rules and regulations of Provincial Ordinance No. 152-2023, which concerns the Provincial Indigenous Peoples Development and Advisory Council (PIPDAC).",
+"summaryFil": "Naglalabas ng mga alituntunin at regulasyon sa pagpapatupad ng Panlalawigang Ordinansa Blg. 152-2023 tungkol sa Provincial Indigenous Peoples Development and Advisory Council (PIPDAC).",
+"topic": "organization",
+"signedDate": "2025-01-14",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Written in Filipino as Atas Ehekutibo Blg. 02, Serye 2025",
+"Implements Provincial Ordinance No. 152-2023 dated 22 March 2023",
+"Serves as a guide for the PIPDAC and other concerned parties",
+"Takes effect upon the Governor's signing"
+],
+"pageCount": 8,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Ang panuntunang ito ay tatawaging, \"Mga Alintununin at Regulasyon sa Pagpapatupad"
+},
+{
+"page": 1,
+"quote": "Seksyon 2-Layunin:"
+},
+{
+"page": 8,
+"quote": "NILAGDAAN ngayong 14 Enero 2025, dito sa Lungsod ng Calapan, Lalawigan ng"
+}
+]
+},
+{
+"id": "eo-2025-1",
+"number": 1,
+"year": 2025,
+"summary": "Allows the selling, importing and transporting of frozen pork into and within Oriental Mindoro at a regulated price until 31 January 2025, with meat inspection and seller registration rules.",
+"summaryFil": "Pinapayagan ang pagbebenta, pag-angkat at pagdadala ng frozen pork papasok at sa loob ng Oriental Mindoro sa regulated na presyo hanggang 31 Enero 2025, na may mga patakaran sa inspeksyon ng karne at rehistrasyon ng nagbebenta.",
+"topic": "agriculture",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Price is set by the Provincial Price Coordinating Council",
+"Valid until 31 January 2025, after which it has no force and effect",
+"Follows EO No. 65, Series of 2024, which ran until 31 December 2024",
+"Sellers must register with the Provincial Veterinarian's Office"
+],
+"pageCount": 2,
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "is hereby allowed at a reasonable regulated price,determined by the Provincial"
+},
+{
+"page": 1,
+"quote": "Executive Order (EO) No. 65, series of 2024, was issued allowing the temporary selling,"
+},
+{
+"page": 2,
+"quote": "andshall bevaliduntil31January2025.Thereafter,thisExecutiveOrdershallhaveno"
+}
+]
+},
+{
+"id": "eo-2024-64",
+"number": 64,
+"year": 2024,
+"summary": "Sets guidelines for composing the Provincial Inspection Teams for Goods and Supplies (PIT-GS): three teams of five members each, drawn from a pool of office representatives, which inspect goods, supplies and equipment bought by the provincial government.",
+"summaryFil": "Nagtatakda ng mga alituntunin sa komposisyon ng Provincial Inspection Teams for Goods and Supplies (PIT-GS): tatlong koponan na may limang miyembro bawat isa, mula sa pool ng mga kinatawan ng mga tanggapan, na nag-iinspeksyon ng mga kalakal, suplay at kagamitang binili ng pamahalaang panlalawigan.",
+"topic": "organization",
+"signedDate": "2024-12-02",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Three teams: Goods/Supplies, Medicines/Medical Supplies, Information Technology Equipment",
+"Each team has five members who elect a team leader and an alternate",
+"Members are randomly drawn from a pool of representatives and serve three months or until another draw",
+"Takes effect immediately upon approval"
+],
+"pageCount": 3,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "EXECUTIVEORDERNO.64"
+},
+{
+"page": 3,
+"quote": "SEcTION 8. Effectivity.This Executive Order shall take effect immediately upon its"
+},
+{
+"page": 3,
+"quote": "HUMERLITOA.DOLOR,MPA,Ph.D."
+}
+]
+},
+{
+"id": "eo-2024-58",
+"number": 58,
+"year": 2024,
+"summary": "Designates the Oriental Mindoro Multi-Sectoral Complex in Brgy. Sta. Isabel, Calapan City as the Temporary Provincial Evacuation Center during disasters, calamities and emergencies.",
+"summaryFil": "Itinatalaga ang Oriental Mindoro Multi-Sectoral Complex sa Brgy. Sta. Isabel, Lungsod ng Calapan bilang Temporary Provincial Evacuation Center tuwing may sakuna, kalamidad at emergency.",
+"topic": "disaster",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"PSWDO, with PDRRMO, oversees management and operation of the center",
+"Designation lasts pending establishment of a Provincial Evacuation Center",
+"Funded from the Local Disaster Risk Reduction and Management Fund",
+"Takes effect immediately; only the month and year (November 2024) of issuance are legible"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "TemporaryProvincial Evacuation Center.Pending the establishment of a Provincial Evacuation"
+},
+{
+"page": 2,
+"quote": "Funding.Thefunds necessaryfor"
+}
+],
+"pageCount": 2
+},
+{
+"id": "eo-2024-56",
+"number": 56,
+"year": 2024,
+"summary": "Reorganizes the Provincial Environment Council, chaired by the Governor, and sets its functions, secretariat, meetings and code of conduct.",
+"summaryFil": "Nirereorganisa ang Provincial Environment Council na pinamumunuan ng Gobernador, at itinatakda ang mga tungkulin, secretariat, pagpupulong at code of conduct nito.",
+"topic": "environment",
+"signedDate": "2024-11-20",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor is Chairperson and Vice-Governor is Co-Chairperson",
+"Provincial Government ENRO serves as Secretariat",
+"Council meets once every quarter; majority of members is a quorum",
+"Recitals refer to Executive Order No. 20, Series of 2023 on the same council"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "Provincial Environment Council (PEC) of the Province of Oriental Mindoro is hereby"
+},
+{
+"page": 3,
+"quote": "SECTION 3.SECRETARIAT.TheProvincial Government -Environment and Natural"
+},
+{
+"page": 4,
+"quote": "this2othdayofNovemberinthe"
+}
+],
+"pageCount": 4
+},
+{
+"id": "eo-2024-45",
+"number": 45,
+"year": 2024,
+"summary": "Updates which documents only the Governor may sign and delegates the signing of other procurement and government documents to the Provincial Administrator and the Executive Assistant IV, with value limits.",
+"summaryFil": "Ina-update ang mga dokumentong tanging Gobernador lamang ang lalagda at ipinagkakatiwala sa Provincial Administrator at Executive Assistant IV ang paglagda sa iba pang dokumento sa pagbili at pamahalaan, ayon sa hangganan ng halaga.",
+"topic": "finance",
+"signedDate": "2024-10-11",
+"amends": [
+"Executive Order No. 9, Series of 2023",
+"Executive Order No. 9-A, Series of 2023",
+"Executive Order No. 9-B, Series of 2023"
+],
+"repeals": [],
+"keyPoints": [
+"Governor signs exclusively vouchers above PhP1,000,000 and infrastructure checks above PhP500,000",
+"Provincial Administrator signs lower-value checks and vouchers; Executive Assistant IV signs NOAs, NTPs and payrolls",
+"Alternates sign when the Provincial Administrator or Executive Assistant IV is absent",
+"Text says EO Nos. 9, 9-A and 9-B, Series of 2023 are amended, repealed and/or modified"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "All Vouchers aboveOne MillionPesos(PhP1,000,000.00):"
+},
+{
+"page": 5,
+"quote": "SECTICN7.Effectivity.This Executive Order shall take effect irnmediately upon its approval."
+},
+{
+"page": 5,
+"quote": "SECTiON 8.Repeating Clausa.Execuitive Order Nos.9,9-A,and 9-B,Series of 2023,other"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2024-35",
+"number": 35,
+"year": 2024,
+"summary": "Creates the Local Volunteer Committee (LVC) of the Provincial Government of Oriental Mindoro, names its members, and defines its functions, secretariat and focal person for promoting volunteerism.",
+"summaryFil": "Lumilikha ng Local Volunteer Committee (LVC) ng Pamahalaang Panlalawigan ng Oriental Mindoro, pinangalanan ang mga miyembro nito, at tinutukoy ang mga tungkulin, sekretaryat at focal person para sa pagtataguyod ng volunteerism.",
+"topic": "organization",
+"signedDate": "2024-08-28",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Chaired by the Governor, with the Vice Governor as co-chairperson",
+"Provincial Social Welfare and Development Officer is the volunteerism focal person",
+"Provincial Planning and Development Office serves as Secretariat",
+"PGOM allocates funds for LVC activities"
+],
+"pageCount": 4,
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "There is hereby organized the Provincial Government of Oriental"
+},
+{
+"page": 3,
+"quote": "SEcTION 7. Secretariat. The Provincial Planning and Development Office (PPDO) shall serve"
+},
+{
+"page": 4,
+"quote": "this 28th day of August in the Year of our"
+}
+]
+},
+{
+"id": "eo-2024-34",
+"number": 34,
+"year": 2024,
+"summary": "Directs intensified dengue prevention, detection and control in Oriental Mindoro, enjoining local chief executives to implement the DOH Enhanced 4S Strategy and setting measures for households, health facilities and schools.",
+"summaryFil": "Nag-uutos ng pinaigting na pag-iwas, pagtuklas at pagkontrol sa dengue sa Oriental Mindoro; inaatasan ang mga lokal na punong ehekutibo na ipatupad ang DOH Enhanced 4S Strategy at itinatakda ang mga hakbang sa tahanan, pasilidad pangkalusugan at paaralan.",
+"topic": "health",
+"signedDate": "2024-08-16",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"As of 02 August 2024 the Provincial Health Office recorded 2,697 dengue cases with 12 deaths, a 75% increase from last year",
+"Local chief executives to activate Aksyon Barangay Kontra Dengue and the daily 4 o'clock Habit clean-up",
+"Disease and vector surveillance, with weekly reports through the PIDSR system",
+"Includes Annexes 1 and 2 (DOH checklists referenced in Section 1)"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, as of 02 August 2024, Provinciai Health Office -Epidemic-Prone and Disease"
+},
+{
+"page": 1,
+"quote": "b) Activate the Aksyon Barangay Kontra Dengue (ABKD), per DILG MC No. 2012-16,"
+},
+{
+"page": 5,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 16th day of August in the year of"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2024-33",
+"number": 33,
+"year": 2024,
+"summary": "Reorganizes the Executive Committee and the Search and Award Committee for the Provincial Government's Outstanding Employees Award.",
+"summaryFil": "Nirereorganisa ang Executive Committee at ang Search and Award Committee para sa Outstanding Employees Award ng Pamahalaang Panlalawigan.",
+"topic": "organization",
+"signedDate": "2024-08-02",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Based on Provincial Ordinance No. 004-2003 on the Outstanding Provincial Government of Oriental Mindoro award",
+"The award carries Php 50,000, a plaque of recognition and a gold-gilded medallion",
+"Governor chairs the Executive Committee; Vice Governor is Vice Chairperson"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, there is a need to reorganize the Committees tasked with the selection of awardees"
+},
+{
+"page": 1,
+"quote": "SEcTION 1. Reorganization of the Executive Committee. The Outstanding Employees Award"
+},
+{
+"page": 3,
+"quote": "this 2nd day of August, in the Year"
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-28",
+"number": 28,
+"year": 2024,
+"summary": "Reorganizes the Technical Working Group studying the development of a Tourism Economic Zone in Naujan Lake National Park.",
+"summaryFil": "Nirereorganisa ang Technical Working Group na nag-aaral sa pagpapaunlad ng Tourism Economic Zone sa Naujan Lake National Park.",
+"topic": "tourism",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Recitals: EO No. 23, Series of 2023 (09 March 2023) created the original Technical Working Group",
+"On 04 June 2024 the Provincial Planning and Development Coordinator recommended changes to its composition",
+"Cites Provincial Tourism Code (Provincial Ordinance No. 139-2022) on Tourism Economic Zones",
+"Day and month of issuance not legible in the text"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION 1.Reorganizationof theTechnical Working Group.The Technical Working Group"
+},
+{
+"page": 1,
+"quote": "WHEREAS,on 04 June 2024,the Provincial Planning and Development Coordinator"
+},
+{
+"page": 3,
+"quote": "SEcTION8.Effectivity.ThisExecutiveOrdershall takeeffectimmediatelyupon itsapproval."
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-27",
+"number": 27,
+"year": 2024,
+"summary": "Reorganizes the Provincial Information and Communications Technology Council (PICTC), creates its Technical Working Group and provides for their functions.",
+"summaryFil": "Nirereorganisa ang Provincial Information and Communications Technology Council (PICTC), nililikha ang Technical Working Group nito at itinatakda ang kanilang mga tungkulin.",
+"topic": "organization",
+"signedDate": "2024-07-01",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Recitals: EO No. 44, Series of 2023 (19 June 2023) earlier reorganized the PICTC",
+"Cites RA No. 10844 (Department of Information and Communications Technology Act of 2015)",
+"Creates a Technical Working Group for the Council"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, on 19 June 2023, Executive Order No. 44, Series of 2023 reorganized the Provincial"
+},
+{
+"page": 1,
+"quote": "Councit (PICTC) is hereby reorganized to be composed of the following:"
+},
+{
+"page": 6,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 1st day of July, in the year of"
+}
+],
+"pageCount": 6
+},
+{
+"id": "eo-2024-26",
+"number": 26,
+"year": 2024,
+"summary": "Creates the Executive Committee and working committees for the Salong Dagitab Christmas Festival 2024 in Oriental Mindoro.",
+"summaryFil": "Nililikha ang Executive Committee at mga working committee para sa pagdiriwang ng Salong Dagitab Christmas Festival 2024 sa Oriental Mindoro.",
+"topic": "tourism",
+"signedDate": "2024-06-28",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor chairs the Executive Committee; Vice-Governor is Vice-Chairperson",
+"Cites Provincial Ordinance No. 82-2018 on the annual Christmas decorations and lights display"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, there is a need to constitute committees who shall spearhead the preparation and"
+},
+{
+"page": 1,
+"quote": "SECTiON 1. Executive Committee. The Executive Commitee for the Saiong Dagitab Christmas"
+},
+{
+"page": 3,
+"quote": "DONE IN THE CITY OF CALAPAN, PROVINCE OF ORIENTAL MINDORO, this 28th day of June"
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-25",
+"number": 25,
+"year": 2024,
+"summary": "Creates the Executive Committee and working committees for Fiesta MAHAL TANA, the 74th Founding Anniversary of Oriental Mindoro.",
+"summaryFil": "Nililikha ang Executive Committee at mga working committee para sa Fiesta MAHAL TANA, ang ika-74 na Anibersaryo ng Pagkakatatag ng Oriental Mindoro.",
+"topic": "tourism",
+"signedDate": "2024-06-28",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Anniversary falls on 15 November 2024 per the recitals",
+"Cites Provincial Tourism Code (Provincial Ordinance No. 139-2022) which institutionalizes the annual celebration",
+"Governor chairs the Executive Committee; Vice-Governor is Vice-Chairperson"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, on 15 November 2024, the Province of Oriental Mindoro will be celebrating its 74th"
+},
+{
+"page": 1,
+"quote": "SEcTION 2. The Executive Committee. The Executive Committee for the 74th Fiesta MAHAL"
+},
+{
+"page": 5,
+"quote": "DONE IN THE CITY OF CALAPAN, PROVINCE OF ORIENTAL MINDORO, this 28h day of June"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2024-24",
+"number": 24,
+"year": 2024,
+"summary": "Creates an Investigation Committee to determine accountability for the loss or destruction of documents and records, and defines its functions.",
+"summaryFil": "Lumilikha ng Investigation Committee upang tukuyin ang pananagutan sa pagkawala o pagkasira ng mga dokumento at talaan, at itinatakda ang mga tungkulin nito.",
+"topic": "organization",
+"signedDate": "2024-06-24",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Based on COA Memorandum Circular No. 2023-08 (17 August 2023) on dormant accounts",
+"Committee is chaired by the Provincial Planning and Development Coordinator",
+"Members include officers from PGSO, PSWDO and the PGSO Civil Security Unit Division"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, on 17 August 2023, the Commission of Audit (COA) issued Memorandum"
+},
+{
+"page": 1,
+"quote": "SEcTION 1. Composition. The Investigation Committee for the determination of"
+},
+{
+"page": 2,
+"quote": "this 24th day of June 2024, in"
+}
+],
+"pageCount": 2
+},
+{
+"id": "eo-2024-23",
+"number": 23,
+"year": 2024,
+"summary": "Reorganizes the Provincial Community-Based Monitoring System (CBMS) Coordinating Board.",
+"summaryFil": "Nirereorganisa ang Provincial Community-Based Monitoring System (CBMS) Coordinating Board.",
+"topic": "organization",
+"signedDate": "2024-05-31",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Based on RA No. 11315 (CBMS Act) and CBMS Council Resolution Nos. 06, Series of 2021 and 1, Series of 2022",
+"Recitals: EO No. 14, Series of 2022 earlier organized the Board"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, on 7 April 2022, Executive Order No. 14, Series of 2022 was issued to organize"
+},
+{
+"page": 1,
+"quote": "SECTION 1. Reorganization. The Provincial Community - Based Monitoring System"
+},
+{
+"page": 3,
+"quote": "this 31st day of May 2024, in"
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-22",
+"number": 22,
+"year": 2024,
+"summary": "Establishes the Oriental Mindoro Orchestra to perform in official events of the Provincial Government and sets its membership and selection rules.",
+"summaryFil": "Itinatatag ang Oriental Mindoro Orchestra na tutugtog sa mga opisyal na kaganapan ng Pamahalaang Panlalawigan at itinatakda ang mga tuntunin sa pagiging kasapi at pagpili.",
+"topic": "other",
+"signedDate": "2024-05-31",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Performs in PGOM events and, subject to the Governor's approval, events of other agencies and private institutions",
+"Forty-five individuals are to be selected as members after audition",
+"PGOM employees are prioritized in selecting members; men and women have equal opportunity"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "established': The Oriental Mindoro Orchestra shall perform in PGOM's official events, programs,"
+},
+{
+"page": 1,
+"quote": "WHEREAS, Section 14, Article XIV of the 1987 Phippine Constitution provides th:t, a\"tnt State"
+},
+{
+"page": 1,
+"quote": "this 31st day of May, in ihe year'of"
+}
+],
+"pageCount": 1
+},
+{
+"id": "eo-2024-21",
+"number": 21,
+"year": 2024,
+"summary": "Reorganizes the Provincial Committee on Anti-Trafficking in Persons and Anti-Violence Against Women and Their Children (PCAT-VAWC).",
+"summaryFil": "Nirereorganisa ang Provincial Committee on Anti-Trafficking in Persons and Anti-Violence Against Women and Their Children (PCAT-VAWC).",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Based on RA Nos. 9208, 9262 and 9710 and DILG-DSWD-DOJ Joint Memorandum Circular 2010-1",
+"Printed date line reads 24th day of May but gives the year as Two Thousand Twenty-Three, so the date is left blank"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, there is a need to reorganize the chposition of Oriental Mindoro's Provincial"
+},
+{
+"page": 4,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 24th day of May in the"
+},
+{
+"page": 4,
+"quote": "Year of our Lord Two Thousand Twenty-Three."
+}
+],
+"pageCount": 4
+},
+{
+"id": "eo-2024-20",
+"number": 20,
+"year": 2024,
+"summary": "Reorganizes the Provincial Council for the Protection of Children (PCPC) of Oriental Mindoro, updates its composition and creates its sub-committees.",
+"summaryFil": "Nirereorganisa ang Provincial Council for the Protection of Children (PCPC) ng Oriental Mindoro, ina-update ang komposisyon nito at nililikha ang mga sub-committee.",
+"topic": "organization",
+"signedDate": "2024-05-24",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor is Chairperson; a Board Member chairing the SP Committee on Women, Children and Family Relations is Vice-Chairperson",
+"Recitals: EO No. 229, Series of 2019 earlier reorganized the PCPC",
+"Follows DILG Memorandum Circular No. 2021-039 on Local Councils for the Protection of Children"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, there is a need to reorganize the PCPCp fia update its composition and to designate"
+},
+{
+"page": 1,
+"quote": "Mindoro (PCPC) is hereby reorganized to be composed of the following:"
+},
+{
+"page": 6,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 24th day of May, in the Year of"
+}
+],
+"pageCount": 6
+},
+{
+"id": "eo-2024-19",
+"number": 19,
+"year": 2024,
+"summary": "Amends Executive Order No. 40, Series of 2022 on the Data Privacy and Protection Committee and the designation of the Data Protection Officer; its repealing clause repeals EO No. 40.",
+"summaryFil": "Binabago ang Executive Order No. 40, Series of 2022 tungkol sa Data Privacy and Protection Committee at pagtatalaga ng Data Protection Officer; pinawawalang-bisa ng repealing clause nito ang EO No. 40.",
+"topic": "organization",
+"signedDate": "2024-05-24",
+"amends": [
+"Executive Order No. 40, Series of 2022"
+],
+"repeals": [
+"Executive Order No. 40, Series of 2022"
+],
+"keyPoints": [
+"Cites the Data Privacy Act of 2012 (RA No. 10173) and NPC Advisory No. 2017-01 on Data Protection Officers",
+"Section 14 states EO No. 40, Series of 2022 is hereby repealed"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AMENDINGEXECUTIVEORDERNO.40,SERIESOF2022ENTITLED\"ANEXECLFIVE"
+},
+{
+"page": 5,
+"quote": "SECTICt! 14. Repealing Clause. EO No. 40, Series of 2022 is hereby repealed. All executive"
+},
+{
+"page": 5,
+"quote": "this 24t day Of"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2024-18",
+"number": 18,
+"year": 2024,
+"summary": "Directs hospitals and health facilities run by the Provincial Government to draft internal policies on distributing PhilHealth performance incentives and pooled professional funds, and to submit them promptly to the Sangguniang Panlalawigan for a resolution.",
+"summaryFil": "Inaatasan ang mga ospital at pasilidad pangkalusugan ng Pamahalaang Panlalawigan na bumuo ng sariling patakaran sa pamamahagi ng PhilHealth performance incentives at pooled professional funds at isumite agad sa Sangguniang Panlalawigan para sa resolusyon.",
+"topic": "health",
+"signedDate": "2024-05-14",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites PhilHealth Circular Nos. 2023-0013 and 2024-0002: for public providers, the share of incentives is defined by an approved Sanggunian resolution",
+"Applies to hospitals and health facilities managed by PGOM"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "For public/govemment KPPs, the share of perfc:mance incentives shall be defined"
+},
+{
+"page": 2,
+"quote": "DONE IN THE CITY OF CALAPAN, ORIENTAL MINDORO, this 14th day of May in the year of"
+}
+],
+"pageCount": 2
+},
+{
+"id": "eo-2024-17",
+"number": 17,
+"year": 2024,
+"summary": "Reorganizes the Provincial School Board of Oriental Mindoro and updates its composition and functions.",
+"summaryFil": "Nirereorganisa ang Provincial School Board ng Oriental Mindoro at ina-update ang komposisyon at tungkulin nito.",
+"topic": "education",
+"signedDate": "2024-05-13",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Governor is Chairperson; DepEd Schools Division of Oriental Mindoro Superintendent is Co-Chairperson",
+"Recitals: EO No. 18, Series of 2022 (31 May 2022) earlier reorganized the Board",
+"Cites Section 98 of RA No. 7160 on local school boards"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, there is a need to update the composition of Oriental Mindoro's Provincial"
+},
+{
+"page": 1,
+"quote": "SECTION 1. Reorganization. The Provincial School Board of Oriental Mindoro is hereby"
+},
+{
+"page": 3,
+"quote": "day of May in the Year of our Lord, Two Thousaric and Twenty-Four."
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-16-a",
+"number": 16,
+"year": 2024,
+"summary": "Reconstitutes the Steering Committee, Technical Working Group and Secretariat for the review of the Revised Revenue Code of 2011, defines their functions, and repeals EO No. 51, Series of 2020.",
+"summaryFil": "Nirereconstitute ang Steering Committee, Technical Working Group at Secretariat para sa pagrerepaso ng Revised Revenue Code of 2011, itinatakda ang kanilang tungkulin, at pinawawalang-bisa ang EO No. 51, Series of 2020.",
+"topic": "finance",
+"signedDate": "2024-05-31",
+"amends": [],
+"repeals": [
+"Executive Order No. 51, Series of 2020"
+],
+"keyPoints": [
+"Document header reads No. 16-A; catalogue number is 16. Same title as eo-2024-16 (possible re-issue or duplicate)",
+"Governor is Chairperson; Provincial Treasurer is Vice-Chairperson",
+"Review prompted by nine years since the last amendment of the Revenue Code"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1. Reconstitution. The Steering Committee for the review of the Revised Reve sue Code"
+},
+{
+"page": 5,
+"quote": "Section 9. Repealing Clause. Executive Order No. 51, series of 2020 is hereby repealed. All"
+},
+{
+"page": 5,
+"quote": "MINDORO, this 31st day of May"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2024-16",
+"number": 16,
+"year": 2024,
+"summary": "Reconstitutes the Steering Committee, Technical Working Group and Secretariat for the review of the Revised Revenue Code of 2011 and defines their functions; its repealing clause repeals an earlier 2020 order.",
+"summaryFil": "Nirereconstitute ang Steering Committee, Technical Working Group at Secretariat para sa pagrerepaso ng Revised Revenue Code of 2011 at itinatakda ang kanilang tungkulin; pinawawalang-bisa ng repealing clause ang naunang kautusan noong 2020.",
+"topic": "finance",
+"signedDate": null,
+"amends": [],
+"repeals": [
+"Executive Order No. 51, Series of 2020"
+],
+"keyPoints": [
+"Same title and text as eo-2024-16-a (header there reads 16-A); possible duplicate scan",
+"Repealing clause number is garbled (Nai1) in OCR; recitals name EO No. 51, Series of 2020, so that is listed",
+"Day and month of issuance not legible"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "Executive Orcier-{EO) No.51, Series of 2020 was issued to"
+},
+{
+"page": 4,
+"quote": "Section 9. Repealing Clause. Executive Order Nai1, series of 2020 is hereby repealed. All"
+},
+{
+"page": 4,
+"quote": "in the Year of our Lord Two Thousand and Twenty-Four."
+}
+],
+"pageCount": 4
+},
+{
+"id": "eo-2024-15",
+"number": 15,
+"year": 2024,
+"summary": "Implements the Internal Audit Act of 1962 by directing the creation, organization and operations of an Internal Audit Services Division under the Office of the Governor; repeals EO No. 217, Series of 2019.",
+"summaryFil": "Ipinatutupad ang Internal Audit Act of 1962 sa pamamagitan ng paglikha, pag-oorganisa at operasyon ng Internal Audit Services Division sa ilalim ng Tanggapan ng Gobernador; pinawawalang-bisa ang EO No. 217, Series of 2019.",
+"topic": "organization",
+"signedDate": "2024-05-03",
+"amends": [],
+"repeals": [
+"Executive Order No. 217, Series of 2019"
+],
+"keyPoints": [
+"Internal Audit Services Division administratively reports to the Governor",
+"Follows DBM Local Budget Circular No. 153 (Internal Audit Manual 2023 Edition for LGUs)",
+"Section 9 repeals EO No. 217, Series of 2019"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION1.ORGANIZATIONALPLACEMENTANDSTRUCTURE.PursuanttoSection3.2"
+},
+{
+"page": 6,
+"quote": "SECTION 9.REPEALING CLAUSE.EO No.217, Series of 2019 is hereby repealed.Any"
+},
+{
+"page": 6,
+"quote": "this3rddayof"
+}
+],
+"pageCount": 6
+},
+{
+"id": "eo-2024-14",
+"number": 14,
+"year": 2024,
+"summary": "Establishes the Provincial Inter-Agency Committee on Indigenous Peoples' Health (PIAC-IPH), led by the Governor, and provides for its functions.",
+"summaryFil": "Itinatatag ang Provincial Inter-Agency Committee on Indigenous Peoples' Health (PIAC-IPH) na pinamumunuan ng Gobernador at itinatakda ang mga tungkulin nito.",
+"topic": "health",
+"signedDate": "2024-05-02",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Operationalizes DOH-NCIP-DILG Joint Memorandum Circular No. 2015-01 in Oriental Mindoro",
+"Composition follows DILG Memorandum Circular No. 2018-65",
+"Governor is Chairperson"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. Provincial Inter-Agency Committee on Indigenous Peoples' Health (PIAC-IPH)."
+},
+{
+"page": 1,
+"quote": "WHEREAS, the creation of the Province's PIAC-IPH will operationalize the directive of DOH-"
+},
+{
+"page": 3,
+"quote": "this 2nd day of May,"
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-13",
+"number": 13,
+"year": 2024,
+"summary": "Sets guidelines and precautionary measures for the public against the dangerous heat index brought about by El Nino in Oriental Mindoro.",
+"summaryFil": "Nagtatakda ng mga alituntunin at pag-iingat para sa publiko laban sa mapanganib na heat index dulot ng El Nino sa Oriental Mindoro.",
+"topic": "disaster",
+"signedDate": "2024-05-02",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Recitals cite DOST-PAGASA ENSO Advisory No. 10 (way below normal rainfall) and high heat index reports",
+"Section 1 lists general precautions, such as staying in well-ventilated or shaded areas and limiting time outdoors"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION 1. General Precautionary Measures. The public is hereby reminded to undertake the"
+},
+{
+"page": 1,
+"quote": "a. Stay in well-ventilated areas;"
+},
+{
+"page": 4,
+"quote": "this2nddayof May intheyearof"
+}
+],
+"pageCount": 4
+},
+{
+"id": "eo-2024-11",
+"number": 11,
+"year": 2024,
+"summary": "Suspends face-to-face classes in pre-school, elementary, high school and senior high school, public and private, in Oriental Mindoro on 24 April 2024 (Wednesday) due to the forecasted heat index.",
+"summaryFil": "Sinuspinde ang face-to-face na klase sa pre-school, elementarya, high school at senior high school, publiko at pribado, sa Oriental Mindoro sa 24 Abril 2024 (Miyerkules) dahil sa forecasted na heat index.",
+"topic": "education",
+"signedDate": "2024-04-23",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"DOST-PAGASA forecast a heat index of 42 degrees Celsius in Calapan City on 24 April 2024",
+"Public reminded to take precautions against the heat"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "forty-two (42)degrees Celsiuson24April 2024."
+},
+{
+"page": 1,
+"quote": "due to the dangerous heat index forecasted in the province on the said"
+},
+{
+"page": 1,
+"quote": "this23rddayof"
+}
+],
+"pageCount": 1
+},
+{
+"id": "eo-2024-10",
+"number": 10,
+"year": 2024,
+"summary": "Implements guidelines and measures on the prevention, detection and management of pertussis and diphtheria in Oriental Mindoro, based on DOH guidance.",
+"summaryFil": "Ipinatutupad ang mga alituntunin at hakbang sa pag-iwas, pagtuklas at pamamahala ng pertussis at dipterya sa Oriental Mindoro, batay sa gabay ng DOH.",
+"topic": "health",
+"signedDate": "2024-04-17",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"On 11 April 2024 the Provincial Health Office recorded 21 confirmed pertussis cases in Oriental Mindoro",
+"Follows DOH Department Memorandum No. 2023-0284 (PDITR Strategy and Response for Pertussis and Diphtheria)",
+"Sets monitoring of asymptomatic close contacts, including daily monitoring for 21 days"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "WHEREAS, on 11 April 2024, the Provincial Health Office (PHO) recorded twenty-one (21)"
+},
+{
+"page": 1,
+"quote": "SEcTION1.Pertussis.DOHDepartmentMemorandum No.2023-0284 describes Pertussis or"
+},
+{
+"page": 7,
+"quote": "this17thdayofApril"
+}
+],
+"pageCount": 7
+},
+{
+"id": "eo-2023-9-b",
+"number": 9,
+"year": 2023,
+"summary": "Consolidates the delegation of authority to sign procurement transactions and other documents; the Governor keeps sole authority over vouchers of PhP1,000,000 and above and over NOAs and NTPs of PhP5,000,001 and above.",
+"summaryFil": "Pinagsasama ang delegasyon ng awtoridad sa paglagda ng mga transaksyon sa pagbili at iba pang dokumento; nasa Gobernador lamang ang paglagda sa mga voucher na PhP1,000,000 pataas at NOA at NTP na PhP5,000,001 pataas.",
+"topic": "finance",
+"signedDate": "2023-09-20",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Header number is 09-B; catalogue number is 9 (same title and date as eo-2023-9-a, header 09-A)",
+"Cites RA No. 9184 and GPPB NPM Opinion No. 049-2017 on NOA and NTP",
+"Later superseded in part by EO No. 45, Series of 2024, which refers to EO Nos. 9, 9-A and 9-B"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "1. All Vouchers amounting to One Mion Pesos (PhP1,000,000.00) and above."
+},
+{
+"page": 5,
+"quote": "SEcTION 6. Repealing Clause."
+},
+{
+"page": 5,
+"quote": "this 2Oth day of"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2023-9-a",
+"number": 9,
+"year": 2023,
+"summary": "Consolidates the delegation of authority to sign procurement transactions and other documents; the Governor keeps sole authority over vouchers of PhP1,000,000 and above and over NOAs and NTPs of PhP5,000,001 and above.",
+"summaryFil": "Pinagsasama ang delegasyon ng awtoridad sa paglagda ng mga transaksyon sa pagbili at iba pang dokumento; nasa Gobernador lamang ang paglagda sa mga voucher na PhP1,000,000 pataas at NOA at NTP na PhP5,000,001 pataas.",
+"topic": "finance",
+"signedDate": "2023-09-20",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Header number is 09-A; catalogue number is 9 (same title and date as eo-2023-9-b, header 09-B)",
+"Cites RA No. 9184 and GPPB NPM Opinion No. 049-2017 on NOA and NTP",
+"EO No. 45, Series of 2024 later refers to EO Nos. 9, 9-A and 9-B"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "1. All Vouchers amounting to Qne Millicn Pesos (PhP1,000.000.00) and above."
+},
+{
+"page": 5,
+"quote": "or parts thereof inconsistent with this Executive Order are hereby amended, repealed and/or"
+},
+{
+"page": 5,
+"quote": "this 2Oth day of"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2024-8",
+"number": 8,
+"year": 2024,
+"summary": "Reorganizes the composition of the Provincial Gender and Development (GAD) Focal Point System (PGFPS), with an Executive Committee led by the Governor.",
+"summaryFil": "Nirereorganisa ang komposisyon ng Provincial Gender and Development (GAD) Focal Point System (PGFPS) na may Executive Committee na pinamumunuan ng Gobernador.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Catalogue title (Pradyek Lila) differs from the title printed in the document, which is the PGFPS reorganization; summary follows the printed text",
+"Cites the Magna Carta of Women and PCW-DILG-DBM-NEDA JMC 2013-01 as amended by JMC 2016-01",
+"Day of issuance garbled in OCR (March 2024)"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "ANEXECUTIVEORDERREORGANIZINGTHECOMPOSITIONOFTHEPROVINCIAL"
+},
+{
+"page": 1,
+"quote": "SECTiON1.Composition.TheProvincialGenderandDevelopment (GAD)FocalPoint"
+},
+{
+"page": 7,
+"quote": "this1gthdayofMarch inthe"
+}
+],
+"pageCount": 7
+},
+{
+"id": "eo-2024-7",
+"number": 7,
+"year": 2024,
+"summary": "Declares Pradyek Lila as the Provincial Government's forefront stance against gender-based violence, declares a unified approach to the rising cases, and creates an advisory council.",
+"summaryFil": "Idinedeklara ang Pradyek Lila bilang pangunahing paninindigan ng Pamahalaang Panlalawigan laban sa gender-based violence, nagtatakda ng pinag-isang pamamaraan sa tumataas na kaso, at lumilikha ng advisory council.",
+"topic": "peace-order",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Cites RA Nos. 9710 (Magna Carta of Women), 9262 and 11313 (Safe Spaces Act)",
+"Recitals note increasing gender-based violence cases reported by the PNP in the province",
+"Day of issuance garbled in OCR (March 2024)"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "AN EXECUTIVE ORDER DECLARING PRAOYFK LILA AS THE FOREFRONT ANTI-"
+},
+{
+"page": 1,
+"quote": "WHEREAS, recent data from the Philippine Nat: :al Police reveals the increasing cases of"
+},
+{
+"page": 5,
+"quote": "SEcTION 11. Repealing Clause. Other issuan 3s; incorisistent with this Executive Order are"
+}
+],
+"pageCount": 5
+},
+{
+"id": "eo-2024-6",
+"number": 6,
+"year": 2024,
+"summary": "Reorganizes the Provincial Science, Technology and Innovation Committee (PSTIC), led by the Governor, and defines its functions.",
+"summaryFil": "Nirereorganisa ang Provincial Science, Technology and Innovation Committee (PSTIC) na pinamumunuan ng Gobernador at itinatakda ang mga tungkulin nito.",
+"topic": "organization",
+"signedDate": "2024-03-14",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Recitals: EO No. 1, 2022 (4 January 2022) established the PSTIC",
+"Follows MIMAROPA Regional Research, Development and Innovation Committee guidelines (4 May 2021)"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTioN 1. Reorganization. The Provincial Science,Technology,and Innovation"
+},
+{
+"page": 1,
+"quote": "WHEREAS, there is a need to reorganize the composition ofthe PSTIC."
+},
+{
+"page": 3,
+"quote": "this 14th dayof March2024,"
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-5-a",
+"number": 5,
+"year": 2024,
+"summary": "Reorganizes the Provincial Committee on Anti-Red Tape (PCART), chaired by the Governor, with membership listed by position as ARTA requires.",
+"summaryFil": "Nirereorganisa ang Provincial Committee on Anti-Red Tape (PCART) na pinamumunuan ng Gobernador, at ang mga kasapi ay nakalista ayon sa posisyon ayon sa hinihingi ng ARTA.",
+"topic": "organization",
+"signedDate": "2024-06-21",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Header number is 05-A; catalogue number is 5. Same title as eo-2024-5 (possible re-issue)",
+"Based on RA No. 11032 and ARTA Memorandum Circular No. 2023-08",
+"Governor is Chairperson; Vice Governor is Vice-Chairperson"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. Reorganization. The Provincial Committee on Anti-Red Tape (PCART) is hereby"
+},
+{
+"page": 1,
+"quote": "WHEREAS, Section 3.4 of abovesaid Memorandum Circular further provides that the office order"
+},
+{
+"page": 3,
+"quote": "this 21st day of June"
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-5",
+"number": 5,
+"year": 2024,
+"summary": "Reorganizes the Provincial Committee on Anti-Red Tape (PCART), chaired by the Governor, with membership listed by position as ARTA requires.",
+"summaryFil": "Nirereorganisa ang Provincial Committee on Anti-Red Tape (PCART) na pinamumunuan ng Gobernador, at ang mga kasapi ay nakalista ayon sa posisyon ayon sa hinihingi ng ARTA.",
+"topic": "organization",
+"signedDate": null,
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Same title as eo-2024-5-a (header 05-A, dated 21 June 2024); possible earlier or duplicate issue",
+"Based on ARTA Memorandum Circular No. 2023-08",
+"Day and month of issuance not legible"
+],
+"confidence": "medium",
+"evidence": [
+{
+"page": 1,
+"quote": "SECTION 1. Reorganization. The Provincial Committee on Anti-Red Tape (PCART) is hereby"
+},
+{
+"page": 1,
+"quote": "Chief of Hospital, Oriental Mindoro Provincial Hospital"
+},
+{
+"page": 3,
+"quote": "in the year of our Lord, Two Thousand Twenty-four."
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-4",
+"number": 4,
+"year": 2024,
+"summary": "Reorganizes the membership of the PGOM Bids and Awards Committees for Goods and Services, Infrastructure and Health, and their secretariats, and repeals EO No. 74, Series of 2023.",
+"summaryFil": "Nirereorganisa ang mga kasapi ng Bids and Awards Committees ng PGOM para sa Goods and Services, Infrastructure at Health, at ng kanilang mga secretariat, at pinawawalang-bisa ang EO No. 74, Series of 2023.",
+"topic": "organization",
+"signedDate": "2024-03-01",
+"amends": [],
+"repeals": [
+"Executive Order No. 74, Series of 2023"
+],
+"keyPoints": [
+"Recitals: EO No. 74 (20 December 2023) earlier modified the committees' composition",
+"Provincial Legal Officer chairs the BAC for Infrastructure",
+"Section 9 repeals EO No. 74, Series of 2023"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "SEcTION 1.Composition of Bids and Awards Committees.The Provincial Government of"
+},
+{
+"page": 6,
+"quote": "SEcTION9.RepealingClause.Executive OrderNo.74,Series of2023 is herebyrepealed."
+},
+{
+"page": 6,
+"quote": "this1stdayofMarchintheYear"
+}
+],
+"pageCount": 6
+},
+{
+"id": "eo-2024-3",
+"number": 3,
+"year": 2024,
+"summary": "Reorganizes the Provincial Mining Regulatory Board (PMRB) of Oriental Mindoro and provides for its functions.",
+"summaryFil": "Nirereorganisa ang Provincial Mining Regulatory Board (PMRB) ng Oriental Mindoro at itinatakda ang mga tungkulin nito.",
+"topic": "organization",
+"signedDate": "2024-02-22",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Based on RA No. 7076 (People's Small Scale Mining Act of 1991) and Provincial Ordinance No. 021-2011",
+"Chaired by the DENR-Mines and Geosciences Bureau 4B Regional Director or authorized representative",
+"Includes power to suspend, cancel and revoke small-scale mining permits for cause after due process"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1. Reorganization. The Provincial Mining Regulatory Board is hereby reorganized to be"
+},
+{
+"page": 1,
+"quote": "Revenue Code of 2011, as amended, created the PMRB of Oriental Mindoro."
+},
+{
+"page": 2,
+"quote": "this 22nd day of"
+}
+],
+"pageCount": 2
+},
+{
+"id": "eo-2024-2",
+"number": 2,
+"year": 2024,
+"summary": "Reconstitutes the Provincial Physical Fitness and Sports Development Council (PPFSDC) of Oriental Mindoro and provides for its duties and functions.",
+"summaryFil": "Nirereconstitute ang Provincial Physical Fitness and Sports Development Council (PPFSDC) ng Oriental Mindoro at itinatakda ang mga tungkulin at gawain nito.",
+"topic": "organization",
+"signedDate": "2024-02-08",
+"amends": [],
+"repeals": [],
+"keyPoints": [
+"Recitals: EO No. 20, Series of 2011 (08 March 2011) earlier reorganized the PPFSDC",
+"Cites EO No. 63, Series of 1993 and DILG MC No. 2023-172 on the PFSDC",
+"Governor is Chairperson"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1. Reconstituting the Provincial Physicail fitness and Sports Development Council."
+},
+{
+"page": 1,
+"quote": "WHEREAS, on 08 March 2011, EO No. 20, Series .: 2011 was issued to reorganize the Provincial"
+},
+{
+"page": 3,
+"quote": "DONE IN THE CITY OF CALAPAN, PROVINCE CF ORIENTAL MINDORO, this 8th day of"
+}
+],
+"pageCount": 3
+},
+{
+"id": "eo-2024-1",
+"number": 1,
+"year": 2024,
+"summary": "Creates the Provincial Committee on Quality Workplace and provides for its functions; amends Special Order No. 273, Series of 2018.",
+"summaryFil": "Nililikha ang Provincial Committee on Quality Workplace at itinatakda ang mga tungkulin nito; binabago ang Special Order No. 273, Series of 2018.",
+"topic": "organization",
+"signedDate": "2024-01-08",
+"amends": [
+"Special Order No. 273, Series of 2018"
+],
+"repeals": [],
+"keyPoints": [
+"Aims to ensure compliance with the Quality Workplace Standards for Local Government Units (QWS-LGU)",
+"Provincial Administrator is Chairperson; OIC of the Provincial General Services Office is Vice-Chairperson"
+],
+"confidence": "high",
+"evidence": [
+{
+"page": 1,
+"quote": "Section 1. Organization. The Provincial Committee on Quality Workplace is hereby created to be"
+},
+{
+"page": 2,
+"quote": "SEcTION 5. Repealing Clause. Special Order No. 273 .Series of 2018 is hereby amended by this"
+},
+{
+"page": 2,
+"quote": "this 8th day of January in"
+}
+],
+"pageCount": 2
+}
+]
+}
