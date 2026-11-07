@@ -1,3 +1,5 @@
+import { T } from "@/lib/i18n/i18n";
+import { R } from "@/components/site/FinanceBits";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
@@ -9,7 +11,7 @@ const load = (f: string): Fc => JSON.parse(readFileSync(join(process.cwd(), "pub
 const RAMP = ["#e3ecf7", "#b7cdea", "#7fa4d6", "#4a79bf", "#2b4fa3"];
 export type ChoroRow = { pcode: string; name: string; value: number | null; href?: string };
 
-export default function LinkChoropleth({ rows, format, unit }: { rows: ChoroRow[]; format: (n: number) => string; unit: string }) {
+export default function LinkChoropleth({ rows, format, unit }: { rows: ChoroRow[]; format: (n: number) => string; unit: string /* dictionary key of the metric */ }) {
   const feats = [...load("municipalities").features, ...load("component_cities").features];
   const rings = (g: Geom): Ring[] => (g.type === "Polygon" ? g.coordinates : g.coordinates.flat());
   const pts = feats.flatMap((f) => rings(f.geometry).flat());
@@ -27,11 +29,12 @@ export default function LinkChoropleth({ rows, format, unit }: { rows: ChoroRow[
 
   return (
     <figure>
-      <svg viewBox={`0 0 ${W.toFixed(0)} ${H.toFixed(0)}`} className="mx-auto h-auto w-full max-w-xs" role="group" aria-label={`Mapa ng Oriental Mindoro ayon sa ${unit}; bawat bayan ay link`}>
+      <span id={`cm-${unit}`} className="sr-only"><R k="finance.map.aria" v={[<T key="u" k={unit} />]} /></span>
+      <svg viewBox={`0 0 ${W.toFixed(0)} ${H.toFixed(0)}`} className="mx-auto h-auto w-full max-w-xs" role="group" aria-labelledby={`cm-${unit}`}>
         {feats.map((f) => {
           const r = byCode.get(f.properties.ADM3_PCODE);
           const fill = r?.value != null ? RAMP[bin(r.value)] : "#e5e5e5";
-          const shape = <path d={path(f.geometry)} fill={fill} stroke="#fff" strokeWidth="1.500" strokeLinejoin="round" className="transition-opacity hover:opacity-80"><title>{`${r?.name ?? f.properties.ADM3_EN}: ${r?.value != null ? format(r.value) : "no data"}`}</title></path>;
+          const shape = <path d={path(f.geometry)} fill={fill} stroke="#fff" strokeWidth="1.500" strokeLinejoin="round" className="transition-opacity hover:opacity-80"><title>{r?.name ?? f.properties.ADM3_EN}: {r?.value != null ? format(r.value) : <T k="town.nodata" />}</title></path>;
           return r?.href ? <a key={f.properties.ADM3_PCODE} href={r.href}>{shape}</a> : <g key={f.properties.ADM3_PCODE}>{shape}</g>;
         })}
       </svg>

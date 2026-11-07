@@ -1,3 +1,4 @@
+import { R } from "@/components/site/FinanceBits";
 import { fmtInt, fmtPct, popGrowth, type PopPoint } from "@/lib/stats";
 
 /** Horizontal CSS bars with the value as text, so it reads without sight of the bars. */
@@ -19,7 +20,7 @@ export default function PopTrend({ points }: { points: PopPoint[] }) {
       </ul>
       {g !== null && (
         <p className="mt-2 text-sm text-black/70">
-          Paglago {points[0].year}–{points[points.length - 1].year}: <strong>{g >= 0 ? "+" : ""}{fmtPct(g)}</strong>
+          <R k="finance.pop.growth" v={[points[0].year, points[points.length - 1].year]} /> <strong>{g >= 0 ? "+" : ""}{fmtPct(g)}</strong>
         </p>
       )}
     </div>
