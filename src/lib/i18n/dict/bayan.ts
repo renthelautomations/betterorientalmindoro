@@ -1,5 +1,8 @@
 // bayan interface strings: "area.thing": ["English", "Filipino"]. Data from sources stays as published.
 export const BAYAN = {
+  "bayan.growth.h": ["Which towns grew fastest", "Aling bayan ang pinakamabilis lumago"],
+  "bayan.growth.p": ["Population change from the first census on record to the latest one.", "Pagbabago ng populasyon mula sa pinakaunang census hanggang sa pinakahuli."],
+  "bayan.col.growth": ["Growth since first census", "Paglago mula unang census"], "bayan.col.density": ["People per km²", "Tao kada km²"],
   "bayan.home": ["Home", "Home"], "bayan.eyebrow": ["TOWNS", "BAYAN"], "bayan.title": ["Towns and city", "Mga bayan at lungsod"],
   "bayan.lead": ["14 towns and 1 city of Oriental Mindoro. Point at or tap the map, or pick from the list below.", "14 bayan at 1 lungsod ng Oriental Mindoro. Ituro o pindutin ang mapa, o pumili sa listahan sa ibaba."],
   "bayan.pop.h": ["Population of each town", "Populasyon ng bawat bayan"],

@@ -42,5 +42,5 @@ export function bayanMetrics(): Metric[] {
 /** Rows for the sortable DataTable (class fields are plain values so a server page can pass them). */
 export const bayanRows = () => getMunicipalities().map((m) => {
   const s = getStats(m.slug);
-  return { name: m.name, kind: m.isCity ? "town.city" : "town.town", pop: s?.population.at(-1)?.value ?? null, trend: s?.population.map((p) => p.value) ?? null, area: m.areaKm2 };
+  return { slug: m.slug, name: m.name, kind: m.isCity ? "town.city" : "town.town", pop: s?.population.at(-1)?.value ?? null, trend: s?.population.map((p) => p.value) ?? null, area: m.areaKm2 };
 });
