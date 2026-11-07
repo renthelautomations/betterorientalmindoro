@@ -1,0 +1,806 @@
+{
+ "source": "https://ormindoro.gov.ph/governor/ , https://ormindoro.gov.ph/sp/ , https://ormindoro.gov.ph/department-heads/ , https://ormindoro.gov.ph/contact-us/",
+ "fetchedAt": "2026-11-08",
+ "items": [
+  {
+   "id": "governor-1-hon-humerlito-bonz-a-dolor",
+   "kind": "governor",
+   "name": "HON. HUMERLITO “BONZ” A. DOLOR",
+   "position": "PROVINCIAL GOVERNOR",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "vice-governor-2-hon-antonio-s-perez-jr",
+   "kind": "vice-governor",
+   "name": "HON. ANTONIO S. PEREZ, JR",
+   "position": "VICE GOVERNOR",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-3-hon-alexandra-c-casubuan-tan",
+   "kind": "board-member",
+   "name": "HON. ALEXANDRA C. CASUBUAN-TAN",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-4-hon-ronalee-e-leachon",
+   "kind": "board-member",
+   "name": "HON. RONALEE E. LEACHON",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-5-hon-farrah-fay-c-ilano-navarro",
+   "kind": "board-member",
+   "name": "HON. FARRAH FAY C. ILANO-NAVARRO",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-6-hon-ryan-z-arago",
+   "kind": "board-member",
+   "name": "HON. RYAN Z. ARAGO",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-7-hon-voltaire-s-brucal",
+   "kind": "board-member",
+   "name": "HON.VOLTAIRE S. BRUCAL",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-8-hon-jomarc-philip-e-dimapilis",
+   "kind": "board-member",
+   "name": "HON. JOMARC PHILIP E. DIMAPILIS",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-9-hon-jean-paulo-r-umali",
+   "kind": "board-member",
+   "name": "HON. JEAN PAULO R. UMALI",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-10-hon-anthony-l-yap",
+   "kind": "board-member",
+   "name": "HON. ANTHONY L. YAP",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-11-hon-rolando-h-ruga",
+   "kind": "board-member",
+   "name": "HON. ROLANDO H. RUGA",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "board-member-12-hon-emmanuel-buenaventura",
+   "kind": "board-member",
+   "name": "HON. EMMANUEL BUENAVENTURA",
+   "position": "BOARD MEMBER",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "sectoral-13-mr-lagtum-a-pasag",
+   "kind": "sectoral",
+   "name": "MR. LAGTUM A. PASAG",
+   "position": "INDIGENEOUS PEOPLE’S REPRESENTATIVE",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "sectoral-14-mr-ralph-jonnel-d-recto",
+   "kind": "sectoral",
+   "name": "MR. RALPH JONNEL D. RECTO",
+   "position": "ABC FEDERATION PRESIDENT",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "sectoral-15-mr-marion-francis-d-marcos",
+   "kind": "sectoral",
+   "name": "MR. MARION FRANCIS D. MARCOS",
+   "position": "PCL REPRESENTATIVE",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "sectoral-16-ms-jhane-andhraei-d-dolor",
+   "kind": "sectoral",
+   "name": "MS. JHANE ANDHRAEI D. DOLOR",
+   "position": "SK FEDERATION PRESIDENT",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "sp-secretary-17-ms-diwata-h-fetizanan",
+   "kind": "sp-secretary",
+   "name": "MS. DIWATA H. FETIZANAN",
+   "position": "SP SECRETARY",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-18-atty-earl-ligorio-r-turano-ii",
+   "kind": "department-head",
+   "name": "ATTY. EARL LIGORIO R. TURANO II",
+   "position": "Provincial Administrator",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-19-ms-maria-nenita-d-dalupan",
+   "kind": "department-head",
+   "name": "MS. MARIA NENITA D. DALUPAN",
+   "position": "Executive Assistant V",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-20-enp-jose-maria-s-dalupan",
+   "kind": "department-head",
+   "name": "ENP. JOSE MARIA S. DALUPAN",
+   "position": "OIC - Provincial Planning and Development Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-21-ms-diwata-h-fetizanan",
+   "kind": "department-head",
+   "name": "MS. DIWATA H. FETIZANAN",
+   "position": "Secretary to the Sangguniang Panlalawigan",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-22-ms-anna-marie-dc-reyes",
+   "kind": "department-head",
+   "name": "MS. ANNA MARIE DC REYES",
+   "position": "Provincial Human Resource Management Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-23-ms-althea-f-agutaya",
+   "kind": "department-head",
+   "name": "MS. ALTHEA F. AGUTAYA",
+   "position": "Provincial Accountant",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-24-ms-may-anne-joy-m-ylagan",
+   "kind": "department-head",
+   "name": "MS. MAY ANNE JOY M. YLAGAN",
+   "position": "Provincial Budget Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-25-atty-francheska-laurent-l-feraren",
+   "kind": "department-head",
+   "name": "ATTY. FRANCHESKA LAURENT L. FERAREN",
+   "position": "Provincial Legal Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-26-mr-caesar-a-pangilinan-jr-mpa-rea",
+   "kind": "department-head",
+   "name": "MR. CAESAR A. PANGILINAN, JR., MPA, REA",
+   "position": "OIC - Provincial Assessor",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-27-atty-jean-phebie-g-de-mesa",
+   "kind": "department-head",
+   "name": "ATTY.JEAN PHEBIE G. DE MESA",
+   "position": "Acting Provincial General Services Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-28-dr-cielo-angela-a-ante-dfm-mfa",
+   "kind": "department-head",
+   "name": "DR. CIELO ANGELA A. ANTE, DFM, MFA",
+   "position": "OIC, Chief of Hospital, OMPH - Provincial Health Officer II",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-29-ms-zarah-c-magboo",
+   "kind": "department-head",
+   "name": "MS. ZARAH C. MAGBOO",
+   "position": "Provincial Social Welfare and Development Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-30-ms-christine-m-pine",
+   "kind": "department-head",
+   "name": "MS. CHRISTINE M. PINE",
+   "position": "Provincial Agriculturist",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-31-engr-edylou-b-tejido",
+   "kind": "department-head",
+   "name": "ENGR. EDYLOU B. TEJIDO",
+   "position": "Provincial Engineer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-32-dr-alfredo-manglicmot",
+   "kind": "department-head",
+   "name": "DR. ALFREDO MANGLICMOT",
+   "position": "Acting Provincial Veterinarian",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-33-ms-eden-s-asilo",
+   "kind": "department-head",
+   "name": "MS. EDEN S. ASILO",
+   "position": "OIC - BLOM",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-34-mr-orlando-b-tizon",
+   "kind": "department-head",
+   "name": "MR. ORLANDO B. TIZON",
+   "position": "Provincial Cooperative Development Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-35-ms-lily-may-e-lim",
+   "kind": "department-head",
+   "name": "MS. LILY MAY E. LIM",
+   "position": "Provincial Environment And Natural Resource Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-36-mr-vincent-b-gahol",
+   "kind": "department-head",
+   "name": "MR. VINCENT B. GAHOL",
+   "position": "Provincial Disaster Risk Reduction And Management Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-37-mr-antonio-m-magnaye-jr",
+   "kind": "department-head",
+   "name": "MR. ANTONIO M. MAGNAYE, JR.",
+   "position": "Provincial Public Employment Services Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-38-ms-christine-myra-d-leviste",
+   "kind": "department-head",
+   "name": "MS. CHRISTINE MYRA D. LEVISTE",
+   "position": "Acting Provincial Treasurer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-39-ms-lydia-mun-eca-s-melgar",
+   "kind": "department-head",
+   "name": "MS. LYDIA MUÑECA S. MELGAR",
+   "position": "Provincial Planning and Development Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-40-mr-don-stepherson-v-calda",
+   "kind": "department-head",
+   "name": "MR. DON STEPHERSON V. CALDA",
+   "position": "Provincial Tourism Officer",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-41-dr-dante-a-nuestro-mha",
+   "kind": "department-head",
+   "name": "DR. DANTE A. NUESTRO,MHA",
+   "position": "Chief of Hospital, OMCDH",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-42-dr-emmanuel-m-hernandez",
+   "kind": "department-head",
+   "name": "DR. EMMANUEL M. HERNANDEZ",
+   "position": "Medical Officer IV, NCH",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-43-dr-jocel-c-caranzo-mha",
+   "kind": "department-head",
+   "name": "DR. JOCEL C. CARANZO, MHA",
+   "position": "Chief of Hospital I, OMSDH",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-44-dr-josie-l-marca",
+   "kind": "department-head",
+   "name": "DR. JOSIE L. MARCA",
+   "position": "BCH-Medical Officer IV/OIC",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-45-ms-beverly-n-aguila",
+   "kind": "department-head",
+   "name": "MS. BEVERLY N. AGUILA",
+   "position": "SAO, Acting Division Chief, GO-PISD",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-46-mr-rafael-c-cataquis-rn",
+   "kind": "department-head",
+   "name": "MR. RAFAEL C. CATAQUIS, RN",
+   "position": "Administrative Officer IV, GSMAC",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-47-mr-marlon-kenneth-a-agena",
+   "kind": "department-head",
+   "name": "MR. MARLON KENNETH A. AGENA",
+   "position": "Internal Auditor III - IASD",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-48-mr-junielo-p-alcuran",
+   "kind": "department-head",
+   "name": "MR. JUNIELO P. ALCURAN",
+   "position": "Supervising Administrative Officer, SCD",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "department-head-49-engr-jollie-ver-e-lasic",
+   "kind": "department-head",
+   "name": "ENGR. JOLLIE VER E. LASIC",
+   "position": "AOV, GO-Procurement Division",
+   "office": null,
+   "phone": null,
+   "location": null,
+   "email": null
+  },
+  {
+   "id": "office-50-provincial-administrator-s-office",
+   "kind": "office",
+   "name": "Atty. Earl Ligorio R. Turano II",
+   "position": null,
+   "office": "Provincial Administrator’s Office",
+   "phone": "288-7333",
+   "location": "CALAPAN CITY",
+   "email": "pa@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-51-provincial-governor-s-office",
+   "kind": "office",
+   "name": "Ms. Maria Nenita D. Dalupan",
+   "position": null,
+   "office": "Provincial Governor’s Office",
+   "phone": null,
+   "location": "CALAPAN CITY",
+   "email": "go@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-52-secretary-to-the-sangguniang-panlalawiga",
+   "kind": "office",
+   "name": "Ms. Diwata H. Fetizanan",
+   "position": null,
+   "office": "Secretary to the Sangguniang Panlalawigan",
+   "phone": "288-7250",
+   "location": "CALAPAN CITY",
+   "email": "sp@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-53-provincial-planning-and-development-coor",
+   "kind": "office",
+   "name": "Ms. Lydia Muñeca S. Melgar EnP, MPA",
+   "position": null,
+   "office": "Provincial Planning and Development Coordinator",
+   "phone": "288-7138",
+   "location": "CALAPAN CITY",
+   "email": "ppdo.ormin@gmail.com"
+  },
+  {
+   "id": "office-54-provincial-human-resource-management-off",
+   "kind": "office",
+   "name": "Ms. Anna Marie DC Reyes",
+   "position": null,
+   "office": "Provincial Human Resource Management Office",
+   "phone": "288-7160",
+   "location": "CALAPAN CITY",
+   "email": "phrmo@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-55-provincial-treasurer-s-office",
+   "kind": "office",
+   "name": "Ms. Christine Myra D. Leviste",
+   "position": null,
+   "office": "Provincial Treasurer’s Office",
+   "phone": "0977 805 0450",
+   "location": "CALAPAN CITY",
+   "email": "pto@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-56-provincial-accounting-office",
+   "kind": "office",
+   "name": "Ms. Althea F. Agutaya",
+   "position": null,
+   "office": "Provincial Accounting Office",
+   "phone": "0917 653 3161",
+   "location": "CALAPAN CITY",
+   "email": "opa@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-57-provincial-budget-office",
+   "kind": "office",
+   "name": "Ms. May Anne Joy M. Ylagan",
+   "position": null,
+   "office": "Provincial Budget Office",
+   "phone": "0917 190 8101 288-7819",
+   "location": "CALAPAN CITY",
+   "email": "pbo@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-58-provincial-legal-office",
+   "kind": "office",
+   "name": "Atty. Francheska Laurent L. Feraren",
+   "position": null,
+   "office": "Provincial Legal Office",
+   "phone": "0917 114 8017 288-7262",
+   "location": "CALAPAN CITY",
+   "email": "plo@ormindoro.gov.ph plegaloffice2020@gmail.com"
+  },
+  {
+   "id": "office-59-provincial-assessor-s-office",
+   "kind": "office",
+   "name": "Mr. Caesar A. Pangilinan, Jr., MPA, REA",
+   "position": null,
+   "office": "Provincial Assessor’s Office",
+   "phone": "288-7007 288-7861",
+   "location": "CALAPAN CITY",
+   "email": "paopgom@yahoo.com"
+  },
+  {
+   "id": "office-60-provincial-general-services-office",
+   "kind": "office",
+   "name": "Atty. Jean Phebie G. De Mesa",
+   "position": null,
+   "office": "Provincial General Services Office",
+   "phone": null,
+   "location": "CALAPAN CITY",
+   "email": "pgso@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-61-oriental-mindoro-provincial-hospital",
+   "kind": "office",
+   "name": "Dr. Cielo Angela A. Ante, DFM, MHA",
+   "position": null,
+   "office": "Oriental Mindoro Provincial Hospital",
+   "phone": "288-3077 288-7193",
+   "location": "CALAPAN CITY",
+   "email": "pho@ormindoro.gov.ph aomph7193@gmail.com omphpgom@gmail.com cohdanomph@gmail.com"
+  },
+  {
+   "id": "office-62-provincial-social-welfare-and-developmen",
+   "kind": "office",
+   "name": "Ms. Zarah C. Magboo",
+   "position": null,
+   "office": "Provincial Social Welfare and Development Office",
+   "phone": "288-7346 288-7396",
+   "location": "CALAPAN CITY",
+   "email": "pswdo@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-63-provincial-agriculture-office",
+   "kind": "office",
+   "name": "Ms. Christine M. Pine",
+   "position": null,
+   "office": "Provincial Agriculture Office",
+   "phone": "288-7282",
+   "location": "CALAPAN CITY",
+   "email": "pago@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-64-provincial-engineering-office",
+   "kind": "office",
+   "name": "Engr. Edylou B. Tejido",
+   "position": null,
+   "office": "Provincial Engineering Office",
+   "phone": null,
+   "location": "CALAPAN CITY",
+   "email": "peo@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-65-provincial-veterinary-office",
+   "kind": "office",
+   "name": "Dr. Alfredo Manglicmot",
+   "position": null,
+   "office": "Provincial Veterinary Office",
+   "phone": "288-7743",
+   "location": "CALAPAN CITY",
+   "email": "provet_ormdo@yahoo.com"
+  },
+  {
+   "id": "office-66-botika-ng-lalawigan",
+   "kind": "office",
+   "name": "Ms. Eden S. Asilo",
+   "position": null,
+   "office": "Botika ng Lalawigan",
+   "phone": "288-7380",
+   "location": "CALAPAN CITY",
+   "email": "blom@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-67-provincial-cooperative-dev-t-office",
+   "kind": "office",
+   "name": "Mr. Orlando B. Tizon",
+   "position": null,
+   "office": "Provincial Cooperative Dev't Office",
+   "phone": "288-7046",
+   "location": "CALAPAN CITY",
+   "email": "pcdo@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-68-provincial-environment-and-natural-resou",
+   "kind": "office",
+   "name": "Ms. Lily May E. Lim",
+   "position": null,
+   "office": "Provincial Environment and Natural Resources Office",
+   "phone": "0917 548 5893",
+   "location": "CALAPAN CITY",
+   "email": "pgom.enro@yahoo.com"
+  },
+  {
+   "id": "office-69-provincial-disaster-risk-reduction-and-m",
+   "kind": "office",
+   "name": "Mr. Vinscent B. Gahol",
+   "position": null,
+   "office": "Provincial Disaster Risk Reduction and Management Office",
+   "phone": "0948 146 0382 0920 951 3690",
+   "location": "CALAPAN CITY",
+   "email": "pddrmo@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-70-provincial-public-employment-services-of",
+   "kind": "office",
+   "name": "Mr. Antonio M. Magnaye, Jr.",
+   "position": null,
+   "office": "Provincial Public Employment Services Office",
+   "phone": "288-7253",
+   "location": "CALAPAN CITY",
+   "email": "ppeso@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-71-provincial-tourism-office",
+   "kind": "office",
+   "name": "Dr. Don Stepherson V. Calda",
+   "position": null,
+   "office": "Provincial Tourism Office",
+   "phone": "0917 110 8733",
+   "location": "CALAPAN CITY",
+   "email": "byahengormin@gmail.com"
+  },
+  {
+   "id": "office-72-oriental-mindoro-central-district-hospit",
+   "kind": "office",
+   "name": "Dr. Dante A. Nuestro, MHA",
+   "position": null,
+   "office": "Oriental Mindoro Central District Hospital",
+   "phone": "(043) 398-0350",
+   "location": "CALAPAN CITY",
+   "email": "omcdh@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-73-naujan-community-hospital",
+   "kind": "office",
+   "name": "Dr. Emmanuel M. Hernandez",
+   "position": null,
+   "office": "Naujan Community Hospital",
+   "phone": null,
+   "location": "CALAPAN CITY",
+   "email": "nch@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-74-provincial-health-office",
+   "kind": "office",
+   "name": "Dr. Maria Consuelo B. Mariñas, MHA",
+   "position": null,
+   "office": "Provincial Health Office",
+   "phone": null,
+   "location": "CALAPAN CITY",
+   "email": "pho@ormindoro.gov.ph phoormin@yahoo.com"
+  },
+  {
+   "id": "office-75-oriental-mindoro-southern-district-hospi",
+   "kind": "office",
+   "name": "Dr. Jocel C. Caranzo, MHA",
+   "position": null,
+   "office": "Oriental Mindoro Southern District Hospital",
+   "phone": "289-7824",
+   "location": "CALAPAN CITY",
+   "email": "omsdhroxas@gmail.com omsdh@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-76-bulalacao-community-hospital",
+   "kind": "office",
+   "name": "Dr. Josie Ann L. Marca",
+   "position": null,
+   "office": "Bulalacao Community Hospital",
+   "phone": "0917 577 6232",
+   "location": "CALAPAN CITY",
+   "email": "bch@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-77-governor-s-social-and-medical-assistance",
+   "kind": "office",
+   "name": "Mr. Rafael C. Cataquis, RN",
+   "position": null,
+   "office": "Governor’s Social and Medical Assistance Center",
+   "phone": "0998 990 4798",
+   "location": "CALAPAN CITY",
+   "email": "gsmac@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-78-internal-audit-services-division",
+   "kind": "office",
+   "name": "Mr. Marlon Kenneth A. Agena",
+   "position": null,
+   "office": "Internal Audit Services Division",
+   "phone": "288-7765",
+   "location": "CALAPAN CITY",
+   "email": "iasd@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-79-special-concerns-division",
+   "kind": "office",
+   "name": "Mr. Junielo P. Alcuran",
+   "position": null,
+   "office": "Special Concerns Division",
+   "phone": "288-7501",
+   "location": "CALAPAN CITY",
+   "email": "scd@ormindoro.gov.ph"
+  },
+  {
+   "id": "office-80-chief-security-division",
+   "kind": "office",
+   "name": "Mr. Asher A. Dalid",
+   "position": null,
+   "office": "Chief Security Division",
+   "phone": "288-7017",
+   "location": "CALAPAN CITY",
+   "email": "csu@ormindoro.gov.ph"
+  }
+ ]
+}
