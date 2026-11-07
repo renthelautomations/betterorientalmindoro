@@ -36,7 +36,7 @@ describe("bayanMetrics / bayanRows", () => {
   it("rows: one per town, kind matches isCity", () => {
     const rows = bayanRows();
     expect(rows).toHaveLength(15);
-    expect(rows.find((r) => r.name === "Calapan City")?.kind).toBe("Lungsod");
-    expect(rows.filter((r) => r.kind === "Bayan")).toHaveLength(14);
+    expect(rows.find((r) => r.name === "Calapan City")?.kind).toBe("town.city");
+    expect(rows.filter((r) => r.kind === "town.town")).toHaveLength(14);
   });
 });
