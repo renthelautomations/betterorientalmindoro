@@ -24,7 +24,7 @@ export default function Serbisyo() {
           en={<>Everything here is a <b>draft for volunteer review</b>. Where no detail is confirmed, it says &quot;Check with the office&quot;. This is not an official government website.</>}
           fil={<>Lahat ay <b>draft para sa review ng volunteers</b>. Kapag walang nakumpirmang detalye, nakasulat na &quot;Alamin sa opisina&quot;. Hindi ito opisyal na website ng gobyerno.</>} /></p>
       </TPageHead>
-      <div className="mt-8"><SmartSearch items={getSearchItems()} /></div>
+      <div className="mt-8"><SmartSearch scope="serbisyo" items={getSearchItems("serbisyo")} /></div>
 
       <section aria-labelledby="events" className="mt-12">
         <h2 id="events" className={H2}><T k="dyn.serbisyo.events" /></h2>

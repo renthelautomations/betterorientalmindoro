@@ -17,7 +17,7 @@ const GROUPS = [
   "sertipiko certificate", "kapanganakan birth panganganak baby sanggol", "iskolar scholarship scholar estudyante student peap",
   "matanda senior elderly", "rabies aso dog kagat bite", "kalsada road daan highway", "proyekto project dpwh", "badyet budget pondo gastos nep",
   "istatistika statistics populasyon population", "dinastiya dynasty dynasties", "hotline tawag call numero number telepono phone",
-  "bayan town municipality lungsod city", "kuryente electricity power", "tubig water", "serbisyo service services", "kwento story stories",
+  "bayan town municipality lungsod city", "first 1st una district distrito", "second 2nd ikalawa district distrito", "kuryente electricity power", "tubig water", "serbisyo service services", "kwento story stories",
 ].map((g) => g.split(" "));
 
 export const fold = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -93,3 +93,13 @@ export type Recent = { title: string; href: string; type: SearchType; tk?: strin
 export function pushRecent(list: Recent[], r: Recent, max = 5): Recent[] {
   return [r, ...list.filter((x) => x.href !== r.href)].slice(0, max);
 }
+
+/** Page scopes for the search box. "all" is the home page's site-wide search; every other page searches only its own content. */
+export type SearchScope = "all" | "serbisyo" | "bayan" | "badyet" | "estatistika";
+export const SCOPES: Record<SearchScope, { ph: string; hint: string; quick: string[]; store: string }> = {
+  all: { ph: "search.placeholder", hint: "search.hint", quick: ["fire", "birth", "scholar", "burial", "road"], store: "bom-recent" },
+  serbisyo: { ph: "search.ph.serbisyo", hint: "search.hint.page", quick: ["birth", "scholar", "burial", "business", "ambulance"], store: "bom-recent-serbisyo" },
+  bayan: { ph: "search.ph.bayan", hint: "search.hint.page", quick: ["calapan", "pgalera", "naujan", "pinamalayan", "roxas"], store: "bom-recent-bayan" },
+  badyet: { ph: "search.ph.badyet", hint: "search.hint.page", quick: ["first", "second", "dpwh", "school"], store: "bom-recent-badyet" },
+  estatistika: { ph: "search.ph.estat", hint: "search.hint.page", quick: ["calapan", "pinamalayan", "naujan", "bongabong", "victoria"], store: "bom-recent-estat" },
+};
