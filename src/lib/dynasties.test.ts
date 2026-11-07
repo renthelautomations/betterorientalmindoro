@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { getProvince, getTown, surnameOf, titleCase, sharedSurnames, provinceSurnames, winnersGrid, surnameHolders, surnameNetwork, type Contest } from "./dynasties";
+import { allWinners, findWinners, getProvince, getTown, surnameOf, titleCase, sharedSurnames, provinceSurnames, winnersGrid, surnameHolders, surnameNetwork, type Contest } from "./dynasties";
 import { getMunicipalities } from "./municipalities";
 
 const w = (id: string, ballot: string) => ({ id, name: ballot, ballot, party: "IND", votes: 1 });
@@ -95,4 +95,19 @@ describe("surnameNetwork", () => {
     expect(e.find((x) => x.a === "a" && x.b === "c")).toMatchObject({ weight: 1, surnames: ["REYES"] });
   });
   it("one holder in a town does not link it", () => expect(surnameNetwork([A, D]).length).toBe(0));
+});
+
+describe("findWinners", () => {
+  const towns = getProvince().towns.map((s) => getTown(s)!).filter(Boolean);
+  const rows = allWinners(towns);
+  it("finds a surname across towns, newest first", () => {
+    const r = findWinners(rows, "hernandez");
+    expect(r.length).toBeGreaterThan(5);
+    expect(r.every((x, i) => i === 0 || r[i - 1][1] >= x[1])).toBe(true);
+  });
+  it("one typo ok, year and seat narrow", () => {
+    expect(findWinners(rows, "hernandes").length).toBeGreaterThan(0);
+    expect(findWinners(rows, "", 2022, "MAYOR").length).toBe(15);
+  });
+  it("nonsense gives none", () => expect(findWinners(rows, "zzzzqq")).toEqual([]));
 });

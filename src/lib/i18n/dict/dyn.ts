@@ -1,6 +1,9 @@
 // dyn interface strings: "area.thing": ["English", "Filipino"]. Data from sources stays as published.
 // {0}, {1} are filled by <TF> (counts, names, years stay outside the dictionary).
 export const DYN = {
+  "dyn.find.ph": ["Search a surname or name, e.g. Hernandez", "Maghanap ng apelyido o pangalan, hal. Hernandez"], "dyn.find.town": ["Town", "Bayan"], "dyn.find.year": ["Election year", "Taon ng halalan"], "dyn.find.seat": ["Seat", "Puwesto"], "dyn.find.any": ["All", "Lahat"],
+  "dyn.find.found": ["winners found", "nanalo ang nahanap"], "dyn.find.clear": ["Clear", "I-clear"], "dyn.find.none": ["No winner matches. Try another spelling, or clear the filters.", "Walang tugmang nanalo. Subukan ang ibang baybay, o i-clear ang mga filter."],
+  "dyn.seat.MAYOR": ["Mayor", "Mayor"], "dyn.seat.VICE MAYOR": ["Vice Mayor", "Vice Mayor"], "dyn.seat.COUNCILOR": ["Councilor", "Konsehal"],
   "hot.search": ["Search hotlines", "Maghanap ng hotline"], "hot.search.ph": ["What do you need? Try fire, police, flood, or a town", "Ano ang kailangan mo? Subukan ang sunog, pulis, baha, o bayan"],
   "hot.try": ["Quick picks:", "Mabilis na pili:"], "hot.q.fire": ["Fire", "Sunog"], "hot.q.police": ["Police", "Pulis"], "hot.q.flood": ["Flood or disaster", "Baha o sakuna"], "hot.q.sea": ["Sea or coast guard", "Dagat o coast guard"], "hot.q.gov": ["Governor's office", "Opisina ng gobernador"],
   "hot.f.place": ["Place", "Lugar"], "hot.f.type": ["Type", "Uri"], "hot.f.office": ["Office", "Opisina"], "hot.f.any": ["All", "Lahat"],
@@ -41,6 +44,7 @@ export const DYN = {
   "dyn.win.more": ["Show more towns ({0})", "Ipakita pa ang {0} bayan"],
   "dyn.all.h": ["FULL RECORD BY TOWN", "BUONG TALA BAWAT BAYAN"],
   "dyn.cap.first": ["Winning mayors and vice mayors, first five towns, by election year", "Mga nanalong mayor at vice mayor, unang limang bayan, ayon sa taon ng halalan"],
+  "dyn.cap.all": ["Winning mayors and vice mayors, all towns, by election year", "Mga nanalong mayor at vice mayor, lahat ng bayan, ayon sa taon ng halalan"],
   "dyn.cap.rest": ["Winning mayors and vice mayors, other towns, by election year", "Mga nanalong mayor at vice mayor, iba pang bayan, ayon sa taon ng halalan"],
   "dyn.cap.town": ["Winning mayors and vice mayors of {0} by election year", "Mga nanalong mayor at vice mayor ng {0} ayon sa taon ng halalan"],
   "dyn.grid.col": ["Town and seat", "Bayan at puwesto"],
