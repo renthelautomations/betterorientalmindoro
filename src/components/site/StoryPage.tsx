@@ -4,9 +4,9 @@ import { ICONS, ICON_KEYS, type IconKey } from "@/lib/brand";
 import { STORIES_EN, STORIES_FIL, type Story } from "@/lib/stories";
 import { DICT } from "@/lib/i18n/dict";
 import Bilingual from "@/lib/i18n/Bilingual";
-import { HeroBg, Divider } from "@/components/kit/Motifs";
-import { Badge, PillarCard } from "@/components/kit/Parts";
-import { FIESTA, FIESTA_DEEP, type PatternKey } from "@/components/kit/Patterns";
+import { Divider } from "@/components/kit/Motifs";
+import { Badge } from "@/components/kit/Parts";
+import { FIESTA, FIESTA_DEEP, PatternFill, type PatternKey } from "@/components/kit/Patterns";
 
 const COLOR: Record<IconKey, string> = { ma: FIESTA.blue, hal: FIESTA_DEEP.green, ta: FIESTA.red, na: FIESTA_DEEP.sky };
 // Ma uses no ikat: Mangyan culture is shown only with the communities' approval.
@@ -16,12 +16,13 @@ const PATTERN: Record<IconKey, PatternKey> = { ma: "dotblocks", hal: "peaks", ta
 export default function StoryPage({ icon, scene, children }: { icon: IconKey; scene?: ReactNode; children?: ReactNode }) {
   const i = (l: 0 | 1) => (k: string) => DICT[k as keyof typeof DICT][l];
   const hero = (s: Story) => (
-    <HeroBg variant={icon === "ta" ? "panels" : "dawn"} className="min-h-[60vh]">
-      <div className="mx-auto max-w-3xl px-4 pb-48 pt-16">
-        <p className="font-serif text-6xl font-bold text-fiesta-navy">{ICONS[icon].short}</p>
-        <p className="mt-2 font-serif text-4xl font-bold text-fiesta-navy md:text-5xl">{s.title}</p>
+    <div className="relative isolate overflow-hidden text-white" style={{ background: COLOR[icon] }}>
+      <PatternFill variant={PATTERN[icon]} colors={["#fff"]} opacity={0.18} />
+      <div className="relative mx-auto max-w-3xl px-4 py-16 md:py-24">
+        <p className="font-serif text-6xl font-bold">{ICONS[icon].short}</p>
+        <p className="mt-2 font-serif text-4xl font-bold md:text-5xl">{s.title}</p>
       </div>
-    </HeroBg>
+    </div>
   );
   const article = (s: Story, l: 0 | 1) => (
     <article className="mx-auto max-w-3xl space-y-5 px-4 py-12 text-lg leading-relaxed">
@@ -34,16 +35,18 @@ export default function StoryPage({ icon, scene, children }: { icon: IconKey; sc
     </article>
   );
   const pillars = (l: 0 | 1) => (
-    <section aria-label={i(l)("docs.pillars")} className="mx-auto max-w-6xl px-4 pb-16">
-      <h2 className="font-serif text-2xl font-bold">{i(l)("docs.pillars")}</h2>
-      <div className="mt-5 grid grid-cols-2 gap-4 md:grid-cols-4">
+    <nav aria-label={i(l)("uxd.story.switch")} className="mx-auto max-w-3xl px-4 pb-16">
+      <h2 className="font-serif text-2xl font-bold">{i(l)("uxd.story.switch")}</h2>
+      <ul className="mt-4 flex flex-wrap gap-3">
         {ICON_KEYS.map((k) => (
-          <Link key={k} href={`/${k}`} aria-current={k === icon ? "page" : undefined} className={k === icon ? "pointer-events-none opacity-60" : ""}>
-            <PillarCard short={ICONS[k].short} name={i(l)(`docs.name.${k}`)} blurb={i(l)(`docs.blurb.${k}`)} color={COLOR[k]} pattern={PATTERN[k]} />
-          </Link>
+          <li key={k}>
+            <Link href={`/${k}`} aria-current={k === icon ? "page" : undefined} className={`inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold ring-1 ${k === icon ? "text-white ring-transparent" : "bg-white text-fiesta-navy ring-black/15 hover:bg-fiesta-mint"}`} style={k === icon ? { background: COLOR[k] } : undefined}>
+              <span className="font-serif text-base font-bold">{ICONS[k].short}</span>{i(l)(`docs.name.${k}`)}
+            </Link>
+          </li>
         ))}
-      </div>
-    </section>
+      </ul>
+    </nav>
   );
   return (
     <main>
