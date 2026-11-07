@@ -1,6 +1,6 @@
 "use client";
 import { useId, useRef, useState } from "react";
-import { T, useT } from "@/lib/i18n/i18n";
+import { useT } from "@/lib/i18n/i18n";
 
 /** ARIA tabs with arrow-key navigation. Panels come in as server-rendered nodes. */
 export function Tabs({ tabs }: { tabs: { id: string; label: string; badge?: string; panel: React.ReactNode }[] }) {
@@ -38,15 +38,23 @@ export function ToastDemo() {
   );
 }
 
-/** Copies text, then says so for two seconds. */
-export function CopyButton({ text, label = "common.copy" }: { text: string; label?: string }) {
+/** Icon button that copies text. Fixed size, so nothing around it moves; on success the icon turns into a green check with a small pop and a ring, then returns after two seconds. */
+export function CopyButton({ text, label = "common.copy", className = "" }: { text: string; label?: string; className?: string }) {
+  const t = useT();
   const [done, setDone] = useState(false);
   const timer = useRef<ReturnType<typeof setTimeout>>(undefined);
   const copy = async () => {
     try { await navigator.clipboard.writeText(text); } catch { return; }
     setDone(true); clearTimeout(timer.current); timer.current = setTimeout(() => setDone(false), 2000);
   };
+  const svg = "absolute inset-0 m-auto h-5 w-5 transition duration-200";
   return (
-    <button type="button" onClick={copy} aria-live="polite" className="inline-flex min-h-11 items-center rounded-lg bg-fiesta-navy/5 px-4 text-sm font-semibold hover:bg-fiesta-navy/10">{done ? <T k="common.copied" /> : <T k={label} />}</button>
+    <button type="button" onClick={copy} title={t(done ? "common.copied" : label)} aria-label={t(label)}
+      className={`relative inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-fiesta-navy transition-colors duration-200 ${done ? "bg-fiesta-green/20 text-[#1f6b37]" : "bg-fiesta-navy/5 hover:bg-fiesta-navy/10"} ${className}`}>
+      {done && <span aria-hidden className="copy-ring pointer-events-none absolute inset-0 rounded-xl ring-2 ring-fiesta-green" />}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden className={`${svg} ${done ? "scale-50 opacity-0" : "scale-100 opacity-100"}`}><rect x="9" y="9" width="11" height="11" rx="2.5" /><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15" /></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden className={`${svg} ${done ? "copy-pop opacity-100" : "scale-50 opacity-0"}`}><path d="M5 12.5l4.5 4.5L19 7" /></svg>
+      <span className="sr-only" role="status">{done ? t("common.copied") : ""}</span>
+    </button>
   );
 }

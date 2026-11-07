@@ -45,7 +45,7 @@ export default function LguContactCard({ slug, name }: { slug: string; name: str
             <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {phones.map((n) => (
                 <li key={n} className="flex items-center gap-2">
-                  <a href={tel(n)} className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-4 font-serif text-lg font-bold text-white hover:bg-fiesta-blue">
+                  <a href={tel(n)} className="inline-flex min-h-12 min-w-0 flex-1 items-center justify-center gap-2 rounded-xl bg-fiesta-navy px-3 font-serif text-lg font-bold whitespace-nowrap text-white hover:bg-fiesta-blue">
                     <KitIcon name="phone" className="h-5 w-5" />{n}
                   </a>
                   <CopyButton text={n} />
