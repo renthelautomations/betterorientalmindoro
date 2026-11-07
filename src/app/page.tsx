@@ -5,6 +5,7 @@ import { Divider } from "@/components/kit/Motifs";
 import PennantHero from "@/components/site/PennantHero";
 import { SectionHeaderT as SectionHeader, CalloutT as Callout, PillarCardT as PillarCard, StatCardT as StatCard, Landmark } from "@/components/site/KitT";
 import { T } from "@/lib/i18n/i18n";
+import SplitSticky from "@/components/site/SplitSticky";
 import { BarChart } from "@/components/kit/Charts";
 import LinkChoropleth from "@/components/site/LinkChoropleth";
 import type { KitIconName } from "@/components/kit/KitIcon";
@@ -88,10 +89,9 @@ export default function Home() {
 
         <Landmark as="section" label="home.pop.aria" className="border-t border-black/10 py-14">
           <SectionHeader eyebrow="home.pop" title="home.pop.h" color={FIESTA.blue} />
-          <div className="mt-8 grid gap-10 md:grid-cols-2">
+          <div className="mt-8"><SplitSticky side={<LinkChoropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} ariaKey="bayan.map.aria" />}>
             <BarChart rows={towns.filter((t) => t.pop != null).map((t) => ({ label: t.name, value: t.pop as number, href: `/bayan/${t.slug}` }))} format={fmtInt} />
-            <LinkChoropleth rows={towns.map((t) => ({ pcode: t.pcode, name: t.name, value: t.pop, href: `/bayan/${t.slug}` }))} format={fmtInt} ariaKey="bayan.map.aria" />
-          </div>
+          </SplitSticky></div>
         </Landmark>
       </div>
     </main>

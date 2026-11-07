@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import SplitSticky from "@/components/site/SplitSticky";
 import BayanHub from "@/components/site/BayanHub";
 import LinkChoropleth from "@/components/site/LinkChoropleth";
 import { BayanCrumbs, BayanTitle, BayanTable } from "@/components/site/BayanBits";
@@ -28,10 +29,9 @@ export default function Bayan() {
 
       <section aria-labelledby="pop" className="mt-14">
         <h2 id="pop" className={h2}><T k="bayan.pop.h" /></h2>
-        <div className="grid gap-8 md:grid-cols-2">
+        <SplitSticky side={<LinkChoropleth rows={list.map((m) => ({ pcode: m.pcode, name: m.name, value: pop(m.slug) ?? null, href: `/bayan/${m.slug}` }))} format={fmtInt} ariaKey="bayan.map.aria" />}>
           <BarChart rows={list.filter((m) => pop(m.slug) != null).map((m) => ({ label: m.name, value: pop(m.slug)!, href: `/bayan/${m.slug}` }))} format={fmtInt} highlight="Calapan City" />
-          <LinkChoropleth rows={list.map((m) => ({ pcode: m.pcode, name: m.name, value: pop(m.slug) ?? null, href: `/bayan/${m.slug}` }))} format={fmtInt} ariaKey="bayan.map.aria" />
-        </div>
+        </SplitSticky>
       </section>
 
       <section aria-labelledby="table" className="mt-14">
