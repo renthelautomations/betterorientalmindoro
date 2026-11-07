@@ -47,9 +47,9 @@ export default function Bayan() {
       </section>
 
       <h2 className="mt-14 text-sm font-semibold tracking-widest text-black/60"><T k="bayan.all" /></h2>
-      <ul className="mt-3 grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-5">
+      <ul className="mt-3 grid grid-cols-3 gap-2 md:grid-cols-5 lg:grid-cols-8">
         {list.map((m) => (
-          <li key={m.slug}><Link href={`/bayan/${m.slug}`} className="flex min-h-11 items-center rounded-lg border border-black/10 bg-white px-4 text-sm font-medium hover:border-black/30">{m.name}</Link></li>
+          <li key={m.slug}><Link href={`/bayan/${m.slug}`} className="flex min-h-11 items-center justify-center rounded-lg border border-black/10 bg-white px-2 text-center text-sm font-medium leading-tight hover:border-black/30">{m.name}</Link></li>
         ))}
       </ul>
       <p className="mt-6 text-xs text-black/65"><T k="bayan.source" /></p>

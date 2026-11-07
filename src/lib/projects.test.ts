@@ -156,3 +156,18 @@ describe("projectDigest", () => {
     expect(projectDigest("Puerto Galera biodiversity and environmental research and outreach center").headline).toBeUndefined();
   });
 });
+
+import { activeFilters } from "./projects";
+
+describe("activeFilters", () => {
+  it("lists each applied filter with an href that drops only that one", () => {
+    const f = { bayan: "baco", taon: "2023", q: "road" };
+    const r = activeFilters(f, { baco: "Baco" });
+    expect(r.map((x) => [x.key, x.value])).toEqual([["bayan", "Baco"], ["taon", "2023"], ["q", "road"]]);
+    expect(r[0].href).toBe("/proyekto?taon=2023&q=road");
+    expect(r[2].href).toBe("/proyekto?bayan=baco&taon=2023");
+  });
+  it("is empty without filters and ignores page", () => {
+    expect(activeFilters({ page: 3 }, {})).toEqual([]);
+  });
+});

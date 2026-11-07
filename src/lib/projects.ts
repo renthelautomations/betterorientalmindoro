@@ -94,3 +94,11 @@ export function projectDigest(title: string): Digest {
   const subject = road ? cap(road).replace(/\bRd\.?$/, "Road") : brgy ? `Brgy. ${cleanTitle(brgy.trim())}` : undefined;
   return { headline: work && subject ? `${work} · ${subject}` : undefined, segments };
 }
+
+type HubF = Parameters<typeof hubHref>[0];
+/** Applied filters for the summary chips; href removes just that filter (and resets paging). `names` maps a town slug to its display name. */
+export function activeFilters(f: HubF, names: Record<string, string>) {
+  return (["bayan", "taon", "katayuan", "kategorya", "q"] as const)
+    .filter((k) => f[k])
+    .map((key) => ({ key, value: key === "bayan" ? names[f.bayan!] ?? f.bayan! : f[key]!, href: hubHref({ ...f, [key]: undefined, page: undefined }) }));
+}

@@ -55,6 +55,8 @@ export const PROYEKTO = {
   "proyekto.g.bayan": ["Town", "Bayan"],
   "proyekto.g.taon": ["Year", "Taon"],
   "proyekto.g.status": ["Status", "Katayuan"],
+  "proyekto.g.q": ["Search", "Hanap"],
+  "proyekto.remove": ["(remove filter)", "(alisin ang filter)"],
   "proyekto.g.cat": ["Category", "Kategorya"],
 
   "proyekto.list.h": ["Projects, largest first", "Mga proyekto, pinakamalaki muna"],
