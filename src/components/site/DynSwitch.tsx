@@ -20,15 +20,15 @@ export default function DynSwitch({ current, towns }: { current: string | null; 
   }, [open]);
   const cur = towns.find((x) => x.slug === current);
   return (
-    <nav aria-label={t("dyn.sw.aria")} className="flex flex-wrap items-center gap-2">
+    <nav aria-label={t("dyn.sw.aria")} className="relative flex flex-wrap items-center gap-2">
       <Link href="/dynasties" aria-current={current ? undefined : "page"} className={pill(!current)}><T k="dyn.province" /></Link>
-      <div ref={box} className="relative">
+      <div ref={box} className="sm:relative">
         <button type="button" aria-expanded={open} aria-controls="dyn-towns" onClick={() => setOpen((o) => !o)} className={pill(!!cur)}>
           {cur ? cur.name : t("dyn.sw.pick")}
           <svg viewBox="0 0 24 24" className={`h-4 w-4 transition ${open ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden><path d="M6 9l6 6 6-6" /></svg>
         </button>
         {open && (
-          <ul id="dyn-towns" className="absolute left-0 top-full z-30 mt-2 grid max-h-[70vh] w-[min(30rem,calc(100vw-2rem))] grid-cols-2 gap-1 overflow-y-auto rounded-2xl border border-black/10 bg-white p-2 shadow-xl sm:grid-cols-3">
+          <ul id="dyn-towns" className="absolute left-0 right-0 top-full z-30 mt-2 grid max-h-[70vh] grid-cols-2 gap-1 overflow-y-auto rounded-2xl border border-black/10 bg-white p-2 shadow-xl sm:right-auto sm:w-[30rem] sm:grid-cols-3">
             {towns.map((x) => (
               <li key={x.slug}>
                 <Link href={`/dynasties/${x.slug}`} onClick={() => setOpen(false)} aria-current={x.slug === current ? "page" : undefined}

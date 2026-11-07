@@ -11,10 +11,11 @@ export default function BigDonut({ slices, format, centerLabel }: { slices: Slic
   const R = 44, C = 2 * Math.PI * R;
   const starts = slices.map((_, i) => slices.slice(0, i).reduce((a, x) => a + (x.value / total) * C, 0));
   const dict = DICT as Record<string, readonly string[]>;
-  const aria = `${dict[centerLabel]?.[0] ?? centerLabel}: ${slices.map((s) => `${dict[s.label]?.[0] ?? s.label} ${format(s.value)}`).join(", ")}`;
+  const capId = `donut-${centerLabel.replace(/[^a-z0-9]/gi, "-")}`;
   return (
     <div className="flex flex-col items-center gap-6">
-      <svg viewBox="0 0 120 120" className="h-auto w-full max-w-sm -rotate-90" role="img" aria-label={aria}>
+      <span id={capId} className="sr-only"><T k={centerLabel} />: {slices.map((s, i) => <span key={s.label}>{i ? ", " : ""}<T k={s.label} /> {format(s.value)}</span>)}</span>
+      <svg viewBox="0 0 120 120" className="h-auto w-full max-w-sm -rotate-90" role="img" aria-labelledby={capId}>
         {slices.map((s, i) => {
           const len = (s.value / total) * C;
           return <circle key={s.label} className="anim-dash" cx="60" cy="60" r={R} fill="none" stroke={CYCLE[i % CYCLE.length]} strokeWidth="22" strokeDasharray={`${Math.max(len - 1.5, 0)} ${C}`} strokeDashoffset={-starts[i]}><title>{`${dict[s.label]?.[0] ?? s.label}: ${format(s.value)}`}</title></circle>;

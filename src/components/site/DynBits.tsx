@@ -55,7 +55,7 @@ export function TPageTitle({ eyebrow, title, color = "#b5532f" }: { eyebrow: str
 }
 
 /** Scrollable table region whose aria-label is a translated caption. */
-export function DynRegion({ k, v, className = "overflow-x-auto rounded-2xl border border-black/10 bg-white", children }: { k: string; v?: string[]; className?: string; children: ReactNode }) {
+export function DynRegion({ k, v, className = "relative overflow-x-auto rounded-2xl border border-black/10 bg-white", children }: { k: string; v?: string[]; className?: string; children: ReactNode }) {
   const t = useT();
   const label = t(k).replace(/\{(\d)\}/g, (_, i) => v?.[+i] ?? "");
   return <div role="region" aria-label={label} tabIndex={0} className={className}>{children}</div>;

@@ -76,7 +76,7 @@ export default function Estatistika() {
 
       <section aria-labelledby="lago-h" className="mt-12">
         <h2 id="lago-h" className="text-sm font-semibold tracking-widest text-black/60"><R k="finance.growth.h" v={[prov.population[0]?.year, latest?.year]} /></h2>
-        <div className="mt-3 max-w-2xl"><LineChart series={[{ name: "Buong lalawigan", points: prov.population.map((p) => ({ year: p.year, value: p.value })) }, ...rows.filter((r) => r.s).map((r) => ({ name: r.m.name, points: r.s!.population.map((p) => ({ year: p.year, value: p.value })) }))]} label="finance.show" /></div>
+        <div className="mt-3 max-w-2xl"><LineChart series={[{ name: "town.province", points: prov.population.map((p) => ({ year: p.year, value: p.value })) }, ...rows.filter((r) => r.s).map((r) => ({ name: r.m.name, points: r.s!.population.map((p) => ({ year: p.year, value: p.value })) }))]} label="finance.show" /></div>
         {g !== null && <p className="mt-2 text-sm text-black/70"><R k="finance.prov.growth" v={[prov.population[0].year, latest!.year]} /> <b>{g >= 0 ? "+" : ""}{fmtPct(g)}</b></p>}
         <SourceNote><R k="finance.growth.src" v={[<a key="w" className="underline" href={prov.wikidata}>Wikidata</a>, latest?.retrievedAt]} /></SourceNote>
       </section>

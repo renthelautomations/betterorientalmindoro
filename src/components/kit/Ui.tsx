@@ -119,7 +119,7 @@ const tel = (n: string) => "tel:" + n.replace(/[^\d+]/g, "");
 /** Tap to call, copy, and a clear "when was this checked" stamp. */
 export function HotlineCard({ h, tone = "emergency" }: { h: HotlineCardData; tone?: "emergency" | "medical" | "government" | "utility" }) {
   // Category shows as a small colored badge, not an edge stripe or outline.
-  const chip = { emergency: "bg-fiesta-red/10 text-fiesta-red", medical: "bg-fiesta-green/15 text-[#1f6b37]", government: "bg-fiesta-blue/10 text-fiesta-blue", utility: "bg-fiesta-yellow/30 text-[#7a5600]" }[tone];
+  const chip = { emergency: "bg-fiesta-red/10 text-[#a8281b]", medical: "bg-fiesta-green/15 text-[#1f6b37]", government: "bg-fiesta-blue/10 text-fiesta-blue", utility: "bg-fiesta-yellow/30 text-[#7a5600]" }[tone];
   return (
     <div className="flex flex-col gap-3 rounded-2xl bg-white p-5 shadow-sm">
       <span className={`w-fit rounded-full px-2.5 py-1 text-xs font-semibold ${chip}`}><T k={`cat.${tone}`} /></span>

@@ -12,7 +12,7 @@ const sn = (w: { ballot: string; name: string }) => titleCase(surnameOf(w.ballot
 export function WinnersGrid({ towns, years, caption, town }: { towns: GridTown[]; years: number[]; caption: string; town?: string }) {
   return (
     <div>
-      <DynRegion k={caption} v={town ? [town] : undefined} className="overflow-x-auto rounded-2xl border border-black/10 bg-white shadow-sm">
+      <DynRegion k={caption} v={town ? [town] : undefined} className="relative overflow-x-auto rounded-2xl border border-black/10 bg-white shadow-sm">
         <table className="w-full min-w-[46rem] border-collapse text-left text-sm">
           <caption className="sr-only"><TF k={caption} v={town ? [town] : undefined} /></caption>
           <thead>

@@ -39,4 +39,5 @@ export const HOME = {
   "home.wx.load": ["Loading weather…", "Kinukuha ang lagay ng panahon…"], "home.wx.now": ["Calapan now:", "Calapan ngayon:"], "home.wx.wind": ["wind", "hangin"],
   "home.map.aria": ["Map of Oriental Mindoro municipalities", "Mapa ng mga bayan ng Oriental Mindoro"],
   "home.map.fail": ["The map could not load on this device. Use the list below.", "Hindi ma-load ang mapa sa device na ito. Gamitin ang listahan sa ibaba."],
+  "chart.nodata": ["Not enough data.", "Walang sapat na datos."],
 } as const satisfies Record<string, readonly [string, string]>;
