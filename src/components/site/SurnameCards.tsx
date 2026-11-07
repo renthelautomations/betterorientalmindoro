@@ -83,13 +83,13 @@ export default function SurnameCards({ cards, names }: { cards: SurnameCard[]; n
     if (next) requestAnimationFrame(() => refs.current[next]?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest" }));
   };
   return (
-    <ul className="grid items-start gap-3 sm:grid-cols-2 lg:grid-cols-3">
+    <ul className={`grid gap-3 sm:grid-cols-2 lg:grid-cols-3 ${open ? "items-start" : "auto-rows-fr"}`}>
       {cards.map((c) => {
         const on = open === c.surname;
         const byPos = SEATS.map((p) => [p, c.holders.filter((h) => h.position === p).length] as const).filter(([, n]) => n);
         return (
-          <li key={c.surname} ref={(el) => { refs.current[c.surname] = el; }} className={`rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-shadow ${on ? "order-first col-span-full shadow-lg sm:col-span-2 lg:col-span-3" : ""}`}>
-            <button type="button" aria-expanded={on} aria-controls={`sur-${c.surname}`} onClick={() => toggle(c.surname)} className="flex w-full flex-col gap-3 rounded-2xl p-4 text-left hover:bg-fiesta-cream/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
+          <li key={c.surname} ref={(el) => { refs.current[c.surname] = el; }} className={`flex flex-col rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-shadow ${on ? "order-first col-span-full shadow-lg sm:col-span-2 lg:col-span-3" : ""}`}>
+            <button type="button" aria-expanded={on} aria-controls={`sur-${c.surname}`} onClick={() => toggle(c.surname)} className="flex w-full flex-1 flex-col gap-3 rounded-2xl p-4 text-left hover:bg-fiesta-cream/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
               <span className="flex items-center justify-between gap-3">
                 <span className={`font-serif font-bold text-fiesta-navy transition-all ${on ? "text-3xl" : "text-xl"}`}>{c.label}</span>
                 <span className="shrink-0 rounded-full bg-fiesta-orange/15 px-3 py-1 text-sm font-bold text-[#8a3a18]"><TF k="dyn.sur.wins" v={[c.seats]} /></span>
