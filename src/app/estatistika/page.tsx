@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SourceNote } from "@/components/stats/StatCard";
-import EstatistikaCompare from "@/components/site/EstatistikaCompare";
+import CompareTowns from "@/components/kit/CompareTowns";
+import PageTitle from "@/components/site/PageTitle";
 import { BarChart } from "@/components/kit/Charts";
 import Choropleth from "@/components/site/LinkChoropleth";
 import LineChart from "@/components/kit/LineChart";
@@ -31,9 +32,9 @@ export default function Estatistika() {
   ];
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Datos", href: "/datos" }, { label: "Estatistika" }]} />
-      <h1 className="mt-4 font-serif text-3xl font-bold md:text-4xl">Estatistika ng Oriental Mindoro</h1>
-      <p className="mt-2 text-black/70">Populasyon, laki, at pananalapi ng lalawigan at ng bawat bayan. Ang &quot;-&quot; ay nangangahulugang walang datos.</p>
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Estatistika" }]} />
+      <div className="mt-4"><PageTitle eyebrow="ESTATISTIKA" title="Estatistika ng Oriental Mindoro" /></div>
+      <p className="mt-3 text-black/70">Populasyon, laki, at pananalapi ng lalawigan at ng bawat bayan. Ang &quot;-&quot; ay nangangahulugang walang datos.</p>
 
       <section aria-label="Sa numero" className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard label="POPULASYON" value={fmtInt(latest?.value)} hint={latest ? `Census ${latest.year}` : "Walang datos"} icon="people" color={FIESTA.blue} />
@@ -86,9 +87,39 @@ export default function Estatistika() {
       <section aria-labelledby="cmp-h" className="mt-12">
         <h2 id="cmp-h" className="text-sm font-semibold tracking-widest text-black/60">IHAMBING ANG DALAWANG BAYAN</h2>
         <div className="mt-3 max-w-3xl">
-          <EstatistikaCompare rows={rows.map((r) => ({ slug: r.m.slug, name: r.m.name, population: fmtInt(r.pop), area: fmtInt(r.m.areaKm2), barangays: fmtInt(r.brgy), incomeClass: `${short(r.s?.incomeClass?.value)}${r.s?.incomeClass ? ` (${r.s.incomeClass.year})` : ""}` }))} />
+          <CompareTowns initial={["calapan-city", "baco"]} towns={rows.map((r) => ({ slug: r.m.slug, name: r.m.name }))} metrics={[
+            { label: "metric.pop", values: Object.fromEntries(rows.map((r) => [r.m.slug, r.pop])) },
+            { label: "metric.area", values: Object.fromEntries(rows.map((r) => [r.m.slug, r.m.areaKm2])) },
+            { label: "metric.revenue", unit: "peso", values: Object.fromEntries(rows.map((r) => [r.m.slug, r.rev])) },
+          ]} />
         </div>
-        <SourceNote>Klase ng kita: BLGF via Wikidata (CC0); ang taon ay nasa panaklong at maaaring nagbago na ang klase. Ang IRA share at IRA dependency ay hindi pa mailathala dahil walang bukas na dataset; makikita ang pananalapi ng bawat bayan sa <Link href="/bayan" className="underline">pahina nito</Link>.</SourceNote>
+        <SourceNote>Walang datos ay "-", hindi zero. Ang kita ay mula sa COA via Wikidata (CC0).</SourceNote>
+      </section>
+
+      <section aria-labelledby="rank-h" className="mt-12">
+        <h2 id="rank-h" className="text-sm font-semibold tracking-widest text-black/60">LISTAHAN NG MGA BAYAN, PINAKAMARAMING POPULASYON MUNA</h2>
+        <p className="mt-1 text-sm text-black/70">Pindutin ang pangalan para buksan ang pahina ng bayan.</p>
+        <div className="mt-3 overflow-x-auto rounded-2xl border border-black/10 bg-white">
+          <table className="w-full min-w-[34rem] text-left text-sm">
+            <caption className="sr-only">Populasyon, laki, barangay, kita at klase ng kita ng 15 bayan at lungsod</caption>
+            <thead className="text-xs tracking-widest text-black/65">
+              <tr><th scope="col" className="p-3">BAYAN</th><th scope="col" className="p-3 text-right">POPULASYON</th><th scope="col" className="p-3 text-right">LAKI (KM²)</th><th scope="col" className="p-3 text-right">BARANGAY</th><th scope="col" className="p-3 text-right">KITA</th><th scope="col" className="p-3">KLASE NG KITA</th></tr>
+            </thead>
+            <tbody>
+              {[...rows].sort((a, b) => (b.pop ?? -1) - (a.pop ?? -1)).map((r) => (
+                <tr key={r.m.slug} className="border-t border-black/10">
+                  <th scope="row" className="p-3 font-semibold"><Link href={`/bayan/${r.m.slug}`} className="inline-flex min-h-11 items-center text-fiesta-blue underline">{r.m.name}</Link></th>
+                  <td className="p-3 text-right tabular-nums">{fmtInt(r.pop)}</td>
+                  <td className="p-3 text-right tabular-nums">{fmtInt(r.m.areaKm2)}</td>
+                  <td className="p-3 text-right tabular-nums">{fmtInt(r.brgy)}</td>
+                  <td className="p-3 text-right tabular-nums">{fmtPeso(r.rev)}</td>
+                  <td className="p-3">{short(r.s?.incomeClass?.value)}{r.s?.incomeClass ? ` (${r.s.incomeClass.year})` : ""}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <SourceNote>Klase ng kita: BLGF via Wikidata (CC0); ang taon ay nasa panaklong at maaaring nagbago na ang klase. Ang IRA share at IRA dependency ay hindi pa mailathala dahil walang bukas na dataset. Pananalapi ng bawat bayan: <Link href="/bayan" className="underline">Bayan</Link>.</SourceNote>
       </section>
     </main>
   );

@@ -44,3 +44,7 @@ export const proportionSegments = (o: Office) => {
   const total = gs.reduce((a, x) => a + x.rows, 0);
   return gs.map((x) => ({ ...x, pct: total ? (x.rows / total) * 100 : 0 }));
 };
+
+/** URL segment for a district page: `1st` or `2nd`. */
+export const DISTRICT_SLUGS = ["1st", "2nd"] as const;
+export const districtBySlug = (s: string) => (DISTRICT_SLUGS.includes(s as "1st") ? getDistrict(`leg:oriental-mindoro:${s}`) : undefined);
