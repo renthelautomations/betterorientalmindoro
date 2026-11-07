@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { getProvince, getTown, surnameOf, titleCase, sharedSurnames, provinceSurnames, type Contest } from "./dynasties";
+import { getProvince, getTown, surnameOf, titleCase, sharedSurnames, provinceSurnames, winnersGrid, surnameHolders, type Contest } from "./dynasties";
 import { getMunicipalities } from "./municipalities";
 
 const w = (id: string, ballot: string) => ({ id, name: ballot, ballot, party: "IND", votes: 1 });
@@ -54,4 +54,31 @@ describe("snapshot data", () => {
     for (const m of getMunicipalities()) expect(getTown(m.slug)?.contests.length, m.slug).toBeGreaterThan(0);
   });
   it("unknown town is undefined", () => expect(getTown("atlantis")).toBeUndefined());
+});
+
+describe("winnersGrid", () => {
+  const contests = [
+    c(2025, "MAYOR", w("a", "REYES, ANA")),
+    c(2022, "VICE MAYOR", w("b", "SANTOS, BEN")),
+    c(2022, "MAYOR", w("a", "REYES, ANA")),
+    c(2025, "COUNCILOR", w("c", "CRUZ, CY")),
+  ];
+  it("makes mayor and vice mayor rows over ascending election years, empty cells where no record", () => {
+    const g = winnersGrid(contests);
+    expect(g.years).toEqual([2022, 2025]);
+    expect(g.rows.map((r) => r.position)).toEqual(["MAYOR", "VICE MAYOR"]);
+    expect(g.rows[0].cells.map((x) => x.winners.map((y) => y.id))).toEqual([["a"], ["a"]]);
+    expect(g.rows[1].cells.map((x) => x.winners.length)).toEqual([1, 0]);
+  });
+  it("uses the given years so towns line up", () => {
+    expect(winnersGrid(contests, [2019, 2022]).rows[0].cells.map((x) => x.winners.length)).toEqual([0, 1]);
+  });
+});
+
+describe("surnameHolders", () => {
+  it("lists every win under a surname with town, year, seat, newest first", () => {
+    const t = (slug: string, ...cs: Contest[]) => ({ slug, upstream: [], contests: cs });
+    const rows = surnameHolders([t("x", c(2019, "MAYOR", w("a", "REYES, ANA"))), t("y", c(2022, "COUNCILOR", w("b", "REYES, BEN"), w("c", "CRUZ, CY")))], "REYES");
+    expect(rows.map((r) => [r.town, r.year, r.position, r.id])).toEqual([["y", 2022, "COUNCILOR", "b"], ["x", 2019, "MAYOR", "a"]]);
+  });
 });

@@ -6,7 +6,7 @@ export default function OfficeholderTable({ contests, position }: { contests: Co
   return (
     <ul className="mt-3 divide-y divide-black/10 rounded-xl border border-black/10 bg-white">
       {rows.map((c) => (
-        <li key={c.year} className="flex gap-4 px-4 py-3">
+        <li key={c.year} id={`${position.toLowerCase().replace(" ", "-")}-${c.year}`} className="flex scroll-mt-28 gap-4 px-4 py-3">
           <span className="w-12 shrink-0 font-semibold text-[var(--navy)]">{c.year}</span>
           <div className="min-w-0 text-sm">
             <p>

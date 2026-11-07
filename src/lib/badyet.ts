@@ -36,3 +36,11 @@ export const versions = (o: Office) => ({ nep: o.fy2027.nep_php, house: o.fy2027
 /** House minus NEP; null unless both are known. */
 export const netChange = (nep: number | null | undefined, house: number | null | undefined) =>
   typeof nep === "number" && typeof house === "number" ? house - nep : null;
+
+/** Display order of the proportion bar. Width = share of budget LINES (rows); pesos are shown as text only and never drive width. */
+export const BAR_ORDER = ["unchanged", "increased", "house_only", "nep_only", "decreased", "scope_review"] as const;
+export const proportionSegments = (o: Office) => {
+  const gs = BAR_ORDER.map((key) => ({ key, ...o.fy2027.groups[key] }));
+  const total = gs.reduce((a, x) => a + x.rows, 0);
+  return gs.map((x) => ({ ...x, pct: total ? (x.rows / total) * 100 : 0 }));
+};
