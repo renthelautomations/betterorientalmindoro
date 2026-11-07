@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Breadcrumbs } from "@/components/kit/Ui";
+import { TBreadcrumbs } from "@/components/site/DynBits";
 import ServiceDetail from "@/components/services/ServiceDetail";
 import { getCategory, getService, getServices } from "@/lib/services";
 
@@ -21,7 +21,7 @@ export default async function ServicePage({ params }: PageProps<"/serbisyo/[cate
   if (!s || !c) notFound();
   return (
     <main className="mx-auto max-w-4xl px-4 pb-20 pt-8">
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Serbisyo", href: "/serbisyo" }, { label: s.title }]} />
+      <TBreadcrumbs items={[{ label: "dyn.home", href: "/" }, { label: "nav.services", href: "/serbisyo" }, { label: s.title }]} />
       <div className="mt-6"><ServiceDetail s={s} /></div>
     </main>
   );
