@@ -1,76 +1,106 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import PopTrend from "@/components/stats/PopTrend";
-import { SourceNote, StatCard } from "@/components/stats/StatCard";
+import { SourceNote } from "@/components/stats/StatCard";
+import EstatistikaCompare from "@/components/site/EstatistikaCompare";
+import { BarChart } from "@/components/kit/Charts";
+import Choropleth from "@/components/site/LinkChoropleth";
+import LineChart from "@/components/kit/LineChart";
+import { StatCard } from "@/components/kit/Parts";
+import { Breadcrumbs } from "@/components/kit/Ui";
+import { FIESTA } from "@/components/kit/Patterns";
 import { getMunicipalities, getBarangays } from "@/lib/municipalities";
-import { DASH, fmtInt, fmtPeso, getProvinceStats, getStats } from "@/lib/stats";
+import { DASH, fmtInt, fmtPeso, getProvinceStats, getStats, popGrowth, fmtPct } from "@/lib/stats";
 
 export const metadata: Metadata = { title: "Estatistika", description: "Populasyon, kita, at pananalapi ng Oriental Mindoro at ng 15 bayan at lungsod nito." };
 
-const short = (c?: string) => c?.replace(/ (municipal|city|provincial) income class/, "") ?? DASH;
+const short = (c?: string) => c?.replace(/ (municipal|city|provincial) income class/, " klase") ?? DASH;
 
 export default function Estatistika() {
   const prov = getProvinceStats();
-  const rows = getMunicipalities().map((m) => ({ m, s: getStats(m.slug), brgy: getBarangays(m.pcode).length }));
-  const totalArea = rows.reduce((a, r) => a + r.m.areaKm2, 0);
-  const totalBrgy = rows.reduce((a, r) => a + r.brgy, 0);
+  const rows = getMunicipalities().map((m) => {
+    const s = getStats(m.slug);
+    return { m, s, pop: s?.population.at(-1)?.value ?? null, brgy: getBarangays(m.pcode).length, rev: s?.revenue?.value ?? null };
+  });
   const latest = prov.population.at(-1);
-  const maxPop = Math.max(...rows.map((r) => r.s?.population.at(-1)?.value ?? 0), 1);
+  const g = popGrowth(prov.population);
+  const metrics = [
+    { id: "pop", label: "Populasyon", unit: "population", fmt: fmtInt, val: (r: (typeof rows)[number]) => r.pop },
+    { id: "laki", label: "Laki", unit: "area in km²", fmt: (n: number) => `${fmtInt(n)} km²`, val: (r: (typeof rows)[number]) => r.m.areaKm2 },
+    { id: "kita", label: "Kita", unit: "LGU revenue", fmt: fmtPeso, val: (r: (typeof rows)[number]) => r.rev },
+    { id: "brgy", label: "Barangay", unit: "barangay count", fmt: fmtInt, val: (r: (typeof rows)[number]) => r.brgy },
+  ];
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
-      <h1 className="font-serif text-3xl font-bold md:text-4xl">Estatistika ng Oriental Mindoro</h1>
+    <main className="mx-auto max-w-6xl px-4 py-10">
+      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Datos", href: "/datos" }, { label: "Estatistika" }]} />
+      <h1 className="mt-4 font-serif text-3xl font-bold md:text-4xl">Estatistika ng Oriental Mindoro</h1>
       <p className="mt-2 text-black/70">Populasyon, laki, at pananalapi ng lalawigan at ng bawat bayan. Ang &quot;-&quot; ay nangangahulugang walang datos.</p>
 
-      <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
-        <StatCard label="POPULASYON" value={fmtInt(latest?.value)} note={latest ? `Census ${latest.year}` : undefined} />
-        <StatCard label="BARANGAY" value={fmtInt(totalBrgy)} note="Ayon sa boundary data" />
-        <StatCard label="LAKI (KM²)" value={fmtInt(totalArea)} note="Kabuuan ng 15 LGU" />
-        <StatCard label="KITA NG PROBINSYA" value={fmtPeso(prov.revenue?.value)} note={prov.revenue ? `Taon ${prov.revenue.year}` : undefined} />
-      </div>
+      <section aria-label="Sa numero" className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <StatCard label="POPULASYON" value={fmtInt(latest?.value)} hint={latest ? `Census ${latest.year}` : "Walang datos"} icon="people" color={FIESTA.blue} />
+        <StatCard label="BARANGAY" value={fmtInt(rows.reduce((a, r) => a + r.brgy, 0))} hint="Ayon sa boundary data" icon="pin" color={FIESTA.navy} />
+        <StatCard label="LAKI (KM²)" value={fmtInt(rows.reduce((a, r) => a + r.m.areaKm2, 0))} hint="Kabuuan ng 15 LGU" icon="mountain" color={FIESTA.navy} />
+        <StatCard label="KITA NG PROBINSYA" value={fmtPeso(prov.revenue?.value)} hint={prov.revenue ? `Taon ${prov.revenue.year}` : "Walang datos"} icon="budget" color={FIESTA.red} />
+      </section>
 
-      <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">POPULASYON NG LALAWIGAN</h2>
-      <div className="mt-3 max-w-xl"><PopTrend points={prov.population} /></div>
-      <SourceNote>Source: PSA Census of Population at 2024 POPCEN via <a className="underline" href={prov.wikidata}>Wikidata</a> (CC0), nakuha {latest?.retrievedAt}.</SourceNote>
+      <section aria-labelledby="mapa-h" className="mt-12">
+        <h2 id="mapa-h" className="text-sm font-semibold tracking-widest text-black/60">MAPA AT PINAKAMATAAS</h2>
+        <p className="mt-1 text-sm text-black/70">Pumili ng sukatan. Pindutin ang bayan sa mapa para buksan ito.</p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {metrics.map((k, i) => <input key={k.id} type="radio" name="metric" id={`m-${k.id}`} defaultChecked={i === 0} aria-label={k.label} className={`peer/${k.id} sr-only`} />)}
+          {metrics.map((k) => (
+            <label key={k.id} htmlFor={`m-${k.id}`} className={`inline-flex min-h-11 cursor-pointer items-center rounded-full border-2 border-fiesta-navy px-5 text-sm font-semibold text-fiesta-navy hover:bg-fiesta-navy/10 ${PEER_LABEL[k.id]}`}>{k.label}</label>
+          ))}
+          {metrics.map((k) => {
+            const data = rows.map((r) => ({ r, v: k.val(r) }));
+            const ranked = data.filter((d): d is { r: (typeof rows)[number]; v: number } => d.v != null).map((d) => ({ label: d.r.m.name, value: d.v, href: `/bayan/${d.r.m.slug}` })).sort((a, b) => b.value - a.value);
+            return (
+              <div key={k.id} className={`hidden basis-full pt-4 ${PEER_PANEL[k.id]}`}>
+                <div className="grid gap-8 md:grid-cols-2">
+                  <Choropleth rows={data.map(({ r, v }) => ({ pcode: r.m.pcode, name: r.m.name, value: v, href: `/bayan/${r.m.slug}` }))} format={k.fmt} unit={k.unit} />
+                  <div>
+                    <h3 className="mb-3 font-serif text-lg font-bold">Nangunguna: {k.label.toLowerCase()}</h3>
+                    {ranked.length ? <BarChart rows={ranked.slice(0, 5)} format={k.fmt} /> : <p className="text-sm text-black/60">Walang datos.</p>}
+                    {ranked.length > 5 && (
+                      <details className="mt-4">
+                        <summary className="inline-flex min-h-11 cursor-pointer items-center text-sm font-semibold text-fiesta-blue underline underline-offset-2">Ipakita lahat ({ranked.length})</summary>
+                        <div className="mt-2"><BarChart rows={ranked} format={k.fmt} /></div>
+                      </details>
+                    )}
+                    {ranked.length < rows.length && <p className="mt-3 text-xs text-black/65">{rows.length - ranked.length} bayan ang walang datos at kulay-abo sa mapa.</p>}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <SourceNote>Populasyon: PSA via Wikidata (CC0), pinakahuling census ng bawat bayan. Kita: COA financial statements via Wikidata (CC0); magkakaiba ang taon, tingnan ang Datos ng bawat bayan. Laki at barangay: NAMRIA/PSA boundaries via BetterGov Open Data (MIT).</SourceNote>
+      </section>
 
-      <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/60">BAWAT BAYAN AT LUNGSOD</h2>
-      <div className="mt-3 overflow-x-auto">
-        <table className="w-full min-w-[40rem] text-sm">
-          <caption className="sr-only">Estatistika ng mga bayan at lungsod ng Oriental Mindoro</caption>
-          <thead>
-            <tr className="border-b border-black/20 text-left text-xs tracking-widest text-black/60">
-              <th scope="col" className="py-2 pr-3">BAYAN</th>
-              <th scope="col" className="py-2 pr-3">POPULASYON 2024</th>
-              <th scope="col" className="py-2 pr-3 text-right">BRGY</th>
-              <th scope="col" className="py-2 pr-3 text-right">KM²</th>
-              <th scope="col" className="py-2 pr-3">KLASE</th>
-              <th scope="col" className="py-2 text-right">KITA</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map(({ m, s, brgy }) => {
-              const p = s?.population.at(-1)?.value;
-              return (
-                <tr key={m.slug} className="border-b border-black/10">
-                  <th scope="row" className="py-2 pr-3 text-left font-normal"><Link href={`/bayan/${m.slug}`} className="underline">{m.name}</Link></th>
-                  <td className="py-2 pr-3">
-                    <div className="flex items-center gap-2">
-                      <span className="w-16 tabular-nums">{fmtInt(p)}</span>
-                      <span className="h-2 flex-1 rounded-sm bg-black/5" aria-hidden><span className="block h-2 rounded-sm bg-[#1b2a4a]" style={{ width: `${((p ?? 0) / maxPop) * 100}%` }} /></span>
-                    </div>
-                  </td>
-                  <td className="py-2 pr-3 text-right tabular-nums">{fmtInt(brgy)}</td>
-                  <td className="py-2 pr-3 text-right tabular-nums">{fmtInt(m.areaKm2)}</td>
-                  <td className="py-2 pr-3">{short(s?.incomeClass?.value)}</td>
-                  <td className="py-2 text-right tabular-nums">{fmtPeso(s?.revenue?.value)}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-      <SourceNote>
-        Populasyon: PSA via Wikidata (CC0). Klase at kita: BLGF/COA financial statements via Wikidata (CC0), taong 2024 kung available. Ang IRA share at IRA dependency ay hindi pa mailathala dahil walang bukas na dataset na nakuha; ipapakita ito kapag may mapagkukunan. Lugar at barangay: NAMRIA/PSA boundaries via BetterGov Open Data.
-      </SourceNote>
+      <section aria-labelledby="lago-h" className="mt-12">
+        <h2 id="lago-h" className="text-sm font-semibold tracking-widest text-black/60">PAGLAGO NG POPULASYON, {prov.population[0]?.year} HANGGANG {latest?.year}</h2>
+        <div className="mt-3 max-w-2xl"><LineChart series={[{ name: "Buong lalawigan", points: prov.population.map((p) => ({ year: p.year, value: p.value })) }, ...rows.filter((r) => r.s).map((r) => ({ name: r.m.name, points: r.s!.population.map((p) => ({ year: p.year, value: p.value })) }))]} label="Ipakita:" /></div>
+        {g !== null && <p className="mt-2 text-sm text-black/70">Lalawigan {prov.population[0].year}–{latest!.year}: <b>{g >= 0 ? "+" : ""}{fmtPct(g)}</b></p>}
+        <SourceNote>Source: PSA Census of Population at 2024 POPCEN via <a className="underline" href={prov.wikidata}>Wikidata</a> (CC0), nakuha {latest?.retrievedAt}.</SourceNote>
+      </section>
+
+      <section aria-labelledby="cmp-h" className="mt-12">
+        <h2 id="cmp-h" className="text-sm font-semibold tracking-widest text-black/60">IHAMBING ANG DALAWANG BAYAN</h2>
+        <div className="mt-3 max-w-3xl">
+          <EstatistikaCompare rows={rows.map((r) => ({ slug: r.m.slug, name: r.m.name, population: fmtInt(r.pop), area: fmtInt(r.m.areaKm2), barangays: fmtInt(r.brgy), incomeClass: `${short(r.s?.incomeClass?.value)}${r.s?.incomeClass ? ` (${r.s.incomeClass.year})` : ""}` }))} />
+        </div>
+        <SourceNote>Klase ng kita: BLGF via Wikidata (CC0); ang taon ay nasa panaklong at maaaring nagbago na ang klase. Ang IRA share at IRA dependency ay hindi pa mailathala dahil walang bukas na dataset; makikita ang pananalapi ng bawat bayan sa <Link href="/bayan" className="underline">pahina nito</Link>.</SourceNote>
+      </section>
     </main>
   );
 }
+
+// Tailwind needs the full class strings, so the four peer names are spelled out.
+const PEER_LABEL: Record<string, string> = {
+  pop: "peer-checked/pop:bg-fiesta-navy peer-checked/pop:text-white peer-focus-visible/pop:ring-4 peer-focus-visible/pop:ring-fiesta-orange",
+  laki: "peer-checked/laki:bg-fiesta-navy peer-checked/laki:text-white peer-focus-visible/laki:ring-4 peer-focus-visible/laki:ring-fiesta-orange",
+  kita: "peer-checked/kita:bg-fiesta-navy peer-checked/kita:text-white peer-focus-visible/kita:ring-4 peer-focus-visible/kita:ring-fiesta-orange",
+  brgy: "peer-checked/brgy:bg-fiesta-navy peer-checked/brgy:text-white peer-focus-visible/brgy:ring-4 peer-focus-visible/brgy:ring-fiesta-orange",
+};
+const PEER_PANEL: Record<string, string> = {
+  pop: "peer-checked/pop:block", laki: "peer-checked/laki:block", kita: "peer-checked/kita:block", brgy: "peer-checked/brgy:block",
+};
