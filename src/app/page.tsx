@@ -66,17 +66,17 @@ export default function Home() {
         </Landmark>
 
         <section aria-label="MaHalTaNa" className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          <Link href="/ma"><PillarCard short="Ma" name="Mangyan" blurb="home.pillar.ma" color={FIESTA.blue} pattern="dotblocks" /></Link>
-          <Link href="/hal"><PillarCard short="Hal" name="Mount Halcon" blurb="home.pillar.hal" color={FIESTA_DEEP.green} pattern="peaks" /></Link>
-          <Link href="/ta"><PillarCard short="Ta" name="Tamaraw" blurb="home.pillar.ta" color={FIESTA.red} pattern="horns" /></Link>
-          <Link href="/na"><PillarCard short="Na" name="Naujan Lake" blurb="home.pillar.na" color={FIESTA_DEEP.sky} pattern="wave" /></Link>
+          <Link href="/ma" className="block h-full"><PillarCard short="Ma" name="Mangyan" blurb="home.pillar.ma" color={FIESTA.blue} pattern="dotblocks" /></Link>
+          <Link href="/hal" className="block h-full"><PillarCard short="Hal" name="Mount Halcon" blurb="home.pillar.hal" color={FIESTA_DEEP.green} pattern="peaks" /></Link>
+          <Link href="/ta" className="block h-full"><PillarCard short="Ta" name="Tamaraw" blurb="home.pillar.ta" color={FIESTA.red} pattern="horns" /></Link>
+          <Link href="/na" className="block h-full"><PillarCard short="Na" name="Naujan Lake" blurb="home.pillar.na" color={FIESTA_DEEP.sky} pattern="wave" /></Link>
         </section>
 
         <Landmark as="section" label="home.num.aria" className="grid gap-4 py-14 sm:grid-cols-2 lg:grid-cols-4">
-          <Link href="/bayan"><StatCard label="home.towns" value={String(towns.length)} hint="home.hint.towns" icon="pin" color={FIESTA.blue} /></Link>
-          <Link href="/estatistika"><StatCard label="home.pop" value={fmtInt(pop?.value)} lead={pop ? `Census ${pop.year}.` : undefined} hint="home.hint.stats" icon="people" color={FIESTA_DEEP.orange} /></Link>
-          <Link href="/hotlines"><StatCard label="home.stat.hotline" value={String(hotlineCount)} hint="home.hint.hotlines" icon="phone" color={FIESTA.red} /></Link>
-          <Link href="/proyekto"><StatCard label="home.projects" value={fmtInt(getProjectStats().total)} hint="home.hint.projects" icon="road" color={FIESTA_DEEP.green} /></Link>
+          <Link href="/bayan" className="block h-full"><StatCard label="home.towns" value={String(towns.length)} hint="home.hint.towns" icon="pin" color={FIESTA.blue} /></Link>
+          <Link href="/estatistika" className="block h-full"><StatCard label="home.pop" value={fmtInt(pop?.value)} lead={pop ? `Census ${pop.year}.` : undefined} hint="home.hint.stats" icon="people" color={FIESTA_DEEP.orange} /></Link>
+          <Link href="/hotlines" className="block h-full"><StatCard label="home.stat.hotline" value={String(hotlineCount)} hint="home.hint.hotlines" icon="phone" color={FIESTA.red} /></Link>
+          <Link href="/proyekto" className="block h-full"><StatCard label="home.projects" value={fmtInt(getProjectStats().total)} hint="home.hint.projects" icon="road" color={FIESTA_DEEP.green} /></Link>
         </Landmark>
 
         <Landmark as="section" label="home.services" className="pb-14">
