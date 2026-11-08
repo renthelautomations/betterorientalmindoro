@@ -1,6 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
 import KitIcon from "@/components/kit/KitIcon";
+import OfficeRow from "./OfficeRow";
+import { numbers } from "@/lib/office-format";
 import { fold } from "@/lib/smart-search";
 import { useT } from "@/lib/i18n/i18n";
 import type { Official } from "@/lib/gov";
@@ -31,18 +33,7 @@ export default function GovOfficeList({ items }: { items: Official[] }) {
       {rows.length ? (
         <ul className="divide-y divide-black/10 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
           {rows.map((o) => (
-            <li key={o.id} className="flex flex-wrap items-center gap-x-4 gap-y-3 p-4">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-fiesta-blue/10" aria-hidden><KitIcon name="shield" color="#2b4fa3" className="h-6 w-6" /></span>
-              <div className="min-w-0 flex-1 basis-56">
-                <p className="font-semibold leading-snug text-fiesta-navy">{o.office ?? o.position}</p>
-                <p className="text-sm text-black/70">{o.name}</p>
-                {o.location && <p className="mt-0.5 flex items-start gap-1 text-xs text-black/65"><KitIcon name="pin" className="mt-0.5 h-3.5 w-3.5 shrink-0" />{o.location}</p>}
-              </div>
-              <div className="flex flex-wrap items-center gap-2">
-                {o.phone && <a href={tel(o.phone, o.location)} className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-fiesta-navy px-4 text-sm font-semibold whitespace-nowrap text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-4 w-4 shrink-0" />{o.phone}</a>}
-                {o.email && <a href={`mailto:${o.email}`} title={o.email} className="inline-flex min-h-11 max-w-full items-center gap-1.5 rounded-full bg-fiesta-navy/5 px-4 text-sm font-semibold text-fiesta-blue hover:bg-fiesta-mint"><span aria-hidden>✉</span><span className="truncate">{o.email}</span></a>}
-              </div>
-            </li>
+            <OfficeRow key={o.id} icon="shield" color="#2b4fa3" bg="#e6ecf8" name={o.office ?? o.position ?? ""} head={o.name} address={o.location} phones={numbers(o.phone)} emails={o.email ? [o.email] : []} dial={(n) => tel(n, o.location)} />
           ))}
         </ul>
       ) : <p className="rounded-2xl bg-white p-6 text-sm text-black/70 shadow-sm ring-1 ring-black/5">{t("govc.of.none")}</p>}

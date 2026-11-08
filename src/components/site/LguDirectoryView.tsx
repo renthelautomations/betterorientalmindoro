@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
 import { fold } from "@/lib/smart-search";
+import OfficeRow from "./OfficeRow";
 import { T, useT } from "@/lib/i18n/i18n";
 import type { LguDirectory, OfficeGroup } from "@/lib/lgu-directory";
 
@@ -38,20 +39,7 @@ export default function LguDirectoryView({ dir, name, collapsible }: { dir: LguD
         <ul className="divide-y divide-black/10 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
           {rows.map((o) => {
             const g = GROUPS.find((x) => x.key === o.category)!;
-            return (
-              <li key={o.name} className="flex flex-wrap items-center gap-x-4 gap-y-3 p-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full" style={{ background: g.bg }} aria-hidden><KitIcon name={g.icon} color={g.color} className="h-6 w-6" /></span>
-                <div className="min-w-0 flex-1 basis-56">
-                  <p className="font-semibold leading-snug text-fiesta-navy">{o.name}</p>
-                  {o.head && <p className="text-sm text-black/70">{o.head}</p>}
-                  {o.address && <p className="mt-0.5 flex items-start gap-1 text-xs text-black/65"><KitIcon name="pin" className="mt-0.5 h-3.5 w-3.5 shrink-0" />{o.address}</p>}
-                </div>
-                <div className="flex flex-wrap items-center gap-2">
-                  {o.phone.map((n) => <a key={n} href={tel(n)} className="inline-flex min-h-11 items-center gap-1.5 rounded-full bg-fiesta-navy px-4 text-sm font-semibold whitespace-nowrap text-white hover:bg-fiesta-blue"><KitIcon name="phone" className="h-4 w-4 shrink-0" />{n}</a>)}
-                  {o.email.map((e) => <a key={e} href={`mailto:${e}`} title={e} className="inline-flex min-h-11 max-w-full items-center gap-1.5 rounded-full bg-fiesta-navy/5 px-4 text-sm font-semibold text-fiesta-blue hover:bg-fiesta-mint"><span aria-hidden>✉</span><span className="truncate">{e}</span></a>)}
-                </div>
-              </li>
-            );
+            return <OfficeRow key={o.name} icon={g.icon} color={g.color} bg={g.bg} name={o.name} head={o.head} address={o.address} phones={o.phone} emails={o.email} />;
           })}
         </ul>
       ) : <p className="rounded-2xl bg-white p-6 text-sm text-black/70 shadow-sm ring-1 ring-black/5">{t("lgu.dir.none")}</p>}
