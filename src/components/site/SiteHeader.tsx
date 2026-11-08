@@ -76,14 +76,14 @@ export default function SiteHeader({ entries, extra }: { entries: NavEntry[]; ex
         return (
           <div id={`mega-${open}`} role="region" aria-label={t(entries[open].label)} className="absolute inset-x-0 top-full z-50 hidden border-t border-black/10 bg-fiesta-cream shadow-xl lg:block">
             <div className="mx-auto max-w-6xl px-4 py-6">
-              <ul className="grid gap-4" style={{ gridTemplateColumns: `repeat(${m.cols}, minmax(0, 1fr))` }}>
+              <ul className="grid gap-4" style={{ gridTemplateColumns: `repeat(${m.cols}, minmax(0, 1fr))`, gridAutoRows: "1fr" }}>
                 {m.items.map((it) => (
                   <li key={it.href} className="min-w-0">
-                    <Link href={it.href} onClick={() => setOpen(null)} className="group flex h-full min-h-24 items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
+                    <Link href={it.href} onClick={() => setOpen(null)} className="group flex h-full min-h-[7rem] items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
                       <MenuEmblem index={it.n} />
                       <span className="min-w-0">
-                        <span className="block font-serif text-lg font-bold leading-tight text-fiesta-navy"><T k={it.label} /></span>
-                        {it.desc && <span className="mt-0.5 block text-sm leading-snug text-black/70"><T k={it.desc} /></span>}
+                        <span className="line-clamp-2 block font-serif text-lg font-bold leading-tight text-fiesta-navy"><T k={it.label} /></span>
+                        {it.desc && <span className="mt-0.5 line-clamp-2 block text-sm leading-snug text-black/70"><T k={it.desc} /></span>}
                       </span>
                     </Link>
                   </li>
