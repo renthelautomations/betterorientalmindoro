@@ -4,6 +4,7 @@ import { Divider } from "@/components/kit/Motifs";
 import Icon from "@/components/ui/Icon";
 import FooterSocial from "./FooterSocial";
 import VisitCounter from "./VisitCounter";
+import { VolunteerButton } from "./VolunteerDialog";
 import { NAV, FOOTER_LINKS, FOOTER_SOURCES } from "./nav";
 import { T } from "@/lib/i18n/i18n";
 import { SITE } from "@/lib/brand";
@@ -38,6 +39,7 @@ export default function SiteFooter() {
           <Logo tone="light" />
           <p className="mt-4 font-serif text-xl font-bold"><T k="footer.tagline" /></p>
           <p className="mt-2 max-w-md text-sm leading-relaxed text-white/80"><T k="footer.disclaimer" /></p>
+          <VolunteerButton className="mt-5 inline-flex min-h-11 items-center rounded-full bg-fiesta-orange px-5 text-sm font-bold text-fiesta-navy transition hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-yellow"><T k="vol.title" /></VolunteerButton>
           <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3"><FooterSocial /></div>
         </div>
         <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:flex sm:justify-between sm:gap-x-8">

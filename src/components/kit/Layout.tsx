@@ -13,7 +13,7 @@ export type NavLink = { label: string; href: string };
 const STRIPE = "repeating-linear-gradient(90deg,#e8552d 0 24px,#3aa65b 24px 48px,#4aa3d8 48px 72px,#f4b92e 72px 96px)";
 
 /** Desktop: inline links. Mobile: native <details> menu (no JS). */
-export function KitHeader({ links }: { links: NavLink[] }) {
+export function KitHeader({ links, extra }: { links: NavLink[]; extra?: React.ReactNode }) {
   return (
     <header className="bg-fiesta-cream">
       <div className="h-1.5" style={{ background: STRIPE }} aria-hidden />
@@ -22,7 +22,7 @@ export function KitHeader({ links }: { links: NavLink[] }) {
         <nav aria-label="Main" className="hidden gap-1 xl:flex">
           {links.map((l) => <Link key={l.label} href={l.href} className="inline-flex min-h-11 items-center rounded-lg px-3 text-sm font-medium hover:bg-fiesta-navy/5"><T k={l.label} /></Link>)}
         </nav>
-        <LangToggle className="ml-auto mr-2 xl:ml-4 xl:mr-0" />
+        <div className="ml-auto mr-2 flex items-center gap-2 xl:ml-4 xl:mr-0">{extra}<LangToggle /></div>
         <details className="group relative xl:hidden">
           <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-lg hover:bg-fiesta-navy/5 [&::-webkit-details-marker]:hidden" aria-label="Menu"><KitIcon name="menu" /></summary>
           <ul className="absolute right-0 z-10 mt-2 w-56 rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/10">
