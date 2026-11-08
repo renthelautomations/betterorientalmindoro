@@ -40,8 +40,8 @@ export function PillarCard({ short, name, blurb, color, pattern }: { short: stri
   return (
     <div className="relative isolate flex h-full min-h-44 flex-col justify-between overflow-hidden rounded-2xl p-5 text-white" style={{ background: color }}>
       <PatternFill variant={pattern} colors={["#fff"]} opacity={0.2} />
-      <span className="font-serif text-4xl font-bold">{short}</span>
-      <span><span className="block text-lg font-semibold">{name}</span><span className="mt-1 block text-sm leading-snug">{blurb}</span></span>
+      <span className="relative font-serif text-4xl font-bold">{short}</span>
+      <span className="relative -mx-5 -mb-5 mt-6 block px-5 pb-5 pt-3" style={{ background: color }}><span className="block text-lg font-semibold">{name}</span><span className="mt-1 block text-sm leading-snug">{blurb}</span></span>
     </div>
   );
 }

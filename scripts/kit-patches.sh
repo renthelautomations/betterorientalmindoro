@@ -69,5 +69,9 @@ open(p,"w").write(s)
 # 11. Scene captions sit on a pattern/scene: solid white, not lowered opacity.
 for p in ["src/components/kit/NaujanScroll.tsx", "src/components/kit/HalconScroll.tsx"]:
     s=open(p).read(); s=re.sub(r"text-white/\d+","text-white",s); open(p,"w").write(s)
+# 12. PillarCard: the pattern was drawn over the text. Name and blurb sit above it on a solid band of the card colour.
+p="src/components/kit/Parts.tsx"; s=open(p).read()
+s=s.replace('<span className="font-serif text-4xl font-bold">{short}</span>\n      <span><span className="block text-lg font-semibold">{name}</span><span className="mt-1 block text-sm leading-snug">{blurb}</span></span>','<span className="relative font-serif text-4xl font-bold">{short}</span>\n      <span className="relative -mx-5 -mb-5 mt-6 block px-5 pb-5 pt-3" style={{ background: color }}><span className="block text-lg font-semibold">{name}</span><span className="mt-1 block text-sm leading-snug">{blurb}</span></span>')
+open(p,"w").write(s)
 PY
 echo "kit patches applied"

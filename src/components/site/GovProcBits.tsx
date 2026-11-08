@@ -39,7 +39,7 @@ export function Stepper({ stages }: { stages: Card["stages"] }) {
               <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-white ${on ? "bg-fiesta-navy" : "bg-white ring-2 ring-black/20"}`}>{on && <KitIcon name="check" className="h-3.5 w-3.5" />}</span>
               <span className={`h-0.5 flex-1 ${i === STAGES.length - 1 ? "opacity-0" : "bg-black/15"}`} />
             </span>
-            <span className={`mt-1 text-[11px] leading-tight ${on ? "font-semibold text-fiesta-navy" : "text-black/65"}`}>
+            <span className={`mt-1 text-[11px] leading-tight ${on ? "font-semibold text-fiesta-navy" : "text-[#555]"}`}>
               <T k={`govb.stg.${s}`} /><span className="sr-only">: <T k={on ? "govb.listed" : "govb.notlisted"} /></span>
             </span>
           </li>

@@ -51,7 +51,7 @@ export function Timeline({ c }: { c: Card }) {
   return (
     <section className={`${card} p-5`} aria-labelledby="tl">
       <h2 id="tl" className="font-serif text-xl font-bold text-fiesta-navy"><T k="govb.p.timeline" /></h2>
-      <div className="mt-4 overflow-x-auto pb-2"><div className="min-w-[34rem]"><Stepper stages={c.stages} /></div>
+      <div className="mt-4 overflow-x-auto px-1 pb-2 pt-1"><div className="min-w-[34rem]"><Stepper stages={c.stages} /></div>
         <ol className="mt-3 grid min-w-[34rem] grid-cols-5 gap-1 text-center text-xs text-black/80">
           {STAGES.map((s) => <li key={s} className="min-w-0"><span className="block font-semibold tabular-nums text-fiesta-navy">{fmtDate(c.stages[s]?.date)}</span>{c.stages[s] ? null : <span className="block text-black/65"><T k="govb.notlisted" /></span>}</li>)}
         </ol>
