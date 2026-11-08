@@ -3,26 +3,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Logo from "@/components/Logo";
-import KitIcon, { type KitIconName } from "@/components/kit/KitIcon";
-import { Halcon, Tamaraw, Lake } from "@/components/kit/Motifs";
-import { PatternFill, type PatternKey } from "@/components/kit/Patterns";
+import KitIcon from "@/components/kit/KitIcon";
+import MenuEmblem from "./MenuEmblem";
 import { LangToggle, T, useT } from "@/lib/i18n/i18n";
 import type { MenuItem, NavEntry } from "./nav";
 
 const STRIPE = "repeating-linear-gradient(90deg,#e8552d 0 24px,#3aa65b 24px 48px,#4aa3d8 48px 72px,#f4b92e 72px 96px)";
-
-/** Brand tile for a menu card: the section's colour and pattern with its icon or emblem in white. */
-function Art({ it, size = "h-14 w-14" }: { it: MenuItem; size?: string }) {
-  return (
-    <span className={`relative isolate flex ${size} shrink-0 items-center justify-center overflow-hidden rounded-2xl`} style={{ background: it.color }} aria-hidden>
-      <PatternFill variant={it.pattern as PatternKey} colors={["#fff"]} opacity={0.18} />
-      <span className="relative text-white">
-        {it.art === "halcon" ? <Halcon className="h-8 w-auto" color="#fff" /> : it.art === "tamaraw" ? <Tamaraw className="h-8 w-auto" color="#fff" /> : it.art === "lake" ? <Lake className="h-8 w-auto" color="#fff" />
-          : it.art === "letters" ? <span className="font-serif text-xl font-bold">{it.letters}</span> : <KitIcon name={(it.icon ?? "doc") as KitIconName} color="#fff" className="h-7 w-7" />}
-      </span>
-    </span>
-  );
-}
 
 const linkCls = "inline-flex min-h-11 items-center gap-1 rounded-lg px-3 text-sm font-medium hover:bg-fiesta-navy/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue";
 
@@ -94,7 +80,7 @@ export default function SiteHeader({ entries, extra }: { entries: NavEntry[]; ex
                 {m.items.map((it) => (
                   <li key={it.href} className="min-w-0">
                     <Link href={it.href} onClick={() => setOpen(null)} className="group flex h-full min-h-24 items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
-                      <Art it={it} />
+                      <MenuEmblem index={it.n} />
                       <span className="min-w-0">
                         <span className="block font-serif text-lg font-bold leading-tight text-fiesta-navy"><T k={it.label} /></span>
                         {it.desc && <span className="mt-0.5 block text-sm leading-snug text-black/70"><T k={it.desc} /></span>}
