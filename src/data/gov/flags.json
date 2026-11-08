@@ -1,17 +1,3541 @@
 {
- "extractedAt": "2026-11-07",
+ "extractedAt": "2026-11-08",
  "summary": {
-  "total": 160,
+  "total": 238,
   "byRule": {
+   "single-bid": 75,
+   "award-concentration": 3,
    "no-award-listed": 159,
    "ref-number-anomaly": 1
   },
   "bySeverity": {
-   "info": 160,
+   "info": 238,
    "review": 0
   }
  },
  "flags": [
+  {
+   "id": "single-bid:CW2025 167 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 167 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-167-a",
+     "page": 1,
+     "quote": "urfirmasthe BidderwiththeSingleCalculatedResponsiveBidata contractpriceequivalenttoONE 36/100ONLY(Php1,399,091.36",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 167 A"
+  },
+  {
+   "id": "single-bid:CW2025 206 C",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 206 C says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-206-c",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 206 C"
+  },
+  {
+   "id": "single-bid:CW2025 244 C",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 244 C says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-244-c",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid atacontractpriceequivalenttoTHREEMILLIONFOURHUNDREDNINETYO",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 244 C"
+  },
+  {
+   "id": "single-bid:CW2025 249 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 249 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-249-a",
+     "page": 1,
+     "quote": "urfirm astheBidderwiththeSingleCalculatedResponsiveBid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 249 A"
+  },
+  {
+   "id": "single-bid:CW2025 254 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 254 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-254-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDREDNINETYSEVENT",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 254 A"
+  },
+  {
+   "id": "single-bid:CW2025 257 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 257 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-257-a",
+     "page": 1,
+     "quote": "rm as the Bidderwith the Single Calculated Responsive Bidata contractpriceequivalenttoNINEHUNDREDNINETYFIVETHOUSANDO",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 257 A"
+  },
+  {
+   "id": "single-bid:CW2025 262 C",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 262 C says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-262-c",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY FIVE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 262 C"
+  },
+  {
+   "id": "single-bid:CW2025 264 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 264 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-264-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price eQUiValenttoNINEHUNDREDNINETYEIGHTTHOU",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 264 B"
+  },
+  {
+   "id": "single-bid:CW2025 265 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 265 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-265-b",
+     "page": 1,
+     "quote": "rmas the Bidder with the Single Calculated Responsive Bid at a contract price EIGHTYFOURPESOSAND95/100ONLY(Php997384",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 265 B"
+  },
+  {
+   "id": "single-bid:CW2025 266 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 266 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-266-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a NINETYFIVEPESOSAND56/100ONLY(Php996,995.56). Quantity",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 266 B"
+  },
+  {
+   "id": "single-bid:CW2025 269 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 269 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-269-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOUR HUNDRED NINETYSEVEN",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 269 B"
+  },
+  {
+   "id": "single-bid:CW2025 275 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 275 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-275-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to AND69/100ONLY(Php496,857",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 275 B"
+  },
+  {
+   "id": "single-bid:CW2025 277 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 277 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-277-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY 996,",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 277 B"
+  },
+  {
+   "id": "single-bid:CW2025 278 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 278 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-278-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED SEVENTY EIG",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 278 B"
+  },
+  {
+   "id": "single-bid:CW2025 280 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 280 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-280-a-2",
+     "page": 1,
+     "quote": "m,as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY 996,",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 280 A"
+  },
+  {
+   "id": "single-bid:CW2025 286 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 286 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-286-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 286 A"
+  },
+  {
+   "id": "single-bid:CW2025 287 C",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 287 C says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-287-c",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 287 C"
+  },
+  {
+   "id": "single-bid:CW2025 291 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 291 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-291-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION FIVE HUNDRED",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 291 A"
+  },
+  {
+   "id": "single-bid:CW2025 292 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 292 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-292-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE NINEPESOSAND45/100ON",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 292 A"
+  },
+  {
+   "id": "single-bid:CW2025 294 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 294 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-294-b-2",
+     "page": 1,
+     "quote": "rm as the Bidderwith the SingleCalculatedResponsive Bidat a contractprice equivalent tO ONE MILLIONFIVE HUNDRED NI",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 294 B"
+  },
+  {
+   "id": "single-bid:CW2025 295 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 295 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-295-a",
+     "page": 1,
+     "quote": "irmas theBidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 295 A"
+  },
+  {
+   "id": "single-bid:CW2025 296 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 296 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-296-a",
+     "page": 1,
+     "quote": "ASBC: 062.00 meters, the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONEHUNDREDNI",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 296 A"
+  },
+  {
+   "id": "single-bid:CW2025 298 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 298 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-298-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION NINETYSEVENT",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 298 A"
+  },
+  {
+   "id": "single-bid:CW2025 299 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 299 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-299-a",
+     "page": 1,
+     "quote": "r firmastheBidderwiththe SingleCalculated Responsive Bidata THOUSAND NINE HUNDRED FIFTY TWO PESOS AND 62/100 ONLY (",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 299 A"
+  },
+  {
+   "id": "single-bid:CW2025 301 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 301 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-301-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDN",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 301 A"
+  },
+  {
+   "id": "single-bid:CW2025 303 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 303 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-303-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY SIXT",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 303 A"
+  },
+  {
+   "id": "single-bid:CW2025 304 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 304 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-304-b",
+     "page": 1,
+     "quote": "firm asthe Bidderwiththe SingleCalculated Responsive Bid at a ONLY (Php 997,000.00). Unit Cost Item No. Description",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 304 B"
+  },
+  {
+   "id": "single-bid:CW2025 305 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 305 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-305-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to of NINE HUNDRED NINETYEI",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 305 B"
+  },
+  {
+   "id": "single-bid:CW2025 306 C",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 306 C says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-306-c-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE 19/100ONLY(Php996,5",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 306 C"
+  },
+  {
+   "id": "single-bid:CW2025 307 C",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 307 C says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-307-c",
+     "page": 1,
+     "quote": "irm as theBidderwith the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDREDNINETYSEVENT",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 307 C"
+  },
+  {
+   "id": "single-bid:CW2025 309 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 309 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-309-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY THRE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 309 A"
+  },
+  {
+   "id": "single-bid:CW2025 310 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 310 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-310-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDN",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 310 A"
+  },
+  {
+   "id": "single-bid:CW2025 311 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 311 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-311-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid ata contract price equivalent to ONE MILLION ONE 70/100ONL",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 311 A"
+  },
+  {
+   "id": "single-bid:CW2025 313 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 313 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-313-a",
+     "page": 1,
+     "quote": "ROTECTION (GroutedRiprap Single Calculated Responsive Bid at a contract price equivalent to ONE MILLiON ONE HUNDREDN",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 313 A"
+  },
+  {
+   "id": "single-bid:CW2025 315 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 315 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-315-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDN",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 315 A"
+  },
+  {
+   "id": "single-bid:CW2025 316 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 316 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-316-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to THREEMILLIONNINEHUNDREDE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 316 A"
+  },
+  {
+   "id": "single-bid:CW2025 318",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 318 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-318",
+     "page": 1,
+     "quote": "rmas the Bidder with the Single Calculated Responsive Bid at a contract price equivalentto PESOSAND36/100ONLY(Php498",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 318"
+  },
+  {
+   "id": "single-bid:CW2025 320 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 320 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-320-a",
+     "page": 1,
+     "quote": "rfirm astheBidderwiththe SingleCalculatedResponsiveBidatacontractprice equivalent EIGHTEENPESOSAND61/100ONLY(Php1",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 320 A"
+  },
+  {
+   "id": "single-bid:CW2025 321 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 321 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-321-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION TWO ONLY(Php",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 321 A"
+  },
+  {
+   "id": "single-bid:CW2025 322 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 322 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-322-b",
+     "page": 1,
+     "quote": "irmasthe Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE PESOSAND99/100ONLY(1",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 322 B"
+  },
+  {
+   "id": "single-bid:CW2025 323",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 323 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-323",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid ata contract price equivalent to ONE MILLIONONEHUNDREDNINE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 323"
+  },
+  {
+   "id": "single-bid:CW2025 325",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 325 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-325",
+     "page": 1,
+     "quote": "r firmasthe BidderwiththeSingleCalculatedResponsive Bid ata contract price equivalent to ONE MILLION ONE HUNDRED N",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 325"
+  },
+  {
+   "id": "single-bid:CW2025 326",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 326 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-326",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION TWOHUNDRED N",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 326"
+  },
+  {
+   "id": "single-bid:CW2025 327 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 327 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-327-a",
+     "page": 1,
+     "quote": "urfirmas theBidderwiththeSingleCalculatedResponsiveBidatacontractpriceequivalentto PESOSAND26/100ONLY(Php1,097,72",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 327 A"
+  },
+  {
+   "id": "single-bid:CW2025 330 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 330 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-330-a-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE (Php 1,1",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 330 A"
+  },
+  {
+   "id": "single-bid:CW2025 331",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 331 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-331",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 331"
+  },
+  {
+   "id": "single-bid:CW2025 333",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 333 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-333",
+     "page": 1,
+     "quote": "irmas theBidder with the Single Calculated Responsive Bidat a contract price equivalenttoNINEHUNDREDNINETYSEVENTHOUS",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 333"
+  },
+  {
+   "id": "single-bid:CW2025 335",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 335 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-335-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a ONLY (Php997,000.00). Unit Cost Item No. Total Amount",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 335"
+  },
+  {
+   "id": "single-bid:CW2025 336 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 336 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-336-b",
+     "page": 1,
+     "quote": "rm as the Bidderwith the SingleCalculated ResponsiveBid at a contract price PESOSAND59/100ONLY(Php998,417.59)。 ite",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 336 B"
+  },
+  {
+   "id": "single-bid:CW2025 337 B",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 337 B says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-337-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to SEVEN HUNDRED NINETYSIXT",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 337 B"
+  },
+  {
+   "id": "single-bid:CW2025 339 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 339 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-339-a",
+     "page": 1,
+     "quote": "irmas the Bidder with theSingle Calculated ResponsiveBid HUNDREDNINEPESOSAND80/100ONLY(Php997,409.80). Item No. Qua",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 339 A"
+  },
+  {
+   "id": "single-bid:CW2025 340 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 340 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-340-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDREDNINETYEIGHTT",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 340 A"
+  },
+  {
+   "id": "single-bid:CW2025 343 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 343 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-343-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDREDNINETY SEVEN",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 343 A"
+  },
+  {
+   "id": "single-bid:CW2025 344",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 344 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-344-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY SEVE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 344"
+  },
+  {
+   "id": "single-bid:CW2025 346",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 346 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-346",
+     "page": 1,
+     "quote": "rm as the Bidderwith the Single Calculated Responsive Bidata contract price equivalent to SIXHUNDREDNINETYFOURTHOUSA",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 346"
+  },
+  {
+   "id": "single-bid:CW2025 348 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 348 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-348-a",
+     "page": 1,
+     "quote": "irmas the Bidderwith the SingleCalculatedResponsiveBidatacontractpriceequivalenttoFOURHUNDRED SIXTHOUSAND SIXHUND",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 348 A"
+  },
+  {
+   "id": "single-bid:CW2025 349 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 349 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-349-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOUR MILLION NINE HUNDRE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 349 A"
+  },
+  {
+   "id": "single-bid:CW2025 351 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 351 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-351-a-2",
+     "page": 1,
+     "quote": "0+000.00 theBidderwiththeSingleCalculatedResponsiveBid ata contractpriceequivalentto FIVEMILLION NINE HUNDRED NIN",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 351 A"
+  },
+  {
+   "id": "single-bid:CW2025 354",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 354 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-354",
+     "page": 1,
+     "quote": "ourfirmastheBidderwiththeSingleCalculated Responsive Bid at a contract price equivalent to ONE MILLION ONEHUNDRED N",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 354"
+  },
+  {
+   "id": "single-bid:CW2025 355 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 355 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-355-a",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 355 A"
+  },
+  {
+   "id": "single-bid:CW2025 357 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 357 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-357-a",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 357 A"
+  },
+  {
+   "id": "single-bid:CW2025 358",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 358 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-358-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION NINE HUNDRED",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 358"
+  },
+  {
+   "id": "single-bid:CW2025 359",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 359 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-359",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOUR PESOSAND35/100ONLY(",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 359"
+  },
+  {
+   "id": "single-bid:CW2025 360",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 360 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-360",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOURTEENMILLION NINEHUND",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 360"
+  },
+  {
+   "id": "single-bid:CW2025 363",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 363 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-363",
+     "page": 1,
+     "quote": "rm as the Bidder withthe Single CalculatedResponsive Bid at a contract price equivalent toONE MILLIONONEHUNDREDNINE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 363"
+  },
+  {
+   "id": "single-bid:CW2025 365",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 365 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-365",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 365"
+  },
+  {
+   "id": "single-bid:CW2025 367 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 367 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-367-a",
+     "page": 1,
+     "quote": "rfirmastheBidderwith the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDRED NINETY EIGH",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 367 A"
+  },
+  {
+   "id": "single-bid:CW2025 371 A",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 371 A says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-371-a",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 371 A"
+  },
+  {
+   "id": "single-bid:CW2025 373",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 373 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-373",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED EIGHTYEIGHT",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 373"
+  },
+  {
+   "id": "single-bid:CW2025 374",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 374 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-374",
+     "page": 1,
+     "quote": "firmastheBidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE (Php 1,197,000.30).",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 374"
+  },
+  {
+   "id": "single-bid:CW2025 377",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2025 377 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-377",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2025 377"
+  },
+  {
+   "id": "single-bid:CW2026 057",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2026 057 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2026-057",
+     "page": 1,
+     "quote": "firm astheBidderwiththe Single CalculatedResponsive Bid ata contract price equiValent toSEVENTYTHREEMILLIONONEHUND",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2026 057"
+  },
+  {
+   "id": "single-bid:CW2026 071",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2026 071 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2026-071",
+     "page": 1,
+     "quote": "ourfirmastheBidderwiththeSingleCalculatedResponsive Bid atacontractpriceequivalenttoNINEHUNDREDNINETYFIVETHOUSANDS",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2026 071"
+  },
+  {
+   "id": "single-bid:CW2026 082",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Award went to a single calculated responsive bid",
+   "what": "The notice of award for CW2026 082 says it was a Single Calculated Responsive Bid, meaning one bid passed evaluation; this is an indicator of how much competition there was.",
+   "evidence": [
+    {
+     "docId": "noa-cw2026-082",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to SEVEN MILLION TWO HUNDRE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open the NOA PDF on ormindoro.gov.ph (Procurement) and read the quoted page.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Ask the Bids and Awards Committee (Procurement Division, Provincial Capitol) for the explanation or the missing document."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "RA 9184 Government Procurement Reform Act (superseded by RA 12009 for new procurements)",
+     "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9184_2003.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted).",
+   "refNo": "CW2026 082"
+  },
+  {
+   "id": "single-bid:aggregate",
+   "rule": "single-bid",
+   "severity": "info",
+   "title": "Share of awards with a single responsive bid",
+   "what": "74 of 79 awards with a readable bid type (94%) were Single Calculated Responsive Bids.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-167-a",
+     "page": 1,
+     "quote": "urfirmasthe BidderwiththeSingleCalculatedResponsiveBidata contractpriceequivalenttoONE 36/100ONLY(Php1,399,091.36",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-206-c",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-244-c",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid atacontractpriceequivalenttoTHREEMILLIONFOURHUNDREDNINETYO",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-249-a",
+     "page": 1,
+     "quote": "urfirm astheBidderwiththeSingleCalculatedResponsiveBid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-254-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDREDNINETYSEVENT",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-257-a",
+     "page": 1,
+     "quote": "rm as the Bidderwith the Single Calculated Responsive Bidata contractpriceequivalenttoNINEHUNDREDNINETYFIVETHOUSANDO",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-262-c",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY FIVE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-264-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price eQUiValenttoNINEHUNDREDNINETYEIGHTTHOU",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-265-b",
+     "page": 1,
+     "quote": "rmas the Bidder with the Single Calculated Responsive Bid at a contract price EIGHTYFOURPESOSAND95/100ONLY(Php997384",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-266-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a NINETYFIVEPESOSAND56/100ONLY(Php996,995.56). Quantity",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-269-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOUR HUNDRED NINETYSEVEN",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-275-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to AND69/100ONLY(Php496,857",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-277-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY 996,",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-278-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED SEVENTY EIG",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-280-a-2",
+     "page": 1,
+     "quote": "m,as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY 996,",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-286-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-287-c",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-291-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION FIVE HUNDRED",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-292-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE NINEPESOSAND45/100ON",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-294-b-2",
+     "page": 1,
+     "quote": "rm as the Bidderwith the SingleCalculatedResponsive Bidat a contractprice equivalent tO ONE MILLIONFIVE HUNDRED NI",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-295-a",
+     "page": 1,
+     "quote": "irmas theBidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-296-a",
+     "page": 1,
+     "quote": "ASBC: 062.00 meters, the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONEHUNDREDNI",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-298-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION NINETYSEVENT",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-299-a",
+     "page": 1,
+     "quote": "r firmastheBidderwiththe SingleCalculated Responsive Bidata THOUSAND NINE HUNDRED FIFTY TWO PESOS AND 62/100 ONLY (",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-301-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDN",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-303-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY SIXT",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-304-b",
+     "page": 1,
+     "quote": "firm asthe Bidderwiththe SingleCalculated Responsive Bid at a ONLY (Php 997,000.00). Unit Cost Item No. Description",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-305-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to of NINE HUNDRED NINETYEI",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-306-c-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE 19/100ONLY(Php996,5",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-307-c",
+     "page": 1,
+     "quote": "irm as theBidderwith the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDREDNINETYSEVENT",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-309-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY THRE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-310-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDN",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-311-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid ata contract price equivalent to ONE MILLION ONE 70/100ONL",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-313-a",
+     "page": 1,
+     "quote": "ROTECTION (GroutedRiprap Single Calculated Responsive Bid at a contract price equivalent to ONE MILLiON ONE HUNDREDN",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-315-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDN",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-316-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to THREEMILLIONNINEHUNDREDE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-318",
+     "page": 1,
+     "quote": "rmas the Bidder with the Single Calculated Responsive Bid at a contract price equivalentto PESOSAND36/100ONLY(Php498",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-320-a",
+     "page": 1,
+     "quote": "rfirm astheBidderwiththe SingleCalculatedResponsiveBidatacontractprice equivalent EIGHTEENPESOSAND61/100ONLY(Php1",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-321-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION TWO ONLY(Php",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-322-b",
+     "page": 1,
+     "quote": "irmasthe Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE PESOSAND99/100ONLY(1",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-323",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid ata contract price equivalent to ONE MILLIONONEHUNDREDNINE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-325",
+     "page": 1,
+     "quote": "r firmasthe BidderwiththeSingleCalculatedResponsive Bid ata contract price equivalent to ONE MILLION ONE HUNDRED N",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-326",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION TWOHUNDRED N",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-327-a",
+     "page": 1,
+     "quote": "urfirmas theBidderwiththeSingleCalculatedResponsiveBidatacontractpriceequivalentto PESOSAND26/100ONLY(Php1,097,72",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-330-a-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE (Php 1,1",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-331",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDREDE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-333",
+     "page": 1,
+     "quote": "irmas theBidder with the Single Calculated Responsive Bidat a contract price equivalenttoNINEHUNDREDNINETYSEVENTHOUS",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-335-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a ONLY (Php997,000.00). Unit Cost Item No. Total Amount",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-336-b",
+     "page": 1,
+     "quote": "rm as the Bidderwith the SingleCalculated ResponsiveBid at a contract price PESOSAND59/100ONLY(Php998,417.59)。 ite",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-337-b",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to SEVEN HUNDRED NINETYSIXT",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-339-a",
+     "page": 1,
+     "quote": "irmas the Bidder with theSingle Calculated ResponsiveBid HUNDREDNINEPESOSAND80/100ONLY(Php997,409.80). Item No. Qua",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-340-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDREDNINETYEIGHTT",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-343-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDREDNINETY SEVEN",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-344-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED NINETY SEVE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-346",
+     "page": 1,
+     "quote": "rm as the Bidderwith the Single Calculated Responsive Bidata contract price equivalent to SIXHUNDREDNINETYFOURTHOUSA",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-348-a",
+     "page": 1,
+     "quote": "irmas the Bidderwith the SingleCalculatedResponsiveBidatacontractpriceequivalenttoFOURHUNDRED SIXTHOUSAND SIXHUND",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-349-a",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOUR MILLION NINE HUNDRE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-351-a-2",
+     "page": 1,
+     "quote": "0+000.00 theBidderwiththeSingleCalculatedResponsiveBid ata contractpriceequivalentto FIVEMILLION NINE HUNDRED NIN",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-354",
+     "page": 1,
+     "quote": "ourfirmastheBidderwiththeSingleCalculated Responsive Bid at a contract price equivalent to ONE MILLION ONEHUNDRED N",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-355-a",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-357-a",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-358-2",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION NINE HUNDRED",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-359",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOUR PESOSAND35/100ONLY(",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-360",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to FOURTEENMILLION NINEHUND",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-363",
+     "page": 1,
+     "quote": "rm as the Bidder withthe Single CalculatedResponsive Bid at a contract price equivalent toONE MILLIONONEHUNDREDNINE",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-365",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE MILLION ONE HUNDRED",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-367-a",
+     "page": 1,
+     "quote": "rfirmastheBidderwith the Single Calculated Responsive Bid at a contract price equivalent to NiNE HUNDRED NINETY EIGH",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-371-a",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-373",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to NINE HUNDRED EIGHTYEIGHT",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-374",
+     "page": 1,
+     "quote": "firmastheBidder with the Single Calculated Responsive Bid at a contract price equivalent to ONE (Php 1,197,000.30).",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2025-377",
+     "page": 1,
+     "quote": "EE BACRESOLUTIONDECLARINGSINGLECALCULATEDRESPONSIVEBID(SCRB)AND RECOMMENDINGAPPROVALOFAWARDOFTHECONTRACT (INFRAST",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2026-057",
+     "page": 1,
+     "quote": "firm astheBidderwiththe Single CalculatedResponsive Bid ata contract price equiValent toSEVENTYTHREEMILLIONONEHUND",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2026-071",
+     "page": 1,
+     "quote": "ourfirmastheBidderwiththeSingleCalculatedResponsive Bid atacontractpriceequivalenttoNINEHUNDREDNINETYFIVETHOUSANDS",
+     "value": "single"
+    },
+    {
+     "docId": "noa-cw2026-082",
+     "page": 1,
+     "quote": "m as the Bidder with the Single Calculated Responsive Bid at a contract price equivalent to SEVEN MILLION TWO HUNDRE",
+     "value": "single"
+    }
+   ],
+   "verify": [
+    "Open each listed NOA and read the quoted phrase.",
+    "Compare with the notice for the same project on PhilGEPS."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted)."
+  },
+  {
+   "id": "award-concentration:sosepbuilders",
+   "rule": "award-concentration",
+   "severity": "info",
+   "title": "Awards by contractor",
+   "what": "SOSEPBUILDERS appears on 11 of 76 awards (14%) in the period covered; this is a pattern to look at, not proof of anything.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-167-a",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-320-a",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-321-a",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-325",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-330-a-2",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-336-b",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-339-a",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-342",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-348-a",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-352-b",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    },
+    {
+     "docId": "noa-cw2025-373",
+     "page": 1,
+     "quote": null,
+     "value": "SOSEPBUILDERS"
+    }
+   ],
+   "verify": [
+    "Open each listed NOA and compare the project, price and date.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Check the contractor's registration and past work with the Bids and Awards Committee.",
+    "Check the COA annual audit report for the Province of Oriental Mindoro."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    },
+    {
+     "label": "Commission on Audit",
+     "url": "https://www.coa.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted)."
+  },
+  {
+   "id": "award-concentration:nineeightconstruction",
+   "rule": "award-concentration",
+   "severity": "info",
+   "title": "Awards by contractor",
+   "what": "NINEEIGHTCONSTRUCTION appears on 17 of 76 awards (22%) in the period covered; this is a pattern to look at, not proof of anything.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-254-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-255-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-257-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-264-b",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-265-b",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-276-b",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-291-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-296-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-301-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-303-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-307-c",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-309-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-311-a",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-318",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-319-b",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-351-a-2",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    },
+    {
+     "docId": "noa-cw2025-358-2",
+     "page": 1,
+     "quote": null,
+     "value": "NINEEIGHTCONSTRUCTION"
+    }
+   ],
+   "verify": [
+    "Open each listed NOA and compare the project, price and date.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Check the contractor's registration and past work with the Bids and Awards Committee.",
+    "Check the COA annual audit report for the Province of Oriental Mindoro."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    },
+    {
+     "label": "Commission on Audit",
+     "url": "https://www.coa.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted)."
+  },
+  {
+   "id": "award-concentration:rjjjengineeringservices",
+   "rule": "award-concentration",
+   "severity": "info",
+   "title": "Awards by contractor",
+   "what": "RJJJENGINEERINGSERVICES appears on 9 of 76 awards (12%) in the period covered; this is a pattern to look at, not proof of anything.",
+   "evidence": [
+    {
+     "docId": "noa-cw2025-268-b",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2025-275-b",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2025-305-b",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2025-308-a",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2025-314-a",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2025-315-a",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2025-329",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2025-346",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    },
+    {
+     "docId": "noa-cw2026-028",
+     "page": 1,
+     "quote": null,
+     "value": "RJJJENGINEERINGSERVICES"
+    }
+   ],
+   "verify": [
+    "Open each listed NOA and compare the project, price and date.",
+    "Compare with the notice for the same project on PhilGEPS.",
+    "Check the contractor's registration and past work with the Bids and Awards Committee.",
+    "Check the COA annual audit report for the Province of Oriental Mindoro."
+   ],
+   "references": [
+    {
+     "label": "RA 12009 New Government Procurement Act",
+     "url": "https://lawphil.net/statutes/repacts/ra2024/ra_12009_2024.html"
+    },
+    {
+     "label": "PhilGEPS",
+     "url": "https://www.philgeps.gov.ph/"
+    },
+    {
+     "label": "Commission on Audit",
+     "url": "https://www.coa.gov.ph/"
+    }
+   ],
+   "confidence": "high",
+   "disclaimer": "This is an automatic check of scanned documents, not a finding of wrongdoing or an allegation. OCR can misread numbers; open the PDF page to confirm. There may be an ordinary explanation (for example a revised budget, a re-bid, or a document not yet posted)."
+  },
   {
    "id": "no-award-listed:CW2025 132",
    "rule": "no-award-listed",

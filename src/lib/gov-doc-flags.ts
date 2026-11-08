@@ -130,5 +130,6 @@ export function flagVars(f: DocFlag): string[] {
   const p = f.id.split(":")[1] ?? "";
   if (f.rule === "eo-number-gap") return [p, String(f.evidence[0]?.value ?? ""), String(f.evidence.length)];
   if (f.rule === "eo-duplicate") { const [y, ...k] = p.split("-"); return [k.join("-"), y, String(f.evidence.length)]; }
+  if (f.rule !== "lgsf-quarter-not-listed") return []; // procurement and other rules carry their own text
   const [y, q] = p.split("-"); return [q, y, quarterEnd({ year: +y, q: +q.slice(1) })];
 }

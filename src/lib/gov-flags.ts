@@ -6,7 +6,7 @@ import flagsJson from "../data/gov/flags.json" with { type: "json" };
 
 export type Severity = "info" | "review";
 export type Confidence = "high" | "medium" | "low";
-export type FlagEvidence = { docId: string; page: number | null; quote: string; value: string | number | null };
+export type FlagEvidence = { docId: string; page: number | null; quote: string | null; value: string | number | null };
 export type Flag = {
   id: string;
   rule: string;
@@ -134,11 +134,11 @@ export function buildFlags(projects: GovProject[], docs: GovDoc[], opts: { today
   for (const { name, items } of groups.values()) {
     const share = items.length / awards.length;
     if (items.length < 8 && share < 0.15) continue;
-    const review = items.length >= 8;
-    flags.push(mk("award-concentration", `award-concentration:${normName(name).replace(/ /g, "-").toLowerCase()}`, review ? "review" : "info",
-      "One contractor holds many awards",
+    // Business names only, and informational: the notices also name the owners and officers, which we do not repeat here.
+    flags.push(mk("award-concentration", `award-concentration:${normName(name).replace(/ /g, "-").toLowerCase()}`, "info",
+      "Awards by contractor",
       `${name} appears on ${items.length} of ${awards.length} awards (${Math.round(share * 100)}%) in the period covered; this is a pattern to look at, not proof of anything.`,
-      items.map((x) => ev(x.d!, "contractor")),
+      items.map((x) => ({ ...ev(x.d!, "contractor"), quote: null })),
       ["Open each listed NOA and compare the project, price and date.", V_PHIL, "Check the contractor's registration and past work with the Bids and Awards Committee.", V_COA], [REF.ra12009, REF.philgeps, REF.coa]));
   }
 

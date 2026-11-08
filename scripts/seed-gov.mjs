@@ -23,17 +23,17 @@ const dir = path.join(root, "src/data/gov");
 for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json")).sort()) {
   const dataset = f.replace(/\.json$/, "");
   const d = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
-  const items = d.items ?? [];
+  const items = d.items ?? d.projects ?? d.flags ?? [];
   let n = 0;
   for (let i = 0; i < items.length; i += 200) {
     const chunk = items.slice(i, i + 200);
     const vals = [], args = [];
-    chunk.forEach((it, k) => { args.push(dataset, String(it.id ?? it.key), JSON.stringify(it)); vals.push(`($${k * 3 + 1}, $${k * 3 + 2}, $${k * 3 + 3}::jsonb)`); });
+    chunk.forEach((it, k) => { args.push(dataset, String(it.id ?? it.key ?? it.refNo), JSON.stringify(it)); vals.push(`($${k * 3 + 1}, $${k * 3 + 2}, $${k * 3 + 3}::jsonb)`); });
     await c.query(`insert into gov_items (dataset, id, data) values ${vals.join(",")} on conflict (dataset, id) do update set data = excluded.data`, args);
     n += chunk.length;
   }
   // rows no longer in the snapshot are removed so the table mirrors the file
-  await c.query("delete from gov_items where dataset = $1 and id <> all($2::text[])", [dataset, items.map((it) => String(it.id ?? it.key))]);
+  await c.query("delete from gov_items where dataset = $1 and id <> all($2::text[])", [dataset, items.map((it) => String(it.id ?? it.key ?? it.refNo))]);
   await c.query("insert into gov_meta (dataset, source, fetched_at, item_count) values ($1,$2,$3,$4) on conflict (dataset) do update set source = excluded.source, fetched_at = excluded.fetched_at, item_count = excluded.item_count", [dataset, d.source ?? "", d.fetchedAt ?? null, items.length]);
   console.log(`${dataset}: ${n} rows`);
 }

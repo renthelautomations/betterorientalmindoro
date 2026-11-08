@@ -29,6 +29,12 @@ const docs = items.filter((i) => i.ocr);
 const projects = buildProjects(items, items);
 const flags = buildFlags(projects, items, { today });
 
+// Published data keeps business names only: the notices also name the owner or managing officer, and those people are not repeated here.
+for (const it of items) {
+  for (const k of ["officer", "officerTitle"]) { delete it.fields?.[k]; delete it.confidence?.[k]; }
+  if (it.evidence) it.evidence = it.evidence.filter((e) => !["officer", "officerTitle", "contractor", "winner"].includes(e.field)).filter((e) => !/president|proprietor|authorized\s*managing/i.test(e.quote ?? "")).map((e) => ({ ...e, quote: e.quote?.replace(/\s*\b(?:MR|MRS|MS|ENGR|ATTY|DR|ARCH)\.[\s\S]*$/i, " […]") }));
+}
+for (const f of flags) f.evidence = f.evidence.map((e) => ({ ...e, quote: e.quote?.replace(/\s*\b(?:MR|MRS|MS|ENGR|ATTY|DR|ARCH)\.[\s\S]*$/i, " […]") ?? e.quote }));
 const out = (f, o) => fs.writeFileSync(gov(f), JSON.stringify(o, null, 1) + "\n");
 out("procurement-docs.json", { source: proc.source, fetchedAt: proc.fetchedAt, extractedAt: today, items });
 out("projects.json", { source: proc.source, extractedAt: today, projects });

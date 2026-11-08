@@ -80,12 +80,13 @@ describe("award-concentration", () => {
     }
     return { ps, ds };
   };
-  it("8+ awards -> review, lists every award, careful wording", () => {
+  it("8+ awards -> informational (never review), lists every award by business name only, careful wording", () => {
     const { ps, ds } = many(8, 100);
     const f = buildFlags(ps, ds, { today: "2026-03-01" }).filter((x) => x.rule === "award-concentration");
     expect(f).toHaveLength(1);
-    expect(f[0].severity).toBe("review");
+    expect(f[0].severity).toBe("info");
     expect(f[0].evidence).toHaveLength(8);
+    expect(f[0].evidence.every((e) => e.quote === null)).toBe(true); // no officer or owner names are repeated
     expect(f[0].what.toLowerCase()).toContain("pattern to look at, not proof of anything");
   });
   it("15% share with fewer than 8 awards -> info; also matches case/punctuation variants", () => {

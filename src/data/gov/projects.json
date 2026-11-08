@@ -1,6 +1,6 @@
 {
  "source": "https://ormindoro.gov.ph/invitation-to-bid/",
- "extractedAt": "2026-11-07",
+ "extractedAt": "2026-11-08",
  "projects": [
   {
    "refNo": "CW2025 075",
@@ -53,7 +53,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "SOSEP BUILDERS",
    "bidType": null,
    "firstDate": "2026-02-11",
    "lastDate": "2026-02-11",
@@ -85,7 +85,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "SOSEP BUILDERS",
    "bidType": null,
    "firstDate": "2025-10-18",
    "lastDate": "2025-10-18",
@@ -137,9 +137,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1399091.36,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2026-02-23",
    "lastDate": "2026-02-23",
    "stageDays": [
@@ -184,7 +184,7 @@
      "date": "2025-12-15"
     }
    ],
-   "abc": null,
+   "abc": 1597717.79,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -227,7 +227,7 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 1441121.12,
    "contractor": null,
    "bidType": null,
    "firstDate": "2025-12-12",
@@ -247,7 +247,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 1299310.39,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -268,7 +268,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 1299310.39,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -289,7 +289,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 1299310.39,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -316,9 +316,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 1297828.2,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-09",
    "stageDays": [
@@ -436,10 +436,10 @@
      "date": "2026-03-26"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 3493361.69,
+   "contractPrice": 3491419.48,
+   "contractor": "MIDRCONSTRUCTIONANDSUPPLIES",
+   "bidType": "single",
    "firstDate": "2026-01-23",
    "lastDate": "2026-03-26",
    "stageDays": [
@@ -475,7 +475,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "SOSEP BUILDERS",
    "bidType": null,
    "firstDate": "2025-10-18",
    "lastDate": "2025-10-18",
@@ -512,7 +512,7 @@
    ],
    "abc": 1195918.04,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "SOSEP BUILDERS",
    "bidType": null,
    "firstDate": "2025-10-22",
    "lastDate": "2026-03-09",
@@ -548,9 +548,9 @@
     }
    ],
    "abc": 1195918.04,
-   "contractPrice": null,
+   "contractPrice": 1195382.79,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2026-02-23",
    "lastDate": "2026-03-09",
    "stageDays": [
@@ -585,8 +585,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 787506.66,
+   "contractor": "WEBUILDCONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-12-10",
    "lastDate": "2026-01-05",
@@ -616,7 +616,7 @@
      "date": "2025-12-10"
     }
    ],
-   "abc": null,
+   "abc": 999174.52,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -653,9 +653,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 997334.39,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-10",
    "lastDate": "2025-12-13",
    "stageDays": [
@@ -689,7 +689,7 @@
      "date": "2025-12-01"
     }
    ],
-   "abc": null,
+   "abc": 999957.33,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -726,8 +726,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 998316.81,
+   "contractor": "NINEEIGHTCONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-12-01",
    "lastDate": "2025-12-13",
@@ -762,7 +762,7 @@
      "date": "2025-12-01"
     }
    ],
-   "abc": null,
+   "abc": 996957.3,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -799,9 +799,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 995122.26,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-01",
    "lastDate": "2025-12-16",
    "stageDays": [
@@ -883,9 +883,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 995871.25,
+   "contractor": "MARCINGCONSTRUCTIONSERVICES",
+   "bidType": "single",
    "firstDate": "2026-02-26",
    "lastDate": "2026-02-26",
    "stageDays": [
@@ -909,7 +909,7 @@
      "date": "2025-12-01"
     }
    ],
-   "abc": null,
+   "abc": 999493.83,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -930,7 +930,7 @@
      "date": "2025-12-15"
     }
    ],
-   "abc": null,
+   "abc": 999493.83,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -967,9 +967,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 998365.37,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-01",
    "lastDate": "2025-12-13",
    "stageDays": [
@@ -1003,7 +1003,7 @@
      "date": "2025-11-30"
     }
    ],
-   "abc": null,
+   "abc": 998914.68,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1024,7 +1024,7 @@
      "date": "2025-12-22"
     }
    ],
-   "abc": null,
+   "abc": 998914.68,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1061,9 +1061,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 997984.95,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-11-30",
    "lastDate": "2025-12-20",
    "stageDays": [
@@ -1097,7 +1097,7 @@
      "date": "2026-01-13"
     }
    ],
-   "abc": null,
+   "abc": 998678.68,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1118,7 +1118,7 @@
      "date": "2026-01-13"
     }
    ],
-   "abc": null,
+   "abc": 998678.68,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1155,9 +1155,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 996995.56,
+   "contractor": "WTLCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-10-18",
    "lastDate": "2025-12-23",
    "stageDays": [
@@ -1281,8 +1281,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 998238.71,
+   "contractor": "RJJJENGINEERINGSERVICES",
    "bidType": null,
    "firstDate": "2025-12-04",
    "lastDate": "2025-12-23",
@@ -1355,8 +1355,8 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractor": "MARCPHILCONSTRUCTIONOPC",
+   "bidType": "single",
    "firstDate": "2025-10-21",
    "lastDate": "2026-02-26",
    "stageDays": [
@@ -1390,7 +1390,7 @@
      "date": "2025-12-15"
     }
    ],
-   "abc": null,
+   "abc": 994969.85,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1418,7 +1418,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "Dk CONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-12-19",
    "lastDate": "2025-12-19",
@@ -1470,7 +1470,7 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 998304.14,
    "contractor": null,
    "bidType": null,
    "firstDate": "2025-10-21",
@@ -1523,8 +1523,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 489452.05,
+   "contractor": "MARCPHILCONSTRUCTIONOPC",
    "bidType": null,
    "firstDate": "2026-03-05",
    "lastDate": "2026-03-05",
@@ -1660,9 +1660,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 496857.69,
+   "contractor": "RJJJENGINEERINGSERVICES",
+   "bidType": "single",
    "firstDate": "2025-12-04",
    "lastDate": "2026-02-20",
    "stageDays": [
@@ -1696,7 +1696,7 @@
      "date": "2025-12-23"
     }
    ],
-   "abc": null,
+   "abc": 999555.67,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1754,8 +1754,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 997634.06,
+   "contractor": "NINEEIGHTCONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-11-30",
    "lastDate": "2025-12-13",
@@ -1790,7 +1790,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 998330.97,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1842,10 +1842,10 @@
      "date": "2026-03-17"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 998330.97,
+   "contractPrice": 996768.22,
+   "contractor": "876CONSTRUCTIONANDSUPPLY",
+   "bidType": "single",
    "firstDate": "2026-01-08",
    "lastDate": "2026-03-17",
    "stageDays": [
@@ -1874,7 +1874,7 @@
      "date": "2026-01-05"
     }
    ],
-   "abc": null,
+   "abc": 997409.43,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1902,8 +1902,8 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractor": "MARTINEZENTERPRISES",
+   "bidType": "single",
    "firstDate": "2026-01-05",
    "lastDate": "2026-01-05",
    "stageDays": [
@@ -1927,7 +1927,7 @@
      "date": "2025-12-15"
     }
    ],
-   "abc": null,
+   "abc": 997974.9,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -1955,7 +1955,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "NINE EIGHT CONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-12-06",
    "lastDate": "2025-12-06",
@@ -2017,9 +2017,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 996893.19,
+   "contractor": "RADELCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-17",
    "lastDate": "2026-01-07",
    "stageDays": [
@@ -2053,7 +2053,7 @@
      "date": "2025-12-03"
     }
    ],
-   "abc": null,
+   "abc": 1992949.9,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2085,8 +2085,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 1991018.63,
+   "contractor": "NINE EIGHT CONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-11-28",
    "lastDate": "2026-01-16",
@@ -2210,9 +2210,9 @@
      "date": "2026-01-29"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "abc": 1199304.37,
+   "contractPrice": 1198357.73,
+   "contractor": "SMIBCONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-29",
@@ -2242,7 +2242,7 @@
      "date": "2025-12-04"
     }
    ],
-   "abc": null,
+   "abc": 1199052.07,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2308,7 +2308,7 @@
    "abc": null,
    "contractPrice": null,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-10-18",
    "lastDate": "2025-10-18",
    "stageDays": [],
@@ -2326,7 +2326,7 @@
      "date": "2026-01-05"
     }
    ],
-   "abc": null,
+   "abc": 1199909.66,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2410,9 +2410,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1198193.3,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-02-18",
    "stageDays": [
@@ -2451,7 +2451,7 @@
      "date": "2025-12-23"
     }
    ],
-   "abc": null,
+   "abc": 1196921.77,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2479,7 +2479,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "MARTINEZ ENTERPRISES",
    "bidType": null,
    "firstDate": "2025-12-23",
    "lastDate": "2025-12-23",
@@ -2589,7 +2589,7 @@
      "date": "2025-11-30"
     }
    ],
-   "abc": null,
+   "abc": 1599647.52,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2621,9 +2621,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1597667.56,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-11-30",
    "lastDate": "2025-12-13",
    "stageDays": [
@@ -2679,9 +2679,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1595739.45,
+   "contractor": "D.PANOPIOCONSTRUCTIONSERVICES",
+   "bidType": "single",
    "firstDate": "2026-03-20",
    "lastDate": "2026-03-20",
    "stageDays": [
@@ -2737,8 +2737,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 1592000,
+   "contractor": "A.D.L.CONSTRAKOPC",
    "bidType": null,
    "firstDate": "2026-01-20",
    "lastDate": "2026-01-20",
@@ -2768,7 +2768,7 @@
      "date": "2026-01-07"
     }
    ],
-   "abc": null,
+   "abc": 1599716.36,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2789,7 +2789,7 @@
      "date": "2026-01-07"
     }
    ],
-   "abc": null,
+   "abc": 1599716.36,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2820,10 +2820,10 @@
      "date": "2026-01-09"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 1599716.36,
+   "contractPrice": 1597274.32,
+   "contractor": "MHARPHYCONSTRUCTIONANDSUPPLY",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-09",
    "stageDays": [
@@ -2884,9 +2884,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1195000,
+   "contractor": "A.D.L. CONSTRAK OPC",
+   "bidType": "single",
    "firstDate": "2026-02-23",
    "lastDate": "2026-03-05",
    "stageDays": [
@@ -2915,7 +2915,7 @@
      "date": "2025-11-30"
     }
    ],
-   "abc": null,
+   "abc": 1198032.47,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -2953,8 +2953,8 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-11-30",
    "lastDate": "2025-12-10",
    "stageDays": [
@@ -3099,9 +3099,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1097986.8,
+   "contractor": "RADELCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2026-02-23",
    "lastDate": "2026-02-26",
    "stageDays": [
@@ -3135,7 +3135,7 @@
      "date": "2025-12-05"
     }
    ],
-   "abc": null,
+   "abc": 1787437.31,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3162,9 +3162,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 1784952.62,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2025-12-05",
    "stageDays": [
@@ -3188,7 +3188,7 @@
      "date": "2025-11-30"
     }
    ],
-   "abc": null,
+   "abc": 1199019.77,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3225,9 +3225,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1197287.62,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-11-30",
    "lastDate": "2025-12-10",
    "stageDays": [
@@ -3293,8 +3293,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 996141.29,
+   "contractor": "NINE EIGHT CONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-12-01",
    "lastDate": "2025-12-17",
@@ -3361,9 +3361,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 996007.46,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-06",
    "lastDate": "2026-01-20",
    "stageDays": [
@@ -3397,7 +3397,7 @@
      "date": "2025-12-12"
     }
    ],
-   "abc": null,
+   "abc": 999926.19,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3434,9 +3434,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 997000,
+   "contractor": "A.D.L.CONSTRAK OPC",
+   "bidType": "single",
    "firstDate": "2025-12-12",
    "lastDate": "2025-12-23",
    "stageDays": [
@@ -3491,7 +3491,7 @@
      "date": "2026-01-13"
     }
    ],
-   "abc": null,
+   "abc": 999877.2,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3528,9 +3528,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 998291.75,
+   "contractor": "RJJJENGINEERINGSERVICES",
+   "bidType": "single",
    "firstDate": "2025-12-23",
    "lastDate": "2026-01-13",
    "stageDays": [
@@ -3564,7 +3564,7 @@
      "date": "2026-01-30"
     }
    ],
-   "abc": null,
+   "abc": 998247.3,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3633,9 +3633,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 996553.19,
+   "contractor": "D.PANOPIOCONSTRUCTIONSERVICES",
+   "bidType": "single",
    "firstDate": "2026-01-21",
    "lastDate": "2026-01-21",
    "stageDays": [
@@ -3680,7 +3680,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 999133.5,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3707,9 +3707,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 997214.55,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2026-01-08",
    "lastDate": "2026-01-08",
    "stageDays": [
@@ -3733,7 +3733,7 @@
      "date": "2025-12-22"
     }
    ],
-   "abc": null,
+   "abc": 999561.76,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3770,8 +3770,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 998025.76,
+   "contractor": "RJJJENGINEERINGSERVICES",
    "bidType": null,
    "firstDate": "2025-12-22",
    "lastDate": "2026-02-03",
@@ -3806,7 +3806,7 @@
      "date": "2026-01-12"
     }
    ],
-   "abc": null,
+   "abc": 995759.59,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3843,9 +3843,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 993856.71,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2026-01-06",
    "lastDate": "2026-01-12",
    "stageDays": [
@@ -3879,7 +3879,7 @@
      "date": "2025-12-15"
     }
    ],
-   "abc": null,
+   "abc": 1199527.52,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -3916,9 +3916,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1195000,
+   "contractor": "A.D.L.CONSTRAKOPC",
+   "bidType": "single",
    "firstDate": "2025-12-04",
    "lastDate": "2026-03-18",
    "stageDays": [
@@ -3973,9 +3973,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1196969.7,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-02",
    "lastDate": "2025-12-10",
    "stageDays": [
@@ -4046,7 +4046,7 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 1297000,
    "contractor": null,
    "bidType": null,
    "firstDate": "2025-12-05",
@@ -4083,9 +4083,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1195899.87,
+   "contractor": "MARCINGCONSTRUCTIONSERVICES",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2025-12-05",
    "stageDays": [
@@ -4109,7 +4109,7 @@
      "date": "2025-11-30"
     }
    ],
-   "abc": null,
+   "abc": 1294274.78,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -4146,8 +4146,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 1292719.02,
+   "contractor": "RJJJENGINEERINGSERVICES",
    "bidType": null,
    "firstDate": "2025-11-30",
    "lastDate": "2025-12-23",
@@ -4209,9 +4209,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1197405.93,
+   "contractor": "RJJJENGINEERINGSERVICES",
+   "bidType": "single",
    "firstDate": "2025-11-30",
    "lastDate": "2025-11-30",
    "stageDays": [
@@ -4262,9 +4262,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 3986757.11,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2026-03-10",
    "lastDate": "2026-03-10",
    "stageDays": [
@@ -4295,7 +4295,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "NINE EIGHT CONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-11-28",
    "lastDate": "2025-11-28",
@@ -4335,10 +4335,10 @@
      "date": "2025-12-11"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 499931.47,
+   "contractPrice": 498121.36,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-11-30",
    "lastDate": "2025-12-11",
    "stageDays": [
@@ -4372,7 +4372,7 @@
      "date": "2025-12-10"
     }
    ],
-   "abc": null,
+   "abc": 1996715.73,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -4409,8 +4409,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 1994663.38,
+   "contractor": "NINEEIGHTCONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-12-04",
    "lastDate": "2025-12-13",
@@ -4445,7 +4445,7 @@
      "date": "2025-12-23"
     }
    ],
-   "abc": null,
+   "abc": 1499301.37,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -4476,10 +4476,10 @@
      "date": "2026-01-15"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 1499301.37,
+   "contractPrice": 1497618.61,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-15",
    "stageDays": [
@@ -4549,10 +4549,10 @@
      "date": "2026-02-27"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 1296737.28,
+   "contractPrice": 1296290.2,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-02-27",
    "stageDays": [
@@ -4591,7 +4591,7 @@
      "date": "2026-01-13"
     }
    ],
-   "abc": null,
+   "abc": 1199724.86,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -4622,10 +4622,10 @@
      "date": "2026-01-13"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
+   "abc": 1199724.86,
+   "contractPrice": 1197325.99,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-13",
    "stageDays": [
@@ -4670,9 +4670,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1199650,
+   "contractor": "HJPCONSTRUCTIONCORP.",
+   "bidType": "single",
    "firstDate": "2025-12-23",
    "lastDate": "2026-03-02",
    "stageDays": [
@@ -4706,7 +4706,7 @@
      "date": "2025-12-05"
     }
    ],
-   "abc": null,
+   "abc": 1199910.75,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -4743,8 +4743,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 1098243.41,
+   "contractor": "MHARPHY CONSTRUCTIONAND SUPPLY",
    "bidType": null,
    "firstDate": "2025-11-29",
    "lastDate": "2026-02-20",
@@ -4790,9 +4790,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1197853.41,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2025-12-05",
    "stageDays": [
@@ -4831,10 +4831,10 @@
      "date": "2025-12-05"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
+   "abc": 1299210.75,
+   "contractPrice": 1297771.81,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2025-12-05",
    "stageDays": [
@@ -4894,10 +4894,10 @@
      "date": "2025-12-23"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 1099486.37,
+   "contractPrice": 1097724.26,
+   "contractor": "WTLCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2025-12-23",
    "stageDays": [
@@ -4963,8 +4963,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 1195806.37,
+   "contractor": "SOSEPBUILDERS",
    "bidType": null,
    "firstDate": "2025-12-05",
    "lastDate": "2026-02-26",
@@ -5020,8 +5020,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 1196128.69,
+   "contractor": "RJJJENGINEERINGSERVICES",
    "bidType": null,
    "firstDate": "2025-11-25",
    "lastDate": "2025-12-23",
@@ -5061,7 +5061,7 @@
      "date": "2026-01-16"
     }
    ],
-   "abc": null,
+   "abc": 1199137.65,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5092,10 +5092,10 @@
      "date": "2026-01-15"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 1199137.65,
+   "contractPrice": 1197041.54,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-15",
    "stageDays": [
@@ -5135,9 +5135,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 1189215.09,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2025-12-05",
    "stageDays": [
@@ -5188,7 +5188,7 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 798106.07,
    "contractor": null,
    "bidType": null,
    "firstDate": "2026-01-07",
@@ -5214,9 +5214,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 997948.07,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2026-02-10",
    "lastDate": "2026-03-03",
    "stageDays": [
@@ -5272,9 +5272,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 997000,
+   "contractor": "A.D.L.CONSTRAKOPC",
+   "bidType": "single",
    "firstDate": "2026-02-12",
    "lastDate": "2026-02-23",
    "stageDays": [
@@ -5303,7 +5303,7 @@
      "date": "2026-01-12"
     }
    ],
-   "abc": null,
+   "abc": 999842.26,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5331,8 +5331,8 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2026-01-15",
    "lastDate": "2026-01-15",
    "stageDays": [
@@ -5356,7 +5356,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 798397.08,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5409,9 +5409,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 796276.99,
+   "contractor": "MARCPHILCONSTRUCTIONOPC",
+   "bidType": "single",
    "firstDate": "2025-12-06",
    "lastDate": "2026-01-08",
    "stageDays": [
@@ -5440,7 +5440,7 @@
      "date": "2025-12-26"
     }
    ],
-   "abc": null,
+   "abc": 797655.69,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5461,7 +5461,7 @@
      "date": "2025-11-18"
     }
    ],
-   "abc": null,
+   "abc": 999164.13,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5489,8 +5489,8 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2026-01-05",
    "lastDate": "2026-01-05",
    "stageDays": [
@@ -5514,7 +5514,7 @@
      "date": "2025-11-18"
     }
    ],
-   "abc": null,
+   "abc": 999767.42,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5541,9 +5541,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 998339.18,
+   "contractor": "WTLCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-19",
    "lastDate": "2025-12-19",
    "stageDays": [
@@ -5587,9 +5587,9 @@
      "date": "2026-02-26"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "abc": 693903.88,
+   "contractPrice": 692087.24,
+   "contractor": "SOSEPBUILDERS",
    "bidType": null,
    "firstDate": "2026-01-08",
    "lastDate": "2026-02-26",
@@ -5629,7 +5629,7 @@
      "date": "2025-12-26"
     }
    ],
-   "abc": null,
+   "abc": 999947.03,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5656,9 +5656,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 997914.43,
+   "contractor": "D.PANOPIOCONSTRUCTIONSERVICES",
+   "bidType": "single",
    "firstDate": "2026-01-21",
    "lastDate": "2026-01-21",
    "stageDays": [
@@ -5693,9 +5693,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 997001.8,
+   "contractor": "DK CONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2025-12-05",
    "stageDays": [
@@ -5765,10 +5765,10 @@
      "date": "2025-12-17"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 697201.24,
+   "contractPrice": 694523.64,
+   "contractor": "RJJJENGINEERINGSERVICES",
+   "bidType": "single",
    "firstDate": "2025-12-15",
    "lastDate": "2025-12-17",
    "stageDays": [
@@ -5817,9 +5817,9 @@
      "date": "2025-12-19"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "abc": 880716.96,
+   "contractPrice": 879244.22,
+   "contractor": "MHARPHYCONSTRUCTIONANDSUPPLY",
    "bidType": null,
    "firstDate": "2025-11-18",
    "lastDate": "2025-12-19",
@@ -5855,9 +5855,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 406648.53,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2026-01-05",
    "lastDate": "2026-01-05",
    "stageDays": [
@@ -5891,10 +5891,10 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 4998166.48,
+   "contractPrice": 4992171.8,
+   "contractor": "MARCPHILCONSTRUCTIONOPC",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-08",
    "stageDays": [
@@ -5933,10 +5933,10 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 5993367.9,
+   "contractPrice": 5991423.51,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-08",
    "stageDays": [
@@ -5965,7 +5965,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 497089.88,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -5986,7 +5986,7 @@
      "date": "2026-01-08"
     }
    ],
-   "abc": null,
+   "abc": 497089.88,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -6017,9 +6017,9 @@
      "date": "2026-01-29"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "abc": 497089.88,
+   "contractPrice": 496968.29,
+   "contractor": "SOSEPBUILDERS",
    "bidType": null,
    "firstDate": "2025-12-06",
    "lastDate": "2026-01-29",
@@ -6086,9 +6086,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1195608.31,
+   "contractor": "WTLCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-16",
    "lastDate": "2026-02-20",
    "stageDays": [
@@ -6128,9 +6128,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 1479307.62,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-15",
    "stageDays": [
@@ -6175,7 +6175,7 @@
      "date": "2025-11-18"
     }
    ],
-   "abc": null,
+   "abc": 997893.33,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -6202,9 +6202,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 996463,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2026-01-21",
    "lastDate": "2026-01-21",
    "stageDays": [
@@ -6244,9 +6244,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1996515.17,
+   "contractor": "NINEEIGHTCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-04",
    "lastDate": "2025-12-13",
    "stageDays": [
@@ -6286,9 +6286,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 4992841.35,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-19",
    "lastDate": "2025-12-19",
    "stageDays": [
@@ -6319,8 +6319,8 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractor": "A.D.LCONSTRAKOPC",
+   "bidType": "single",
    "firstDate": "2025-12-22",
    "lastDate": "2025-12-22",
    "stageDays": [
@@ -6349,9 +6349,9 @@
      "date": "2025-12-05"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "abc": 24999998.36,
+   "contractPrice": 24994593.11,
+   "contractor": "NINE EIGHT CONSTRUCTION",
    "bidType": null,
    "firstDate": "2025-10-24",
    "lastDate": "2025-12-05",
@@ -6381,7 +6381,7 @@
      "date": "2026-01-05"
     }
    ],
-   "abc": null,
+   "abc": 1498194.97,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -6418,10 +6418,10 @@
      "date": "2026-01-13"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 1199759.08,
+   "contractPrice": 1198178.48,
+   "contractor": "WTLCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-01-13",
    "stageDays": [
@@ -6483,8 +6483,8 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractor": "CMSELCONSTRUCTIONANDDEVELOPER",
+   "bidType": "single",
    "firstDate": "2025-12-05",
    "lastDate": "2026-02-02",
    "stageDays": [
@@ -6513,7 +6513,7 @@
      "date": "2025-12-09"
     }
    ],
-   "abc": null,
+   "abc": 939940.08,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -6544,10 +6544,10 @@
      "date": "2026-02-23"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 999386.04,
+   "contractPrice": 998500,
+   "contractor": "DXBCONSTRUCTION",
+   "bidType": "single",
    "firstDate": "2025-12-09",
    "lastDate": "2026-02-23",
    "stageDays": [
@@ -6576,7 +6576,7 @@
      "date": "2025-12-09"
     }
    ],
-   "abc": null,
+   "abc": 593635.69,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -6597,7 +6597,7 @@
      "date": "2025-12-09"
     }
    ],
-   "abc": null,
+   "abc": 998979.94,
    "contractPrice": null,
    "contractor": null,
    "bidType": null,
@@ -6645,8 +6645,8 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 891061.05,
+   "contractor": "SOSEPBUILDERS",
    "bidType": null,
    "firstDate": "2025-12-09",
    "lastDate": "2026-02-23",
@@ -6698,9 +6698,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 968140.22,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2026-03-03",
    "lastDate": "2026-03-03",
    "stageDays": [
@@ -6755,10 +6755,10 @@
      "date": "2026-01-16"
     }
    ],
-   "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "abc": 990110.8,
+   "contractPrice": 988730.42,
+   "contractor": "SOSEPBUILDERS",
+   "bidType": "single",
    "firstDate": "2025-11-28",
    "lastDate": "2026-01-16",
    "stageDays": [
@@ -6798,9 +6798,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 1197000.3,
+   "contractor": "MARCINGCONSTRUCTIONSERVICES",
+   "bidType": "single",
    "firstDate": "2025-12-06",
    "lastDate": "2026-01-12",
    "stageDays": [
@@ -6856,9 +6856,9 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 296170.16,
    "contractor": null,
-   "bidType": null,
+   "bidType": "single",
    "firstDate": "2025-12-06",
    "lastDate": "2026-01-15",
    "stageDays": [
@@ -7392,7 +7392,7 @@
     }
    ],
    "abc": null,
-   "contractPrice": null,
+   "contractPrice": 998300,
    "contractor": null,
    "bidType": null,
    "firstDate": "2026-10-09",
@@ -7534,9 +7534,9 @@
     }
    ],
    "abc": 5394430.24,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 5303473.48,
+   "contractor": "RJJJENGINEERINGSERVICES",
+   "bidType": "lowest",
    "firstDate": "2026-04-29",
    "lastDate": "2026-09-21",
    "stageDays": [
@@ -7703,7 +7703,7 @@
    ],
    "abc": null,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "SOSEP BUILDERS",
    "bidType": null,
    "firstDate": "2026-05-20",
    "lastDate": "2026-09-22",
@@ -7744,8 +7744,8 @@
     }
    ],
    "abc": 3485045.96,
-   "contractPrice": null,
-   "contractor": null,
+   "contractPrice": 3481038.49,
+   "contractor": "NiNE EIGHT CONSTRUCTION",
    "bidType": null,
    "firstDate": "2026-05-20",
    "lastDate": "2026-09-21",
@@ -7787,7 +7787,7 @@
    ],
    "abc": 1490682.29,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "NINEEIGHT CONSTRUCTION",
    "bidType": null,
    "firstDate": "2026-05-20",
    "lastDate": "2026-10-19",
@@ -7871,7 +7871,7 @@
    ],
    "abc": 894916.3,
    "contractPrice": null,
-   "contractor": null,
+   "contractor": "MARTINEZ ENTERPRISES",
    "bidType": null,
    "firstDate": "2026-06-26",
    "lastDate": "2026-10-28",
@@ -8227,9 +8227,9 @@
     }
    ],
    "abc": 5993018.66,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 5985000,
+   "contractor": "A.D.LCONSTRAKOPC",
+   "bidType": "lowest",
    "firstDate": "2026-07-07",
    "lastDate": "2026-10-13",
    "stageDays": [
@@ -8269,9 +8269,9 @@
     }
    ],
    "abc": 2498116.75,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 2493578.13,
+   "contractor": "SANLAHIGROUPOFBUILDERS,INC.",
+   "bidType": "lowest",
    "firstDate": "2026-07-16",
    "lastDate": "2026-10-13",
    "stageDays": [
@@ -8311,9 +8311,9 @@
     }
    ],
    "abc": 73205842.26,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 73115069.2,
+   "contractor": "RHODIUM688BUILDERS,INC.",
+   "bidType": "single",
    "firstDate": "2026-08-11",
    "lastDate": "2026-10-23",
    "stageDays": [
@@ -8521,9 +8521,9 @@
     }
    ],
    "abc": 12299081.26,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 12286357.49,
+   "contractor": "SANLAHIGROUPOFBUILDERS,INC.",
+   "bidType": "lowest",
    "firstDate": "2026-08-11",
    "lastDate": "2026-10-23",
    "stageDays": [
@@ -8563,9 +8563,9 @@
     }
    ],
    "abc": 64349368.35,
-   "contractPrice": null,
+   "contractPrice": 64344272.42,
    "contractor": null,
-   "bidType": null,
+   "bidType": "lowest",
    "firstDate": "2026-08-25",
    "lastDate": "2026-10-15",
    "stageDays": [
@@ -8678,9 +8678,9 @@
     }
    ],
    "abc": 996593.42,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 995069.79,
+   "contractor": "MARTINEZENTERPRISES",
+   "bidType": "single",
    "firstDate": "2026-08-28",
    "lastDate": "2026-11-04",
    "stageDays": [
@@ -8950,9 +8950,9 @@
     }
    ],
    "abc": 7298455.53,
-   "contractPrice": null,
-   "contractor": null,
-   "bidType": null,
+   "contractPrice": 7279999.8,
+   "contractor": "WINKONSTRACTENTERPRISES",
+   "bidType": "single",
    "firstDate": "2026-09-06",
    "lastDate": "2026-11-05",
    "stageDays": [
