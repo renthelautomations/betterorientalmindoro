@@ -33,16 +33,19 @@ export default function GovDocPage(p: {
   return (
     <main className="mx-auto max-w-4xl px-4 py-10">
       <TBreadcrumbs items={p.crumbs} />
-      <header className="relative isolate mt-4 overflow-hidden rounded-2xl p-6 text-white md:p-8" style={{ background: p.band.color }}>
-        <PatternFill variant="mosaic" colors={["#fff"]} opacity={0.14} />
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <div className="min-w-0">
-            <p className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase"><KitIcon name={p.band.icon} className="h-5 w-5" />{p.band.eyebrow}</p>
-            <h1 className="mt-2 font-serif text-3xl font-bold md:text-4xl">{p.band.heading}</h1>
+      <header className="mt-4 overflow-hidden rounded-2xl text-white" style={{ background: p.band.color }}>
+        {/* pattern on a strip of its own; every word sits on the solid colour below it */}
+        <div className="relative h-12" aria-hidden><PatternFill variant="mosaic" colors={["#fff"]} opacity={0.16} /></div>
+        <div className="p-6 md:p-8">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div className="min-w-0">
+              <p className="flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase"><KitIcon name={p.band.icon} className="h-5 w-5" />{p.band.eyebrow}</p>
+              <h1 className="mt-2 font-serif text-3xl font-bold md:text-4xl">{p.band.heading}</h1>
+            </div>
+            <div className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-fiesta-navy">{p.band.side}</div>
           </div>
-          <div className="rounded-xl bg-black/25 px-4 py-2 text-sm font-semibold">{p.band.side}</div>
+          <p className="mt-4 max-w-3xl font-serif text-lg leading-snug md:text-xl">{p.title}</p>
         </div>
-        <p className="mt-4 max-w-3xl font-serif text-lg leading-snug md:text-xl">{p.title}</p>
       </header>
 
       <div className="mt-6 space-y-6">

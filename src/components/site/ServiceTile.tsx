@@ -30,7 +30,7 @@ export default function ServiceTile({ slug, count, href }: { slug: string; count
       <PatternFill variant={look.pattern} colors={["#fff"]} opacity={0.16} />
       <span className="flex items-start justify-between">
         <KitIcon name={CATEGORY_ICON[slug] ?? "doc"} color="#fff" className="h-11 w-11" />
-        {count != null && <span className="rounded-full bg-black/25 px-2.5 py-1 text-xs font-semibold">{count === 0 ? <T k="svc.soon" /> : <>{count} <T k={count === 1 ? "svc.count1" : "svc.count"} /></>}</span>}
+        {count != null && <span className="rounded-full bg-fiesta-navy px-2.5 py-1 text-xs font-semibold text-white">{count === 0 ? <T k="svc.soon" /> : <>{count} <T k={count === 1 ? "svc.count1" : "svc.count"} /></>}</span>}
       </span>
       {/* solid band under the pattern so the text never sits on it */}
       <span className="-mx-5 -mb-5 mt-6 block px-5 pb-5 pt-3" style={{ background: look.color }}><span className="block font-serif text-xl font-bold leading-tight"><T k={`svc.cat.${slug}`} /></span><span className="mt-1 block text-sm leading-snug text-white"><T k={`svc.cat.${slug}.b`} /></span></span>

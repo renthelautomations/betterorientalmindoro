@@ -66,5 +66,8 @@ open(p,"w").write(s)
 p="src/components/kit/Layout.tsx"; s=open(p).read()
 s=s.replace('aria-label="Better Oriental Mindoro, home"','aria-label="better Oriental Mindoro home"')
 open(p,"w").write(s)
+# 11. Scene captions sit on a pattern/scene: solid white, not lowered opacity.
+for p in ["src/components/kit/NaujanScroll.tsx", "src/components/kit/HalconScroll.tsx"]:
+    s=open(p).read(); s=re.sub(r"text-white/\d+","text-white",s); open(p,"w").write(s)
 PY
 echo "kit patches applied"

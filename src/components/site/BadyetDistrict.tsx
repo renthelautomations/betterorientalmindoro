@@ -27,9 +27,9 @@ export const TONE = {
 /** Patterned colour band, the same device as the service cards: a slim block with the district or office name in white. */
 export function PatternBand({ color, pattern, children }: { color: string; pattern: PatternKey; children: React.ReactNode }) {
   return (
-    <div className="relative isolate overflow-hidden text-white" style={{ background: color }}>
-      <PatternFill variant={pattern} colors={["#fff"]} opacity={0.16} />
-      <div className="relative p-5 sm:px-6">{children}</div>
+    <div className="overflow-hidden text-white" style={{ background: color }}>
+      <div className="relative h-10" aria-hidden><PatternFill variant={pattern} colors={["#fff"]} opacity={0.16} /></div>
+      <div className="p-5 sm:px-6">{children}</div>
     </div>
   );
 }

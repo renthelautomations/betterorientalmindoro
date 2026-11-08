@@ -11,11 +11,13 @@ const TONE = [FIESTA.blue, FIESTA_DEEP.green, FIESTA_DEEP.orange, FIESTA.navy];
 export default function HomeSnapshot({ facts }: { facts: SnapshotFact[] }) {
   return (
     <section aria-labelledby="snap-h" className="grid gap-4 lg:grid-cols-[1fr_1.35fr]">
-      <div className="relative isolate flex flex-col overflow-hidden rounded-3xl p-6 text-white shadow-sm sm:p-8" style={{ background: FIESTA_DEEP.sky }}>
-        <PatternFill variant="wave" colors={["#fff"]} opacity={0.16} />
-        <p id="snap-h" className="relative flex items-center gap-2 text-sm font-semibold tracking-widest uppercase"><T k="home.snap.h" /></p>
-        <div className="relative mt-5 flex flex-1 flex-col"><LiveWeather /></div>
-        <p className="relative mt-5 text-xs text-white"><T k="common.source" />: Open-Meteo</p>
+      <div className="flex flex-col overflow-hidden rounded-3xl text-white shadow-sm" style={{ background: FIESTA_DEEP.sky }}>
+        <div className="relative h-12 shrink-0" aria-hidden><PatternFill variant="wave" colors={["#fff"]} opacity={0.18} /></div>
+        <div className="flex flex-1 flex-col p-6 sm:p-8">
+          <p id="snap-h" className="flex items-center gap-2 text-sm font-semibold tracking-widest uppercase"><T k="home.snap.h" /></p>
+          <div className="mt-5 flex flex-1 flex-col"><LiveWeather /></div>
+          <p className="mt-5 text-xs text-white"><T k="common.source" />: Open-Meteo</p>
+        </div>
       </div>
       <div className="flex flex-col gap-4">
         <dl className="grid flex-1 grid-cols-2 gap-4">

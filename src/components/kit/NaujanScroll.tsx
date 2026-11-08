@@ -78,7 +78,7 @@ export default function NaujanScroll() {
           {STEPS.map((s, i) => (
             <div key={s.h} className="absolute inset-x-6 text-center" style={{ opacity: `calc(${op(i)})` }}>
               <h3 className="font-serif text-3xl font-bold text-white md:text-5xl" style={{ textShadow: "0 2px 12px rgb(27 42 74 / .45)" }}><T k={s.h} /></h3>
-              <p className="mt-3 text-base font-medium text-white/90 md:text-lg" style={{ textShadow: "0 1px 8px rgb(27 42 74 / .5)" }}><T k={s.p} /></p>
+              <p className="mt-3 text-base font-medium text-white md:text-lg" style={{ textShadow: "0 1px 8px rgb(27 42 74 / .5)" }}><T k={s.p} /></p>
             </div>
           ))}
         </div>

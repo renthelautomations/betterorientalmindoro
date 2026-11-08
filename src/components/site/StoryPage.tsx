@@ -16,9 +16,9 @@ const PATTERN: Record<IconKey, PatternKey> = { ma: "dotblocks", hal: "peaks", ta
 export default function StoryPage({ icon, scene, children }: { icon: IconKey; scene?: ReactNode; children?: ReactNode }) {
   const i = (l: 0 | 1) => (k: string) => DICT[k as keyof typeof DICT][l];
   const hero = (s: Story) => (
-    <div className="relative isolate overflow-hidden text-white" style={{ background: COLOR[icon] }}>
-      <PatternFill variant={PATTERN[icon]} colors={["#fff"]} opacity={0.18} />
-      <div className="relative mx-auto max-w-3xl px-4 py-16 md:py-24">
+    <div className="overflow-hidden text-white" style={{ background: COLOR[icon] }}>
+      <div className="relative h-24 md:h-32" aria-hidden><PatternFill variant={PATTERN[icon]} colors={["#fff"]} opacity={0.18} /></div>
+      <div className="mx-auto max-w-3xl px-4 pb-14 pt-8 md:pb-20">
         <p className="font-serif text-6xl font-bold">{ICONS[icon].short}</p>
         <p className="mt-2 font-serif text-4xl font-bold md:text-5xl">{s.title}</p>
       </div>
