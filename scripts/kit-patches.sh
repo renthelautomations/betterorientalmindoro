@@ -73,5 +73,12 @@ for p in ["src/components/kit/NaujanScroll.tsx", "src/components/kit/HalconScrol
 p="src/components/kit/Parts.tsx"; s=open(p).read()
 s=s.replace('<span className="font-serif text-4xl font-bold">{short}</span>\n      <span><span className="block text-lg font-semibold">{name}</span><span className="mt-1 block text-sm leading-snug">{blurb}</span></span>','<span className="relative font-serif text-4xl font-bold">{short}</span>\n      <span className="relative -mx-5 -mb-5 mt-6 block px-5 pb-5 pt-3" style={{ background: color }}><span className="block text-lg font-semibold">{name}</span><span className="mt-1 block text-sm leading-snug">{blurb}</span></span>')
 open(p,"w").write(s)
+# 13. Tabs follow the URL hash (/pamahalaan#eo opens that tab; menu links and shared links work) and keep it in sync on click.
+p="src/components/kit/Interactive.tsx"; s=open(p).read()
+if "hashchange" not in s:
+    s=s.replace('import { useId, useRef, useState } from "react";','import { useEffect, useId, useRef, useState } from "react";',1)
+    s=s.replace("  const refs = useRef<(HTMLButtonElement | null)[]>([]);\n","  const refs = useRef<(HTMLButtonElement | null)[]>([]);\n  const ids = useRef(tabs.map((x) => x.id)); ids.current = tabs.map((x) => x.id);\n  useEffect(() => { const go = () => { const k = ids.current.indexOf(location.hash.slice(1)); if (k >= 0) setI(k); }; go(); window.addEventListener(\"hashchange\", go); return () => window.removeEventListener(\"hashchange\", go); }, []);\n",1)
+    s=s.replace("onClick={() => setI(k)}","onClick={() => { setI(k); try { history.replaceState(null, \"\", \"#\" + tab.id); } catch { /* ignore */ } }}",1)
+    open(p,"w").write(s)
 PY
 echo "kit patches applied"

@@ -1,5 +1,5 @@
 "use client";
-import { useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { useT } from "@/lib/i18n/i18n";
 
 /** ARIA tabs with arrow-key navigation. Panels come in as server-rendered nodes. */
@@ -8,13 +8,15 @@ export function Tabs({ tabs }: { tabs: { id: string; label: string; badge?: stri
   const [i, setI] = useState(0);
   const base = useId();
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
+  const ids = useRef(tabs.map((x) => x.id)); ids.current = tabs.map((x) => x.id);
+  useEffect(() => { const go = () => { const k = ids.current.indexOf(location.hash.slice(1)); if (k >= 0) setI(k); }; go(); window.addEventListener("hashchange", go); return () => window.removeEventListener("hashchange", go); }, []);
   const go = (n: number) => { const k = (n + tabs.length) % tabs.length; setI(k); refs.current[k]?.focus(); };
   return (
     <div>
       <div role="tablist" aria-label={t("tab.label")} className="flex gap-1 overflow-x-auto border-b border-black/10">
         {tabs.map((tab, k) => (
           <button key={tab.id} ref={(el) => { refs.current[k] = el; }} role="tab" id={`${base}-t${k}`} aria-selected={i === k} aria-controls={`${base}-p${k}`} tabIndex={i === k ? 0 : -1}
-            onClick={() => setI(k)} onKeyDown={(e) => { if (e.key === "ArrowRight") go(i + 1); else if (e.key === "ArrowLeft") go(i - 1); }}
+            onClick={() => { setI(k); try { history.replaceState(null, "", "#" + tab.id); } catch { /* ignore */ } }} onKeyDown={(e) => { if (e.key === "ArrowRight") go(i + 1); else if (e.key === "ArrowLeft") go(i - 1); }}
             className={`min-h-11 shrink-0 border-b-4 px-4 text-sm font-semibold ${i === k ? "border-fiesta-orange text-fiesta-navy" : "border-transparent text-black/60 hover:text-fiesta-navy"}`}>{t(tab.label)}{tab.badge ? ` (${tab.badge})` : ""}</button>
         ))}
       </div>
