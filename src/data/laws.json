@@ -1,0 +1,1384 @@
+{
+ "source": "BetterGov dataset 24, Philippine Legal Documents Library (CC BY-NC 4.0), text by Lawphil / Arellano Law Foundation",
+ "sourceUrl": "https://data.bettergov.ph/datasets/24",
+ "fetchedAt": "2026-11-12",
+ "items": [
+  {
+   "id": "proc_1021_2025",
+   "kind": "Proclamation",
+   "ref": "Proc. 1021",
+   "year": 2025,
+   "title": "Declaring Thursday, 18 September 2025, a Special (Non-working) Day in the Municipality of Victoria, Province of Oriental Mindoro",
+   "town": "victoria",
+   "url": "https://lawphil.net/executive/proc/proc2025/proc_1021_2025.html"
+  },
+  {
+   "id": "proc_1024_2025",
+   "kind": "Proclamation",
+   "ref": "Proc. 1024",
+   "year": 2025,
+   "title": "Declaring Wednesday, 01 October 2025, a Special (Non-Working) Day in the Municipality of Gloria, Province of Oriental Mindoro",
+   "town": "gloria",
+   "url": "https://lawphil.net/executive/proc/proc2025/proc_1024_2025.html"
+  },
+  {
+   "id": "proc_803_2025",
+   "kind": "Proclamation",
+   "ref": "Proc. 803",
+   "year": 2025,
+   "title": "Declaring Friday, 21 March 2025, a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2025/proc_803_2025.html"
+  },
+  {
+   "id": "proc_813_2025",
+   "kind": "Proclamation",
+   "ref": "Proc. 813",
+   "year": 2025,
+   "title": "Declaring Wednesday, 19 March 2025, a Special (Non-working) Day in the Municipality of Bongabong, Province of Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2025/proc_813_2025.html"
+  },
+  {
+   "id": "proc_827_2025",
+   "kind": "Proclamation",
+   "ref": "Proc. 827",
+   "year": 2025,
+   "title": "Declaring Wednesday, 19 March 2025, a Special (Non-working) Day in the Municipality of Baco, Province of Oriental Mindoro",
+   "town": "baco",
+   "url": "https://lawphil.net/executive/proc/proc2025/proc_827_2025.html"
+  },
+  {
+   "id": "proc_837_2025",
+   "kind": "Proclamation",
+   "ref": "Proc. 837",
+   "year": 2025,
+   "title": "Declaring Friday, 25 April 2025, a Special (Non-working) Day in the Municipality of Pinamalayan, Province of Oriental Mindoro",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/executive/proc/proc2025/proc_837_2025.html"
+  },
+  {
+   "id": "ra_12158_2025",
+   "kind": "Republic Act",
+   "ref": "RA 12158",
+   "year": 2025,
+   "title": "An Act Declaring March 21 of Every Year a Special Non-working Holiday in the City of Calapan, Province of Oriental Mindoro in Commemoration of Its Charter Anniversary",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra2025/ra_12158_2025.html"
+  },
+  {
+   "id": "proc_465_2024",
+   "kind": "Proclamation",
+   "ref": "Proc. 465",
+   "year": 2024,
+   "title": "Declaring Thursday, 21 March 2024, a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2024/proc_465_2024.html"
+  },
+  {
+   "id": "proc_476_2024",
+   "kind": "Proclamation",
+   "ref": "Proc. 476",
+   "year": 2024,
+   "title": "Declaring Tuesday, 19 March 2024, a Special (Non-working) Day in the Municipality of Bongabong, Province of Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2024/proc_476_2024.html"
+  },
+  {
+   "id": "proc_507_2024",
+   "kind": "Proclamation",
+   "ref": "Proc. 507",
+   "year": 2024,
+   "title": "Declaring Thursday, 25 April 2024, a Special (Non-working) Day in the Municipality of Pinamalayan, Province of Oriental Mindoro",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/executive/proc/proc2024/proc_507_2024.html"
+  },
+  {
+   "id": "proc_688_2024",
+   "kind": "Proclamation",
+   "ref": "Proc. 688",
+   "year": 2024,
+   "title": "Declaring Tuesday, 01 October 2024, a Special (Non-working) Day in the Municipality of Gloria, Province of Oriental Mindoro",
+   "town": "gloria",
+   "url": "https://lawphil.net/executive/proc/proc2024/proc_688_2024.html"
+  },
+  {
+   "id": "proc_150_2023",
+   "kind": "Proclamation",
+   "ref": "Proc. 150",
+   "year": 2023,
+   "title": "Declaring Tuesday, 21 March 2023, a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2023/proc_150_2023.html"
+  },
+  {
+   "id": "proc_182_2023",
+   "kind": "Proclamation",
+   "ref": "Proc. 182",
+   "year": 2023,
+   "title": "Declaring Tuesday, 25 April 2023, a Special (Non-working) Day in the Municipality of Pinamalayan, Province of Oriental Mindoro",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/executive/proc/proc2023/proc_182_2023.html"
+  },
+  {
+   "id": "proc_247_2023",
+   "kind": "Proclamation",
+   "ref": "Proc. 247",
+   "year": 2023,
+   "title": "Declaring Thursday, 22 June 2023, a Special (Non-working) Day in the Municipality of Socorro, Province of Oriental Mindoro",
+   "town": "socorro",
+   "url": "https://lawphil.net/executive/proc/proc2023/proc_247_2023.html"
+  },
+  {
+   "id": "proc_410_2023",
+   "kind": "Proclamation",
+   "ref": "Proc. 410",
+   "year": 2023,
+   "title": "Declaring Thursday, 04 January 2024, a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2023/proc_410_2023.html"
+  },
+  {
+   "id": "proc_109_2022",
+   "kind": "Proclamation",
+   "ref": "Proc. 109",
+   "year": 2022,
+   "title": "Declaring Wednesday, 04 January 2023, a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2022/proc_109_2022.html"
+  },
+  {
+   "id": "proc_1308_2022",
+   "kind": "Proclamation",
+   "ref": "Proc. 1308",
+   "year": 2022,
+   "title": "Declaring Monday, 21 March 2022, a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2022/proc_1308_2022.html"
+  },
+  {
+   "id": "proc_1323_2022",
+   "kind": "Proclamation",
+   "ref": "Proc. 1323",
+   "year": 2022,
+   "title": "Declaring Monday, 25 April 2022, a Special (Non-working) Day in the Municipality of Pinamalayan, Province of Oriental Mindoro",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/executive/proc/proc2022/proc_1323_2022.html"
+  },
+  {
+   "id": "proc_1361_2022",
+   "kind": "Proclamation",
+   "ref": "Proc. 1361",
+   "year": 2022,
+   "title": "Declaring Wednesday, 22 June 2022, a Special (Non-working) Day in the Municipality of Socorro, Province of Oriental Mindoro",
+   "town": "socorro",
+   "url": "https://lawphil.net/executive/proc/proc2022/proc_1361_2022.html"
+  },
+  {
+   "id": "proc_88_2022",
+   "kind": "Proclamation",
+   "ref": "Proc. 88",
+   "year": 2022,
+   "title": "Declaring Wednesday, 07 December 2022, a Special (Non-working) Day in the Municipality of Bongabong, Province of Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2022/proc_88_2022.html"
+  },
+  {
+   "id": "ra_11693_2022",
+   "kind": "Republic Act",
+   "ref": "RA 11693",
+   "year": 2022,
+   "title": "An Act Converting the Extension Office of the Land Transportation Office (Lto) in the Municipality of Pinamalayan, Oriental Mindoro into a District Office to Be Known as the Lto District Office-pinamalayan and Appropriating Funds Therefor",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11693_2022.html"
+  },
+  {
+   "id": "ra_11774_2022",
+   "kind": "Republic Act",
+   "ref": "RA 11774",
+   "year": 2022,
+   "title": "An Act Renewing for Another Twenty-five (25) Years the Franchise Granted to Calapan Telephone System, Inc., Formerly Known as the Calapan Telephone System, Inc., Under Republic Act No. 8351, Entitled an Act Granting the Calapan Telephone System, Inc. a Franchise to Construct, Establish, Install, Maintain, and Operate Local Exchange Network in the Province of Oriental Mindoro\"",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11774_2022.html"
+  },
+  {
+   "id": "ra_11869_2022",
+   "kind": "Republic Act",
+   "ref": "RA 11869",
+   "year": 2022,
+   "title": "An Act Increasing the Bed Capacity of the Roxas District Hospital in the Municipality of Roxas, Province of Oriental Mindoro from Fifty (50) to One Hundred (100) Beds, and Appropriating Funds Therefor",
+   "town": "roxas",
+   "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11869_2022.html"
+  },
+  {
+   "id": "ra_11877_2022",
+   "kind": "Republic Act",
+   "ref": "RA 11877",
+   "year": 2022,
+   "title": "An Act Converting the Oriental Mindoro Central District Hospital in the Municipality of Pinamalayan, Province of Oriental Mindoro, into a Provincial Hospital to Be Known as the Oriental Mindoro Provincial Hospital, and Appropriating Funds Therefor",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/statutes/repacts/ra2022/ra_11877_2022.html"
+  },
+  {
+   "id": "proc_1168_2021",
+   "kind": "Proclamation",
+   "ref": "Proc. 1168",
+   "year": 2021,
+   "title": "Declaring Tuesday, 22 June 2021, a Special (Non-working) Day in the Municipality of Socorro, Province of Oriental Mindoro",
+   "town": "socorro",
+   "url": "https://lawphil.net/executive/proc/proc2021/proc_1168_2021.html"
+  },
+  {
+   "id": "proc_1243_2021",
+   "kind": "Proclamation",
+   "ref": "Proc. 1243",
+   "year": 2021,
+   "title": "Declaring Monday, 15 November 2021, a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2021/proc_1243_2021.html"
+  },
+  {
+   "id": "proc_1269_2021",
+   "kind": "Proclamation",
+   "ref": "Proc. 1269",
+   "year": 2021,
+   "title": "Declaring Tuesday, 04 January 2022, a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2021/proc_1269_2021.html"
+  },
+  {
+   "id": "proc_1066_2020",
+   "kind": "Proclamation",
+   "ref": "Proc. 1066",
+   "year": 2020,
+   "title": "Declaring Monday, 04 January 2021, a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2020/proc_1066_2020.html"
+  },
+  {
+   "id": "proc_925_2020",
+   "kind": "Proclamation",
+   "ref": "Proc. 925",
+   "year": 2020,
+   "title": "Declaring Thursday, 19 March 2020, a Special (Non-working) Day in the Municipality of Bongabong, Province of Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2020/proc_925_2020.html"
+  },
+  {
+   "id": "proc_927_2020",
+   "kind": "Proclamation",
+   "ref": "Proc. 927",
+   "year": 2020,
+   "title": "Declaring Saturday, 21 March 2020, a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2020/proc_927_2020.html"
+  },
+  {
+   "id": "proc_685_2019",
+   "kind": "Proclamation",
+   "ref": "Proc. 685",
+   "year": 2019,
+   "title": "Declaring Tuesday, 19 March 2019, a Special (Non-working) Day in the Municipality of Bongabong, Province of Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2019/proc_685_2019.html"
+  },
+  {
+   "id": "proc_691_2019",
+   "kind": "Proclamation",
+   "ref": "Proc. 691",
+   "year": 2019,
+   "title": "Declaring Thursday, 21 March 2019, a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2019/proc_691_2019.html"
+  },
+  {
+   "id": "proc_704_2019",
+   "kind": "Proclamation",
+   "ref": "Proc. 704",
+   "year": 2019,
+   "title": "Declaring Thursday, 25 April 2019, a Special (Non-working) Day in the Municipality of Pinamalayan, Province of Oriental Mindoro",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/executive/proc/proc2019/proc_704_2019.html"
+  },
+  {
+   "id": "proc_835_2019",
+   "kind": "Proclamation",
+   "ref": "Proc. 835",
+   "year": 2019,
+   "title": "Declaring Friday, 15 November 2019, a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2019/proc_835_2019.html"
+  },
+  {
+   "id": "proc_869_2019",
+   "kind": "Proclamation",
+   "ref": "Proc. 869",
+   "year": 2019,
+   "title": "Declaring Saturday, 04 January 2020, a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2019/proc_869_2019.html"
+  },
+  {
+   "id": "proc_428_2018",
+   "kind": "Proclamation",
+   "ref": "Proc. 428",
+   "year": 2018,
+   "title": "Declaring Wednesday, 21 March 2018, as a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2018/proc_428_2018.html"
+  },
+  {
+   "id": "proc_443_2018",
+   "kind": "Proclamation",
+   "ref": "Proc. 443",
+   "year": 2018,
+   "title": "Declaring Monday, 19 March 2018, as a Special (Non-working) Day in the Municipality of Bongabong, Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2018/proc_443_2018.html"
+  },
+  {
+   "id": "proc_577_2018",
+   "kind": "Proclamation",
+   "ref": "Proc. 577",
+   "year": 2018,
+   "title": "Declaring Tuesday, 18 September 2018, a Special (Non-working) Day in the Municipality of Victoria, Province of Oriental Mindoro",
+   "town": "victoria",
+   "url": "https://lawphil.net/executive/proc/proc2018/proc_577_2018.html"
+  },
+  {
+   "id": "proc_614_2018",
+   "kind": "Proclamation",
+   "ref": "Proc. 614",
+   "year": 2018,
+   "title": "Declaring Thursday, 15 November 2018, a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2018/proc_614_2018.html"
+  },
+  {
+   "id": "ra_11006_2018",
+   "kind": "Republic Act",
+   "ref": "RA 11006",
+   "year": 2018,
+   "title": "An Act Amending Republic Act No. 10596 Entitled \"an Act Converting the Mindoro State College of Agriculture and Technology in the Municipality of Victoria, Province of Oriental Mindoro into a State University to Be Known as the Mindoro State University (Minsu) and Appropriating Funds Therefor\"",
+   "town": "victoria",
+   "url": "https://lawphil.net/statutes/repacts/ra2018/ra_11006_2018.html"
+  },
+  {
+   "id": "proc_163_2017",
+   "kind": "Proclamation",
+   "ref": "Proc. 163",
+   "year": 2017,
+   "title": "Declaring Friday, 17 March 2017, as a Special (Non-working) Day in the Municipality of Bongabong, Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2017/proc_163_2017.html"
+  },
+  {
+   "id": "proc_239_2017",
+   "kind": "Proclamation",
+   "ref": "Proc. 239",
+   "year": 2017,
+   "title": "Declaring Thursday, 22 June 2017, as a Special (Non-working) Day in the Municipality of Socorro, Oriental Mindoro",
+   "town": "socorro",
+   "url": "https://lawphil.net/executive/proc/proc2017/proc_239_2017.html"
+  },
+  {
+   "id": "proc_379_2017",
+   "kind": "Proclamation",
+   "ref": "Proc. 379",
+   "year": 2017,
+   "title": "Declaring Thursday, 04 January 2018, as a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2017/proc_379_2017.html"
+  },
+  {
+   "id": "proc_113_2016",
+   "kind": "Proclamation",
+   "ref": "Proc. 113",
+   "year": 2016,
+   "title": "Declaring Wednesday, 4 January 2017, as a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2016/proc_113_2016.html"
+  },
+  {
+   "id": "proc_1226_2016",
+   "kind": "Proclamation",
+   "ref": "Proc. 1226",
+   "year": 2016,
+   "title": "Declaring Monday, 21 March 2016, as a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2016/proc_1226_2016.html"
+  },
+  {
+   "id": "proc_1235_2016",
+   "kind": "Proclamation",
+   "ref": "Proc. 1235",
+   "year": 2016,
+   "title": "Declaring Friday, 18 March 2016, as a Special (Non-working) Day in the Municipality of Bongabong, Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2016/proc_1235_2016.html"
+  },
+  {
+   "id": "proc_1156_2015",
+   "kind": "Proclamation",
+   "ref": "Proc. 1156",
+   "year": 2015,
+   "title": "Declaring Friday, 13 November 2015, as a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2015/proc_1156_2015.html"
+  },
+  {
+   "id": "proc_1183_2015",
+   "kind": "Proclamation",
+   "ref": "Proc. 1183",
+   "year": 2015,
+   "title": "Declaring Monday, 4 January 2016, as a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2015/proc_1183_2015.html"
+  },
+  {
+   "id": "proc_964_2015",
+   "kind": "Proclamation",
+   "ref": "Proc. 964",
+   "year": 2015,
+   "title": "Declaring Saturday, 21 March 2015, as a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2015/proc_964_2015.html"
+  },
+  {
+   "id": "proc_982_2015",
+   "kind": "Proclamation",
+   "ref": "Proc. 982",
+   "year": 2015,
+   "title": "Declaring Thursday, 19 March 2015, as a Special (Non-working) Day in the Municipality of Bongabong, Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2015/proc_982_2015.html"
+  },
+  {
+   "id": "eo_158_2014",
+   "kind": "Executive Order",
+   "ref": "EO 158",
+   "year": 2014,
+   "title": "Declaring and Delineating the Roxas Port Zone and Placing It Under the Administrative Jurisdiction of the Philippine Ports Authority (Ppa)",
+   "town": "roxas",
+   "url": "https://lawphil.net/executive/execord/eo2014/eo_158_2014.html"
+  },
+  {
+   "id": "eo_159_2014",
+   "kind": "Executive Order",
+   "ref": "EO 159",
+   "year": 2014,
+   "title": "Declaring and Delineating the Bulalacao Port Zone and Placing It Under the Administrative Jurisdiction of the Philippine Ports Authority (Ppa)",
+   "town": "bulalacao",
+   "url": "https://lawphil.net/executive/execord/eo2014/eo_159_2014.html"
+  },
+  {
+   "id": "proc_724_2014",
+   "kind": "Proclamation",
+   "ref": "Proc. 724",
+   "year": 2014,
+   "title": "Declaring Friday, 21 March 2014, as a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2014/proc_724_2014.html"
+  },
+  {
+   "id": "proc_905_2014",
+   "kind": "Proclamation",
+   "ref": "Proc. 905",
+   "year": 2014,
+   "title": "Declaring Saturday, 15 November 2014, as a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2014/proc_905_2014.html"
+  },
+  {
+   "id": "proc_548_2013",
+   "kind": "Proclamation",
+   "ref": "Proc. 548",
+   "year": 2013,
+   "title": "Declaring Thursday, 21 March 2013, as a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2013/proc_548_2013.html"
+  },
+  {
+   "id": "proc_565_2013",
+   "kind": "Proclamation",
+   "ref": "Proc. 565",
+   "year": 2013,
+   "title": "Declaring Tuesday, 19 March 2013, as a Special (Non-working) Day in the Municipality of Bongabong, Oriental Mindoro",
+   "town": "bongabong",
+   "url": "https://lawphil.net/executive/proc/proc2013/proc_565_2013.html"
+  },
+  {
+   "id": "proc_679_2013",
+   "kind": "Proclamation",
+   "ref": "Proc. 679",
+   "year": 2013,
+   "title": "Declaring Friday, 15 November 2013, as a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2013/proc_679_2013.html"
+  },
+  {
+   "id": "proc_699_2013",
+   "kind": "Proclamation",
+   "ref": "Proc. 699",
+   "year": 2013,
+   "title": "Declaring Saturday, 4 January 2014, as a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2013/proc_699_2013.html"
+  },
+  {
+   "id": "ra_10472_2013",
+   "kind": "Republic Act",
+   "ref": "RA 10472",
+   "year": 2013,
+   "title": "An Act Changing the Name of Jose J. Leido JR. Memorial National High School in the City of Calapan, Province of Oriental Mindoro to Oriental Mindoro National High School",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10472_2013.html"
+  },
+  {
+   "id": "ra_10596_2013",
+   "kind": "Republic Act",
+   "ref": "RA 10596",
+   "year": 2013,
+   "title": "An Act Converting the Mindoro State College of Agriculture and Technology in the Municipality of Victoria, Province of Oriental Mindoro into a State University to Be Known as the Mindoro State University (Minsu) and Appropriating Funds Therefor",
+   "town": "victoria",
+   "url": "https://lawphil.net/statutes/repacts/ra2013/ra_10596_2013.html"
+  },
+  {
+   "id": "proc_349_2012",
+   "kind": "Proclamation",
+   "ref": "Proc. 349",
+   "year": 2012,
+   "title": "Declaring Wednesday, 21 March 2012, as a Special (Non-working) Day in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2012/proc_349_2012.html"
+  },
+  {
+   "id": "proc_499_2012",
+   "kind": "Proclamation",
+   "ref": "Proc. 499",
+   "year": 2012,
+   "title": "Declaring Thursday, 15 November 2012, as a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2012/proc_499_2012.html"
+  },
+  {
+   "id": "proc_528_2012",
+   "kind": "Proclamation",
+   "ref": "Proc. 528",
+   "year": 2012,
+   "title": "Declaring Friday, 4 January 2013, as a Special (Non-working) Day in the Municipality of Naujan, Province of Oriental Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc2012/proc_528_2012.html"
+  },
+  {
+   "id": "proc_127_2011",
+   "kind": "Proclamation",
+   "ref": "Proc. 127",
+   "year": 2011,
+   "title": "Reserving a Certain Parcel of Land of the Public Domain for Municipal Slaughterhouse Site Purposes, Situated in Barangay Bagumbayan, Municipality of Roxas, Province of Oriental Mindoro, Island of Mindoro",
+   "town": "roxas",
+   "url": "https://lawphil.net/executive/proc/proc2011/proc_127_2011.html"
+  },
+  {
+   "id": "proc_286_2011",
+   "kind": "Proclamation",
+   "ref": "Proc. 286",
+   "year": 2011,
+   "title": "Declaring Tuesday, 15 November 2011, as a Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2011/proc_286_2011.html"
+  },
+  {
+   "id": "proc_61_2010",
+   "kind": "Proclamation",
+   "ref": "Proc. 61",
+   "year": 2010,
+   "title": "Declaring Monday, November 15, 2010, as Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2010/proc_61_2010.html"
+  },
+  {
+   "id": "proc_1810_2009",
+   "kind": "Proclamation",
+   "ref": "Proc. 1810",
+   "year": 2009,
+   "title": "Reserving for Municipal Plaza Site Purposes, Certain Parcels of Land of the Public Domain Situated in Brgy. Bagumbayan, Municipality of Roxas, Province of Oriental Mindoro",
+   "town": "roxas",
+   "url": "https://lawphil.net/executive/proc/proc2009/proc_1810_2009.html"
+  },
+  {
+   "id": "proc_1852_2009",
+   "kind": "Proclamation",
+   "ref": "Proc. 1852",
+   "year": 2009,
+   "title": "Reserving for Municipal Health Center Site Purposes, a Certain Parcel of Land of the Public Domain Situated in Barangay Bagumbayan, Municipality of Roxas, Province of Oriental Mindoro, Island of Mindoro",
+   "town": "roxas",
+   "url": "https://lawphil.net/executive/proc/proc2009/proc_1852_2009.html"
+  },
+  {
+   "id": "proc_1893_2009",
+   "kind": "Proclamation",
+   "ref": "Proc. 1893",
+   "year": 2009,
+   "title": "Reserving as School Site for Jose J. Leido, JR. Memorial National High School-bucayao Annex, Certain Parcels of Land of the Public Domain Situated in Barangay Bucayao, City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc2009/proc_1893_2009.html"
+  },
+  {
+   "id": "proc_1905_2009",
+   "kind": "Proclamation",
+   "ref": "Proc. 1905",
+   "year": 2009,
+   "title": "Reserving a Certain Parcel of Land of the Public Domain as Municipal Power Generator Site Purposes, Situated in Barangay Bagumbayan, Municipality of Roxas, Province of Oriental Mindoro, Island of Mindoro",
+   "town": "roxas",
+   "url": "https://lawphil.net/executive/proc/proc2009/proc_1905_2009.html"
+  },
+  {
+   "id": "ra_9535_2009",
+   "kind": "Republic Act",
+   "ref": "RA 9535",
+   "year": 2009,
+   "title": "An Act Establishing a National High School in Barangay Dangay, Municipality of Roxas, Province of Oriental Mindoro to Be Known as the Dangay National High School and Appropriating Funds Therefor",
+   "town": "roxas",
+   "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9535_2009.html"
+  },
+  {
+   "id": "ra_9543_2009",
+   "kind": "Republic Act",
+   "ref": "RA 9543",
+   "year": 2009,
+   "title": "An Act Establishing a National High School in Barangay San Roque, Municipality of Bulalacao, Province of Oriental Mindoro to Be Known as San Roque National High School and Appropriating Funds Therefor",
+   "town": "bulalacao",
+   "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9543_2009.html"
+  },
+  {
+   "id": "ra_9557_2009",
+   "kind": "Republic Act",
+   "ref": "RA 9557",
+   "year": 2009,
+   "title": "An Act Establishing a National High School in Barangay Salcedo, Municipality of Bansud, Province of Oriental Mindoro to Be Known as Felimon M. Salcedo, SR. Memorial National High School and Appropriating Funds Therefor",
+   "town": "bansud",
+   "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9557_2009.html"
+  },
+  {
+   "id": "ra_9755_2009",
+   "kind": "Republic Act",
+   "ref": "RA 9755",
+   "year": 2009,
+   "title": "An Act Establishing a National High School in Barangay Fortuna, Municipality of Socorro, Province of Oriental Mindoro to Be Known as Fortuna National High School and Appropriating Funds Therefor",
+   "town": "socorro",
+   "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9755_2009.html"
+  },
+  {
+   "id": "ra_9766_2009",
+   "kind": "Republic Act",
+   "ref": "RA 9766",
+   "year": 2009,
+   "title": "An Act Separating the Malamig National High School -Malubay Extension in Barangay Malubay, Municipality of Gloria, Province of Oriental Mindoro from the Malamig National High School, Converting It into an Independent National High School to Be Known as Manuel Adriano Memorial National High School (Mamnhs) and Appropriating Funds Therefor",
+   "town": "gloria",
+   "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9766_2009.html"
+  },
+  {
+   "id": "ra_9770_2009",
+   "kind": "Republic Act",
+   "ref": "RA 9770",
+   "year": 2009,
+   "title": "An Act Separating the Malamig National High School -Maligaya Annex in Barangay Maligaya, Municipality of Gloria, Province of Oriental Mindoro from the Malamig National High School, Converting It into an Independent National High School to Be Known as President Diosdado Macapagal Memorial National High School and Appropriating Funds Therefor",
+   "town": "gloria",
+   "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9770_2009.html"
+  },
+  {
+   "id": "ra_9800_2009",
+   "kind": "Republic Act",
+   "ref": "RA 9800",
+   "year": 2009,
+   "title": "An Act Converting the Bongabong-sagana-roxas-san Aquilino Provincial Road, Province of Oriental Mindoro into a National Road",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra2009/ra_9800_2009.html"
+  },
+  {
+   "id": "proc_1415_2007",
+   "kind": "Proclamation",
+   "ref": "Proc. 1415",
+   "year": 2007,
+   "title": "Declaring Thursday, November 15, 2007, as Special (Non-working) Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2007/proc_1415_2007.html"
+  },
+  {
+   "id": "proc_1002_2006",
+   "kind": "Proclamation",
+   "ref": "Proc. 1002",
+   "year": 2006,
+   "title": "Reserving a Certain Portion of Foreshore Area Situated in Barangay Batuhan, Pola, Oriental Mindoro for Municipal Eco-tourism Park Purposes Under the Administration of the Local Government of Pola",
+   "town": "pola",
+   "url": "https://lawphil.net/executive/proc/proc2006/proc_1002_2006.html"
+  },
+  {
+   "id": "proc_1024_2006",
+   "kind": "Proclamation",
+   "ref": "Proc. 1024",
+   "year": 2006,
+   "title": "Reserving a Certain Parcel of Land of the Public Domain Situated in Barangay Batuhan, Municipality of Pola, Province of Oriental Mindoro, Island of Mindoro for Market Site Purposes of the Municipality of Pola",
+   "town": "pola",
+   "url": "https://lawphil.net/executive/proc/proc2006/proc_1024_2006.html"
+  },
+  {
+   "id": "proc_517_2003",
+   "kind": "Proclamation",
+   "ref": "Proc. 517",
+   "year": 2003,
+   "title": "Reserving for School Site Purposes of La Fortuna National High School, Certain Parcels of Land of the Public Domain Situated at Barangay La Fortuna, Municipality of Socorro, Province of Oriental Mindoro, Island of Luzon",
+   "town": "socorro",
+   "url": "https://lawphil.net/executive/proc/proc2003/proc_517_2003.html"
+  },
+  {
+   "id": "ra_9185_2003",
+   "kind": "Republic Act",
+   "ref": "RA 9185",
+   "year": 2003,
+   "title": "An Act Granting the Calapan Waterworks System and Development Corporation a Franchise to Construct, Install, Operate and Maintain a Water Supply and Sewerage System in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra2003/ra_9185_2003.html"
+  },
+  {
+   "id": "ra_9050_2001",
+   "kind": "Republic Act",
+   "ref": "RA 9050",
+   "year": 2001,
+   "title": "An Act Creating a Separate Engineering District in the Province of Oriental Mindoro to Be Known as the Southern Mindoro Engineering District, the Office of Which Shall Be in the Municipality of Roxas and Appropriating Funds Therefor",
+   "town": "roxas",
+   "url": "https://lawphil.net/statutes/repacts/ra2001/ra_9050_2001.html"
+  },
+  {
+   "id": "ra_9128_2001",
+   "kind": "Republic Act",
+   "ref": "RA 9128",
+   "year": 2001,
+   "title": "An Act Granting Calvary Gospel Tabernacle, Inc., a Franchise to Construct, Install, Establish, Operate and Maintain for Religious, Noncommercial and Educational Purposes Radio and Television Broadcasting Stations in the Cordillera Autonomous Region and Oriental Mindoro, Nueva Vizcaya and Ilocos Sur",
+   "town": null,
+   "url": "https://lawphil.net/statutes/repacts/ra2001/ra_9128_2001.html"
+  },
+  {
+   "id": "proc_404_2000",
+   "kind": "Proclamation",
+   "ref": "Proc. 404",
+   "year": 2000,
+   "title": "Declaring Wednesday, November 15, 2000, as a Special Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc2000/proc_404_2000.html"
+  },
+  {
+   "id": "ra_8986_2000",
+   "kind": "Republic Act",
+   "ref": "RA 8986",
+   "year": 2000,
+   "title": "An Act Declaring March Twenty-one, a Special Working Holiday in the City of Calapan, Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra2000/ra_8986_2000.html"
+  },
+  {
+   "id": "proc_1180_1998",
+   "kind": "Proclamation",
+   "ref": "Proc. 1180",
+   "year": 1998,
+   "title": "Declaring Friday and Saturday, March 20 and 21, 1998, as Non-working Special Days in the Municipalities of Calapan, Oriental Mindoro; Urdaneta, Pangasinan; Victorias and Talisay, Both of Negros Occidental, and Kidapawan, Cotabato",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc1998/proc_1180_1998.html"
+  },
+  {
+   "id": "ra_8465_1998",
+   "kind": "Republic Act",
+   "ref": "RA 8465",
+   "year": 1998,
+   "title": "An Act Establishing a High School in Barangay San Isidro, Municipality of Bongabong, Province of Oriental Mindoro, to Be Known as the Vicente B. Ylagan National High School, and Appropriating Funds Therefor",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8465_1998.html"
+  },
+  {
+   "id": "ra_8467_1998",
+   "kind": "Republic Act",
+   "ref": "RA 8467",
+   "year": 1998,
+   "title": "An Act Establishing a Nationalized High School in the Municipality of Baco, Province of Oriental Mindoro, to Be Known as the Baco National High School, and Appropriating Funds Therefor",
+   "town": "baco",
+   "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8467_1998.html"
+  },
+  {
+   "id": "ra_8475_1998",
+   "kind": "Republic Act",
+   "ref": "RA 8475",
+   "year": 1998,
+   "title": "An Act Converting the Municipality of Calapan in the Province of Oriental Mindoro into a Component City to Be Known as the City of Calapan",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8475_1998.html"
+  },
+  {
+   "id": "ra_8635_1998",
+   "kind": "Republic Act",
+   "ref": "RA 8635",
+   "year": 1998,
+   "title": "An Act Granting the RMC Telecommunications Consultants, Inc., a Franchise to Construct, Establish, Install, Maintain and Operate Local Exchange Network in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8635_1998.html"
+  },
+  {
+   "id": "ra_8654_1998",
+   "kind": "Republic Act",
+   "ref": "RA 8654",
+   "year": 1998,
+   "title": "An Act Granting the Mindoro Telecommunications Corporation a Franchise to Construct, Establish, Install, Maintain and Operate Local Exchange Network in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/statutes/repacts/ra1998/ra_8654_1998.html"
+  },
+  {
+   "id": "ra_8259_1997",
+   "kind": "Republic Act",
+   "ref": "RA 8259",
+   "year": 1997,
+   "title": "An Act Establishing a National High School in the Municipality of San Teodoro, Province of Oriental Mindoro, to Be Known as the San Teodoro National High School, and Appropriating Funds Therefor",
+   "town": "san-teodoro",
+   "url": "https://lawphil.net/statutes/repacts/ra1997/ra_8259_1997.html"
+  },
+  {
+   "id": "ra_8351_1997",
+   "kind": "Republic Act",
+   "ref": "RA 8351",
+   "year": 1997,
+   "title": "An Act Granting the Calapan Telephone System, Inc., a Franchise to Construct, Establish, Install, Maintain and Operate Local Exchange Network in the Province of Oriental Mindoro",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra1997/ra_8351_1997.html"
+  },
+  {
+   "id": "ra_8431_1997",
+   "kind": "Republic Act",
+   "ref": "RA 8431",
+   "year": 1997,
+   "title": "An Act Establishing a High School in Barangay Cawayan, Municipality of Bongabong, Province of Oriental Mindoro to Be Known as the Cawayan National High School, and Appropriating Funds Therefor",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra1997/ra_8431_1997.html"
+  },
+  {
+   "id": "ra_7857_1995",
+   "kind": "Republic Act",
+   "ref": "RA 7857",
+   "year": 1995,
+   "title": "An Act Increasing the Bed Capacity of the Roxas District Hospital in the Municipality of Roxas, Province of Oriental Mindoro, from Twenty-five to Fifty Beds, and Appropriating Funds Therefor",
+   "town": "roxas",
+   "url": "https://lawphil.net/statutes/repacts/ra1995/ra_7857_1995.html"
+  },
+  {
+   "id": "ra_8076_1995",
+   "kind": "Republic Act",
+   "ref": "RA 8076",
+   "year": 1995,
+   "title": "An Act Converting the Calapan School of Arts and Trades in the Municipality of Calapan, Province of Oriental Mindoro, into a College to Be Known as the Polytechnic College of Calapan, and Appropriating Funds Therefor",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra1995/ra_8076_1995.html"
+  },
+  {
+   "id": "ra_8128_1995",
+   "kind": "Republic Act",
+   "ref": "RA 8128",
+   "year": 1995,
+   "title": "An Act Granting a Franchise to the Oriental Mindoro Management Resources Corporation (Omarco) to Construct, Install, Establish, Operate, Manage and Maintain a Network of Radio and Television Stations Anywhere in the Philippines, and for Other Purposes",
+   "town": null,
+   "url": "https://lawphil.net/statutes/repacts/ra1995/ra_8128_1995.html"
+  },
+  {
+   "id": "ra_8142_1995",
+   "kind": "Republic Act",
+   "ref": "RA 8142",
+   "year": 1995,
+   "title": "An Act Converting the Simeon Suan Memorial National High School in Barangay Pag-asa, Municipality of Bansud, Province of Oriental Mindoro, into a Vocational and Technical College, to Be Known as the Simeon Suan Vocational and Technical College, and Appropriating Funds Therefor",
+   "town": "bansud",
+   "url": "https://lawphil.net/statutes/repacts/ra1995/ra_8142_1995.html"
+  },
+  {
+   "id": "ra_8143_1995",
+   "kind": "Republic Act",
+   "ref": "RA 8143",
+   "year": 1995,
+   "title": "An Act Converting the School of Fisheries in Labasan, Bongabong, Oriental Mindoro, into a College to Be Known as the Bongabong College of Fisheries, and Appropriating Funds Therefor",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra1995/ra_8143_1995.html"
+  },
+  {
+   "id": "proc_496_1994",
+   "kind": "Proclamation",
+   "ref": "Proc. 496",
+   "year": 1994,
+   "title": "Reserving for Municipal Hall, Municipal Port/commercial Center, Recreation Center, and Nature Park Sites Purposes, Certain Parcels of Land of the Public Domain Situated in the Municipality of Puerto Galera, Province of Oriental Mindoro, Island of Mindoro",
+   "town": "puerto-galera",
+   "url": "https://lawphil.net/executive/proc/proc1994/proc_496_1994.html"
+  },
+  {
+   "id": "ra_7782_1994",
+   "kind": "Republic Act",
+   "ref": "RA 7782",
+   "year": 1994,
+   "title": "An Act Establishing a High School in Barangay Formon, Municipality of Bongabong, Province of Oriental Mindoro, to Be Known as the Formon National High School, and Appropriating Funds Therefor",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra1994/ra_7782_1994.html"
+  },
+  {
+   "id": "proc_297_1993",
+   "kind": "Proclamation",
+   "ref": "Proc. 297",
+   "year": 1993,
+   "title": "Declaring Monday, November 15, 1993, as a Special Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1993/proc_297_1993.html"
+  },
+  {
+   "id": "ra_7475_1992",
+   "kind": "Republic Act",
+   "ref": "RA 7475",
+   "year": 1992,
+   "title": "An Act Establishing a Vocational and Technical High School in San Aquilino, Municipality of Roxas, Province of Oriental Mindoro, to Be Known as the Marcelo I. Cabrera Vocational High School, and Appropriating Funds Therefor",
+   "town": "roxas",
+   "url": "https://lawphil.net/statutes/repacts/ra1992/ra_7475_1992.html"
+  },
+  {
+   "id": "ra_7537_1992",
+   "kind": "Republic Act",
+   "ref": "RA 7537",
+   "year": 1992,
+   "title": "An Act Increasing the Bed Capacity of the Calapan Provincial Hospital in the Municipality of Calapan, Province of Oriental Mindoro, from One Hundred (100) to One Hundred Fifty (150) Beds, and Appropriating Funds Therefor",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra1992/ra_7537_1992.html"
+  },
+  {
+   "id": "ra_6983_1991",
+   "kind": "Republic Act",
+   "ref": "RA 6983",
+   "year": 1991,
+   "title": "An Act Establishing a High School in Barangay Fe Del Mundo, Municipality of Mansalay, Province of Oriental Mindoro, to Be Known as the Fe Del Mundo High School, and Appropriating Funds Therefor",
+   "town": "mansalay",
+   "url": "https://lawphil.net/statutes/repacts/ra1991/ra_6983_1991.html"
+  },
+  {
+   "id": "ra_7021_1991",
+   "kind": "Republic Act",
+   "ref": "RA 7021",
+   "year": 1991,
+   "title": "An Act Establishing a High School in Barangay San Mariano, Municipality of Roxas, Province of Oriental Mindoro, to Be Known as the San Mariano High School, and Appropriating Funds Therefor",
+   "town": "roxas",
+   "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7021_1991.html"
+  },
+  {
+   "id": "ra_7030_1991",
+   "kind": "Republic Act",
+   "ref": "RA 7030",
+   "year": 1991,
+   "title": "An Act Establishing a High School in Barangay Malamig, Municipality of Gloria, Province of Oriental Mindoro, to Be Known as the Malamig High School, and Appropriating Funds Therefor",
+   "town": "gloria",
+   "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7030_1991.html"
+  },
+  {
+   "id": "ra_7066_1991",
+   "kind": "Republic Act",
+   "ref": "RA 7066",
+   "year": 1991,
+   "title": "An Act Establishing a High School in Barangay Ranzo, Municipality of Pinamalayan, Province of Oriental Mindoro, to Be Known as the Ranzo High School, and Appropriating Funds Therefor",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7066_1991.html"
+  },
+  {
+   "id": "ra_7129_1991",
+   "kind": "Republic Act",
+   "ref": "RA 7129",
+   "year": 1991,
+   "title": "An Act Establishing a High School in Barangay Manaul, Municipality of Mansalay, Province of Oriental Mindoro, to Be Known as the Manaul High School, and Appropriating Funds Therefor",
+   "town": "mansalay",
+   "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7129_1991.html"
+  },
+  {
+   "id": "ra_7134_1991",
+   "kind": "Republic Act",
+   "ref": "RA 7134",
+   "year": 1991,
+   "title": "An Act Establishing a High School in Barangay Pili, Municipality of Pinamalayan, Province of Oriental Mindoro, to Be Known as the Pili High School, and Appropriating Funds Therefor",
+   "town": "pinamalayan",
+   "url": "https://lawphil.net/statutes/repacts/ra1991/ra_7134_1991.html"
+  },
+  {
+   "id": "proc_662_1990",
+   "kind": "Proclamation",
+   "ref": "Proc. 662",
+   "year": 1990,
+   "title": "Declaring Thursday, November 15, 1990, as �Province of Oriental Mindoro Day�",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1990/proc_662_1990.html"
+  },
+  {
+   "id": "ra_6859_1990",
+   "kind": "Republic Act",
+   "ref": "RA 6859",
+   "year": 1990,
+   "title": "An Act Establishing a Ten-bed Municipal Hospital in the Municipality of Naujan, Province of Oriental Mindoro, to Be Known as the Naujan Municipal Hospital, and Appropriating Funds Therefor",
+   "town": "naujan",
+   "url": "https://lawphil.net/statutes/repacts/ra1990/ra_6859_1990.html"
+  },
+  {
+   "id": "ra_6910_1990",
+   "kind": "Republic Act",
+   "ref": "RA 6910",
+   "year": 1990,
+   "title": "An Act Establishing a Ten-bed Municipal Hospital in the Municipality of Bulalacao, Province of Oriental Mindoro, to Be Known as the Bulalacao Municipal Hospital, and Appropriating Funds Therefor",
+   "town": "bulalacao",
+   "url": "https://lawphil.net/statutes/repacts/ra1990/ra_6910_1990.html"
+  },
+  {
+   "id": "ra_6800_1989",
+   "kind": "Republic Act",
+   "ref": "RA 6800",
+   "year": 1989,
+   "title": "An Act Changing the Name of the Labasan Elementary School in the Municipality of Bongabong, Province of Oriental Mindoro, to Moises Abante Memorial Elementary School",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra1989/ra_6800_1989.html"
+  },
+  {
+   "id": "ra_6801_1989",
+   "kind": "Republic Act",
+   "ref": "RA 6801",
+   "year": 1989,
+   "title": "An Act Changing the Name of the Bongabong Central Elementary School in the Municipality of Bongabong, Province of Oriental Mindoro, to Magdalena Umali Suyon Memorial School",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra1989/ra_6801_1989.html"
+  },
+  {
+   "id": "ra_6802_1989",
+   "kind": "Republic Act",
+   "ref": "RA 6802",
+   "year": 1989,
+   "title": "An Act Changing the Name of the Sagana Elementary School in the Municipality of Bongabong, Province of Oriental Mindoro, to Tomas S. Villanueva Memorial School",
+   "town": "bongabong",
+   "url": "https://lawphil.net/statutes/repacts/ra1989/ra_6802_1989.html"
+  },
+  {
+   "id": "proc_150_1987",
+   "kind": "Proclamation",
+   "ref": "Proc. 150",
+   "year": 1987,
+   "title": "Withdrawing from the Operation of Proclamation No. 88 Dated August 9, 1966 Which Established the Mansalay Forest Reserve Certain in Parcel of Land of the Public Domain Situated at the Municipality of Mansalay, Province of Oriental Mindoro, Island of Luzon, and Opening the Same for Mining Purposes",
+   "town": "mansalay",
+   "url": "https://lawphil.net/executive/proc/proc1987/proc_150_1987.html"
+  },
+  {
+   "id": "proc_193_1987",
+   "kind": "Proclamation",
+   "ref": "Proc. 193",
+   "year": 1987,
+   "title": "Supplementing Proclamation No. 191 Dated November 27, 1987 by Declaring the Existence of a State of Public Calamity in the Provinces of Rizal, Laguna, Romblon, Mindoro Oriental, Mindoro Occidental, Camarines Norte and Catanduanes",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1987/proc_193_1987.html"
+  },
+  {
+   "id": "proc_2073_1981",
+   "kind": "Proclamation",
+   "ref": "Proc. 2073",
+   "year": 1981,
+   "title": "Excluding from the Operation of Proclamation No. 62 Dated August 4, 1966 Which Established the Bongabon-mansalay Forest Reserve a Certain Portion of the Land Embraced Therein Situated in the Barrio of Hagan, Municipality of Bongabon, and in the Barrios of Bato and Malu, Municipality of Bansud, Province of Oriental Mindoro, Island of Mindoro, and Declaring the Same Open to Disposition Under the Provisions of the Public Land Act",
+   "town": "bansud",
+   "url": "https://lawphil.net/executive/proc/proc1981/proc_2073_1981.html"
+  },
+  {
+   "id": "proc_2150_1981",
+   "kind": "Proclamation",
+   "ref": "Proc. 2150",
+   "year": 1981,
+   "title": "Declaring the Existence of a Public Calamity in the Provinces of Northern Samar, Masbate, Oriental Mindoro and Romblon",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1981/proc_2150_1981.html"
+  },
+  {
+   "id": "proc_1831_1979",
+   "kind": "Proclamation",
+   "ref": "Proc. 1831",
+   "year": 1979,
+   "title": "Excluding from the Operation of Proclamation No. 260 Dated June 22, 1951 Which Established the Mindoro Agricultural School Site Reservation Situated in the Municipality of Naujan, Province of Oriental Mindoro, Island of Mindoro, Certain Portion of the Land Embraced Therein and Declaring the Same Open to Disposition Under the Provisions of the Public Land Act",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc1979/proc_1831_1979.html"
+  },
+  {
+   "id": "proc_1046_1972",
+   "kind": "Proclamation",
+   "ref": "Proc. 1046",
+   "year": 1972,
+   "title": "Proclaiming a State of Public Calamity in the Island of Luzon, Including the Provinces Already Covered by Proclamation Nos. 775, 776 and 792, All Series of 1970, and in the Provinces of Batanes, Marinduque, Occidental Mindoro and Oriental Mindoro; and Designating the Price Control Council as the Implementing Agency to Enforce the Provisions of Act No. 4164 in All Areas Where a State of Public Calamity Has Been Declared",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1972/proc_1046_1972.html"
+  },
+  {
+   "id": "ra_6460_1972",
+   "kind": "Republic Act",
+   "ref": "RA 6460",
+   "year": 1972,
+   "title": "An Act Establishing an Emergency Hospital in the Municipality of Socorro, Province of Oriental Mindoro and Authorizing the Appropriation of Funds Therefor",
+   "town": "socorro",
+   "url": "https://lawphil.net/statutes/repacts/ra1972/ra_6460_1972.html"
+  },
+  {
+   "id": "ra_6461_1972",
+   "kind": "Republic Act",
+   "ref": "RA 6461",
+   "year": 1972,
+   "title": "An Act Establishing an Emergency Hospital in the Municipality of Bansud, Province of Oriental Mindoro and Authorizing the Appropriation of Funds Therefor",
+   "town": "bansud",
+   "url": "https://lawphil.net/statutes/repacts/ra1972/ra_6461_1972.html"
+  },
+  {
+   "id": "ra_6600_1972",
+   "kind": "Republic Act",
+   "ref": "RA 6600",
+   "year": 1972,
+   "title": "An Act Establishing an Artificial Breeding Center in the Municipality of Roxas, Province of Oriental Mindoro, and Authorizing the Appropriation of Funds Therefor",
+   "town": "roxas",
+   "url": "https://lawphil.net/statutes/repacts/ra1972/ra_6600_1972.html"
+  },
+  {
+   "id": "ra_6601_1972",
+   "kind": "Republic Act",
+   "ref": "RA 6601",
+   "year": 1972,
+   "title": "An Act Establishing an Artificial Breeding Center in the Municipality of San Pedro, Province of Oriental Mindoro, and Authorizing the Appropriation of Funds Therefor,",
+   "town": null,
+   "url": "https://lawphil.net/statutes/repacts/ra1972/ra_6601_1972.html"
+  },
+  {
+   "id": "ra_6602_1972",
+   "kind": "Republic Act",
+   "ref": "RA 6602",
+   "year": 1972,
+   "title": "An Act Establishing a Soil and Water Conservation Research and Demonstration Center in the Municipality of Naujan Province of Oriental Mindoro, and Authorizing the Appropriation of Funds Therefor",
+   "town": "naujan",
+   "url": "https://lawphil.net/statutes/repacts/ra1972/ra_6602_1972.html"
+  },
+  {
+   "id": "ra_6606_1972",
+   "kind": "Republic Act",
+   "ref": "RA 6606",
+   "year": 1972,
+   "title": "An Act Establishing an Artificial Breeding Center in the Municipality of Soccoro, Province of Oriental Mindoro, and Authorizing the Appropriation of Funds Therefor",
+   "town": null,
+   "url": "https://lawphil.net/statutes/repacts/ra1972/ra_6606_1972.html"
+  },
+  {
+   "id": "ra_6204_1971",
+   "kind": "Republic Act",
+   "ref": "RA 6204",
+   "year": 1971,
+   "title": "An Act Changing the Name of the Alag Community School in Barrio Alag, Municipality of Baco, Province of Oriental Mindoro, to Felix Hernandez Community School",
+   "town": "baco",
+   "url": "https://lawphil.net/statutes/repacts/ra1971/ra_6204_1971.html"
+  },
+  {
+   "id": "ra_6219_1971",
+   "kind": "Republic Act",
+   "ref": "RA 6219",
+   "year": 1971,
+   "title": "An Act Changing the Name of the Bibihan School in Barrio Puting-tubig, Municipality of Calapan, Province of Oriental Mindoro, to Pedro C. Tolentino Memorial School",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/statutes/repacts/ra1971/ra_6219_1971.html"
+  },
+  {
+   "id": "eo_261_1970",
+   "kind": "Executive Order",
+   "ref": "EO 261",
+   "year": 1970,
+   "title": "Placing the Port of Calapan, Oriental Mindoro and Its Facilities Under the Jurisdiction, Administration and Control of the Bureau of Customs",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/execord/eo1970/eo_261_1970.html"
+  },
+  {
+   "id": "proc_686_1970",
+   "kind": "Proclamation",
+   "ref": "Proc. 686",
+   "year": 1970,
+   "title": "Excluding from the Operation of Proclamation No. 260 Dated June 22, 1951, Which Established the Mindoro Agricultural School Reservation Situated in the Municipality of Victoria, Province of Oriental Mindoro, Island of Mindoro, a Certain Portion of the Land Embraced Therein and Reserving the Same for Horticultural Research Center Site Purposes of the Bureau of Plant Industry",
+   "town": "victoria",
+   "url": "https://lawphil.net/executive/proc/proc1970/proc_686_1970.html"
+  },
+  {
+   "id": "proc_557_1969",
+   "kind": "Proclamation",
+   "ref": "Proc. 557",
+   "year": 1969,
+   "title": "Establishing MTS. Iglit and Baco and Vicinities as Game Refuge (Tamaraw Reservation) and Bird Sanctuary",
+   "town": "baco",
+   "url": "https://lawphil.net/executive/proc/proc1969/proc_557_1969.html"
+  },
+  {
+   "id": "ra_5892_1969",
+   "kind": "Republic Act",
+   "ref": "RA 5892",
+   "year": 1969,
+   "title": "An Act Providing for the Establishment of a Livestock Breeding Station in the Municipality of Gloria, Province of Oriental Mindoro, and Authorizing the Appropriation of Funds Therefor",
+   "town": "gloria",
+   "url": "https://lawphil.net/statutes/repacts/ra1969/ra_5892_1969.html"
+  },
+  {
+   "id": "proc_462_1968",
+   "kind": "Proclamation",
+   "ref": "Proc. 462",
+   "year": 1968,
+   "title": "Reserving for School Site Purposes a Certain Parcel of Land of the Public Domain Situated in the Municipality of Bansud, Province of Oriental Mindoro, Island of Mindoro",
+   "town": "bansud",
+   "url": "https://lawphil.net/executive/proc/proc1968/proc_462_1968.html"
+  },
+  {
+   "id": "proc_168_1967",
+   "kind": "Proclamation",
+   "ref": "Proc. 168",
+   "year": 1967,
+   "title": "Establishing as Northern Mindoro Forest Reserve for Wood Production, Watershed, Soil Protection and Other Forest Uses, the Parcels of Public Domain Known as Timberland, Mindoro Occidental Land Classification Project Nos. 12-G and 16-C and Mindoro Oriental Land Classification Project Nos. 11-C and 18-C, Per B.F. Map L.C.-2381 (2 Sheets), Situated in the Municipalities of Abra De Ilog and Paluan, Province of Mindoro Occidental and Municipalities of Puerto Galera and San Teodoro, Province of Mindoro Oriental, Philippines",
+   "town": "puerto-galera",
+   "url": "https://lawphil.net/executive/proc/proc1967/proc_168_1967.html"
+  },
+  {
+   "id": "proc_119_1966",
+   "kind": "Proclamation",
+   "ref": "Proc. 119",
+   "year": 1966,
+   "title": "Establishing as MT. Lingat Forest Reserve for Wood Production, Watershed, Soil Protection and Other Forest Uses, the Parcels of Public Domain Known as Timberland, Mindoro Oriental Land Classification Project Nos. 1-N and 10-D and Mindoro Occidental Land Classification Project No. 17-K, Per B. F. Map L.C.-2522 (2 Sheets), Situated in the Municipalities of Naujan and Baco, Province of Mindoro Oriental and Municipality of Sablayan, Province of Mindoro Occidental, Philippines",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc1966/proc_119_1966.html"
+  },
+  {
+   "id": "proc_17_1966",
+   "kind": "Proclamation",
+   "ref": "Proc. 17",
+   "year": 1966,
+   "title": "Declaring Thursday, March 10, 1966, as Macario Adriatico Day in the Province of Oriental Mindoro",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1966/proc_17_1966.html"
+  },
+  {
+   "id": "proc_62_1966",
+   "kind": "Proclamation",
+   "ref": "Proc. 62",
+   "year": 1966,
+   "title": "Establishing as Bongabon-mansalay Forest Reserve for Wood Production, Watershed, Soil Protection and Other Forest Uses, the Parcels of Public Domain Known as Timberland, Mindoro Oriental Land Classification Project Nos. 2-I and 19-E, Per B.F. Map L.C. 2367, Situated in the Municipalities of Bongabon and Mansalay, Province of Oriental Mindoro, Philippines",
+   "town": "mansalay",
+   "url": "https://lawphil.net/executive/proc/proc1966/proc_62_1966.html"
+  },
+  {
+   "id": "proc_88_1966",
+   "kind": "Proclamation",
+   "ref": "Proc. 88",
+   "year": 1966,
+   "title": "Establishing as Mansalay Forest Reserve for Wood Production, Watershed, Soil Protection and Other Forest Uses, the Parcels of Public Domain Known as Timberland, Mindoro Oriental Land Classification Project Nos. 2-F, 19-B and 20-a, Per B.F. Map L.C.-2227, Situated in the Municipalities of Bongabon, Mansalay and Roxas, Province of Mindoro Oriental, Philippines",
+   "town": "mansalay",
+   "url": "https://lawphil.net/executive/proc/proc1966/proc_88_1966.html"
+  },
+  {
+   "id": "eo_140_1965",
+   "kind": "Executive Order",
+   "ref": "EO 140",
+   "year": 1965,
+   "title": "Defining and Fixing the Boundaries of the Municipality of Gloria in the Province of Oriental Mindoro",
+   "town": "gloria",
+   "url": "https://lawphil.net/executive/execord/eo1965/eo_140_1965.html"
+  },
+  {
+   "id": "proc_434_1965",
+   "kind": "Proclamation",
+   "ref": "Proc. 434",
+   "year": 1965,
+   "title": "Serving for School Site Purposes a Certain Parcel of Land of the Public Domain of the Government Situated in the Municipality of Victoria Province of Mindoro Oriental, Island of Mindoro",
+   "town": "victoria",
+   "url": "https://lawphil.net/executive/proc/proc1965/proc_434_1965.html"
+  },
+  {
+   "id": "ra_4328_1965",
+   "kind": "Republic Act",
+   "ref": "RA 4328",
+   "year": 1965,
+   "title": "An Act Increasing the Number of Assistant Provincial Fiscals for the Province of Oriental Mindoro, Amending for the Purpose Section Sixteen Hundred Seventy-four of the Administrative Code, as Amended",
+   "town": null,
+   "url": "https://lawphil.net/statutes/repacts/ra1965/ra_4328_1965.html"
+  },
+  {
+   "id": "proc_284_1964",
+   "kind": "Proclamation",
+   "ref": "Proc. 284",
+   "year": 1964,
+   "title": "Establishing as MT. Kabangyasan Forest Reserve for Wood Production, Watershed, Soil Protection, and Other Forest Uses, the Parcels of Public Domain Known as Timberland, Oriental Mindoro Land Classification Project Nos. 1-M, 5-K, 10-B and 18-a, Per B. F. Map L. C.-2237, Situated in the Municipalities of Naujan, Calapan; Baco, and San Teodoro, Province of Oriental Mindoro, Philippines",
+   "town": "calapan-city",
+   "url": "https://lawphil.net/executive/proc/proc1964/proc_284_1964.html"
+  },
+  {
+   "id": "proc_286_1964",
+   "kind": "Proclamation",
+   "ref": "Proc. 286",
+   "year": 1964,
+   "title": "Establishing as Southern Mindoro Forest Reserve for Wood Production, Watershed, Soil Protection, and Other Forest Uses, the Parcels of Public Domain Known as Timberland, Oriental Mindoro Land Classification Project Nos. 8-C and 19-D, and Occidental Mindoro Land Classification Project Nos. 9-G and 17-G, Per B.F. Map L.C-2125, Situated in the Municipalities of Bulalacao and Mansalay, Province of Oriental Mindoro and Municipalities of San Jose and Sablayan, Province of Occidental Mindoro, Philippines",
+   "town": "mansalay",
+   "url": "https://lawphil.net/executive/proc/proc1964/proc_286_1964.html"
+  },
+  {
+   "id": "proc_51_1962",
+   "kind": "Proclamation",
+   "ref": "Proc. 51",
+   "year": 1962,
+   "title": "Reserving for School Site Purposes a Certain Parcel of the Public Domain Situated in the Barrio of Sta. Brigida, Municipality of Mansalay, Province of Oriental Mindoro, Island of Mindoro",
+   "town": "mansalay",
+   "url": "https://lawphil.net/executive/proc/proc1962/proc_51_1962.html"
+  },
+  {
+   "id": "proc_793_1961",
+   "kind": "Proclamation",
+   "ref": "Proc. 793",
+   "year": 1961,
+   "title": "Excluding from Operation of Proclamation No. 282, Dated March 27, 1956, Which Established the Naujan Lake National Park, Certain Portions of the Area Embraced Therein Situated in the Municipalities of Naujan, Victoria, and Pola, Province of Oriental Mindoro, Island of Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc1961/proc_793_1961.html"
+  },
+  {
+   "id": "eo_620_1953",
+   "kind": "Executive Order",
+   "ref": "EO 620",
+   "year": 1953,
+   "title": "Organizing a Portion of the Municipality of Naujan, Province of Oriental Mindoro, into an Independent Municipality Under the Name of Victoria",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/execord/eo1953/eo_620_1953.html"
+  },
+  {
+   "id": "proc_260_1951",
+   "kind": "Proclamation",
+   "ref": "Proc. 260",
+   "year": 1951,
+   "title": "Reserving for Agricultural School Site Purposes to Be Known as the Mindoro Agricultural School Certain Parcels of the Public Domain Situated in the Municipality of Naujan, Province of Mindoro Oriental, Island of Mindoro",
+   "town": "naujan",
+   "url": "https://lawphil.net/executive/proc/proc1951/proc_260_1951.html"
+  },
+  {
+   "id": "proc_261_1951",
+   "kind": "Proclamation",
+   "ref": "Proc. 261",
+   "year": 1951,
+   "title": "Reserving for Stock Farm Purposes a Certain Parcel of the Public Domain Situated in the Municipality of Mansalay, Province of Mindoro Oriental, Island of Mindoro",
+   "town": "mansalay",
+   "url": "https://lawphil.net/executive/proc/proc1951/proc_261_1951.html"
+  },
+  {
+   "id": "proc_186_1950",
+   "kind": "Proclamation",
+   "ref": "Proc. 186",
+   "year": 1950,
+   "title": "Fixing the Date of Effectivity of Republic Act No. 505 Entitled \"an Act to Create the Provinces of Oriental Mindoro and Occidental Mindoro.\"",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1950/proc_186_1950.html"
+  },
+  {
+   "id": "proc_211_1950",
+   "kind": "Proclamation",
+   "ref": "Proc. 211",
+   "year": 1950,
+   "title": "Declaring Wednesday, November 15, 1950, as a Special Public Holiday in the Provinces of Mindoro Oriental and Mindoro Occidental",
+   "town": null,
+   "url": "https://lawphil.net/executive/proc/proc1950/proc_211_1950.html"
+  }
+ ]
+}

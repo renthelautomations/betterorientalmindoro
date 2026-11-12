@@ -16,6 +16,7 @@ import { Tabs } from "@/components/kit/Interactive";
 import LineChart from "@/components/kit/LineChart";
 import { Divider } from "@/components/kit/Motifs";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
+import { getTownBarangays } from "@/lib/barangays";
 import { getBarangays, getBounds, getMunicipalities, getMunicipality } from "@/lib/municipalities";
 import { fmtInt, fmtPct, fmtPeso, getProvinceStats, getStats, popGrowth } from "@/lib/stats";
 import { hotlinesForBayan } from "@/lib/hotlines";
@@ -104,6 +105,14 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
           {province.length ? <div className="grid auto-rows-fr gap-4 sm:grid-cols-2 lg:grid-cols-3">{province.slice(0, 6).map((h) => <HotlineTile key={h.id} h={h} tone={h.category} />)}</div> : <p className="text-sm text-black/70"><T k="bayan.noprov" /></p>}
         </div>
         <Link href="/hotlines" className={link}><T k="bayan.allhot" /></Link>
+      </div>
+    ) },
+    { id: "barangay", label: "brg.tab", badge: String(nBrgy), panel: (
+      <div>
+        <p className="mb-4 text-black/75"><T k="brg.list.p" /></p>
+        <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          {getTownBarangays(m.slug).map((b) => <li key={b.code}><Link href={`/bayan/${m.slug}/${b.slug}`} className="flex min-h-11 items-center rounded-full bg-white px-4 py-2 font-semibold text-fiesta-navy shadow-sm ring-1 ring-black/10 transition hover:bg-fiesta-blue hover:text-white hover:ring-fiesta-blue">{b.name}</Link></li>)}
+        </ul>
       </div>
     ) },
     { id: "opisyal", label: "off.tab", panel: <TownOfficials slug={m.slug} isCity={m.isCity} /> },

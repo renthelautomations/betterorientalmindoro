@@ -44,16 +44,21 @@ export function buildMenu(serviceSlugs: string[]): NavEntry[] {
     { label: "nav.towns", href: "/bayan", match: ["/bayan"] },
     { label: "nav.services", href: "/serbisyo", match: ["/serbisyo"], menu: { cols: 3, all: { label: "menu.all.svc", href: "/serbisyo" }, items: serviceSlugs.map((slug) => it(`svc.cat.${slug}`, `/serbisyo#${slug}`, `svc.cat.${slug}.b`)) } },
     { label: "nav.hotlines", href: "/hotlines", match: ["/hotlines"] },
-    { label: "nav.data", match: ["/proyekto", "/estatistika", "/badyet", "/dynasties", "/transparency"], menu: { cols: 3, items: [
+    { label: "nav.data", match: ["/proyekto", "/estatistika", "/badyet", "/dynasties", "/transparency", "/batas"], menu: { cols: 3, items: [
       it("nav.projects", "/proyekto", "menu.data.proyekto.d"),
       it("nav.stats", "/estatistika", "menu.data.estat.d"),
       it("nav.dynasties", "/dynasties", "menu.data.dyn.d"),
       it("nav.budget", "/badyet", "menu.data.badyet.d"),
       it("menu.all.redflags", "/badyet/redflags", "menu.data.rf.d"),
       it("nav.transparency", "/transparency", "menu.data.tp.d"),
+      it("menu.law", "/batas", "menu.law.d"),
     ] } },
-    { label: "nav.gov", href: "/pamahalaan", match: ["/pamahalaan"], menu: { cols: 3, all: { label: "menu.all.gov", href: "/pamahalaan" }, items: [
-      it("gov.tab.officials", "/pamahalaan#opisyal", "menu.gov.opisyal.d"),
+    { label: "nav.gov", href: "/pamahalaan", match: ["/pamahalaan", "/mga-opisyal", "/barangay"], menu: { cols: 4, all: { label: "menu.all.gov", href: "/pamahalaan" }, items: [
+      it("menu.off.prov", "/mga-opisyal#of-prov", "menu.off.prov.d"),
+      it("menu.off.provoff", "/pamahalaan#opisyal", "menu.off.provoff.d"),
+      it("menu.off.town", "/mga-opisyal#of-towns", "menu.off.town.d"),
+      it("menu.off.townoff", "/bayan", "menu.off.townoff.d"),
+      it("menu.off.brgy", "/barangay", "menu.off.brgy.d"),
       it("gov.tab.eo", "/pamahalaan#eo", "menu.gov.eo.d"),
       it("gov.tab.bids", "/pamahalaan#bidding", "menu.gov.bidding.d"),
       it("gov.tab.reports", "/pamahalaan#ulat", "menu.gov.ulat.d"),
