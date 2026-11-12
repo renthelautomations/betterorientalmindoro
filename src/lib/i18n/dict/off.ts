@@ -1,0 +1,23 @@
+// current-officials strings: "off.thing": ["English", "Filipino"]. Names and parties stay as published.
+export const OFF = {
+  "off.tab": ["Officials", "Mga opisyal"],
+  "off.eyebrow": ["CURRENT OFFICIALS", "KASALUKUYANG MGA OPISYAL"],
+  "off.title": ["Who leads Oriental Mindoro", "Sino ang namumuno sa Oriental Mindoro"],
+  "off.lead": ["The officials elected in May 2025, from the governor down to the town councilors. Their term runs 2025 to 2028.", "Ang mga opisyal na nahalal noong Mayo 2025, mula gobernador hanggang konsehal ng bayan. Ang termino nila ay 2025 hanggang 2028."],
+  "off.prov.h": ["Province", "Probinsya"],
+  "off.towns.h": ["Mayors and vice mayors", "Mga alkalde at bise alkalde"],
+  "off.town.pick": ["Open the town page for its councilors.", "Buksan ang pahina ng bayan para sa mga konsehal."],
+  "off.role.governor": ["Governor", "Gobernador"], "off.role.vice-governor": ["Vice governor", "Bise gobernador"],
+  "off.role.house": ["House representative", "Kinatawan sa Kongreso"], "off.role.board": ["Provincial board member", "Miyembro ng Sangguniang Panlalawigan"],
+  "off.role.mayor": ["Mayor", "Alkalde"], "off.role.vice-mayor": ["Vice mayor", "Bise alkalde"], "off.role.councilor": ["Councilor", "Konsehal"],
+  "off.council.h": ["Town council", "Sangguniang Bayan"], "off.council.city": ["City council", "Sangguniang Panlungsod"],
+  "off.board.h": ["Provincial board", "Sangguniang Panlalawigan"], "off.house.h": ["House of Representatives", "Kapulungan ng mga Kinatawan"],
+  "off.brgy.h": ["Barangay officials", "Mga opisyal ng barangay"],
+  "off.brgy.p": ["Not listed yet. The source covers governor to councilor only. Barangay officials were elected in 2023 and are not in this data.", "Wala pa. Hanggang konsehal lang ang saklaw ng pinagmulan. Nahalal ang mga opisyal ng barangay noong 2023 at wala sila sa datos na ito."],
+  "off.calapan": ["The source lists 8 councilors for Calapan City. A city council normally has 10, so this list may be missing two.", "8 konsehal ang nakalista sa pinagmulan para sa Lungsod ng Calapan. Karaniwang 10 ang sa isang sangguniang panlungsod, kaya posibleng kulang ng dalawa ang listahang ito."],
+  "off.src": ["Source: OpenHalalan (BetterGov dataset 25), ODbL. Winners of the May 2025 election.", "Pinagmulan: OpenHalalan (BetterGov dataset 25), ODbL. Mga nanalo sa halalan noong Mayo 2025."],
+  "off.src.note": ["Names are written as in the source. Not an official COMELEC list.", "Nakasulat ang mga pangalan ayon sa pinagmulan. Hindi ito opisyal na listahan ng COMELEC."],
+  "off.all": ["All officials of the province", "Lahat ng opisyal ng probinsya"],
+  "off.none": ["No officials listed", "Walang nakalistang opisyal"],
+  "off.col.town": ["Town", "Bayan"], "off.col.mayor": ["Mayor", "Alkalde"], "off.col.vice": ["Vice mayor", "Bise alkalde"],
+} as const;

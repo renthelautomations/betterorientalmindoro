@@ -22,6 +22,7 @@ import { hotlinesForBayan } from "@/lib/hotlines";
 import LguDirectory from "@/components/site/LguDirectory";
 import { getLguDirectory } from "@/lib/lgu-directory";
 import LguContactCard from "@/components/site/LguContactCard";
+import TownOfficials from "@/components/site/TownOfficials";
 import ProjectRow from "@/components/site/ProjectRow";
 import { getProjects } from "@/lib/projects";
 import { getProvince, getTown, sharedSurnames, surnameOf, titleCase, winnersGrid } from "@/lib/dynasties";
@@ -103,6 +104,7 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
         <Link href="/hotlines" className={link}><T k="bayan.allhot" /></Link>
       </div>
     ) },
+    { id: "opisyal", label: "off.tab", panel: <TownOfficials slug={m.slug} isCity={m.isCity} /> },
     ...(getLguDirectory(m.slug) ? [{ id: "direktoryo", label: "lgu.dir.tab", badge: String(getLguDirectory(m.slug)!.offices.length), panel: <LguDirectory slug={m.slug} name={m.name} /> }] : []),
     { id: "proyekto", label: "town.projects", badge: String(projects.length), panel: projects.length ? (
       <SplitSticky side={<div><p className={h3}><T k="bayan.status.h" /></p><BigDonut slices={slices} format={(n) => n.toLocaleString("en-PH")} centerLabel="bayan.projects.lc" /></div>}>

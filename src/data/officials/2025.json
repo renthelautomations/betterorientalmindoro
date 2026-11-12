@@ -1,0 +1,1483 @@
+{
+ "source": "OpenHalalan (BetterGov dataset 25), ODbL v1.0",
+ "sourceUrl": "https://data.bettergov.ph/datasets/25",
+ "term": "2025-2028",
+ "items": [
+  {
+   "position": "GOVERNOR",
+   "town": null,
+   "last": "DOLOR",
+   "first": "BONZ",
+   "middle": null,
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "VICE GOVERNOR",
+   "town": null,
+   "last": "PEREZ",
+   "first": "CA",
+   "middle": "JOJO",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "MEMBER, HOUSE OF REPRESENTATIVES",
+   "town": null,
+   "last": "PANALIGAN",
+   "first": "ARNAN",
+   "middle": "TANYAG",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "MEMBER, HOUSE OF REPRESENTATIVES",
+   "town": null,
+   "last": "UMALI",
+   "first": "PA",
+   "middle": null,
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "ARAGO",
+   "first": "RYAN",
+   "middle": "ZARRA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "BRUCAL",
+   "first": "BONG",
+   "middle": "SIAPCO",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "BUENAVENTURA",
+   "first": "MANNY",
+   "middle": "SANTOS",
+   "title": "ATTY.",
+   "party": "PFP"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "CASUBUAN",
+   "first": "ALELY",
+   "middle": "CARANZO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "DIMAPILIS",
+   "first": "JOM",
+   "middle": null,
+   "title": "ATTY.",
+   "party": "GSM"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "ILANO",
+   "first": "FAY",
+   "middle": null,
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "LEACHON",
+   "first": "RL",
+   "middle": null,
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "RUGA",
+   "first": "ROLAND",
+   "middle": "HERNANDEZ",
+   "title": "ATTY.",
+   "party": "GSM"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "UMALI",
+   "first": "PAU",
+   "middle": null,
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "PROVINCIAL BOARD MEMBER",
+   "town": null,
+   "last": "YAP",
+   "first": "ANTHONY",
+   "middle": "LEE",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "MAYOR",
+   "town": "baco",
+   "last": "ROLDAN",
+   "first": "ALLAN",
+   "middle": "ABRIGO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "MAYOR",
+   "town": "bansud",
+   "last": "MORADA",
+   "first": "RONALDO",
+   "middle": "MORTEL",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "MAYOR",
+   "town": "bongabong",
+   "last": "MALALUAN",
+   "first": "MIKE",
+   "middle": "KING",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "MAYOR",
+   "town": "bulalacao",
+   "last": "CABAGAY",
+   "first": "LUMEL",
+   "middle": "LG",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "MAYOR",
+   "town": "calapan-city",
+   "last": "LEACHON",
+   "first": "DOY",
+   "middle": null,
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "MAYOR",
+   "town": "gloria",
+   "last": "ONG",
+   "first": "TESSIE",
+   "middle": null,
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "MAYOR",
+   "town": "mansalay",
+   "last": "MALIWANAG",
+   "first": "FERDINAND",
+   "middle": "MAULION",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "MAYOR",
+   "town": "naujan",
+   "last": "TEVES",
+   "first": "HENRY",
+   "middle": "CALIGNER",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "MAYOR",
+   "town": "pinamalayan",
+   "last": "MAGSINO",
+   "first": "RODEL",
+   "middle": "MANTARING",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "MAYOR",
+   "town": "pola",
+   "last": "CRUZ",
+   "first": "INA",
+   "middle": "MINDANAO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "MAYOR",
+   "town": "puerto-galera",
+   "last": "YLAGAN",
+   "first": "ROBINHOOD",
+   "middle": "DE CHAVEZ",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "MAYOR",
+   "town": "roxas",
+   "last": "DIMAPILIS",
+   "first": "JERWIN",
+   "middle": "SANQUE",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "MAYOR",
+   "town": "san-teodoro",
+   "last": "MIRANDA",
+   "first": "KAREN",
+   "middle": "PONCE",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "MAYOR",
+   "town": "socorro",
+   "last": "PEREZ",
+   "first": "NEMMEN",
+   "middle": "ORTEGA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "MAYOR",
+   "town": "victoria",
+   "last": "INCIONG",
+   "first": "RICHARD",
+   "middle": "VALENCIA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "baco",
+   "last": "CASTILLO",
+   "first": "ERIC",
+   "middle": "VICTORIO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "bansud",
+   "last": "MIRANO",
+   "first": "PRINCESS",
+   "middle": "CARANDANG",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "bongabong",
+   "last": "BARCELONA",
+   "first": "JAYSON",
+   "middle": "MACARAEG",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "bulalacao",
+   "last": "ACOSTA",
+   "first": "GERMAN",
+   "middle": "SALAS",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "calapan-city",
+   "last": "IGNACIO",
+   "first": "BIM",
+   "middle": "RODOLFO",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "gloria",
+   "last": "CONDESA",
+   "first": "WILFREDO",
+   "middle": "SALAZAR",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "mansalay",
+   "last": "MALIWANAG",
+   "first": "JOEL",
+   "middle": "MAULION",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "naujan",
+   "last": "MELGAR",
+   "first": "BUDGET",
+   "middle": "JANDA",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "pinamalayan",
+   "last": "BALDOS",
+   "first": "ARIS",
+   "middle": "APASAN",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "pola",
+   "last": "PANGANIBAN",
+   "first": "KUYA",
+   "middle": "PASCO",
+   "title": null,
+   "party": "LDP"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "puerto-galera",
+   "last": "ILAGAN",
+   "first": "ROCKY",
+   "middle": "DATINGUINOO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "roxas",
+   "last": "QUIATCHON",
+   "first": "BONG",
+   "middle": "SAGADO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "san-teodoro",
+   "last": "PY",
+   "first": "BOYET",
+   "middle": "RAMOS",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "socorro",
+   "last": "TOLENTINO",
+   "first": "ALLANKENNETH",
+   "middle": "PEREZ",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "VICE MAYOR",
+   "town": "victoria",
+   "last": "MALABANAN",
+   "first": "LITO",
+   "middle": "CASTILLO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "ACEVEDA",
+   "first": "RIGOR",
+   "middle": "ACEVEDA",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "CEPILLO",
+   "first": "YSSAY",
+   "middle": "ASINAS",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "DE OCAMPO",
+   "first": "NARDS",
+   "middle": "LALONGISIP",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "DUKA",
+   "first": "ALLAN",
+   "middle": "QUINTO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "ICAL",
+   "first": "MANOY",
+   "middle": "RAMIREZ",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "JIMENEZ",
+   "first": "VERING",
+   "middle": "BLANCO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "NAJITO",
+   "first": "JAY",
+   "middle": "CARPIO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "baco",
+   "last": "PEREÑA",
+   "first": "ARLENE",
+   "middle": "MAGPILI",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "CATUBAY",
+   "first": "TITO",
+   "middle": "AXIBAL",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "EVANGELISTA",
+   "first": "WILLIAM",
+   "middle": "CALDERON",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "FERRARO",
+   "first": "JAYLIBEE",
+   "middle": "MAZO",
+   "title": "ATTY.",
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "MAGADIA",
+   "first": "PORCHIA",
+   "middle": "LAVAREZ",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "MAGADIA",
+   "first": "SIR",
+   "middle": "BIEN",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "MORADA",
+   "first": "RONALD",
+   "middle": "BARCELO",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "ROLDAN",
+   "first": "NILO",
+   "middle": "ENRIQUEZ",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bansud",
+   "last": "SIGUE",
+   "first": "BENEDICK",
+   "middle": "MORALES",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "ALEA",
+   "first": "JEFF",
+   "middle": "BRUCAL",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "ATIENZA",
+   "first": "NIÑA",
+   "middle": "FERNANDEZ",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "CANDELARIO",
+   "first": "RICHARD",
+   "middle": "SEÑO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "ENRIQUEZ",
+   "first": "EMY",
+   "middle": "ISLER",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "GUNO-SIBULAN",
+   "first": "CINDEE",
+   "middle": "VILLEN",
+   "title": "ATTY.",
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "LIWANAG",
+   "first": "DODIE",
+   "middle": "LAZARO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "MONREAL",
+   "first": "MELODY",
+   "middle": "FLORES",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bongabong",
+   "last": "VILLANUEVA",
+   "first": "ARNOLD",
+   "middle": "ARTILLAGA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "EGUILLON",
+   "first": "NESTOR",
+   "middle": null,
+   "title": "CAPT.",
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "EVANGELIO",
+   "first": "KAP",
+   "middle": "ROGER",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "FALLARIA",
+   "first": "ROMEO",
+   "middle": null,
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "MAGBANUA",
+   "first": "RAMON",
+   "middle": "GARAO",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "NARCISO",
+   "first": "JOEJIE",
+   "middle": "RONDAEL",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "OSORIO",
+   "first": "MOSES",
+   "middle": null,
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "REYES",
+   "first": "JERUS",
+   "middle": "BANTUGAN",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "bulalacao",
+   "last": "SALAS",
+   "first": "GUILLERMO",
+   "middle": "JR.",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "AGUA",
+   "first": "RIUS",
+   "middle": "CUI",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "CABAILO",
+   "first": "JUN",
+   "middle": "JR.",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "DE JESUS",
+   "first": "MYLENE",
+   "middle": "ARIAS",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "FORTU",
+   "first": "GENIE",
+   "middle": "RICABLANCA",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "GOCO",
+   "first": "RICKA",
+   "middle": "PLATA",
+   "title": "ATTY.",
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "INFANTADO",
+   "first": "RAP",
+   "middle": null,
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "TANYAG-PANALIGAN",
+   "first": "BEL",
+   "middle": null,
+   "title": "ATTY.",
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "calapan-city",
+   "last": "UMALI",
+   "first": "JOSEPH",
+   "middle": null,
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "ALVAREZ",
+   "first": "GEORGE",
+   "middle": "PANIT",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "BAWASANTA",
+   "first": "CRISPIN",
+   "middle": "JAMILLA",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "DAPITO",
+   "first": "RUDY",
+   "middle": "SENA",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "DIONA",
+   "first": "NELSON",
+   "middle": "BUMATAY",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "FAMPULME",
+   "first": "TIMO",
+   "middle": "FRONDA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "JAMILLA",
+   "first": "NICK",
+   "middle": "MENDOZA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "LALO",
+   "first": "SK",
+   "middle": "DEL MUNDO",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "gloria",
+   "last": "ONG",
+   "first": "NELCY",
+   "middle": "GADO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "DIMATULAC",
+   "first": "ROMAR",
+   "middle": "MARCELLANA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "GADON",
+   "first": "SIR",
+   "middle": "DE BELEN",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "INGAYAN",
+   "first": "LOWIE",
+   "middle": "ANGGIN",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "MANING",
+   "first": "NOMAR",
+   "middle": "CLEMENTE",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "MARQUEZ",
+   "first": "CYRUS",
+   "middle": "GATARIN",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "RAMOS",
+   "first": "ENTENG",
+   "middle": "MENDOZA",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "SUCGANG",
+   "first": "CEZAR",
+   "middle": "TORREFIEL",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "mansalay",
+   "last": "TRAJICO",
+   "first": "NOEL",
+   "middle": "MALIWANAG",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "BALBACAL",
+   "first": "ALLAN",
+   "middle": "MENDOZA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "BUGARIN",
+   "first": "JUN",
+   "middle": "SARABIA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "DE VILLA",
+   "first": "ELMAR",
+   "middle": "BALITA",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "DOLOR",
+   "first": "PAT",
+   "middle": "REDUTA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "MARCOS",
+   "first": "MARION",
+   "middle": "DELA FUENTE",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "VARGAS",
+   "first": "MICHAEL",
+   "middle": "DUMLAO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "VIRAY",
+   "first": "WIL",
+   "middle": "ALO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "naujan",
+   "last": "YLAGAN",
+   "first": "JOEFEL",
+   "middle": "CULLA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "DELMO",
+   "first": "DUNHILL",
+   "middle": "MORATILLA",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "HERNANDEZ",
+   "first": "DOK",
+   "middle": "DE GUIA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "HERNANDEZ",
+   "first": "JING-JING",
+   "middle": "DE GUIA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "JARABE",
+   "first": "MADAM",
+   "middle": "DAJOYAG",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "LIWANAG",
+   "first": "FATIMA",
+   "middle": "GARCIA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "MADRID",
+   "first": "TOTOY",
+   "middle": "DELAS ALAS",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "PEREZ",
+   "first": "RONNIE",
+   "middle": "MASCARIÑAS",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pinamalayan",
+   "last": "UMBAO",
+   "first": "JEFF",
+   "middle": "AGAMATA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "BATHAN",
+   "first": "ROMEL",
+   "middle": "MANOJO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "CLAVERIA",
+   "first": "OTOY",
+   "middle": "MAGTIBAY",
+   "title": null,
+   "party": "LDP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "FETIZANAN",
+   "first": "AD",
+   "middle": "LLOYD",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "FETIZANAN",
+   "first": "ANGKOL",
+   "middle": "JERRY",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "LINCALLO",
+   "first": "EMIE",
+   "middle": "SOTEJO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "MONTALBO",
+   "first": "MARIA",
+   "middle": "FRANCISCO",
+   "title": null,
+   "party": "LDP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "OLIVEROS",
+   "first": "BODOG",
+   "middle": "MANALO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "pola",
+   "last": "PANGANIBAN",
+   "first": "KAP",
+   "middle": "PASCO",
+   "title": null,
+   "party": "LDP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "ARMAMENTO",
+   "first": "EDITH",
+   "middle": "DATINGUINOO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "ATIENZA",
+   "first": "ACEVON",
+   "middle": "ROSALES",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "ATIENZA",
+   "first": "ARIS",
+   "middle": "ROSALES",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "DELGADO",
+   "first": "DIVINE",
+   "middle": null,
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "ENRIQUEZ",
+   "first": "DANNY",
+   "middle": "DELA TORRE",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "FLORIDA",
+   "first": "KAP",
+   "middle": "RAMOS",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "LOPEZ",
+   "first": "RODEL",
+   "middle": "BALITA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "puerto-galera",
+   "last": "MARQUEZ",
+   "first": "HAROLD",
+   "middle": "NG",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "BACAY",
+   "first": "PANGGA",
+   "middle": "TESORERO",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "BATICOS",
+   "first": "OBET",
+   "middle": "ABALOS",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "CARVAJAL",
+   "first": "DON",
+   "middle": "YASON",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "DE LA CRUZ",
+   "first": "DEN-DEN",
+   "middle": "DALIDA",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "DIMAPILIS",
+   "first": "KING",
+   "middle": "BRIONES",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "MAGNO",
+   "first": "DODOY",
+   "middle": "VILLANUEVA",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "PAJILA",
+   "first": "MAYETTE",
+   "middle": "REYES",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "roxas",
+   "last": "PONGYAN",
+   "first": "MICHAEL",
+   "middle": "ORTEGA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "ALDABA",
+   "first": "GREG",
+   "middle": "GAREJO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "ALPUERTO",
+   "first": "ELYN",
+   "middle": "CUETO",
+   "title": null,
+   "party": "PFP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "ARENILLO",
+   "first": "TUSIK",
+   "middle": "DE GUZMAN",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "ASPECTO",
+   "first": "KHIM",
+   "middle": "ROXAS",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "ATAYDE",
+   "first": "STEVE",
+   "middle": "AUSTRIA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "BALAIBO",
+   "first": "KUYA",
+   "middle": "DIMAANO",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "LAZO",
+   "first": "DOK",
+   "middle": "MERCENE",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "san-teodoro",
+   "last": "SANCHEZ",
+   "first": "ZALDY",
+   "middle": "TOLENTINO",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "ANYAYAHAN",
+   "first": "ELMAR",
+   "middle": "GONZALES",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "BALZOTE",
+   "first": "LILIBETH",
+   "middle": "SABAYBAY",
+   "title": null,
+   "party": "IND"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "DE CASTRO",
+   "first": "JULIUSELESIS",
+   "middle": "RUBIA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "GAMEZ",
+   "first": "NIMFA",
+   "middle": "MONTALBO",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "MAGTIBAY",
+   "first": "RYAN",
+   "middle": "PEREZ",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "MUTYA",
+   "first": "AMA",
+   "middle": "SOLANO",
+   "title": null,
+   "party": "LP"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "PINEDA",
+   "first": "ATE",
+   "middle": "MENDOZA",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "socorro",
+   "last": "UMBAO",
+   "first": "MARVIN",
+   "middle": "GUADANIA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "ATIENZA",
+   "first": "KAP",
+   "middle": "ANG",
+   "title": null,
+   "party": "GSM"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "BARBER",
+   "first": "RAJA",
+   "middle": "GARDOCE",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "CALISI",
+   "first": "JEN",
+   "middle": "LUMPAS",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "DEL MUNDO",
+   "first": "FEI",
+   "middle": "AGUILA",
+   "title": null,
+   "party": "AKSYON"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "DIMAANO-DUMAS",
+   "first": "MERCY",
+   "middle": "ABACAN",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "DUMAS",
+   "first": "CHESTER",
+   "middle": "TADENA",
+   "title": null,
+   "party": "LAKAS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "ESTEBAN",
+   "first": "EMMANUEL",
+   "middle": "GALINDO",
+   "title": null,
+   "party": "MBS"
+  },
+  {
+   "position": "COUNCILOR",
+   "town": "victoria",
+   "last": "MARANAN",
+   "first": "WILLY",
+   "middle": "MARANAN",
+   "title": null,
+   "party": "GSM"
+  }
+ ]
+}

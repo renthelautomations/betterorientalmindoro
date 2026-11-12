@@ -21,6 +21,7 @@ const PAGES: { tk: string; href: string; kw: string; pop?: boolean }[] = [
   { tk: "nav.transparency", href: "/transparency", kw: "transparency buwis tax bir collection philgeps procurement kontrata contracts awardee supplier pagbili bidding" },
   { tk: "rf.cta", href: "/badyet/redflags", kw: "red flag redflags badyet budget 2027 house bill nep pbc people budget coalition proyekto dpwh farm to market road iregularidad suriin" },
   { tk: "nav.dynasties", href: "/dynasties", kw: "dinastiya dynasties pamilya apelyido surname halalan election pulitika" },
+  { tk: "off.tab", href: "/mga-opisyal", kw: "officials mayor vice mayor governor congressman councilor konsehal alkalde gobernador kongresista opisyal halal", pop: true },
   { tk: "nav.gov", href: "/pamahalaan", kw: "pamahalaan government officials offices executive orders bids jobs careers investment opisyal opisina trabaho mamuhunan", pop: true },
   { tk: "gov.tab.jobs", href: "/pamahalaan#trabaho", kw: "jobs careers vacancies hiring trabaho bakante aplikasyon pamahalaan" },
   { tk: "gov.tab.invest", href: "/pamahalaan#mamuhunan", kw: "invest investment business sectors mamuhunan pamumuhunan negosyo" },
