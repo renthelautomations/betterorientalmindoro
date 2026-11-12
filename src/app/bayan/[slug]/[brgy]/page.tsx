@@ -3,12 +3,15 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BayanCrumbs, BayanTitle } from "@/components/site/BayanBits";
 import TownStat from "@/components/stats/TownStat";
+import { Avatar } from "@/components/site/OfficialCards";
 import ProjectRow from "@/components/site/ProjectRow";
 import TownEmblem from "@/components/kit/TownEmblem";
 import { Divider } from "@/components/kit/Motifs";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import { T } from "@/lib/i18n/i18n";
 import { getAllBarangays, getBarangay, getTownBarangays, projectsIn, townShapes } from "@/lib/barangays";
+import { getBarangayOfficials } from "@/lib/barangay-officials";
+import { TF } from "@/components/site/DynBits";
 import { getMunicipality } from "@/lib/municipalities";
 import { fmtInt, fmtPct, fmtPeso } from "@/lib/stats";
 
@@ -32,6 +35,7 @@ export default async function Barangay({ params }: PageProps<"/bayan/[slug]/[brg
   const siblings = getTownBarangays(slug);
   const townArea = siblings.reduce((s, x) => s + x.areaKm2, 0);
   const { shapes, P } = townShapes(slug);
+  const offs = getBarangayOfficials(b.code);
   return (
     <main>
       <div className="bg-fiesta-mint">
@@ -73,6 +77,22 @@ export default async function Barangay({ params }: PageProps<"/bayan/[slug]/[brg
             <Link href={`/proyekto?bayan=${slug}`} className={link}><T k="brg.all" /> →</Link>
           </div>
         </div>
+        <section aria-labelledby="brg-off" className="mt-12">
+          <h2 id="brg-off" className="font-serif text-2xl font-bold text-fiesta-navy"><T k="brg.off.h" /></h2>
+          {offs ? (
+            <>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {offs.officials.map((o, i) => (
+                  <li key={i} className="flex items-center gap-3 rounded-2xl bg-white p-3 shadow-sm ring-1 ring-black/5">
+                    <Avatar name={o.name.replace(/^HON\.\s*/i, "")} color={i === 0 ? FIESTA.orange : FIESTA.navy} className="h-11 w-11 text-sm" />
+                    <div className="min-w-0"><p className="text-[11px] font-semibold uppercase tracking-widest text-black/65">{o.position}</p><p className="font-serif text-base font-bold leading-tight text-fiesta-navy">{o.name.replace(/^HON\.\s*/i, "").replace(/\b(\w)(\w*)/g, (_: string, a: string, r: string) => a + r.toLowerCase())}</p></div>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-3 text-sm text-black/70"><TF k="brg.off.src" v={[offs.fetchedAt]} /> <a href={offs.site} target="_blank" rel="noopener noreferrer" className="font-semibold text-fiesta-blue underline underline-offset-2"><T k="brg.off.site" /> ↗</a></p>
+            </>
+          ) : <p className="mt-3 rounded-2xl bg-fiesta-mint p-4 text-sm text-black/75"><T k="brg.off.none" /></p>}
+        </section>
         <p className="mt-10 text-xs text-black/65"><T k="brg.src" /></p>
       </div>
     </main>

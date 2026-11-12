@@ -24,4 +24,11 @@ export const BRG = {
   "brg.idx.lead": ["426 barangays in 15 towns and cities. Open one for its map and the DPWH projects placed in it.", "426 barangay sa 15 bayan at lungsod. Buksan ang isa para sa mapa nito at sa mga proyekto ng DPWH na nakalagay rito."],
   "brg.idx.off": ["Barangay officials are not listed yet. There is no open dataset for the 2023 barangay election, so we show none rather than guess.", "Wala pang nakalistang opisyal ng barangay. Walang bukas na dataset para sa halalan ng barangay noong 2023, kaya wala kaming ipinapakita sa halip na manghula."],
   "brg.card.proj": ["{0} DPWH project(s)", "{0} proyekto ng DPWH"], "brg.card.none": ["No project placed", "Walang nakalagay na proyekto"],
+  "brg.off.h": ["Barangay officials", "Mga opisyal ng barangay"],
+  "brg.off.src": ["As listed on the barangay's own website, read on {0}. The barangay may not have updated it since.", "Ayon sa sariling website ng barangay, binasa noong {0}. Maaaring hindi pa ito naia-update ng barangay."],
+  "brg.off.site": ["Open the barangay website", "Buksan ang website ng barangay"],
+  "brg.off.none": ["Not listed yet. Only Pinamalayan's barangay websites list officials so far.", "Wala pa. Ang mga website lang ng mga barangay ng Pinamalayan ang naglilista ng mga opisyal sa ngayon."],
+  "lgu.dir.unlisted": ["Offices the town names, with no published contact yet", "Mga opisinang binanggit ng bayan, na wala pang nakalathalang contact"],
+  "lgu.dir.staff": ["Mayor's personal staff and special units", "Mga personal na kawani ng alkalde at mga espesyal na yunit"],
+  "lgu.dir.heads": ["Heads: the town's own site", "Mga pinuno: sariling site ng bayan"],
 } as const;

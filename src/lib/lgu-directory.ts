@@ -3,7 +3,7 @@ import data from "@/data/lgu-directory.json";
 export type OfficeGroup = "kaligtasan" | "kalusugan" | "opisina";
 // Offices exactly as the LGU's own site publishes them. Only offices with at least a phone or email are kept.
 export type Office = { name: string; category: OfficeGroup; phone: string[]; email: string[]; head?: string; address?: string; facebook?: string };
-export type LguDirectory = { source: string; verifiedAt: string; offices: Office[] };
+export type LguDirectory = { source: string; verifiedAt: string; offices: Office[]; headsSource?: string; staff?: { name: string; role: string; unit: string }[]; unlisted?: { office: string; head: string }[] };
 
 const all = data as Record<string, LguDirectory>;
 

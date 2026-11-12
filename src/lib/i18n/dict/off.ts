@@ -39,5 +39,6 @@ export const OFF = {
   "off.margin": ["Won by {0} votes", "Nanalo ng lamang na {0} boto"],
   "off.surname.s": ["Shares a surname with {0} other current official(s)", "May kaparehong apelyido ng {0} pang kasalukuyang opisyal"],
   "off.surname.body": ["{0}. A shared surname alone does not show a family tie.", "{0}. Hindi patunay ng ugnayang pampamilya ang magkaparehong apelyido."],
+  "off.comm.h": ["Sangguniang Bayan committees", "Mga komite ng Sangguniang Bayan"], "off.comm.p": ["Which councilor chairs which committee, as the town lists it.", "Aling konsehal ang namumuno sa aling komite, ayon sa listahan ng bayan."], "off.comm.src": ["Read on", "Binasa noong"],
   "off.col.town": ["Town", "Bayan"], "off.col.mayor": ["Mayor", "Alkalde"], "off.col.vice": ["Vice mayor", "Bise alkalde"],
 } as const;

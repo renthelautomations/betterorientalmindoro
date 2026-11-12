@@ -519,7 +519,8 @@
      "adminoffice@pinamalayan.gov.ph"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/profile.php?id=61556332202676"
+    "facebook": "https://www.facebook.com/profile.php?id=61556332202676",
+    "head": "Mr. Rosenio A. Toriano, EnP"
    },
    {
     "name": "Municipal Disaster Risk Reduction & Management Office (MDRRMO)",
@@ -533,7 +534,8 @@
      "pinamalayan.mdrrmo@gmail.com"
     ],
     "address": "Compound E/DOC Building Madrid Avenue cor Jaena St., Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/mdrrmo.pinamalayan/"
+    "facebook": "https://www.facebook.com/mdrrmo.pinamalayan/",
+    "head": "Mr. Marlo C. Rosales"
    },
    {
     "name": "Business Permits and Licenses Office",
@@ -546,7 +548,8 @@
      "permitsandlicensing@pinamalayan.gov.ph"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/bploadmin"
+    "facebook": "https://www.facebook.com/bploadmin",
+    "head": "Mr. Edwin C. Miciano"
    },
    {
     "name": "Municipal Planning & Development Office",
@@ -558,7 +561,8 @@
      "mpdo@pinamalayan.gov.ph"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/mpdopinamalayan"
+    "facebook": "https://www.facebook.com/mpdopinamalayan",
+    "head": "Mr. Orlex H. Marayan, EnP"
    },
    {
     "name": "Municipal Social Welfare and Development Office (MSWDO)",
@@ -570,7 +574,8 @@
      "mswdo@pinamalayan.gov.ph"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/mswdo.pinamalayan"
+    "facebook": "https://www.facebook.com/mswdo.pinamalayan",
+    "head": "Ms. Grace Eunice F. Fabella, RSW"
    },
    {
     "name": "Municipal Civil Registrar Office",
@@ -582,7 +587,8 @@
      "civilregistrar@pinamalayan.gov.ph"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/mcrpinamalayan"
+    "facebook": "https://www.facebook.com/mcrpinamalayan",
+    "head": "Mr. Enrique N. Mocling"
    },
    {
     "name": "Market Operations Department (MOD)",
@@ -595,7 +601,8 @@
      "marketoffice981@gmail.com"
     ],
     "address": "Zone II, Pinamalayan",
-    "facebook": "https://www.facebook.com/profile.php?id=61551192270468"
+    "facebook": "https://www.facebook.com/profile.php?id=61551192270468",
+    "head": "Mr. Alan Michael V. Ansaldo"
    },
    {
     "name": "Human Resource Management Office (HRMO)",
@@ -607,7 +614,8 @@
      "hrmo.mgop@gmail.com"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/HRMOPinamalayan"
+    "facebook": "https://www.facebook.com/HRMOPinamalayan",
+    "head": "Ms. Nemia B. Monsanto"
    },
    {
     "name": "General Services Office (GSO)",
@@ -619,7 +627,8 @@
      "gsopinamalayanmo@gmail.com"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/profile.php?id=61587248169157"
+    "facebook": "https://www.facebook.com/profile.php?id=61587248169157",
+    "head": "Mr. Rone B. Madrid"
    },
    {
     "name": "Zoning Division",
@@ -629,7 +638,8 @@
     ],
     "email": [],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "#"
+    "facebook": "#",
+    "head": "Mr. Norman T. Dela Cruz"
    },
    {
     "name": "Municipal Accounting Office",
@@ -639,7 +649,8 @@
     ],
     "email": [],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "#"
+    "facebook": "#",
+    "head": "Mr. Ace Brian A. Alimurong, CPA"
    },
    {
     "name": "Municipal Assessor's Office",
@@ -651,7 +662,8 @@
      "masso.lgupinamalayan@gmail.com"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/massopinamalayan"
+    "facebook": "https://www.facebook.com/massopinamalayan",
+    "head": "Mr. Carlito M. Mejico, CPA, REB"
    },
    {
     "name": "Municipal Engineering Office",
@@ -663,7 +675,8 @@
      "meopina2023@gmail.com"
     ],
     "address": "ALS Building, Pilot School, Zone IV, Pinamalayan",
-    "facebook": "https://www.facebook.com/profile.php?id=61551770654969"
+    "facebook": "https://www.facebook.com/profile.php?id=61551770654969",
+    "head": "Engr. Manolito E. Masculino"
    },
    {
     "name": "Pinamalayan Municipal Police Station",
@@ -707,7 +720,8 @@
      "pinamalayantourism@gmail.com"
     ],
     "address": "Tourist Information, Madrid Boulevard, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/PinamalayanTourism2023"
+    "facebook": "https://www.facebook.com/PinamalayanTourism2023",
+    "head": "Mr. Randy S. Rodil"
    },
    {
     "name": "Oriental Mindoro Provincial Hospital (Main Line for Trauma Transf.)",
@@ -729,7 +743,8 @@
     "email": [
      "healthoffice@pinamalayan.gov.ph"
     ],
-    "facebook": "https://www.facebook.com/profile.php?id=100065548027863"
+    "facebook": "https://www.facebook.com/profile.php?id=100065548027863",
+    "head": "Dr. Niña Kristine L. Punzalan, RN, MD, CPC-FP"
    },
    {
     "name": "Municipal Budget Office (MBO)",
@@ -741,7 +756,8 @@
      "pinamalayanbudgetoffice@gmail.com"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/MBOPinamalayan"
+    "facebook": "https://www.facebook.com/MBOPinamalayan",
+    "head": "Ms. Zaida D. Miciano"
    },
    {
     "name": "Municipal Agriculture Office (MAgO)",
@@ -753,7 +769,8 @@
      "danny_villacrusis@yahoo.com"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/MAgOInnovation"
+    "facebook": "https://www.facebook.com/MAgOInnovation",
+    "head": "Mr. Danny S. Villacrusis"
    },
    {
     "name": "Public Employment Service Office (PESO/SCO)",
@@ -763,7 +780,8 @@
      "pesopinamalayan@gmail.com"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/peso.pinamalayan"
+    "facebook": "https://www.facebook.com/peso.pinamalayan",
+    "head": "Mr. Ricardo A. Lim, EnP"
    },
    {
     "name": "Municipal Treasury Office (MTO)",
@@ -775,7 +793,8 @@
      "treasuryoffice.pinamalayan@gmail.com"
     ],
     "address": "Madrid Avenue, Zone III, Pinamalayan",
-    "facebook": "https://www.facebook.com/profile.php?id=100064173909259"
+    "facebook": "https://www.facebook.com/profile.php?id=100064173909259",
+    "head": "Mr. Plaridel S. Cupiado"
    },
    {
     "name": "Pinamalayan Community Hospital / Oriental Mindoro Central District Hospital",
@@ -786,9 +805,72 @@
     ],
     "address": "Strong Republic Nautical Hwy, Sitio Mataas na Bayan, Bgry Papandayan, Pinamalayan",
     "facebook": "https://www.facebook.com/omcdh"
+   },
+   {
+    "name": "Tech4ED Center",
+    "category": "opisina",
+    "phone": [],
+    "email": [
+     "tech4edpinamalayan@gmail.com"
+    ],
+    "head": "Mr. Edcel L. Marmol",
+    "address": "Pilot School, Tech4ED Center, Pinamalayan, Oriental Mindoro",
+    "facebook": "https://www.facebook.com/tech4edpinamalayan.official"
    }
   ],
-  "verifiedAt": "2026-11-08"
+  "verifiedAt": "2026-11-08",
+  "headsSource": "https://pinamalayan.gov.ph/",
+  "headsVerifiedAt": "2026-11-12",
+  "staff": [
+   {
+    "name": "Mr. Rio S. Mercene",
+    "role": "Executive Assistant II",
+    "unit": "Personal Staff"
+   },
+   {
+    "name": "Mr. Yuan Gabriel T. Ramos",
+    "role": "Chief-of-Staff",
+    "unit": "Personal Staff"
+   },
+   {
+    "name": "Mr. Francis Jay C. Salcedo",
+    "role": "Public Information Officer",
+    "unit": "Personal Staff"
+   },
+   {
+    "name": "Mr. Ken Edward N. Mejico",
+    "role": "Administrative Officer IV",
+    "unit": "Internal Audit Unit"
+   },
+   {
+    "name": "Ms. Mary Ann Joyce B. Frasdilla",
+    "role": "Cooperatives Development Specialist I",
+    "unit": "Special Work Units"
+   },
+   {
+    "name": "Mr. Edcel L. Marmol",
+    "role": "Tech4ED Center Manager",
+    "unit": "Special Work Units"
+   }
+  ],
+  "unlisted": [
+   {
+    "office": "Mayor's Office - Administrative Division",
+    "head": "Mr. Yuan Gabriel T. Ramos"
+   },
+   {
+    "office": "Municipal Environment and Natural Resources Management Division",
+    "head": "Engr. Angela Camille F. Samarita"
+   },
+   {
+    "office": "Slaughterhouse Operations Division",
+    "head": "Ms. Michelle M. Sulit"
+   },
+   {
+    "office": "Office of the Vice Mayor (Sangguniang Bayan)",
+    "head": "Hon. Aristeo \"Aris\" Apasan Baldos, Jr."
+   }
+  ]
  },
  "san-teodoro": {
   "source": "https://santeodoro.gov.ph/contact/",

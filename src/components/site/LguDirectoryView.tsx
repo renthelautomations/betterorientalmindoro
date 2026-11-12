@@ -44,8 +44,26 @@ export default function LguDirectoryView({ dir, name, collapsible }: { dir: LguD
         </ul>
       ) : <p className="rounded-2xl bg-white p-6 text-sm text-black/70 shadow-sm ring-1 ring-black/5">{t("lgu.dir.none")}</p>}
 
+      {(dir.unlisted?.length || dir.staff?.length) ? (
+        <div className="grid gap-4 md:grid-cols-2">
+          {dir.unlisted?.length ? (
+            <div className="rounded-2xl bg-fiesta-mint p-5">
+              <p className="font-serif text-lg font-bold text-fiesta-navy"><T k="lgu.dir.unlisted" /></p>
+              <ul className="mt-2 space-y-1.5 text-sm">{dir.unlisted.map((u) => <li key={u.office}><b>{u.office}</b> · {u.head}</li>)}</ul>
+            </div>
+          ) : null}
+          {dir.staff?.length ? (
+            <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
+              <p className="font-serif text-lg font-bold text-fiesta-navy"><T k="lgu.dir.staff" /></p>
+              <ul className="mt-2 space-y-1.5 text-sm">{dir.staff.map((u) => <li key={u.name}><b>{u.name}</b> · {u.role}</li>)}</ul>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+
       <p className="flex flex-wrap items-center gap-x-4 text-xs text-black/65">
         <a href={dir.source} rel="noopener" className="inline-flex min-h-11 items-center underline"><T k="common.source" /></a>
+        {dir.headsSource && <a href={dir.headsSource} rel="noopener" className="inline-flex min-h-11 items-center underline"><T k="lgu.dir.heads" /></a>}
         <span><T k="common.checked" /> {dir.verifiedAt}</span>
         <span><T k="lgu.dir.note" /></span>
       </p>
