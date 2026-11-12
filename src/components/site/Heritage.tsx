@@ -1,47 +1,44 @@
 import { T } from "@/lib/i18n/i18n";
-import KitIcon from "@/components/kit/KitIcon";
 import { FIESTA } from "@/components/kit/Patterns";
-import { MILESTONES, LIVING, type HSrc } from "@/lib/heritage";
+import { MILESTONES, type HSrc } from "@/lib/heritage";
+import HeritageArt from "./HeritageArt";
 
+const BADGE = [FIESTA.orange, FIESTA.blue, FIESTA.green, FIESTA.red, FIESTA.navy, FIESTA.yellow];
 const Src = ({ s }: { s: HSrc }) => (
   <a href={s.url} target="_blank" rel="noopener noreferrer" className="inline-block py-1 text-sm font-semibold text-fiesta-blue underline underline-offset-2">{s.label} ↗</a>
 );
 
-/** Home: verified milestones and living heritage. Content in src/lib/heritage.ts, text in dict/heritage.ts. */
+/** Home: verified milestones, newest first, zig-zag around a spine. Content in src/lib/heritage.ts, text in dict/heritage.ts. */
 export default function Heritage() {
   return (
-    <div className="mt-8 grid gap-10 lg:grid-cols-2">
-      <div>
-        <h3 className="font-serif text-2xl font-bold text-fiesta-navy"><T k="her.time.h" /></h3>
-        <ol className="mt-5 space-y-4">
-          {MILESTONES.map((m) => (
-            <li key={m.id} className="flex gap-4">
-              <span className="flex h-12 w-16 shrink-0 items-center justify-center rounded-xl bg-white text-base font-bold text-fiesta-blue shadow-sm ring-1 ring-black/5">{m.year}</span>
-              <div className="min-w-0 flex-1 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
-                <p className="font-serif text-lg font-bold leading-snug text-fiesta-navy"><T k={`her.t${m.id}`} /></p>
-                <p className="mt-1 text-black/75"><T k={`her.d${m.id}`} /></p>
-                <p className="mt-1 flex flex-wrap gap-x-4">{m.src.map((s) => <Src key={s.url} s={s} />)}</p>
+    <div className="mt-10">
+      <ol className="relative">
+        <span aria-hidden className="absolute bottom-0 left-1/2 top-0 hidden w-1 -translate-x-1/2 rounded-full bg-fiesta-navy/15 md:block" />
+        {MILESTONES.map((m, i) => {
+          const artLeft = i % 2 === 0;
+          const art = (
+            <div className={`h-52 overflow-hidden rounded-3xl shadow-sm ring-1 ring-black/10 md:h-64 ${artLeft ? "md:order-1" : "md:order-3"}`}><HeritageArt id={m.id} /></div>
+          );
+          const text = (
+            <div className={`flex flex-col justify-center ${artLeft ? "md:order-3 md:pl-4" : "md:order-1 md:pr-4 md:text-right"}`}>
+              <p className="text-sm font-bold tracking-widest text-black/60 md:hidden">{m.year}</p>
+              <h3 className="font-serif text-2xl font-bold leading-snug text-fiesta-navy"><T k={`her.t${m.id}`} /></h3>
+              <p className="mt-2 text-black/75"><T k={`her.d${m.id}`} /></p>
+              <p className={`mt-1 flex flex-wrap gap-x-4 ${artLeft ? "" : "md:justify-end"}`}>{m.src.map((s) => <Src key={s.url} s={s} />)}</p>
+            </div>
+          );
+          return (
+            <li key={m.id} className="grid items-center gap-4 pb-12 last:pb-0 md:grid-cols-[1fr_5rem_1fr] md:gap-0">
+              {art}
+              <div className="relative z-10 hidden justify-center md:order-2 md:flex">
+                <span className="flex h-16 w-16 items-center justify-center rounded-full border-4 border-[#fbf7f0] font-serif text-lg font-bold shadow-sm" style={{ background: BADGE[i % BADGE.length], color: i % BADGE.length === 5 ? FIESTA.navy : "#fff" }}>{m.year}</span>
               </div>
+              {text}
             </li>
-          ))}
-        </ol>
-      </div>
-      <div>
-        <h3 className="font-serif text-2xl font-bold text-fiesta-navy"><T k="her.living.h" /></h3>
-        <ul className="mt-5 space-y-4">
-          {LIVING.map((c) => (
-            <li key={c.id} className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
-              <div className="flex items-center gap-3">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-fiesta-blue/10" aria-hidden><KitIcon name={c.icon} color={FIESTA.blue} className="h-6 w-6" /></span>
-                <p className="font-serif text-lg font-bold text-fiesta-navy"><T k={`her.${c.id}.t`} /></p>
-              </div>
-              <p className="mt-3 text-black/75"><T k={`her.${c.id}.d`} /></p>
-              <Src s={c.src} />
-            </li>
-          ))}
-        </ul>
-        <p className="mt-5 text-sm text-black/70"><T k="her.note" /></p>
-      </div>
+          );
+        })}
+      </ol>
+      <p className="mt-10 text-sm text-black/70"><T k="her.note" /></p>
     </div>
   );
 }

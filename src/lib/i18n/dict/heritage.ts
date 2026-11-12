@@ -4,7 +4,6 @@ export const HER = {
   "her.h": ["History and culture", "Kasaysayan at kultura"],
   "her.lead": ["A few milestones and living traditions of Oriental Mindoro. Each one links to the source it was checked against.", "Ilang mahahalagang pangyayari at buhay na tradisyon ng Oriental Mindoro. May link ang bawat isa sa pinagkunan na pinagsuriang batayan."],
   "her.time.h": ["Milestones through time", "Mga pangyayari sa paglipas ng panahon"],
-  "her.living.h": ["Living heritage", "Buhay na pamana"],
   "her.note": ["Checked against the linked sources. Spotted a mistake or have a better source? Tell us through the Volunteer button.", "Sinuri sa mga naka-link na pinagmulan. May nakitang mali o mas mahusay na pinagmulan? Sabihin sa amin sa pamamagitan ng Volunteer button."],
   "her.t1571": ["Spanish rule reaches the island", "Umabot ang pamamahala ng Espanya sa isla"],
   "her.d1571": ["The provincial government's history page says Legazpi visited Mindoro in 1571 and brought the natives under Spanish rule.", "Ayon sa pahina ng kasaysayan ng pamahalaang panlalawigan, bumisita si Legazpi sa Mindoro noong 1571 at inilagay ang mga katutubo sa pamamahala ng Espanya."],
@@ -18,10 +17,4 @@ export const HER = {
   "her.d2000": ["The Center in Calapan was officially opened to the public on 14 November 2000.", "Opisyal na binuksan sa publiko ang Center sa Calapan noong 14 Nobyembre 2000."],
   "her.t2001": ["Pandang Gitab begins", "Nagsimula ang Pandang Gitab"],
   "her.d2001": ["The Festival of Lights, named after the dance Pandango sa Ilaw, began in Calapan in 2001 and has run yearly since.", "Ang Festival of Lights, na hango sa sayaw na Pandango sa Ilaw, ay nagsimula sa Calapan noong 2001 at ginaganap taon-taon mula noon."],
-  "her.mangyan.t": ["The Mangyan", "Ang mga Mangyan"],
-  "her.mangyan.d": ["The Mangyan Heritage Center lists eight groups on Mindoro: Iraya, Alangan, Tadyawan, Tau-buid, Bangon, Buhid, Hanunuo and Ratagnon.", "Walong grupo sa Mindoro ang nakalista ng Mangyan Heritage Center: Iraya, Alangan, Tadyawan, Tau-buid, Bangon, Buhid, Hanunuo at Ratagnon."],
-  "her.ambahan.t": ["Hanunoo script and ambahan", "Titik Hanunoo at ambahan"],
-  "her.ambahan.d": ["The Hanunoo Mangyan syllabary is used in ambahan poetry and in song, and is still in use today, says UNESCO.", "Ginagamit ang titik na Hanunoo ng Mangyan sa tula na ambahan at sa awit, at ginagamit pa rin ngayon, ayon sa UNESCO."],
-  "her.pandang.t": ["Pandang Gitab", "Pandang Gitab"],
-  "her.pandang.d": ["The Festival of Lights is the province's official festival, as announced in 2012.", "Ang Festival of Lights ang opisyal na pista ng lalawigan, ayon sa anunsyo noong 2012."],
 } as const;
