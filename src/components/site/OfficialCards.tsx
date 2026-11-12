@@ -15,21 +15,26 @@ const CYCLE = [FIESTA.orange, FIESTA.blue, FIESTA_DEEP.green, FIESTA.red, FIESTA
 const pick = (n: string) => CYCLE[[...n].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7) % CYCLE.length];
 /** Initials in a brand-colour circle, colour from the name so it stays the same on every page. */
 export const Avatar = ({ name, color, className = "h-11 w-11 text-sm" }: { name: string; color?: string; className?: string }) => (
-  <span className={`relative z-10 flex shrink-0 items-center justify-center rounded-full font-serif font-bold text-white shadow-sm ${className}`} style={{ background: color ?? pick(name) }} aria-hidden>{initials(name)}</span>
+  <span className={`relative z-10 flex shrink-0 items-center justify-center rounded-full font-serif font-bold text-white shadow-sm ${className}`} style={{ background: color ?? FIESTA.navy }} aria-hidden>{initials(name)}</span>
 );
 const title = (n: string) => n.replace(/\b(\w)(\w*)/g, (_, a, b) => a + b.toLowerCase());
 
 const PartyChip = ({ code, on = false }: { code: string | null; on?: boolean }) => {
   if (!code) return null;
-  const c = PARTY_COLOR[code] ?? FIESTA.navy, dark = c === FIESTA.yellow;
-  return <abbr title={PARTY[code] ?? code} className="no-underline"><span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold tracking-wide" style={on ? { background: "rgba(255,255,255,.92)", color: FIESTA.navy } : { background: c, color: dark ? FIESTA.navy : "#fff" }}>{code}</span></abbr>;
+  return (
+    <abbr title={PARTY[code] ?? code} className="no-underline">
+      <span className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-bold tracking-wide ${on ? "bg-white/95 text-fiesta-navy" : "bg-white/80 text-fiesta-navy"}`}>
+        <span className="h-2 w-2 rounded-full" style={{ background: PARTY_COLOR[code] ?? FIESTA.navy }} aria-hidden />{code}
+      </span>
+    </abbr>
+  );
 };
 
 const Stat = ({ label, children, className = "" }: { label: string; children: React.ReactNode; className?: string }) => (
   <div className={`min-w-0 rounded-2xl bg-fiesta-cream px-3 py-2.5 ${className}`}><p className="text-[11px] font-semibold uppercase tracking-widest text-black/60"><T k={label} /></p><div className="mt-0.5">{children}</div></div>
 );
 const Pips = ({ n, max = 3 }: { n: number; max?: number }) => (
-  <span className="inline-flex items-center gap-1" aria-hidden>{Array.from({ length: Math.max(max, n) }, (_, i) => <span key={i} className="h-2.5 w-2.5 rounded-full" style={{ background: i < n ? FIESTA.orange : "rgba(27,42,74,.15)" }} />)}</span>
+  <span className="inline-flex items-center gap-1" aria-hidden>{Array.from({ length: Math.max(max, n) }, (_, i) => <span key={i} className="h-2.5 w-2.5 rounded-full" style={{ background: i < n ? FIESTA.navy : "rgba(27,42,74,.15)" }} />)}</span>
 );
 
 /** Votes, vote share or rank, and how many terms in a row. */
@@ -42,6 +47,31 @@ const Stats = ({ o, compact = false }: { o: Official; compact?: boolean }) => (
     <Stat label="off.k.term" className="col-span-2 sm:col-span-1"><p className="flex items-center gap-2 font-serif text-lg font-bold leading-tight text-fiesta-navy"><span className="tabular-nums">{o.streak}</span><Pips n={o.streak} /></p></Stat>
   </div>
 );
+
+/** Seat-holder facts in one tinted panel: votes (with a bar against the top vote-getter), rank, term. Numbers share one style so the eye reads across. */
+const Cell = ({ label, children, className = "" }: { label: string; children: React.ReactNode; className?: string }) => (
+  <div className={`flex flex-col justify-between rounded-2xl bg-fiesta-cream px-4 py-3 ${className}`}><p className="text-[11px] font-semibold uppercase tracking-widest text-black/65"><T k={label} /></p><div className="mt-1">{children}</div></div>
+);
+const Strip = ({ o, max }: { o: Official; max?: number }) => {
+  const w = o.votes != null && max ? Math.max((o.votes / max) * 100, 6) : o.share != null ? o.share * 100 : 0;
+  const num = "font-serif text-2xl font-bold leading-none text-fiesta-navy tabular-nums";
+  return (
+    <div className="mt-5 grid grid-cols-[minmax(0,1fr)_auto_auto] gap-2">
+      <Cell label="off.k.votes">
+        <p className={num}>{o.votes != null ? fmtInt(o.votes) : "-"}</p>
+        <span className="mt-2 block h-1.5 overflow-hidden rounded-full bg-black/10" aria-hidden><span className="block h-full rounded-full bg-fiesta-blue" style={{ width: `${w}%` }} /></span>
+      </Cell>
+      {o.rank != null && (
+        <Cell label="off.k.rank" className="items-center text-center">
+          <p className={num}>{o.rank}</p><p className="mt-1 text-[11px] text-black/65"><TF k="off.rankof" v={[o.of ?? ""]} /></p>
+        </Cell>
+      )}
+      <Cell label="off.k.term.s" className="items-center text-center">
+        <p className={num}>{o.streak}</p><div className="mt-1.5 flex justify-center"><Pips n={o.streak} /></div>
+      </Cell>
+    </div>
+  );
+};
 
 /** Winner against the runner-up, bars to scale. */
 const Margin = ({ o }: { o: Official }) => {
@@ -60,19 +90,20 @@ const Margin = ({ o }: { o: Official }) => {
 };
 
 /** Earlier offices as small chips. */
-const Earlier = ({ o }: { o: Official }) => !o.earlier.length ? null : (
+const Earlier = ({ o, max = 4 }: { o: Official; max?: number }) => !o.earlier.length ? null : (
   <div className="mt-3"><p className="text-[11px] font-semibold uppercase tracking-widest text-black/60"><T k="off.before" /></p>
     <ul className="mt-1.5 flex flex-wrap gap-1.5">
-      {o.earlier.slice(0, 4).map((e, i) => <li key={i} className="rounded-full bg-fiesta-mint px-2.5 py-1 text-xs font-medium text-fiesta-navy"><T k={`off.role.${e.role}`} />{e.town ? ` · ${townName(e.town)}` : ""} · {e.years.length > 2 ? `${e.years[0]}–${e.years.at(-1)}` : e.years.join(", ")}</li>)}
+      {o.earlier.slice(0, max).map((e, i) => <li key={i} className="rounded-full bg-fiesta-cream px-3 py-1 text-xs font-medium text-fiesta-navy"><T k={`off.role.${e.role}`} />{e.town ? ` · ${townName(e.town)}` : ""} · {e.years.length > 2 ? `${e.years[0]}–${e.years.at(-1)}` : e.years.join(", ")}</li>)}
+      {o.earlier.length > max && <li className="rounded-full bg-fiesta-navy/10 px-2.5 py-1 text-xs font-bold text-fiesta-navy">+{o.earlier.length - max}</li>}
     </ul></div>
 );
 
 /** Shared surname, folded away so the card stays short. */
-const Surname = ({ o }: { o: Official }) => {
+const Surname = ({ o, flat = false }: { o: Official; flat?: boolean }) => {
   const same = sameSurname(o);
   if (!same.length) return null;
   return (
-    <details className="group mt-3 rounded-xl bg-fiesta-cream px-3 py-2 text-sm">
+    <details className={`group ${flat ? "" : "mt-3"} rounded-xl bg-fiesta-cream px-3 py-2 text-sm`}>
       <summary className="cursor-pointer list-none font-semibold text-fiesta-navy marker:hidden [&::-webkit-details-marker]:hidden"><span className="mr-1 inline-block transition group-open:rotate-90" aria-hidden>›</span><TF k="off.surname.s" v={[same.length]} /></summary>
       <p className="mt-2 text-black/75"><TF k="off.surname.body" v={[same.slice(0, 4).map((x) => `${x.name.split(" ").slice(-2).join(" ")} (${x.town ? townName(x.town) : "province"})`).join(", ")]} /> <Link href="/dynasties" className="font-semibold text-fiesta-blue underline underline-offset-2"><T k="off.surname.link" /></Link></p>
     </details>
@@ -88,7 +119,7 @@ export const Lead = ({ o }: { o: Official }) => (
       <span className="relative"><PartyChip code={o.party} on /></span>
     </div>
     <div className="-mt-7 flex flex-1 flex-col px-5 pb-5">
-      <span className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border-4 border-white font-serif text-lg font-bold text-white shadow-sm" style={{ background: PARTY_COLOR[o.party ?? ""] ?? FIESTA.navy, color: o.party === "LP" ? FIESTA.navy : "#fff" }} aria-hidden>{initials(o.name)}</span>
+      <span className="relative z-10 flex h-14 w-14 items-center justify-center rounded-full border-4 border-white font-serif text-lg font-bold text-white shadow-sm" style={{ background: FIESTA.navy }} aria-hidden>{initials(o.name)}</span>
       <p className="mt-2 font-serif text-2xl font-bold leading-snug text-fiesta-navy">{o.name}</p>
       {o.party && PARTY[o.party] && <p className="text-sm text-black/65">{PARTY[o.party]}</p>}
       <Stats o={o} /><Margin o={o} /><Earlier o={o} /><Surname o={o} />
@@ -96,15 +127,36 @@ export const Lead = ({ o }: { o: Official }) => (
   </li>
 );
 
-export const Person = ({ o }: { o: Official }) => (
-  <li className="flex flex-col rounded-3xl bg-white p-4 shadow-sm ring-1 ring-black/5">
-    <div className="flex items-start gap-3">
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full font-serif text-sm font-bold" style={{ background: PARTY_COLOR[o.party ?? ""] ?? FIESTA.navy, color: o.party === "LP" ? FIESTA.navy : "#fff" }} aria-hidden>{initials(o.name)}</span>
-      <div className="min-w-0 flex-1"><p className="font-semibold leading-snug text-fiesta-navy">{o.name}</p><div className="mt-1"><PartyChip code={o.party} /></div></div>
-    </div>
-    <Stats o={o} compact /><Earlier o={o} /><Surname o={o} />
-  </li>
-);
+/** Compact seat-holder card: thin banner with office and party, then avatar and name, one row of figures, a short earlier-offices line. */
+export const Person = ({ o, max, tone = FIESTA.blue }: { o: Official; max?: number; tone?: string }) => {
+  const w = o.votes != null && max ? Math.max((o.votes / max) * 100, 6) : o.share != null ? o.share * 100 : 0;
+  return (
+    <li className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md">
+      <div className="relative isolate flex items-center justify-between gap-2 px-4 py-2" style={{ background: tone }}>
+        <PatternFill variant="wave" colors={["#fff"]} opacity={0.18} />
+        <p className="relative truncate text-[11px] font-bold uppercase tracking-widest text-white"><T k={`off.role.${o.role}`} /></p>
+        <span className="relative shrink-0"><PartyChip code={o.party} on /></span>
+      </div>
+      <div className="flex flex-1 flex-col gap-3 p-4">
+        <div className="flex items-center gap-3">
+          <Avatar name={o.name} color={FIESTA.navy} className="h-11 w-11 text-sm" />
+          <p className="font-serif text-lg font-bold leading-tight text-fiesta-navy">{o.name}</p>
+        </div>
+        <div className="flex items-end gap-4">
+          <div className="min-w-0 flex-1">
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-black/65"><T k="off.k.votes" /></p>
+            <p className="font-serif text-xl font-bold leading-none text-fiesta-navy tabular-nums">{o.votes != null ? fmtInt(o.votes) : "-"}</p>
+            <span className="mt-1.5 block h-1.5 overflow-hidden rounded-full bg-black/10" aria-hidden><span className="block h-full rounded-full" style={{ width: `${w}%`, background: tone }} /></span>
+          </div>
+          {o.rank != null && <div className="text-center"><p className="text-[11px] font-semibold uppercase tracking-widest text-black/65"><T k="off.k.rank" /></p><p className="font-serif text-xl font-bold leading-none text-fiesta-navy tabular-nums">{o.rank}<span className="text-xs font-normal text-black/60">/{o.of}</span></p></div>}
+          <div className="text-center"><p className="text-[11px] font-semibold uppercase tracking-widest text-black/65"><T k="off.k.term.s" /></p><p className="flex items-center gap-1.5 font-serif text-xl font-bold leading-none text-fiesta-navy"><span className="tabular-nums">{o.streak}</span><Pips n={o.streak} /></p></div>
+        </div>
+        {o.earlier.length > 0 && <div className="-mt-1"><Earlier o={o} max={2} /></div>}
+        <div className="mt-auto"><Surname o={o} flat /></div>
+      </div>
+    </li>
+  );
+};
 
 export const Group = ({ id, title: t, children }: { id: string; title: string; children: React.ReactNode }) => (
   <section aria-labelledby={id}><h2 id={id} className="font-serif text-2xl font-bold text-fiesta-navy"><T k={t} /></h2>{children}</section>

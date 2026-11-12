@@ -9,6 +9,7 @@ export const LAW = {
   "law.kind": ["Type", "Uri"], "law.kind.all": ["All types", "Lahat ng uri"],
   "law.count": ["shown", "ipinapakita"], "law.of": ["of", "sa"],
   "law.none": ["Nothing matches. Try fewer words.", "Walang tugma. Subukan ang mas kaunting salita."],
+  "law.col.law": ["Law", "Batas"], "law.col.year": ["Year", "Taon"],
   "law.open": ["Open on Lawphil", "Buksan sa Lawphil"],
   "law.prov": ["Province", "Probinsya"],
   "law.note": ["Found by matching the title against the province and town names, so a few laws may be missing, and Roxas, Victoria and Gloria could match other places. Check the full text before relying on one. Proclamation No. 282 of 1956 (Naujan Lake National Park) and Republic Act No. 505 (1950) are not in this dataset.", "Natagpuan sa pamamagitan ng pagtutugma ng pamagat sa mga pangalan ng probinsya at bayan, kaya maaaring may kulang na batas, at ang Roxas, Victoria at Gloria ay maaaring tumugma sa ibang lugar. Suriin ang buong teksto bago umasa sa isa. Wala sa dataset na ito ang Proclamation No. 282 ng 1956 (Naujan Lake National Park) at ang Republic Act No. 505 (1950)."],

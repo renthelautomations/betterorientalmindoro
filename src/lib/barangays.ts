@@ -52,3 +52,12 @@ export function townShapes(town: string, size = 320) {
     shapes: list.map((b) => ({ b, d: b.rings.map((r) => "M" + r.map(([x, y]) => P(x, y).map((v) => v.toFixed(1)).join(" ")).join("L") + "Z").join("") })),
   };
 }
+
+/** The barangay's own outline as one SVG path, scaled to fit a size x size box with a small margin. */
+export function shapePath(b: Brgy, size = 64, pad = 6) {
+  const pts = b.rings.flat();
+  const x0 = Math.min(...pts.map((p) => p[0])), x1 = Math.max(...pts.map((p) => p[0])), y0 = Math.min(...pts.map((p) => p[1])), y1 = Math.max(...pts.map((p) => p[1]));
+  const k = Math.cos(((y0 + y1) / 2) * Math.PI / 180), s = (size - pad * 2) / Math.max((x1 - x0) * k, y1 - y0, 1e-9);
+  const ox = (size - (x1 - x0) * k * s) / 2, oy = (size - (y1 - y0) * s) / 2;
+  return b.rings.map((r) => "M" + r.map(([x, y]) => `${(ox + (x - x0) * k * s).toFixed(1)} ${(oy + (y1 - y) * s).toFixed(1)}`).join("L") + "Z").join("");
+}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FIESTA_DEEP } from "@/components/kit/Patterns";
 import { T } from "@/lib/i18n/i18n";
 import { townOfficials } from "@/lib/officials";
 import { getMunicipality } from "@/lib/municipalities";
@@ -25,7 +26,7 @@ export default function TownOfficials({ slug, isCity }: { slug: string; isCity: 
       </div>
       {council.length > 0 && (
         <Group id="of-council" title={isCity ? "off.council.city" : "off.council.h"}>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{council.map((o) => <Person key={o.id} o={o} />)}</ul>
+          <ul className="mt-4 grid auto-rows-fr gap-3 sm:grid-cols-2 lg:grid-cols-3">{council.map((o) => <Person key={o.id} o={o} tone={FIESTA_DEEP.sky} max={Math.max(...council.map((x) => x.votes ?? 0), 1)} />)}</ul>
           {slug === "calapan-city" && <p className="mt-3 text-sm text-black/70"><T k="off.calapan" /></p>}
         </Group>
       )}

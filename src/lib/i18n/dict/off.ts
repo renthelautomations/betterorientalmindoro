@@ -34,6 +34,7 @@ export const OFF = {
   "off.proj.note": ["Context only. It shows what DPWH started in the town, not who is responsible for it.", "Konteksto lang ito. Ipinapakita nito ang sinimulan ng DPWH sa bayan, hindi kung sino ang may pananagutan."],
   "off.party.note": ["GSM and MBS are local parties; their names come from the news site Mindoro Today. Other names are the parties' official names.", "Lokal na partido ang GSM at MBS; ang mga pangalan nila ay mula sa news site na Mindoro Today. Opisyal na pangalan ng mga partido ang iba."],
   "off.k.votes": ["Votes", "Boto"], "off.k.share": ["Vote share", "Bahagi ng boto"], "off.k.term": ["Terms in a row", "Magkasunod na termino"], "off.k.rank": ["Rank", "Ranggo"],
+  "off.k.term.s": ["Term", "Termino"],
   "off.rankof": ["of {0}", "sa {0}"],
   "off.margin": ["Won by {0} votes", "Nanalo ng lamang na {0} boto"],
   "off.surname.s": ["Shares a surname with {0} other current official(s)", "May kaparehong apelyido ng {0} pang kasalukuyang opisyal"],

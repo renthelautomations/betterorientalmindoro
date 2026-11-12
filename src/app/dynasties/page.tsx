@@ -1,4 +1,3 @@
-import SplitSticky from "@/components/site/SplitSticky";
 import type { Metadata } from "next";
 import Attribution from "@/components/dynasties/Attribution";
 import DynNote from "@/components/site/DynNote";
@@ -9,7 +8,7 @@ import WinnersViews from "@/components/site/WinnersViews";
 import { TBreadcrumbs, TF, TPageTitle } from "@/components/site/DynBits";
 import { T } from "@/lib/i18n/i18n";
 import Link from "next/link";
-import { LinkNetwork } from "@/components/site/LinkNetwork";
+import SurnameMap from "@/components/site/SurnameMap";
 import TownEmblem from "@/components/kit/TownEmblem";
 import KitIcon from "@/components/kit/KitIcon";
 import { allWinners, getProvince, getTown, provinceSurnames, sharedSurnames, surnameNetwork, surnameOf, titleCase, winnersGrid, type Town } from "@/lib/dynasties";
@@ -25,7 +24,6 @@ export default function Dynasties() {
   const gridTowns = names.map((m) => ({ slug: m.slug, name: m.name, contests: towns.find((t) => t.slug === m.slug)!.contests }));
   const years = p.elections.map((e) => e.year);
   const links = surnameNetwork(towns);
-  const edges = links.map((l) => ({ a: l.a, b: l.b, weight: l.weight, surnames: l.surnames.map(titleCase).join(", ") }));
   const stat = (label: string, value: string) => <div className="rounded-2xl border border-black/10 bg-white p-3"><dt className="text-xs text-black/70"><T k={label} /></dt><dd className="mt-1 font-serif text-2xl font-bold text-fiesta-navy">{value}</dd></div>;
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
@@ -43,14 +41,26 @@ export default function Dynasties() {
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.net.h" /></h2>
       <p className="mb-3 mt-2 text-sm text-black/75"><T k="dyn.net.p" /></p>
-      <SplitSticky side={<LinkNetwork nodes={towns.map((t) => ({ id: t.slug, label: nameOf[t.slug] }))} edges={edges} />}>
-        <h3 className="mt-4 text-sm font-semibold text-black/70"><T k="dyn.net.pairs" /></h3>
-        {links.length ? (
-          <ul className="mt-2 divide-y divide-black/10 rounded-2xl border border-black/10 bg-white text-sm">
-            {links.map((l) => <li key={l.a + l.b} className="px-4 py-2"><b>{nameOf[l.a]}</b> <T k="dyn.and" /> <b>{nameOf[l.b]}</b>: {l.surnames.map(titleCase).join(", ")} ({l.weight})</li>)}
-          </ul>
-        ) : <p className="mt-2 text-sm text-black/70"><T k="dyn.net.none" /></p>}
-      </SplitSticky>
+      <div className="grid items-start gap-6 lg:grid-cols-2">
+        <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-black/5 lg:sticky lg:top-28 md:p-6"><SurnameMap edges={links.map((l) => ({ a: l.a, b: l.b, weight: l.weight, surnames: l.surnames }))} /></div>
+        <div>
+          <h3 className="text-sm font-semibold text-black/70"><T k="dyn.net.pairs" /></h3>
+          {links.length ? (
+            <ul className="mt-3 grid gap-3">
+              {links.map((l) => (
+                <li key={l.a + l.b} className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-black/5">
+                  <div className="flex items-center gap-3">
+                    <TownEmblem slug={l.a} name={nameOf[l.a]} className="h-10 w-10 shrink-0" capital={l.a === "calapan-city"} />
+                    <p className="min-w-0 flex-1 font-serif text-lg font-bold leading-tight text-fiesta-navy">{nameOf[l.a]} <span className="font-sans text-sm font-normal text-black/65"><T k="dyn.and" /></span> {nameOf[l.b]}</p>
+                    <TownEmblem slug={l.b} name={nameOf[l.b]} className="h-10 w-10 shrink-0" capital={l.b === "calapan-city"} />
+                  </div>
+                  <ul className="mt-3 flex flex-wrap gap-1.5">{l.surnames.map((x) => <li key={x} className="rounded-full bg-fiesta-mint px-3 py-1 text-sm font-semibold text-fiesta-navy">{titleCase(x)}</li>)}<li className="rounded-full bg-fiesta-navy px-3 py-1 text-sm font-bold text-white">× {l.weight}</li></ul>
+                </li>
+              ))}
+            </ul>
+          ) : <p className="mt-2 text-sm text-black/70"><T k="dyn.net.none" /></p>}
+        </div>
+      </div>
 
       <h2 className="mt-10 text-sm font-semibold tracking-widest text-black/70"><T k="dyn.rep.h" /></h2>
       <p className="mb-3 mt-2 text-sm text-black/75"><T k="dyn.rep.p" /></p>

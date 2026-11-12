@@ -16,7 +16,10 @@ import { Tabs } from "@/components/kit/Interactive";
 import LineChart from "@/components/kit/LineChart";
 import { Divider } from "@/components/kit/Motifs";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
-import { getTownBarangays } from "@/lib/barangays";
+import LawList from "@/components/site/LawList";
+import { getLaws } from "@/lib/laws";
+import { getTownBarangays, projectsIn } from "@/lib/barangays";
+import BarangayCard from "@/components/site/BarangayCard";
 import { getBarangays, getBounds, getMunicipalities, getMunicipality } from "@/lib/municipalities";
 import { fmtInt, fmtPct, fmtPeso, getProvinceStats, getStats, popGrowth } from "@/lib/stats";
 import { hotlinesForBayan } from "@/lib/hotlines";
@@ -70,7 +73,8 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
   const nBrgy = getBarangays(m.pcode).length;
   const maxBrgy = maxOf((x) => getBarangays(x.pcode).length);
 
-  const panels = [
+  const townLaws = getLaws().filter((l) => l.town === slug);
+  const raw = [
     { id: "pangkalahatan", label: "town.overview", panel: (
       <div className="space-y-8">
         <div className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5">
@@ -110,8 +114,8 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
     { id: "barangay", label: "brg.tab", badge: String(nBrgy), panel: (
       <div>
         <p className="mb-4 text-black/75"><T k="brg.list.p" /></p>
-        <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
-          {getTownBarangays(m.slug).map((b) => <li key={b.code}><Link href={`/bayan/${m.slug}/${b.slug}`} className="flex min-h-11 items-center rounded-full bg-white px-4 py-2 font-semibold text-fiesta-navy shadow-sm ring-1 ring-black/10 transition hover:bg-fiesta-blue hover:text-white hover:ring-fiesta-blue">{b.name}</Link></li>)}
+        <ul className="grid auto-rows-fr gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+          {getTownBarangays(m.slug).map((b) => <li key={b.code}><BarangayCard b={b} projects={projectsIn(b).length} /></li>)}
         </ul>
       </div>
     ) },
@@ -142,6 +146,10 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
       </div>
     ) : <BayanEmpty title="bayan.noelect" body="bayan.noelect.p" /> },
   ];
+  // One order on every town page, the same order as the site menu: who runs it, what it offers, where it is, what it spends, how it voted, what law says, then safety.
+  const ORDER = ["pangkalahatan", "opisyal", "direktoryo", "barangay", "proyekto", "halalan", "batas", "hazard", "hotlines"];
+  const panels = [...raw, ...(townLaws.length ? [{ id: "batas", label: "law.tab", badge: String(townLaws.length), panel: <LawList laws={townLaws} towns={[{ slug, name: m.name }]} hideTown /> }] : [])]
+    .sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
 
   return (
     <main>

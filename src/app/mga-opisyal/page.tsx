@@ -3,6 +3,7 @@ import Link from "next/link";
 import { T } from "@/lib/i18n/i18n";
 import { TPageHead } from "@/components/site/DynBits";
 import { Group, Lead, OfficialsSource, Person } from "@/components/site/OfficialCards";
+import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import TownEmblem from "@/components/kit/TownEmblem";
 import { getMunicipalities } from "@/lib/municipalities";
 import { provinceOfficials, townOfficials } from "@/lib/officials";
@@ -17,8 +18,8 @@ export default function Opisyal() {
       <TPageHead crumbs={[{ label: "dyn.home", href: "/" }, { label: "off.tab" }]} eyebrow="off.eyebrow" title="off.title"><p><T k="off.lead" /></p></TPageHead>
       <div className="mt-8 space-y-10">
         <Group id="of-prov" title="off.prov.h"><ul className="mt-4 grid gap-4 sm:grid-cols-2">{lead.map((o) => <Lead key={o.id} o={o} />)}</ul></Group>
-        <Group id="of-house" title="off.house.h"><ul className="mt-4 grid gap-3 sm:grid-cols-2">{provinceOfficials("house").map((o) => <Person key={o.id} o={o} />)}</ul></Group>
-        <Group id="of-board" title="off.board.h"><ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{provinceOfficials("board").map((o) => <Person key={o.id} o={o} />)}</ul></Group>
+        <Group id="of-house" title="off.house.h"><ul className="mt-4 grid auto-rows-fr gap-3 sm:grid-cols-2 lg:grid-cols-3">{provinceOfficials("house").map((o) => <Person key={o.id} o={o} tone={FIESTA_DEEP.green} />)}</ul></Group>
+        <Group id="of-board" title="off.board.h"><ul className="mt-4 grid auto-rows-fr gap-3 sm:grid-cols-2 lg:grid-cols-3">{(() => { const b = provinceOfficials("board"); const m = Math.max(...b.map((x) => x.votes ?? 0), 1); return b.map((o) => <Person key={o.id} o={o} max={m} tone={FIESTA.blue} />); })()}</ul></Group>
         <Group id="of-towns" title="off.towns.h">
           <p className="mt-1 text-sm text-black/70"><T k="off.town.pick" /></p>
           <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
