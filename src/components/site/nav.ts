@@ -28,7 +28,7 @@ export const FOOTER_SOURCES: NavLink[] = [
 ];
 
 export type MenuItem = { label: string; href: string; desc?: string; n: number };
-export type NavEntry = { label: string; href?: string; match: string[]; menu?: { items: MenuItem[]; cols: 3 | 4; all?: { label: string; href: string } } };
+export type NavEntry = { label: string; href?: string; match: string[]; menu?: { items: MenuItem[]; cols: 3 | 4 | 5; all?: { label: string; href: string } } };
 
 /** Header entries: five groups with a mega menu (MaHalTaNa, Services, Data, Government) or a plain link. Built on the server and passed to the client header. */
 export function buildMenu(serviceSlugs: string[]): NavEntry[] {
@@ -44,11 +44,12 @@ export function buildMenu(serviceSlugs: string[]): NavEntry[] {
     { label: "nav.towns", href: "/bayan", match: ["/bayan"] },
     { label: "nav.services", href: "/serbisyo", match: ["/serbisyo"], menu: { cols: 3, all: { label: "menu.all.svc", href: "/serbisyo" }, items: serviceSlugs.map((slug) => it(`svc.cat.${slug}`, `/serbisyo#${slug}`, `svc.cat.${slug}.b`)) } },
     { label: "nav.hotlines", href: "/hotlines", match: ["/hotlines"] },
-    { label: "nav.data", match: ["/proyekto", "/estatistika", "/badyet", "/dynasties"], menu: { cols: 4, all: { label: "menu.all.redflags", href: "/badyet/redflags" }, items: [
+    { label: "nav.data", match: ["/proyekto", "/estatistika", "/badyet", "/dynasties", "/transparency"], menu: { cols: 5, all: { label: "menu.all.redflags", href: "/badyet/redflags" }, items: [
       it("nav.projects", "/proyekto", "menu.data.proyekto.d"),
       it("nav.stats", "/estatistika", "menu.data.estat.d"),
       it("nav.budget", "/badyet", "menu.data.badyet.d"),
       it("nav.dynasties", "/dynasties", "menu.data.dyn.d"),
+      it("nav.transparency", "/transparency", "menu.data.tp.d"),
     ] } },
     { label: "nav.gov", href: "/pamahalaan", match: ["/pamahalaan"], menu: { cols: 3, all: { label: "menu.all.gov", href: "/pamahalaan" }, items: [
       it("gov.tab.officials", "/pamahalaan#opisyal", "menu.gov.opisyal.d"),
