@@ -35,3 +35,18 @@ export const getBarangays = (pcode: string): string[] =>
     .features.filter((f) => f.properties.ADM3_PCODE === pcode)
     .map((f) => String(f.properties.ADM4_EN))
     .sort((a, b) => a.localeCompare(b));
+
+type Geom = { coordinates: unknown };
+const walk = (c: unknown, f: (x: number, y: number) => void): void => { if (Array.isArray(c) && typeof c[0] === "number") f(c[0], c[1] as number); else if (Array.isArray(c)) c.forEach((i) => walk(i, f)); };
+
+/** [west, south, east, north] of one town or city outline, for fitting a map to it. */
+export function getBounds(pcode: string): [number, number, number, number] | undefined {
+  const b: [number, number, number, number] = [180, 90, -180, -90];
+  for (const f of ["municipalities", "component_cities"]) {
+    for (const ft of (load(f) as unknown as { features: { properties: Record<string, string | number>; geometry: Geom }[] }).features) {
+      if (ft.properties.ADM3_PCODE !== pcode) continue;
+      walk(ft.geometry.coordinates, (x, y) => { b[0] = Math.min(b[0], x); b[1] = Math.min(b[1], y); b[2] = Math.max(b[2], x); b[3] = Math.max(b[3], y); });
+    }
+  }
+  return b[0] <= b[2] ? b : undefined;
+}

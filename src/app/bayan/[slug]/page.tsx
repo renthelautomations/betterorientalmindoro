@@ -16,12 +16,13 @@ import { Tabs } from "@/components/kit/Interactive";
 import LineChart from "@/components/kit/LineChart";
 import { Divider } from "@/components/kit/Motifs";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
-import { getBarangays, getMunicipalities, getMunicipality } from "@/lib/municipalities";
+import { getBarangays, getBounds, getMunicipalities, getMunicipality } from "@/lib/municipalities";
 import { fmtInt, fmtPct, fmtPeso, getProvinceStats, getStats, popGrowth } from "@/lib/stats";
 import { hotlinesForBayan } from "@/lib/hotlines";
 import LguDirectory from "@/components/site/LguDirectory";
 import { getLguDirectory } from "@/lib/lgu-directory";
 import LguContactCard from "@/components/site/LguContactCard";
+import TownHazard from "@/components/site/TownHazard";
 import TownOfficials from "@/components/site/TownOfficials";
 import ProjectRow from "@/components/site/ProjectRow";
 import { getProjects } from "@/lib/projects";
@@ -64,6 +65,7 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
   const maxRev = maxOf((x) => getStats(x.slug)?.revenue?.value);
   const maxSpend = maxOf((x) => getStats(x.slug)?.expenditure?.value);
   const maxArea = maxOf((x) => x.areaKm2);
+  const bounds = getBounds(m.pcode);
   const nBrgy = getBarangays(m.pcode).length;
   const maxBrgy = maxOf((x) => getBarangays(x.pcode).length);
 
@@ -105,6 +107,7 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
       </div>
     ) },
     { id: "opisyal", label: "off.tab", panel: <TownOfficials slug={m.slug} isCity={m.isCity} /> },
+    ...(bounds ? [{ id: "hazard", label: "hz.tab", panel: <TownHazard name={m.name} bounds={bounds} /> }] : []),
     ...(getLguDirectory(m.slug) ? [{ id: "direktoryo", label: "lgu.dir.tab", badge: String(getLguDirectory(m.slug)!.offices.length), panel: <LguDirectory slug={m.slug} name={m.name} /> }] : []),
     { id: "proyekto", label: "town.projects", badge: String(projects.length), panel: projects.length ? (
       <SplitSticky side={<div><p className={h3}><T k="bayan.status.h" /></p><BigDonut slices={slices} format={(n) => n.toLocaleString("en-PH")} centerLabel="bayan.projects.lc" /></div>}>

@@ -1,0 +1,21 @@
+// hazard map strings: "hz.thing": ["English", "Filipino"].
+export const HZ = {
+  "hz.tab": ["Hazard map", "Mapa ng panganib"],
+  "hz.lead": ["Where floods, landslides and storm surge are expected to reach in {name}, from the Project NOAH hazard maps. Pick a hazard, then zoom in to your street.", "Kung hanggang saan inaasahang aabot ang baha, landslide at storm surge sa {name}, mula sa mga hazard map ng Project NOAH. Pumili ng hazard, tapos mag-zoom sa inyong kalye."],
+  "hz.k.flood": ["Flood", "Baha"], "hz.k.landslide": ["Landslide", "Landslide"], "hz.k.debris": ["Debris flow", "Debris flow"], "hz.k.surge": ["Storm surge", "Storm surge"],
+  "hz.v.5": ["Every 5 years", "Kada 5 taon"], "hz.v.25": ["Every 25 years", "Kada 25 taon"], "hz.v.100": ["Every 100 years", "Kada 100 taon"],
+  "hz.v.ssa1": ["Surge 2 to 3 m", "Surge 2 hanggang 3 m"], "hz.v.ssa2": ["Surge 3 to 4 m", "Surge 3 hanggang 4 m"], "hz.v.ssa3": ["Surge 4 to 5 m", "Surge 4 hanggang 5 m"], "hz.v.ssa4": ["Surge over 5 m", "Surge higit 5 m"],
+  "hz.variant": ["How often / how high", "Gaano kadalas / gaano kataas"],
+  "hz.legend": ["Hazard level", "Antas ng panganib"],
+  "hz.l.1": ["Low", "Mababa"], "hz.l.2": ["Medium", "Katamtaman"], "hz.l.3": ["High", "Mataas"],
+  "hz.d.flood": ["Low: up to 0.5 m deep. Medium: 0.5 to 1.5 m. High: over 1.5 m. Fast-moving water raises the level.", "Mababa: hanggang 0.5 m ang lalim. Katamtaman: 0.5 hanggang 1.5 m. Mataas: higit 1.5 m. Mas mataas ang antas kapag mabilis ang agos."],
+  "hz.d.landslide": ["Low: build only with monitoring. Medium: build only with slope protection and monitoring. High: no dwellings.", "Mababa: magtayo lang kung may pagbabantay. Katamtaman: magtayo lang kung may proteksyon sa dalisdis at pagbabantay. Mataas: bawal tirahan."],
+  "hz.d.debris": ["Areas where debris flows or alluvial fans can reach.", "Mga lugar na maaabot ng debris flow o alluvial fan."],
+  "hz.d.surge": ["Low: depth 0.2 to 0.5 m. Medium: 0.5 to 1.5 m. High: over 1.5 m. Each advisory level is a stronger storm tide.", "Mababa: lalim na 0.2 hanggang 0.5 m. Katamtaman: 0.5 hanggang 1.5 m. Mataas: higit 1.5 m. Mas malakas na storm tide ang bawat advisory level."],
+  "hz.debris.l": ["Debris flow area", "Lugar ng debris flow"],
+  "hz.nocolor": ["No colour on the map does not mean safe. These are computer models, not a site inspection.", "Hindi nangangahulugang ligtas ang lugar na walang kulay sa mapa. Mga computer model ito, hindi inspeksyon sa mismong lugar."],
+  "hz.check": ["Before building or buying, ask the town's MDRRMO and the Mines and Geosciences Bureau.", "Bago magtayo o bumili ng lupa, magtanong sa MDRRMO ng bayan at sa Mines and Geosciences Bureau."],
+  "hz.aria": ["Hazard map of {name}. Use the buttons above to change the hazard.", "Hazard map ng {name}. Gamitin ang mga button sa itaas para palitan ang hazard."],
+  "hz.nogl": ["The map needs WebGL, which this browser does not have.", "Kailangan ng mapa ang WebGL na wala sa browser na ito."],
+  "hz.src": ["Source: Project NOAH hazard maps via BetterGov (dataset 22), ODbL.", "Pinagmulan: Project NOAH hazard maps sa pamamagitan ng BetterGov (dataset 22), ODbL."],
+} as const;

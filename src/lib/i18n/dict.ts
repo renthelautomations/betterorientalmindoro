@@ -21,6 +21,7 @@ import { GOVC } from "./dict/govc";
 import { LGU } from "./dict/lgu";
 import { VOL } from "./dict/vol";
 import { OFF } from "./dict/off";
+import { HZ } from "./dict/hazard";
 
-export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD, ...MENU, ...RF, ...TP, ...GOVA, ...GOVB, ...GOVC, ...LGU, ...VOL, ...OFF } as const satisfies Record<string, readonly [string, string]>;
+export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD, ...MENU, ...RF, ...TP, ...GOVA, ...GOVB, ...GOVC, ...LGU, ...VOL, ...OFF, ...HZ } as const satisfies Record<string, readonly [string, string]>;
 export type DictKey = keyof typeof DICT;
