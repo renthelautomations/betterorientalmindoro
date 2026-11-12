@@ -60,7 +60,7 @@ export default function Dropdown({ id, name, value, options, onChange, className
       </button>
       {open && (
         <ul ref={list} id={`${bid}-list`} role="listbox" aria-activedescendant={`${bid}-o${act}`} tabIndex={-1}
-          className="absolute left-0 right-0 z-40 mt-1.5 max-h-72 min-w-max overflow-auto rounded-xl border-2 border-fiesta-navy/15 bg-white p-1.5 shadow-xl">
+          className="absolute right-0 z-40 mt-1.5 max-h-72 w-max min-w-full max-w-[min(32rem,calc(100vw-2rem))] overflow-auto rounded-xl border-2 border-fiesta-navy/15 bg-white p-1.5 shadow-xl">
           {options.map((o, i) => (
             <li key={o.v} id={`${bid}-o${i}`} role="option" aria-selected={o.v === value}
               onPointerDown={(e) => e.preventDefault()} onClick={() => pick(i)} onPointerMove={() => setAct(i)}

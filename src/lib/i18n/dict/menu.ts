@@ -4,6 +4,7 @@ export const MENU = {
   "menu.data.proyekto.d": ["Public works by town, year and status", "Mga proyektong pampubliko ayon sa bayan, taon at katayuan"],
   "menu.data.estat.d": ["Population, area and finances of the 15 towns", "Populasyon, lawak at pananalapi ng 15 bayan"],
   "menu.data.badyet.d": ["The two districts' budget versions, compared", "Paghahambing ng mga bersyon ng badyet ng dalawang distrito"],
+  "menu.data.rf.d": ["Items in the proposed budget that deserve a closer look", "Mga bahagi ng panukalang badyet na dapat suriing mabuti"],
   "menu.data.dyn.d": ["Surnames that repeat in elections", "Mga apelyidong paulit-ulit sa halalan"],
   "menu.gov.opisyal.d": ["Officials, offices and how to reach them", "Mga opisyal, opisina at paano sila makontak"],
   "menu.gov.eo.d": ["Orders signed by the Governor, with summaries", "Mga order na pinirmahan ng Gobernador, may buod"],
