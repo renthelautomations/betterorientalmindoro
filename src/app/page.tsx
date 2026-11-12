@@ -19,6 +19,7 @@ import { getProvinceStats, getStats, fmtInt } from "@/lib/stats";
 import { getProjectStats } from "@/lib/projects";
 import { getCategories, getServices } from "@/lib/services";
 import ServiceTile from "@/components/site/ServiceTile";
+import Heritage from "@/components/site/Heritage";
 import GovNewsStrip from "@/components/site/GovNewsStrip";
 
 const tel = (n: string) => "tel:" + n.replace(/[^\d+]/g, "");
@@ -82,6 +83,12 @@ export default function Home() {
           <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {getCategories().map((c) => <ServiceTile key={c.slug} slug={c.slug} count={getServices(c.slug).length} href={`/serbisyo#${c.slug}`} />)}
           </div>
+        </Landmark>
+
+        <Landmark as="section" label="her.h" className="border-t border-black/10 py-14">
+          <SectionHeader eyebrow="her.eyebrow" title="her.h" color={FIESTA_DEEP.orange} />
+          <p className="mt-3 max-w-2xl text-black/70"><T k="her.lead" /></p>
+          <Heritage />
         </Landmark>
 
         <GovNewsStrip />
