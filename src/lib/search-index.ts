@@ -18,6 +18,7 @@ const PAGES: { tk: string; href: string; kw: string; pop?: boolean }[] = [
   { tk: "nav.projects", href: "/proyekto", kw: "proyekto projects dpwh kalsada road tulay bridge gusali", pop: true },
   { tk: "nav.stats", href: "/estatistika", kw: "estatistika statistics populasyon population datos data" },
   { tk: "nav.budget", href: "/badyet", kw: "badyet budget nep pondo gastos house bills", pop: true },
+  { tk: "rf.cta", href: "/badyet/redflags", kw: "red flag redflags badyet budget 2027 house bill nep pbc people budget coalition proyekto dpwh farm to market road iregularidad suriin" },
   { tk: "nav.dynasties", href: "/dynasties", kw: "dinastiya dynasties pamilya apelyido surname halalan election pulitika" },
   { tk: "nav.gov", href: "/pamahalaan", kw: "pamahalaan government officials offices executive orders bids jobs careers investment opisyal opisina trabaho mamuhunan", pop: true },
   { tk: "gov.tab.jobs", href: "/pamahalaan#trabaho", kw: "jobs careers vacancies hiring trabaho bakante aplikasyon pamahalaan" },

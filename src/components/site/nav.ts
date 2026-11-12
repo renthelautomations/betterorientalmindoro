@@ -44,7 +44,7 @@ export function buildMenu(serviceSlugs: string[]): NavEntry[] {
     { label: "nav.towns", href: "/bayan", match: ["/bayan"] },
     { label: "nav.services", href: "/serbisyo", match: ["/serbisyo"], menu: { cols: 3, all: { label: "menu.all.svc", href: "/serbisyo" }, items: serviceSlugs.map((slug) => it(`svc.cat.${slug}`, `/serbisyo#${slug}`, `svc.cat.${slug}.b`)) } },
     { label: "nav.hotlines", href: "/hotlines", match: ["/hotlines"] },
-    { label: "nav.data", match: ["/proyekto", "/estatistika", "/badyet", "/dynasties"], menu: { cols: 4, items: [
+    { label: "nav.data", match: ["/proyekto", "/estatistika", "/badyet", "/dynasties"], menu: { cols: 4, all: { label: "menu.all.redflags", href: "/badyet/redflags" }, items: [
       it("nav.projects", "/proyekto", "menu.data.proyekto.d"),
       it("nav.stats", "/estatistika", "menu.data.estat.d"),
       it("nav.budget", "/badyet", "menu.data.badyet.d"),

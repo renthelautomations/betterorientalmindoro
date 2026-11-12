@@ -1,0 +1,15 @@
+{
+  "by": "People's Budget Coalition (PBC)",
+  "title": "The FY 2027 House General Appropriations Bill: An Assessment",
+  "published": "October 2026",
+  "assessmentUrl": "https://ajamontesa.github.io/ph-budget-analysis/hgab-2027-assessment.html#house-redflags",
+  "portalUrl": "https://budget.bettergov.ph/hgab/2027/1T-redflags",
+  "copied": "2026-11-12",
+  "note": "Amounts in billions of pesos, as the BetterGov Budget portal shows PBC's red-flag basket. National figures; we copy them and do not recompute them.",
+  "groups": [
+    { "key": "patronage", "nepB": 140.1, "houseB": 209.6, "localSlice": false },
+    { "key": "political", "nepB": 37.9, "houseB": 42.9, "localSlice": false },
+    { "key": "infrastructure", "nepB": 686.0, "houseB": 695.2, "localSlice": true }
+  ],
+  "convergence": { "nepB": 157.3, "houseB": 231.4 }
+}

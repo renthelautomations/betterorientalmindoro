@@ -2,6 +2,9 @@ import SmartSearch from "@/components/site/SmartSearch";
 import { getSearchItems } from "@/lib/search-index";
 import type { Metadata } from "next";
 import { DistrictCard, BadyetNotes, NoSpendBanner } from "@/components/site/BadyetDistrict";
+import Link from "next/link";
+import KitIcon from "@/components/kit/KitIcon";
+import { FlagSvg } from "@/components/site/RedFlagsBits";
 import SourceLink from "@/components/ui/SourceLink";
 import { SourceNote } from "@/components/stats/StatCard";
 import { Acc, Crumbs, R, Title } from "@/components/site/FinanceBits";
@@ -29,6 +32,12 @@ export default function Badyet() {
         {districts.map((d, i) => <div key={d.id} id={i === 1 ? "d2" : undefined} className="scroll-mt-28 h-full"><DistrictCard d={d} slug={DISTRICT_SLUGS[i]} h={HEADS[i]} i={i} /></div>)}
       </div>
 
+      <Link href="/badyet/redflags" className="group mt-8 flex flex-wrap items-center gap-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md">
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#fdf0d5] text-[#7a4a00]"><FlagSvg className="h-6 w-6" /></span>
+        <span className="min-w-0 flex-1"><span className="block font-serif text-xl font-bold text-fiesta-navy"><T k="rf.cta" /></span><span className="block text-sm text-black/70"><T k="rf.cta.p" /></span></span>
+        <KitIcon name="arrow" className="h-5 w-5 shrink-0 text-fiesta-blue transition group-hover:translate-x-1" />
+      </Link>
+
       <div className="mt-8"><Acc q="finance.notes.q"><BadyetNotes districts={districts} /></Acc></div>
 
       <SourceNote>
@@ -38,6 +47,7 @@ export default function Badyet() {
         <SourceLink href="https://budget.bettergov.ph/docs" icon="database">BetterGov Budget API</SourceLink>
         <SourceLink href={meta.source_repo} icon="github">Source repo</SourceLink>
         <SourceLink href="https://budget.bettergov.ph/docs" icon="book"><T k="finance.l.docs" /></SourceLink>
+        <SourceLink href="https://budget.bettergov.ph/docs#mcp" icon="compass"><T k="rf.l.mcp" /></SourceLink>
         <SourceLink href="https://lgu.bettergov.ph/BUDGET_GUIDE.html" icon="compass"><T k="finance.l.guide" /></SourceLink>
       </div>
     </main>

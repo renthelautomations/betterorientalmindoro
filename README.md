@@ -28,7 +28,7 @@ Every section is **one main page**, with its records laid out on it; each record
 | Hotlines | `/hotlines` (smart search, filters by place, type and office; each number has its source and date checked; official contacts and office directories for the LGUs) | |
 | Proyekto | `/proyekto` (map, dropdown filters, cards or table, by-year chart) | `/proyekto/[id]` |
 | Estatistika | `/estatistika` (shaded map, town cards or table, growth, compare) | rows open `/bayan/[slug]` |
-| Badyet | `/badyet` (the two districts, with checks and flags) | `/badyet/1st`, `/badyet/2nd` |
+| Badyet | `/badyet` (the two districts, with checks and flags) | `/badyet/1st`, `/badyet/2nd`, `/badyet/redflags` (the People's Budget Coalition's red-flag basket, narrowed to Oriental Mindoro's projects) |
 | Dinastiya | `/dynasties` (surname network, winners in three views, repeated surnames) | `/dynasties/[town]` |
 | Pamahalaan | `/pamahalaan` (officials and offices, executive orders, procurement, financial reports, jobs, investment) | `/pamahalaan/eo/[id]`, `/pamahalaan/ulat/[id]`, `/pamahalaan/bidding/[ref]`, `/pamahalaan/dokumento/[id]`, `/pamahalaan/mga-tala` |
 | Help | `/terms` `/privacy` `/accessibility` `/faq` | |
@@ -92,7 +92,8 @@ Data is snapshotted into the repository so the site never depends on an upstream
 | `node scripts/fetch-boundaries.mjs` | `public/data/*.geojson` | NAMRIA/PSA boundaries via [BetterGov Open Data](https://data.bettergov.ph) (MIT) |
 | `node scripts/fetch-dpwh.mjs` | `src/data/dpwh.json` | DPWH Infrastructure Transparency Dataset via BetterGov Open Data (CC0) |
 | `node scripts/fetch-dynasties.mjs` | `src/data/dynasties/` | [Dynasties by BetterGov](https://dynasties.bettergov.ph) API, from Open Halalan, PSA and PSGC |
-| `node scripts/fetch-badyet.mjs` | `src/data/badyet.json` | [BetterGov Budget API](https://budget.bettergov.ph/api/v1) |
+| `node scripts/fetch-badyet.mjs` | `src/data/badyet.json` | [BetterGov Budget API](https://budget.bettergov.ph/api/v1) ([docs](https://budget.bettergov.ph/docs); it also has an [MCP server](https://budget.bettergov.ph/docs#mcp) for AI tools) |
+| `node scripts/fetch-redflags.mjs` | `src/data/redflags.json` | The same API: FY2027 House bill rows (DPWH, farm-to-market roads, health facilities) in Oriental Mindoro, set against the NEP. The red-flag basket itself (`src/data/redflags-basket.json`) is the [People's Budget Coalition](https://budget.bettergov.ph/hgab/2027/1T-redflags)'s assessment, copied with attribution |
 | `node scripts/fetch-stats.mjs` | `src/data/stats.json` | PSA and BLGF/COA figures via Wikidata (CC0) |
 | `node scripts/fetch-gov.mjs` | `src/data/gov/*.json` | Public pages and feeds of [ormindoro.gov.ph](https://ormindoro.gov.ph) (one polite pass, volunteer User-Agent, no PDFs downloaded) |
 | `python scripts/gov-ocr.py <shard> <shards>` | local cache `../gov-cache` (not committed) | Downloads each listed PDF once and reads it with OCR. Setup: `python3 -m venv venv && venv/bin/pip install pymupdf rapidocr-onnxruntime` |

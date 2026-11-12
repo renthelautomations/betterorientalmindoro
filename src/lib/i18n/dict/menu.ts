@@ -12,5 +12,5 @@ export const MENU = {
   "menu.gov.trabaho.d": ["Open vacancies and their deadlines", "Mga bakanteng posisyon at deadline"],
   "menu.gov.mamuhunan.d": ["Where the province invites investors", "Saan inaanyayahan ng lalawigan ang mga mamumuhunan"],
   "menu.all.mht": ["About MaHalTaNa", "Tungkol sa MaHalTaNa"], "menu.all.svc": ["All services", "Lahat ng serbisyo"], "menu.all.gov": ["Open Government", "Buksan ang Pamahalaan"],
-  "menu.label": ["Sections", "Mga seksyon"], "menu.open": ["Open menu", "Buksan ang menu"],
+  "menu.all.redflags": ["Red flags in the 2027 budget", "Mga red flag sa badyet ng 2027"], "menu.label": ["Sections", "Mga seksyon"], "menu.open": ["Open menu", "Buksan ang menu"],
 } as const satisfies Record<string, readonly [string, string]>;
