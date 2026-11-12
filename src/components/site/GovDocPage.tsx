@@ -31,7 +31,7 @@ export default function GovDocPage(p: {
   const h2 = "font-serif text-xl font-bold text-fiesta-navy";
   const related = (p.related ?? []).filter((r) => r.items.length);
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <TBreadcrumbs items={p.crumbs} />
       <header className="mt-4 overflow-hidden rounded-2xl text-white" style={{ background: p.band.color }}>
         {/* pattern on a strip of its own; every word sits on the solid colour below it */}

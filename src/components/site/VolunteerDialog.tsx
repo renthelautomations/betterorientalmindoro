@@ -27,7 +27,7 @@ export function VolunteerButton({ className = "", children }: { className?: stri
   return <button type="button" onClick={() => window.dispatchEvent(new Event(EVENT))} className={className}>{children}</button>;
 }
 
-const field = "mt-1.5 w-full rounded-xl border-2 border-fiesta-navy/20 bg-white px-3 text-sm text-fiesta-navy outline-none transition placeholder:text-black/40 hover:border-fiesta-navy/50 focus-visible:border-fiesta-blue focus-visible:ring-4 focus-visible:ring-fiesta-blue/20";
+const field = "mt-1.5 w-full rounded-xl border-2 border-fiesta-navy/20 bg-white px-3 text-sm text-fiesta-navy outline-none transition placeholder:text-black/65 hover:border-fiesta-navy/50 focus-visible:border-fiesta-blue focus-visible:ring-4 focus-visible:ring-fiesta-blue/20";
 
 /** Branded popup form. Details go to our own database through the add_volunteer function. Shown once on first visit, then only when asked for. */
 export default function VolunteerDialog({ towns }: { towns: string[] }) {

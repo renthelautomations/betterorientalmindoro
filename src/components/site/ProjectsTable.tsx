@@ -26,7 +26,7 @@ export default function ProjectsTable({ rows, names }: { rows: Project[]; names:
               <tr key={p.id} className={`border-b border-black/5 align-top last:border-0 ${i % 2 ? "bg-fiesta-cream/60" : ""}`}>
                 <td className="max-w-md px-4 py-3">
                   <Link href={`/proyekto/${p.id}`} className="font-semibold text-fiesta-navy hover:underline">{d.headline ?? cleanTitle(p.title)}</Link>
-                  {d.headline && <p className="mt-0.5 line-clamp-1 text-xs text-black/55">{cleanTitle(p.title)}</p>}
+                  {d.headline && <p className="mt-0.5 line-clamp-1 text-xs text-black/65">{cleanTitle(p.title)}</p>}
                 </td>
                 <td className="whitespace-nowrap px-4 py-3">{p.municipality ? names[p.municipality] : "–"}</td>
                 <td className="px-4 py-3 tabular-nums">{p.year ?? "–"}</td>

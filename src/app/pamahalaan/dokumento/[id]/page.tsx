@@ -19,7 +19,7 @@ export default async function Dokumento({ params }: PageProps<"/pamahalaan/dokum
   const { prev, next } = neighbours(id);
   const slim = (x: typeof prev) => (x ? { id: x.id, type: x.type } : null);
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <Crumbs items={[{ label: "nav.gov", href: "/pamahalaan" }, ...(d.refNo ? [{ label: d.refNo, href: `/pamahalaan/bidding/${slugRef(d.refNo)}` }] : []), { label: d.id }]} />
       <DocBody d={d} project={d.refNo ? { slug: slugRef(d.refNo), title: d.refNo } : null} prev={slim(prev)} next={slim(next)} />
     </main>

@@ -18,24 +18,24 @@ export default function StoryPage({ icon, scene, children }: { icon: IconKey; sc
   const hero = (s: Story) => (
     <div className="overflow-hidden text-white" style={{ background: COLOR[icon] }}>
       <div className="relative h-24 md:h-32" aria-hidden><PatternFill variant={PATTERN[icon]} colors={["#fff"]} opacity={0.18} /></div>
-      <div className="mx-auto max-w-3xl px-4 pb-14 pt-8 md:pb-20">
+      <div className="mx-auto max-w-6xl px-4 pb-14 pt-8 md:pb-20">
         <p className="font-serif text-6xl font-bold">{ICONS[icon].short}</p>
         <p className="mt-2 font-serif text-4xl font-bold md:text-5xl">{s.title}</p>
       </div>
     </div>
   );
   const article = (s: Story, l: 0 | 1) => (
-    <article className="mx-auto max-w-3xl space-y-5 px-4 py-12 text-lg leading-relaxed">
+    <article className="mx-auto max-w-6xl px-4 py-12"><div className="max-w-3xl space-y-5 text-lg leading-relaxed">
       <h1 className="font-serif text-4xl font-bold">{s.title}</h1>
       {icon === "ma" && <Badge kind="soon">{i(l)("docs.badge.soon")}</Badge>}
       {s.draft && <Badge kind="wip">{i(l)("docs.badge.draft")}</Badge>}
       {s.paragraphs.map((p) => <p key={p}>{p}</p>)}
       {children}
       {s.link && <p><a className="inline-block py-2 underline" href={s.link.href} rel="noopener">{s.link.label}</a></p>}
-    </article>
+    </div></article>
   );
   const pillars = (l: 0 | 1) => (
-    <nav aria-label={i(l)("uxd.story.switch")} className="mx-auto max-w-3xl px-4 pb-16">
+    <nav aria-label={i(l)("uxd.story.switch")} className="mx-auto max-w-6xl px-4 pb-16">
       <h2 className="font-serif text-2xl font-bold">{i(l)("uxd.story.switch")}</h2>
       <ul className="mt-4 flex flex-wrap gap-3">
         {ICON_KEYS.map((k) => (

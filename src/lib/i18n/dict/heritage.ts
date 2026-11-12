@@ -17,4 +17,5 @@ export const HER = {
   "her.d2000": ["The Center in Calapan was officially opened to the public on 14 November 2000.", "Opisyal na binuksan sa publiko ang Center sa Calapan noong 14 Nobyembre 2000."],
   "her.t2001": ["Pandang Gitab begins", "Nagsimula ang Pandang Gitab"],
   "her.d2001": ["The Festival of Lights, named after the dance Pandango sa Ilaw, began in Calapan in 2001 and has run yearly since.", "Ang Festival of Lights, na hango sa sayaw na Pandango sa Ilaw, ay nagsimula sa Calapan noong 2001 at ginaganap taon-taon mula noon."],
+  "her.credit": ["Island map outline: geoBoundaries (CC BY 3.0 IGO).", "Balangkas ng mapa ng isla: geoBoundaries (CC BY 3.0 IGO)."],
 } as const;

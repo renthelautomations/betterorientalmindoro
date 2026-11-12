@@ -53,7 +53,7 @@ export default function DynTownViz({ contests, years }: { contests: Contest[]; y
               <div className="grid flex-1 gap-1" style={{ gridTemplateColumns: `repeat(${years.length}, 1fr)` }}>
                 {segments(r.cells).map((s) => s.surname ? (
                   <span key={s.from} title={`${s.surname}, ${years[s.from]}–${years[s.from + s.n - 1]}`} className="min-w-0 rounded-lg px-2 py-2.5 text-xs leading-tight [overflow-wrap:anywhere] font-semibold text-white" style={{ gridColumn: `span ${s.n}`, background: color(s.surname) }}>{s.surname}</span>
-                ) : <span key={s.from} className="rounded-lg bg-black/5 py-2.5 text-center text-xs text-black/30" style={{ gridColumn: `span ${s.n}` }}><span aria-hidden>–</span><span className="sr-only"><T k="dyn.viz.nodata" /></span></span>)}
+                ) : <span key={s.from} className="rounded-lg bg-black/5 py-2.5 text-center text-xs text-black/65" style={{ gridColumn: `span ${s.n}` }}><span aria-hidden>–</span><span className="sr-only"><T k="dyn.viz.nodata" /></span></span>)}
               </div>
             </div>
           ))}

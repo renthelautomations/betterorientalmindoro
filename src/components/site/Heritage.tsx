@@ -38,7 +38,7 @@ export default function Heritage() {
           );
         })}
       </ol>
-      <p className="mt-10 text-sm text-black/70"><T k="her.note" /></p>
+      <p className="mt-10 text-sm text-black/70"><T k="her.note" /> <T k="her.credit" /> <a href="https://www.geoboundaries.org" target="_blank" rel="noopener noreferrer" className="font-semibold text-fiesta-blue underline underline-offset-2">geoboundaries.org</a></p>
     </div>
   );
 }

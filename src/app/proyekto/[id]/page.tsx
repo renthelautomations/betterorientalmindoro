@@ -48,7 +48,7 @@ export default async function ProjectRecord({ params }: PageProps<"/proyekto/[id
     ["proyekto.f.id", p.id],
   ];
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <Crumbs items={[{ label: "nav.projects", href: "/proyekto" }, { label: p.id }]} />
       <header className="relative isolate mt-5 overflow-hidden rounded-2xl text-white shadow-sm" style={{ background: look.color }}>
         <div className="relative h-16" aria-hidden><PatternFill variant={look.pattern} colors={["#fff"]} opacity={0.16} /></div>

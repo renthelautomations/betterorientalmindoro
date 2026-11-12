@@ -17,7 +17,7 @@ function Tile({ href, icon, color, label, value }: { href: string; icon: KitIcon
         <span className="block text-xs font-semibold tracking-wider text-black/60">{label}</span>
         <span className="block truncate font-semibold text-fiesta-navy group-hover:text-fiesta-blue">{value}</span>
       </span>
-      <KitIcon name="arrow" className="h-4 w-4 shrink-0 text-black/40 group-hover:text-fiesta-blue" />
+      <KitIcon name="arrow" className="h-4 w-4 shrink-0 text-black/65 group-hover:text-fiesta-blue" />
     </a>
   );
 }

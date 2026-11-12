@@ -75,9 +75,9 @@ export default function GovCareers() {
         : <p className="rounded-2xl bg-white p-6 text-sm text-black/70 shadow-sm ring-1 ring-black/5">{status === "open" && !q && !office ? t("govc.jb.noopen") : t("govc.jb.none")}</p>}
       {pg.last > 1 && (
         <nav aria-label={t("govc.jb.page").replace("{0}", String(pg.page)).replace("{1}", String(pg.last))} className="flex flex-wrap items-center justify-center gap-3 pt-2">
-          <button type="button" disabled={pg.page <= 1} onClick={() => setPage(pg.page - 1)} className="min-h-11 rounded-lg border border-black/20 bg-white px-4 text-sm font-semibold text-fiesta-navy hover:border-fiesta-navy disabled:bg-black/5 disabled:text-black/35">‹ {t("govc.jb.prev")}</button>
+          <button type="button" disabled={pg.page <= 1} onClick={() => setPage(pg.page - 1)} className="min-h-11 rounded-lg border border-black/20 bg-white px-4 text-sm font-semibold text-fiesta-navy hover:border-fiesta-navy disabled:bg-black/5 disabled:text-black/65">‹ {t("govc.jb.prev")}</button>
           <span className="text-sm tabular-nums text-black/70">{t("govc.jb.page").replace("{0}", String(pg.page)).replace("{1}", String(pg.last))}</span>
-          <button type="button" disabled={pg.page >= pg.last} onClick={() => setPage(pg.page + 1)} className="min-h-11 rounded-lg border border-black/20 bg-white px-4 text-sm font-semibold text-fiesta-navy hover:border-fiesta-navy disabled:bg-black/5 disabled:text-black/35">{t("govc.jb.next")} ›</button>
+          <button type="button" disabled={pg.page >= pg.last} onClick={() => setPage(pg.page + 1)} className="min-h-11 rounded-lg border border-black/20 bg-white px-4 text-sm font-semibold text-fiesta-navy hover:border-fiesta-navy disabled:bg-black/5 disabled:text-black/65">{t("govc.jb.next")} ›</button>
         </nav>
       )}
       <p className="text-xs text-black/65"><a href={ds.source} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center underline">{t("govc.jb.src")} ↗</a></p>

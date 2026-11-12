@@ -24,7 +24,7 @@ export default function BayanHub({ slugs, summaries }: { slugs: Record<string, s
     <div className="flex items-center gap-3 py-2">
       <KitIcon name={icon} variant="badge" color={color} className="h-9 w-9 shrink-0" />
       <dt className="min-w-0 flex-1 text-sm text-black/70"><T k={k} /></dt>
-      <dd className={`font-serif text-xl font-bold tabular-nums ${v === "-" ? "text-black/55" : "text-fiesta-navy"}`}>{v}</dd>
+      <dd className={`font-serif text-xl font-bold tabular-nums ${v === "-" ? "text-black/65" : "text-fiesta-navy"}`}>{v}</dd>
     </div>
   );
   return (

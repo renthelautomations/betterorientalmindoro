@@ -34,7 +34,7 @@ export function SearchPill({ value, onChange, label }: { value: string; onChange
     <label className="relative block">
       <span className="sr-only">{label}</span>
       <KitIcon name="search" className="pointer-events-none absolute top-1/2 left-4 h-5 w-5 -translate-y-1/2 text-fiesta-navy/60" />
-      <input type="search" value={value} onChange={(e) => onChange(e.target.value)} placeholder={label} className="min-h-11 w-full rounded-full border-2 border-fiesta-navy/20 bg-white pr-4 pl-11 text-sm text-fiesta-navy outline-none placeholder:text-black/55 focus-visible:border-fiesta-blue focus-visible:ring-4 focus-visible:ring-fiesta-blue/20" />
+      <input type="search" value={value} onChange={(e) => onChange(e.target.value)} placeholder={label} className="min-h-11 w-full rounded-full border-2 border-fiesta-navy/20 bg-white pr-4 pl-11 text-sm text-fiesta-navy outline-none placeholder:text-black/65 focus-visible:border-fiesta-blue focus-visible:ring-4 focus-visible:ring-fiesta-blue/20" />
     </label>
   );
 }
@@ -45,12 +45,12 @@ export function StatePager({ page, last, onPage }: { page: number; last: number;
   if (last <= 1) return null;
   const b = "inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border px-3 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-fiesta-blue";
   const live = `${b} border-black/20 bg-white text-fiesta-navy hover:border-fiesta-navy`;
-  const off = `${b} border-black/10 bg-black/5 text-black/45`;
+  const off = `${b} border-black/10 bg-black/5 text-black/65`;
   return (
     <nav aria-label={t("gova.pager")} className="mt-6 flex flex-wrap items-center justify-center gap-2">
       {page > 1 ? <button type="button" className={live} onClick={() => onPage(page - 1)}>‹ {t("proyekto.page.prev")}</button> : <span className={off} aria-disabled="true">‹ {t("proyekto.page.prev")}</span>}
       <ul className="flex flex-wrap items-center gap-1">
-        {pageWindow(page, last).map((n, i) => n === "gap" ? <li key={`g${i}`} aria-hidden className="px-1 text-black/55">…</li>
+        {pageWindow(page, last).map((n, i) => n === "gap" ? <li key={`g${i}`} aria-hidden className="px-1 text-black/65">…</li>
           : <li key={n}>{n === page ? <span aria-current="page" className={`${b} border-fiesta-navy bg-fiesta-navy text-white tabular-nums`}>{n}</span> : <button type="button" className={`${live} tabular-nums`} onClick={() => onPage(n)}>{n}</button>}</li>)}
       </ul>
       {page < last ? <button type="button" className={live} onClick={() => onPage(page + 1)}>{t("proyekto.page.next")} ›</button> : <span className={off} aria-disabled="true">{t("proyekto.page.next")} ›</span>}

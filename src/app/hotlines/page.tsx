@@ -26,7 +26,7 @@ async function Body({ searchParams }: { searchParams: Promise<{ bayan?: string |
 
 export default function Hotlines({ searchParams }: { searchParams: Promise<{ bayan?: string | string[] }> }) {
   return (
-    <main className="mx-auto max-w-5xl px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <TPageHead crumbs={[{ label: "dyn.home", href: "/" }, { label: "nav.hotlines" }]} eyebrow="dyn.hotline.eyebrow" title="dyn.hotline.title">
         <p><Bilingual en={<>For an emergency, call <b>911</b>, the national emergency hotline.</>} fil={<>Para sa emergency, tumawag sa <b>911</b>, ang pambansang emergency hotline.</>} /></p>
         <p className="text-sm text-black/70"><T k="dyn.hotline.note" /></p>

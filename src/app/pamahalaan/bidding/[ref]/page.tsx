@@ -22,7 +22,7 @@ export default async function BiddingProject({ params }: PageProps<"/pamahalaan/
   const docs = docsOfProject(c.refNo);
   const flags = flagsForProject(c.refNo, getAllFlags());
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <Crumbs items={[{ label: "nav.gov", href: "/pamahalaan" }, { label: "govb.crumb.bids", href: "/pamahalaan#bidding" }, { label: c.refNo }]} />
       <ProjectHeader c={c} />
       <div className="mt-4 space-y-4">

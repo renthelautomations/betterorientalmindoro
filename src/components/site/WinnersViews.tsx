@@ -75,7 +75,7 @@ export default function WinnersViews({ towns, years, table, single = false }: { 
                       <dt className="text-xs text-black/65"><T k={posKey(s.position)} /></dt>
                       <dd className="min-w-0">{c?.surname ? (
                         <Link href={`/dynasties/${tw.slug}#${seatId(s.position, year)}`} title={c.full} className={`inline-block rounded-lg px-2.5 py-1 text-sm font-semibold text-fiesta-navy hover:bg-fiesta-navy hover:text-white ${same ? "bg-fiesta-orange/15 text-[#8a3a18]" : ""}`}>{c.surname}</Link>
-                      ) : <span className="px-2.5 text-black/40"><span aria-hidden>–</span><span className="sr-only"><T k="dyn.view.norec" /></span></span>}</dd>
+                      ) : <span className="px-2.5 text-black/65"><span aria-hidden>–</span><span className="sr-only"><T k="dyn.view.norec" /></span></span>}</dd>
                     </div>
                   );
                 })}

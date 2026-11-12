@@ -61,14 +61,14 @@ export default function GovProcList({ cards, towns, years }: { cards: Card[]; to
   const present = new Set(cards.map((c) => c.town));
   const worksPresent = WORKS.filter((w) => cards.some((c) => c.work === w));
   const month = (m: string) => new Date(`2000-${m}-01T00:00:00Z`).toLocaleDateString(lang === "en" ? "en-PH" : "fil-PH", { month: "long", timeZone: "UTC" });
-  const nav = "inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-black/20 bg-white px-3 text-sm font-semibold text-fiesta-navy hover:border-fiesta-navy focus-visible:outline-2 focus-visible:outline-fiesta-blue disabled:border-black/10 disabled:bg-black/5 disabled:text-black/40";
+  const nav = "inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-black/20 bg-white px-3 text-sm font-semibold text-fiesta-navy hover:border-fiesta-navy focus-visible:outline-2 focus-visible:outline-fiesta-blue disabled:border-black/10 disabled:bg-black/5 disabled:text-black/65";
   return (
     <section aria-labelledby={`${id}-h`}>
       <h3 id={`${id}-h`} className="font-serif text-2xl font-bold text-fiesta-navy"><T k="govb.list.h" /></h3>
       <div className={`${card} mt-3 space-y-4`}>
         <label className="relative block">
           <span className="sr-only"><T k="govb.search" /></span>
-          <KitIcon name="search" className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-black/55" />
+          <KitIcon name="search" className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-black/65" />
           <input type="search" value={f.q} onChange={(e) => set({ q: e.target.value })} placeholder={t("govb.search.ph")} className="min-h-11 w-full rounded-full border-2 border-fiesta-navy/20 bg-white pl-11 pr-4 text-sm outline-none focus-visible:border-fiesta-blue focus-visible:ring-4 focus-visible:ring-fiesta-blue/20" />
         </label>
         <div className="grid gap-3 sm:grid-cols-3">

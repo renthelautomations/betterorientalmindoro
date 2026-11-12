@@ -35,7 +35,7 @@ export function WinnersGrid({ towns, years, caption, town }: { towns: GridTown[]
                   const same = !!(w && prev && sn(w) === sn(prev));
                   return (
                     <td key={c.year} className="px-1.5 py-1.5">
-                      {!w ? <span className="px-2 text-black/30"><span aria-hidden>–</span><span className="sr-only"><TF k="dyn.grid.nodata" v={[posKey(r.position), c.year]} /></span></span> : (
+                      {!w ? <span className="px-2 text-black/65"><span aria-hidden>–</span><span className="sr-only"><TF k="dyn.grid.nodata" v={[posKey(r.position), c.year]} /></span></span> : (
                         <DynCellLink href={`/dynasties/${t.slug}#${seatId(r.position, c.year)}`} seat={posKey(r.position)} year={c.year} town={t.name} names={c.winners.map((x) => titleCase(x.name)).join(", ")} title={c.winners.map((x) => titleCase(x.name)).join(", ")}
                           className={`block rounded-lg px-2 py-1.5 font-medium transition hover:bg-fiesta-navy hover:text-white ${same ? "bg-fiesta-orange/15 text-[#8a3a18]" : "text-fiesta-navy"}`}>
                           {sn(w)}

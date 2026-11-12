@@ -13,7 +13,7 @@ export default function TownStat({ label, value, hint, icon, color = "#2b4fa3", 
         <KitIcon name={icon} variant="badge" color={color} className="h-10 w-10 shrink-0" />
         <p className="min-w-0 text-xs font-semibold tracking-widest text-black/65 uppercase"><T k={label} /></p>
       </div>
-      <p className={`mt-3 font-serif text-3xl font-bold tabular-nums ${none ? "text-black/55" : "text-fiesta-navy"}`}>{value}</p>
+      <p className={`mt-3 font-serif text-3xl font-bold tabular-nums ${none ? "text-black/65" : "text-fiesta-navy"}`}>{value}</p>
       {share != null && !none && (
         <span className="mt-2 block h-2 overflow-hidden rounded-full bg-black/5" aria-hidden><span className="block h-full rounded-full" style={{ width: `${Math.min(Math.max(share * 100, 2), 100)}%`, background: color }} /></span>
       )}

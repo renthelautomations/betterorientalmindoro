@@ -15,7 +15,7 @@ export function DocShell({ titleKey, eyebrowKey = "docs.eyebrow.info", sections 
   const t = useT();
   const title = t(titleKey);
   return (
-    <main className="mx-auto max-w-5xl px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <div className="max-w-3xl">
         <PageHead crumbs={[{ label: t("docs.home"), href: "/" }, { label: title }]} eyebrow={t(eyebrowKey)} title={title} />
         <p className="mt-4 inline-flex items-center gap-2 rounded-full bg-fiesta-mint/70 px-3 py-1.5 text-xs font-semibold text-fiesta-navy"><KitIcon name="calendar" className="h-4 w-4" /><T k="uxa.doc.updated" /> {DOC_UPDATED}</p>

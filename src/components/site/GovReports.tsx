@@ -48,7 +48,7 @@ export default function GovReports() {
                   const k = `${y}-${q}`; const id = listedBy.get(k); const miss = missing.has(k);
                   const body = id ? <><CheckSvg className="h-4 w-4" /> Q{q}<span className="sr-only"> - <T k="gova.q.listed" /></span></> : miss ? <><FlagSvg className="h-4 w-4" /> Q{q}<span className="sr-only"> - <T k="gova.q.notListed" /></span></> : <>Q{q} –<span className="sr-only"> - <T k="gova.q.na" /></span></>;
                   const cls = "flex min-h-11 items-center justify-center gap-1.5 rounded-xl px-2 text-sm font-bold";
-                  return <li key={q}>{id ? <Link href={`/pamahalaan/ulat/${id}`} className={`${cls} bg-fiesta-mint text-fiesta-navy hover:shadow focus-visible:outline-2 focus-visible:outline-fiesta-blue`}>{body}</Link> : <span className={`${cls} ${miss ? "bg-black/5 text-black/70" : "text-black/55"}`}>{body}</span>}</li>;
+                  return <li key={q}>{id ? <Link href={`/pamahalaan/ulat/${id}`} className={`${cls} bg-fiesta-mint text-fiesta-navy hover:shadow focus-visible:outline-2 focus-visible:outline-fiesta-blue`}>{body}</Link> : <span className={`${cls} ${miss ? "bg-black/5 text-black/70" : "text-black/65"}`}>{body}</span>}</li>;
                 })}
               </ul>
             </div>

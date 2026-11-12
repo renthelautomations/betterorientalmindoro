@@ -7,9 +7,9 @@ export default function Doc({ titleKey, eyebrowKey = "docs.eyebrow.info", childr
   const t = useT();
   const title = t(titleKey);
   return (
-    <main className="mx-auto max-w-3xl px-4 pb-20 pt-8">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <PageHead crumbs={[{ label: t("docs.home"), href: "/" }, { label: title }]} eyebrow={t(eyebrowKey)} title={title} />
-      <div className="mt-8 space-y-4 leading-relaxed [&_h2]:mt-8 [&_h2]:font-serif [&_h2]:text-xl [&_h2]:font-bold [&_ul]:list-disc [&_ul]:pl-6">{children}</div>
+      <div className="mt-8 max-w-3xl space-y-4 leading-relaxed [&_h2]:mt-8 [&_h2]:font-serif [&_h2]:text-xl [&_h2]:font-bold [&_ul]:list-disc [&_ul]:pl-6">{children}</div>
     </main>
   );
 }

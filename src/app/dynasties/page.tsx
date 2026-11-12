@@ -28,7 +28,7 @@ export default function Dynasties() {
   const edges = links.map((l) => ({ a: l.a, b: l.b, weight: l.weight, surnames: l.surnames.map(titleCase).join(", ") }));
   const stat = (label: string, value: string) => <div className="rounded-2xl border border-black/10 bg-white p-3"><dt className="text-xs text-black/70"><T k={label} /></dt><dd className="mt-1 font-serif text-2xl font-bold text-fiesta-navy">{value}</dd></div>;
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <TBreadcrumbs items={[{ label: "dyn.home", href: "/" }, { label: "dyn.crumb" }]} />
       <div className="mt-4"><TPageTitle eyebrow="dyn.eyebrow.dyn" title="dyn.title" /></div>
       <p className="mt-4 max-w-2xl text-black/75"><TF k="dyn.intro" v={[years[0], years.at(-1) ?? ""]} /></p>

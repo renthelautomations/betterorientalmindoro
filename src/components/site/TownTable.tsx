@@ -38,7 +38,7 @@ export default function TownTable({ rows }: { rows: TownRow[] }) {
         <tbody>
           {sorted.map((r, i) => (
             <tr key={r.slug} className={`border-b border-black/5 align-middle last:border-0 ${i % 2 ? "bg-fiesta-cream/60" : ""}`}>
-              <td className="px-4 py-3 text-center font-serif text-base font-bold tabular-nums text-black/45">{i + 1}</td>
+              <td className="px-4 py-3 text-center font-serif text-base font-bold tabular-nums text-black/65">{i + 1}</td>
               <th scope="row" className="px-4 py-3 font-medium">
                 <Link href={`/bayan/${r.slug}`} className="inline-flex min-h-11 items-center gap-3 font-serif text-base font-bold text-fiesta-navy hover:text-fiesta-blue">
                   <TownEmblem slug={r.slug} name="" className="h-9 w-9 shrink-0 rounded-lg" capital={r.slug === "calapan-city"} />{r.name}

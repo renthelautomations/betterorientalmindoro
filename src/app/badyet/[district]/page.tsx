@@ -26,7 +26,7 @@ export default async function BadyetDistrictPage({ params }: { params: Promise<{
   const { meta } = getBadyet();
   const look = DISTRICT_LOOK[(DISTRICT_SLUGS as readonly string[]).indexOf(slug) % 2];
   return (
-    <main className="mx-auto max-w-4xl px-4 py-10">
+    <main className="mx-auto max-w-6xl px-4 py-10">
       <Crumbs items={[{ label: "finance.home", href: "/" }, { label: "nav.budget", href: "/badyet" }, { label: d.label }]} />
       <div className="mt-4"><Title eyebrow="finance.b.eyebrow" title={d.label} /></div>
       <div className="mt-4 max-w-xl"><RepRow d={d} /></div>
