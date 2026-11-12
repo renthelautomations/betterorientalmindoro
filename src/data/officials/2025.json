@@ -10,7 +10,29 @@
    "first": "BONZ",
    "middle": null,
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE GOVERNOR",
+     "town": null,
+     "years": [
+      2016
+     ]
+    }
+   ],
+   "votes": 235935,
+   "share": 0.5434124185520518,
+   "runnerUp": {
+    "name": "VALENCIA, JOANNA",
+    "party": "IND",
+    "votes": 129070
+   }
   },
   {
    "position": "VICE GOVERNOR",
@@ -19,7 +41,34 @@
    "first": "CA",
    "middle": "JOJO",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE GOVERNOR",
+     "town": null,
+     "years": [
+      2019
+     ]
+    },
+    {
+     "position": "PROVINCIAL BOARD MEMBER",
+     "town": null,
+     "years": [
+      2016
+     ]
+    }
+   ],
+   "votes": 192571,
+   "share": 0.4608494212190178,
+   "runnerUp": {
+    "name": "DOLOR, DOLOR",
+    "party": "GSM",
+    "votes": 127953
+   }
   },
   {
    "position": "MEMBER, HOUSE OF REPRESENTATIVES",
@@ -28,7 +77,47 @@
    "first": "ARNAN",
    "middle": "TANYAG",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "MAYOR",
+     "town": "calapan-city",
+     "years": [
+      2001,
+      2016,
+      2019
+     ]
+    },
+    {
+     "position": "MAYOR",
+     "town": "bulalacao",
+     "years": [
+      2013
+     ]
+    },
+    {
+     "position": "GOVERNOR",
+     "town": null,
+     "years": [
+      2007
+     ]
+    },
+    {
+     "position": "VICE GOVERNOR",
+     "town": null,
+     "years": [
+      2004
+     ]
+    }
+   ],
+   "votes": 192998,
+   "share": 1,
+   "runnerUp": null
   },
   {
    "position": "MEMBER, HOUSE OF REPRESENTATIVES",
@@ -37,7 +126,29 @@
    "first": "PA",
    "middle": null,
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "GOVERNOR",
+     "town": null,
+     "years": [
+      2016
+     ]
+    }
+   ],
+   "votes": 114121,
+   "share": 0.5544429869309624,
+   "runnerUp": {
+    "name": "FALCON, EJAY",
+    "party": "GSM",
+    "votes": 91073
+   }
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -46,7 +157,32 @@
    "first": "RYAN",
    "middle": "ZARRA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "PROVINCIAL BOARD MEMBER",
+     "town": null,
+     "years": [
+      2010,
+      2013,
+      2016
+     ]
+    },
+    {
+     "position": "COUNCILOR",
+     "town": "naujan",
+     "years": [
+      2007
+     ]
+    }
+   ],
+   "votes": 91095,
+   "rank": 5,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -55,7 +191,17 @@
    "first": "BONG",
    "middle": "SIAPCO",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 133267,
+   "rank": 1,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -64,7 +210,23 @@
    "first": "MANNY",
    "middle": "SANTOS",
    "title": "ATTY.",
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "PROVINCIAL BOARD MEMBER",
+     "town": null,
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "votes": 70417,
+   "rank": 5,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -73,7 +235,25 @@
    "first": "ALELY",
    "middle": "CARANZO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "naujan",
+     "years": [
+      2016
+     ]
+    }
+   ],
+   "votes": 97386,
+   "rank": 3,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -82,7 +262,16 @@
    "first": "JOM",
    "middle": null,
    "title": "ATTY.",
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 96491,
+   "rank": 3,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -91,7 +280,25 @@
    "first": "FAY",
    "middle": null,
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "calapan-city",
+     "years": [
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 94868,
+   "rank": 4,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -100,7 +307,24 @@
    "first": "RL",
    "middle": null,
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "calapan-city",
+     "years": [
+      2019,
+      2022
+     ]
+    }
+   ],
+   "votes": 109910,
+   "rank": 2,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -109,7 +333,16 @@
    "first": "ROLAND",
    "middle": "HERNANDEZ",
    "title": "ATTY.",
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 101260,
+   "rank": 2,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -118,7 +351,16 @@
    "first": "PAU",
    "middle": null,
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 111180,
+   "rank": 1,
+   "of": 10
   },
   {
    "position": "PROVINCIAL BOARD MEMBER",
@@ -127,7 +369,15 @@
    "first": "ANTHONY",
    "middle": "LEE",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 84804,
+   "rank": 4,
+   "of": 10
   },
   {
    "position": "MAYOR",
@@ -136,7 +386,20 @@
    "first": "ALLAN",
    "middle": "ABRIGO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 11536,
+   "share": 0.5267820448422302,
+   "runnerUp": {
+    "name": "MARCO, REY",
+    "party": "MBS",
+    "votes": 10363
+   }
   },
   {
    "position": "MAYOR",
@@ -145,7 +408,38 @@
    "first": "RONALDO",
    "middle": "MORTEL",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "bansud",
+     "years": [
+      2016
+     ]
+    },
+    {
+     "position": "MAYOR",
+     "town": "bansud",
+     "years": [
+      2007,
+      2010,
+      2013
+     ]
+    }
+   ],
+   "votes": 13724,
+   "share": 0.6223754024760781,
+   "runnerUp": {
+    "name": "SAULONG, HOPE",
+    "party": "LDP",
+    "votes": 8327
+   }
   },
   {
    "position": "MAYOR",
@@ -154,7 +448,19 @@
    "first": "MIKE",
    "middle": "KING",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 17299,
+   "share": 0.44284873153623633,
+   "runnerUp": {
+    "name": "ENRIQUEZ, INDAY JOAN",
+    "party": "LAKAS",
+    "votes": 12462
+   }
   },
   {
    "position": "MAYOR",
@@ -163,7 +469,19 @@
    "first": "LUMEL",
    "middle": "LG",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 14695,
+   "share": 0.608035418735518,
+   "runnerUp": {
+    "name": "VILLAS, EDNA",
+    "party": "GSM",
+    "votes": 9473
+   }
   },
   {
    "position": "MAYOR",
@@ -172,7 +490,28 @@
    "first": "DOY",
    "middle": null,
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "MEMBER, HOUSE OF REPRESENTATIVES",
+     "town": null,
+     "years": [
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 44158,
+   "share": 0.5662661417524781,
+   "runnerUp": {
+    "name": "MORILLO, MALOU",
+    "party": "GSM",
+    "votes": 33823
+   }
   },
   {
    "position": "MAYOR",
@@ -181,7 +520,19 @@
    "first": "TESSIE",
    "middle": null,
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 13920,
+   "share": 0.5257988970310493,
+   "runnerUp": {
+    "name": "ALVAREZ, ROMEO EDWARD",
+    "party": "PFP",
+    "votes": 12554
+   }
   },
   {
    "position": "MAYOR",
@@ -190,7 +541,51 @@
    "first": "FERDINAND",
    "middle": "MAULION",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "mansalay",
+     "years": [
+      2016
+     ]
+    },
+    {
+     "position": "MAYOR",
+     "town": "mansalay",
+     "years": [
+      2010,
+      2013
+     ]
+    },
+    {
+     "position": "MAYOR",
+     "town": null,
+     "years": [
+      2007
+     ]
+    },
+    {
+     "position": "VICE MAYOR",
+     "town": null,
+     "years": [
+      2004
+     ]
+    }
+   ],
+   "votes": 21942,
+   "share": 0.7947696319907274,
+   "runnerUp": {
+    "name": "GAMOL, SHERNAN",
+    "party": "IND",
+    "votes": 3223
+   }
   },
   {
    "position": "MAYOR",
@@ -199,7 +594,28 @@
    "first": "HENRY",
    "middle": "CALIGNER",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "naujan",
+     "years": [
+      2013
+     ]
+    }
+   ],
+   "votes": 30832,
+   "share": 0.6576511240988012,
+   "runnerUp": {
+    "name": "MARCOS, MARK",
+    "party": "LP",
+    "votes": 16050
+   }
   },
   {
    "position": "MAYOR",
@@ -208,7 +624,29 @@
    "first": "RODEL",
    "middle": "MANTARING",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "pinamalayan",
+     "years": [
+      2016,
+      2019,
+      2022
+     ]
+    }
+   ],
+   "votes": 18289,
+   "share": 0.44801822546666015,
+   "runnerUp": {
+    "name": "DE CASTRO, C3",
+    "party": "LAKAS",
+    "votes": 15756
+   }
   },
   {
    "position": "MAYOR",
@@ -217,7 +655,17 @@
    "first": "INA",
    "middle": "MINDANAO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 12955,
+   "share": 1,
+   "runnerUp": null
   },
   {
    "position": "MAYOR",
@@ -226,7 +674,27 @@
    "first": "ROBINHOOD",
    "middle": "DE CHAVEZ",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "puerto-galera",
+     "years": [
+      2013
+     ]
+    }
+   ],
+   "votes": 14692,
+   "share": 0.6796188361550559,
+   "runnerUp": {
+    "name": "LOPEZ, MARLON",
+    "party": "IND",
+    "votes": 6708
+   }
   },
   {
    "position": "MAYOR",
@@ -235,7 +703,34 @@
    "first": "JERWIN",
    "middle": "SANQUE",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "roxas",
+     "years": [
+      2022
+     ]
+    },
+    {
+     "position": "COUNCILOR",
+     "town": "roxas",
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "votes": 15964,
+   "share": 0.5150508146475238,
+   "runnerUp": {
+    "name": "CUSI, LEO SR.",
+    "party": "GSM",
+    "votes": 15031
+   }
   },
   {
    "position": "MAYOR",
@@ -244,7 +739,19 @@
    "first": "KAREN",
    "middle": "PONCE",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 5611,
+   "share": 0.5611,
+   "runnerUp": {
+    "name": "MORENO, NEWTON JOHN",
+    "party": "GSM",
+    "votes": 4389
+   }
   },
   {
    "position": "MAYOR",
@@ -253,7 +760,20 @@
    "first": "NEMMEN",
    "middle": "ORTEGA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 12610,
+   "share": 0.6120764974274342,
+   "runnerUp": {
+    "name": "MALAPAD, RONALDO",
+    "party": "GSM",
+    "votes": 7992
+   }
   },
   {
    "position": "MAYOR",
@@ -262,7 +782,19 @@
    "first": "RICHARD",
    "middle": "VALENCIA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12921,
+   "share": 0.484531443356958,
+   "runnerUp": {
+    "name": "ORTEGA, POPONG",
+    "party": "MBS",
+    "votes": 6502
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -271,7 +803,28 @@
    "first": "ERIC",
    "middle": "VICTORIO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "baco",
+     "years": [
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 13818,
+   "share": 0.6511167656205824,
+   "runnerUp": {
+    "name": "ABARQUEZ, ARNEL",
+    "party": "MBS",
+    "votes": 7404
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -280,7 +833,19 @@
    "first": "PRINCESS",
    "middle": "CARANDANG",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 9865,
+   "share": 0.4595639616137147,
+   "runnerUp": {
+    "name": "TOLENTINO, SUPERVICE",
+    "party": "LP",
+    "votes": 8119
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -289,7 +854,29 @@
    "first": "JAYSON",
    "middle": "MACARAEG",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "bongabong",
+     "years": [
+      2016,
+      2019,
+      2022
+     ]
+    }
+   ],
+   "votes": 16733,
+   "share": 0.44364610122756315,
+   "runnerUp": {
+    "name": "DE GALA, ATE BONG",
+    "party": "PFP",
+    "votes": 10962
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -298,7 +885,29 @@
    "first": "GERMAN",
    "middle": "SALAS",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "bulalacao",
+     "years": [
+      2013,
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 13363,
+   "share": 0.5574420156849658,
+   "runnerUp": {
+    "name": "VILLAS, ERNILO",
+    "party": "GSM",
+    "votes": 10609
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -307,7 +916,20 @@
    "first": "BIM",
    "middle": "RODOLFO",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 47035,
+   "share": 0.6170952505903963,
+   "runnerUp": {
+    "name": "PADILLA, JUDGE PADDY",
+    "party": "GSM",
+    "votes": 29185
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -316,7 +938,27 @@
    "first": "WILFREDO",
    "middle": "SALAZAR",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "gloria",
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "votes": 15117,
+   "share": 0.5875928013371167,
+   "runnerUp": {
+    "name": "RODEGERIO, GERMAN",
+    "party": "PFP",
+    "votes": 10610
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -325,7 +967,27 @@
    "first": "JOEL",
    "middle": "MAULION",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "MAYOR",
+     "town": "mansalay",
+     "years": [
+      2016
+     ]
+    }
+   ],
+   "votes": 17598,
+   "share": 0.6504287403903016,
+   "runnerUp": {
+    "name": "BELARO, BERNADETTE",
+    "party": "IND",
+    "votes": 5063
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -334,7 +996,19 @@
    "first": "BUDGET",
    "middle": "JANDA",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 27648,
+   "share": 0.5865207153312544,
+   "runnerUp": {
+    "name": "DELOS REYES, GREAT",
+    "party": "GSM",
+    "votes": 19491
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -343,7 +1017,28 @@
    "first": "ARIS",
    "middle": "APASAN",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "MAYOR",
+     "town": "pinamalayan",
+     "years": [
+      2019,
+      2022
+     ]
+    }
+   ],
+   "votes": 24606,
+   "share": 0.6254543605907323,
+   "runnerUp": {
+    "name": "MADRID, TOTOY",
+    "party": "LAKAS",
+    "votes": 10971
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -352,7 +1047,27 @@
    "first": "KUYA",
    "middle": "PASCO",
    "title": null,
-   "party": "LDP"
+   "party": "LDP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "pola",
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "votes": 11648,
+   "share": 0.6735673393858786,
+   "runnerUp": {
+    "name": "RIVERA, MARVIN",
+    "party": "GSM",
+    "votes": 5645
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -361,7 +1076,24 @@
    "first": "ROCKY",
    "middle": "DATINGUINOO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "MAYOR",
+     "town": "puerto-galera",
+     "years": [
+      2019,
+      2022
+     ]
+    }
+   ],
+   "votes": 17723,
+   "share": 1,
+   "runnerUp": null
   },
   {
    "position": "VICE MAYOR",
@@ -370,7 +1102,27 @@
    "first": "BONG",
    "middle": "SAGADO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "roxas",
+     "years": [
+      2022
+     ]
+    }
+   ],
+   "votes": 18372,
+   "share": 0.6029933044505711,
+   "runnerUp": {
+    "name": "YASON, JOHN JOHN",
+    "party": "LP",
+    "votes": 12096
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -379,7 +1131,29 @@
    "first": "BOYET",
    "middle": "RAMOS",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "MAYOR",
+     "town": "san-teodoro",
+     "years": [
+      2016,
+      2019,
+      2022
+     ]
+    }
+   ],
+   "votes": 5014,
+   "share": 0.5236006683375104,
+   "runnerUp": {
+    "name": "GARACHICO, LANI",
+    "party": "PFP",
+    "votes": 4562
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -388,7 +1162,19 @@
    "first": "ALLANKENNETH",
    "middle": "PEREZ",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 8344,
+   "share": 0.41866532865027595,
+   "runnerUp": {
+    "name": "ARREOLA, ROLLY",
+    "party": "GSM",
+    "votes": 6549
+   }
   },
   {
    "position": "VICE MAYOR",
@@ -397,7 +1183,27 @@
    "first": "LITO",
    "middle": "CASTILLO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "MAYOR",
+     "town": "victoria",
+     "years": [
+      2022
+     ]
+    }
+   ],
+   "votes": 11293,
+   "share": 0.4316731011811475,
+   "runnerUp": {
+    "name": "UMALI, VIRGILIO",
+    "party": "MBS",
+    "votes": 11052
+   }
   },
   {
    "position": "COUNCILOR",
@@ -406,7 +1212,15 @@
    "first": "RIGOR",
    "middle": "ACEVEDA",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 8094,
+   "rank": 8,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -415,7 +1229,15 @@
    "first": "YSSAY",
    "middle": "ASINAS",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 9498,
+   "rank": 4,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -424,7 +1246,16 @@
    "first": "NARDS",
    "middle": "LALONGISIP",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 9202,
+   "rank": 5,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -433,7 +1264,15 @@
    "first": "ALLAN",
    "middle": "QUINTO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 10269,
+   "rank": 3,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -442,7 +1281,16 @@
    "first": "MANOY",
    "middle": "RAMIREZ",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 8315,
+   "rank": 7,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -451,7 +1299,15 @@
    "first": "VERING",
    "middle": "BLANCO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 8340,
+   "rank": 6,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -460,7 +1316,16 @@
    "first": "JAY",
    "middle": "CARPIO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 11703,
+   "rank": 1,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -469,7 +1334,17 @@
    "first": "ARLENE",
    "middle": "MAGPILI",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 10940,
+   "rank": 2,
+   "of": 22
   },
   {
    "position": "COUNCILOR",
@@ -478,7 +1353,17 @@
    "first": "TITO",
    "middle": "AXIBAL",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 7758,
+   "rank": 6,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -487,7 +1372,16 @@
    "first": "WILLIAM",
    "middle": "CALDERON",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 7301,
+   "rank": 7,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -496,7 +1390,15 @@
    "first": "JAYLIBEE",
    "middle": "MAZO",
    "title": "ATTY.",
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11853,
+   "rank": 1,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -505,7 +1407,15 @@
    "first": "PORCHIA",
    "middle": "LAVAREZ",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 8912,
+   "rank": 4,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -514,7 +1424,15 @@
    "first": "SIR",
    "middle": "BIEN",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11494,
+   "rank": 2,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -523,7 +1441,15 @@
    "first": "RONALD",
    "middle": "BARCELO",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 10946,
+   "rank": 3,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -532,7 +1458,17 @@
    "first": "NILO",
    "middle": "ENRIQUEZ",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 8675,
+   "rank": 5,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -541,7 +1477,17 @@
    "first": "BENEDICK",
    "middle": "MORALES",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 6536,
+   "rank": 8,
+   "of": 25
   },
   {
    "position": "COUNCILOR",
@@ -550,7 +1496,15 @@
    "first": "JEFF",
    "middle": "BRUCAL",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 14554,
+   "rank": 2,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -559,7 +1513,15 @@
    "first": "NIÑA",
    "middle": "FERNANDEZ",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12111,
+   "rank": 4,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -568,7 +1530,32 @@
    "first": "RICHARD",
    "middle": "SEÑO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "bongabong",
+     "years": [
+      2016,
+      2022
+     ]
+    },
+    {
+     "position": "COUNCILOR",
+     "town": "bongabong",
+     "years": [
+      2010,
+      2013
+     ]
+    }
+   ],
+   "votes": 15376,
+   "rank": 1,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -577,7 +1564,23 @@
    "first": "EMY",
    "middle": "ISLER",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "bongabong",
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "votes": 12497,
+   "rank": 3,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -586,7 +1589,15 @@
    "first": "CINDEE",
    "middle": "VILLEN",
    "title": "ATTY.",
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11827,
+   "rank": 8,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -595,7 +1606,15 @@
    "first": "DODIE",
    "middle": "LAZARO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12064,
+   "rank": 5,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -604,7 +1623,15 @@
    "first": "MELODY",
    "middle": "FLORES",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12050,
+   "rank": 6,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -613,7 +1640,15 @@
    "first": "ARNOLD",
    "middle": "ARTILLAGA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12049,
+   "rank": 7,
+   "of": 36
   },
   {
    "position": "COUNCILOR",
@@ -622,7 +1657,15 @@
    "first": "NESTOR",
    "middle": null,
    "title": "CAPT.",
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11394,
+   "rank": 8,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -631,7 +1674,15 @@
    "first": "KAP",
    "middle": "ROGER",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12455,
+   "rank": 6,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -640,7 +1691,15 @@
    "first": "ROMEO",
    "middle": null,
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12684,
+   "rank": 5,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -649,7 +1708,34 @@
    "first": "RAMON",
    "middle": "GARAO",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "bulalacao",
+     "years": [
+      2016,
+      2019,
+      2022
+     ]
+    },
+    {
+     "position": "COUNCILOR",
+     "town": "bulalacao",
+     "years": [
+      2007,
+      2010,
+      2013
+     ]
+    }
+   ],
+   "votes": 13113,
+   "rank": 3,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -658,7 +1744,16 @@
    "first": "JOEJIE",
    "middle": "RONDAEL",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 12824,
+   "rank": 4,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -667,7 +1762,15 @@
    "first": "MOSES",
    "middle": null,
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 13260,
+   "rank": 2,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -676,7 +1779,15 @@
    "first": "JERUS",
    "middle": "BANTUGAN",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12339,
+   "rank": 7,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -685,7 +1796,27 @@
    "first": "GUILLERMO",
    "middle": "JR.",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "bulalacao",
+     "years": [
+      2004,
+      2007,
+      2010,
+      2016
+     ]
+    }
+   ],
+   "votes": 13763,
+   "rank": 1,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -694,7 +1825,16 @@
    "first": "RIUS",
    "middle": "CUI",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 38421,
+   "rank": 2,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -703,7 +1843,16 @@
    "first": "JUN",
    "middle": "JR.",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 33356,
+   "rank": 7,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -712,7 +1861,24 @@
    "first": "MYLENE",
    "middle": "ARIAS",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "calapan-city",
+     "years": [
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 35689,
+   "rank": 3,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -721,7 +1887,17 @@
    "first": "GENIE",
    "middle": "RICABLANCA",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 33889,
+   "rank": 6,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -730,7 +1906,16 @@
    "first": "RICKA",
    "middle": "PLATA",
    "title": "ATTY.",
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 29509,
+   "rank": 8,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -739,7 +1924,15 @@
    "first": "RAP",
    "middle": null,
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 35644,
+   "rank": 4,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -748,7 +1941,15 @@
    "first": "BEL",
    "middle": null,
    "title": "ATTY.",
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 41955,
+   "rank": 1,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -757,7 +1958,15 @@
    "first": "JOSEPH",
    "middle": null,
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 34017,
+   "rank": 5,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -766,7 +1975,25 @@
    "first": "GEORGE",
    "middle": "PANIT",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "gloria",
+     "years": [
+      2007,
+      2010,
+      2013
+     ]
+    }
+   ],
+   "votes": 9992,
+   "rank": 5,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -775,7 +2002,28 @@
    "first": "CRISPIN",
    "middle": "JAMILLA",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "gloria",
+     "years": [
+      2001,
+      2004,
+      2007,
+      2013,
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 9559,
+   "rank": 7,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -784,7 +2032,16 @@
    "first": "RUDY",
    "middle": "SENA",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 10712,
+   "rank": 4,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -793,7 +2050,15 @@
    "first": "NELSON",
    "middle": "BUMATAY",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11158,
+   "rank": 3,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -802,7 +2067,16 @@
    "first": "TIMO",
    "middle": "FRONDA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 12675,
+   "rank": 2,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -811,7 +2085,26 @@
    "first": "NICK",
    "middle": "MENDOZA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "gloria",
+     "years": [
+      2010,
+      2013,
+      2016
+     ]
+    }
+   ],
+   "votes": 9695,
+   "rank": 6,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -820,7 +2113,15 @@
    "first": "SK",
    "middle": "DEL MUNDO",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 9550,
+   "rank": 8,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -829,7 +2130,15 @@
    "first": "NELCY",
    "middle": "GADO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 13834,
+   "rank": 1,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -838,7 +2147,15 @@
    "first": "ROMAR",
    "middle": "MARCELLANA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 14599,
+   "rank": 3,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -847,7 +2164,15 @@
    "first": "SIR",
    "middle": "DE BELEN",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 14714,
+   "rank": 2,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -856,7 +2181,16 @@
    "first": "LOWIE",
    "middle": "ANGGIN",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 13512,
+   "rank": 5,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -865,7 +2199,17 @@
    "first": "NOMAR",
    "middle": "CLEMENTE",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 14253,
+   "rank": 4,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -874,7 +2218,15 @@
    "first": "CYRUS",
    "middle": "GATARIN",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11492,
+   "rank": 8,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -883,7 +2235,16 @@
    "first": "ENTENG",
    "middle": "MENDOZA",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 16835,
+   "rank": 1,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -892,7 +2253,26 @@
    "first": "CEZAR",
    "middle": "TORREFIEL",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "mansalay",
+     "years": [
+      2004,
+      2010,
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 11503,
+   "rank": 7,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -901,7 +2281,16 @@
    "first": "NOEL",
    "middle": "MALIWANAG",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 11874,
+   "rank": 6,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -910,7 +2299,17 @@
    "first": "ALLAN",
    "middle": "MENDOZA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 21960,
+   "rank": 6,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -919,7 +2318,27 @@
    "first": "JUN",
    "middle": "SARABIA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "naujan",
+     "years": [
+      2004,
+      2007,
+      2010,
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 24339,
+   "rank": 2,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -928,7 +2347,16 @@
    "first": "ELMAR",
    "middle": "BALITA",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 23178,
+   "rank": 5,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -937,7 +2365,15 @@
    "first": "PAT",
    "middle": "REDUTA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 19395,
+   "rank": 8,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -946,7 +2382,27 @@
    "first": "MARION",
    "middle": "DELA FUENTE",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "naujan",
+     "years": [
+      2004,
+      2007,
+      2010,
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 24247,
+   "rank": 3,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -955,7 +2411,15 @@
    "first": "MICHAEL",
    "middle": "DUMLAO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 21229,
+   "rank": 7,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -964,7 +2428,16 @@
    "first": "WIL",
    "middle": "ALO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 25095,
+   "rank": 1,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -973,7 +2446,17 @@
    "first": "JOEFEL",
    "middle": "CULLA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 24244,
+   "rank": 4,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -982,7 +2465,27 @@
    "first": "DUNHILL",
    "middle": "MORATILLA",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "pinamalayan",
+     "years": [
+      2004,
+      2007,
+      2010
+     ]
+    }
+   ],
+   "votes": 15061,
+   "rank": 3,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -991,7 +2494,16 @@
    "first": "DOK",
    "middle": "DE GUIA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 12144,
+   "rank": 6,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -1000,7 +2512,23 @@
    "first": "JING-JING",
    "middle": "DE GUIA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "pinamalayan",
+     "years": [
+      2016
+     ]
+    }
+   ],
+   "votes": 19927,
+   "rank": 1,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -1009,7 +2537,15 @@
    "first": "MADAM",
    "middle": "DAJOYAG",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11302,
+   "rank": 7,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -1018,7 +2554,15 @@
    "first": "FATIMA",
    "middle": "GARCIA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 12614,
+   "rank": 5,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -1027,7 +2571,18 @@
    "first": "TOTOY",
    "middle": "DELAS ALAS",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 4,
+   "years": [
+    2016,
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 13565,
+   "rank": 4,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -1036,7 +2591,15 @@
    "first": "RONNIE",
    "middle": "MASCARIÑAS",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 19699,
+   "rank": 2,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -1045,7 +2608,24 @@
    "first": "JEFF",
    "middle": "AGAMATA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "pinamalayan",
+     "years": [
+      2016
+     ]
+    }
+   ],
+   "votes": 11204,
+   "rank": 8,
+   "of": 26
   },
   {
    "position": "COUNCILOR",
@@ -1054,7 +2634,17 @@
    "first": "ROMEL",
    "middle": "MANOJO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 8528,
+   "rank": 1,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1063,7 +2653,15 @@
    "first": "OTOY",
    "middle": "MAGTIBAY",
    "title": null,
-   "party": "LDP"
+   "party": "LDP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 7578,
+   "rank": 4,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1072,7 +2670,16 @@
    "first": "AD",
    "middle": "LLOYD",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 7365,
+   "rank": 5,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1081,7 +2688,16 @@
    "first": "ANGKOL",
    "middle": "JERRY",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 7258,
+   "rank": 6,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1090,7 +2706,16 @@
    "first": "EMIE",
    "middle": "SOTEJO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 6850,
+   "rank": 7,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1099,7 +2724,15 @@
    "first": "MARIA",
    "middle": "FRANCISCO",
    "title": null,
-   "party": "LDP"
+   "party": "LDP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 6740,
+   "rank": 8,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1108,7 +2741,16 @@
    "first": "BODOG",
    "middle": "MANALO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 7620,
+   "rank": 3,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1117,7 +2759,15 @@
    "first": "KAP",
    "middle": "PASCO",
    "title": null,
-   "party": "LDP"
+   "party": "LDP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 7651,
+   "rank": 2,
+   "of": 18
   },
   {
    "position": "COUNCILOR",
@@ -1126,7 +2776,23 @@
    "first": "EDITH",
    "middle": "DATINGUINOO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "puerto-galera",
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "votes": 8271,
+   "rank": 5,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1135,7 +2801,16 @@
    "first": "ACEVON",
    "middle": "ROSALES",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 13784,
+   "rank": 1,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1144,7 +2819,15 @@
    "first": "ARIS",
    "middle": "ROSALES",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 13274,
+   "rank": 2,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1153,7 +2836,17 @@
    "first": "DIVINE",
    "middle": null,
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 9297,
+   "rank": 4,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1162,7 +2855,15 @@
    "first": "DANNY",
    "middle": "DELA TORRE",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 6426,
+   "rank": 8,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1171,7 +2872,15 @@
    "first": "KAP",
    "middle": "RAMOS",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 7230,
+   "rank": 7,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1180,7 +2889,16 @@
    "first": "RODEL",
    "middle": "BALITA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 7697,
+   "rank": 6,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1189,7 +2907,17 @@
    "first": "HAROLD",
    "middle": "NG",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 10961,
+   "rank": 3,
+   "of": 19
   },
   {
    "position": "COUNCILOR",
@@ -1198,7 +2926,16 @@
    "first": "PANGGA",
    "middle": "TESORERO",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 17162,
+   "rank": 1,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1207,7 +2944,15 @@
    "first": "OBET",
    "middle": "ABALOS",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11958,
+   "rank": 8,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1216,7 +2961,15 @@
    "first": "DON",
    "middle": "YASON",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 13344,
+   "rank": 6,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1225,7 +2978,24 @@
    "first": "DEN-DEN",
    "middle": "DALIDA",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "roxas",
+     "years": [
+      2016,
+      2019
+     ]
+    }
+   ],
+   "votes": 14690,
+   "rank": 3,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1234,7 +3004,16 @@
    "first": "KING",
    "middle": "BRIONES",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 13726,
+   "rank": 5,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1243,7 +3022,23 @@
    "first": "DODOY",
    "middle": "VILLANUEVA",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "roxas",
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "votes": 12023,
+   "rank": 7,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1252,7 +3047,15 @@
    "first": "MAYETTE",
    "middle": "REYES",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 15440,
+   "rank": 2,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1261,7 +3064,15 @@
    "first": "MICHAEL",
    "middle": "ORTEGA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 14139,
+   "rank": 4,
+   "of": 16
   },
   {
    "position": "COUNCILOR",
@@ -1270,7 +3081,15 @@
    "first": "GREG",
    "middle": "GAREJO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 3729,
+   "rank": 8,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1279,7 +3098,16 @@
    "first": "ELYN",
    "middle": "CUETO",
    "title": null,
-   "party": "PFP"
+   "party": "PFP",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 3961,
+   "rank": 6,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1288,7 +3116,15 @@
    "first": "TUSIK",
    "middle": "DE GUZMAN",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 3899,
+   "rank": 7,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1297,7 +3133,16 @@
    "first": "KHIM",
    "middle": "ROXAS",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 4859,
+   "rank": 3,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1306,7 +3151,17 @@
    "first": "STEVE",
    "middle": "AUSTRIA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 4075,
+   "rank": 5,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1315,7 +3170,15 @@
    "first": "KUYA",
    "middle": "DIMAANO",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 5000,
+   "rank": 1,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1324,7 +3187,15 @@
    "first": "DOK",
    "middle": "MERCENE",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 4929,
+   "rank": 2,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1333,7 +3204,16 @@
    "first": "ZALDY",
    "middle": "TOLENTINO",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 4165,
+   "rank": 4,
+   "of": 21
   },
   {
    "position": "COUNCILOR",
@@ -1342,7 +3222,28 @@
    "first": "ELMAR",
    "middle": "GONZALES",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "COUNCILOR",
+     "town": "socorro",
+     "years": [
+      2001,
+      2007,
+      2010,
+      2013
+     ]
+    }
+   ],
+   "votes": 6705,
+   "rank": 7,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1351,7 +3252,15 @@
    "first": "LILIBETH",
    "middle": "SABAYBAY",
    "title": null,
-   "party": "IND"
+   "party": "IND",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 7052,
+   "rank": 4,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1360,7 +3269,15 @@
    "first": "JULIUSELESIS",
    "middle": "RUBIA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 7991,
+   "rank": 3,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1369,7 +3286,15 @@
    "first": "NIMFA",
    "middle": "MONTALBO",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 8734,
+   "rank": 2,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1378,7 +3303,15 @@
    "first": "RYAN",
    "middle": "PEREZ",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 6998,
+   "rank": 5,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1387,7 +3320,15 @@
    "first": "AMA",
    "middle": "SOLANO",
    "title": null,
-   "party": "LP"
+   "party": "LP",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 6011,
+   "rank": 8,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1396,7 +3337,15 @@
    "first": "ATE",
    "middle": "MENDOZA",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 6741,
+   "rank": 6,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1405,7 +3354,27 @@
    "first": "MARVIN",
    "middle": "GUADANIA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [
+    {
+     "position": "VICE MAYOR",
+     "town": "socorro",
+     "years": [
+      2007,
+      2010,
+      2013
+     ]
+    }
+   ],
+   "votes": 8898,
+   "rank": 1,
+   "of": 24
   },
   {
    "position": "COUNCILOR",
@@ -1414,7 +3383,15 @@
    "first": "KAP",
    "middle": "ANG",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 10548,
+   "rank": 3,
+   "of": 27
   },
   {
    "position": "COUNCILOR",
@@ -1423,7 +3400,17 @@
    "first": "RAJA",
    "middle": "GARDOCE",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 10464,
+   "rank": 4,
+   "of": 27
   },
   {
    "position": "COUNCILOR",
@@ -1432,7 +3419,15 @@
    "first": "JEN",
    "middle": "LUMPAS",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 11564,
+   "rank": 2,
+   "of": 27
   },
   {
    "position": "COUNCILOR",
@@ -1441,7 +3436,16 @@
    "first": "FEI",
    "middle": "AGUILA",
    "title": null,
-   "party": "AKSYON"
+   "party": "AKSYON",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 11843,
+   "rank": 1,
+   "of": 27
   },
   {
    "position": "COUNCILOR",
@@ -1450,7 +3454,17 @@
    "first": "MERCY",
    "middle": "ABACAN",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 3,
+   "years": [
+    2019,
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 9201,
+   "rank": 6,
+   "of": 27
   },
   {
    "position": "COUNCILOR",
@@ -1459,7 +3473,15 @@
    "first": "CHESTER",
    "middle": "TADENA",
    "title": null,
-   "party": "LAKAS"
+   "party": "LAKAS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 8412,
+   "rank": 8,
+   "of": 27
   },
   {
    "position": "COUNCILOR",
@@ -1468,7 +3490,15 @@
    "first": "EMMANUEL",
    "middle": "GALINDO",
    "title": null,
-   "party": "MBS"
+   "party": "MBS",
+   "streak": 1,
+   "years": [
+    2025
+   ],
+   "earlier": [],
+   "votes": 8862,
+   "rank": 7,
+   "of": 27
   },
   {
    "position": "COUNCILOR",
@@ -1477,7 +3507,16 @@
    "first": "WILLY",
    "middle": "MARANAN",
    "title": null,
-   "party": "GSM"
+   "party": "GSM",
+   "streak": 2,
+   "years": [
+    2022,
+    2025
+   ],
+   "earlier": [],
+   "votes": 9982,
+   "rank": 5,
+   "of": 27
   }
  ]
 }
