@@ -30,6 +30,7 @@ Every section is **one main page**, with its records laid out on it; each record
 | Estatistika | `/estatistika` (shaded map, town cards or table, growth, compare) | rows open `/bayan/[slug]` |
 | Badyet | `/badyet` (the two districts, with checks and flags) | `/badyet/1st`, `/badyet/2nd`, `/badyet/redflags` (the People's Budget Coalition's red-flag basket, narrowed to Oriental Mindoro's projects) |
 | Dinastiya | `/dynasties` (surname network, winners in three views, repeated surnames) | `/dynasties/[town]` |
+| Transparency | `/transparency` (government contracts from PhilGEPS and BIR tax collection, narrowed to Oriental Mindoro) | `/transparency/kontrata` (every award of 2023 to 2025) |
 | Pamahalaan | `/pamahalaan` (officials and offices, executive orders, procurement, financial reports, jobs, investment) | `/pamahalaan/eo/[id]`, `/pamahalaan/ulat/[id]`, `/pamahalaan/bidding/[ref]`, `/pamahalaan/dokumento/[id]`, `/pamahalaan/mga-tala` |
 | Help | `/terms` `/privacy` `/accessibility` `/faq` | |
 
@@ -98,6 +99,8 @@ Data is snapshotted into the repository so the site never depends on an upstream
 | `node scripts/fetch-gov.mjs` | `src/data/gov/*.json` | Public pages and feeds of [ormindoro.gov.ph](https://ormindoro.gov.ph) (one polite pass, volunteer User-Agent, no PDFs downloaded) |
 | `python scripts/gov-ocr.py <shard> <shards>` | local cache `../gov-cache` (not committed) | Downloads each listed PDF once and reads it with OCR. Setup: `python3 -m venv venv && venv/bin/pip install pymupdf rapidocr-onnxruntime` |
 | `node --experimental-strip-types scripts/gov-extract.mjs` | `src/data/gov/{procurement-docs,projects,flags}.json` | Extracts facts from the OCR cache and runs the checks (set `GOV_CACHE` if the cache is elsewhere) |
+| `node scripts/fetch-bir.mjs` | `src/data/bir.json` | BIR tax collection by area and month, 2020-2024, via the BetterGov [BIR dataset](https://huggingface.co/datasets/bettergovph/bir-tax-collection) (CC0). Millions of pesos |
+| `python scripts/fetch-philgeps.py` | `src/data/philgeps/*.json` | The Oriental Mindoro slice of the open [PhilGEPS dataset](https://huggingface.co/datasets/bettergovph/philgeps-v2) (CC0, 18.5 million line items): awards counted once, matched by delivery area or procuring office. Needs `duckdb` (`venv/bin/pip install duckdb`) |
 | `node scripts/seed-supabase.mjs` | Supabase tables | Loads hotlines and projects (needs `SUPABASE_DB_URL`) |
 | `node scripts/seed-gov.mjs` | Supabase `gov_items`, `gov_meta` | Loads every `src/data/gov/*.json` (needs `SUPABASE_DB_URL`; safe to re-run) |
 

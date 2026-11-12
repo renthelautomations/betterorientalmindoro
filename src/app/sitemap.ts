@@ -12,7 +12,7 @@ const BASE = siteUrl();
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
-    "", "/bayan", "/hotlines", "/proyekto", "/estatistika", "/badyet", "/badyet/1st", "/badyet/2nd", "/badyet/redflags", "/transparency", "/terms", "/privacy", "/accessibility", "/faq",
+    "", "/bayan", "/hotlines", "/proyekto", "/estatistika", "/badyet", "/badyet/1st", "/badyet/2nd", "/badyet/redflags", "/transparency", "/transparency/kontrata", "/terms", "/privacy", "/accessibility", "/faq",
     ...ICON_KEYS.map((k) => `/${k}`),
     ...getMunicipalities().map((m) => `/bayan/${m.slug}`),
     "/pamahalaan", "/pamahalaan/mga-tala", ...getEo().items.map((e) => `/pamahalaan/eo/${e.id}`), ...getReports().items.map((r) => `/pamahalaan/ulat/${r.id}`), ...projectSlugs().map((r) => `/pamahalaan/bidding/${r}`), ...getDocs().map((d) => `/pamahalaan/dokumento/${d.id}`),
