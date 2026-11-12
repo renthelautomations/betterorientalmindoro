@@ -1,4 +1,3 @@
-import { useId } from "react";
 import { HalconShape, TamarawShape, HALCON, TAM_HALF, MangyanLines, LakeLines } from "./shapes";
 
 // Fiesta palette: flat, bold, from the 74th-anniversary references.
@@ -91,7 +90,8 @@ export type PatternKey = keyof typeof PATTERNS;
 export function PatternFill({ variant, colors = DEFAULT, opacity = 1, className = "absolute inset-0 h-full w-full" }: {
   variant: PatternKey; colors?: string[]; opacity?: number; className?: string;
 }) {
-  const id = "p" + useId().replace(/\W/g, "");
+  // Id from what the pattern is, not from useId: ids from separately streamed parts of a page can repeat, and a repeated id made one pattern paint over another (the footer strip showed dots or nothing). Same pattern, same colours, same id is harmless.
+  const id = `pf-${variant}-${colors.join("").replace(/\W/g, "")}`;
   const p: Def = PATTERNS[variant];
   return (
     <svg className={className} aria-hidden="true" focusable="false">

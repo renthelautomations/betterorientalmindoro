@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </Landmark>
 
-        <Landmark as="section" label="her.h" className="border-t border-black/10 py-14">
+        <Landmark as="section" label="her.h" className="scroll-mt-28 border-t border-black/10 py-14" id="kasaysayan">
           <SectionHeader eyebrow="her.eyebrow" title="her.h" color={FIESTA_DEEP.orange} />
           <p className="mt-3 max-w-2xl text-black/70"><T k="her.lead" /></p>
           <Heritage />

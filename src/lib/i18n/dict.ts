@@ -24,7 +24,8 @@ import { OFF } from "./dict/off";
 import { HER } from "./dict/heritage";
 import { BRG } from "./dict/brgy";
 import { LAW } from "./dict/laws";
+import { IA } from "./dict/ia";
 import { HZ } from "./dict/hazard";
 
-export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD, ...MENU, ...RF, ...TP, ...GOVA, ...GOVB, ...GOVC, ...LGU, ...VOL, ...OFF, ...HZ, ...HER, ...BRG, ...LAW } as const satisfies Record<string, readonly [string, string]>;
+export const DICT = { ...BASE, ...HOME, ...BAYAN, ...PROYEKTO, ...FINANCE, ...DYN, ...ESTAT, ...DOCS, ...UXA, ...UXB, ...UXC, ...UXD, ...MENU, ...RF, ...TP, ...GOVA, ...GOVB, ...GOVC, ...LGU, ...VOL, ...OFF, ...HZ, ...HER, ...BRG, ...LAW, ...IA } as const satisfies Record<string, readonly [string, string]>;
 export type DictKey = keyof typeof DICT;

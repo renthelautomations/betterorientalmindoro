@@ -11,7 +11,7 @@ import { SITE } from "@/lib/brand";
 import pkg from "../../../package.json";
 
 const ext = { target: "_blank", rel: "noopener noreferrer" } as const;
-const HELP = [{ label: "nav.hotlines", href: "/hotlines" }, { label: "nav.services", href: "/serbisyo" }, { label: "nav.faq", href: "/faq" }, { label: "nav.access", href: "/accessibility" }];
+const HELP = [{ label: "nav.hotlines", href: "/hotlines" }, { label: "nav.faq", href: "/faq" }, { label: "nav.access", href: "/accessibility" }];
 const ABOUT = FOOTER_LINKS.filter((l) => ["/terms", "/privacy"].includes(l.href));
 
 function Col({ title, links, external }: { title: string; links: { label: string; href: string }[]; external?: boolean }) {

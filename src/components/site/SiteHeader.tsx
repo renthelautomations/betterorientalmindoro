@@ -5,12 +5,13 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import Logo from "@/components/Logo";
 import KitIcon from "@/components/kit/KitIcon";
 import MenuEmblem from "./MenuEmblem";
+import TownEmblem from "@/components/kit/TownEmblem";
 import { LangToggle, T, useT } from "@/lib/i18n/i18n";
 import type { MenuItem, NavEntry } from "./nav";
 
 const STRIPE = "repeating-linear-gradient(90deg,#e8552d 0 24px,#3aa65b 24px 48px,#4aa3d8 48px 72px,#f4b92e 72px 96px)";
 
-const linkCls = "inline-flex min-h-11 items-center gap-1 rounded-lg px-3 text-sm font-medium hover:bg-fiesta-navy/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue";
+const linkCls = "inline-flex min-h-11 items-center gap-1 whitespace-nowrap rounded-lg px-3 text-sm font-medium hover:bg-fiesta-navy/5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue";
 
 /** Sticky site header: logo, nav, language toggle. Groups open a mega menu on hover, focus or tap; below the lg breakpoint a native menu lists everything. */
 export default function SiteHeader({ entries, extra }: { entries: NavEntry[]; extra?: ReactNode }) {
@@ -35,7 +36,7 @@ export default function SiteHeader({ entries, extra }: { entries: NavEntry[]; ex
     <header ref={root} className="relative bg-fiesta-cream" onMouseLeave={leave} onMouseEnter={() => clearTimeout(timer.current)} onBlur={(e) => { if (!root.current?.contains(e.relatedTarget as Node)) setOpen(null); }}>
       <div className="h-1.5" style={{ background: STRIPE }} aria-hidden />
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <Link href="/" aria-label="better Oriental Mindoro home"><Logo /></Link>
+        <Link href="/" aria-label="better Oriental Mindoro home" className="shrink-0"><Logo /></Link>
         <nav aria-label="Main" className="hidden gap-1 lg:flex">
           {entries.map((e, i) => {
             const on = active(e);
@@ -44,7 +45,7 @@ export default function SiteHeader({ entries, extra }: { entries: NavEntry[]; ex
               <div key={e.label} className="relative" onMouseEnter={() => enter(i)}>
                 <button type="button" aria-expanded={open === i} aria-controls={`mega-${i}`} onClick={() => setOpen(open === i ? null : i)}
                   onKeyDown={(k) => { if (k.key === "ArrowDown") { k.preventDefault(); setOpen(i); } }} className={`${linkCls} ${cur}`}>
-                  <T k={e.label} /><KitIcon name="arrow" className={`h-3.5 w-3.5 rotate-90 text-fiesta-blue transition ${open === i ? "-rotate-90" : ""}`} />
+                  <T k={e.short ?? e.label} /><KitIcon name="arrow" className={`h-3.5 w-3.5 rotate-90 text-fiesta-blue transition ${open === i ? "-rotate-90" : ""}`} />
                 </button>
               </div>
             ) : (
@@ -58,13 +59,13 @@ export default function SiteHeader({ entries, extra }: { entries: NavEntry[]; ex
           <ul className="absolute right-0 z-50 mt-2 max-h-[80vh] w-72 overflow-auto rounded-2xl bg-white p-2 shadow-lg ring-1 ring-black/10">
             {entries.map((e) => (
               <li key={e.label}>
-                {e.href ? <Link href={e.href} className="flex min-h-11 items-center rounded-lg px-3 text-sm font-semibold text-fiesta-navy hover:bg-fiesta-mint"><T k={e.label} /></Link>
-                  : <p className="px-3 pb-1 pt-3 text-xs font-semibold tracking-widest text-black/65 uppercase"><T k={e.label} /></p>}
-                {e.menu && e.menu.items.length <= 6 && (
+                <details className="group/m">
+                  <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between rounded-lg px-3 text-sm font-semibold text-fiesta-navy hover:bg-fiesta-mint [&::-webkit-details-marker]:hidden"><T k={e.label} /><KitIcon name="arrow" className="h-3.5 w-3.5 rotate-90 text-fiesta-blue transition group-open/m:-rotate-90" /></summary>
                   <ul className="mb-1 ml-3 border-l border-black/10 pl-2">
-                    {e.menu.items.map((m) => <li key={m.href}><Link href={m.href} className="flex min-h-11 items-center gap-2 rounded-lg px-3 text-sm hover:bg-fiesta-mint"><T k={m.label} /></Link></li>)}
+                    {e.href && <li><Link href={e.href} className="flex min-h-11 items-center rounded-lg px-3 text-sm font-semibold text-fiesta-blue hover:bg-fiesta-mint"><T k={e.label} /> →</Link></li>}
+                    {e.menu?.items.map((m) => <li key={m.href}><Link href={m.href} className="flex min-h-11 items-center gap-2 rounded-lg px-3 text-sm hover:bg-fiesta-mint"><T k={m.label} /></Link></li>)}
                   </ul>
-                )}
+                </details>
               </li>
             ))}
           </ul>
@@ -75,21 +76,21 @@ export default function SiteHeader({ entries, extra }: { entries: NavEntry[]; ex
         const m = entries[open].menu!;
         return (
           <div id={`mega-${open}`} role="region" aria-label={t(entries[open].label)} className="absolute inset-x-0 top-full z-50 hidden border-t border-black/10 bg-fiesta-cream shadow-xl lg:block">
-            <div className="mx-auto max-w-6xl px-4 py-6">
-              <ul className="grid gap-4" style={{ gridTemplateColumns: `repeat(${m.cols}, minmax(0, 1fr))`, gridAutoRows: "1fr" }}>
+            <div className="mx-auto max-w-6xl px-4 py-4">
+              <ul className="grid gap-2.5" style={{ gridTemplateColumns: `repeat(${m.cols}, minmax(0, 1fr))`, gridAutoRows: "1fr" }}>
                 {m.items.map((it) => (
                   <li key={it.href} className="min-w-0">
-                    <Link href={it.href} onClick={() => setOpen(null)} className="group flex h-full min-h-[7rem] items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
-                      <MenuEmblem index={it.n} />
+                    <Link href={it.href} onClick={() => setOpen(null)} className="group flex h-full min-h-[3.75rem] items-center gap-3 rounded-xl bg-white px-3 py-2 shadow-sm ring-1 ring-black/5 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue">
+                      {(() => { const town = it.href.match(/^\/bayan\/([^/#]+)$/)?.[1]; return town ? <TownEmblem slug={town} name="" className="h-10 w-10 shrink-0 rounded-lg" capital={town === "calapan-city"} /> : <MenuEmblem index={it.n} className="h-10 w-10" />; })()}
                       <span className="min-w-0">
-                        <span className="line-clamp-2 block font-serif text-lg font-bold leading-tight text-fiesta-navy"><T k={it.label} /></span>
-                        {it.desc && <span className="mt-0.5 line-clamp-2 block text-sm leading-snug text-black/70"><T k={it.desc} /></span>}
+                        <span className="line-clamp-2 block font-serif text-base font-bold leading-tight text-fiesta-navy"><T k={it.label} /></span>
+                        {it.desc && <span className="line-clamp-2 block text-xs leading-snug text-black/70"><T k={it.desc} /></span>}
                       </span>
                     </Link>
                   </li>
                 ))}
               </ul>
-              {m.all && <p className="mt-4 text-right"><Link href={m.all.href} onClick={() => setOpen(null)} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-fiesta-blue underline-offset-4 hover:underline"><T k={m.all.label} /><KitIcon name="arrow" className="h-4 w-4" /></Link></p>}
+              {m.all && <p className="mt-3 text-right"><Link href={m.all.href} onClick={() => setOpen(null)} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-fiesta-blue underline-offset-4 hover:underline"><T k={m.all.label} /><KitIcon name="arrow" className="h-4 w-4" /></Link></p>}
             </div>
           </div>
         );

@@ -7,7 +7,7 @@ export default function Logo({ className = "", tone = "dark" }: { className?: st
       <svg viewBox={LOGO_VIEWBOX} className="h-10 w-auto" aria-hidden="true">
         <path d={LOGO_PATH} fill={fg} />
       </svg>
-      <span className="leading-none" style={{ color: fg }}>
+      <span className="whitespace-nowrap leading-none" style={{ color: fg }}>
         <span className="block font-serif text-xl font-bold">better</span>{" "}
         <span className="block text-sm font-semibold tracking-wide">Oriental Mindoro</span>
       </span>
