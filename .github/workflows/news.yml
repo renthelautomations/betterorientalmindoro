@@ -1,0 +1,22 @@
+name: Daily news
+on:
+  schedule: [{ cron: "0 22 * * *" }] # 06:00 Manila
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: GOV_ONLY=news node scripts/fetch-gov.mjs
+      - name: Commit if changed
+        run: |
+          git diff --quiet -I'"fetchedAt"' src/data/gov/news.json && exit 0
+          git config user.name "Renthel Cueto"
+          git config user.email "cuetorenthel@gmail.com"
+          git add src/data/gov/news.json
+          git commit -m "data: refresh provincial news"
+          git push

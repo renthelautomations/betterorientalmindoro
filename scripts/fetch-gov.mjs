@@ -1,6 +1,7 @@
 // Snapshots PUBLIC data of the provincial government site (https://ormindoro.gov.ph, content is public domain unless stated)
 // into src/data/gov/*.json as { source, fetchedAt, items }. PDFs are never downloaded: only titles, dates and link URLs are kept.
 // Run: node scripts/fetch-gov.mjs [YYYY-MM-DD]   (network needed; output is committed, the site never calls upstream)
+// Daily news only: GOV_ONLY=news node scripts/fetch-gov.mjs
 // Dev: GOV_HTML_DIR=<dir> reads previously saved pages (<dir>/<name>) instead of fetching.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { titleTown } from "../src/lib/dpwh-assign.mjs";
@@ -58,6 +59,30 @@ const write = (name, source, items) => {
   writeFileSync(new URL(name, OUT), JSON.stringify({ source, fetchedAt, items }, null, 1) + "\n");
   console.log(name.padEnd(18), items.length);
 };
+
+// ---------- 0. news (RSS; summary only, never article bodies). Runs first so `GOV_ONLY=news` can stop here (daily workflow). ----------
+{
+  const parse = (xml, lang) =>
+    [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => {
+      const g = (tag) => m[1].match(new RegExp(`<${tag}>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</${tag}>`))?.[1] ?? "";
+      const d = new Date(g("pubDate"));
+      const summary = text(g("description")).replace(/\s*\[…\]$/, "").replace(/^[A-Za-z]+ \d{1,2}, \d{4} \| /, "").replace(/^\S+ by [A-Z]{2,}\s+/, "");
+      return {
+        title: text(g("title")), link: text(g("link")), date: isNaN(d) ? null : d.toISOString(), language: lang,
+        summary: summary.length > 200 ? summary.slice(0, 199).trimEnd() + "…" : summary || null,
+      };
+    });
+  const items = [
+    ...parse(await get("feed.xml", "/feed/"), "fil"),
+    ...parse(await get("feed-p2.xml", "/feed/?paged=2"), "fil"),
+    ...parse(await get("feed-eng.xml", "/category/new_eng/feed/"), "en"),
+  ];
+  const seen = new Set();
+  const uniq = items.filter((x) => x.link && !seen.has(x.link) && seen.add(x.link)).sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "")).slice(0, 30);
+  write("news.json", `${BASE}/feed/ , ${BASE}/category/new_eng/feed/`, uniq.map((x, i) => ({ id: `news-${slug(x.link.replace(BASE, "")).slice(0, 70)}`, ...x })));
+}
+
+if (process.env.GOV_ONLY === "news") process.exit(0);
 
 // ---------- 1. procurement ----------
 // One Elementor tab per document type; each tab holds one table, in this order.
@@ -141,28 +166,6 @@ function oneTown(title) {
     };
   });
   write("careers.json", `${BASE}/careers/`, uniqueIds(items));
-}
-
-// ---------- 5. news (RSS; summary only, never article bodies) ----------
-{
-  const parse = (xml, lang) =>
-    [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map((m) => {
-      const g = (tag) => m[1].match(new RegExp(`<${tag}>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</${tag}>`))?.[1] ?? "";
-      const d = new Date(g("pubDate"));
-      const summary = text(g("description")).replace(/\s*\[…\]$/, "").replace(/^[A-Za-z]+ \d{1,2}, \d{4} \| /, "").replace(/^\S+ by [A-Z]{2,}\s+/, "");
-      return {
-        title: text(g("title")), link: text(g("link")), date: isNaN(d) ? null : d.toISOString(), language: lang,
-        summary: summary.length > 200 ? summary.slice(0, 199).trimEnd() + "…" : summary || null,
-      };
-    });
-  const items = [
-    ...parse(await get("feed.xml", "/feed/"), "fil"),
-    ...parse(await get("feed-p2.xml", "/feed/?paged=2"), "fil"),
-    ...parse(await get("feed-eng.xml", "/category/new_eng/feed/"), "en"),
-  ];
-  const seen = new Set();
-  const uniq = items.filter((x) => x.link && !seen.has(x.link) && seen.add(x.link)).sort((a, b) => (b.date ?? "").localeCompare(a.date ?? "")).slice(0, 30);
-  write("news.json", `${BASE}/feed/ , ${BASE}/category/new_eng/feed/`, uniq.map((x, i) => ({ id: `news-${slug(x.link.replace(BASE, "")).slice(0, 70)}`, ...x })));
 }
 
 // ---------- 6. officials ----------
