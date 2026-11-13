@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { getMunicipalities } from "./municipalities";
 import { getProjects, type Project } from "./projects";
+import { belongsTo, placeProject, type Place } from "./project-places";
 
 export type Brgy = { name: string; code: string; slug: string; town: string; areaKm2: number; rings: [number, number][][] };
 
@@ -36,8 +37,15 @@ export function inRing(x: number, y: number, ring: [number, number][]): boolean 
 }
 export const contains = (b: Brgy, lon: number, lat: number) => b.rings.some((r) => inRing(lon, lat, r));
 
-/** DPWH projects of the town whose GPS point falls inside this barangay. Projects without a point are not placed. */
-export const projectsIn = (b: Brgy): Project[] => getProjects(b.town).filter((p) => p.lat != null && p.lon != null && contains(b, p.lon, p.lat));
+const placed = new Map<string, Map<string, Place>>();
+/** Where each DPWH project of a town sits, by the one rule in project-places.ts. Cached per town. */
+export function placesOf(town: string): Map<string, Place> {
+  let m = placed.get(town);
+  if (!m) { const brgs = getTownBarangays(town); m = new Map(getProjects(town).map((p) => [p.id, placeProject(p, brgs, (b, x, y) => contains(b, x, y))])); placed.set(town, m); }
+  return m;
+}
+/** DPWH projects in this barangay: named in the title, else holding the GPS point. */
+export const projectsIn = (b: Brgy): Project[] => { const pl = placesOf(b.town); return getProjects(b.town).filter((p) => belongsTo(pl.get(p.id)!, b.code)); };
 
 /** SVG paths for every barangay of the town, fitted to size x size. */
 export function townShapes(town: string, size = 320) {

@@ -130,7 +130,7 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
         <div>
           <p className={h3}><T k="bayan.top.h" /></p>
           <ul className="grid auto-rows-fr gap-3">
-            {top.map((p) => <li key={p.id} className="h-full"><ProjectRow id={p.id} title={p.title} year={p.year} status={p.status} cost={p.cost} category={p.category} max={top[0].cost} /></li>)}
+            {top.map((p) => <li key={p.id} className="h-full"><ProjectRow bayan={m.name} id={p.id} title={p.title} year={p.year} status={p.status} cost={p.cost} category={p.category} max={top[0].cost} /></li>)}
           </ul>
         </div>
         <Link href={`/proyekto?bayan=${slug}`} className={link}><T k="bayan.allproj.pre" /> {fmtInt(projects.length)} <T k="bayan.allproj.post" /></Link>
