@@ -10,6 +10,8 @@ import { Divider } from "@/components/kit/Motifs";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
 import { T } from "@/lib/i18n/i18n";
 import { getAllBarangays, getBarangay, getTownBarangays, projectsIn, townShapes } from "@/lib/barangays";
+import { PmcCard } from "@/components/site/PmcCard";
+import { pmcForBarangay } from "@/lib/pmc";
 import { getBarangayOfficials } from "@/lib/barangay-officials";
 import { TF } from "@/components/site/DynBits";
 import { getMunicipality } from "@/lib/municipalities";
@@ -36,6 +38,7 @@ export default async function Barangay({ params }: PageProps<"/bayan/[slug]/[brg
   const townArea = siblings.reduce((s, x) => s + x.areaKm2, 0);
   const { shapes, P } = townShapes(slug);
   const offs = getBarangayOfficials(b.code);
+  const pmcProjects = pmcForBarangay(slug, b.code);
   return (
     <main>
       <div className="bg-fiesta-mint">
@@ -77,6 +80,12 @@ export default async function Barangay({ params }: PageProps<"/bayan/[slug]/[brg
             <Link href={`/proyekto?bayan=${slug}`} className={link}><T k="brg.all" /> →</Link>
           </div>
         </div>
+        {pmcProjects.length > 0 && (
+          <section aria-labelledby="brg-pmc" className="mt-12">
+            <h2 id="brg-pmc" className="font-serif text-2xl font-bold text-fiesta-navy"><T k="pmc.brg.h" /></h2>
+            <ul className="mt-4 grid gap-4 lg:grid-cols-2">{pmcProjects.map((p) => <PmcCard key={p.project + p.cost} p={p} names={Object.fromEntries(siblings.map((x) => [x.code, x.name]))} />)}</ul>
+          </section>
+        )}
         <section aria-labelledby="brg-off" className="mt-12">
           <h2 id="brg-off" className="font-serif text-2xl font-bold text-fiesta-navy"><T k="brg.off.h" /></h2>
           {offs ? (

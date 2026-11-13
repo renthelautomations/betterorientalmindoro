@@ -16,6 +16,8 @@ import { Tabs } from "@/components/kit/Interactive";
 import LineChart from "@/components/kit/LineChart";
 import { Divider } from "@/components/kit/Motifs";
 import { FIESTA, FIESTA_DEEP } from "@/components/kit/Patterns";
+import PmcInspections from "@/components/site/PmcInspections";
+import { getPmc } from "@/lib/pmc";
 import LawList from "@/components/site/LawList";
 import { getLaws } from "@/lib/laws";
 import { getTownBarangays, projectsIn } from "@/lib/barangays";
@@ -120,7 +122,7 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
       </div>
     ) },
     { id: "opisyal", label: "off.tab", panel: <TownOfficials slug={m.slug} isCity={m.isCity} /> },
-    ...(bounds ? [{ id: "hazard", label: "hz.tab", panel: <TownHazard name={m.name} bounds={bounds} /> }] : []),
+    ...(bounds ? [{ id: "hazard", label: "hz.tab", panel: <TownHazard name={m.name} bounds={bounds} pcode={m.pcode} /> }] : []),
     ...(getLguDirectory(m.slug) ? [{ id: "direktoryo", label: "lgu.dir.tab", badge: String(getLguDirectory(m.slug)!.offices.length), panel: <LguDirectory slug={m.slug} name={m.name} /> }] : []),
     { id: "proyekto", label: "town.projects", badge: String(projects.length), panel: projects.length ? (
       <SplitSticky side={<div><p className={h3}><T k="bayan.status.h" /></p><BigDonut slices={slices} format={(n) => n.toLocaleString("en-PH")} centerLabel="bayan.projects.lc" /></div>}>
@@ -146,10 +148,24 @@ export default async function Bayan({ params }: PageProps<"/bayan/[slug]">) {
       </div>
     ) : <BayanEmpty title="bayan.noelect" body="bayan.noelect.p" /> },
   ];
-  // One order on every town page, the same order as the site menu: who runs it, what it offers, where it is, what it spends, how it voted, what law says, then safety.
-  const ORDER = ["pangkalahatan", "opisyal", "direktoryo", "barangay", "proyekto", "halalan", "batas", "hazard", "hotlines"];
-  const panels = [...raw, ...(townLaws.length ? [{ id: "batas", label: "law.tab", badge: String(townLaws.length), panel: <LawList laws={townLaws} towns={[{ slug, name: m.name }]} hideTown /> }] : [])]
-    .sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
+  // Few tabs, in the order of the site menu. Sections that used to be tabs live inside a merged tab and keep their old #links (aliases).
+  const parts = [...raw, ...(getPmc(slug) ? [{ id: "inspeksyon", label: "pmc.tab", badge: String(getPmc(slug)!.projects.length), panel: <PmcInspections slug={slug} /> }] : []), ...(townLaws.length ? [{ id: "batas", label: "law.tab", badge: String(townLaws.length), panel: <LawList laws={townLaws} towns={[{ slug, name: m.name }]} hideTown /> }] : [])];
+  const part = (id: string) => parts.find((x) => x.id === id);
+  const merged = (id: string, label: string, ids: string[]) => {
+    const ps = ids.map(part).filter((x): x is NonNullable<typeof x> => !!x);
+    if (!ps.length) return null;
+    return { id, label, aliases: ids, badge: ps.length === 1 && "badge" in ps[0] ? (ps[0] as { badge?: string }).badge : undefined, panel: (
+      <div className="space-y-14">
+        {ps.map((x) => (
+          <section key={x.id} id={x.id} className="scroll-mt-28">
+            {ps.length > 1 && <h3 className="mb-4 flex items-center gap-2 font-serif text-2xl font-bold text-fiesta-navy"><T k={x.label} />{"badge" in x && x.badge ? <span className="rounded-full bg-fiesta-navy/5 px-2.5 py-0.5 font-sans text-sm font-bold tabular-nums">{x.badge}</span> : null}</h3>}
+            {x.panel}
+          </section>
+        ))}
+      </div>
+    ) };
+  };
+  const panels = [part("pangkalahatan")!, merged("tao", "town.tab.people", ["opisyal", "direktoryo"]), part("barangay")!, merged("proyekto", "town.projects", ["proyekto"]), merged("inspeksyon", "pmc.tab", ["inspeksyon"]), merged("rekord", "town.tab.records", ["halalan", "batas"]), merged("kaligtasan", "town.tab.safety", ["hazard", "hotlines"])].filter((x): x is NonNullable<typeof x> => !!x);
 
   return (
     <main>

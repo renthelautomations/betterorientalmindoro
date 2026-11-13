@@ -3,13 +3,13 @@ import { useEffect, useId, useRef, useState } from "react";
 import { useT } from "@/lib/i18n/i18n";
 
 /** ARIA tabs with arrow-key navigation. Panels come in as server-rendered nodes. */
-export function Tabs({ tabs }: { tabs: { id: string; label: string; badge?: string; panel: React.ReactNode }[] }) {
+export function Tabs({ tabs }: { tabs: { id: string; label: string; badge?: string; aliases?: string[]; panel: React.ReactNode }[] }) {
   const t = useT();
   const [i, setI] = useState(0);
   const base = useId();
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
-  const ids = useRef(tabs.map((x) => x.id)); ids.current = tabs.map((x) => x.id);
-  useEffect(() => { const go = () => { const k = ids.current.indexOf(location.hash.slice(1)); if (k >= 0) setI(k); }; go(); window.addEventListener("hashchange", go); return () => window.removeEventListener("hashchange", go); }, []);
+  const ids = useRef(tabs); ids.current = tabs;
+  useEffect(() => { const go = () => { const h = location.hash.slice(1); const k = ids.current.findIndex((x) => x.id === h || x.aliases?.includes(h)); if (k >= 0) { setI(k); if (h !== ids.current[k].id) requestAnimationFrame(() => document.getElementById(h)?.scrollIntoView({ block: "start" })); } }; /* aliases: an old link to a section that now lives inside a merged tab */ go(); window.addEventListener("hashchange", go); return () => window.removeEventListener("hashchange", go); }, []);
   const go = (n: number) => { const k = (n + tabs.length) % tabs.length; setI(k); refs.current[k]?.focus(); };
   return (
     <div>
