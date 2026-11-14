@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: { default: SITE.name, template: `%s | ${SITE.name}` },
   description: DESC,
   openGraph: { title: SITE.name, description: DESC, siteName: SITE.name, type: "website", locale: "en_PH" },
-  twitter: { card: "summary", title: SITE.name, description: DESC },
+  twitter: { card: "summary_large_image", title: SITE.name, description: DESC },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
