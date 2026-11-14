@@ -14,7 +14,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
     <>
       <a href="#main" className="sr-only focus:not-sr-only focus:p-3 focus:underline">Skip to content</a>
       <EmergencyBar />
-      <div className="sticky top-0 z-40"><SiteHeader entries={buildMenu(getCategories().map((c) => c.slug), getMunicipalities().map((m) => ({ slug: m.slug, name: m.name })))} extra={<VolunteerButton className="inline-flex min-h-9 items-center rounded-full bg-fiesta-orange px-3.5 text-xs font-bold text-fiesta-navy transition hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue"><T k="vol.cta" /></VolunteerButton>} /></div>
+      <div className="sticky top-0 z-40"><SiteHeader entries={buildMenu(getCategories().map((c) => c.slug), getMunicipalities().map((m) => ({ slug: m.slug, name: m.name })))} extra={<VolunteerButton className="hidden min-h-9 items-center sm:inline-flex rounded-full bg-fiesta-orange px-3.5 text-xs font-bold text-fiesta-navy transition hover:brightness-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fiesta-blue"><T k="vol.cta" /></VolunteerButton>} /></div>
       <div id="main" tabIndex={-1} className="flex-1 outline-none">{children}</div>
       <GroupContinuity />
       <SiteFooter />
