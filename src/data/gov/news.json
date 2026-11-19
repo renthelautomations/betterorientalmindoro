@@ -1,7 +1,31 @@
 {
  "source": "https://ormindoro.gov.ph/feed/ , https://ormindoro.gov.ph/category/new_eng/feed/",
- "fetchedAt": "2026-11-18",
+ "fetchedAt": "2026-11-19",
  "items": [
+  {
+   "id": "news-2026-11-18-4196-mag-aaral-sa-lungsod-ng-calapan-makatatanggap-ng-schoo",
+   "title": "4,196 mag-aaral sa Lungsod ng Calapan, makatatanggap ng school supplies mula sa Pamahalaang Nasyunal",
+   "link": "https://ormindoro.gov.ph/2026/11/18/4196-mag-aaral-sa-lungsod-ng-calapan-makatatanggap-ng-school-supplies-mula-sa-pamahalaang-nasyunal/",
+   "date": "2026-11-18T07:51:38.000Z",
+   "language": "fil",
+   "summary": "Makatatanggap ng school supplies ang nasa 4,196 kinder at Grade I na mag-aaral"
+  },
+  {
+   "id": "news-2026-11-18-salong-dagitab-sa-cits-abangan",
+   "title": "Salong Dagitab sa CITS, abangan",
+   "link": "https://ormindoro.gov.ph/2026/11/18/salong-dagitab-sa-cits-abangan/",
+   "date": "2026-11-18T07:49:57.000Z",
+   "language": "fil",
+   "summary": "ABANGAN: 𝗦𝗔𝗟𝗢𝗡𝗚 𝗗𝗔𝗚𝗜𝗧𝗔𝗕 𝗖𝗛𝗥𝗜𝗦𝗧𝗠𝗔𝗦 𝗙𝗘𝗦𝗧𝗜𝗩𝗔𝗟 𝗦𝗔 𝗖𝗜𝗧𝗦 Maagang Pasko ang hatid ng Pamahalaang"
+  },
+  {
+   "id": "news-2026-11-18-top-10-accomodation-establishments-sa-ormin-alamin",
+   "title": "Top 10 Accomodation Establishments sa OrMin, alamin",
+   "link": "https://ormindoro.gov.ph/2026/11/18/top-10-accomodation-establishments-sa-ormin-alamin/",
+   "date": "2026-11-18T07:44:52.000Z",
+   "language": "fil",
+   "summary": "From standout places to stay to destinations worth exploring, get to know the"
+  },
   {
    "id": "news-2026-11-17-pahingang-pangisdaan-ipinatutupad-sa-ormin",
    "title": "Pahingang Pangisdaan, ipinatutupad sa OrMin",
@@ -137,30 +161,6 @@
    "date": "2026-11-17T08:23:27.000Z",
    "language": "fil",
    "summary": "PANOORIN: Ang mensahe ng pagbati at pakikiisa ng Pamahalaang Bayan ng Naujan sa"
-  },
-  {
-   "id": "news-2026-11-17-mindorenong-topnotchers-sa-board-examination-pinarangalan",
-   "title": "Mindoreñong Topnotchers sa Board Examination, pinarangalan",
-   "link": "https://ormindoro.gov.ph/2026/11/17/mindorenong-topnotchers-sa-board-examination-pinarangalan/",
-   "date": "2026-11-17T08:20:58.000Z",
-   "language": "fil",
-   "summary": "Kasabay ng pagdiriwang ng ika-76 Anibersaryo ng Oriental Mindoro, kinilala at pinarangalan ang"
-  },
-  {
-   "id": "news-2026-11-17-ang-pagdiriwang-ng-76th-araw-ng-ormin-sa-san-teodoro",
-   "title": "Ang pagdiriwang ng 76th Araw ng OrMin sa San Teodoro",
-   "link": "https://ormindoro.gov.ph/2026/11/17/ang-pagdiriwang-ng-76th-araw-ng-ormin-sa-san-teodoro/",
-   "date": "2026-11-17T08:18:35.000Z",
-   "language": "fil",
-   "summary": "PANOORIN: Ang sabayang pagbati ng Pamahalaang Bayan ng San Teodoro, kasama sina Mayor"
-  },
-  {
-   "id": "news-2026-11-17-ang-pagdiriwang-ng-76th-araw-ng-ormin-sa-bongabong",
-   "title": "Ang pagdiriwang ng 76th Araw ng OrMin sa Bongabong",
-   "link": "https://ormindoro.gov.ph/2026/11/17/ang-pagdiriwang-ng-76th-araw-ng-ormin-sa-bongabong/",
-   "date": "2026-11-17T08:16:36.000Z",
-   "language": "fil",
-   "summary": "PANOORIN: Pagbati mula sa Pamahalaang Bayan ng Bongabong sa pagdiriwang ng ika-76 araw"
   },
   {
    "id": "news-2026-10-29-ormin-ziip-named-among-top-10-national-finalists-in-the-202",
