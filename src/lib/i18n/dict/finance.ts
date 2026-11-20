@@ -49,6 +49,8 @@ export const FINANCE = {
   // badyet index and district pages
   "finance.b.eyebrow": ["BUDGET", "BADYET"],
   "finance.b.title": ["Budget of Oriental Mindoro", "Badyet ng Oriental Mindoro"],
+  "finance.b.stage": ["Where the 2027 budget is now (as of 9 Nov 2026, per BetterGov)", "Nasaan na ang badyet para sa 2027 (hanggang 9 Nob 2026, ayon sa BetterGov)"],
+  "finance.b.stage.p": ["The House of Representatives has approved its version, House Bill No. 10858, on third reading. The Senate is next. The House bill figures below are that version; the NEP is the President's proposal.", "Inaprubahan na ng Kapulungan ng mga Kinatawan ang bersyon nito, ang House Bill No. 10858, sa ikatlong pagbasa. Ang Senado na ang susunod. Ang mga bilang ng House bill sa ibaba ay ang bersyong iyon; ang NEP ay ang panukala ng Pangulo."],
   "finance.b.lead": ["The amount for the DPWH district engineering office in each congressional district: the enacted budget from 2020 to 2026, and the two versions of the 2027 budget. These are totals only, with no project list yet.", "Ang halaga ng DPWH district engineering office sa bawat distrito ng kongreso: ang enacted na budget mula 2020 hanggang 2026, at ang dalawang bersyon ng 2027 budget. Mga kabuuang halaga lang ito, wala pang listahan ng proyekto."],
   "finance.nospend": ["This is not what was spent. This is not an allegation.", "Hindi ito ang nagastos. Hindi ito paratang."],
   "finance.d1": ["first district", "unang distrito"],

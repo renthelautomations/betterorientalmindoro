@@ -3,6 +3,8 @@ import { TF } from "./DynBits";
 import SourceLink from "@/components/ui/SourceLink";
 import { SourceNote } from "@/components/stats/StatCard";
 import TpMonthly from "./TpMonthly";
+import TpNta from "./TpNta";
+import { getNtaMeta } from "@/lib/nta";
 import { OM, YEARS, fmtM, fmtPct, getArea, getAreas, getBirMeta, growth, inRegion, monthly, rankInRegion, regionShare, series, shortArea, yearTotal, yoy } from "@/lib/bir";
 
 const card = "rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5";
@@ -80,10 +82,14 @@ export default function TpTax() {
         </ul>
       </section>
 
+      <TpNta />
+
       <SourceNote><TF k="tax.src" v={[meta.fetchedAt]} /></SourceNote>
+      <SourceNote><TF k="nta.src" v={[getNtaMeta().fetchedAt]} /></SourceNote>
       <div className="flex flex-wrap gap-2">
         <SourceLink href={meta.dashboard} icon="compass"><T k="tax.l.dash" /></SourceLink>
         <SourceLink href={meta.source} icon="database"><T k="tax.l.data" /></SourceLink>
+        <SourceLink href={getNtaMeta().docs} icon="compass"><T k="tax.l.nta" /></SourceLink>
       </div>
     </div>
   );

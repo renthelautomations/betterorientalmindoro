@@ -26,6 +26,10 @@ export default function Badyet() {
       <div className="mt-4"><Title eyebrow="finance.b.eyebrow" title="finance.b.title" /></div>
       <p className="mt-4 max-w-3xl text-black/75"><T k="finance.b.lead" /></p>
       <div className="mt-6"><SmartSearch scope="badyet" items={getSearchItems("badyet")} /></div>
+      <section aria-labelledby="stage" className="mt-6 rounded-2xl bg-fiesta-cream p-5 ring-1 ring-black/5">
+        <h2 id="stage" className="font-serif text-lg font-bold text-fiesta-navy"><T k="finance.b.stage" /></h2>
+        <p className="mt-1 text-sm leading-relaxed text-black/80"><T k="finance.b.stage.p" /></p>
+      </section>
       <NoSpendBanner />
 
       <div id="d1" className="mt-6 grid gap-5 md:grid-cols-2 md:gap-6">
@@ -49,6 +53,8 @@ export default function Badyet() {
         <SourceLink href="https://budget.bettergov.ph/docs" icon="book"><T k="finance.l.docs" /></SourceLink>
         <SourceLink href="https://budget.bettergov.ph/docs#mcp" icon="compass"><T k="rf.l.mcp" /></SourceLink>
         <SourceLink href="https://lgu.bettergov.ph/BUDGET_GUIDE.html" icon="compass"><T k="finance.l.guide" /></SourceLink>
+        <SourceLink href="https://compass.gov.ph/api-docs" icon="compass"><T k="tax.l.nta" /></SourceLink>
+        <SourceLink href="https://transparency.dpwh.gov.ph/nep" icon="compass"><T k="finance.l.dpwhnep" /></SourceLink>
       </div>
     </main>
   );
