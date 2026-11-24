@@ -1,166 +1,174 @@
 {
  "source": "https://ormindoro.gov.ph/feed/ , https://ormindoro.gov.ph/category/new_eng/feed/",
- "fetchedAt": "2026-11-23",
+ "fetchedAt": "2026-11-24",
  "items": [
+  {
+   "id": "news-2026-11-24-2027-cbms-pinaghahandaan-na",
+   "title": "2027 CBMS, pinaghahandaan na",
+   "link": "https://ormindoro.gov.ph/2026/11/24/2027-cbms-pinaghahandaan-na/",
+   "date": "2026-11-24T00:48:58.000Z",
+   "language": "fil",
+   "summary": "November 23, 2026 News by PISD The 2nd Convening of the Provincial Community-Based Monitoring System (CBMS) Coordinating Board (PCCB) was"
+  },
+  {
+   "id": "news-2026-11-24-pagbabasbas-ng-newly-renovated-building-1-at-building-4-sa-",
+   "title": "Pagbabasbas ng newly-renovated Building 1 at Building 4 sa OMPH, isinagawa",
+   "link": "https://ormindoro.gov.ph/2026/11/24/pagbabasbas-ng-newly-renovated-building-1-at-building-4-sa-omph-isinagawa/",
+   "date": "2026-11-24T00:45:06.000Z",
+   "language": "fil",
+   "summary": "November 23, 2026 News by PISD Binasbasan ngayong araw ang newly-renovated na Building 1 at Building 4 ng Oriental Mindoro"
+  },
+  {
+   "id": "news-2026-11-24-ekonomiya-ng-ormin-lumago-ng-4-5-noong-2025",
+   "title": "Ekonomiya ng OrMin, lumago ng 4.5% noong 2025",
+   "link": "https://ormindoro.gov.ph/2026/11/24/ekonomiya-ng-ormin-lumago-ng-4-5-noong-2025/",
+   "date": "2026-11-24T00:42:57.000Z",
+   "language": "fil",
+   "summary": "November 23, 2026 News by PISD Lumago ng 4.5% ang ekonomiya ng Oriental Mindoro noong 2025 ayon sa datos ng"
+  },
+  {
+   "id": "news-2026-11-23-pgom-kinilala-bilang-outstanding-agency-sa-appointments-pro",
+   "title": "PGOM, kinilala bilang Outstanding Agency sa Appointments Processing ng OMCHRMP Inc.",
+   "link": "https://ormindoro.gov.ph/2026/11/23/pgom-kinilala-bilang-outstanding-agency-sa-appointments-processing-ng-omchrmp-inc/",
+   "date": "2026-11-23T06:43:54.000Z",
+   "language": "fil",
+   "summary": "November 23, 2026 News by PISD Kinilala ng Civil Service Commission (CSC) Field Office – Oriental Mindoro ang Pamahalaang Panlalawigan"
+  },
+  {
+   "id": "news-2026-11-23-apat-na-bagong-diyakono-at-isang-pari-inordinahan-sa-dioces",
+   "title": "Apat na bagong Diyakono at isang pari, inordinahan sa Diocese ng Calapan",
+   "link": "https://ormindoro.gov.ph/2026/11/23/apat-na-bagong-diyakono-at-isang-pari-inordinahan-sa-diocese-ng-calapan/",
+   "date": "2026-11-23T06:39:32.000Z",
+   "language": "fil",
+   "summary": "November 23, 2026 News by PISD Pormal nang naitalaga ang apat (4) na bagong diyakono at isang (1) pari sa"
+  },
+  {
+   "id": "news-2026-11-23-salong-dagitab-2026-lightens-up-ormin-this-christmas-season",
+   "title": "Salong Dagitab 2026 Lightens Up OrMin this Christmas Season",
+   "link": "https://ormindoro.gov.ph/2026/11/23/salong-dagitab-2026-lightens-up-ormin-this-christmas-season/",
+   "date": "2026-11-23T03:47:39.000Z",
+   "language": "fil",
+   "summary": "November 23, 2026 News by PISD Salong Dagitab Christmas Festival 2026 of the Provincial Government of Oriental Mindoro (PGOM) ushered"
+  },
+  {
+   "id": "news-2026-11-23-monday-motivation-8",
+   "title": "Monday Motivation",
+   "link": "https://ormindoro.gov.ph/2026/11/23/monday-motivation-8/",
+   "date": "2026-11-23T02:54:16.000Z",
+   "language": "fil",
+   "summary": "November 23, 2026 News by PISD 𝘔𝘢𝘳𝘢𝘮𝘪𝘯𝘨 𝘴𝘢𝘭𝘢𝘮𝘢𝘵 𝘴𝘢 𝘗𝘢𝘯𝘨𝘪𝘯𝘰𝘰𝘯 𝘴𝘢 𝘣𝘢𝘨𝘰𝘯𝘨 𝘢𝘳𝘢𝘸. 𝘔𝘢𝘨𝘪𝘯𝘨 𝘮𝘢𝘴𝘢𝘺𝘢, 𝘭𝘪𝘨𝘵𝘢𝘴 𝘢𝘵 𝘱𝘳𝘰𝘥𝘶𝘬𝘵𝘪𝘣𝘰 𝘯𝘢𝘸𝘢 𝘢𝘯𝘨"
+  },
+  {
+   "id": "news-2026-11-23-salong-dagitab-2026-sa-cits-hatid-ay-paskong-puno-ng-saya-a",
+   "title": "Salong Dagitab 2026 sa CITS, hatid ay Paskong puno ng saya at hiwaga",
+   "link": "https://ormindoro.gov.ph/2026/11/23/salong-dagitab-2026-sa-cits-hatid-ay-paskong-puno-ng-saya-at-hiwaga/",
+   "date": "2026-11-23T02:51:40.000Z",
+   "language": "fil",
+   "summary": "November 21, 2026 News by PISD Nagliwanag at napuno ng kulay, saya at mahika ng Pasko ang Capitol in the"
+  },
+  {
+   "id": "news-2026-11-23-part-2-salong-dagitab-christmas-festival-sa-cits",
+   "title": "PART 2: Salong Dagitab Christmas Festival sa CITS",
+   "link": "https://ormindoro.gov.ph/2026/11/23/part-2-salong-dagitab-christmas-festival-sa-cits/",
+   "date": "2026-11-23T02:49:50.000Z",
+   "language": "fil",
+   "summary": "November 21, 2026 News by PISD Salong Dagitab Christmas Festival 2026 @ Capitol in the South Salong Dagitab Christmas Festival"
+  },
+  {
+   "id": "news-2026-11-23-part-1-salong-dagitab-christmas-festival-sa-cits",
+   "title": "PART 1: Salong Dagitab Christmas Festival sa CITS",
+   "link": "https://ormindoro.gov.ph/2026/11/23/part-1-salong-dagitab-christmas-festival-sa-cits/",
+   "date": "2026-11-23T02:45:03.000Z",
+   "language": "fil",
+   "summary": "November 21, 2026 News by PISD Salong Dagitab Christmas Festival 2026 @ Capitol in the South Salong Dagitab Christmas Festival"
+  },
+  {
+   "id": "news-2026-11-23-provincial-childrens-congress-isinagawa-kapakanan-at-protek",
+   "title": "Provincial Children’s Congress isinagawa, kapakanan at proteksyon ng mga bata patuloy na isinusulong",
+   "link": "https://ormindoro.gov.ph/2026/11/23/provincial-childrens-congress-isinagawa-kapakanan-at-proteksyon-ng-mga-bata-patuloy-na-isinusulong/",
+   "date": "2026-11-23T02:42:47.000Z",
+   "language": "fil",
+   "summary": "November 21, 2026 News by PISD Ang mabigyan ang mga bata ng pagkakataong maipahayag ang kanilang mga pananaw, gayundin ang"
+  },
+  {
+   "id": "news-2026-11-23-bagong-sasakyan-para-sa-bsp",
+   "title": "Bagong sasakyan para sa BSP",
+   "link": "https://ormindoro.gov.ph/2026/11/23/bagong-sasakyan-para-sa-bsp/",
+   "date": "2026-11-23T02:40:39.000Z",
+   "language": "fil",
+   "summary": "November 21, 2026 News by PISD 𝘽𝙖𝙜𝙤𝙣𝙜 𝙨𝙖𝙨𝙖𝙠𝙮𝙖𝙣 𝙥𝙖𝙧𝙖 𝙨𝙖 𝘽𝙤𝙮 𝙎𝙘𝙤𝙪𝙩𝙨 𝙤𝙛 𝙩𝙝𝙚 𝙋𝙝𝙞𝙡𝙞𝙥𝙥𝙞𝙣𝙚𝙨 (𝘽𝙎𝙋) Layunin ng Boy Scouts"
+  },
+  {
+   "id": "news-2026-11-23-panoorin-ang-masaya-at-makulay-na-selebrasyon-ng-salong-dag",
+   "title": "PANOORIN: Ang masaya at makulay na selebrasyon ng Salong Dagitab sa OrMin",
+   "link": "https://ormindoro.gov.ph/2026/11/23/panoorin-ang-masaya-at-makulay-na-selebrasyon-ng-salong-dagitab-sa-ormin/",
+   "date": "2026-11-23T02:38:46.000Z",
+   "language": "fil",
+   "summary": "November 20, 2026 News by PISD Balikan natin ang masaya at makulay na selebrasyon ng 𝗦𝗮𝗹𝗼𝗻𝗴 𝗗𝗮𝗴𝗶𝘁𝗮𝗯 ✨ sa lalawigan"
+  },
+  {
+   "id": "news-2026-11-23-gob-dolor-ibinahagi-ang-mga-karanasan-at-plano-ng-pgom-sa-8",
+   "title": "Gob. Dolor, ibinahagi ang mga karanasan at plano ng PGOM sa 8th MIMAROPA IT Congress",
+   "link": "https://ormindoro.gov.ph/2026/11/23/gob-dolor-ibinahagi-ang-mga-karanasan-at-plano-ng-pgom-sa-8th-mimaropa-it-congress/",
+   "date": "2026-11-23T02:35:00.000Z",
+   "language": "fil",
+   "summary": "November 20, 2026 News by PISD 𝐂𝐨𝐝𝐞 𝐆𝐫𝐞𝐞𝐧 𝟐𝟎𝟐𝟔: 𝐄𝐦𝐩𝐨𝐰𝐞𝐫𝐢𝐧𝐠 𝐒𝐮𝐬𝐭𝐚𝐢𝐧𝐚𝐛𝐥𝐞 𝐈𝐧𝐧𝐨𝐯𝐚𝐭𝐢𝐨𝐧 𝐓𝐡𝐫𝐨𝐮𝐠𝐡 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 Isang karangal…"
+  },
+  {
+   "id": "news-2026-11-23-mga-tampok-na-aktibidad-sa-pagbubukas-ng-salong-dagitab-sa-",
+   "title": "Mga tampok na aktibidad sa pagbubukas ng Salong Dagitab sa Roxas, alamin",
+   "link": "https://ormindoro.gov.ph/2026/11/23/mga-tampok-na-aktibidad-sa-pagbubukas-ng-salong-dagitab-sa-roxas-alamin/",
+   "date": "2026-11-23T02:33:27.000Z",
+   "language": "fil",
+   "summary": "November 19, 2026 News by PISD 𝗦𝗮 𝗥𝗼𝘅𝗮𝘀 𝗻𝗮𝗺𝗮𝗻 𝘁𝗮𝘆𝗼 𝗺𝗮𝗴𝗽𝗮𝗽𝗮𝗹𝗶𝘄𝗮𝗻𝗮𝗴 𝗮𝘁 𝗺𝗮𝗴𝗽𝗮𝗽𝗮𝘀𝗮𝘆𝗮! Isama ang buong pamilya sa pagbubukas ng"
+  },
+  {
+   "id": "news-2026-11-23-25-job-seekers-hired-on-the-spot-sa-provincial-job-fair-sa-",
+   "title": "25 Job Seekers, Hired on-the-spot sa Provincial Job Fair sa Roxas",
+   "link": "https://ormindoro.gov.ph/2026/11/23/25-job-seekers-hired-on-the-spot-sa-provincial-job-fair-sa-roxas/",
+   "date": "2026-11-23T02:29:38.000Z",
+   "language": "fil",
+   "summary": "November 20, 2026 News by PISD Umabot na sa 25 job seekers ang natanggap sa trabaho on-the-spot (Hired on the"
+  },
+  {
+   "id": "news-2026-11-23-35-days-na-lang-pasko-na",
+   "title": "35 Days na lang, Pasko na",
+   "link": "https://ormindoro.gov.ph/2026/11/23/35-days-na-lang-pasko-na/",
+   "date": "2026-11-23T02:28:12.000Z",
+   "language": "fil",
+   "summary": "November 20, 2026 News by PISD 𝟯𝟱 𝗗𝗮𝘆𝘀 𝗻𝗮 𝗹𝗮𝗻𝗴, 𝗣𝗮𝘀𝗸𝗼 𝗻𝗮! Palapit na nang palapit ang inaabangan nating lahat,"
+  },
+  {
+   "id": "news-2026-11-23-kabataang-mindoreno-top-10-sa-nutritionists-dietitian-licen",
+   "title": "Kabataang Mindoreño, Top 10 sa Nutritionists-Dietitian Licensure Examination",
+   "link": "https://ormindoro.gov.ph/2026/11/23/kabataang-mindoreno-top-10-sa-nutritionists-dietitian-licensure-examination/",
+   "date": "2026-11-23T02:26:47.000Z",
+   "language": "fil",
+   "summary": "November 19, 2026 News by PISD TINGNAN: Pinatunayan ni 𝗔𝗴𝗻𝗲𝘀 𝗬𝘀𝗮𝗯𝗲𝗹 𝗞𝗼𝗻𝗴 𝗚𝗮𝗻𝗮, Summa Cum Laude ng University of the"
+  },
+  {
+   "id": "news-2026-11-23-tulong-at-suporta-ng-pgom-sa-mga-batang-pinoy-athletes-alam",
+   "title": "Tulong at suporta ng PGOM sa mga Batang Pinoy Athletes, alamin",
+   "link": "https://ormindoro.gov.ph/2026/11/23/tulong-at-suporta-ng-pgom-sa-mga-batang-pinoy-athletes-alamin/",
+   "date": "2026-11-23T02:23:41.000Z",
+   "language": "fil",
+   "summary": "November 19, 2026 News by PISD TINGNAN: Kinikilala at pinahahalagahan ng Pamahalaang Panlalawigan ng Oriental Mindoro (PGOM) ang dedikasyon at"
+  },
+  {
+   "id": "news-2026-11-23-paalala-sa-mga-bibisita-sa-salong-dagitab",
+   "title": "Paalala sa mga bibisita sa Salong Dagitab",
+   "link": "https://ormindoro.gov.ph/2026/11/23/paalala-sa-mga-bibisita-sa-salong-dagitab/",
+   "date": "2026-11-23T02:20:50.000Z",
+   "language": "fil",
+   "summary": "November 19, 2026 News by PISD 𝐁𝐚𝐥𝐚𝐤 𝐧𝐲𝐨 𝐛𝐚𝐧𝐠 𝐛𝐮𝐦𝐢𝐬𝐢𝐭𝐚 𝐬𝐚 𝐒𝐚𝐥𝐨𝐧𝐠 𝐃𝐚𝐠𝐢𝐭𝐚𝐛 𝟐𝟎𝟐𝟔? 𝘕𝘢𝘳𝘪𝘵𝘰 𝘢𝘯𝘨 𝘪𝘭𝘢𝘯𝘨 𝘱𝘢𝘢𝘭𝘢𝘭𝘢 𝘱𝘢𝘳𝘢 𝘴𝘢"
+  },
   {
    "id": "news-2026-11-23-ormin-holds-first-ever-province-wide-celebration-of-foundin",
    "title": "OrMin holds first-ever province-wide celebration of Founding Anniversary",
    "link": "https://ormindoro.gov.ph/2026/11/23/ormin-holds-first-ever-province-wide-celebration-of-founding-anniversary/",
    "date": "2026-11-23T02:07:13.000Z",
-   "language": "fil",
+   "language": "en",
    "summary": "November 19, 2026 News by PISD For the first time in the province’s history, all the municipalities and component city"
-  },
-  {
-   "id": "news-2026-11-23-global-warming-and-climate-change-consciousness-week",
-   "title": "Global Warming and Climate Change Consciousness Week",
-   "link": "https://ormindoro.gov.ph/2026/11/23/global-warming-and-climate-change-consciousness-week/",
-   "date": "2026-11-23T02:01:30.000Z",
-   "language": "fil",
-   "summary": "November 19, 2026 News by PISD Nakikiisa ang Pamahalaang Panlalawigan ng Oriental Mindoro sa paggunita ng 𝐆𝐋𝐎𝐁𝐀𝐋 𝐖𝐀𝐑𝐌𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐈𝐌𝐀𝐓𝐄"
-  },
-  {
-   "id": "news-2026-11-23-kalsada-at-drainage-sa-national-highway-ng-brgy-adrialuna-n",
-   "title": "Kalsada at drainage sa National Highway ng Brgy. Adrialuna, Naujan, maisasaayos na",
-   "link": "https://ormindoro.gov.ph/2026/11/23/kalsada-at-drainage-sa-national-highway-ng-brgy-adrialuna-naujan-maisasaayos-na/",
-   "date": "2026-11-23T01:57:51.000Z",
-   "language": "fil",
-   "summary": "November 18, 2026 News by PISD Makalipas ang mahigit tatlong taon nating pagsusumikap, sa wakas maisasaayos na rin ang kalsada"
-  },
-  {
-   "id": "news-2026-11-23-mahiwagang-pasko-tampok-sa-sangguniang-panlalawigan",
-   "title": "Mahiwagang Pasko, tampok sa Sangguniang Panlalawigan",
-   "link": "https://ormindoro.gov.ph/2026/11/23/mahiwagang-pasko-tampok-sa-sangguniang-panlalawigan/",
-   "date": "2026-11-23T01:52:20.000Z",
-   "language": "fil",
-   "summary": "November 18, 2026 News by PISD Nagmistulang isang mahiwagang kaharian ang gusali ng Sangguniang Panlalawigan (SP) sa pagbubukas ng mga"
-  },
-  {
-   "id": "news-2026-11-23-php3-75b-annual-budget-ng-pamahalaang-panlalawigan-ng-ormin",
-   "title": "Php3.75B Annual Budget ng Pamahalaang Panlalawigan ng OrMin, aprubado na sa SP",
-   "link": "https://ormindoro.gov.ph/2026/11/23/php3-75b-annual-budget-ng-pamahalaang-panlalawigan-ng-ormin-aprubado-na-sa-sp/",
-   "date": "2026-11-23T01:43:04.000Z",
-   "language": "fil",
-   "summary": "November 18, 2026 News by PISD Inaprubahan na sa ikatlo at huling pagbasa ang General Appropriation Ordinance para sa pagpapatupad"
-  },
-  {
-   "id": "news-2026-11-23-basahin-mga-paalala-sa-mga-bibisita-sa-kapitolyo-para-sa-sa",
-   "title": "BASAHIN: Mga paalala sa mga bibisita sa Kapitolyo para sa Salong Dagitab 2026",
-   "link": "https://ormindoro.gov.ph/2026/11/23/basahin-mga-paalala-sa-mga-bibisita-sa-kapitolyo-para-sa-salong-dagitab-2026/",
-   "date": "2026-11-23T01:37:58.000Z",
-   "language": "fil",
-   "summary": "November 18, 2026 News by PISD 𝐁𝐚𝐥𝐚𝐤 𝐧𝐲𝐨 𝐛𝐚𝐧𝐠 𝐛𝐮𝐦𝐢𝐬𝐢𝐭𝐚 𝐬𝐚 𝐒𝐚𝐥𝐨𝐧𝐠 𝐃𝐚𝐠𝐢𝐭𝐚𝐛 𝟐𝟎𝟐𝟔? 𝘕𝘢𝘳𝘪𝘵𝘰 𝘢𝘯𝘨 𝘪𝘭𝘢𝘯𝘨 𝘱𝘢𝘢𝘭𝘢𝘭𝘢 𝘱𝘢𝘳𝘢 𝘴𝘢"
-  },
-  {
-   "id": "news-2026-11-23-mahigit-php4-7m-pondo-ipinagkaloob-ni-gob-dolor-sa-deped-or",
-   "title": "Mahigit Php4.7M pondo, ipinagkaloob ni Gob. Dolor sa DepEd OrMin",
-   "link": "https://ormindoro.gov.ph/2026/11/23/mahigit-php4-7m-pondo-ipinagkaloob-ni-gob-dolor-sa-deped-ormin/",
-   "date": "2026-11-23T01:32:45.000Z",
-   "language": "fil",
-   "summary": "November 18, 2026 News by PISD Upang matagumpay na maisakatuparan ang Palaro Oriental Mindoro 2026 ngayong darating na buwan ng"
-  },
-  {
-   "id": "news-2026-11-23-240-mag-aaral-sa-pgcmes-nakatanggap-ng-school-supplies-mula",
-   "title": "240 mag-aaral sa PGCMES, nakatanggap ng school supplies mula sa Pamahalaang Nasyunal",
-   "link": "https://ormindoro.gov.ph/2026/11/23/240-mag-aaral-sa-pgcmes-nakatanggap-ng-school-supplies-mula-sa-pamahalaang-nasyunal/",
-   "date": "2026-11-23T01:09:49.000Z",
-   "language": "fil",
-   "summary": "November 18, 2026 News by PISD Naisakatuparan ang gawaing ito sa pamamagitan ng Bureau of Learning Resources ng Department of"
-  },
-  {
-   "id": "news-2026-11-18-4196-mag-aaral-sa-lungsod-ng-calapan-makatatanggap-ng-schoo",
-   "title": "4,196 mag-aaral sa Lungsod ng Calapan, makatatanggap ng school supplies mula sa Pamahalaang Nasyunal",
-   "link": "https://ormindoro.gov.ph/2026/11/18/4196-mag-aaral-sa-lungsod-ng-calapan-makatatanggap-ng-school-supplies-mula-sa-pamahalaang-nasyunal/",
-   "date": "2026-11-18T07:51:38.000Z",
-   "language": "fil",
-   "summary": "Makatatanggap ng school supplies ang nasa 4,196 kinder at Grade I na mag-aaral"
-  },
-  {
-   "id": "news-2026-11-18-salong-dagitab-sa-cits-abangan",
-   "title": "Salong Dagitab sa CITS, abangan",
-   "link": "https://ormindoro.gov.ph/2026/11/18/salong-dagitab-sa-cits-abangan/",
-   "date": "2026-11-18T07:49:57.000Z",
-   "language": "fil",
-   "summary": "ABANGAN: 𝗦𝗔𝗟𝗢𝗡𝗚 𝗗𝗔𝗚𝗜𝗧𝗔𝗕 𝗖𝗛𝗥𝗜𝗦𝗧𝗠𝗔𝗦 𝗙𝗘𝗦𝗧𝗜𝗩𝗔𝗟 𝗦𝗔 𝗖𝗜𝗧𝗦 Maagang Pasko ang hatid ng Pamahalaang"
-  },
-  {
-   "id": "news-2026-11-18-top-10-accomodation-establishments-sa-ormin-alamin",
-   "title": "Top 10 Accomodation Establishments sa OrMin, alamin",
-   "link": "https://ormindoro.gov.ph/2026/11/18/top-10-accomodation-establishments-sa-ormin-alamin/",
-   "date": "2026-11-18T07:44:52.000Z",
-   "language": "fil",
-   "summary": "From standout places to stay to destinations worth exploring, get to know the"
-  },
-  {
-   "id": "news-2026-11-17-pahingang-pangisdaan-ipinatutupad-sa-ormin",
-   "title": "Pahingang Pangisdaan, ipinatutupad sa OrMin",
-   "link": "https://ormindoro.gov.ph/2026/11/17/pahingang-pangisdaan-ipinatutupad-sa-ormin/",
-   "date": "2026-11-17T09:00:40.000Z",
-   "language": "fil",
-   "summary": "Simula na ng Ika-8 cycle ng Fisheries Seasonal Closure: “Pahingang Pangisdaan ng Oriental"
-  },
-  {
-   "id": "news-2026-11-17-bch-hiring-radiologist",
-   "title": "BCH Hiring Radiologist",
-   "link": "https://ormindoro.gov.ph/2026/11/17/bch-hiring-radiologist/",
-   "date": "2026-11-17T08:59:19.000Z",
-   "language": "fil",
-   "summary": "AI content ·p͏o͏n͏S͏t͏o͏r͏s͏e͏d͏a͏g͏i͏3͏0͏s͏8͏r͏t͏P͏y͏9͏M͏1͏0͏a͏3͏l͏0͏1͏4͏8͏8͏0͏2͏8͏5͏i͏1͏c͏Y͏e͏3͏0͏t͏ ͏u͏3͏t͏e͏d͏g͏ ͏0͏ ͏u͏:͏m͏0͏0͏ · WE ARE HIRING! BULALACAO COMMUNITY HOSPITAL is looking for a"
-  },
-  {
-   "id": "news-2026-11-17-dengue-awareness-advisory-2",
-   "title": "Dengue Awareness Advisory",
-   "link": "https://ormindoro.gov.ph/2026/11/17/dengue-awareness-advisory-2/",
-   "date": "2026-11-17T08:58:02.000Z",
-   "language": "fil",
-   "summary": "𝑫𝒆𝒏𝒈𝒖𝒆 𝑨𝒘𝒂𝒓𝒆𝒏𝒆𝒔𝒔 𝑨𝒅𝒗𝒊𝒔𝒐𝒓𝒚 Para mapagtibay ang kampanya kontra dengue gamit ang 𝐓𝐀𝐎𝐁, 𝐓𝐀𝐊𝐓𝐀𝐊,"
-  },
-  {
-   "id": "news-2026-11-17-panoorin-public-safety-tips-sa-nalalapit-na-kapaskuhan",
-   "title": "PANOORIN: Public Safety Tips sa nalalapit na kapaskuhan",
-   "link": "https://ormindoro.gov.ph/2026/11/17/panoorin-public-safety-tips-sa-nalalapit-na-kapaskuhan/",
-   "date": "2026-11-17T08:56:22.000Z",
-   "language": "fil",
-   "summary": "As the holiday season draws near, let us make safety a priority. Let"
-  },
-  {
-   "id": "news-2026-11-17-panoorin-12th-sangguniang-panlalawigan-65th-regular-session",
-   "title": "PANOORIN: 12th Sangguniang Panlalawigan 65th Regular Session",
-   "link": "https://ormindoro.gov.ph/2026/11/17/panoorin-12th-sangguniang-panlalawigan-65th-regular-session/",
-   "date": "2026-11-17T08:54:39.000Z",
-   "language": "fil",
-   "summary": "12th Sangguniang Panlalawigan | 65th Regular Session | November 17, 2026 SOURCE: https://www.facebook.com/61577963879952/videos/1811079413509261"
-  },
-  {
-   "id": "news-2026-11-17-omcdh-daily-census-as-of-nov-16",
-   "title": "OMCDH Daily Census as of Nov 16",
-   "link": "https://ormindoro.gov.ph/2026/11/17/omcdh-daily-census-as-of-nov-16/",
-   "date": "2026-11-17T08:51:50.000Z",
-   "language": "fil",
-   "summary": "Daily Census ng Oriental Mindoro Central District Hospital noong araw ng Lunes, November"
-  },
-  {
-   "id": "news-2026-11-17-bulalacao-community-hospital-daily-census-as-of-november-15",
-   "title": "Bulalacao Community Hospital Daily Census as of November 15",
-   "link": "https://ormindoro.gov.ph/2026/11/17/bulalacao-community-hospital-daily-census-as-of-november-15/",
-   "date": "2026-11-17T08:50:24.000Z",
-   "language": "fil",
-   "summary": "Hospital Daily Census November 15, 2026 SOURCE: https://www.facebook.com/orminpio/posts/pfbid0A1gJXFywQMhELL3Ysno2BDXsrxvaPsiustEwoEp7cEbcE8rjegDBUEWqE6PcEsqWl?rdid=DJgDq43s4BNovHRd#"
-  },
-  {
-   "id": "news-2026-11-17-training-of-trainers-on-early-childhood-care-and-devt-in-em",
-   "title": "Training of Trainers on Early Childhood Care and Devt in Emergencies, isinagawa",
-   "link": "https://ormindoro.gov.ph/2026/11/17/training-of-trainers-on-early-childhood-care-and-devt-in-emergencies-isinagawa/",
-   "date": "2026-11-17T08:48:11.000Z",
-   "language": "fil",
-   "summary": "𝟬𝟵–𝟭𝟯 𝗡𝗢𝗩𝗘𝗠𝗕𝗘𝗥 𝟮𝟬𝟮𝟲 | 𝗧𝗥𝗔𝗜𝗡𝗜𝗡𝗚 𝗢𝗙 𝗧𝗥𝗔𝗜𝗡𝗘𝗥𝗦 𝗢𝗡 𝗘𝗔𝗥𝗟𝗬 𝗖𝗛𝗜𝗟𝗗𝗛𝗢𝗢𝗗 𝗖𝗔𝗥𝗘 𝗔𝗡𝗗 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗠𝗘𝗡𝗧"
-  },
-  {
-   "id": "news-2026-11-17-serbisyong-kalinisan-hatid-ng-pgso-sa-pagbubukas-ng-salong-",
-   "title": "Serbisyong kalinisan, hatid ng PGSO sa pagbubukas ng Salong Dagitab",
-   "link": "https://ormindoro.gov.ph/2026/11/17/serbisyong-kalinisan-hatid-ng-pgso-sa-pagbubukas-ng-salong-dagitab/",
-   "date": "2026-11-17T08:46:19.000Z",
-   "language": "fil",
-   "summary": "Hinihiling po namin ang pakikiisa ng ating mga kababayan na bumibisita sa Salong"
   },
   {
    "id": "news-2026-10-29-ormin-ziip-named-among-top-10-national-finalists-in-the-202",
@@ -225,14 +233,6 @@
    "date": "2026-08-17T07:06:58.000Z",
    "language": "en",
    "summary": "08 August 2026, Calapan City – The Diocese of Calapan was formally established"
-  },
-  {
-   "id": "news-2026-08-13-pgom-showcases-digital-transformation-and-employee-welfare-",
-   "title": "PGOM Showcases Digital Transformation and Employee Welfare Best Practices",
-   "link": "https://ormindoro.gov.ph/2026/08/13/pgom-showcases-digital-transformation-and-employee-welfare-best-practices/",
-   "date": "2026-08-13T07:35:54.000Z",
-   "language": "en",
-   "summary": "PGOM Showcases Digital Transformation and Employee Welfare Best Practices The Provincial Government of"
   }
  ]
 }
