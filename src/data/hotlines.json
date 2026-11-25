@@ -438,5 +438,45 @@
   "source": "https://www.facebook.com/photo/?fbid=3055505897952669",
   "verifiedAt": "2026-11-08",
   "confirmed": true
+ },
+ {
+  "id": "h46",
+  "scope": "gloria",
+  "category": "emergency",
+  "name": "Gloria Police Station",
+  "number": "0945 376 0667",
+  "source": "https://www.facebook.com/profile.php?id=100068231661409",
+  "verifiedAt": "2026-11-25",
+  "confirmed": true
+ },
+ {
+  "id": "h47",
+  "scope": "gloria",
+  "category": "emergency",
+  "name": "Gloria Police Station",
+  "number": "0998 598 5819",
+  "source": "https://www.facebook.com/profile.php?id=100068231661409",
+  "verifiedAt": "2026-11-25",
+  "confirmed": true
+ },
+ {
+  "id": "h48",
+  "scope": "gloria",
+  "category": "emergency",
+  "name": "BFP Gloria",
+  "number": "0915 603 1520",
+  "source": "https://www.facebook.com/gloriafirestation",
+  "verifiedAt": "2026-11-25",
+  "confirmed": true
+ },
+ {
+  "id": "h49",
+  "scope": "gloria",
+  "category": "emergency",
+  "name": "BFP Gloria Office",
+  "number": "(043) 398-1106",
+  "source": "https://www.facebook.com/gloriafirestation",
+  "verifiedAt": "2026-11-25",
+  "confirmed": true
  }
 ]
