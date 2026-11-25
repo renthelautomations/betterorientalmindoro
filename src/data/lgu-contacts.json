@@ -162,13 +162,13 @@
  },
  "gloria": {
   "email": [
-   "lgugloriaorientalmindoro@gmail.com"
+   "gloria.mayorsoffice@gmail.com"
   ],
   "mobile": [
    "0917 109 2183",
    "0917 158 0998"
   ],
-  "website": "http://gloria.gov.ph/",
+  "website": "https://gloria.gov.ph/",
   "facebook": [
    {
     "label": "Gloria Municipal Gazette",
@@ -181,6 +181,10 @@
    {
     "label": "PNP Gloria Municipal Police Station",
     "url": "https://www.facebook.com/profile.php?id=100068231661409"
+   },
+   {
+    "label": "BFP Gloria",
+    "url": "https://www.facebook.com/gloriafirestation"
    }
   ],
   "landline": [],
@@ -190,7 +194,7 @@
   "extraSources": [
    {
     "label": "Contact Us ng Gloria",
-    "url": "http://gloria.gov.ph/contact-us/"
+    "url": "https://gloria.gov.ph/contact.php"
    }
   ]
  },
